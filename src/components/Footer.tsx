@@ -16,6 +16,12 @@ const guideLinks = [
   { label: 'よくある質問', href: '/#faq' },
 ];
 
+const legalLinks = [
+  { label: '利用規約', href: '/terms/' },
+  { label: 'プライバシーポリシー', href: '/privacy/' },
+  { label: '記事制作ポリシー', href: '/content-policy/' },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-g800 text-white mt-auto">
@@ -61,9 +67,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-g600 pt-6 text-center text-xs text-g500">
-          <p>&copy; 2025 子供見守りGPS最新情報 All Rights Reserved.</p>
-          <p className="mt-1">※ 掲載情報は2025年4月時点のものです。最新情報は各公式サイトをご確認ください。</p>
+        <div className="mt-10 border-t border-g600 pt-6">
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-4">
+            {legalLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-g300 no-underline hover:text-white transition-colors">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="text-center text-xs text-g500">
+            <p>&copy; 2025 子供見守りGPS最新情報 All Rights Reserved.</p>
+            <p className="mt-1">※ 掲載情報は2025年4月時点のものです。最新情報は各公式サイトをご確認ください。</p>
+          </div>
         </div>
       </div>
     </footer>
