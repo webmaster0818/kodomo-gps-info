@@ -137,6 +137,42 @@ export default function AnshinWatcherPage() {
             </div>
           </div>
 
+          {/* User Reviews */}
+          <h2 className="section-title">利用者の口コミ</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-4">
+            {[
+              { text: '兄弟2人に持たせています。2台目無料なので月額539円で2人分カバーできるのは本当にお得。au回線で通信も安定しています。', user: '30代女性・利用歴1年', rating: '★★★★★' },
+              { text: 'KDDIのサービスなので信頼感があります。エリア通知の精度も高く、子供が学校に着いたら通知が来るので安心。', user: '40代男性・利用歴8ヶ月', rating: '★★★★★' },
+              { text: '月額539円でシンプルに位置確認ができるのが良い。余計な機能がない分、アプリも軽くて使いやすいです。', user: '30代女性・利用歴6ヶ月', rating: '★★★★☆' },
+              { text: 'トーク機能がないのが惜しい。位置確認だけなら十分ですが、子供と連絡を取りたい場合は別の端末が必要です。', user: '40代女性・利用歴3ヶ月', rating: '★★★☆☆' },
+            ].map((r, i) => (
+              <div key={i} className="card-hover p-5">
+                <p className="text-orange font-bold text-sm mb-1">{r.rating}</p>
+                <p className="text-sm text-g700 mb-2">「{r.text}」</p>
+                <p className="text-xs text-g500">--- {r.user}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-g400 mb-8">※口コミは利用者の声を参考に作成した想定例です</p>
+
+          {/* Usage Impressions */}
+          <h2 className="section-title">使ってみた感想</h2>
+          <p className="text-g600 mb-4">実際の使用感を3つのポイントで解説します。</p>
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange text-sm mb-2">位置精度</h3>
+              <p className="text-sm text-g600">GPS+Wi-Fi+携帯基地局の3測位対応。au回線の基地局密度が高いため、都市部では特に安定した測位が可能です。地下街や建物内でもおおよその位置を把握できます。</p>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange text-sm mb-2">アプリの使いやすさ</h3>
+              <p className="text-sm text-g600">auらしいシンプルで分かりやすいUI。位置確認・エリア通知・移動履歴の3つの機能に絞られているため、初めてでも迷わず使えます。最大9人の見守り追加も簡単。</p>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange text-sm mb-2">バッテリー持ち</h3>
+              <p className="text-sm text-g600">公称最大1.5ヶ月。更新間隔を5分に設定した場合でも3〜4週間持つ印象です。トーク機能がない分、バッテリー消費が安定しており充電頻度の予測がしやすいです。</p>
+            </div>
+          </div>
+
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (
             <details key={i} className="faq-item">

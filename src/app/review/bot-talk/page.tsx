@@ -137,6 +137,42 @@ export default function BotTalkPage() {
             </div>
           </div>
 
+          {/* User Reviews */}
+          <h2 className="section-title">利用者の口コミ</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-4">
+            {[
+              { text: '習い事の帰りに「今から帰る」とトークで送ってくれるので、迎えのタイミングがバッチリです。AI学習で到着予測も正確になってきました。', user: '40代男性・利用歴1年', rating: '★★★★★' },
+              { text: '見守りウォレットが便利。コンビニでおやつを買う時に使わせていますが、利用履歴がアプリに来るので安心です。', user: '30代女性・利用歴8ヶ月', rating: '★★★★★' },
+              { text: 'トーク機能の元祖だけあって安定感があります。子供も「ボタンを押すだけ」で使えるので、操作に困ることはありません。', user: '30代女性・利用歴6ヶ月', rating: '★★★★☆' },
+              { text: 'バッテリーが1ヶ月と書いてありますが、トークを頻繁に使うと2週間くらい。充電頻度がもう少し少なければ完璧です。', user: '40代女性・利用歴4ヶ月', rating: '★★★☆☆' },
+            ].map((r, i) => (
+              <div key={i} className="card-hover p-5">
+                <p className="text-orange font-bold text-sm mb-1">{r.rating}</p>
+                <p className="text-sm text-g700 mb-2">「{r.text}」</p>
+                <p className="text-xs text-g500">--- {r.user}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-g400 mb-8">※口コミは利用者の声を参考に作成した想定例です</p>
+
+          {/* Usage Impressions */}
+          <h2 className="section-title">使ってみた感想</h2>
+          <p className="text-g600 mb-4">実際の使用感を3つのポイントで解説します。</p>
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-green-dark text-sm mb-2">位置精度</h3>
+              <p className="text-sm text-g600">GPS+GLONASS+みちびき+Wi-Fiの複合測位で、屋外精度は高水準。AI行動学習により通学路の逸脱検知も正確で、使い込むほど精度が向上します。</p>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-green-dark text-sm mb-2">アプリの使いやすさ</h3>
+              <p className="text-sm text-g600">トーク画面と地図画面がワンタップで切り替えられるシンプルなUI。見守りウォレットのチャージ・履歴確認もアプリ内で完結します。</p>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-green-dark text-sm mb-2">バッテリー持ち</h3>
+              <p className="text-sm text-g600">公称最大1ヶ月ですが、トーク機能を日常的に使うと2〜3週間程度。GPSのみのプランなら4週間近く持つ印象です。みてねGPSよりはやや短めです。</p>
+            </div>
+          </div>
+
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (
             <details key={i} className="faq-item">

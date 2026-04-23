@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供見守りGPS最新情報 | 2025年おすすめGPS端末比較ランキング',
+  title: '子供見守りGPS最新情報 | 2026年おすすめGPS端末比較ランキング',
   description:
     '子供用見守りGPS端末13機種を徹底比較。みてねみまもりGPS、BoTトーク、あんしんウォッチャーなど人気機種の料金・機能・口コミを詳しく紹介。月額528円〜。',
 };
@@ -138,7 +138,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-light via-white to-orange-light">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 text-center">
-          <p className="tag-pill bg-blue text-white mb-4">2025年最新版</p>
+          <p className="tag-pill bg-blue text-white mb-4">2026年最新版</p>
           <h1 className="text-3xl md:text-5xl font-extrabold text-g800 leading-tight mb-6">
             お子さまの安全を、<br className="sm:hidden" />
             GPSでもっと安心に
@@ -271,6 +271,47 @@ export default function HomePage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-g50 py-12">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="section-title section-title-center">利用者の声</h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              { text: '小1の娘に持たせています。学校から帰宅したらアプリに通知が来るので安心', user: '30代女性・みてねGPS利用' },
+              { text: '習い事の送迎の際にGPSで位置確認。待ち合わせがスムーズに', user: '40代男性・BoTトーク利用' },
+              { text: '兄弟2人に持たせたくて、2台目無料のあんしんウォッチャーにしました', user: '30代女性・あんしんウォッチャー利用' },
+              { text: '電池持ちが良く、週1充電で済むのが助かります', user: '30代女性・みてねGPS利用' },
+            ].map((t, i) => (
+              <div key={i} className="card-hover p-6">
+                <p className="text-g700 mb-3">「{t.text}」</p>
+                <p className="text-sm text-g500">--- {t.user}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-g400 mt-4 text-center">※口コミは利用者の声を参考に作成した想定例です</p>
+        </div>
+      </section>
+
+      {/* Campaign Info */}
+      <section className="py-12">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="section-title section-title-center">最新キャンペーン情報【2026年4月】</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: 'みてねみまもりGPS', info: '本体価格2,904円（税込）で業界最安級', color: 'bg-blue-light' },
+              { name: 'あんしんウォッチャー', info: '2台目月額無料キャンペーン継続中', color: 'bg-green-light' },
+              { name: 'BoTトーク', info: '見守りウォレット新機能追加', color: 'bg-orange-light' },
+            ].map((c) => (
+              <div key={c.name} className={`${c.color} rounded-xl p-6`}>
+                <h3 className="font-bold text-g800 mb-2">{c.name}</h3>
+                <p className="text-sm text-g700">{c.info}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-g400 mt-4 text-center">※各社の最新情報は公式サイトでご確認ください</p>
         </div>
       </section>
 
