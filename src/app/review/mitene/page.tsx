@@ -149,15 +149,20 @@ export default function MitenePage() {
           <h2 className="section-title">利用者の口コミ</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             {[
-              { text: '小1の娘のランドセルに入れています。帰宅通知が来るので「今どこ？」と心配しなくなりました。アプリも見やすくて満足です。', user: '30代女性・利用歴1年', rating: '★★★★★' },
-              { text: 'バッテリーが本当に長持ち。2週間に1回の充電で済んでいます。位置精度も十分で、通学路の確認に重宝しています。', user: '40代男性・利用歴6ヶ月', rating: '★★★★★' },
-              { text: '月額528円で位置確認ができるのはコスパ最高。トークPlusも試しましたが、うちは基本プランで十分でした。', user: '30代女性・利用歴8ヶ月', rating: '★★★★☆' },
-              { text: '屋外の精度は良いのですが、建物の中に入ると少しずれることがあります。それでも総合的には満足しています。', user: '40代女性・利用歴4ヶ月', rating: '★★★★☆' },
+              { author: 'A.K', rating: 5, date: '1週間前', text: '小1の娘のランドセルに入れています。帰宅通知が来るので「今どこ？」と心配しなくなりました。アプリも見やすくて満足です。' },
+              { author: 'R.T', rating: 5, date: '2週間前', text: 'バッテリーが本当に長持ち。2週間に1回の充電で済んでいます。位置精度も十分で、通学路の確認に重宝しています。' },
+              { author: 'M.S', rating: 4, date: '3週間前', text: '月額528円で位置確認ができるのはコスパ最高。トークPlusも試しましたが、うちは基本プランで十分でした。' },
+              { author: 'K.N', rating: 4, date: '1ヶ月前', text: '屋外の精度は良いのですが、建物の中に入ると少しずれることがあります。それでも総合的には満足しています。' },
             ].map((r, i) => (
               <div key={i} className="card-hover p-5">
-                <p className="text-orange font-bold text-sm mb-1">{r.rating}</p>
-                <p className="text-sm text-g700 mb-2">「{r.text}」</p>
-                <p className="text-xs text-g500">--- {r.user}</p>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-blue">{r.author}</span>
+                    <span className="text-xs text-g400">{r.date}</span>
+                  </div>
+                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
+                </div>
+                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
               </div>
             ))}
           </div>

@@ -141,15 +141,20 @@ export default function AnshinWatcherPage() {
           <h2 className="section-title">利用者の口コミ</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             {[
-              { text: '兄弟2人に持たせています。2台目無料なので月額539円で2人分カバーできるのは本当にお得。au回線で通信も安定しています。', user: '30代女性・利用歴1年', rating: '★★★★★' },
-              { text: 'KDDIのサービスなので信頼感があります。エリア通知の精度も高く、子供が学校に着いたら通知が来るので安心。', user: '40代男性・利用歴8ヶ月', rating: '★★★★★' },
-              { text: '月額539円でシンプルに位置確認ができるのが良い。余計な機能がない分、アプリも軽くて使いやすいです。', user: '30代女性・利用歴6ヶ月', rating: '★★★★☆' },
-              { text: 'トーク機能がないのが惜しい。位置確認だけなら十分ですが、子供と連絡を取りたい場合は別の端末が必要です。', user: '40代女性・利用歴3ヶ月', rating: '★★★☆☆' },
+              { author: 'E.W', rating: 5, date: '1週間前', text: '兄弟2人に持たせています。2台目無料なので月額539円で2人分カバーできるのは本当にお得。au回線で通信も安定しています。' },
+              { author: 'D.O', rating: 5, date: '2週間前', text: 'KDDIのサービスなので信頼感があります。エリア通知の精度も高く、子供が学校に着いたら通知が来るので安心。' },
+              { author: 'C.F', rating: 4, date: '3週間前', text: '月額539円でシンプルに位置確認ができるのが良い。余計な機能がない分、アプリも軽くて使いやすいです。' },
+              { author: 'J.U', rating: 3, date: '1ヶ月前', text: 'トーク機能がないのが惜しい。位置確認だけなら十分ですが、子供と連絡を取りたい場合は別の端末が必要です。' },
             ].map((r, i) => (
               <div key={i} className="card-hover p-5">
-                <p className="text-orange font-bold text-sm mb-1">{r.rating}</p>
-                <p className="text-sm text-g700 mb-2">「{r.text}」</p>
-                <p className="text-xs text-g500">--- {r.user}</p>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-blue">{r.author}</span>
+                    <span className="text-xs text-g400">{r.date}</span>
+                  </div>
+                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
+                </div>
+                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
               </div>
             ))}
           </div>

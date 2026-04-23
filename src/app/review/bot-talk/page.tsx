@@ -141,15 +141,20 @@ export default function BotTalkPage() {
           <h2 className="section-title">利用者の口コミ</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             {[
-              { text: '習い事の帰りに「今から帰る」とトークで送ってくれるので、迎えのタイミングがバッチリです。AI学習で到着予測も正確になってきました。', user: '40代男性・利用歴1年', rating: '★★★★★' },
-              { text: '見守りウォレットが便利。コンビニでおやつを買う時に使わせていますが、利用履歴がアプリに来るので安心です。', user: '30代女性・利用歴8ヶ月', rating: '★★★★★' },
-              { text: 'トーク機能の元祖だけあって安定感があります。子供も「ボタンを押すだけ」で使えるので、操作に困ることはありません。', user: '30代女性・利用歴6ヶ月', rating: '★★★★☆' },
-              { text: 'バッテリーが1ヶ月と書いてありますが、トークを頻繁に使うと2週間くらい。充電頻度がもう少し少なければ完璧です。', user: '40代女性・利用歴4ヶ月', rating: '★★★☆☆' },
+              { author: 'T.I', rating: 5, date: '1週間前', text: '習い事の帰りに「今から帰る」とトークで送ってくれるので、迎えのタイミングがバッチリです。AI学習で到着予測も正確になってきました。' },
+              { author: 'S.M', rating: 5, date: '2週間前', text: '見守りウォレットが便利。コンビニでおやつを買う時に使わせていますが、利用履歴がアプリに来るので安心です。' },
+              { author: 'H.Y', rating: 4, date: '3週間前', text: 'トーク機能の元祖だけあって安定感があります。子供も「ボタンを押すだけ」で使えるので、操作に困ることはありません。' },
+              { author: 'N.K', rating: 3, date: '1ヶ月前', text: 'バッテリーが1ヶ月と書いてありますが、トークを頻繁に使うと2週間くらい。充電頻度がもう少し少なければ完璧です。' },
             ].map((r, i) => (
               <div key={i} className="card-hover p-5">
-                <p className="text-orange font-bold text-sm mb-1">{r.rating}</p>
-                <p className="text-sm text-g700 mb-2">「{r.text}」</p>
-                <p className="text-xs text-g500">--- {r.user}</p>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-blue">{r.author}</span>
+                    <span className="text-xs text-g400">{r.date}</span>
+                  </div>
+                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
+                </div>
+                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
               </div>
             ))}
           </div>

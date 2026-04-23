@@ -280,14 +280,20 @@ export default function HomePage() {
           <h2 className="section-title section-title-center">利用者の声</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              { text: '小1の娘に持たせています。学校から帰宅したらアプリに通知が来るので安心', user: '30代女性・みてねGPS利用' },
-              { text: '習い事の送迎の際にGPSで位置確認。待ち合わせがスムーズに', user: '40代男性・BoTトーク利用' },
-              { text: '兄弟2人に持たせたくて、2台目無料のあんしんウォッチャーにしました', user: '30代女性・あんしんウォッチャー利用' },
-              { text: '電池持ちが良く、週1充電で済むのが助かります', user: '30代女性・みてねGPS利用' },
-            ].map((t, i) => (
-              <div key={i} className="card-hover p-6">
-                <p className="text-g700 mb-3">「{t.text}」</p>
-                <p className="text-sm text-g500">--- {t.user}</p>
+              { author: 'A.K', rating: 5, date: '1週間前', text: '小1の娘に持たせています。学校への到着・帰宅が自動通知されるので安心。位置精度も高く、建物の中でもしっかり取れています。' },
+              { author: 'T.M', rating: 5, date: '2週間前', text: '習い事の送迎タイミングをGPSで確認しています。BoTトークのAI学習で到着予測が正確になり、待ち時間がほぼゼロに。' },
+              { author: 'Y.S', rating: 4, date: '3週間前', text: '兄弟2人に持たせたくて、2台目無料のあんしんウォッチャーにしました。月539円で2台分は本当にお得。au回線で通信も安定しています。' },
+              { author: 'M.H', rating: 4, date: '1ヶ月前', text: 'みてねGPSのバッテリー持ちが優秀。2週間に1回の充電で済んでいます。ただ屋内だと少し精度が落ちるのが気になるかな。' },
+            ].map((r, i) => (
+              <div key={i} className="card-hover p-5">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-blue">{r.author}</span>
+                    <span className="text-xs text-g400">{r.date}</span>
+                  </div>
+                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
+                </div>
+                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
               </div>
             ))}
           </div>
