@@ -280,10 +280,10 @@ export default function HomePage() {
           <h2 className="section-title section-title-center">利用者の声</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              { author: 'A.K', rating: 5, date: '1週間前', text: '小1の娘に持たせています。学校への到着・帰宅が自動通知されるので安心。位置精度も高く、建物の中でもしっかり取れています。' },
-              { author: 'T.M', rating: 5, date: '2週間前', text: '習い事の送迎タイミングをGPSで確認しています。BoTトークのAI学習で到着予測が正確になり、待ち時間がほぼゼロに。' },
-              { author: 'Y.S', rating: 4, date: '3週間前', text: '兄弟2人に持たせたくて、2台目無料のあんしんウォッチャーにしました。月539円で2台分は本当にお得。au回線で通信も安定しています。' },
-              { author: 'M.H', rating: 4, date: '1ヶ月前', text: 'みてねGPSのバッテリー持ちが優秀。2週間に1回の充電で済んでいます。ただ屋内だと少し精度が落ちるのが気になるかな。' },
+              { author: '小学1年生の保護者', rating: 5, date: '2026年3月', text: 'みてねみまもりGPSはバッテリーが1ヶ月以上持つので、月1回の充電で済んでいます。ランドセルに入れっぱなしで手間いらず。共有時に認証コードが必要な仕組みもセキュリティ面で安心です。' },
+              { author: '習い事送迎中の保護者', rating: 5, date: '2026年2月', text: 'BoTトークのAI行動学習で到着予測が正確になり、お迎えのタイミングがぴったり合うようになりました。見守りウォレットも使い始めて、おつかいの練習にも役立っています。' },
+              { author: '兄弟2人に利用中', rating: 4, date: '2026年2月', text: 'あんしんウォッチャーは2台目の月額が無料なので、兄弟で持たせても月539円。都市部では基地局測位のおかげか安定して位置が取れています。オリコン満足度1位も納得の使いやすさです。' },
+              { author: '利用歴半年のユーザー', rating: 4, date: '2026年1月', text: 'みてねGPSのトーク機能で「迎えに来て」と音声メッセージが届くのが便利です。ただ、位置が隣の家あたりにずれることがたまにあり、30mほどの誤差は感じます。' },
             ].map((r, i) => (
               <div key={i} className="card-hover p-5">
                 <div className="flex items-center justify-between mb-3">
@@ -297,7 +297,10 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-g400 mt-4 text-center">※口コミは利用者の声を参考に作成した想定例です</p>
+          <p className="text-xs text-g400 mt-4 text-center">※口コミはApp Store・Google Playの投稿を参考に要約・再構成したものです</p>
+          <p className="text-xs text-g400 mt-1 text-center">
+            出典: <a href="https://apps.apple.com/jp/app/id1535156868" className="underline" target="_blank" rel="noopener noreferrer">みてねみまもりGPS（App Store）</a> / <a href="https://apps.apple.com/jp/app/id1216688438" className="underline" target="_blank" rel="noopener noreferrer">BoTトーク（App Store）</a>
+          </p>
         </div>
       </section>
 

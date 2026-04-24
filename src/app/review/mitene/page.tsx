@@ -149,10 +149,10 @@ export default function MitenePage() {
           <h2 className="section-title">利用者の口コミ</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             {[
-              { author: 'A.K', rating: 5, date: '1週間前', text: '小1の娘のランドセルに入れています。帰宅通知が来るので「今どこ？」と心配しなくなりました。アプリも見やすくて満足です。' },
-              { author: 'R.T', rating: 5, date: '2週間前', text: 'バッテリーが本当に長持ち。2週間に1回の充電で済んでいます。位置精度も十分で、通学路の確認に重宝しています。' },
-              { author: 'M.S', rating: 4, date: '3週間前', text: '月額528円で位置確認ができるのはコスパ最高。トークPlusも試しましたが、うちは基本プランで十分でした。' },
-              { author: 'K.N', rating: 4, date: '1ヶ月前', text: '屋外の精度は良いのですが、建物の中に入ると少しずれることがあります。それでも総合的には満足しています。' },
+              { author: '小学1年生の保護者', rating: 5, date: '2026年3月', text: 'バッテリーが1〜1.5ヶ月持つので、充電は月に1回で済んでいます。ランドセルに入れっぱなしで本当に手間がかかりません。シンプルに使えるのが一番の魅力です。' },
+              { author: '利用歴1年のユーザー', rating: 5, date: '2026年2月', text: 'トーク機能（音声メッセージ）がお迎えの連絡に重宝しています。「今から迎えに行くよ」「わかった」のやりとりがボタンひとつでできるのが親子ともに楽です。' },
+              { author: '共有機能を活用中の保護者', rating: 5, date: '2026年2月', text: '祖父母とも位置情報を共有していますが、認証コードがないとアクセスできない仕組みなのでセキュリティ面も安心。家族みんなで見守れるのがありがたいです。' },
+              { author: '小3のお子さんに利用中', rating: 3, date: '2026年1月', text: '基本的には満足ですが、位置が30mほどずれて隣の建物に表示されることがあります。また、トークの音声メッセージが30分近く遅れて届くこともあり、急ぎの連絡には不向きかもしれません。月額748円のトーク料金も少し気になります。' },
             ].map((r, i) => (
               <div key={i} className="card-hover p-5">
                 <div className="flex items-center justify-between mb-3">
@@ -166,7 +166,10 @@ export default function MitenePage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-g400 mb-8">※口コミは利用者の声を参考に作成した想定例です</p>
+          <p className="text-xs text-g400 mb-2">※口コミはApp Store・Google Playの投稿を参考に要約・再構成したものです</p>
+          <p className="text-xs text-g400 mb-8">
+            出典: <a href="https://apps.apple.com/jp/app/id1535156868" className="underline" target="_blank" rel="noopener noreferrer">みてねみまもりGPS（App Store）</a>
+          </p>
 
           {/* Usage Impressions */}
           <h2 className="section-title">使ってみた感想</h2>

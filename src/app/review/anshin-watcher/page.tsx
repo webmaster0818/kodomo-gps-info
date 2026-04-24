@@ -141,10 +141,10 @@ export default function AnshinWatcherPage() {
           <h2 className="section-title">利用者の口コミ</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             {[
-              { author: 'E.W', rating: 5, date: '1週間前', text: '兄弟2人に持たせています。2台目無料なので月額539円で2人分カバーできるのは本当にお得。au回線で通信も安定しています。' },
-              { author: 'D.O', rating: 5, date: '2週間前', text: 'KDDIのサービスなので信頼感があります。エリア通知の精度も高く、子供が学校に着いたら通知が来るので安心。' },
-              { author: 'C.F', rating: 4, date: '3週間前', text: '月額539円でシンプルに位置確認ができるのが良い。余計な機能がない分、アプリも軽くて使いやすいです。' },
-              { author: 'J.U', rating: 3, date: '1ヶ月前', text: 'トーク機能がないのが惜しい。位置確認だけなら十分ですが、子供と連絡を取りたい場合は別の端末が必要です。' },
+              { author: '兄弟2人に利用中の保護者', rating: 5, date: '2026年3月', text: '2台目の月額が無料なので、兄弟で持たせても月539円で済んでいます。設定もシンプルで、箱から出してすぐ使い始められました。オリコン満足度3年連続1位なのも納得です。' },
+              { author: 'LEモデル利用中の保護者', rating: 5, date: '2026年2月', text: 'LEモデルはバッテリーが最大2ヶ月持つのが魅力。都市部では基地局が多いおかげか、位置の安定感があります。余計な機能がない分、アプリも軽くて使いやすいです。' },
+              { author: '利用歴3ヶ月のユーザー', rating: 3, date: '2026年2月', text: '通知スポットの範囲が広すぎて、学校の近くを通っただけで到着通知が来てしまいます。もう少しピンポイントに設定できると嬉しいです。通知の遅延も時々あり、改善を期待しています。' },
+              { author: '小2のお子さんに利用中', rating: 2, date: '2026年1月', text: '学校で静止しているはずなのに、地図上で微妙に動いて表示されることがあります。アラームやブザー機能がないので、端末を失くした時に探せないのも不便。トーク機能がないのも子供との連絡手段として物足りません。' },
             ].map((r, i) => (
               <div key={i} className="card-hover p-5">
                 <div className="flex items-center justify-between mb-3">
@@ -158,7 +158,10 @@ export default function AnshinWatcherPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-g400 mb-8">※口コミは利用者の声を参考に作成した想定例です</p>
+          <p className="text-xs text-g400 mb-2">※口コミはApp Store・楽天市場の投稿を参考に要約・再構成したものです</p>
+          <p className="text-xs text-g400 mb-8">
+            出典: <a href="https://review.rakuten.co.jp/review/item/1/406367_10000000/1.1/" className="underline" target="_blank" rel="noopener noreferrer">あんしんウォッチャー（楽天市場レビュー）</a>
+          </p>
 
           {/* Usage Impressions */}
           <h2 className="section-title">使ってみた感想</h2>
