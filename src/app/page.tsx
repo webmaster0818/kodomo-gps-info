@@ -20,6 +20,7 @@ const devices = [
     battery: '最大2ヶ月',
     feature: '利用者数No.1',
     slug: '/review/mitene/',
+    ssSlug: 'ss-mitene',
     features: ['利用者数No.1の安心感', 'トークPlus対応（月額748円）', '移動履歴の自動記録', '複数の見守り人登録', 'バッテリー持ち最大2ヶ月'],
     pros: ['月額528円〜の低コスト', 'アプリの使いやすさが好評', '位置精度が高い'],
     cons: ['トーク機能は追加料金', '本体カラーが限られる'],
@@ -27,21 +28,6 @@ const devices = [
   },
   {
     rank: 2,
-    name: 'BoTトーク',
-    provider: 'ビーサイズ',
-    monthly: '528円〜',
-    talk: 'トーク対応（748円）',
-    positioning: 'GPS+GLONASS+みちびき+Wi-Fi',
-    battery: '最大1ヶ月',
-    feature: '元祖トーク機能・見守りウォレット',
-    slug: '/review/bot-talk/',
-    features: ['第6世代の最新モデル', '元祖トーク機能搭載', '見守りウォレット（電子マネー）', 'AIによる行動学習', '生活防水IPX5'],
-    pros: ['見守りウォレット機能が便利', 'AI学習で到着予測が正確', 'トーク機能の元祖で実績豊富'],
-    cons: ['バッテリーがやや短め', '月額がトーク付きだと748円'],
-    recommend: 'トーク＋電子マネーで多機能を求める方',
-  },
-  {
-    rank: 3,
     name: 'あんしんウォッチャー',
     provider: 'KDDI/au',
     monthly: '539円（税込）',
@@ -50,25 +36,43 @@ const devices = [
     battery: '最大1.5ヶ月',
     feature: '2台目無料・au品質',
     slug: '/review/anshin-watcher/',
+    ssSlug: 'ss-anshin-watcher',
     features: ['月額539円で最安級', '2台目の月額料金が無料', '最大9人で見守り', 'au回線の安定通信', '現在地・移動履歴確認'],
     pros: ['2台目無料で兄弟利用に最適', 'au回線で通信品質が高い', '月額コストが業界最安級'],
     cons: ['トーク機能なし', 'バッテリーがやや短い'],
     recommend: '兄弟・姉妹で使いたい方・通信品質重視の方',
   },
   {
+    rank: 3,
+    name: 'BoTトーク',
+    provider: 'ビーサイズ',
+    monthly: '528円〜',
+    talk: 'トーク対応（748円）',
+    positioning: 'GPS+GLONASS+みちびき+Wi-Fi',
+    battery: '最大1ヶ月',
+    feature: '元祖トーク機能・見守りウォレット',
+    slug: '/review/bot-talk/',
+    ssSlug: 'ss-bot-talk',
+    features: ['第6世代の最新モデル', '元祖トーク機能搭載', '見守りウォレット（電子マネー）', 'AIによる行動学習', '生活防水IPX5'],
+    pros: ['見守りウォレット機能が便利', 'AI学習で到着予測が正確', 'トーク機能の元祖で実績豊富'],
+    cons: ['バッテリーがやや短め', '月額がトーク付きだと748円'],
+    recommend: 'トーク＋電子マネーで多機能を求める方',
+  },
+  {
     rank: 4,
-    name: 'soranome（ソラノメ）',
-    provider: 'エスキュービズム',
-    monthly: '539円（税込）',
+    name: 'どこかなGPS2',
+    provider: 'ソフトバンク',
+    monthly: '528円（税込）',
     talk: '非対応',
-    positioning: 'GPS+Wi-Fi+携帯基地局（3測位）',
-    battery: '最大1週間',
-    feature: 'SOS通知・3測位対応',
-    slug: '/review/soranome/',
-    features: ['GPS+Wi-Fi+基地局の3測位', 'SOSボタン搭載', '最大4人で見守り', 'エリア出入り通知', '移動履歴の確認'],
-    pros: ['3測位で位置精度が高い', 'SOSボタンで緊急時も安心', '月額539円で手頃'],
-    cons: ['バッテリーが最大1週間と短い', 'トーク機能なし'],
-    recommend: '位置精度を最優先する方・SOS機能が欲しい方',
+    positioning: 'GPS+GLONASS+みちびき',
+    battery: '最大1.5ヶ月',
+    feature: 'ソフトバンク品質・迷子防止',
+    slug: '/review/dokokana/',
+    ssSlug: 'ss-dokokana',
+    features: ['ソフトバンク回線で安定通信', '迷子防止通知機能', '移動履歴の自動記録', 'エリア出入り通知', 'コンパクト設計'],
+    pros: ['ソフトバンク回線の安定性', '月額528円の低コスト', 'コンパクトで持ちやすい'],
+    cons: ['トーク機能なし', '対応エリアがソフトバンク回線依存'],
+    recommend: 'ソフトバンクユーザー・シンプルにGPSだけ欲しい方',
   },
   {
     rank: 5,
@@ -80,6 +84,7 @@ const devices = [
     battery: '最大1ヶ月',
     feature: '最大25人見守り',
     slug: '/review/mamosearch/',
+    ssSlug: 'ss-mamosearch',
     features: ['最大25人で見守り可能', '第3世代の最新モデル', 'エリア通知機能', '移動履歴の記録', 'コンパクト設計'],
     pros: ['25人まで見守りに参加できる', '祖父母・親戚も一緒に見守れる', 'コンパクトで軽量'],
     cons: ['トーク機能なし', 'バッテリーは使い方次第'],
@@ -87,18 +92,19 @@ const devices = [
   },
   {
     rank: 6,
-    name: 'SayuU（サユー）',
-    provider: 'トヨタ',
-    monthly: '1,210円（税込）',
-    talk: '通話対応',
-    positioning: 'GPS+みちびき+GLONASS',
-    battery: '最大3日間',
-    feature: '交通安全サポート・左右確認検知',
-    slug: '/review/sayuu/',
-    features: ['トヨタ開発の交通安全サポート', '左右確認検知機能', '走行検知で危険通知', '双方向通話対応', 'トヨタ品質の安心感'],
-    pros: ['交通安全に特化した独自機能', '通話ができる安心感', 'トヨタブランドの信頼性'],
-    cons: ['月額1,210円と高め', 'バッテリーが3日間と短い', '本体価格16,500円'],
-    recommend: '交通安全が心配な方・通話機能が欲しい方',
+    name: 'myFirst Fone R2',
+    provider: 'myFirst',
+    monthly: '980円（税込）',
+    talk: '通話・ビデオ通話対応',
+    positioning: 'GPS+Wi-Fi+携帯基地局',
+    battery: '最大2日間',
+    feature: 'キッズスマートウォッチ・通話対応',
+    slug: '/review/myfirst-fone/',
+    ssSlug: 'ss-myfirst-fone',
+    features: ['音声・ビデオ通話対応', 'キッズスマートウォッチ型', 'カメラ搭載', 'SOS機能', '音楽プレーヤー内蔵'],
+    pros: ['通話・ビデオ通話ができる', '腕時計型で紛失しにくい', '多機能で子供が喜ぶ'],
+    cons: ['月額が高め', 'バッテリーが短い', '本体価格が高い'],
+    recommend: '通話機能重視・腕時計型が良い方',
   },
 ];
 
@@ -141,15 +147,15 @@ const faqJsonLd = {
 
 function RankBadge({ rank }: { rank: number }) {
   const colors: Record<number, string> = {
-    1: 'bg-gradient-to-br from-amber-400 to-amber-600',
-    2: 'bg-gradient-to-br from-gray-300 to-gray-500',
-    3: 'bg-gradient-to-br from-amber-700 to-amber-900',
+    1: 'bg-gradient-to-br from-yellow-400 to-amber-500',
+    2: 'bg-gradient-to-br from-gray-300 to-gray-400',
+    3: 'bg-gradient-to-br from-amber-600 to-amber-700',
   };
-  const bg = colors[rank] || 'bg-amber-600';
+  const bg = colors[rank] || 'bg-gradient-to-br from-stone-400 to-stone-500';
   return (
-    <span className={`inline-flex items-center justify-center w-12 h-12 rounded-full text-white font-black text-xl flex-shrink-0 shadow-md ${bg}`}>
-      {rank}
-    </span>
+    <div className={`absolute -top-3 -left-3 w-10 h-10 ${bg} rounded-full flex items-center justify-center shadow-lg z-10`}>
+      <span className="text-white font-bold text-sm">{rank}</span>
+    </div>
   );
 }
 
@@ -273,11 +279,20 @@ export default function HomePage() {
             {devices.map((d) => (
               <article
                 key={d.rank}
-                className="bg-white rounded-2xl border border-amber-100 shadow-sm hover:shadow-lg transition-shadow p-6 md:p-8"
+                className="relative bg-white rounded-2xl border border-amber-100 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
               >
+                <RankBadge rank={d.rank} />
+
+                {/* Product screenshot */}
+                <div className="rounded-t-xl overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={`/${d.ssSlug}.jpg`} alt={`${d.name} 公式サイト`} className="w-full h-40 object-cover object-top" />
+                  <p className="text-[10px] text-gray-400 px-2 py-1 text-right bg-gray-50">公式サイトより</p>
+                </div>
+
+                <div className="p-6 md:p-8">
                 {/* Header */}
                 <div className="flex items-start gap-4 mb-5">
-                  <RankBadge rank={d.rank} />
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xl md:text-2xl font-extrabold text-gray-800">
                       <Link href={d.slug} className="text-gray-800 no-underline hover:text-amber-600 transition-colors">
@@ -338,6 +353,7 @@ export default function HomePage() {
                   >
                     詳細レビューを見る
                   </Link>
+                </div>
                 </div>
               </article>
             ))}
