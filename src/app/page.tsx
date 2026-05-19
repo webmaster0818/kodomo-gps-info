@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -101,6 +102,17 @@ const devices = [
   },
 ];
 
+const knowledgeArticles = [
+  { title: 'GPS端末はいつから持たせる？適切な時期を解説', slug: '/knowledge/when-to-start/' },
+  { title: '子供用GPSの選び方ガイド', slug: '/knowledge/how-to-choose/' },
+  { title: 'GPSの位置精度はどれくらい？', slug: '/knowledge/accuracy/' },
+  { title: '学校への持ち込みルールと対策', slug: '/knowledge/school-rules/' },
+  { title: 'バッテリー持ちを比較検証', slug: '/knowledge/battery/' },
+  { title: 'キッズスマホ vs GPS端末の違い', slug: '/knowledge/smartphone-vs-gps/' },
+  { title: '防水性能を実機テスト', slug: '/knowledge/waterproof-test/' },
+  { title: '見守りGPSの通知機能を徹底解説', slug: '/knowledge/notification-types/' },
+];
+
 const faqData = [
   { q: '子供用GPSは何歳から持たせるべき？', a: '小学校入学のタイミング（6〜7歳）で持たせ始めるご家庭が最も多いです。一人で登下校を始める時期に合わせて導入するのがおすすめです。保育園・幼稚園の年長さんから練習で持たせる方もいます。' },
   { q: 'GPS端末の月額料金はいくらかかる？', a: '月額528円〜1,210円が相場です。最安はみてねみまもりGPS（528円）やBoTトーク（528円）。トーク機能付きだと748円程度、トヨタのSayuUは通話対応で1,210円です。2年契約などの縛りはほとんどありません。' },
@@ -127,6 +139,20 @@ const faqJsonLd = {
   })),
 };
 
+function RankBadge({ rank }: { rank: number }) {
+  const colors: Record<number, string> = {
+    1: 'bg-gradient-to-br from-amber-400 to-amber-600',
+    2: 'bg-gradient-to-br from-gray-300 to-gray-500',
+    3: 'bg-gradient-to-br from-amber-700 to-amber-900',
+  };
+  const bg = colors[rank] || 'bg-amber-600';
+  return (
+    <span className={`inline-flex items-center justify-center w-12 h-12 rounded-full text-white font-black text-xl flex-shrink-0 shadow-md ${bg}`}>
+      {rank}
+    </span>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
@@ -135,38 +161,96 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-light via-white to-orange-light">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 text-center">
-          <p className="tag-pill bg-blue text-white mb-4">2026年最新版</p>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-g800 leading-tight mb-6">
-            お子さまの安全を、<br className="sm:hidden" />
-            GPSでもっと安心に
+      {/* ===== 1. Hero Section ===== */}
+      <section className="relative overflow-hidden min-h-[520px] md:min-h-[600px] flex items-center">
+        {/* Background image */}
+        <Image
+          src="/hero-mother-child.png"
+          alt="子供の安全を見守る母親"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        {/* Warm gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/70 via-amber-800/50 to-orange-700/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+
+        <div className="relative z-10 mx-auto max-w-4xl px-4 py-20 md:py-28 text-center">
+          <p className="inline-block rounded-full bg-white/20 backdrop-blur-sm border border-white/30 px-5 py-1.5 text-sm font-semibold text-white mb-6">
+            2026年最新版 -- 専門家監修
+          </p>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 drop-shadow-lg">
+            幸せは当たり前の日常にある。
           </h1>
-          <p className="text-lg text-g600 max-w-2xl mx-auto mb-8">
-            人気の子供用GPS端末13機種を徹底比較。月額料金・機能・口コミから、
-            お子さまにぴったりのGPSが見つかります。
+          <p className="text-xl md:text-2xl font-bold text-amber-200 mb-6 drop-shadow-md">
+            当たり前を守るために
+          </p>
+          <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+            お子さまの安全を見守るGPS端末を、専門家の目で徹底比較しました。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="#ranking" className="btn-primary">ランキングを見る</a>
-            <a href="#comparison" className="btn-accent">比較表を見る</a>
+            <a
+              href="#ranking"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-4 text-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-amber-500/30"
+            >
+              おすすめランキングを見る
+            </a>
+            <Link
+              href="/concierge/"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/60 text-white font-bold px-8 py-4 text-lg transition-all hover:bg-white hover:text-amber-800 no-underline"
+            >
+              無料診断で選ぶ
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-white border-b border-g100">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      {/* ===== 2. Trust Section ===== */}
+      <section className="bg-[#FFFBF0] border-b border-amber-100">
+        <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-10">
+            数字で見る安心
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { num: '13機種', label: '徹底比較', color: 'text-blue' },
-              { num: '月額528円〜', label: '業界最安級', color: 'text-green' },
-              { num: '全国対応', label: 'どこでも使える', color: 'text-orange' },
-              { num: 'トーク機能', label: '対応モデルあり', color: 'text-blue' },
+              {
+                icon: '/icon-gps-pin.png',
+                iconAlt: 'GPS解説ページアイコン',
+                number: '85+',
+                unit: 'ページ',
+                label: '徹底解説',
+              },
+              {
+                icon: '/icon-compare.png',
+                iconAlt: '機種比較アイコン',
+                number: '13',
+                unit: '機種',
+                label: '全機種比較',
+              },
+              {
+                icon: '/icon-shield.png',
+                iconAlt: '安心の専門家監修アイコン',
+                number: '安心',
+                unit: '',
+                label: '専門家監修',
+              },
             ].map((stat) => (
-              <div key={stat.label} className="p-4">
-                <p className={`text-2xl md:text-3xl font-extrabold ${stat.color}`}>{stat.num}</p>
-                <p className="text-sm text-g500 mt-1">{stat.label}</p>
+              <div
+                key={stat.label}
+                className="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-sm border border-amber-100"
+              >
+                <Image
+                  src={stat.icon}
+                  alt={stat.iconAlt}
+                  width={56}
+                  height={56}
+                  className="mb-4"
+                />
+                <p className="text-3xl md:text-4xl font-black text-amber-600">
+                  {stat.number}
+                  {stat.unit && <span className="text-lg font-bold text-gray-600 ml-1">{stat.unit}</span>}
+                </p>
+                <p className="text-sm text-gray-500 mt-1 font-medium">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -175,96 +259,83 @@ export default function HomePage() {
 
       <Breadcrumb items={[{ name: 'GPS端末比較ランキング' }]} />
 
-      {/* Comparison Table */}
-      <section id="comparison" className="bg-g50 py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="section-title section-title-center">TOP6 GPS端末 比較表</h2>
-          <div className="overflow-x-auto -mx-4 px-4">
-            <table className="comparison-table">
-              <thead>
-                <tr>
-                  <th>順位</th>
-                  <th>機種名</th>
-                  <th>提供元</th>
-                  <th>月額</th>
-                  <th>トーク</th>
-                  <th>測位</th>
-                  <th>バッテリー</th>
-                  <th>特徴</th>
-                </tr>
-              </thead>
-              <tbody>
-                {devices.map((d) => (
-                  <tr key={d.rank}>
-                    <td className="text-center font-bold">{d.rank}位</td>
-                    <td>
-                      <Link href={d.slug} className="text-blue font-bold no-underline hover:underline">
-                        {d.name}
-                      </Link>
-                    </td>
-                    <td className="text-g600">{d.provider}</td>
-                    <td className="font-semibold whitespace-nowrap">{d.monthly}</td>
-                    <td>{d.talk}</td>
-                    <td className="text-sm">{d.positioning}</td>
-                    <td className="whitespace-nowrap">{d.battery}</td>
-                    <td className="text-sm">{d.feature}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      {/* ===== 3. Ranking Section ===== */}
+      <section id="ranking" className="bg-[#FFFBF0] py-14">
+        <div className="mx-auto max-w-5xl px-4">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-3">
+            おすすめGPS端末ランキング
+          </h2>
+          <p className="text-center text-gray-500 mb-10 text-sm">
+            月額料金・機能・口コミを総合的に評価しました
+          </p>
 
-      {/* Ranking Detail */}
-      <section id="ranking" className="py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="section-title section-title-center">TOP6 おすすめGPS端末ランキング</h2>
-          <div className="space-y-8" id="devices">
+          <div className="space-y-6">
             {devices.map((d) => (
-              <article key={d.rank} className="card-hover p-6 md:p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className={`rank-badge rank-${d.rank}`}>{d.rank}</span>
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-extrabold text-g800">
-                      <Link href={d.slug} className="text-g800 no-underline hover:text-blue">
+              <article
+                key={d.rank}
+                className="bg-white rounded-2xl border border-amber-100 shadow-sm hover:shadow-lg transition-shadow p-6 md:p-8"
+              >
+                {/* Header */}
+                <div className="flex items-start gap-4 mb-5">
+                  <RankBadge rank={d.rank} />
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl md:text-2xl font-extrabold text-gray-800">
+                      <Link href={d.slug} className="text-gray-800 no-underline hover:text-amber-600 transition-colors">
                         {d.name}
                       </Link>
                     </h3>
-                    <p className="text-sm text-g500">{d.provider} | 月額 {d.monthly}</p>
+                    <p className="text-sm text-gray-500 mt-0.5">
+                      {d.provider} / 月額 <span className="font-bold text-amber-600">{d.monthly}</span>
+                    </p>
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-4 mb-4">
-                  <div className="bg-blue-light rounded-xl p-4">
-                    <p className="font-bold text-blue text-sm mb-2">主な機能</p>
-                    <ul className="text-sm text-g700 space-y-1">
+                {/* Feature / Pros / Cons grid */}
+                <div className="grid md:grid-cols-3 gap-4 mb-5">
+                  <div className="bg-amber-50 rounded-xl p-4">
+                    <p className="font-bold text-amber-700 text-sm mb-2">主な機能</p>
+                    <ul className="text-sm text-gray-700 space-y-1">
                       {d.features.map((f, i) => (
-                        <li key={i}>・{f}</li>
+                        <li key={i} className="flex items-start gap-1.5">
+                          <span className="text-amber-400 mt-0.5 flex-shrink-0">--</span>
+                          <span>{f}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-green-light rounded-xl p-4">
-                    <p className="font-bold text-green-dark text-sm mb-2">メリット</p>
-                    <ul className="text-sm text-g700 space-y-1">
+                  <div className="bg-emerald-50 rounded-xl p-4">
+                    <p className="font-bold text-emerald-700 text-sm mb-2">メリット</p>
+                    <ul className="text-sm text-gray-700 space-y-1">
                       {d.pros.map((p, i) => (
-                        <li key={i}>・{p}</li>
+                        <li key={i} className="flex items-start gap-1.5">
+                          <span className="text-emerald-400 mt-0.5 flex-shrink-0">--</span>
+                          <span>{p}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-orange-light rounded-xl p-4">
-                    <p className="font-bold text-orange-dark text-sm mb-2">デメリット</p>
-                    <ul className="text-sm text-g700 space-y-1">
+                  <div className="bg-rose-50 rounded-xl p-4">
+                    <p className="font-bold text-rose-600 text-sm mb-2">デメリット</p>
+                    <ul className="text-sm text-gray-700 space-y-1">
                       {d.cons.map((c, i) => (
-                        <li key={i}>・{c}</li>
+                        <li key={i} className="flex items-start gap-1.5">
+                          <span className="text-rose-300 mt-0.5 flex-shrink-0">--</span>
+                          <span>{c}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
                 </div>
 
+                {/* Footer */}
                 <div className="flex flex-wrap items-center gap-3">
-                  <span className="tag-pill bg-g100 text-g700">おすすめ: {d.recommend}</span>
-                  <Link href={d.slug} className="btn-primary text-sm py-2 px-4">
+                  <span className="inline-block rounded-full bg-amber-50 border border-amber-200 text-gray-700 text-xs font-semibold px-3 py-1">
+                    おすすめ: {d.recommend}
+                  </span>
+                  <Link
+                    href={d.slug}
+                    className="inline-flex items-center justify-center gap-1 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm py-2 px-5 transition-all no-underline"
+                  >
                     詳細レビューを見る
                   </Link>
                 </div>
@@ -274,172 +345,180 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-g50 py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="section-title section-title-center">利用者の声</h2>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {[
-              { author: '小学1年生の保護者', rating: 5, date: '2026年3月', text: 'みてねみまもりGPSはバッテリーが1ヶ月以上持つので、月1回の充電で済んでいます。ランドセルに入れっぱなしで手間いらず。共有時に認証コードが必要な仕組みもセキュリティ面で安心です。' },
-              { author: '習い事送迎中の保護者', rating: 5, date: '2026年2月', text: 'BoTトークのAI行動学習で到着予測が正確になり、お迎えのタイミングがぴったり合うようになりました。見守りウォレットも使い始めて、おつかいの練習にも役立っています。' },
-              { author: '兄弟2人に利用中', rating: 4, date: '2026年2月', text: 'あんしんウォッチャーは2台目の月額が無料なので、兄弟で持たせても月539円。都市部では基地局測位のおかげか安定して位置が取れています。オリコン満足度1位も納得の使いやすさです。' },
-              { author: '利用歴半年のユーザー', rating: 4, date: '2026年1月', text: 'みてねGPSのトーク機能で「迎えに来て」と音声メッセージが届くのが便利です。ただ、位置が隣の家あたりにずれることがたまにあり、30mほどの誤差は感じます。' },
-            ].map((r, i) => (
-              <div key={i} className="card-hover p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-blue">{r.author}</span>
-                    <span className="text-xs text-g400">{r.date}</span>
-                  </div>
-                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
-                </div>
-                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-g400 mt-4 text-center">※口コミはApp Store・Google Playの投稿を参考に要約・再構成したものです</p>
-          <p className="text-xs text-g400 mt-1 text-center">
-            出典: <a href="https://apps.apple.com/jp/app/id1535156868" className="underline" target="_blank" rel="noopener noreferrer">みてねみまもりGPS（App Store）</a> / <a href="https://apps.apple.com/jp/app/id1216688438" className="underline" target="_blank" rel="noopener noreferrer">BoTトーク（App Store）</a>
+      {/* ===== 4. 3 Steps Section ===== */}
+      <section className="bg-white py-14">
+        <div className="mx-auto max-w-4xl px-4">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-3">
+            かんたん3ステップで選ぶ
+          </h2>
+          <p className="text-center text-gray-500 mb-10 text-sm">
+            初めてでも迷わない、シンプルな選び方
           </p>
-        </div>
-      </section>
 
-      {/* Campaign Info */}
-      <section className="py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="section-title section-title-center">最新キャンペーン情報【2026年4月】</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: 'みてねみまもりGPS', info: '本体価格2,904円（税込）で業界最安級', color: 'bg-blue-light' },
-              { name: 'あんしんウォッチャー', info: '2台目月額無料キャンペーン継続中', color: 'bg-green-light' },
-              { name: 'BoTトーク', info: '見守りウォレット新機能追加', color: 'bg-orange-light' },
-            ].map((c) => (
-              <div key={c.name} className={`${c.color} rounded-xl p-6`}>
-                <h3 className="font-bold text-g800 mb-2">{c.name}</h3>
-                <p className="text-sm text-g700">{c.info}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-g400 mt-4 text-center">※各社の最新情報は公式サイトでご確認ください</p>
-        </div>
-      </section>
-
-      {/* Purpose Guide */}
-      <section id="purpose" className="bg-g50 py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="section-title section-title-center">目的別クイックガイド</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: '💰',
-                title: '安くGPSを持たせたい',
-                desc: '月額528円〜のみてねみまもりGPSやBoTトークがおすすめ。2台目無料のあんしんウォッチャーも兄弟利用にお得。',
-                link: '/review/mitene/',
-                linkText: 'みてねみまもりGPSを見る',
+                step: 1,
+                icon: '/icon-guide.png',
+                iconAlt: 'ガイドアイコン',
+                title: '目的を決める',
+                desc: '位置確認だけ？トークも必要？通話まで欲しい？お子さまの年齢や生活に合わせて、必要な機能を整理しましょう。',
               },
               {
-                icon: '💬',
-                title: '子供と話せるGPSが欲しい',
-                desc: 'トーク機能付きならみてねトークPlusやBoTトーク。通話までしたいならトヨタのSayuUがおすすめ。',
-                link: '/review/bot-talk/',
-                linkText: 'BoTトークを見る',
+                step: 2,
+                icon: '/icon-compare.png',
+                iconAlt: '比較アイコン',
+                title: '比較する',
+                desc: '月額料金・バッテリー・測位精度など、重視するポイントで各機種を比較。当サイトの比較表が便利です。',
               },
               {
-                icon: '🛡️',
-                title: '防犯・SOS機能重視',
-                desc: 'SOSボタン搭載のソラノメがおすすめ。緊急時にボタンひとつで保護者に通知できます。',
-                link: '/review/soranome/',
-                linkText: 'ソラノメを見る',
-              },
-              {
-                icon: '🎒',
-                title: '入学準備として',
-                desc: '初めてのGPSなら利用者数No.1のみてねみまもりGPS。シンプル操作で子供でも安心。',
-                link: '/review/mitene/',
-                linkText: 'みてねみまもりGPSを見る',
-              },
-              {
-                icon: '🚗',
-                title: '交通安全が心配',
-                desc: 'トヨタのSayuUは左右確認検知・走行検知など交通安全に特化。通学路の安全を見守ります。',
-                link: '/review/sayuu/',
-                linkText: 'SayuUを見る',
-              },
-              {
-                icon: '👨‍👩‍👧‍👦',
-                title: '大家族で見守りたい',
-                desc: 'まもサーチなら最大25人で見守り可能。祖父母や親戚も一緒にお子さまを見守れます。',
-                link: '/review/mamosearch/',
-                linkText: 'まもサーチを見る',
+                step: 3,
+                icon: '/icon-shield.png',
+                iconAlt: 'シールドアイコン',
+                title: '安心して購入',
+                desc: '全機種に解約金なし・最低利用期間なし。合わなければいつでも変更できるので、まずは試してみましょう。',
               },
             ].map((item) => (
-              <div key={item.title} className="card-hover p-6">
-                <p className="text-3xl mb-3">{item.icon}</p>
-                <h3 className="text-lg font-bold text-g800 mb-2">{item.title}</h3>
-                <p className="text-sm text-g600 mb-4">{item.desc}</p>
-                <Link href={item.link} className="text-blue text-sm font-semibold no-underline hover:underline">
-                  {item.linkText} &rarr;
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5 Steps Guide */}
-      <section id="guide" className="py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="section-title section-title-center">子供用GPS 選び方5ステップ</h2>
-          <div className="space-y-6 max-w-3xl mx-auto">
-            {[
-              { step: 1, title: '目的を明確にする', desc: '位置確認だけ？トークも必要？通話まで欲しい？お子さまの年齢や生活環境に合わせて、必要な機能を整理しましょう。' },
-              { step: 2, title: '月額料金を比較する', desc: '月額528円〜1,210円まで幅があります。トーク機能の有無で料金が変わる機種もあるので、必要な機能と予算のバランスを確認。' },
-              { step: 3, title: 'バッテリー持ちを確認する', desc: '充電頻度はストレスに直結。最大2ヶ月持つ機種もあれば3日間の機種も。お子さまに充電習慣をつけられるかも考慮。' },
-              { step: 4, title: '測位精度と通信品質を比較する', desc: 'GPS+Wi-Fi+基地局の複合測位が主流。au回線、SoftBank回線など通信会社の違いもエリアカバーに影響します。' },
-              { step: 5, title: '実際の口コミを参考にする', desc: '公式情報だけでなく、実際に使っている保護者の口コミも参考に。アプリの使いやすさや位置精度の実感は口コミが頼りです。' },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-4 items-start card-hover p-5">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-blue text-white flex items-center justify-center font-extrabold">
+              <div
+                key={item.step}
+                className="flex flex-col items-center text-center bg-[#FFFBF0] rounded-2xl p-8 border border-amber-100"
+              >
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-500 text-white font-black text-sm mb-4">
                   {item.step}
                 </span>
-                <div>
-                  <h3 className="font-bold text-g800 mb-1">{item.title}</h3>
-                  <p className="text-sm text-g600">{item.desc}</p>
-                </div>
+                <Image
+                  src={item.icon}
+                  alt={item.iconAlt}
+                  width={64}
+                  height={64}
+                  className="mb-4"
+                />
+                <h3 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="bg-g50 py-12">
+      {/* ===== 5. Category Navigation ===== */}
+      <section className="bg-[#FFFBF0] py-14">
+        <div className="mx-auto max-w-5xl px-4">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-10">
+            カテゴリから探す
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {[
+              {
+                title: 'レビュー',
+                desc: '各機種の詳細レビュー',
+                href: '/review/mitene/',
+                bgColor: 'bg-amber-50',
+                borderColor: 'border-amber-200',
+                textColor: 'text-amber-700',
+              },
+              {
+                title: '比較',
+                desc: '機種同士を徹底比較',
+                href: '/compare/',
+                bgColor: 'bg-emerald-50',
+                borderColor: 'border-emerald-200',
+                textColor: 'text-emerald-700',
+              },
+              {
+                title: '知識',
+                desc: 'GPS端末の基礎知識',
+                href: '/knowledge/how-to-choose/',
+                bgColor: 'bg-sky-50',
+                borderColor: 'border-sky-200',
+                textColor: 'text-sky-700',
+              },
+              {
+                title: '目的別',
+                desc: '目的に合った端末選び',
+                href: '/purpose/',
+                bgColor: 'bg-rose-50',
+                borderColor: 'border-rose-200',
+                textColor: 'text-rose-600',
+              },
+            ].map((cat) => (
+              <Link
+                key={cat.title}
+                href={cat.href}
+                className={`${cat.bgColor} ${cat.borderColor} border rounded-2xl p-6 text-center no-underline transition-all hover:-translate-y-1 hover:shadow-md`}
+              >
+                <h3 className={`text-lg font-bold ${cat.textColor} mb-1`}>{cat.title}</h3>
+                <p className="text-xs text-gray-500">{cat.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 6. Latest Articles ===== */}
+      <section className="bg-white py-14">
+        <div className="mx-auto max-w-5xl px-4">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-10">
+            お役立ち記事
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {knowledgeArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={article.slug}
+                className="group bg-[#FFFBF0] rounded-xl border border-amber-100 p-5 no-underline transition-all hover:shadow-md hover:border-amber-300"
+              >
+                <p className="text-sm font-bold text-gray-800 group-hover:text-amber-600 transition-colors leading-snug">
+                  {article.title}
+                </p>
+                <span className="inline-block mt-3 text-xs font-semibold text-amber-500">
+                  記事を読む →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 7. CTA Section ===== */}
+      <section className="relative py-16 md:py-20 bg-gradient-to-br from-amber-600 via-amber-500 to-orange-500 text-white text-center overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_50%,white_0%,transparent_70%)]" />
+        <div className="relative z-10 mx-auto max-w-3xl px-4">
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-4 leading-snug">
+            お子さまにぴったりの<br className="sm:hidden" />GPSを見つけましょう
+          </h2>
+          <p className="text-amber-100 mb-8 text-base md:text-lg">
+            13機種の中から、ご家庭の条件に合った最適なGPS端末をお選びいただけます。
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/concierge/"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-amber-700 font-bold px-8 py-4 text-lg transition-all hover:bg-amber-50 hover:-translate-y-0.5 shadow-lg no-underline"
+            >
+              無料診断で選ぶ
+            </Link>
+            <a
+              href="#ranking"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/80 text-white font-bold px-8 py-4 text-lg transition-all hover:bg-white hover:text-amber-700 no-underline"
+            >
+              ランキングをもう一度見る
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 8. FAQ ===== */}
+      <section id="faq" className="bg-[#FFFBF0] py-14">
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="section-title section-title-center">よくある質問</h2>
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-10">
+            よくある質問
+          </h2>
           {faqData.map((faq, i) => (
             <details key={i} className="faq-item">
               <summary>{faq.q}</summary>
               <div className="faq-answer">{faq.a}</div>
             </details>
           ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue to-blue-dark text-white text-center">
-        <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-2xl md:text-3xl font-extrabold mb-4">
-            お子さまにぴったりのGPSを見つけよう
-          </h2>
-          <p className="text-blue-light mb-8">
-            13機種の中から、ご家庭の条件に合った最適なGPS端末をお選びいただけます。
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="#ranking" className="btn-accent">ランキングをもう一度見る</a>
-            <a href="#comparison" className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white px-6 py-3 font-bold text-white no-underline hover:bg-white hover:text-blue transition-colors">
-              比較表を見る
-            </a>
-          </div>
         </div>
       </section>
     </>

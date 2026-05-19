@@ -5,21 +5,21 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供用GPSの5G対応状況｜4Gでも問題ない？',
   description:
-    '子供用GPS端末の5G対応状況を解説。現状の5G対応機種（ほぼなし）、4Gで十分な理由（位置情報は低帯域）、今後の展望、購入時に気をつけること（3G停波の影響）まで網羅。',
-  keywords: ['子供GPS', '5G', '対応', '4G', '3G停波', '通信規格', 'LTE'],
+    '子供用GPS端末の5G対応状況を解説。現状5G対応機種はほぼなし、4G（LTE）で十分な理由、3G停波の影響、今後の5G展望まで詳しく紹介します。',
+  keywords: ['子供GPS', '5G', '対応', '4G', 'LTE', '3G停波'],
   openGraph: {
     title: '子供用GPSの5G対応状況｜4Gでも問題ない？',
-    description: '子供用GPS端末の5G対応状況と、4Gで十分な理由を解説。3G停波の影響と購入時の注意点も。',
+    description: '子供用GPSの5G対応状況を解説。4Gで十分な理由と3G停波の影響を紹介。',
   },
 };
 
 const faqData = [
-  { q: '子供用GPSに5G対応は必要ですか？', a: '現時点では不要です。GPS端末が送信するデータは位置情報（緯度・経度）とタイムスタンプ程度で、データ量は非常に小さいため、4G/LTEで十分対応できます。5Gの高速大容量通信は、動画ストリーミングや大量データ転送向けの技術であり、GPS見守りには不要な性能です。' },
-  { q: '5G対応のGPS端末はありますか？', a: '2026年5月時点で、5G対応の子供用GPS端末はほぼ存在しません。腕時計型のmyFirst Fone R2も4G/LTE対応です。5G対応にするとチップセットのコストが上がり、バッテリー消費も増えるため、メーカーにとっても子供用GPSに5Gを搭載するメリットは少ないのが現状です。' },
-  { q: '4Gはいつまで使えますか？', a: '4G/LTEは2030年代後半まで維持されると予想されています。3Gの停波完了が2026年3月（au）・2026年度中（SoftBank）で、4Gはこれから少なくとも10年以上は利用可能です。現在4G対応のGPS端末を購入しても、小学校卒業まで問題なく使えます。' },
-  { q: '3G停波で使えなくなるGPS端末はありますか？', a: '2023年以前に購入した古い機種の中には、3G通信に依存しているものがあります。auの3Gは2022年3月に停波済み、ソフトバンクの3Gは2024年4月に停波済み、docomoの3Gは2026年3月に停波予定です。2024年以降に発売された機種はすべて4G/LTE対応のため、心配は不要です。' },
-  { q: '5GになるとGPSの精度は上がりますか？', a: 'GPSの精度は衛星からの電波受信品質で決まるため、通信回線が5Gになっても位置精度は変わりません。ただし、5G基地局の位置情報を補助的に使うことで、Wi-Fi測位と同様に屋内での位置推定精度が向上する可能性は将来的にあります。' },
-  { q: '今GPS端末を買っても損しませんか？', a: '損しません。4G/LTE対応の端末は今後10年以上使える見通しです。また、GPS端末の平均利用年数は2〜3年（バッテリー寿命）のため、現在購入した端末を使い切る頃に最新技術の端末に買い替えるのが合理的です。「5G対応を待ってから買う」よりも、今すぐ導入して安全を確保する方がメリットが大きいです。' },
+  { q: '子供用GPSに5G対応機種はありますか？', a: '2026年現在、主要な子供用GPS端末で5Gに対応した機種はほぼありません。みてねみまもりGPS、BoTトーク、あんしんウォッチャー、まもサーチなどの主要機種はすべて4G（LTE）通信を使用しています。GPS端末が送受信するデータ量は非常に少ないため、5Gの超高速通信は不要です。' },
+  { q: '4GのGPS端末で位置精度に問題はありませんか？', a: '全く問題ありません。GPS端末の位置精度は通信規格ではなく、GPS衛星・Wi-Fi・基地局の測位精度で決まります。4Gでも5Gでも、測位した位置情報をサーバーに送信する速度には体感差はありません。4Gの通信速度でも、位置情報のデータ（数KB程度）は1秒以内に送信できます。' },
+  { q: '3G停波で使えなくなるGPS端末はありますか？', a: 'はい、古い世代のGPS端末で3G回線のみに対応していた機種は、3G停波により使用できなくなります。auは2022年3月、ソフトバンクは2024年4月に3Gを停波済み、ドコモは2026年3月末に停波しました。2024年以降に発売された機種はすべて4G対応なので、新しい機種であれば心配不要です。' },
+  { q: '5G対応のGPS端末が出たら買い替えるべきですか？', a: '5G対応というだけで買い替える必要はありません。GPS端末のデータ通信量は非常に少なく、4Gで十分な速度が出ます。買い替えの判断基準は、5G対応よりもバッテリー性能、測位精度、アプリの使いやすさなど、実用面で比較するのがおすすめです。' },
+  { q: '将来4Gが停波する可能性はありますか？', a: '4G（LTE）の停波は当面予定されていません。5Gのエリア拡大は進んでいますが、4Gは2030年代後半まで維持される見込みです。各キャリアも4Gと5Gの併用運用を続ける方針を示しています。現在4G対応のGPS端末を購入しても、少なくとも今後10年以上は問題なく使えるでしょう。' },
+  { q: 'GPS端末の通信速度が遅いと感じることはありますか？', a: 'ほとんどの場合、通信速度の遅さを感じることはありません。GPS端末が送信するデータは位置情報（緯度・経度）のみで数KB程度です。4G回線であれば1秒以内に送信が完了します。ただし、電波状況が悪い場所（地下深層部や山間部）では、通信規格に関わらず位置情報の更新に遅延が生じることがあります。' },
 ];
 
 const faqJsonLd = {
@@ -32,40 +32,41 @@ const faqJsonLd = {
   })),
 };
 
-const networkData = [
-  { name: 'みてねみまもりGPS', network: '4G/LTE', carrier: 'docomo', status: '問題なし（2030年代後半まで利用可能）' },
-  { name: 'あんしんウォッチャー', network: '4G/LTE', carrier: 'au', status: '問題なし（2030年代後半まで利用可能）' },
-  { name: 'BoTトーク', network: '4G/LTE', carrier: 'docomo', status: '問題なし（2030年代後半まで利用可能）' },
-  { name: 'どこかなGPS2', network: '4G/LTE', carrier: 'SoftBank', status: '問題なし（2030年代後半まで利用可能）' },
-  { name: 'まもサーチ', network: '4G/LTE', carrier: 'docomo', status: '問題なし（2030年代後半まで利用可能）' },
-  { name: 'soranome', network: '4G/LTE', carrier: 'docomo', status: '問題なし（2030年代後半まで利用可能）' },
-  { name: 'myFirst Fone R2', network: '4G/LTE', carrier: 'eSIM', status: '問題なし（2030年代後半まで利用可能）' },
+const generationComparison = [
+  { gen: '3G', speed: '最大14Mbps', status: '停波済み', gpsUse: '使用不可', note: 'au: 2022年3月停波、SB: 2024年4月停波、ドコモ: 2026年3月停波' },
+  { gen: '4G (LTE)', speed: '最大1Gbps', status: '現在主流', gpsUse: '最適', note: '全キャリア人口カバー率99%以上。GPS端末の主流規格。' },
+  { gen: '5G', speed: '最大20Gbps', status: '拡大中', gpsUse: '対応機種なし', note: 'GPS端末には過剰スペック。対応チップのコスト・消費電力が課題。' },
 ];
 
-const why4gEnough = [
-  { icon: '📡', title: 'GPS端末のデータ量は極めて少ない', desc: 'GPS端末が送信するデータは、位置情報（緯度・経度）、タイムスタンプ、バッテリー残量程度で、1回の通信で数百バイト〜数キロバイト程度です。これは4Gどころか2G（GSM）でも十分送信できるデータ量。5Gの超高速通信はまったく不要です。' },
-  { icon: '🔋', title: '5Gはバッテリーを大量消費する', desc: '5G通信は4Gと比べてバッテリー消費が大きくなります。スマートフォンですら5G利用時のバッテリー持ちが課題になっているのに、小型のGPS端末に5Gを搭載するとバッテリーが一日持たない可能性があります。子供用GPSにとってバッテリー持ちは最重要スペックの一つです。' },
-  { icon: '💰', title: '5Gチップはコストが高い', desc: '5G対応のモデムチップは4G対応チップよりも高価です。端末価格が数千円〜1万円台の子供用GPSに5Gチップを搭載すると、端末価格が大幅に上昇し、コスパが著しく悪化します。' },
-  { icon: '📶', title: '5Gエリアはまだ限定的', desc: '2026年時点で、5Gのエリアカバー率はまだ限定的です。特にSub6やミリ波は建物内や住宅街では電波が届きにくい場合があります。子供の通学路が5Gエリア外の可能性も高く、4Gの方が安定した通信が期待できます。' },
+const whyLteEnough = [
+  { icon: '📊', title: 'データ量が極めて少ない', desc: 'GPS端末が送信するデータは位置情報（緯度・経度）のみで1回数KB。1日の通信量は数MB程度。4Gの速度で全く問題ありません。動画やアプリのダウンロードをするわけではないため、高速通信は不要です。' },
+  { icon: '🔋', title: 'バッテリー消費を抑えられる', desc: '5G通信は4Gに比べて消費電力が大きい傾向があります。子供用GPS端末はバッテリー持続時間が重要なため、省電力な4G通信の方が適しています。4Gなら充電間隔を長く保てます。' },
+  { icon: '💰', title: 'コストを抑えられる', desc: '5G対応チップは4G対応チップよりも高価です。子供用GPS端末は手頃な価格が求められるため、4G対応に抑えることでコストパフォーマンスの高い製品を提供できます。' },
+  { icon: '📡', title: 'カバーエリアが広い', desc: '4G（LTE）は人口カバー率99%以上。5Gはまだ都市部中心でカバーエリアが限定的です。通学路全体をカバーするには、現時点では4Gの方が確実です。' },
 ];
 
-const timeline3g = [
-  { carrier: 'au（KDDI）', shutdown: '2022年3月31日', status: '停波済み', impact: 'au 3G対応の旧型GPS端末は使用不可。現行モデルは全て4G対応。' },
-  { carrier: 'ソフトバンク', shutdown: '2024年4月15日', status: '停波済み', impact: 'SoftBank 3G対応の旧型GPS端末は使用不可。どこかなGPS2は4G対応で問題なし。' },
-  { carrier: 'NTTドコモ', shutdown: '2026年3月31日', status: '停波予定', impact: 'docomo 3G対応の非常に古い端末（2020年以前）は停波後に使用不可に。2021年以降の端末は4G対応。' },
+const threeGShutdown = [
+  { carrier: 'au (KDDI)', shutdownDate: '2022年3月31日', impact: 'au 3G回線のみ対応の旧機種は使用不可に。' },
+  { carrier: 'ソフトバンク', shutdownDate: '2024年4月15日', impact: 'ソフトバンク 3G回線のみ対応の旧機種は使用不可に。' },
+  { carrier: 'ドコモ', shutdownDate: '2026年3月31日', impact: 'ドコモ 3G（FOMA）回線のみ対応の旧機種は使用不可に。' },
 ];
 
 const futureOutlook = [
-  { period: '2026〜2028年', outlook: '子供用GPSの5G対応はほぼなし。4G/LTEが主流。メーカーはバッテリー性能や精度向上に注力。' },
-  { period: '2028〜2030年', outlook: '5G対応の子供用スマートウォッチが登場する可能性。ただし、シンプルなGPS端末は引き続き4G/LTEが主流。' },
-  { period: '2030年以降', outlook: '4G/LTEの縮小に合わせて、5G対応へ移行が進む見込み。ただし、低消費電力の5G規格（RedCap等）が普及してからになる。' },
+  { year: '2026年〜', outlook: '子供用GPS端末は引き続き4G（LTE）が主流。5G対応機種は登場していない。' },
+  { year: '2027年〜2028年', outlook: '5G対応チップの低価格化が進む可能性。腕時計型など高機能タイプから5G対応が始まる可能性あり。' },
+  { year: '2029年〜2030年', outlook: '5Gエリアの拡大に伴い、5G対応GPS端末が一般化する可能性。ただし4Gも併用で利用可能。' },
+  { year: '2030年代後半', outlook: '4G停波の議論が始まる可能性。ただし確定ではなく、当面は4G/5G併用が続く見込み。' },
 ];
 
-const purchaseTips = [
-  { title: '4G/LTE対応を確認する', desc: '2024年以降に発売された機種であれば、まず4G/LTE対応です。中古購入や旧モデルの在庫品を検討している場合は、必ず対応通信規格を確認してください。3G専用モデルは絶対に避けましょう。' },
-  { title: '5G対応を待つ必要はない', desc: '子供の安全は「今」確保すべきものです。5G対応のGPS端末を待って購入を先延ばしにするメリットはありません。4Gは今後10年以上使えます。' },
-  { title: '通信キャリアのエリアを確認', desc: '端末が使用するキャリア（docomo/au/SoftBank）の4Gエリアが、お住まいの地域と通学路をカバーしているか確認しましょう。都市部であればどのキャリアでも問題ありません。' },
-  { title: 'バッテリー性能を重視する', desc: '通信規格よりもバッテリー持ちの方が実用面では重要です。5G対応でバッテリーが1日しか持たない端末よりも、4G対応で1週間持つ端末の方が、子供用GPSとしては圧倒的に実用的です。' },
+const deviceStatus = [
+  { name: 'みてねみまもりGPS', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'BoTトーク', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'あんしんウォッチャー', network: '4G (au LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'どこかなGPS2', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'まもサーチ', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'soranome', network: '4G (ドコモ LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'myFirst Fone R2', network: '4G (ドコモ/ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'coneco', network: '4G (ドコモ LTE)', fiveG: '非対応', status: '問題なし' },
 ];
 
 export default function FiveGCompatibilityPage() {
@@ -77,111 +78,137 @@ export default function FiveGCompatibilityPage() {
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-orange text-white">5G対応</span>
-            <span className="tag-pill bg-blue text-white">通信規格</span>
+            <span className="tag-pill bg-blue text-white">5G・通信規格</span>
+            <span className="tag-pill bg-orange text-white">4G/LTE</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供用GPSの5G対応状況
           </h1>
-          <p className="text-g600 text-lg">4Gでも問題ない？｜3G停波の影響と今後の展望</p>
+          <p className="text-g600 text-lg">4Gでも問題ない？3G停波の影響と今後の展望</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <p className="text-g600 mb-8">
-            「子供用GPSは5Gに対応しているの？」「4Gの端末を買っても大丈夫？」という疑問をお持ちの方へ。結論から言うと、子供用GPS端末に5G対応は現時点で不要であり、4G/LTEで全く問題ありません。このページでは、現状の5G対応状況、4Gで十分な理由、3G停波の影響、今後の展望、購入時の注意点を詳しく解説します。
+            「子供用GPSは5Gに対応していないと不安」と思う方もいるかもしれません。結論から言うと、<strong>子供用GPSに5Gは不要で、4G（LTE）で全く問題ありません</strong>。このページでは、現状の5G対応状況、4Gで十分な理由、3G停波の影響、今後の展望を詳しく解説します。
           </p>
 
-          <h2 className="section-title">主要GPS端末の通信規格一覧</h2>
+          <h2 className="section-title">結論：子供用GPSに5Gは不要</h2>
+          <div className="card-hover p-6 mb-8 border-l-4 border-orange">
+            <p className="text-g600 mb-3">
+              子供用GPS端末が送受信するデータは<strong>位置情報（緯度・経度）のみで1回あたり数KB</strong>程度です。
+              これは4G（LTE）の通信速度で1秒以内に送信が完了するデータ量であり、5Gの超高速通信は全く必要ありません。
+            </p>
+            <p className="text-g600">
+              むしろ5G対応にすると、チップのコスト増加・バッテリー消費の増大というデメリットがあります。
+              子供用GPS端末にとっては、<strong>4G（LTE）が最もバランスの良い通信規格</strong>です。
+            </p>
+          </div>
+
+          <h2 className="section-title">通信規格の世代比較</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-blue-light">
-                  <th className="py-3 px-3 text-left font-bold text-g800">機種名</th>
-                  <th className="py-3 px-3 text-center font-bold text-g800">通信規格</th>
-                  <th className="py-3 px-3 text-center font-bold text-g800">キャリア</th>
-                  <th className="py-3 px-3 text-left font-bold text-g800">利用可能状況</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">世代</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">最大速度</th>
+                  <th className="py-3 px-3 text-center font-bold text-g800">ステータス</th>
+                  <th className="py-3 px-3 text-center font-bold text-g800">GPS利用</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">備考</th>
                 </tr>
               </thead>
               <tbody>
-                {networkData.map((n) => (
-                  <tr key={n.name} className="border-b border-g100">
-                    <td className="py-3 px-3 font-semibold text-g700">{n.name}</td>
-                    <td className="py-3 px-3 text-center text-g600">{n.network}</td>
-                    <td className="py-3 px-3 text-center text-g600">{n.carrier}</td>
-                    <td className="py-3 px-3 text-g600">{n.status}</td>
+                {generationComparison.map((g) => (
+                  <tr key={g.gen} className="border-b border-g100">
+                    <td className="py-3 px-3 font-semibold text-g700">{g.gen}</td>
+                    <td className="py-3 px-3 text-g600">{g.speed}</td>
+                    <td className="py-3 px-3 text-center text-g600">{g.status}</td>
+                    <td className="py-3 px-3 text-center text-g600">{g.gpsUse}</td>
+                    <td className="py-3 px-3 text-g600">{g.note}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="bg-blue-light rounded-xl p-5 mb-8">
-            <h3 className="font-bold text-g800 mb-2">結論: 全機種4G/LTE対応。5G対応機種は現時点でゼロ。</h3>
-            <p className="text-sm text-g600">
-              2026年5月時点で、5G対応の子供用GPS端末は市場に存在しません。全ての主要機種が4G/LTE対応であり、今後10年以上問題なく使用できます。
-            </p>
-          </div>
-
-          <h2 className="section-title">4Gで十分な4つの理由</h2>
-          <div className="space-y-4 mb-8">
-            {why4gEnough.map((item) => (
+          <h2 className="section-title">4G（LTE）で十分な4つの理由</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            {whyLteEnough.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-3xl flex-shrink-0">{item.icon}</p>
+                <p className="text-2xl">{item.icon}</p>
                 <div>
-                  <h3 className="font-bold text-g800 text-lg mb-1">{item.title}</h3>
+                  <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <h2 className="section-title">3G停波スケジュールと影響</h2>
+          <h2 className="section-title">機種別の通信規格対応状況</h2>
+          <p className="text-g600 mb-4">
+            2026年現在、主要な子供用GPS端末はすべて4G（LTE）対応です。5G対応機種は存在しません。
+          </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-blue-light">
-                  <th className="py-3 px-3 text-left font-bold text-g800">キャリア</th>
-                  <th className="py-3 px-3 text-center font-bold text-g800">停波日</th>
-                  <th className="py-3 px-3 text-center font-bold text-g800">ステータス</th>
-                  <th className="py-3 px-3 text-left font-bold text-g800">GPS端末への影響</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">機種名</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">通信規格</th>
+                  <th className="py-3 px-3 text-center font-bold text-g800">5G</th>
+                  <th className="py-3 px-3 text-center font-bold text-g800">利用状況</th>
                 </tr>
               </thead>
               <tbody>
-                {timeline3g.map((t) => (
-                  <tr key={t.carrier} className="border-b border-g100">
-                    <td className="py-3 px-3 font-semibold text-g700">{t.carrier}</td>
-                    <td className="py-3 px-3 text-center text-g600">{t.shutdown}</td>
-                    <td className={`py-3 px-3 text-center font-semibold ${t.status === '停波済み' ? 'text-orange' : 'text-blue'}`}>{t.status}</td>
-                    <td className="py-3 px-3 text-g600">{t.impact}</td>
+                {deviceStatus.map((d) => (
+                  <tr key={d.name} className="border-b border-g100">
+                    <td className="py-3 px-3 font-semibold text-g700">{d.name}</td>
+                    <td className="py-3 px-3 text-g600">{d.network}</td>
+                    <td className="py-3 px-3 text-center text-g600">{d.fiveG}</td>
+                    <td className="py-3 px-3 text-center text-g600">{d.status}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
+          <h2 className="section-title">3G停波の影響</h2>
+          <p className="text-g600 mb-4">
+            3Gサービスは各キャリアで順次終了しています。古い世代のGPS端末で3G回線のみに対応していた機種は使用できなくなっています。
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-blue-light">
+                  <th className="py-3 px-3 text-left font-bold text-g800">キャリア</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">3G停波日</th>
+                  <th className="py-3 px-3 text-left font-bold text-g800">影響</th>
+                </tr>
+              </thead>
+              <tbody>
+                {threeGShutdown.map((t) => (
+                  <tr key={t.carrier} className="border-b border-g100">
+                    <td className="py-3 px-3 font-semibold text-g700">{t.carrier}</td>
+                    <td className="py-3 px-3 text-g600">{t.shutdownDate}</td>
+                    <td className="py-3 px-3 text-g600">{t.impact}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-blue-light rounded-xl p-5 mb-8">
+            <h3 className="font-bold text-g800 mb-2">お使いのGPS端末が3G専用かどうかの確認方法</h3>
+            <p className="text-sm text-g600">
+              端末のパッケージや取扱説明書に「LTE対応」「4G対応」の記載があれば問題ありません。「3G」「FOMA」「CDMA 1X」のみの記載で「LTE」「4G」の表記がない場合は、3G専用の可能性があります。不明な場合はメーカーのサポートに問い合わせましょう。2020年以降に発売された機種であれば、ほぼすべて4G対応です。
+            </p>
+          </div>
+
           <h2 className="section-title">今後の展望</h2>
           <div className="space-y-4 mb-8">
             {futureOutlook.map((f) => (
-              <div key={f.period} className="card-hover p-5">
-                <h3 className="font-bold text-g800 mb-1">{f.period}</h3>
+              <div key={f.year} className="card-hover p-5">
+                <h3 className="font-bold text-g800 mb-1">{f.year}</h3>
                 <p className="text-sm text-g600">{f.outlook}</p>
-              </div>
-            ))}
-          </div>
-
-          <h2 className="section-title">購入時に気をつけること</h2>
-          <div className="space-y-4 mb-8">
-            {purchaseTips.map((tip, i) => (
-              <div key={tip.title} className="flex gap-4 items-start card-hover p-4">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm">
-                  {i + 1}
-                </span>
-                <div>
-                  <h3 className="font-bold text-g800 text-sm">{tip.title}</h3>
-                  <p className="text-sm text-g600">{tip.desc}</p>
-                </div>
               </div>
             ))}
           </div>
@@ -194,16 +221,23 @@ export default function FiveGCompatibilityPage() {
             </details>
           ))}
 
+          <div className="mt-10 flex flex-wrap gap-3 text-sm">
+            <Link href="/knowledge/gps-range/" className="text-blue hover:underline">通信範囲と届く距離</Link>
+            <Link href="/knowledge/how-to-choose/" className="text-blue hover:underline">GPS選び方ガイド</Link>
+            <Link href="/compare/carrier/" className="text-blue hover:underline">キャリア別比較</Link>
+            <Link href="/knowledge/troubleshoot/" className="text-blue hover:underline">トラブルシューティング</Link>
+          </div>
+
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">4G対応のGPSで今すぐ見守りを始めよう</h2>
-            <p className="text-g600 mb-6 text-sm">5Gを待つ必要はありません。4G/LTEで十分な性能を発揮します。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">4Gで安心、今すぐ見守りを始めよう</h2>
+            <p className="text-g600 mb-6 text-sm">5Gを待つ必要はありません。現在の4G対応GPS端末で十分な見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/compare/price/" className="btn-primary">月額料金比較</Link>
+              <Link href="/compare/2026-ranking/" className="btn-primary">2026年おすすめランキング</Link>
               <Link href="/knowledge/how-to-choose/" className="btn-accent">GPS選び方ガイド</Link>
             </div>
           </div>
 
-          <p className="text-xs text-g400 mt-6 text-center">最終更新: 2026年5月</p>
+          <p className="text-xs text-g400 mt-8 text-center">最終更新: 2026年5月</p>
         </div>
       </section>
     </>
