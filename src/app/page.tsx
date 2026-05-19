@@ -146,15 +146,23 @@ const faqJsonLd = {
 };
 
 function RankBadge({ rank }: { rank: number }) {
+  const labels: Record<number, string> = { 1: '1st', 2: '2nd', 3: '3rd' };
   const colors: Record<number, string> = {
-    1: 'bg-gradient-to-br from-yellow-400 to-amber-500',
-    2: 'bg-gradient-to-br from-gray-300 to-gray-400',
-    3: 'bg-gradient-to-br from-amber-600 to-amber-700',
+    1: 'from-yellow-400 to-amber-500 ring-yellow-200',
+    2: 'from-gray-300 to-gray-500 ring-gray-200',
+    3: 'from-amber-500 to-amber-700 ring-amber-200',
   };
-  const bg = colors[rank] || 'bg-gradient-to-br from-stone-400 to-stone-500';
+  const bg = colors[rank];
+  if (bg) {
+    return (
+      <div className={`absolute top-3 left-3 z-10 bg-gradient-to-br ${bg} ring-2 rounded-lg px-3 py-1.5 shadow-md`}>
+        <span className="text-white font-extrabold text-xs tracking-wide">{labels[rank]}</span>
+      </div>
+    );
+  }
   return (
-    <div className={`absolute -top-3 -left-3 w-10 h-10 ${bg} rounded-full flex items-center justify-center shadow-lg z-10`}>
-      <span className="text-white font-bold text-sm">{rank}</span>
+    <div className="absolute top-3 left-3 z-10 bg-stone-500 rounded-lg px-3 py-1.5 shadow-md">
+      <span className="text-white font-bold text-xs">{rank}位</span>
     </div>
   );
 }
@@ -285,10 +293,9 @@ export default function HomePage() {
 
                 <div className="flex flex-col md:flex-row">
                   {/* Product screenshot - left side on PC */}
-                  <div className="md:w-80 md:shrink-0 overflow-hidden">
+                  <div className="md:w-80 md:shrink-0 bg-gray-50 flex items-center justify-center">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/${d.ssSlug}.jpg`} alt={`${d.name} 公式サイト`} className="w-full h-48 md:h-full object-cover object-top" />
-                    <p className="text-[10px] text-gray-400 px-2 py-1 text-right bg-gray-50 md:hidden">公式サイトより</p>
+                    <img src={`/${d.ssSlug}.jpg`} alt={`${d.name} 公式サイト`} className="w-full h-48 md:h-auto md:max-h-72 object-contain" />
                   </div>
 
                 <div className="p-6 md:p-8 flex-1">
