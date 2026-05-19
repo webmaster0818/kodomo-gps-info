@@ -60,7 +60,7 @@ const devices = [
   },
   {
     rank: 4,
-    name: 'どこかなGPS2',
+    name: 'みまもりGPS',
     provider: 'ソフトバンク',
     monthly: '528円（税込）',
     talk: '非対応',
@@ -68,7 +68,7 @@ const devices = [
     battery: '最大1.5ヶ月',
     feature: 'ソフトバンク品質・迷子防止',
     slug: '/review/dokokana/',
-    ssSlug: 'ss-dokokana',
+    ssSlug: 'ss-mimamori-gps',
     features: ['ソフトバンク回線で安定通信', '迷子防止通知機能', '移動履歴の自動記録', 'エリア出入り通知', 'コンパクト設計'],
     pros: ['ソフトバンク回線の安定性', '月額528円の低コスト', 'コンパクトで持ちやすい'],
     cons: ['トーク機能なし', '対応エリアがソフトバンク回線依存'],
