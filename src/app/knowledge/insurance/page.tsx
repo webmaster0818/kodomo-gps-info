@@ -36,7 +36,6 @@ const warrantyData = [
   { name: 'みてねみまもりGPS', warranty: '購入後1年', extOption: 'なし', lossCover: '対象外', breakCover: '初期不良のみ無償交換', cost: '無料（標準保証のみ）' },
   { name: 'あんしんウォッチャー', warranty: '購入後1年', extOption: 'あんしん補償（月額165円）', lossCover: '3,300円で交換', breakCover: '3,300円で交換', cost: '月額165円' },
   { name: 'BoTトーク', warranty: '購入後1年', extOption: 'あんしん補償パック', lossCover: '半額で再購入', breakCover: '無償交換（年1回）', cost: '月額220円' },
-  { name: 'どこかなGPS2', warranty: '購入後1年', extOption: 'なし', lossCover: '対象外', breakCover: '初期不良のみ無償', cost: '無料（標準保証のみ）' },
   { name: 'まもサーチ', warranty: '購入後1年', extOption: 'なし', lossCover: '対象外', breakCover: '有償修理', cost: '無料（標準保証のみ）' },
   { name: 'myFirst Fone R2', warranty: '購入後1年', extOption: 'myFirst Care', lossCover: '50%OFFで再購入', breakCover: '無償修理（年2回）', cost: '月額330円' },
 ];

@@ -44,7 +44,6 @@ const devices = [
   { name: 'あんしんウォッチャー', feature: '速度検知機能搭載。時速約40km以上で通知。設定変更可能。', rating: '◎' },
   { name: 'BoTトーク', feature: '移動手段の自動判定（徒歩/車/電車）。AI学習で精度向上。', rating: '◎' },
   { name: 'soranome（ソラノメ）', feature: '速度通知対応。SOS通知と連動で緊急時の対応力が高い。', rating: '○' },
-  { name: 'どこかなGPS2', feature: '移動検知あり。速度通知の細かい設定は非対応。', rating: '△' },
 ];
 
 const useCases = [

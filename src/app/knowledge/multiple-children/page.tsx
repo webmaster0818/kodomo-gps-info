@@ -36,7 +36,6 @@ const appData = [
   { name: 'みてねみまもりGPS', maxDevices: '最大5台', multiView: '対応', familyShare: '最大9人', notification: '端末別設定可', monthlyPerUnit: '528円/台' },
   { name: 'あんしんウォッチャー', maxDevices: '最大5台', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '539円/台（2台目220円）' },
   { name: 'BoTトーク', maxDevices: '最大5台', multiView: '対応', familyShare: '最大10人', notification: '端末別設定可', monthlyPerUnit: '748円/台' },
-  { name: 'どこかなGPS2', maxDevices: '最大4台', multiView: '対応', familyShare: '最大4人', notification: '端末別設定可', monthlyPerUnit: '528円/台' },
   { name: 'まもサーチ', maxDevices: '最大5台', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '528円/台' },
   { name: 'myFirst Fone R2', maxDevices: '最大3台', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '998円/台' },
 ];

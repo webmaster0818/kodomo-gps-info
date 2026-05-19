@@ -127,7 +127,6 @@ export default function IndoorAccuracyPage() {
                   { name: 'ソラノメ', wifi: 'あり', cell: 'あり', accuracy: '50〜100m' },
                   { name: 'あんしんウォッチャー', wifi: 'あり', cell: 'あり', accuracy: '50〜100m' },
                   { name: 'BoTトーク', wifi: 'あり', cell: 'あり', accuracy: '50〜150m' },
-                  { name: 'どこかなGPS', wifi: 'なし', cell: 'あり', accuracy: '100〜500m' },
                   { name: 'myFirst Fone', wifi: 'あり', cell: 'あり', accuracy: '30〜80m' },
                 ].map((row) => (
                   <tr key={row.name} className="border-b border-gray-200">

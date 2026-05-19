@@ -44,7 +44,6 @@ const deviceWaterproof = [
   { name: 'みてねみまもりGPS 第3世代', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約56g' },
   { name: 'BoTトーク', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約50g' },
   { name: 'あんしんウォッチャー', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約53g' },
-  { name: 'どこかなGPS2', rating: 'IP67', rain: '◎', sweat: '○', wash: '○', pool: '△', weight: '約60g' },
   { name: 'まもサーチ', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約36g' },
   { name: 'soranome', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
   { name: 'myFirst Fone R2', rating: 'IP68', rain: '◎', sweat: '◎', wash: '○', pool: '△', weight: '約58g' },

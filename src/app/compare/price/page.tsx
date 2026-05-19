@@ -32,7 +32,6 @@ const priceData = [
   { name: 'BoTトーク', monthly: 528, device: 5280, initial: 0, annual: 11616, twoYear: 17952 },
   { name: 'あんしんウォッチャー', monthly: 539, device: 5680, initial: 0, annual: 12148, twoYear: 18616 },
   { name: 'ソラノメ', monthly: 539, device: 14520, initial: 3300, annual: 10068, twoYear: 30756 },
-  { name: 'どこかなGPS2', monthly: 528, device: 7480, initial: 0, annual: 11616, twoYear: 20152 },
   { name: 'みもり', monthly: 748, device: 8580, initial: 0, annual: 17556, twoYear: 26532 },
   { name: 'まもサーチ', monthly: 539, device: 5280, initial: 0, annual: 11748, twoYear: 18216 },
   { name: 'コネコ', monthly: 480, device: 19800, initial: 0, annual: 5760, twoYear: 31320 },

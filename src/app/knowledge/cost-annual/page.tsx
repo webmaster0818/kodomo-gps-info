@@ -36,7 +36,6 @@ const costData = [
   { name: 'みてねみまもりGPS', initial: 5280, monthly: 528, annual1: 11616, annual2: 17904, annual3: 24192 },
   { name: 'あんしんウォッチャー', initial: 11000, monthly: 539, annual1: 17468, annual2: 23936, annual3: 30404 },
   { name: 'BoTトーク', initial: 5280, monthly: 748, annual1: 14256, annual2: 23232, annual3: 32208 },
-  { name: 'どこかなGPS2', initial: 7480, monthly: 528, annual1: 13816, annual2: 20152, annual3: 26488 },
   { name: 'まもサーチ', initial: 5280, monthly: 528, annual1: 11616, annual2: 17952, annual3: 24288 },
   { name: 'myFirst Fone R2', initial: 26980, monthly: 998, annual1: 38956, annual2: 50932, annual3: 62908 },
 ];

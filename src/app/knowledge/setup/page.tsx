@@ -86,7 +86,6 @@ export default function SetupPage() {
                   { name: 'BoTトーク', ios: '対応', android: '対応', app: 'BoT Home', href: '/review/bot-talk/' },
                   { name: 'あんしんウォッチャー', ios: '対応', android: '対応', app: 'あんしんウォッチャー', href: '/review/anshin-watcher/' },
                   { name: 'まもサーチ', ios: '対応', android: '対応', app: 'まもサーチ', href: '/review/mamosearch/' },
-                  { name: 'どこかなGPS', ios: '対応', android: '対応', app: 'どこかなGPS', href: '/review/dokokana/' },
                   { name: 'SayuU', ios: '対応', android: '対応', app: 'SayuU', href: '/review/sayuu/' },
                 ].map((row) => (
                   <tr key={row.name} className="border-b border-g100">

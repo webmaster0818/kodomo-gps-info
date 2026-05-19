@@ -37,7 +37,6 @@ const sizeData = [
   { name: 'まもサーチ', width: 47, height: 47, depth: 15, weight: 36, type: 'ポケット型', battery: '約1週間', sizeImage: '500円玉約2.5枚分' },
   { name: 'あんしんウォッチャー', width: 50, height: 50, depth: 19, weight: 53, type: 'ポケット型', battery: '約1.5ヶ月', sizeImage: '消しゴム程度' },
   { name: 'BoTトーク', width: 50, height: 50, depth: 21, weight: 46, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
-  { name: 'どこかなGPS2', width: 47, height: 47, depth: 16, weight: 34, type: 'ポケット型', battery: '約1.5週間', sizeImage: '500円玉約2.5枚分' },
   { name: 'soranome', width: 51, height: 51, depth: 15, weight: 39, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
   { name: 'coneco', width: 51, height: 51, depth: 20, weight: 44, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
   { name: 'みもり', width: 54, height: 54, depth: 20, weight: 55, type: 'ポケット型', battery: '約1週間', sizeImage: '名刺の半分程度' },
@@ -55,7 +54,7 @@ const sizeReferences = [
 
 const weightCategories = [
   { category: '超軽量（30g以下）', models: ['みてねみまもりGPS（26g）'], merit: '存在感ゼロ。幼児や低学年に最適。', demerit: 'バッテリー容量が少なめの傾向。' },
-  { category: '軽量（30〜50g）', models: ['どこかなGPS2（34g）', 'まもサーチ（36g）', 'soranome（39g）', 'coneco（44g）', 'BoTトーク（46g）'], merit: 'バッテリーと軽さのバランスが良い。最も選択肢が多い。', demerit: '特になし。最もバランスの良いゾーン。' },
+  { category: '軽量（30〜50g）', models: ['まもサーチ（36g）', 'soranome（39g）', 'coneco（44g）', 'BoTトーク（46g）'], merit: 'バッテリーと軽さのバランスが良い。最も選択肢が多い。', demerit: '特になし。最もバランスの良いゾーン。' },
   { category: '標準（50〜60g）', models: ['あんしんウォッチャー（53g）', 'みもり（55g）', 'myFirst Fone R2（58g）'], merit: 'バッテリー大容量。多機能モデルが多い。', demerit: 'ポケットに入れると少し重さを感じる場合がある。' },
   { category: '重め（100g以上）', models: ['Hamic POCKET L（117g）'], merit: 'スマホ型で画面付き。多機能。', demerit: 'ランドセル推奨。ポケットには不向き。' },
 ];
@@ -64,7 +63,7 @@ const fitCheck = [
   { location: 'ランドセル前ポケット', fit: '全機種OK', detail: '一般的なランドセルの前ポケット（約120×80mm）なら、全てのポケット型GPS端末が収納できます。' },
   { location: 'ランドセルサイドポケット', fit: 'ほぼ全機種OK', detail: 'ペットボトルが入るサイドポケットなら問題なし。ただし浅いポケットの場合は落下注意。' },
   { location: 'ズボンのポケット', fit: '50g以下推奨', detail: '薄型・軽量モデルならズボンポケットでも快適。50gを超えると走った時に気になる場合あり。' },
-  { location: '名札ケース（IDカードホルダー）', fit: '40g以下・薄型のみ', detail: 'みてねみまもりGPS、どこかなGPS2など超薄型モデルなら入る場合あり。ケースのサイズ要確認。' },
+  { location: '名札ケース（IDカードホルダー）', fit: '40g以下・薄型のみ', detail: 'みてねみまもりGPSなど超薄型モデルなら入る場合あり。ケースのサイズ要確認。' },
   { location: '上着の内ポケット', fit: '全機種OK', detail: '冬場のアウターの内ポケットなら全機種収納可能。ただし上着を脱いだ時に忘れるリスクあり。' },
 ];
 

@@ -48,8 +48,8 @@ export default function CarrierPage() {
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-g800 mb-2">ソフトバンク</h3>
-              <p className="text-sm text-g600 mb-2">どこかなGPS／キッズケータイ</p>
-              <p className="text-xs text-g500">どこかなGPSは月額528円（公式サイトで要確認）</p>
+              <p className="text-sm text-g600 mb-2">キッズケータイ（キッズフォン）</p>
+              <p className="text-xs text-g500">詳細は公式サイトで要確認</p>
             </div>
           </div>
 

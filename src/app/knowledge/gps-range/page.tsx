@@ -63,7 +63,6 @@ const deviceComparison = [
   { name: 'みてねみまもりGPS', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: '複数測位の自動切替' },
   { name: 'BoTトーク', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'AI学習で精度向上' },
   { name: 'あんしんウォッチャー', carrier: 'au LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'au回線で山間部に強い' },
-  { name: 'どこかなGPS2', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'みちびき対応' },
   { name: 'まもサーチ', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: '軽量・コンパクト' },
   { name: 'soranome', carrier: 'ドコモ LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵SIM', note: 'ドコモ回線で都市部に強い' },
   { name: 'myFirst Fone R2', carrier: 'ドコモ/ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: 'nano SIM', note: '腕時計型・通話対応' },
@@ -207,7 +206,7 @@ export default function GpsRangePage() {
           <h2 className="section-title">通信キャリア別カバーエリアの違い</h2>
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {[
-              { carrier: 'ソフトバンク LTE', coverage: '人口カバー率99%以上', strength: '都市部・住宅地で安定。地下鉄駅もカバー。', weakness: '山間部・離島の一部で圏外の可能性あり。', devices: 'みてね / BoT / どこかなGPS2 / まもサーチ' },
+              { carrier: 'ソフトバンク LTE', coverage: '人口カバー率99%以上', strength: '都市部・住宅地で安定。地下鉄駅もカバー。', weakness: '山間部・離島の一部で圏外の可能性あり。', devices: 'みてね / BoT / まもサーチ' },
               { carrier: 'au (KDDI) LTE', coverage: '人口カバー率99%以上', strength: '山間部・郊外のカバー率が高い。800MHz帯のプラチナバンド。', weakness: '都市部では3キャリアとも差は少ない。', devices: 'あんしんウォッチャー' },
               { carrier: 'ドコモ LTE', coverage: '人口カバー率99%以上', strength: '全国最大の基地局数。都市部の安定性が高い。', weakness: '山間部ではauとほぼ同等。', devices: 'soranome / coneco / myFirst Fone' },
             ].map((c) => (

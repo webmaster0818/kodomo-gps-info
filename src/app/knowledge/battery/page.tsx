@@ -32,7 +32,6 @@ const batteryData = [
   { name: 'あんしんウォッチャー', battery: '最大約1.5ヶ月', charge: 'USB Type-C', level: 4 },
   { name: 'BoTトーク', battery: '最大約1ヶ月', charge: 'USB Type-C', level: 4 },
   { name: 'コネコ', battery: '最大約1ヶ月', charge: 'USB Type-C', level: 4 },
-  { name: 'どこかなGPS2', battery: '最大約1.5ヶ月', charge: 'USB Type-C', level: 4 },
   { name: 'まもサーチ', battery: '最大約1ヶ月', charge: 'USB Type-C', level: 3 },
   { name: 'みもり', battery: '最大約3週間', charge: 'USB Type-C', level: 3 },
   { name: 'さゆう', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },

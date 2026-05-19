@@ -34,7 +34,6 @@ const contractData = [
   { name: 'soranome', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '契約条件は公式サイトで最新情報を確認', href: '/review/soranome/' },
   { name: 'まもサーチ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '見守り最大25人。詳細は公式サイトで要確認', href: '/review/mamosearch/' },
   { name: 'SayuU', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '月額1,210円。契約条件は公式で要確認', href: '/review/sayuu/' },
-  { name: 'どこかなGPS', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトで確認', href: '/review/dokokana/' },
   { name: 'みもり', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトで確認', href: '/review/mimori/' },
   { name: 'coneco', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトで確認', href: '/review/coneco/' },
   { name: 'myFirst Fone', term: 'SIM契約による', fee: '公式サイトで要確認', note: 'SIM別契約のため提供元で条件確認', href: '/review/myfirst-fone/' },

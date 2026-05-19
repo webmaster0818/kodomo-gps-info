@@ -72,7 +72,6 @@ export default function LongBatteryPage() {
                   { name: 'みてねみまもりGPS', battery: '最大約2ヶ月', freq: '月1回程度', note: '更新間隔の設定で調整可能', href: '/review/mitene/' },
                   { name: 'あんしんウォッチャー', battery: '最大約2ヶ月', freq: '月1回程度', note: 'KDDI品質の安定通信', href: '/review/anshin-watcher/' },
                   { name: 'BoTトーク（位置のみ）', battery: '最大約1ヶ月', freq: '月2回程度', note: 'トーク利用時は2週間程度', href: '/review/bot-talk/' },
-                  { name: 'どこかなGPS', battery: '最大約1.5ヶ月', freq: '月2回程度', note: '詳細は公式サイトで要確認', href: '/review/dokokana/' },
                   { name: 'まもサーチ', battery: '最大約1ヶ月', freq: '月2回程度', note: '大人数見守り対応', href: '/review/mamosearch/' },
                 ].map((row) => (
                   <tr key={row.name} className="border-b border-g100">
