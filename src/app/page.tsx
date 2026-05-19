@@ -283,14 +283,15 @@ export default function HomePage() {
               >
                 <RankBadge rank={d.rank} />
 
-                {/* Product screenshot */}
-                <div className="rounded-t-xl overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`/${d.ssSlug}.jpg`} alt={`${d.name} 公式サイト`} className="w-full h-40 object-cover object-top" />
-                  <p className="text-[10px] text-gray-400 px-2 py-1 text-right bg-gray-50">公式サイトより</p>
-                </div>
+                <div className="flex flex-col md:flex-row">
+                  {/* Product screenshot - left side on PC */}
+                  <div className="md:w-80 md:shrink-0 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/${d.ssSlug}.jpg`} alt={`${d.name} 公式サイト`} className="w-full h-48 md:h-full object-cover object-top" />
+                    <p className="text-[10px] text-gray-400 px-2 py-1 text-right bg-gray-50 md:hidden">公式サイトより</p>
+                  </div>
 
-                <div className="p-6 md:p-8">
+                <div className="p-6 md:p-8 flex-1">
                 {/* Header */}
                 <div className="flex items-start gap-4 mb-5">
                   <div className="flex-1 min-w-0">
@@ -353,6 +354,7 @@ export default function HomePage() {
                   >
                     詳細レビューを見る
                   </Link>
+                </div>
                 </div>
                 </div>
               </article>
