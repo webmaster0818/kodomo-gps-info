@@ -146,23 +146,20 @@ const faqJsonLd = {
 };
 
 function RankBadge({ rank }: { rank: number }) {
-  const labels: Record<number, string> = { 1: '1st', 2: '2nd', 3: '3rd' };
+  const suffixes: Record<number, string> = { 1: 'st', 2: 'nd', 3: 'rd' };
+  const suffix = suffixes[rank] || 'th';
   const colors: Record<number, string> = {
     1: 'from-yellow-400 to-amber-500 ring-yellow-200',
     2: 'from-gray-300 to-gray-500 ring-gray-200',
     3: 'from-amber-500 to-amber-700 ring-amber-200',
   };
   const bg = colors[rank];
-  if (bg) {
-    return (
-      <div className={`absolute top-3 left-3 z-10 bg-gradient-to-br ${bg} ring-2 rounded-lg px-3 py-1.5 shadow-md`}>
-        <span className="text-white font-extrabold text-xs tracking-wide">{labels[rank]}</span>
-      </div>
-    );
-  }
+  const gradientClass = bg
+    ? `bg-gradient-to-br ${bg} ring-2`
+    : 'bg-stone-500';
   return (
-    <div className="absolute top-3 left-3 z-10 bg-stone-500 rounded-lg px-3 py-1.5 shadow-md">
-      <span className="text-white font-bold text-xs">{rank}位</span>
+    <div className={`absolute top-3 left-3 z-10 ${gradientClass} rounded-lg px-3 py-1.5 shadow-md`}>
+      <span className="text-white font-extrabold text-xs tracking-wide">{rank}{suffix}</span>
     </div>
   );
 }
