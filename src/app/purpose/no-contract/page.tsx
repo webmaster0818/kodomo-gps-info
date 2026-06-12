@@ -46,6 +46,8 @@ export default function NoContractPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 縛りなし・解約金なしで選ぶ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "目的別", "item": "https://gps-kodomo.com/purpose/"}, {"@type": "ListItem", "position": 3, "name": "縛りなし・解約金なし", "item": "https://gps-kodomo.com/purpose/no-contract/"}]}) }} />
       <Breadcrumb items={[{ name: '目的別', href: '/' }, { name: '縛りなし・解約金なし' }]} />
 
       {/* Hero */}

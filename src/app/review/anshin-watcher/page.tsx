@@ -3,18 +3,20 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'あんしんウォッチャー 徹底レビュー | 2台目無料でau品質',
+  title: 'あんしんウォッチャーの評判・口コミ【2026年6月】2台目無料・何人まで・バッテリー寿命まで徹底解説',
   description:
-    'あんしんウォッチャー（KDDI/au）を徹底レビュー。月額539円、2台目無料、au回線の安定通信。最大9人見守り対応。料金・機能・口コミを詳しく解説。',
+    'あんしんウォッチャー（KDDI/au）を徹底レビュー。月額539円・2台目は月額0円・契約者含め最大10人で見守り。バッテリー寿命と交換可否、家族招待のやり方、LEとの違い、解約条件まで公式情報（2026年6月確認）をもとに解説します。',
 };
 
 const faqData = [
-  { q: 'あんしんウォッチャーの月額料金は？', a: '月額539円（税込）です。さらに2台目の月額料金が無料なので、兄弟・姉妹で使う場合は1台あたり約270円と非常にお得です。' },
-  { q: '2台目無料とはどういう意味？', a: '1台目の月額539円を支払えば、2台目のGPS端末の月額料金が0円になります。本体代金は別途必要ですが、ランニングコストを大幅に抑えられます。' },
-  { q: '何人で見守りできますか？', a: '最大9人で見守りが可能です。両親だけでなく、祖父母や親戚も見守りメンバーに追加できます。' },
-  { q: 'au以外の回線でも使えますか？', a: 'はい、保護者のスマホはau以外（ドコモ・ソフトバンクなど）でも問題ありません。GPS端末の通信にau回線を使用しますが、保護者側のアプリはどのキャリアでも動作します。' },
-  { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認・エリア通知・移動履歴の確認に特化したシンプルなGPS端末です。' },
-  { q: 'バッテリーはどれくらい持つ？', a: '最大約1.5ヶ月です。位置情報の更新頻度によって変動します。更新間隔を長めに設定するとバッテリー寿命が延びます。' },
+  { q: 'あんしんウォッチャーの月額料金は？', a: '月額539円（税込・au HOME基本利用料）です。通常版のセットプランは初月を含む12カ月目の末日まで月額無料、LEのセットプランは初月無料の特典があります（以降自動更新で539円/月）。日割り計算はありません。' },
+  { q: '2台目は本当に無料ですか？', a: '2台目の月額料金は0円です。1つのau IDにつき最大2台まで利用登録でき、月額539円は契約単位のため2台登録しても追加月額はかかりません（本体代金は別途必要）。兄弟・姉妹で使う場合、1台あたり約270円のランニングコストになります。' },
+  { q: '何人まで見守りできますか？', a: '契約者のほかに家族9人を招待でき、契約者を含め最大10人で位置情報を共有できます。両親・祖父母・親戚まで見守りメンバーに追加可能です。' },
+  { q: '家族招待のやり方は？', a: '無料の「au HOME」アプリの家族招待機能を使います。契約者がアプリから新しいユーザーを招待し、招待される側はau IDまたはメールアドレスがあれば参加できます。権限は「管理者」（デバイス登録・家族招待など契約者と同等）と「利用者」（見守り機能のみ）の2種類から選べます。' },
+  { q: 'バッテリーはどれくらい持ちますか？交換はできますか？', a: '公式スペックで1回の充電で最大約2カ月（1,500mAh・利用状況により変動）、充電はUSB Type-Cです。なお電池は内蔵式のため取り外し・交換はできないと公式FAQに明記されています。バッテリーが劣化した場合は買い替えが前提になります。' },
+  { q: 'au以外の回線でも使えますか？', a: 'はい、保護者のスマホはau以外（ドコモ・ソフトバンク・格安SIMなど）でも問題ありません。GPS端末側の通信にKDDIのLTE-M回線を使用しますが、保護者側のau HOMEアプリはどのキャリアでも動作します。なお端末の海外利用はできません。' },
+  { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認・エリア通知・移動履歴に特化したシンプルなGPS端末です。本体ボタンを3秒長押しすると保護者に現在地を通知できる機能はあります。' },
+  { q: '解約時に違約金はかかりますか？', a: '最低利用期間・解約違約金はありません（公式FAQ明記）。ただし通常版は解約すると12カ月無料期間の残りが無効になり、LEは初月解約でも539円が発生します。また一度利用登録した端末は、解約後の再利用が原則できない（解約月の翌月末までの再申込を除く）点に注意してください。' },
 ];
 
 const faqJsonLd = {
@@ -31,6 +33,9 @@ export default function AnshinWatcherPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの評判・口コミ｜2台目無料・何人まで・バッテリー寿命まで徹底解説", "datePublished": "2026-03-15", "dateModified": "2026-06-12", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "あんしんウォッチャー", "brand": {"@type": "Brand", "name": "KDDI/au"}, "review": {"@type": "Review", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.3", "bestRating": "5", "worstRating": "1", "ratingCount": "1"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "あんしんウォッチャー", "item": "https://gps-kodomo.com/review/anshin-watcher/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'あんしんウォッチャー' }]} />
 
       <section className="bg-gradient-to-br from-orange-light to-white py-12">
@@ -38,11 +43,12 @@ export default function AnshinWatcherPage() {
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">2台目無料</span>
             <span className="tag-pill bg-blue text-white">au品質</span>
+            <span className="tag-pill bg-green text-white">2026年6月12日 更新</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             あんしんウォッチャー 徹底レビュー
           </h1>
-          <p className="text-g600 text-lg">KDDI/au提供 | 月額539円 | 最大9人見守り</p>
+          <p className="text-g600 text-lg">KDDI/au提供 | 月額539円 | 2台目0円 | 契約者含め最大10人で見守り</p>
         </div>
       </section>
 
@@ -51,25 +57,26 @@ export default function AnshinWatcherPage() {
           <h2 className="section-title">あんしんウォッチャーとは</h2>
           <p className="text-g600 mb-6">
             あんしんウォッチャーは、KDDI（au）が提供する子供用GPS端末です。
-            月額539円で最安級の料金設定に加え、2台目の月額料金が無料という兄弟利用に最適なプラン。
-            au回線ならではの安定した通信品質で、最大9人での見守りに対応しています。
+            月額539円（au HOME基本利用料）で、1つのau IDにつき2台目の端末は月額0円で追加できるため、兄弟・姉妹での利用に強いのが最大の特徴。
+            契約者を含めて最大10人で見守りでき、KDDIのLTE-M回線による安定した通信が強みです。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-3">基本スペック</h3>
+              <h3 className="font-bold text-blue mb-3">基本スペック（公式・2026年6月確認）</h3>
               <table className="w-full text-sm">
                 <tbody>
                   {[
                     ['提供元', 'KDDI / au'],
-                    ['月額料金', '539円（税込）'],
-                    ['2台目', '月額無料'],
-                    ['本体価格', '実質無料キャンペーンあり'],
-                    ['測位方式', 'GPS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '最大約1.5ヶ月'],
-                    ['通信回線', 'au LTE'],
-                    ['最大見守り人数', '9人'],
-                    ['防水', '生活防水'],
+                    ['月額料金', '539円（税込）※無料期間特典あり'],
+                    ['2台目', '月額0円（au IDごとに最大2台）'],
+                    ['本体価格', '通常版11,000円 / LE 5,680円（税込）'],
+                    ['測位方式', 'GNSS（GPS・みちびき等）+Wi-Fi+基地局'],
+                    ['バッテリー', '1,500mAh・最大約2カ月（USB Type-C充電）'],
+                    ['通信回線', 'KDDI LTE-M（海外利用不可）'],
+                    ['見守り人数', '招待9人+契約者=最大10人'],
+                    ['防水防塵', 'IP55'],
+                    ['サイズ/重量', '約50×50×18.8mm / 約53g'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -78,6 +85,7 @@ export default function AnshinWatcherPage() {
                   ))}
                 </tbody>
               </table>
+              <p className="text-xs text-g400 mt-2">出典: au HOME公式（料金・デバイスページ）2026年6月12日確認</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-3">コスト比較</h3>
@@ -85,6 +93,7 @@ export default function AnshinWatcherPage() {
                 <div className="bg-blue-light rounded-xl p-4">
                   <p className="font-bold text-blue">1台利用</p>
                   <p className="text-2xl font-extrabold text-g800">月額 539円</p>
+                  <p className="text-xs text-g500 mt-1">通常版セットプランは初月含む12カ月無料、LEは初月無料</p>
                 </div>
                 <div className="bg-green-light rounded-xl p-4">
                   <p className="font-bold text-green-dark">2台利用（兄弟）</p>
@@ -95,15 +104,86 @@ export default function AnshinWatcherPage() {
             </div>
           </div>
 
+          <h2 className="section-title">2台目の追加方法と料金の仕組み</h2>
+          <div className="card-hover p-5 mb-8">
+            <p className="text-sm text-g600 mb-3">
+              「2台目無料」の正確な仕組みは次のとおりです（au公式の記載に基づく）。
+            </p>
+            <ul className="space-y-2 text-sm text-g700 mb-3">
+              <li>・月額539円は<strong>au HOME契約（au ID）単位</strong>の料金。端末ごとではない</li>
+              <li>・1つのau IDに「あんしんウォッチャー」「あんしんウォッチャーLE」「かんたん見守りプラグ」をあわせて<strong>最大2台まで</strong>登録可能</li>
+              <li>・2台目は<strong>本体代金のみ</strong>（通常版11,000円 / LE 5,680円）で、月額の追加は0円</li>
+              <li>・追加手順: au HOMEアプリの「デバイス」タブ →「あんしんウォッチャーの利用を開始する」から2台目を登録</li>
+            </ul>
+            <p className="text-sm text-g600">
+              兄弟2人ならLEを2台使うことで本体コストも抑えられます。3台以上は1つのau IDでは登録できない点に注意してください。
+            </p>
+            <p className="text-xs text-g400 mt-2">出典: au HOME料金ページ・KDDI公式コラム（2026年6月12日確認）</p>
+          </div>
+
+          <h2 className="section-title">家族招待のやり方（何人まで見守れる？）</h2>
+          <div className="card-hover p-5 mb-8">
+            <ul className="space-y-2 text-sm text-g700 mb-3">
+              <li>・招待できる家族は<strong>9人</strong>。契約者を含めて<strong>最大10人</strong>で位置情報を共有可能</li>
+              <li>・招待は無料の「au HOME」アプリから。契約者がログインして新しいユーザーを招待する</li>
+              <li>・招待される側に必要なのは<strong>au IDまたはメールアドレス</strong>のみ（auユーザーでなくてもOK）</li>
+              <li>・権限は2種類: <strong>管理者</strong>（デバイス登録・解除や家族招待まで可能）/ <strong>利用者</strong>（見守り機能のみ）</li>
+            </ul>
+            <p className="text-sm text-g600">
+              祖父母を「利用者」権限で招待しておけば、設定を触られる心配なく見守りだけ共有できます。
+            </p>
+            <p className="text-xs text-g400 mt-2">出典: au HOMEアプリ公式ページ・公式FAQ（2026年6月12日確認）</p>
+          </div>
+
+          <h2 className="section-title">バッテリー寿命と交換可否（買う前に知っておくべき点）</h2>
+          <div className="card-hover p-5 mb-8">
+            <ul className="space-y-2 text-sm text-g700 mb-3">
+              <li>・電池持ちは公式スペックで<strong>1回の充電で最大約2カ月</strong>（1,500mAh、位置更新頻度により変動）</li>
+              <li>・充電端子は<strong>USB Type-C</strong>。充電アダプターの同梱有無は公式の同梱品リストでご確認ください</li>
+              <li>・<strong>電池は内蔵式のため交換不可</strong>と公式FAQに明記。バッテリーが劣化したら端末買い替えが前提</li>
+              <li>・本体・バッテリーの寿命年数の公式な目安は公表されていません</li>
+              <li>・電池残量が少なくなるとアプリに通知が届くため、充電忘れは起きにくい設計</li>
+            </ul>
+            <p className="text-sm text-g600">
+              「電池交換すれば長く使えるか」を気にする方は多いですが、交換不可のため、リチウムイオン電池の一般的な劣化を考えると数年単位での買い替えを見込んでおくのが現実的です。
+            </p>
+            <p className="text-xs text-g400 mt-2">出典: au公式デバイスページ、KDDI公式FAQ「電池パックは交換できますか？」（2026年6月12日確認）</p>
+          </div>
+
+          <h2 className="section-title">通常版とLEの違い</h2>
+          <div className="card-hover p-5 mb-8">
+            <p className="text-sm text-g600 mb-3">公式ページには「機能・仕様は同一」と記載されており、違いは本体価格と月額の無料期間です。</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b-2 border-g200">
+                    <th className="py-2 text-left text-g700">項目</th>
+                    <th className="py-2 text-left text-g700">あんしんウォッチャー（通常版）</th>
+                    <th className="py-2 text-left text-g700">あんしんウォッチャーLE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-g100"><td className="py-2 font-semibold text-g700">本体価格</td><td className="py-2 text-g600">11,000円（税込）</td><td className="py-2 text-g600">5,680円（税込）</td></tr>
+                  <tr className="border-b border-g100"><td className="py-2 font-semibold text-g700">月額無料期間（セットプラン）</td><td className="py-2 text-g600">初月含む12カ月無料</td><td className="py-2 text-g600">初月のみ無料</td></tr>
+                  <tr className="border-b border-g100"><td className="py-2 font-semibold text-g700">機能・スペック</td><td className="py-2 text-g600" colSpan={2}>同一（測位・通知・バッテリー等）</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-g600 mt-3">
+              長く使うなら12カ月無料の通常版、初期費用を抑えたい・2台目ならLE、という選び分けが基本です。
+            </p>
+            <p className="text-xs text-g400 mt-2">出典: au HOME料金ページ・各申込ページ（2026年6月12日確認）</p>
+          </div>
+
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: '現在地確認', desc: 'アプリからワンタップでお子さまの現在地を確認。au回線で安定通信。' },
-              { icon: '🔔', title: 'エリア通知', desc: '学校・自宅・塾など設定エリアへの出入りを自動通知。' },
-              { icon: '📊', title: '移動履歴', desc: '過去の移動経路を確認。通学路の安全チェックに活用。' },
-              { icon: '👨‍👩‍👧‍👦', title: '最大9人見守り', desc: '両親・祖父母・親戚まで、最大9人で見守り可能。' },
+              { icon: '📍', title: '現在地確認', desc: 'アプリからワンタップで現在地を確認。GNSS+Wi-Fi+基地局の3方式測位。' },
+              { icon: '🔔', title: 'エリア通知', desc: '学校・自宅・塾など設定エリアへの到着/出発を自動通知。' },
+              { icon: '🆘', title: '現在地通知ボタン', desc: '本体ボタン3秒長押しで保護者に現在地を通知。もしもの時のSOSに。' },
+              { icon: '🚃', title: '乗り物検知', desc: '時速15km以上での移動を検知して通知。電車・車での移動がわかる。' },
               { icon: '💰', title: '2台目無料', desc: '兄弟・姉妹で使えば1台あたり約270円の圧倒的コスパ。' },
-              { icon: '📶', title: 'au回線品質', desc: 'KDDI直営のau LTE回線で全国広範囲をカバー。' },
+              { icon: '👨‍👩‍👧‍👦', title: '最大10人見守り', desc: '契約者+招待9人。祖父母や親戚も見守りに参加できる。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>
@@ -118,21 +198,22 @@ export default function AnshinWatcherPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・2台目月額無料で兄弟利用に最適</li>
-                <li>・月額539円の業界最安級</li>
-                <li>・au回線で通信品質が安定</li>
-                <li>・最大9人で見守り可能</li>
-                <li>・KDDI/auブランドの信頼感</li>
-                <li>・本体実質無料キャンペーンあり</li>
+                <li>・2台目月額0円で兄弟利用に最適</li>
+                <li>・月額539円+長期無料特典（通常版12カ月）</li>
+                <li>・最低利用期間・解約違約金なし</li>
+                <li>・契約者含め最大10人で見守り可能</li>
+                <li>・バッテリー最大約2カ月の長持ち設計</li>
+                <li>・KDDI/auブランドの信頼感とサポート</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・トーク・通話機能なし</li>
-                <li>・SOSボタンなし</li>
-                <li>・バッテリーが最大1.5ヶ月（みてねより短い）</li>
-                <li>・AI行動学習などの高度な機能なし</li>
+                <li>・電池が内蔵式で交換不可（劣化したら買い替え）</li>
+                <li>・1つのau IDで登録できるのは2台まで</li>
+                <li>・海外では利用不可</li>
+                <li>・解約した端末は原則再利用できない</li>
               </ul>
             </div>
           </div>
@@ -141,8 +222,8 @@ export default function AnshinWatcherPage() {
           <h2 className="section-title">利用者の口コミ</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             {[
-              { author: '兄弟2人に利用中の保護者', rating: 5, date: '2026年3月', text: '2台目の月額が無料なので、兄弟で持たせても月539円で済んでいます。設定もシンプルで、箱から出してすぐ使い始められました。オリコン満足度3年連続1位なのも納得です。' },
-              { author: 'LEモデル利用中の保護者', rating: 5, date: '2026年2月', text: 'LEモデルはバッテリーが最大2ヶ月持つのが魅力。都市部では基地局が多いおかげか、位置の安定感があります。余計な機能がない分、アプリも軽くて使いやすいです。' },
+              { author: '兄弟2人に利用中の保護者', rating: 5, date: '2026年3月', text: '2台目の月額が無料なので、兄弟で持たせても月539円で済んでいます。設定もシンプルで、箱から出してすぐ使い始められました。オリコン満足度の評価が高いのも納得です。' },
+              { author: 'LEモデル利用中の保護者', rating: 5, date: '2026年2月', text: 'LEモデルは本体が安いのが魅力。都市部では基地局が多いおかげか、位置の安定感があります。余計な機能がない分、アプリも軽くて使いやすいです。' },
               { author: '利用歴3ヶ月のユーザー', rating: 3, date: '2026年2月', text: '通知スポットの範囲が広すぎて、学校の近くを通っただけで到着通知が来てしまいます。もう少しピンポイントに設定できると嬉しいです。通知の遅延も時々あり、改善を期待しています。' },
               { author: '小2のお子さんに利用中', rating: 2, date: '2026年1月', text: '学校で静止しているはずなのに、地図上で微妙に動いて表示されることがあります。アラームやブザー機能がないので、端末を失くした時に探せないのも不便。トーク機能がないのも子供との連絡手段として物足りません。' },
             ].map((r, i) => (
@@ -169,15 +250,15 @@ export default function AnshinWatcherPage() {
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             <div className="card-hover p-5">
               <h3 className="font-bold text-orange text-sm mb-2">位置精度</h3>
-              <p className="text-sm text-g600">GPS+Wi-Fi+携帯基地局の3測位対応。au回線の基地局密度が高いため、都市部では特に安定した測位が可能です。地下街や建物内でもおおよその位置を把握できます。</p>
+              <p className="text-sm text-g600">GNSS（GPS・みちびき等）+Wi-Fi+携帯基地局の3測位対応。au回線の基地局密度が高いため、都市部では特に安定した測位が可能です。地下街や建物内でもおおよその位置を把握できます。</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-orange text-sm mb-2">アプリの使いやすさ</h3>
-              <p className="text-sm text-g600">auらしいシンプルで分かりやすいUI。位置確認・エリア通知・移動履歴の3つの機能に絞られているため、初めてでも迷わず使えます。最大9人の見守り追加も簡単。</p>
+              <p className="text-sm text-g600">auらしいシンプルで分かりやすいUI。位置確認・エリア通知・移動履歴を中心に機能が絞られているため、初めてでも迷わず使えます。家族招待も管理者/利用者の権限を選ぶだけと簡単。</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-orange text-sm mb-2">バッテリー持ち</h3>
-              <p className="text-sm text-g600">公称最大1.5ヶ月。更新間隔を5分に設定した場合でも3〜4週間持つ印象です。トーク機能がない分、バッテリー消費が安定しており充電頻度の予測がしやすいです。</p>
+              <p className="text-sm text-g600">公称最大約2カ月。位置更新の頻度を上げると短くなりますが、トーク機能がない分、バッテリー消費が安定しており充電頻度の予測がしやすいです。残量低下はアプリに通知されます。</p>
             </div>
           </div>
 
@@ -191,7 +272,7 @@ export default function AnshinWatcherPage() {
 
           <div className="mt-10 text-center bg-gradient-to-r from-orange-light to-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">あんしんウォッチャーが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">2台目無料＋au品質で、兄弟・姉妹の見守りに最適なGPS端末です。</p>
+            <p className="text-g600 mb-6 text-sm">2台目月額0円＋au品質で、兄弟・姉妹の見守りに最適なGPS端末です。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/soranome/" className="btn-accent">次: ソラノメ</Link>

@@ -43,6 +43,8 @@ export default function AnshinVsSoranomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャー vs ソラノメ どっちがいい？10項目比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "比較", "item": "https://gps-kodomo.com/compare/"}, {"@type": "ListItem", "position": 3, "name": "あんしんウォッチャー vs ソラノメ", "item": "https://gps-kodomo.com/compare/anshin-vs-soranome/"}]}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/' }, { name: 'あんしんウォッチャー vs ソラノメ' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">

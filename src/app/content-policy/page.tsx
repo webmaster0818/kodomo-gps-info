@@ -70,6 +70,7 @@ const criteria = [
 export default function ContentPolicyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "記事制作ポリシー", "item": "https://gps-kodomo.com/content-policy/"}]}) }} />
       <Breadcrumb items={[{ name: '記事制作ポリシー' }]} />
 
       <section className="py-10">

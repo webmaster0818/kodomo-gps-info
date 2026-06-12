@@ -67,6 +67,8 @@ export default function OsakaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "大阪の子供見守りGPS活用ガイド｜通学路・治安情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "エリア別", "item": "https://gps-kodomo.com/area/"}, {"@type": "ListItem", "position": 3, "name": "大阪", "item": "https://gps-kodomo.com/area/osaka/"}]}) }} />
       <Breadcrumb items={[{ name: 'エリア別', href: '/' }, { name: '大阪' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">

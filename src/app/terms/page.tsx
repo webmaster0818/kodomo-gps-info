@@ -181,6 +181,7 @@ const articles = [
 export default function TermsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "利用規約", "item": "https://gps-kodomo.com/terms/"}]}) }} />
       <Breadcrumb items={[{ name: '利用規約' }]} />
 
       <section className="py-10">

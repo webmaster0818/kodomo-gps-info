@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'GPS 学校持ち込みルール | 許可される条件と申請方法',
+  title: 'GPS 学校持ち込みルール【2026年】許可される条件と申請方法・禁止時の対処法',
   description:
     'GPS端末の学校持ち込みルールを詳しく解説。許可されるケースと条件、持ち込み申請の書き方、ランドセルへの上手な入れ方まで網羅。先生への相談方法もわかります。',
 };
@@ -31,6 +31,8 @@ export default function SchoolRulesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-06-12", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "学校持ち込み", "item": "https://gps-kodomo.com/knowledge/school-rules/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '学校持ち込み' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -121,6 +123,12 @@ export default function SchoolRulesPage() {
               <div className="faq-answer">{faq.a}</div>
             </details>
           ))}
+
+          <div className="mt-8 card-hover p-5 bg-blue-light rounded-2xl">
+            <h3 className="font-bold text-g800 mb-2">申請書の「理由」に何を書けばいいか迷ったら</h3>
+            <p className="text-sm text-g600 mb-3">コピペで使える申請理由の例文4パターンと、GPS購入補助を行う8自治体の制度一覧をまとめました。</p>
+            <Link href="/knowledge/school-permission/" className="btn-primary inline-block">学校許可の取り方・申請例文テンプレを見る</Link>
+          </div>
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">学校に持ち込みやすいGPS端末を選ぼう</h2>

@@ -155,6 +155,9 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供見守りGPS最新情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "みてねみまもりGPS", "url": "https://gps-kodomo.com/review/mitene/"}, {"@type": "ListItem", "position": 2, "name": "あんしんウォッチャー", "url": "https://gps-kodomo.com/review/anshin-watcher/"}, {"@type": "ListItem", "position": 3, "name": "BoTトーク", "url": "https://gps-kodomo.com/review/bot-talk/"}, {"@type": "ListItem", "position": 4, "name": "まもサーチ", "url": "https://gps-kodomo.com/review/mamosearch/"}, {"@type": "ListItem", "position": 5, "name": "myFirst Fone R2", "url": "https://gps-kodomo.com/review/myfirst-fone/"}]}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}]}) }} />
 
       {/* ===== 1. Hero Section ===== */}
       <section className="relative overflow-hidden min-h-[520px] md:min-h-[600px] flex items-center">

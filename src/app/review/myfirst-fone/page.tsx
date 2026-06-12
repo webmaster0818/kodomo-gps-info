@@ -31,6 +31,9 @@ export default function MyFirstFonePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "myFirst Fone 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "myFirst Fone R2", "brand": {"@type": "Brand", "name": "myFirst"}, "review": {"@type": "Review", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.0", "bestRating": "5", "worstRating": "1", "ratingCount": "1"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "myFirst Fone", "item": "https://gps-kodomo.com/review/myfirst-fone/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'myFirst Fone' }]} />
 
       {/* Hero */}

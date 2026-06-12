@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "プライバシーポリシー", "item": "https://gps-kodomo.com/privacy/"}]}) }} />
       <Breadcrumb items={[{ name: 'プライバシーポリシー' }]} />
 
       <section className="py-10">

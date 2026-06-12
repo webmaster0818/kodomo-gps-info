@@ -52,6 +52,8 @@ export default function AfterSchoolPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "学童・放課後の見守りにGPSが最適な理由｜活用法を解説", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "学童・放課後の見守り", "item": "https://gps-kodomo.com/knowledge/after-school/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '学童・放課後の見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
