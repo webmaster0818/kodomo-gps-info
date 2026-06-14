@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'みてねみまもりGPS 徹底レビュー | 利用者数No.1の実力を検証',
+  title: 'みてねみまもりGPS 機種比較レビュー【2026年】MG05・トーク・トークPlusの違い',
   description:
     'みてねみまもりGPS（MIXI）の機能・料金・口コミを徹底レビュー。月額528円〜、トークPlus対応、バッテリー最大2ヶ月。利用者数No.1の実力と選ばれる理由を詳しく解説。',
 };
@@ -31,7 +31,7 @@ export default function MitenePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "みてねみまもりGPS", "brand": {"@type": "Brand", "name": "MIXI"}, "review": {"@type": "Review", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.5", "bestRating": "5", "worstRating": "1", "ratingCount": "1"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "みてねみまもりGPS", "item": "https://gps-kodomo.com/review/mitene/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'みてねみまもりGPS' }]} />
@@ -100,6 +100,36 @@ export default function MitenePage() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* 機種比較 */}
+          <h2 className="section-title">3機種の違い（MG05 / トーク / トークPlus）</h2>
+          <p className="text-g600 mb-4 text-sm">みてねみまもりGPSには現在3つの型番があります。トーク機能の要否と防犯ブザーの有無で選ぶのが基本です（2026年6月14日 公式確認）。</p>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-g200 bg-blue-light text-left">
+                  <th className="py-2 px-2 text-g700">機種</th>
+                  <th className="py-2 px-2 text-g700">本体/月額(税込)</th>
+                  <th className="py-2 px-2 text-g700">トーク</th>
+                  <th className="py-2 px-2 text-g700">特徴</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">MG05</td><td className="py-2 px-2">約2,904円/月528円</td><td className="py-2 px-2">なし(お知らせボタン)</td><td className="py-2 px-2">最安。位置確認中心の家庭向け。最大約2ヶ月電池</td></tr>
+                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トーク(MT05)</td><td className="py-2 px-2">約4,280円/月748円</td><td className="py-2 px-2">あり(音声40秒・無制限)</td><td className="py-2 px-2">双方向ボイスメッセージ対応。共働き・外出が多い家庭向け</td></tr>
+                <tr><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トークPlus(MB06)</td><td className="py-2 px-2">約5,280円/月748円</td><td className="py-2 px-2">あり</td><td className="py-2 px-2">最新。防犯ブザー(約85dB)+ディスプレイ搭載。やや大型89g・電池最大約3週間</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="card-hover p-5 mb-8">
+            <h3 className="font-bold text-g800 mb-2">どれを選ぶ？</h3>
+            <ul className="space-y-2 text-sm text-g700">
+              <li>・<strong>在宅家庭・コスト重視</strong> → MG05(お知らせボタンのみで十分・最安)</li>
+              <li>・<strong>子どもと連絡を取りたい</strong> → トーク(MT05)。音声メッセージで「今どこ？」のやりとりが可能</li>
+              <li>・<strong>防犯ブザーも1台にまとめたい</strong> → トークPlus(MB06)。ただし89gとやや重く、電池は約3週間と短め。学校では音・画面が友人の関心を引く可能性も</li>
+            </ul>
+            <p className="text-xs text-g400 mt-3">全機種ともL1/L5デュアルバンドGNSS+Wi-Fi+基地局測位。見守る大人の人数は無制限。出典: みてねみまもりGPS公式(family-album.com)2026年6月14日確認</p>
           </div>
 
           {/* Features */}

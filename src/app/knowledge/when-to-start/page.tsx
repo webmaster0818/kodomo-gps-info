@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'GPS いつから？何歳から始める？年齢別ガイド',
+  title: '子供GPSは何歳から？【データで解説】84.5%が5〜7歳・入学準備の目安',
   description:
     '子供にGPSをいつから持たせるべき？幼稚園年長・小1・小3・小5の年齢別ガイドと、先輩ママの声、始めるきっかけTOP5を紹介。最適なタイミングがわかります。',
 };
@@ -31,7 +31,7 @@ export default function WhenToStartPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS いつから？何歳から始める？年齢別ガイド", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS いつから？何歳から始める？年齢別ガイド", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "いつから？", "item": "https://gps-kodomo.com/knowledge/when-to-start/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: 'いつから？' }]} />
 
@@ -50,6 +50,17 @@ export default function WhenToStartPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          <h2 className="section-title">データで見る「何歳から」の答え</h2>
+          <div className="card-hover p-5 mb-8 bg-blue-light rounded-2xl">
+            <p className="text-sm text-g700 leading-relaxed mb-3">
+              小学生の親200人を対象にしたアンケート調査では、子供用GPSを<strong>「必要」と答えた人は約80.5%</strong>。実際に持たせ始めた年齢は<strong>6歳(年長〜小1)が最多</strong>で、<strong>5〜7歳で持たせ始めた家庭が全体の84.5%</strong>を占めました。
+            </p>
+            <p className="text-sm text-g700 leading-relaxed">
+              つまり「何歳から」の現実的な答えは<strong>小学校入学のタイミング(年長の冬〜小1の春)</strong>です。一人で登下校・学童・習い事に通い始め、行動範囲が一気に広がるためです。未就学児でも、公園やお出かけ先での迷子対策として持たせる家庭もあります。年齢そのものより「一人で行動する場面が増えたか」で判断するのがおすすめです。
+            </p>
+            <p className="text-xs text-g400 mt-3">出典: ちいく村/C.Dreams 実施アンケート(小学生の親200人・2023年6月、マイナビ子育て掲載)。2026年6月14日確認</p>
+          </div>
+
           <h2 className="section-title">年齢別ガイド</h2>
           <div className="space-y-4 mb-8">
             {[

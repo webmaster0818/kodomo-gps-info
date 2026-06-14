@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供GPS 精度比較 | 機種別の測位精度・更新間隔を徹底比較',
+  title: '子供GPSの精度比較【2026年】屋外は横並び・差が出るのは地下/屋内',
   description:
     '子供GPS端末の精度を機種別に徹底比較。GPS・GLONASS・みちびき・Wi-Fi・基地局の仕組み解説から、更新間隔・屋内精度まで詳しく解説します。',
 };
@@ -53,7 +53,7 @@ export default function AccuracyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 精度比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 精度比較", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "比較", "item": "https://gps-kodomo.com/compare/"}, {"@type": "ListItem", "position": 3, "name": "精度比較", "item": "https://gps-kodomo.com/compare/accuracy/"}]}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/' }, { name: '精度比較' }]} />
 
@@ -108,6 +108,20 @@ export default function AccuracyPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <h2 className="section-title">精度の本当の差は「地下・屋内」で出る</h2>
+          <div className="card-hover p-5 mb-8">
+            <p className="text-sm text-g700 leading-relaxed mb-3">
+              実機検証を行う複数の比較メディアの共通見解として、<strong>屋外(徒歩・乗り物移動)ではどの主要機種も道沿いに精度よく測位でき、メーカー間の差はほとんど出ません</strong>。現在の主流機は衛星5種前後(GPS・みちびき・GLONASS・Galileo・BeiDou)を受信するためです。
+            </p>
+            <p className="text-sm text-g700 leading-relaxed mb-3">
+              差が出るのは<strong>地下・屋内・コンクリート建物内</strong>です。衛星電波が届かずWi-Fi測位や基地局測位に切り替わるため、誤差が大きくなったり表示が途切れたりします。地下に強いかどうかが実用上の差になり、検証ではau回線の基地局密度を活かすあんしんウォッチャーが地下でも実ルートをほぼ捕捉したと報告されています。
+            </p>
+            <p className="text-sm text-g700 leading-relaxed">
+              <strong>対策: 自宅・学校・塾などのWi-Fiを端末に登録しておく</strong>と、屋内・地下での位置補正が効いて精度が安定します。「ズレる」と感じたらまずWi-Fi登録を見直しましょう。
+            </p>
+            <p className="text-xs text-g400 mt-3">出典: こどもみまもりコンシェルジュ等の実機精度検証(2026年6月14日確認)。各社は精度の数値(○m)を公式には公表していないため、屋外横並び・地下で差という傾向としてご覧ください。</p>
           </div>
 
           <h2 className="section-title">よくある質問</h2>
