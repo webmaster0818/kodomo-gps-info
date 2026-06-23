@@ -196,10 +196,10 @@ export default function SchoolRulesPage() {
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">学校に持ち込みやすいGPS端末を選ぼう</h2>
-            <p className="text-g600 mb-6 text-sm">小型・軽量・音が出ないGPS端末なら、学校でも安心です。</p>
+            <p className="text-g600 mb-6 text-sm">音が鳴らない・トークなしの機種なら、学校でも安心です。3年総額で比較しました。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/knowledge/how-to-choose/" className="btn-primary">選び方ガイド</Link>
-              <Link href="/" className="btn-accent">おすすめランキング</Link>
+              <Link href="/compare/school-silent/" className="btn-primary">学校向け静音GPSを比較する</Link>
+              <Link href="/knowledge/how-to-choose/" className="btn-accent">選び方ガイド</Link>
             </div>
           </div>
         </div>
