@@ -17,6 +17,9 @@ const faqData = [
   { q: 'au以外の回線でも使えますか？', a: 'はい、保護者のスマホはau以外（ドコモ・ソフトバンク・格安SIMなど）でも問題ありません。GPS端末側の通信にKDDIのLTE-M回線を使用しますが、保護者側のau HOMEアプリはどのキャリアでも動作します。なお端末の海外利用はできません。' },
   { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認・エリア通知・移動履歴に特化したシンプルなGPS端末です。本体ボタンを3秒長押しすると保護者に現在地を通知できる機能はあります。' },
   { q: '解約時に違約金はかかりますか？', a: '最低利用期間・解約違約金はありません（公式FAQ明記）。ただし通常版は解約すると12カ月無料期間の残りが無効になり、LEは初月解約でも539円が発生します。また一度利用登録した端末は、解約後の再利用が原則できない（解約月の翌月末までの再申込を除く）点に注意してください。' },
+  { q: 'あんしんウォッチャーの寿命は何年くらいですか？', a: '本体寿命の年数について公式な目安は公表されていません。電池は内蔵式で交換できないため、リチウムイオン電池の一般的な劣化（充電を繰り返すと容量が落ちる）を考えると、数年単位での買い替えを見込んでおくのが現実的です。1回の充電での電池持ちは公式スペックで最大約2カ月です。' },
+  { q: 'あんしんウォッチャーの2台目の月額はいくらですか？', a: '2台目の月額は0円です。月額539円は1つのau ID（au HOME契約）単位の料金で、2台目を登録しても月額は増えません（本体代金は別途必要）。兄弟・姉妹2人で使うと、1台あたり約270円のランニングコストになります。なお1つのau IDで登録できるのは2台までです。' },
+  { q: 'あんしんウォッチャーのデメリット・短所は？', a: '主なデメリットは、(1)トーク・通話機能がない、(2)電池が内蔵式で交換不可（劣化したら買い替え）、(3)1つのau IDで登録できるのは2台まで、(4)海外では利用不可、(5)解約した端末は原則再利用できない、の5点です。子供と通話・メッセージをしたい場合は、トーク機能のある他機種も検討するとよいでしょう。' },
 ];
 
 const faqJsonLd = {
@@ -33,7 +36,7 @@ export default function AnshinWatcherPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの評判・口コミ｜2台目無料・何人まで・バッテリー寿命まで徹底解説", "datePublished": "2026-03-15", "dateModified": "2026-06-12", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの評判・口コミ｜2台目無料・何人まで・バッテリー寿命まで徹底解説", "datePublished": "2026-03-15", "dateModified": "2026-06-23", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "あんしんウォッチャー", "brand": {"@type": "Brand", "name": "KDDI/au"}, "review": {"@type": "Review", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.3", "bestRating": "5", "worstRating": "1", "ratingCount": "1"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "あんしんウォッチャー", "item": "https://gps-kodomo.com/review/anshin-watcher/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'あんしんウォッチャー' }]} />
@@ -43,7 +46,7 @@ export default function AnshinWatcherPage() {
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">2台目無料</span>
             <span className="tag-pill bg-blue text-white">au品質</span>
-            <span className="tag-pill bg-green text-white">2026年6月12日 更新</span>
+            <span className="tag-pill bg-green text-white">2026年6月23日 更新</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             あんしんウォッチャー 徹底レビュー
@@ -54,6 +57,17 @@ export default function AnshinWatcherPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          <div className="card-hover p-6 mb-8 bg-blue-light/50 border-l-4 border-blue rounded-xl">
+            <h2 className="font-extrabold text-g800 mb-3">結論：あんしんウォッチャーの「寿命」早わかり</h2>
+            <ul className="space-y-2 text-sm text-g700">
+              <li>・<strong>電池持ち</strong>：1回の充電で<strong>最大約2カ月</strong>（1,500mAh・位置更新頻度で変動／USB Type-C充電）</li>
+              <li>・<strong>電池交換</strong>：内蔵式で<strong>交換不可</strong>（公式FAQ明記）。劣化したら端末ごと買い替えが前提</li>
+              <li>・<strong>本体寿命の目安</strong>：公式な年数の公表はなし。リチウムイオン電池の一般的な劣化から<strong>数年単位での買い替え</strong>を見込むのが現実的</li>
+              <li>・<strong>充電忘れ対策</strong>：残量が少なくなるとアプリに通知が届く設計</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：au公式デバイスページ／KDDI公式FAQ「電池パックは交換できますか？」（2026年6月12日確認）。詳細は下の「バッテリー寿命と交換可否」をご覧ください。</p>
+          </div>
+
           <h2 className="section-title">あんしんウォッチャーとは</h2>
           <p className="text-g600 mb-6">
             あんしんウォッチャーは、KDDI（au）が提供する子供用GPS端末です。
