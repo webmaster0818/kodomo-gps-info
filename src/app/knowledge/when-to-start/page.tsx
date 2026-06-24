@@ -128,7 +128,8 @@ export default function WhenToStartPage() {
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPSを始めるなら今がチャンス</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの年齢と生活に合った最適なGPS端末を見つけましょう。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/knowledge/how-to-choose/" className="btn-primary">選び方ガイド</Link>
+              <Link href="/knowledge/first-grade-when-to-buy/" className="btn-primary">新一年生はいつ買う？入学準備</Link>
+              <Link href="/knowledge/how-to-choose/" className="btn-accent">選び方ガイド</Link>
               <Link href="/" className="btn-accent">おすすめランキング</Link>
             </div>
           </div>
