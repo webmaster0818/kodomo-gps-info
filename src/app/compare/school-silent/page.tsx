@@ -123,6 +123,8 @@ export default function SchoolSilentComparePage() {
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">機種ごとの詳細を見る</h2>
             <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/compare/cost/" className="btn-primary">コスパ・料金比較</Link>
+              <Link href="/compare/after-school/" className="btn-accent">学童・習い事の行き帰り比較</Link>
               <Link href="/review/mitene/" className="btn-primary">みてねみまもりGPS</Link>
               <Link href="/review/anshin-watcher/" className="btn-accent">あんしんウォッチャー</Link>
               <Link href="/" className="btn-primary">おすすめランキング</Link>

@@ -489,6 +489,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== 6.5 用途別比較ハブ ===== */}
+      <section className="bg-[#FFFBF0] py-14">
+        <div className="mx-auto max-w-5xl px-4">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-10">
+            用途から比較する
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { title: 'コスパ・料金で比較', desc: '本体＋月額の3年総額で結局どれが安いか', href: '/compare/cost/' },
+              { title: '学童・習い事の行き帰り', desc: '一人で通う放課後の見守りにおすすめ', href: '/compare/after-school/' },
+              { title: '学校向け静音GPS', desc: '音が鳴らない・トークなしの機種を比較', href: '/compare/school-silent/' },
+              { title: '電池持ちで比較', desc: '充電頻度が少ない機種ランキング', href: '/compare/battery-life/' },
+              { title: '遠足・修学旅行向け', desc: '行事に持たせる機種と可否の考え方', href: '/compare/school-trip/' },
+              { title: '総合ランキング', desc: '2026年の総合おすすめをチェック', href: '/compare/2026-ranking/' },
+            ].map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="group bg-white rounded-xl border border-amber-100 p-5 no-underline transition-all hover:shadow-md hover:border-amber-300"
+              >
+                <p className="text-sm font-bold text-gray-800 group-hover:text-amber-600 transition-colors leading-snug">
+                  {c.title}
+                </p>
+                <p className="mt-2 text-xs text-gray-500 leading-relaxed">{c.desc}</p>
+                <span className="inline-block mt-3 text-xs font-semibold text-amber-500">比較を見る →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== 7. CTA Section ===== */}
       <section className="relative py-16 md:py-20 bg-gradient-to-br from-amber-600 via-amber-500 to-orange-500 text-white text-center overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_50%,white_0%,transparent_70%)]" />

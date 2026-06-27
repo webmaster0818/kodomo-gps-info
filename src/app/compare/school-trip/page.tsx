@@ -184,6 +184,14 @@ export default function SchoolTripComparePage() {
           <div className="mt-10">
             <h3 className="font-bold text-g800 mb-4">用途別にもっと比較・確認する</h3>
             <div className="grid sm:grid-cols-3 gap-4">
+              <Link href="/compare/cost/" className="card-hover p-4 block">
+                <p className="font-bold text-g800 text-sm mb-1">コスパ・料金比較</p>
+                <p className="text-xs text-g600">3年総額で結局どれが安いか</p>
+              </Link>
+              <Link href="/compare/after-school/" className="card-hover p-4 block">
+                <p className="font-bold text-g800 text-sm mb-1">学童・習い事の行き帰り比較</p>
+                <p className="text-xs text-g600">一人で通う見守りにおすすめ</p>
+              </Link>
               <Link href="/compare/school-silent/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">学校向け静音GPS比較</p>
                 <p className="text-xs text-g600">音が鳴らない機種を3年総額で比較</p>
