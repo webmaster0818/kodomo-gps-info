@@ -178,7 +178,7 @@ export default function SchoolRulesPage() {
 
           <div className="mt-10">
             <h3 className="font-bold text-g800 mb-4">学校・行事の持ち込みに関する関連記事</h3>
-            <div className="grid sm:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               <Link href="/knowledge/school-permission/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">学校許可の取り方・申請例文テンプレ</p>
                 <p className="text-xs text-g600">コピペ可の理由例文4種＋自治体補助一覧</p>
@@ -186,6 +186,10 @@ export default function SchoolRulesPage() {
               <Link href="/knowledge/school-trip/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">修学旅行・宿泊行事のGPS</p>
                 <p className="text-xs text-g600">宿泊行事に持って行ける？の判断</p>
+              </Link>
+              <Link href="/compare/school-trip/" className="card-hover p-4 block">
+                <p className="font-bold text-g800 text-sm mb-1">遠足・修学旅行向けGPS比較</p>
+                <p className="text-xs text-g600">行事に持たせやすい機種を料金・静音性で比較</p>
               </Link>
               <Link href="/knowledge/when-to-start/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">GPSはいつから持たせる？</p>

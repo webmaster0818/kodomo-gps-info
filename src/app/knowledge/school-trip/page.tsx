@@ -163,8 +163,8 @@ export default function SchoolTripPage() {
             <h2 className="text-xl font-extrabold text-g800 mb-3">修学旅行も安心のGPS見守り</h2>
             <p className="text-g600 mb-6 text-sm">準備万端で安心して送り出しましょう。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/knowledge/school-rules/" className="btn-primary">学校への持ち込みルール</Link>
-              <Link href="/knowledge/battery/" className="btn-accent">バッテリー持ち比較</Link>
+              <Link href="/compare/school-trip/" className="btn-primary">遠足・修学旅行向けGPSを比較する</Link>
+              <Link href="/knowledge/school-rules/" className="btn-accent">学校への持ち込みルール</Link>
             </div>
           </div>
         </div>

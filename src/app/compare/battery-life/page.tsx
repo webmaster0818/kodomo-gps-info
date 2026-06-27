@@ -108,7 +108,7 @@ export default function BatteryLifeComparePage() {
             <h2 className="text-xl font-extrabold text-g800 mb-3">用途別にもっと比較する</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/compare/school-silent/" className="btn-primary">学校向け静音GPS比較</Link>
-              <Link href="/compare/2026-ranking/" className="btn-accent">総合おすすめランキング</Link>
+              <Link href="/compare/school-trip/" className="btn-accent">遠足・修学旅行向け比較</Link>
               <Link href="/" className="btn-primary">おすすめTOPへ</Link>
             </div>
           </div>

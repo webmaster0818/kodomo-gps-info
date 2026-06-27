@@ -113,8 +113,11 @@ export default function SchoolSilentComparePage() {
 
           <div className="mt-8 card-hover p-5 bg-blue-light rounded-2xl">
             <h3 className="font-bold text-g800 mb-2">学校への持ち込みルールも確認しておこう</h3>
-            <p className="text-sm text-g600 mb-3">持ち込みの可否・申請方法・先生への確認テンプレは、学校ルールのまとめページで解説しています。</p>
-            <Link href="/knowledge/school-rules/" className="btn-primary inline-block">GPSの学校持ち込みルールを見る</Link>
+            <p className="text-sm text-g600 mb-3">持ち込みの可否・申請方法・先生への確認テンプレは、学校ルールのまとめページで解説しています。遠足・修学旅行など行事に持たせたい場合は専用の比較ページも参考にしてください。</p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/knowledge/school-rules/" className="btn-primary inline-block">GPSの学校持ち込みルールを見る</Link>
+              <Link href="/compare/school-trip/" className="btn-accent inline-block">遠足・修学旅行向けGPS比較</Link>
+            </div>
           </div>
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
