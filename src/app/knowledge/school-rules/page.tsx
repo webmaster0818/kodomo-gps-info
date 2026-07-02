@@ -32,7 +32,7 @@ export default function SchoolRulesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-06-23", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-07-03", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "学校持ち込み", "item": "https://gps-kodomo.com/knowledge/school-rules/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '学校持ち込み' }]} />
 
@@ -145,6 +145,26 @@ export default function SchoolRulesPage() {
               <li>・音が出ない設定にすることを約束</li>
               <li>・万が一の紛失時は自己責任であることを承諾</li>
             </ul>
+          </div>
+
+          <h2 className="section-title">申請理由の例文（そのままコピペOK）</h2>
+          <div className="card-hover p-6 mb-8">
+            <p className="text-g600 mb-4 text-sm">申請書や連絡帳にそのまま使える文例です。お子さんの状況に合わせて調整してください。</p>
+            <div className="space-y-4">
+              <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
+                <p className="font-bold text-g800 text-sm mb-2">例文A（通学距離・低学年）</p>
+                <p className="text-sm text-g700 leading-relaxed">「自宅から学校まで徒歩で約20分と距離があり、入学して間もないため、登下校の安全確認を目的としてGPS端末（通話機能なし・音の出ない設定）をランドセルに入れて持たせたく、許可をお願いいたします。校内で取り出したり操作したりすることはありません。」</p>
+              </div>
+              <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
+                <p className="font-bold text-g800 text-sm mb-2">例文B（通学路の交通・防犯不安）</p>
+                <p className="text-sm text-g700 leading-relaxed">「通学路に交通量の多い交差点があり、また周辺で不審者情報が出ていることから、保護者が位置を確認できるGPS端末の携行を希望します。端末は通話・カメラ機能のない位置情報専用のもので、ランドセルの内ポケットに入れたままにし、学校生活の妨げにはなりません。」</p>
+              </div>
+              <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
+                <p className="font-bold text-g800 text-sm mb-2">例文C（放課後の学童・習い事への移動）</p>
+                <p className="text-sm text-g700 leading-relaxed">「放課後に学童保育（習い事）へ一人で移動するため、到着確認を目的にGPS端末を持たせたく存じます。音や光が出ない設定にし、管理は家庭の責任で行います。紛失時に学校へご迷惑をおかけしないことを承諾のうえ、許可をお願いいたします。」</p>
+              </div>
+            </div>
+            <p className="text-sm text-g600 mt-4">状況別の例文をさらに見たい方は <Link href="/knowledge/school-permission/" className="text-blue-600 font-bold underline">学校許可の取り方・申請例文テンプレ（4パターン＋自治体補助一覧）</Link> をご覧ください。</p>
           </div>
 
           <h2 className="section-title">ランドセルへの入れ方</h2>
