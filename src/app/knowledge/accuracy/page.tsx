@@ -108,6 +108,19 @@ export default function AccuracyKnowledgePage() {
             </div>
           </div>
 
+          <h2 className="section-title">曇り・雨の日、GPSの精度への影響は？</h2>
+          <div className="card-hover p-6 mb-8">
+            <p className="text-g600 text-sm leading-relaxed mb-3">
+              結論から言うと、<strong>通常の曇りや雨がGPSの精度に与える影響はほとんどありません</strong>。GPS衛星の電波は雲を透過するため、「曇っているから位置がずれる」ことは基本的にないと考えて大丈夫です。
+            </p>
+            <p className="text-g600 text-sm leading-relaxed mb-3">
+              例外は<strong>豪雨・大雪など極端な悪天候</strong>で、電波の減衰により精度がやや低下することがあります。ただし日常の見守り用途では、天候よりも<strong>建物の中・地下・高層ビル街・高架下</strong>といった「電波の遮蔽・反射」の方がはるかに大きな誤差要因です。
+            </p>
+            <p className="text-g600 text-sm leading-relaxed">
+              雨の日に位置が飛ぶように見える場合は、天候そのものより「屋内に入った」「傘や建物で衛星が見えにくい場所を通った」ことが原因のケースが大半です。誤差が気になるときは、下の「誤差が出る原因5つ」と「精度を上げるコツ」をご確認ください。
+            </p>
+          </div>
+
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (
             <details key={i} className="faq-item">

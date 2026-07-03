@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'soranome（ソラノメ）徹底レビュー | GPS+Wi-Fi+基地局の3測位',
+  title: 'soranome（ソラノメ）の評判・口コミは？【2026年】3測位の精度・料金を解説',
   description:
     'soranome（ソラノメ）を徹底レビュー。GPS+Wi-Fi+基地局の3測位、SOSボタン搭載、月額539円。最大4人見守り対応。位置精度重視の方におすすめ。',
 };

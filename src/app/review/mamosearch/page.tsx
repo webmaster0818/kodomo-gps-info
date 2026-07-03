@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'まもサーチ 徹底レビュー | 最大25人で見守りできるGPS端末',
+  title: 'まもサーチの評判・口コミは？【2026年】最大25人で見守れるGPSの実力・料金を解説',
   description:
     'まもサーチ（BBソフトサービス）第3世代を徹底レビュー。最大25人見守り、月額539円、コンパクト設計。大家族に最適なGPS端末の機能・料金・口コミを詳しく解説。',
 };

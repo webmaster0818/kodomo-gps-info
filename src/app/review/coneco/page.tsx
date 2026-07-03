@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'coneco 徹底レビュー | 1分間隔リアルタイム追跡GPS',
+  title: 'coneco（コネコ）の評判・口コミは？【2026年】1分間隔追跡GPSの実力・料金を解説',
   description:
     'coneco（カーメイト）の機能・料金・口コミを徹底レビュー。1分間隔のリアルタイム追跡、車載機器メーカーの高精度測位技術。位置情報の更新頻度を重視する方に最適。',
 };

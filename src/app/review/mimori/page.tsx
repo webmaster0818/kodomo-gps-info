@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'みもり 徹底レビュー | 不審者情報連動の防犯GPS',
+  title: 'みもりGPSの評判・口コミは？【2026年】不審者情報連動の防犯GPSの実力・料金を解説',
   description:
     'みもり（ドリームエリア）の機能・料金・口コミを徹底レビュー。不審者情報連動、危険エリア通知、音声メッセージ機能搭載。防犯重視で選ぶならみもりがおすすめ。',
 };

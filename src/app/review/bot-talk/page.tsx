@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'BoTトーク 徹底レビュー | 元祖トーク機能＋見守りウォレット',
+  title: 'BoTトークの評判・口コミは？【2026年】トーク機能・見守りウォレット・料金を解説',
   description:
     'BoTトーク（ビーサイズ）第6世代を徹底レビュー。元祖トーク機能、見守りウォレット、AI行動学習搭載。月額528円〜748円、機能・料金・口コミを詳しく解説。',
 };

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'SayuU（サユー）徹底レビュー | トヨタの交通安全GPS端末',
+  title: 'SayuU（サユー）の評判・口コミは？【2026年】トヨタの交通安全GPSの実力・料金を解説',
   description:
     'トヨタ開発のSayuU（サユー）を徹底レビュー。左右確認検知、走行検知、双方向通話対応。月額1,210円、本体16,500円。交通安全に特化したGPS端末の機能・料金を詳しく解説。',
 };

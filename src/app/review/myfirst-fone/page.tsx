@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'myFirst Fone 徹底レビュー | 腕時計型GPS＋通話・ビデオ通話',
+  title: 'myFirst Foneの評判・口コミは？【2026年】腕時計型GPSの通話機能・料金を解説',
   description:
     'myFirst Fone（腕時計型キッズGPS）を徹底レビュー。通話・ビデオ通話対応、カメラ付き、SOS機能搭載。腕時計型GPS端末の機能・料金・口コミを詳しく解説。',
 };

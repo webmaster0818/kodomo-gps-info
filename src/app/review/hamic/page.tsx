@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Hamic 徹底レビュー | キッズスマホ型の見守りデバイス',
+  title: 'Hamic（ハミック）の評判・口コミは？【2026年】キッズスマホ型見守りの実力・料金を解説',
   description:
     'Hamic（Hamee提供）のキッズスマホ型見守りデバイスを徹底レビュー。LINE的メッセージ機能、カメラ、GPS見守り機能を搭載。スマホデビュー前の練習端末としても最適。',
 };

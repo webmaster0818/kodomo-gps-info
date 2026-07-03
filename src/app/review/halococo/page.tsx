@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'はろここ 徹底レビュー | エディオンで買える見守りGPS',
+  title: 'はろここの評判・口コミは？【2026年】エディオンの見守りGPSの実力・料金を解説',
   description:
     'はろここ（エディオン）の機能・料金・口コミを徹底レビュー。月額528円、家電量販店で購入可能、シンプル操作で初めてのGPSに最適。店舗で実物を見て買える安心感。',
 };
