@@ -15,6 +15,9 @@ const faqData = [
   { q: 'バッテリーはどれくらい持つ？', a: '最大約1週間です。位置情報の更新頻度が高いため、他機種より短めですが、その分位置精度が高くなっています。' },
   { q: '何人で見守りできますか？', a: '最大4人まで見守りメンバーを登録できます。両親と祖父母など、家族で見守りを分担できます。' },
   { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認・SOS・エリア通知に特化したGPS端末です。' },
+  { q: 'ソラノメの評判・口コミはどうですか？', a: '公式スペックと仕様から客観的に評価すると、GPS+Wi-Fi+基地局の3測位による位置精度の高さとSOSボタンが強みとして挙げられる一方、バッテリーが最大約1週間と短めな点、本体価格が14,520円とやや高めな点が使い勝手の面で指摘されやすい特性です。当サイトでは体験談の創作は行わず、公式仕様にもとづき評価しています。実際の口コミは販売ページやレビューサイトの出典付き情報をご確認ください。' },
+  { q: 'ソラノメと他の機種の違いは？', a: '最大の違いは「3測位による位置精度重視」の設計です。GPSのみの機種より屋内や地下での位置特定に強い一方、位置更新の頻度が高いぶんバッテリーは最大約1週間と短めです。通話・トーク機能はないため、子供とメッセージのやり取りをしたい場合はBoT Talkやみてねみまもりなど通話・トーク対応機種が候補になります。精度優先か、電池持ち・通話優先かで選び分けるのがおすすめです。' },
+  { q: 'ソラノメは解約に縛りや違約金がありますか？', a: '契約期間の縛り・解約金はありません。月額539円（税込）で、いつでも解約できます（別途、本体代金14,520円が必要）。長期の縛りを避けたい家庭にも向いています。' },
 ];
 
 const faqJsonLd = {
@@ -31,7 +34,7 @@ export default function SoranomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-09", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "soranome（ソラノメ）", "item": "https://gps-kodomo.com/review/soranome/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'soranome（ソラノメ）' }]} />
 
@@ -50,6 +53,18 @@ export default function SoranomePage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          {/* 結論box */}
+          <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
+            <h2 className="font-extrabold text-g800 mb-2">結論：位置精度を最優先するならソラノメ。通話不要で「どこにいるか」を正確に知りたい家庭向き</h2>
+            <ul className="space-y-1.5 text-sm text-g700">
+              <li>・<strong>強み</strong>：GPS+Wi-Fi+基地局の<strong>3測位</strong>で屋内・地下も含め位置精度が高い。SOSボタン・IP55防水も搭載</li>
+              <li>・<strong>弱み</strong>：バッテリーが<strong>最大約1週間</strong>と短め、本体<strong>14,520円</strong>とやや高め、<strong>通話・トークなし</strong></li>
+              <li>・<strong>料金</strong>：月額<strong>539円</strong>・契約期間の縛りや解約金なし</li>
+              <li>・<strong>向く人</strong>：登下校の位置を正確に把握したい／通話は不要な家庭。<strong>向かない人</strong>：子供と連絡を取りたい・電池をこまめに充電したくない家庭</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：エスキュービズム公式（ソラノメ製品ページ・仕様）。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
+          </div>
+
           <h2 className="section-title">soranome（ソラノメ）とは</h2>
           <p className="text-g600 mb-6">
             soranome（ソラノメ）は、エスキュービズムが提供する子供用GPS端末です。
@@ -138,6 +153,28 @@ export default function SoranomePage() {
                 <li>・本体価格が14,520円と高め</li>
                 <li>・トーク・通話機能なし</li>
                 <li>・見守り人数が最大4人と少なめ</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="section-title">こんな家庭におすすめ / 向かない家庭</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-blue mb-2">おすすめの家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・登下校の位置を「正確に」把握したい</li>
+                <li>・ビル内や地下街など、GPSが届きにくい場所も通る</li>
+                <li>・SOSボタンで緊急時の備えをしたい</li>
+                <li>・通話・トークは不要で、位置確認だけで十分</li>
+              </ul>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange-dark mb-2">向かない家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・子供とメッセージ・通話でやり取りしたい（→トーク対応機種へ）</li>
+                <li>・充電の手間を減らしたい（電池持ちは最大約1週間）</li>
+                <li>・本体価格をできるだけ抑えたい</li>
+                <li>・5人以上で見守りを分担したい（最大4人）</li>
               </ul>
             </div>
           </div>

@@ -31,7 +31,7 @@ export default function BotTalkPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "BoTトーク 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "BoTトーク 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-09", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "BoTトーク", "item": "https://gps-kodomo.com/review/bot-talk/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'BoTトーク' }]} />
 
@@ -50,6 +50,18 @@ export default function BotTalkPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          {/* 結論box */}
+          <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
+            <h2 className="font-extrabold text-g800 mb-2">結論：位置確認に加えて「トーク・通話」も電子マネーも欲しいならBoTトーク</h2>
+            <ul className="space-y-1.5 text-sm text-g700">
+              <li>・<strong>強み</strong>：トークプランで子供と<strong>メッセージ・通話</strong>ができる／<strong>見守りウォレット</strong>（電子マネー）／<strong>AI行動学習</strong>でいつもと違う動きを通知</li>
+              <li>・<strong>弱み</strong>：多機能なぶん<strong>トークプランは月額748円</strong>とやや高め／位置精度に特化した設計ではない</li>
+              <li>・<strong>料金</strong>：GPSプラン月額<strong>528円</strong>／トークプラン<strong>748円</strong>・契約期間の縛りや解約金なし</li>
+              <li>・<strong>向く人</strong>：位置確認だけでなく子供と連絡も取りたい家庭。<strong>向かない人</strong>：とにかく安く位置確認だけしたい家庭（→GPS特化機種へ）</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：GPS BoT（BoTトーク）公式（製品・料金ページ）。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
+          </div>
+
           <h2 className="section-title">BoTトークとは</h2>
           <p className="text-g600 mb-6">
             BoTトークは、ビーサイズが提供する子供用GPS端末の元祖的存在です。
@@ -180,6 +192,27 @@ export default function BotTalkPage() {
             <div className="card-hover p-5">
               <h3 className="font-bold text-green-dark text-sm mb-2">バッテリー持ち</h3>
               <p className="text-sm text-g600">公称最大1ヶ月ですが、トーク機能を日常的に使うと2〜3週間程度。GPSのみのプランなら4週間近く持つ印象です。みてねGPSよりはやや短めです。</p>
+            </div>
+          </div>
+
+          <h2 className="section-title">こんな家庭におすすめ / 向かない家庭</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-blue mb-2">おすすめの家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・子供とメッセージ・通話でやり取りしたい</li>
+                <li>・おつかいやコンビニ用に電子マネー（見守りウォレット）を持たせたい</li>
+                <li>・行動パターンから「いつもと違う」を自動で知りたい（AI行動学習）</li>
+                <li>・1台で見守り＋連絡＋お金を完結させたい</li>
+              </ul>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange-dark mb-2">向かない家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・とにかく月額を安く、位置確認だけできれば十分（→GPS特化機種へ）</li>
+                <li>・電子マネーやトークは不要</li>
+                <li>・屋内・地下での位置精度を最優先したい（→3測位機種へ）</li>
+              </ul>
             </div>
           </div>
 
