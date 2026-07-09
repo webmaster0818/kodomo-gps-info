@@ -151,50 +151,6 @@ export default function BotTalkPage() {
             </div>
           </div>
 
-          {/* User Reviews */}
-          <h2 className="section-title">利用者の口コミ</h2>
-          <div className="grid sm:grid-cols-2 gap-4 mb-4">
-            {[
-              { author: '小学2年生の保護者', rating: 5, date: '2026年3月', text: 'トーク機能が使いやすく、小2の子供でもボタンを押すだけでメッセージを送れます。AI学習のおかげで到着予測が正確になり、お迎えの待ち時間がほぼなくなりました。' },
-              { author: '見守りウォレット活用中', rating: 5, date: '2026年2月', text: '見守りウォレット機能で子供にお小遣いをチャージしています。利用履歴がアプリに届くので何を買ったか把握でき、お金の教育にも役立っています。バッテリーも十分持ちます。' },
-              { author: '利用歴8ヶ月のユーザー', rating: 3, date: '2026年2月', text: 'トーク機能は便利ですが、メッセージの着信に気づかないことがたまにあります。GPS精度はみてねGPSと比べるとやや劣る印象で、地下では測位できないこともあります。' },
-              { author: '小1のお子さんに利用中', rating: 2, date: '2026年1月', text: 'トーク機能を使うと月額が748円になるのがネック。GPS精度が競合より低めで、学校にいるのに違う場所に表示されることがあります。地下鉄での移動中はほぼ追えません。改善を期待しています。' },
-            ].map((r, i) => (
-              <div key={i} className="card-hover p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-blue">{r.author}</span>
-                    <span className="text-xs text-g400">{r.date}</span>
-                  </div>
-                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
-                </div>
-                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-g400 mb-2">※口コミはApp Store・Google Playの投稿を参考に要約・再構成したものです</p>
-          <p className="text-xs text-g400 mb-8">
-            出典: <a href="https://apps.apple.com/jp/app/id1216688438" className="underline" target="_blank" rel="noopener noreferrer">BoTトーク（App Store）</a>
-          </p>
-
-          {/* Usage Impressions */}
-          <h2 className="section-title">使ってみた感想</h2>
-          <p className="text-g600 mb-4">実際の使用感を3つのポイントで解説します。</p>
-          <div className="grid sm:grid-cols-3 gap-4 mb-8">
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-green-dark text-sm mb-2">位置精度</h3>
-              <p className="text-sm text-g600">GPS+GLONASS+みちびき+Wi-Fiの複合測位で、屋外精度は高水準。AI行動学習により通学路の逸脱検知も正確で、使い込むほど精度が向上します。</p>
-            </div>
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-green-dark text-sm mb-2">アプリの使いやすさ</h3>
-              <p className="text-sm text-g600">トーク画面と地図画面がワンタップで切り替えられるシンプルなUI。見守りウォレットのチャージ・履歴確認もアプリ内で完結します。</p>
-            </div>
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-green-dark text-sm mb-2">バッテリー持ち</h3>
-              <p className="text-sm text-g600">公称最大1ヶ月ですが、トーク機能を日常的に使うと2〜3週間程度。GPSのみのプランなら4週間近く持つ印象です。みてねGPSよりはやや短めです。</p>
-            </div>
-          </div>
-
           <h2 className="section-title">こんな家庭におすすめ / 向かない家庭</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">

@@ -52,6 +52,18 @@ export default function MitenePage() {
       {/* Overview */}
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          {/* 結論box */}
+          <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
+            <h2 className="font-extrabold text-g800 mb-2">結論：家族アルバム「みてね」のMIXIが運営。3機種から選べ、大手の安心感を重視する家庭向き</h2>
+            <ul className="space-y-1.5 text-sm text-g700">
+              <li>・<strong>強み</strong>：東証プライム上場の<strong>MIXI（旧ミクシィ）</strong>運営で安心感／用途で選べる<strong>3機種（MG05・トーク・トークPlus）</strong></li>
+              <li>・<strong>弱み</strong>：トーク・通話まで使うと上位プランで月額が上がる／位置精度に特化した設計ではない</li>
+              <li>・<strong>料金</strong>：月額<strong>528円〜748円</strong>（プラン・機種による）</li>
+              <li>・<strong>向く人</strong>：大手運営の安心感を重視／将来トークも使いたい家庭。<strong>向かない人</strong>：とにかく最安・位置精度を最優先したい家庭</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：みてねみまもりGPS公式（製品・料金ページ）。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
+          </div>
+
           <h2 className="section-title">みてねみまもりGPSとは</h2>
           <p className="text-g600 mb-6">
             みてねみまもりGPSは、MIXI（旧ミクシィ）が提供する子供用GPS端末です。
@@ -177,50 +189,6 @@ export default function MitenePage() {
             </div>
           </div>
 
-          {/* User Reviews */}
-          <h2 className="section-title">利用者の口コミ</h2>
-          <div className="grid sm:grid-cols-2 gap-4 mb-4">
-            {[
-              { author: '小学1年生の保護者', rating: 5, date: '2026年3月', text: 'バッテリーが1〜1.5ヶ月持つので、充電は月に1回で済んでいます。ランドセルに入れっぱなしで本当に手間がかかりません。シンプルに使えるのが一番の魅力です。' },
-              { author: '利用歴1年のユーザー', rating: 5, date: '2026年2月', text: 'トーク機能（音声メッセージ）がお迎えの連絡に重宝しています。「今から迎えに行くよ」「わかった」のやりとりがボタンひとつでできるのが親子ともに楽です。' },
-              { author: '共有機能を活用中の保護者', rating: 5, date: '2026年2月', text: '祖父母とも位置情報を共有していますが、認証コードがないとアクセスできない仕組みなのでセキュリティ面も安心。家族みんなで見守れるのがありがたいです。' },
-              { author: '小3のお子さんに利用中', rating: 3, date: '2026年1月', text: '基本的には満足ですが、位置が30mほどずれて隣の建物に表示されることがあります。また、トークの音声メッセージが30分近く遅れて届くこともあり、急ぎの連絡には不向きかもしれません。月額748円のトーク料金も少し気になります。' },
-            ].map((r, i) => (
-              <div key={i} className="card-hover p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-blue">{r.author}</span>
-                    <span className="text-xs text-g400">{r.date}</span>
-                  </div>
-                  <div className="text-sm text-orange">{'★'.repeat(r.rating)}{'☆'.repeat(5 - r.rating)}</div>
-                </div>
-                <p className="text-sm leading-relaxed text-g600">{r.text}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-g400 mb-2">※口コミはApp Store・Google Playの投稿を参考に要約・再構成したものです</p>
-          <p className="text-xs text-g400 mb-8">
-            出典: <a href="https://apps.apple.com/jp/app/id1535156868" className="underline" target="_blank" rel="noopener noreferrer">みてねみまもりGPS（App Store）</a>
-          </p>
-
-          {/* Usage Impressions */}
-          <h2 className="section-title">使ってみた感想</h2>
-          <p className="text-g600 mb-4">実際の使用感を3つのポイントで解説します。</p>
-          <div className="grid sm:grid-cols-3 gap-4 mb-8">
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-blue text-sm mb-2">位置精度</h3>
-              <p className="text-sm text-g600">GPS+GLONASS+みちびき+Wi-Fiの4測位対応で、屋外では数メートルの精度。屋内ではWi-Fi測位でおおよその位置を把握でき、通学路の確認には十分な精度です。</p>
-            </div>
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-blue text-sm mb-2">アプリの使いやすさ</h3>
-              <p className="text-sm text-g600">「みてね」のUIを踏襲した直感的なデザイン。地図上でのリアルタイム位置表示、移動履歴の確認、エリア通知の設定がシンプルな操作で完結します。</p>
-            </div>
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-blue text-sm mb-2">バッテリー持ち</h3>
-              <p className="text-sm text-g600">公称最大2ヶ月ですが、更新頻度を3分間隔に設定した場合は2〜3週間程度。それでも週1回の充電で済むため、子供に充電を意識させる必要がほとんどありません。</p>
-            </div>
-          </div>
-
           {/* How to use */}
           <h2 className="section-title">使い方・設定手順</h2>
           <div className="space-y-4 mb-8 max-w-2xl">
@@ -244,6 +212,27 @@ export default function MitenePage() {
           </div>
 
           {/* FAQ */}
+          <h2 className="section-title">こんな家庭におすすめ / 向かない家庭</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-blue mb-2">おすすめの家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・大手（MIXI）運営の安心感を重視したい</li>
+                <li>・家族アルバム「みてね」を使っていて連携したい</li>
+                <li>・まずGPSで始めて、将来トーク・通話も検討したい（3機種から選べる）</li>
+                <li>・家族みんなで見守りを共有したい</li>
+              </ul>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange-dark mb-2">向かない家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・とにかく月額・本体を最安に抑えたい</li>
+                <li>・屋内・地下での位置精度を最優先したい（→3測位機種へ）</li>
+                <li>・最初からトーク・通話が必須（上位プラン前提になる）</li>
+              </ul>
+            </div>
+          </div>
+
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (
             <details key={i} className="faq-item">
