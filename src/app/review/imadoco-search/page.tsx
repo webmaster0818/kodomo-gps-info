@@ -31,7 +31,7 @@ export default function ImadocoSearchPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "イマドコサーチ（ドコモ）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-07-02", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "イマドコサーチ（ドコモ）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-07-17", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "イマドコサーチ", "brand": {"@type": "Brand", "name": "NTTドコモ"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "イマドコサーチ", "item": "https://gps-kodomo.com/review/imadoco-search/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'イマドコサーチ（ドコモ）' }]} />
@@ -53,6 +53,19 @@ export default function ImadocoSearchPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          {/* 結論box */}
+          <div className="rounded-2xl border-l-4 border-orange bg-orange-light/40 p-6 mb-8">
+            <h2 className="font-extrabold text-g800 mb-2">結論：イマドコサーチは「単体GPS」ではなく、ドコモのキッズケータイ／Androidの位置を見守るサービス。通話も1台でまとめたい家庭向き</h2>
+            <ul className="space-y-1.5 text-sm text-g700">
+              <li>・<strong>強み</strong>：位置確認と<strong>通話を1台</strong>のキッズケータイ/スマホでまかなえる。大手キャリアの安心感。<strong>保護者はドコモ以外の回線でも利用可</strong>（dアカウント要）</li>
+              <li>・<strong>弱み</strong>：<strong>単体GPS端末ではなく</strong>対応端末＋回線契約が前提。電池持ちは端末次第でGPS専用機ほど長くない。<strong>iPhoneなど対象外端末では不可</strong></li>
+              <li>・<strong>料金</strong>：月額<strong>330円（税込）</strong>・新規31日間無料（キッズケータイ向けに月額220円の案内もあり／対象・申込方法で条件が異なるため要確認）</li>
+              <li>・<strong>運営</strong>：NTTドコモ（位置検索サービス＝オプション）</li>
+              <li>・<strong>向く人</strong>：位置確認と通話を1台にまとめたい／ドコモのキッズケータイを検討中。<strong>向かない人</strong>：小さなGPSだけ安く持たせたい／充電の手間を極力減らしたい家庭</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：ドコモ公式（2026年7月確認）。料金・対応端末・条件は変更される場合があるため申込前に公式で必ずご確認ください。<Link href="/#ranking" className="text-orange underline">他機種との比較ランキングはこちら</Link></p>
+          </div>
+
           {/* 位置づけの注意 */}
           <div className="card-hover p-6 mb-8 bg-blue-light/50 border-l-4 border-blue rounded-xl">
             <h2 className="font-extrabold text-g800 mb-2">イマドコサーチは「端末」ではなく位置検索サービス</h2>

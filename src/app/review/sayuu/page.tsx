@@ -31,7 +31,7 @@ export default function SayuuPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-17", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "SayuU（サユー）", "item": "https://gps-kodomo.com/review/sayuu/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'SayuU（サユー）' }]} />
 
@@ -51,6 +51,18 @@ export default function SayuuPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          {/* 結論box */}
+          <div className="rounded-2xl border-l-4 border-orange bg-orange-light/40 p-6 mb-8">
+            <h2 className="font-extrabold text-g800 mb-2">結論：交通安全機能を最重視するならSayuU。左右確認検知・走行検知＋双方向通話を求める家庭向き（料金は高め）</h2>
+            <ul className="space-y-1.5 text-sm text-g700">
+              <li>・<strong>強み</strong>：他機種にない<strong>左右確認検知・走行検知</strong>の交通安全機能。<strong>双方向通話</strong>対応。トヨタ品質</li>
+              <li>・<strong>弱み</strong>：月額<strong>1,210円</strong>と他機種の約2倍・本体<strong>16,500円</strong>と高い。バッテリー<strong>最大約3日</strong>で毎日充電が必要。テキストのトーク機能はなし</li>
+              <li>・<strong>料金</strong>：月額1,210円（税込）＋本体16,500円（税込）</li>
+              <li>・<strong>向く人</strong>：交通安全の習慣づけを重視／通話も使いたい家庭。<strong>向かない人</strong>：料金と電池持ちを重視／位置確認だけで十分な家庭</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：トヨタ（SayuU）公式の製品ページ・仕様。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-orange underline">他機種との比較ランキングはこちら</Link></p>
+          </div>
+
           <h2 className="section-title">SayuU（サユー）とは</h2>
           <p className="text-g600 mb-6">
             SayuU（サユー）は、トヨタが開発した子供用GPS端末です。
@@ -159,6 +171,28 @@ export default function SayuuPage() {
                 <li>・バッテリーが最大3日間で毎日充電が必要</li>
                 <li>・トーク（テキスト）機能はない</li>
                 <li>・初期コストが高い</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="section-title">こんな家庭におすすめ / 向かない家庭</h2>
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-blue mb-2">おすすめの家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・登下校で交通量の多い道路や横断歩道を通る</li>
+                <li>・交通安全の習慣を子供に身につけさせたい</li>
+                <li>・位置確認だけでなく双方向の通話も使いたい</li>
+                <li>・料金より安全機能の手厚さを優先したい</li>
+              </ul>
+            </div>
+            <div className="card-hover p-5">
+              <h3 className="font-bold text-orange-dark mb-2">向かない家庭</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・月額・本体のコストをできるだけ抑えたい（他機種の約2倍）</li>
+                <li>・充電の手間を減らしたい（電池持ちは最大約3日）</li>
+                <li>・テキストのトークで子供とやり取りしたい（トーク非対応）</li>
+                <li>・位置確認だけで十分（安全機能は不要）</li>
               </ul>
             </div>
           </div>
