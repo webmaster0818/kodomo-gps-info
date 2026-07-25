@@ -31,7 +31,7 @@ export default function WhenToStartPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS いつから？何歳から始める？年齢別ガイド", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS いつから？何歳から始める？年齢別ガイド", "datePublished": "2026-03-15", "dateModified": "2026-07-25", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "いつから？", "item": "https://gps-kodomo.com/knowledge/when-to-start/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: 'いつから？' }]} />
 
@@ -101,20 +101,41 @@ export default function WhenToStartPage() {
             ))}
           </div>
 
-          <h2 className="section-title">先輩ママの声</h2>
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {[
-              { name: 'Aさん（小1男子のママ）', text: '入学と同時にみてねを購入。帰りが遅いとき「まだ学校にいる」とわかるだけで全然違います。もっと早く買えばよかった！' },
-              { name: 'Bさん（小3女子のママ）', text: '友達の家に遊びに行く機会が増えて購入。「どこにいるか」がわかるだけで、心配で電話する回数が激減しました。' },
-              { name: 'Cさん（年長男子のママ）', text: '幼稚園バスが来るまでの待ち時間が心配で導入。GPSで確認できるので、仕事中も安心です。' },
-              { name: 'Dさん（小5女子のママ）', text: '塾通いが始まり購入。電車通学なので、乗り換えの確認に重宝しています。中学まではGPSで見守る予定です。' },
-            ].map((voice) => (
-              <div key={voice.name} className="card-hover p-5">
-                <p className="font-bold text-g800 text-sm mb-2">{voice.name}</p>
-                <p className="text-sm text-g600">{voice.text}</p>
-              </div>
-            ))}
+          <h2 className="section-title">何歳まで持たせる？卒業のタイミング</h2>
+          <div className="card-hover p-5 mb-6 bg-blue-light rounded-2xl">
+            <p className="text-sm text-g700 leading-relaxed mb-3">
+              「何歳まで」に決まった正解はなく、公的な統計もありません。実際の判断は<strong>「通話・メッセージなどの連絡手段が必要になったか」</strong>で切り替わることが多いため、学年ごとの目安を整理します。
+            </p>
+            <ul className="text-sm text-g700 leading-7 space-y-1.5">
+              <li>・<strong>小学生（低〜中学年）</strong>：親主導の見守りが中心。位置だけ分かれば十分な時期で、<strong>GPS単機能が最も活きる</strong>。</li>
+              <li>・<strong>高学年（小5〜6）</strong>：塾・習い事・友人宅など行動範囲が拡大。連絡手段のニーズが出始め、GPS継続かキッズ携帯かを検討する家庭が増える。</li>
+              <li>・<strong>中学進学</strong>：部活・友人との連絡やスマホ所持率の上昇により、<strong>GPS→キッズ携帯／スマホへ移行</strong>する家庭が多い。</li>
+            </ul>
+            <p className="text-sm text-g700 leading-relaxed mt-3">
+              「まだスマホは早いが位置は知りたい」という時期はGPSを継続、「本人同士で連絡を取り合う必要が出てきた」ならキッズ携帯・スマホへ、と考えると切り替え時期を判断しやすくなります。
+            </p>
           </div>
+
+          <h2 className="section-title">GPS単機能とキッズ携帯、どちらを選ぶ？</h2>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse min-w-[520px]">
+              <thead>
+                <tr className="bg-blue text-white">
+                  <th className="py-3 px-3 text-left font-semibold">比較項目</th>
+                  <th className="py-3 px-3 text-left font-semibold">子供見守りGPS</th>
+                  <th className="py-3 px-3 text-left font-semibold">キッズ携帯</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-g100"><td className="py-2 px-3 font-semibold text-g700">主な機能</td><td className="py-2 px-3 text-g600">位置情報・エリア通知（一部SOSボタン）</td><td className="py-2 px-3 text-g600">通話・メール＋位置情報</td></tr>
+                <tr className="border-b border-g100 bg-g50"><td className="py-2 px-3 font-semibold text-g700">月額の目安</td><td className="py-2 px-3 text-g600">数百円〜（機種による）</td><td className="py-2 px-3 text-g600">数百円〜（キャリアのプランによる）</td></tr>
+                <tr className="border-b border-g100"><td className="py-2 px-3 font-semibold text-g700">本体サイズ</td><td className="py-2 px-3 text-g600">小型・ランドセルに入れやすい</td><td className="py-2 px-3 text-g600">スマホ型でやや大きい</td></tr>
+                <tr className="border-b border-g100 bg-g50"><td className="py-2 px-3 font-semibold text-g700">向く時期</td><td className="py-2 px-3 text-g600">未就学〜小学生（まだ通話は不要）</td><td className="py-2 px-3 text-g600">高学年〜中学（連絡手段が必要に）</td></tr>
+                <tr><td className="py-2 px-3 font-semibold text-g700">学校への持ち込み</td><td className="py-2 px-3 text-g600">通話機能がなく許可されやすい傾向</td><td className="py-2 px-3 text-g600">通話機能があり申請が必要な場合も</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-g400 mb-8">※料金・プランは各社公式で、学校の持ち込みルールは各校でご確認ください（学校ルールは<a href="/knowledge/school-rules/" className="text-blue underline">GPSの学校持ち込み申請ガイド</a>で解説）。</p>
 
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (
