@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'あんしんウォッチャーの評判・口コミ【2026年6月】2台目無料・何人まで・バッテリー寿命まで徹底解説',
+  title: 'あんしんウォッチャーの寿命は？電池交換不可・最大2カ月＝買い替え時期【2026年】評判・口コミ・2台目無料も',
   description:
-    'あんしんウォッチャー（KDDI/au）を徹底レビュー。月額539円・2台目は月額0円・契約者含め最大10人で見守り。バッテリー寿命と交換可否、家族招待のやり方、LEとの違い、解約条件まで公式情報（2026年6月確認）をもとに解説します。',
+    'あんしんウォッチャー（KDDI/au）の寿命・バッテリーを公式情報で解説。電池は内蔵式で交換不可、1回の充電で最大約2カ月（1,500mAh）。劣化したら端末の買い替えが前提です。あわせて月額539円・2台目0円・最大10人見守り・評判・口コミ・LEとの違い・解約条件まで（2026年6月確認）。',
 };
 
 const faqData = [
@@ -36,7 +36,7 @@ export default function AnshinWatcherPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの評判・口コミ｜2台目無料・何人まで・バッテリー寿命まで徹底解説", "datePublished": "2026-03-15", "dateModified": "2026-06-23", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの評判・口コミ｜2台目無料・何人まで・バッテリー寿命まで徹底解説", "datePublished": "2026-03-15", "dateModified": "2026-07-25", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "あんしんウォッチャー", "item": "https://gps-kodomo.com/review/anshin-watcher/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'あんしんウォッチャー' }]} />
 
