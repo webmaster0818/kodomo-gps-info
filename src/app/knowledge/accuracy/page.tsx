@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'GPS精度の仕組み | 誤差が出る原因と精度を上げるコツ',
+  title: 'GPS精度の仕組み | 雨・曇りの影響は？誤差の原因と精度を上げるコツ',
   description:
-    'GPS測位の仕組みをわかりやすく解説。誤差が出る原因5つ（ビル・天候・屋内・トンネル・電池）と精度を上げるコツを紹介。子供GPSの精度について理解が深まります。',
+    '雨や曇りはGPS精度にほぼ影響しません(影響は豪雨・大雪のみ)。GPS測位の仕組み、誤差が出る原因5つ（ビル・天候・屋内・トンネル・電池）と精度を上げるコツをわかりやすく解説します。',
 };
 
 const faqData = [
@@ -13,6 +13,8 @@ const faqData = [
   { q: 'みちびき対応だと精度は改善する？', a: 'はい、特に日本国内では効果的です。みちびきは日本上空に特化した衛星で、ビル街や山間部でGPSだけでは受信困難な場所でも精度を補完します。' },
   { q: 'Wi-Fi測位と衛星測位はどう違う？', a: '衛星測位はGPS等の人工衛星から電波を受信、Wi-Fi測位は周囲のWi-Fiスポットを利用します。Wi-Fi測位は屋内で有効ですが、Wi-Fiスポットが少ない場所では精度が落ちます。' },
   { q: '天気が悪いと精度は落ちますか？', a: '通常の雨や曇りでは大きな影響はありません。ただし、豪雨や大雪の場合は電波の減衰が起きて精度がやや低下することがあります。' },
+  { q: '雨の日にGPSがずれるのはなぜ？', a: '雨そのものが原因であることはまれです。GPS衛星の電波は雨や雲をほぼ透過するため、雨の日にずれるように見える場合は「屋内や車内に入った」「建物や高架で衛星が遮られた」ことが主な原因です。豪雨・大雪レベルの悪天候でのみ、電波減衰による精度低下が起こることがあります。' },
+  { q: '曇りの日はGPSに影響がありますか？', a: 'ほぼ影響ありません。GPS衛星の電波は雲を透過するため、曇天が原因で位置がずれることは基本的にありません。誤差の主因は天候ではなく、建物内・地下・高層ビル街・高架下などの電波の遮蔽・反射です。' },
   { q: 'バッテリー残量が少ないと精度が落ちる？', a: '極端にバッテリーが少ない場合、省電力モードに切り替わり更新間隔が長くなることがあります。バッテリーは20%以上を維持するのがおすすめです。' },
   { q: '精度を最大化するにはどうすれば？', a: 'GPS+GLONASS+みちびき+Wi-Fi対応機種を選び、更新間隔を1.5〜3分に設定し、ファームウェアを最新に保つことで精度を最大化できます。' },
 ];
@@ -31,7 +33,7 @@ export default function AccuracyKnowledgePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS精度の仕組み", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS精度の仕組み", "datePublished": "2026-03-15", "dateModified": "2026-08-02", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "GPS精度の仕組み", "item": "https://gps-kodomo.com/knowledge/accuracy/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: 'GPS精度の仕組み' }]} />
 
@@ -50,6 +52,12 @@ export default function AccuracyKnowledgePage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          <div className="rounded-xl border-l-4 border-blue bg-blue-light p-6 mb-10">
+            <p className="font-bold text-g800 mb-2">【先に結論】天気(雨・曇り)はGPS精度にほぼ影響しません</p>
+            <p className="text-sm text-g700 leading-relaxed">
+              GPS衛星の電波は雲を透過するため、<strong>通常の雨や曇りで位置がずれることは基本的にありません</strong>(影響が出るのは豪雨・大雪など極端な悪天候のみ)。雨の日にずれるように見える場合、原因の大半は「屋内に入った」「建物で衛星が遮られた」ことです。詳しくは<a href="#weather" className="text-blue-600 font-bold underline">天候の影響の解説</a>へ。
+            </p>
+          </div>
           <h2 className="section-title">GPS測位の仕組み</h2>
           <div className="card-hover p-6 mb-8">
             <p className="text-g600 mb-4">
@@ -108,7 +116,7 @@ export default function AccuracyKnowledgePage() {
             </div>
           </div>
 
-          <h2 className="section-title">曇り・雨の日、GPSの精度への影響は？</h2>
+          <h2 id="weather" className="section-title scroll-mt-20">曇り・雨の日、GPSの精度への影響は？</h2>
           <div className="card-hover p-6 mb-8">
             <p className="text-g600 text-sm leading-relaxed mb-3">
               結論から言うと、<strong>通常の曇りや雨がGPSの精度に与える影響はほとんどありません</strong>。GPS衛星の電波は雲を透過するため、「曇っているから位置がずれる」ことは基本的にないと考えて大丈夫です。

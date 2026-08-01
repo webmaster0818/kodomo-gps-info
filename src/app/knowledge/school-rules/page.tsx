@@ -33,7 +33,7 @@ export default function SchoolRulesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-07-03", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-08-02", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "学校持ち込み", "item": "https://gps-kodomo.com/knowledge/school-rules/"}]}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '学校持ち込み' }]} />
 
@@ -164,6 +164,54 @@ export default function SchoolRulesPage() {
                 <p className="font-bold text-g800 text-sm mb-2">例文C（放課後の学童・習い事への移動）</p>
                 <p className="text-sm text-g700 leading-relaxed">「放課後に学童保育（習い事）へ一人で移動するため、到着確認を目的にGPS端末を持たせたく存じます。音や光が出ない設定にし、管理は家庭の責任で行います。紛失時に学校へご迷惑をおかけしないことを承諾のうえ、許可をお願いいたします。」</p>
               </div>
+              <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
+                <p className="font-bold text-g800 text-sm mb-2">例文D（キッズケータイ・携帯電話の持ち込み申請）</p>
+                <p className="text-sm text-g700 leading-relaxed">「共働きのため下校後の連絡手段が必要であり、キッズ携帯の持ち込みを申請いたします。校内では電源を切り（マナーモードに設定し）ランドセルから取り出さないこと、使用は登下校時の連絡・位置確認に限ることを家庭で指導いたします。学校の規則に従い、適切に管理いたしますので、ご許可をお願いいたします。」</p>
+              </div>
+              <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
+                <p className="font-bold text-g800 text-sm mb-2">例文E（祖父母宅・ひとりでの留守番が多い家庭）</p>
+                <p className="text-sm text-g700 leading-relaxed">「下校後、祖父母宅へ立ち寄る日と自宅で留守番をする日があり、どちらに向かったかを保護者が把握するためにGPS端末の携行を希望いたします。端末は位置情報専用で音は出ず、お子さま自身が操作する必要もないため、学校生活に影響はありません。」</p>
+              </div>
+              <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
+                <p className="font-bold text-g800 text-sm mb-2">例文F（災害・引き渡し時の所在確認）</p>
+                <p className="text-sm text-g700 leading-relaxed">「地震等の災害時や下校時刻の急な変更時に、子どもの所在をすみやかに確認し、確実な引き取りにつなげることを目的として、GPS端末の携行を申請いたします。日常の校内では一切使用せず、ランドセルに入れたままにいたします。」</p>
+              </div>
+            </div>
+
+            <div className="mt-6 rounded-lg border border-blue-200 p-5" style={{ background: 'rgba(59,130,246,0.03)' }}>
+              <p className="font-bold text-g800 text-sm mb-2">📝 あわせて添えると通りやすい「家庭での約束（誓約文）」テンプレ</p>
+              <p className="text-sm text-g700 leading-relaxed mb-2">申請理由に以下のような誓約を添えると、学校側が懸念する点（授業妨害・トラブル・紛失責任）に先回りして答えられます。</p>
+              <ul className="text-sm text-g700 leading-relaxed space-y-1">
+                <li>・校内では取り出さず、音や光が出ない状態で携行させます</li>
+                <li>・お子さま自身に操作させず、確認は保護者側のアプリのみで行います</li>
+                <li>・紛失・破損時は家庭の責任とし、学校に対応をお願いいたしません</li>
+                <li>・学校の指示があった場合は、持ち込み方法を速やかに見直します</li>
+              </ul>
+            </div>
+
+            <div className="mt-6">
+              <p className="font-bold text-g800 text-sm mb-2">🔇 主要機種の「音が出るか」早見表（各公式サイト確認・2026年8月2日時点）</p>
+              <p className="text-sm text-g600 mb-3">「音や光が出ない設定にします」と申請するためには、実際に無音で運用できる機種かの確認が必要です。主要6機種の公式情報をまとめました。</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border border-g200 rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-blue-light text-left">
+                      <th className="px-3 py-2.5">機種</th>
+                      <th className="px-3 py-2.5">音が出る機能</th>
+                      <th className="px-3 py-2.5">学校向けの静音運用</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">あんしんウォッチャー</td><td className="px-3 py-2.5">なし（スピーカー非内蔵・バイブなし）</td><td className="px-3 py-2.5">設定不要で常時無音（公式FAQ明記）</td></tr>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">soranome</td><td className="px-3 py-2.5">なし（「音が鳴る機能はございません」・SOS発信も無音）</td><td className="px-3 py-2.5">設定不要で常時無音</td></tr>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">みまもりGPS（旧どこかなGPS）</td><td className="px-3 py-2.5">通常運用ではほぼなし（電源オフ時の音等のみ）</td><td className="px-3 py-2.5">「電源を切るとき以外に音は鳴りません」（公式FAQ）</td></tr>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">BoTトーク</td><td className="px-3 py-2.5">あり（トーク再生・着信音）</td><td className="px-3 py-2.5">サイレントモードが標準（トークも無音で受信）</td></tr>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">みてねみまもりGPS</td><td className="px-3 py-2.5">機種による（MB06/MT05はボイスメッセージあり）</td><td className="px-3 py-2.5">通知音オン/オフ切替可（「学校では音を鳴らさずに使えます」と公式案内）</td></tr>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">イマドコサーチ（キッズケータイ）</td><td className="px-3 py-2.5">あり（検索時のGPS測位音・バイブ）</td><td className="px-3 py-2.5">GPS測位音オフ設定・マナーモードで消音可（公式に機種別手順）</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-g600 mt-2">※各社公式サイト・公式FAQの記載にもとづきます（2026年8月2日確認）。仕様は機種・ファームウェアで変わる場合があるため、申請前に最新の公式情報をご確認ください。</p>
             </div>
             <p className="text-sm text-g600 mt-4">状況別の例文をさらに見たい方は <Link href="/knowledge/school-permission/" className="text-blue-600 font-bold underline">学校許可の取り方・申請例文テンプレ（4パターン＋自治体補助一覧）</Link> をご覧ください。</p>
           </div>
