@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'まもサーチの評判・口コミは？【2026年】最大25人で見守れるGPSの実力・料金を解説',
+  title: 'まもサーチ3の評判・口コミは？【2026年】最大25人で見守れるGPSの実力・料金を解説',
   description:
-    'まもサーチ（BBソフトサービス）第3世代を徹底レビュー。最大25人見守り、月額539円、コンパクト設計。大家族に最適なGPS端末の機能・料金・口コミを詳しく解説。',
+    'まもサーチ3（BBソフトサービス・現行第3世代）を徹底レビュー。最大25人見守り、月額539円、コンパクト設計。大家族に最適なGPS端末の機能・料金・口コミを詳しく解説。',
 };
 
 const faqData = [
@@ -31,7 +31,7 @@ export default function MamosearchPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ3 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "まもサーチ", "item": "https://gps-kodomo.com/review/mamosearch/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'まもサーチ' }]} />
 

@@ -124,7 +124,7 @@ export default function AnshinWatcherPage() {
             </p>
             <ul className="space-y-2 text-sm text-g700 mb-3">
               <li>・月額539円は<strong>au HOME契約（au ID）単位</strong>の料金。端末ごとではない</li>
-              <li>・1つのau IDに「あんしんウォッチャー」「あんしんウォッチャーLE」「かんたん見守りプラグ」をあわせて<strong>最大2台まで</strong>登録可能</li>
+              <li>・1つのau IDに「あんしんウォッチャー」「あんしんウォッチャー LE」「かんたん見守りプラグ」をあわせて<strong>最大2台まで</strong>登録可能</li>
               <li>・2台目は<strong>本体代金のみ</strong>（通常版11,000円 / LE 5,680円）で、月額の追加は0円</li>
               <li>・追加手順: au HOMEアプリの「デバイス」タブ →「あんしんウォッチャーの利用を開始する」から2台目を登録</li>
             </ul>
@@ -172,7 +172,7 @@ export default function AnshinWatcherPage() {
                   <tr className="border-b-2 border-g200">
                     <th className="py-2 text-left text-g700">項目</th>
                     <th className="py-2 text-left text-g700">あんしんウォッチャー（通常版）</th>
-                    <th className="py-2 text-left text-g700">あんしんウォッチャーLE</th>
+                    <th className="py-2 text-left text-g700">あんしんウォッチャー LE</th>
                   </tr>
                 </thead>
                 <tbody>

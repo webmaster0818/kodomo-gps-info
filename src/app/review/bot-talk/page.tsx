@@ -59,7 +59,7 @@ export default function BotTalkPage() {
               <li>・<strong>料金</strong>：GPSプラン月額<strong>528円</strong>／トークプラン<strong>748円</strong>・契約期間の縛りや解約金なし</li>
               <li>・<strong>向く人</strong>：位置確認だけでなく子供と連絡も取りたい家庭。<strong>向かない人</strong>：とにかく安く位置確認だけしたい家庭（→GPS特化機種へ）</li>
             </ul>
-            <p className="text-xs text-g500 mt-3">出典：GPS BoT（BoTトーク）公式（製品・料金ページ）。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
+            <p className="text-xs text-g500 mt-3">出典：BoTトーク公式（製品・料金ページ）。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
           </div>
 
           <h2 className="section-title">BoTトークとは</h2>

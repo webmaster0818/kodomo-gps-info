@@ -65,6 +65,9 @@ export default function AmuelinkPage() {
             <p className="text-xs text-g500 mt-2">出典：amue link公式サイト（2026年6月確認）</p>
           </div>
 
+          <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 mb-6 text-sm text-gray-700">
+            <strong>【重要・2026年8月5日確認】</strong>amue linkは<strong>本体の販売を終了</strong>しています(既存ユーザー向けのサービスは月額748円で継続中)。以下のレビューは参考情報としてご覧いただき、新規購入は他機種をご検討ください。
+          </div>
           <h2 className="section-title">amue link（アミューリンク）とは</h2>
           <p className="text-g600 mb-6">
             amue linkは、ソニーネットワークコミュニケーションズが提供する子供用GPS端末です。

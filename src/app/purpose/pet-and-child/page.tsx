@@ -45,7 +45,7 @@ const comparisonData = [
 const canShare = [
   { scenario: 'AirTag等のBluetoothタグ', possible: true, detail: '近距離の紛失防止用途なら、子供のカバンにもペットの首輪にも同じ製品を使える。ただしリアルタイム追跡はできないため、あくまで補助的な用途。' },
   { scenario: 'Tile等のスマートトラッカー', possible: true, detail: '1つのアプリで複数デバイスを管理可能。Bluetooth範囲内のみの追跡なので、本格的な見守りには不十分。' },
-  { scenario: 'GPS BoT（子供用）をペットに転用', possible: false, detail: '首輪への固定が難しく、防水性能が不十分。ペット用のアクティビティログ機能もない。月額料金がペット専用機より高い場合も。' },
+  { scenario: 'BoTトーク（子供用）をペットに転用', possible: false, detail: '首輪への固定が難しく、防水性能が不十分。ペット用のアクティビティログ機能もない。月額料金がペット専用機より高い場合も。' },
   { scenario: 'ペット用GPSトラッカーを子供に転用', possible: false, detail: 'SOSボタンなし、ジオフェンスの設定数が少ない、アプリが子供の見守りに最適化されていない。安全面でリスクがある。' },
 ];
 
