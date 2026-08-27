@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供GPSは何歳から？【データで解説】84.5%が5〜7歳・入学準備の目安',
+  title: '子供GPSは何歳から？何歳まで？【データで解説】84.5%が5〜7歳・卒業の目安も',
   description:
     '子供にGPSをいつから持たせるべき？幼稚園年長・小1・小3・小5の年齢別ガイド、始めるきっかけTOP5、何歳まで持たせるかの目安、GPS単機能とキッズ携帯の選び方まで解説。最適なタイミングがわかります。',
 };

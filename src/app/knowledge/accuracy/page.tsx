@@ -144,6 +144,11 @@ export default function AccuracyKnowledgePage() {
               <Link href="/compare/accuracy/" className="btn-primary">精度比較ページ</Link>
               <Link href="/" className="btn-accent">おすすめランキング</Link>
             </div>
+            <p className="mt-4 text-sm">
+              <Link href="/review/imadoco-search/" className="underline text-g600">イマドコサーチの精度・評判レビュー</Link>
+              <span className="mx-2 text-g400">|</span>
+              <Link href="/review/anshin-watcher/" className="underline text-g600">あんしんウォッチャーの評判・寿命レビュー</Link>
+            </p>
           </div>
         </div>
       </section>
