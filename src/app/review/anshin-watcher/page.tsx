@@ -39,7 +39,7 @@ export default function AnshinWatcherPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの評判・口コミ｜2台目無料・何人まで・バッテリー寿命まで徹底解説", "datePublished": "2026-03-15", "dateModified": "2026-07-25", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "あんしんウォッチャー", "item": "https://gps-kodomo.com/review/anshin-watcher/"}]}) }} />
-      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'あんしんウォッチャー' }]} />
+      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'あんしんウォッチャー' }]} />
 
       <section className="bg-gradient-to-br from-orange-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

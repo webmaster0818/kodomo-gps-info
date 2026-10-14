@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末は海外で使えるのか徹底解説。海外対応機種一覧、海外で使えない理由（通信方式・ローミング）、海外旅行時の代替手段（スマホアプリ・レンタルGPS）、国別の注意点まで網羅。',
   keywords: ['子供GPS', '海外', '使える', '海外旅行', 'ローミング', '対応機種'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSは海外で使える？対応機種と注意点',
     description: '子供用GPS端末は海外で使えるのか。対応機種と海外旅行時の代替手段を詳しく解説。',
   },
@@ -62,7 +63,7 @@ export default function InternationalPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSは海外で使える？対応機種と注意点", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "海外での利用", "item": "https://gps-kodomo.com/knowledge/international/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '海外での利用' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '海外での利用' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

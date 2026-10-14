@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '大阪で子供用GPSを活用するための完全ガイド。市区別の治安データ、自治体の見守り施策、大阪ならではのGPS活用法、おすすめ機種まで詳しく解説します。',
   keywords: ['子供GPS', '大阪', 'おすすめ', '見守り', '通学路', '治安'],
   openGraph: {
+    images: ['/og.png'],
     title: '大阪の子供見守りGPS活用ガイド｜通学路・治安情報',
     description: '大阪で子供用GPSを活用するためのガイド。市区別治安データ、見守り施策、おすすめ機種を紹介。',
   },
@@ -69,7 +70,7 @@ export default function OsakaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "大阪の子供見守りGPS活用ガイド｜通学路・治安情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "エリア別", "item": "https://gps-kodomo.com/area/"}, {"@type": "ListItem", "position": 3, "name": "大阪", "item": "https://gps-kodomo.com/area/osaka/"}]}) }} />
-      <Breadcrumb items={[{ name: 'エリア別', href: '/' }, { name: '大阪' }]} />
+      <Breadcrumb items={[{ name: 'エリア別', href: '/area/' }, { name: '大阪' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

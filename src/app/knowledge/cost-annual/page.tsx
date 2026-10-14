@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末の年間コストを徹底比較。主要6機種の初期費用・月額料金・年間トータルコストを一覧表で紹介。2年・3年の長期コスト比較やコスパの良い選び方、隠れコストまで解説します。',
   keywords: ['子供GPS', '年間コスト', '比較', 'ランニングコスト', '月額料金', '初期費用'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ',
     description: '子供用GPS端末の年間コストを徹底比較。主要6機種の初期費用・月額料金・年間トータルコストを一覧表で紹介。',
   },
@@ -53,7 +54,7 @@ export default function CostAnnualPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "年間コスト比較", "item": "https://gps-kodomo.com/knowledge/cost-annual/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '年間コスト比較' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '年間コスト比較' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

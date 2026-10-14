@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPSの移動履歴確認方法を機種別に解説。みてねみまもりGPS、あんしんウォッチャー、BoTトークなどの手順、保存期間の比較、履歴データの活用方法、プライバシーバランスを紹介します。',
   keywords: ['GPS', '移動履歴', '確認方法', '子供', '見守り', '機種別', 'ガイド'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの移動履歴の確認方法【2026年】機種別ガイドと保存期間',
     description: '子供用GPSの移動履歴確認方法を機種別に解説。保存期間や活用方法も紹介。',
   },
@@ -52,7 +53,7 @@ export default function HistoryCheckPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの移動履歴の確認方法｜機種別ガイド", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "移動履歴の確認方法", "item": "https://gps-kodomo.com/knowledge/history-check/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '移動履歴の確認方法' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '移動履歴の確認方法' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

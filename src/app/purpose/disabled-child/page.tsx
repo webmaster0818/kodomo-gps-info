@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '知的障害・発達障害・身体障害のあるお子さま向けGPS見守り端末の選び方を詳しく解説。SOSボタン・防水・耐衝撃の重要性、自治体の補助金制度、GPS以外の見守り手段との併用方法、実際の活用事例まで網羅。',
   keywords: ['障害児', '見守り', 'GPS', '知的障害', '発達障害', '身体障害', '補助金'],
   openGraph: {
+    images: ['/og.png'],
     title: '障害のあるお子さまのGPS見守り｜特性に合わせた選び方',
     description: '障害のあるお子さま向けGPS見守り端末の選び方を、知的障害・発達障害・身体障害別に詳しく解説。',
   },
@@ -84,7 +85,7 @@ export default function DisabledChildPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "障害のあるお子さまのGPS見守り｜特性に合わせた選び方", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "目的別", "item": "https://gps-kodomo.com/purpose/"}, {"@type": "ListItem", "position": 3, "name": "障害のあるお子さまのGPS見守り", "item": "https://gps-kodomo.com/purpose/disabled-child/"}]}) }} />
-      <Breadcrumb items={[{ name: '目的別おすすめ', href: '/' }, { name: '障害のあるお子さまのGPS見守り' }]} />
+      <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '障害のあるお子さまのGPS見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

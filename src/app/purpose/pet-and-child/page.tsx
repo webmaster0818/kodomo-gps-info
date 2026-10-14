@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPSとペット用GPSの違いを徹底比較。通信方式・バッテリー・防水・サイズの違い、兼用できるケース・できないケース、おすすめの使い分け方法、両方使う場合のコスト比較まで解説。',
   keywords: ['ペット', '子供', 'GPS', '兼用', '見守り', '犬', '猫', '使い分け'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供とペットのGPS見守り｜兼用できる？おすすめの使い分け',
     description: '子供用GPSとペット用GPSの違いを比較。兼用の可否、おすすめの使い分け方法を解説。',
   },
@@ -69,7 +70,7 @@ export default function PetAndChildPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供とペットのGPS見守り｜兼用できる？おすすめの使い分け", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "目的別", "item": "https://gps-kodomo.com/purpose/"}, {"@type": "ListItem", "position": 3, "name": "子供とペットのGPS見守り", "item": "https://gps-kodomo.com/purpose/pet-and-child/"}]}) }} />
-      <Breadcrumb items={[{ name: '目的別おすすめ', href: '/' }, { name: '子供とペットのGPS見守り' }]} />
+      <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '子供とペットのGPS見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

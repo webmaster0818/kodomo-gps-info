@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末の防水性能を徹底比較。IPX5/IPX7/IP67/IP68の違い、全主要機種の防水等級一覧、雨天通学・プール・汗・水洗いの可否、防水でも壊れるケース、水没時の対処法まで詳しく解説します。',
   keywords: ['子供GPS', '防水', 'プール', '雨', 'IP67', 'IPX7', '防水性能'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの防水性能比較｜プール・雨・汗でも大丈夫？',
     description: '子供用GPS端末の防水性能を徹底比較。IPX5/IPX7/IP67/IP68の違い、全主要機種の防水等級一覧を紹介。',
   },
@@ -73,7 +74,7 @@ export default function WaterproofTestPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの防水性能比較｜プール・雨・汗でも大丈夫？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "防水性能比較", "item": "https://gps-kodomo.com/knowledge/waterproof-test/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '防水性能比較' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '防水性能比較' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '学童保育や放課後の子供の安全対策にGPS端末が最適な理由を解説。下校から学童、帰宅までの見守り方法、ジオフェンス活用例、共働き家庭のリアルな使い方やおすすめ機能を紹介します。',
   keywords: ['学童', '放課後', 'GPS', '見守り', '子供', '安全', '共働き'],
   openGraph: {
+    images: ['/og.png'],
     title: '学童・放課後の見守りにGPSが最適な理由｜活用法を解説',
     description: '学童保育や放課後の子供の安全対策にGPS端末が最適な理由を解説。下校から学童、帰宅までの見守り方法やおすすめ機能を紹介。',
   },
@@ -54,7 +55,7 @@ export default function AfterSchoolPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "学童・放課後の見守りにGPSが最適な理由｜活用法を解説", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "学童・放課後の見守り", "item": "https://gps-kodomo.com/knowledge/after-school/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '学童・放課後の見守り' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '学童・放課後の見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

@@ -12,7 +12,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,
-      ...(item.href ? { item: `https://kodomo-gps-info.pages.dev${item.href}` } : {}),
+      ...(item.href ? { item: `https://gps-kodomo.com${item.href}` } : {}),
     })),
   };
 

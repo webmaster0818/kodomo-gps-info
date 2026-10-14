@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '2026年最新の子供用GPSおすすめランキング14選。精度・バッテリー・機能・料金・使いやすさの5軸で全機種を徹底評価。初期費用・月額・防水・通知機能の比較表、目的別おすすめ、選び方ガイドまで完全網羅。',
   keywords: ['子供GPS', 'おすすめ', 'ランキング', '2026', '比較', '全機種', '最新'],
   openGraph: {
+    images: ['/og.png'],
     title: '【2026年最新】子供用GPSおすすめランキング14選｜全機種比較',
     description: '2026年最新の子供用GPSおすすめランキング14選。精度・バッテリー・機能・料金・使いやすさの5軸で全機種を徹底評価。',
   },
@@ -217,7 +218,7 @@ export default function Ranking2026Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング14選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "比較", "item": "https://gps-kodomo.com/compare/"}, {"@type": "ListItem", "position": 3, "name": "2026年おすすめランキング", "item": "https://gps-kodomo.com/compare/2026-ranking/"}]}) }} />
-      <Breadcrumb items={[{ name: '比較', href: '/' }, { name: '2026年おすすめランキング' }]} />
+      <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

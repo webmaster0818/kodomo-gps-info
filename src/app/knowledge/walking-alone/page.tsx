@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供の一人歩きはいつから始めるべきか、年齢別の目安を解説。小学1年生からの一人歩きデビューに向けた練習方法、地域差、GPS端末で安心を得る方法、安全チェックリストを紹介します。',
   keywords: ['子供', '一人歩き', 'いつから', 'GPS', '見守り', '小学生', '安全'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供の一人歩きはいつから？年齢別ガイドとGPS活用法',
     description: '子供の一人歩きはいつから？年齢別の目安とGPS活用法を詳しく解説。安全に一人歩きデビューするためのガイド。',
   },
@@ -54,7 +55,7 @@ export default function WalkingAlonePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供の一人歩きはいつから？年齢別ガイドとGPS活用法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "子供の一人歩き", "item": "https://gps-kodomo.com/knowledge/walking-alone/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '子供の一人歩き' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '子供の一人歩き' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末の通信範囲・届く距離を徹底解説。GPS・Wi-Fi・基地局の3つの測位方式の違い、室内や地下での精度、機種別の通信方式比較、圏外になるケースと対処法まで詳しく紹介します。',
   keywords: ['子供GPS', '通信範囲', '届く距離', '室内', '地下', '測位方式', 'LTE'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの通信範囲と届く距離｜室内・地下でも使える？',
     description: '子供用GPS端末の通信範囲・届く距離を徹底解説。GPS・Wi-Fi・基地局の3つの測位方式の違いと、室内や地下での精度を紹介。',
   },
@@ -83,7 +84,7 @@ export default function GpsRangePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの通信範囲と届く距離｜室内・地下でも使える？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "通信範囲と届く距離", "item": "https://gps-kodomo.com/knowledge/gps-range/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '通信範囲と届く距離' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通信範囲と届く距離' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

@@ -13,7 +13,7 @@ const guideLinks = [
   { label: 'GPSランキング', href: '/#ranking' },
   { label: '目的別ガイド', href: '/#purpose' },
   { label: '選び方5ステップ', href: '/#guide' },
-  { label: 'よくある質問', href: '/#faq' },
+  { label: 'よくある質問', href: '/faq/' },
 ];
 
 const legalLinks = [

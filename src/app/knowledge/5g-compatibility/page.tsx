@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末の5G対応状況を解説。現状5G対応機種はほぼなし、4G（LTE）で十分な理由、3G停波の影響、今後の5G展望まで詳しく紹介します。',
   keywords: ['子供GPS', '5G', '対応', '4G', 'LTE', '3G停波'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの5G対応状況｜4Gでも問題ない？',
     description: '子供用GPSの5G対応状況を解説。4Gで十分な理由と3G停波の影響を紹介。',
   },
@@ -74,7 +75,7 @@ export default function FiveGCompatibilityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの5G対応状況｜4Gでも問題ない？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "5G対応状況", "item": "https://gps-kodomo.com/knowledge/5g-compatibility/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '5G対応状況' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '5G対応状況' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

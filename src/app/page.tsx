@@ -194,10 +194,10 @@ export default function HomePage() {
               おすすめランキングを見る
             </a>
             <Link
-              href="/concierge/"
+              href="/purpose/"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/60 text-white font-bold px-8 py-4 text-lg transition-all hover:bg-white hover:text-amber-800 no-underline"
             >
-              無料診断で選ぶ
+              目的別に選ぶ
             </Link>
           </div>
         </div>
@@ -532,10 +532,10 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/concierge/"
+              href="/purpose/"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-amber-700 font-bold px-8 py-4 text-lg transition-all hover:bg-amber-50 hover:-translate-y-0.5 shadow-lg no-underline"
             >
-              無料診断で選ぶ
+              目的別に選ぶ
             </Link>
             <a
               href="#ranking"

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '修学旅行にGPS端末を持たせるべきかを解説。学校の持ち込みルール確認方法、GPS端末と見守りアプリの比較、旅行中の通知設定、海外修学旅行での注意点を紹介します。',
   keywords: ['修学旅行', 'GPS', '持たせる', '持ち込み', '見守り', '小学生', '中学生'],
   openGraph: {
+    images: ['/og.png'],
     title: '修学旅行にGPSを持たせるべき？持ち込みルールと活用法',
     description: '修学旅行へのGPS持ち込みルールと活用法を解説。安心して送り出すための準備ガイド。',
   },
@@ -55,7 +56,7 @@ export default function SchoolTripPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "修学旅行にGPSを持たせるべき？持ち込みルールと活用法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "修学旅行とGPS", "item": "https://gps-kodomo.com/knowledge/school-trip/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '修学旅行とGPS' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '修学旅行とGPS' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

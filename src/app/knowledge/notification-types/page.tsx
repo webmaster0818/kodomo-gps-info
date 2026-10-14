@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末の通知機能を徹底解説。位置更新・ジオフェンス・SOS・バッテリー低下など8種類の通知の違い、10機種の対応表、シーン別おすすめ設定、通知が来ない時のトラブルシューティングまで紹介。',
   keywords: ['子供GPS', '通知', '種類', '設定方法', 'ジオフェンス', 'SOS', 'アラート'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの通知機能一覧｜設定方法と活用テクニック',
     description: '子供用GPS端末の通知機能を徹底解説。8種類の通知の違い、10機種の対応表、シーン別おすすめ設定を紹介。',
   },
@@ -107,7 +108,7 @@ export default function NotificationTypesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの通知機能一覧｜設定方法と活用テクニック", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "通知機能一覧", "item": "https://gps-kodomo.com/knowledge/notification-types/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '通知機能一覧' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通知機能一覧' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

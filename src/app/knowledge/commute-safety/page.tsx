@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '通学路の安全対策をGPS見守りで強化する方法を解説。交差点や人通りの少ない道の危険ポイント対策、ジオフェンス活用、通学時間帯の通知設定、地域の見守り活動との連携を紹介します。',
   keywords: ['通学路', '安全', '見守り', 'GPS', '子供', '通学', 'ジオフェンス'],
   openGraph: {
+    images: ['/og.png'],
     title: '通学路の安全対策｜GPS見守りで子供を守る方法',
     description: '通学路の危険ポイントをGPS見守りで対策。ジオフェンスや通知設定の活用法を紹介。',
   },
@@ -54,7 +55,7 @@ export default function CommuteSafetyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "通学路の安全対策｜GPS見守りで子供を守る方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "通学路の安全対策", "item": "https://gps-kodomo.com/knowledge/commute-safety/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '通学路の安全対策' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通学路の安全対策' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

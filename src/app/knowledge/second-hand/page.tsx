@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供用GPS端末の中古購入は可能？SIM契約の問題、買い替えタイミング（バッテリー劣化・卒業）、データ移行方法、古い端末の処分方法まで詳しく解説。中古のリスクと新品購入のメリットも比較。',
   keywords: ['子供GPS', '中古', '買い替え', 'バッテリー劣化', 'データ移行', '処分'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供用GPSの中古購入・買い替えガイド',
     description: '子供用GPS端末の中古購入の可否、買い替えタイミング、データ移行方法を詳しく解説。',
   },
@@ -68,7 +69,7 @@ export default function SecondHandPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの中古購入・買い替えガイド", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "中古購入・買い替え", "item": "https://gps-kodomo.com/knowledge/second-hand/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '中古購入・買い替え' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '中古購入・買い替え' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供の習い事や塾の行き帰りの見守りにGPS端末を活用する方法を解説。到着・出発通知の設定、複数の習い事ルート管理、塾の帰りが遅い時の対処法、実際の設定例を紹介します。',
   keywords: ['子供', '習い事', '塾', 'GPS', '管理', '送迎', '見守り'],
   openGraph: {
+    images: ['/og.png'],
     title: '習い事・塾の送迎管理にGPSを活用する方法',
     description: '子供の習い事や塾の行き帰りの見守りにGPS端末を活用する方法を解説。到着・出発通知の設定や実際の設定例を紹介。',
   },
@@ -55,7 +56,7 @@ export default function HabitTrackingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "習い事・塾の送迎管理にGPSを活用する方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "習い事・塾の送迎管理", "item": "https://gps-kodomo.com/knowledge/habit-tracking/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '習い事・塾の送迎管理' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '習い事・塾の送迎管理' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

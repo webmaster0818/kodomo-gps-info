@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '幼稚園・保育園に通うお子さまにGPS見守り端末は必要？送迎バス事故防止・園外活動・習い事開始時の安心対策を解説。幼児向けGPSの選び方、おすすめ3機種、持ち込みルール、取り付け方法まで網羅。',
   keywords: ['幼稚園', '保育園', 'GPS', '見守り', '幼児', '送迎バス', '習い事'],
   openGraph: {
+    images: ['/og.png'],
     title: '幼稚園・保育園児にGPS見守りは必要？選び方とおすすめ',
     description: '幼稚園・保育園に通うお子さまにGPS見守り端末は必要？幼児向けGPSの選び方、おすすめ機種、持ち込みルールまで徹底解説。',
   },
@@ -73,7 +74,7 @@ export default function KindergartenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "幼稚園・保育園児にGPS見守りは必要？選び方とおすすめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "目的別", "item": "https://gps-kodomo.com/purpose/"}, {"@type": "ListItem", "position": 3, "name": "幼稚園・保育園児のGPS見守り", "item": "https://gps-kodomo.com/purpose/kindergarten/"}]}) }} />
-      <Breadcrumb items={[{ name: '目的別おすすめ', href: '/' }, { name: '幼稚園・保育園児のGPS見守り' }]} />
+      <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '幼稚園・保育園児のGPS見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

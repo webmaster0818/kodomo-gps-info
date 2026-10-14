@@ -35,7 +35,7 @@ export default function AmuelinkPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "amue link（アミューリンク）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-06-30", "dateModified": "2026-06-30", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "amue link（アミューリンク）", "brand": {"@type": "Brand", "name": "ソニーネットワークコミュニケーションズ"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "amue link", "item": "https://gps-kodomo.com/review/amuelink/"}]}) }} />
-      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'amue link（アミューリンク）' }]} />
+      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'amue link（アミューリンク）' }]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-orange-light to-white py-12">

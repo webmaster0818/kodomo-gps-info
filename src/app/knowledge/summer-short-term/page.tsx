@@ -34,7 +34,7 @@ export default function SummerShortTermPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '夏休みだけ子供GPSはアリ？短期利用・解約・初期費用を比較', datePublished: '2026-06-23', dateModified: '2026-06-23', author: { '@type': 'Person', name: 'GPS見守りナビ編集部' }, publisher: { '@type': 'Organization', name: 'GPS子供見守り最新情報' } }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://gps-kodomo.com/' }, { '@type': 'ListItem', position: 2, name: 'お役立ち', item: 'https://gps-kodomo.com/knowledge/' }, { '@type': 'ListItem', position: 3, name: '夏休みだけGPS', item: 'https://gps-kodomo.com/knowledge/summer-short-term/' }] }) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '夏休みだけGPS' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '夏休みだけGPS' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

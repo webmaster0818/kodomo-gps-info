@@ -36,7 +36,7 @@ export default function SoranomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-09", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "soranome（ソラノメ）", "item": "https://gps-kodomo.com/review/soranome/"}]}) }} />
-      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/#ranking' }, { name: 'soranome（ソラノメ）' }]} />
+      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'soranome（ソラノメ）' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

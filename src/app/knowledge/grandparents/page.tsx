@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '祖父母とGPS位置情報を共有する方法を解説。アプリの共有設定、機種別の手順、共有時の注意点、祖父母が使いやすいGPS端末、離れて暮らす場合の活用法を紹介します。',
   keywords: ['おじいちゃん', 'おばあちゃん', 'GPS', '共有', '祖父母', '位置情報', '見守り'],
   openGraph: {
+    images: ['/og.png'],
     title: 'おじいちゃん・おばあちゃんとGPS位置情報を共有する方法',
     description: '祖父母とGPSの位置情報を共有する方法。アプリ設定や機種別手順を解説。',
   },
@@ -59,7 +60,7 @@ export default function GrandparentsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "おじいちゃん・おばあちゃんとGPS位置情報を共有する方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "祖父母との共有", "item": "https://gps-kodomo.com/knowledge/grandparents/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: '祖父母との共有' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '祖父母との共有' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">

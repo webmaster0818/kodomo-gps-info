@@ -21,7 +21,8 @@ export const metadata: Metadata = {
     '小学生 GPS',
     '子供 見守り',
   ],
-  metadataBase: new URL('https://kodomo-gps-info.pages.dev'),
+  metadataBase: new URL('https://gps-kodomo.com'),
+  alternates: { canonical: './' },
   openGraph: {
     type: 'website',
     locale: 'ja_JP',

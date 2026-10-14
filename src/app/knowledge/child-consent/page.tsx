@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     '子供がGPSを嫌がる理由と、年齢別の効果的な伝え方を解説。監視ではなく「見守り」として納得してもらう方法、親子でルールを決めるコツ、成功事例を紹介します。',
   keywords: ['子供', 'GPS', '嫌がる', '伝え方', '見守り', 'プライバシー', '親子'],
   openGraph: {
+    images: ['/og.png'],
     title: '子供がGPSを嫌がる時の伝え方｜親子で納得できる使い方',
     description: '子供がGPSを嫌がる理由と年齢別の伝え方。親子で納得できる見守りの方法を紹介。',
   },
@@ -59,7 +60,7 @@ export default function ChildConsentPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供がGPSを嫌がる時の伝え方｜親子で納得できる使い方", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "お役立ち", "item": "https://gps-kodomo.com/knowledge/"}, {"@type": "ListItem", "position": 3, "name": "GPSの伝え方", "item": "https://gps-kodomo.com/knowledge/child-consent/"}]}) }} />
-      <Breadcrumb items={[{ name: 'お役立ち', href: '/' }, { name: 'GPSの伝え方' }]} />
+      <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: 'GPSの伝え方' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
