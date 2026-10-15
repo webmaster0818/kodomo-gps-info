@@ -67,7 +67,6 @@ export default function FirstGraderPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "新1年生の見守りGPS比較｜小学校入学準備でいつ・何を選ぶ？", "datePublished": "2026-07-03", "dateModified": "2026-07-03", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "用途別比較", "item": "https://gps-kodomo.com/compare/"}, {"@type": "ListItem", "position": 3, "name": "新1年生の見守りGPS", "item": "https://gps-kodomo.com/compare/first-grader/"}]}) }} />
       <Breadcrumb items={[{ name: '用途別比較', href: '/compare/' }, { name: '新1年生・入学準備' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">

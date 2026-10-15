@@ -34,7 +34,6 @@ export default function DokokanaGpsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みまもりGPS（旧どこかなGPS）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-06-30", "dateModified": "2026-06-30", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "みまもりGPS（旧どこかなGPS2）", "brand": {"@type": "Brand", "name": "ソフトバンク"}}) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "みまもりGPS（旧どこかなGPS）", "item": "https://gps-kodomo.com/review/dokokana-gps/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みまもりGPS（旧どこかなGPS）' }]} />
 
       {/* Hero */}

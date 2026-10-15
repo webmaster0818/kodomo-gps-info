@@ -34,7 +34,6 @@ export default function ImadocoSearchPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "イマドコサーチ（ドコモ）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-07-17", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "イマドコサーチ", "brand": {"@type": "Brand", "name": "NTTドコモ"}}) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://gps-kodomo.com/"}, {"@type": "ListItem", "position": 2, "name": "レビュー", "item": "https://gps-kodomo.com/review/"}, {"@type": "ListItem", "position": 3, "name": "イマドコサーチ", "item": "https://gps-kodomo.com/review/imadoco-search/"}]}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'イマドコサーチ（ドコモ）' }]} />
 
       {/* Hero */}
