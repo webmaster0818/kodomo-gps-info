@@ -128,20 +128,20 @@ export default function SmartphoneVsGpsPage() {
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額料金が安い（0〜748円）</li>
                 <li>・見守り機能に特化したシンプルな設計</li>
-                <li>・学校への持ち込みがほぼ認められる</li>
+                <li>・学校への持ち込みがほぼ認められる点</li>
                 <li>・バッテリーが長持ち（3〜14日）</li>
-                <li>・SNS・ゲーム依存のリスクがない</li>
-                <li>・有害コンテンツに触れる心配がない</li>
+                <li>・SNS・ゲーム依存のリスクがない点</li>
+                <li>・有害コンテンツに触れる心配がない点</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">GPS端末の欠点</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・通話ができない機種が多い</li>
-                <li>・友人との連絡手段にならない</li>
-                <li>・成長に伴い機能が不足する</li>
-                <li>・カメラやアプリは使えない</li>
-                <li>・高学年以降は持ち歩きを嫌がる場合がある</li>
+                <li>・通話ができない機種が多い点</li>
+                <li>・友人との連絡手段にならない点</li>
+                <li>・成長に伴い機能が不足する点</li>
+                <li>・カメラやアプリは使えない点</li>
+                <li>・高学年以降は持ち歩きを嫌がる場合がある点</li>
               </ul>
             </div>
           </div>

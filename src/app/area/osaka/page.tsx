@@ -87,7 +87,7 @@ export default function OsakaPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <p className="text-g600 mb-8">
-            大阪は東京に次ぐ大都市であり、繁華街や交通量の多いエリアも多いため、子供用GPSを活用するメリットが大きい地域です。当ページでは、大阪の治安データ、市区別の見守り施策、大阪の地域特性に合わせたGPSの活用法、おすすめ機種を解説します。
+            大阪は東京に次ぐ大都市で、繁華街や交通量の多いエリアも多いため、子供用GPSを活用するメリットが大きい地域です。当ページでは、大阪の治安データ、市区別の見守り施策、大阪の地域特性に合わせたGPSの活用法、おすすめ機種を解説します。
           </p>
 
           <h2 className="section-title">大阪の子供の安全状況</h2>

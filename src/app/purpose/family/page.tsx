@@ -60,7 +60,7 @@ export default function FamilyPage() {
               <h3 className="font-bold text-green-dark mb-3">2台目が割安になる機種</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・<Link href="/review/anshin-watcher/" className="text-blue hover:underline">あんしんウォッチャー</Link>：2台目の月額料金が無料</li>
-                <li>・本体代のみで追加でき、兄弟で利用する際の毎月の費用を抑えやすい</li>
+                <li>・本体代のみで追加でき、兄弟で利用する際の毎月の費用を抑えやすい点</li>
               </ul>
             </div>
             <div className="bg-blue-light rounded-xl p-6">
@@ -68,7 +68,7 @@ export default function FamilyPage() {
               <ul className="space-y-2 text-sm text-g700">
                 <li>・<Link href="/review/bot-talk/" className="text-blue hover:underline">BoTトーク</Link>：見守り人数に制限なし</li>
                 <li>・<Link href="/review/mamosearch/" className="text-blue hover:underline">まもサーチ</Link>：最大25人まで追加可能</li>
-                <li>・祖父母や親戚とも位置情報を共有しやすい</li>
+                <li>・祖父母や親戚とも位置情報を共有しやすい点</li>
               </ul>
             </div>
           </div>

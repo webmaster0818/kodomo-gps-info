@@ -180,10 +180,10 @@ export default function KindergartenPage() {
           <div className="bg-orange-light rounded-xl p-5 mb-8">
             <h3 className="font-bold text-g800 mb-2">持ち込みの許可を得るための確認事項</h3>
             <ul className="space-y-1 text-sm text-g600">
-              <li>● 音が鳴らない・操作不要であることを説明する</li>
-              <li>● 園の活動を妨げないことを伝える</li>
-              <li>● 送迎バスの安全確認が目的であることを明確にする</li>
-              <li>● 他の保護者も利用している事例を紹介する</li>
+              <li>● 音が鳴らない・操作不要であることを説明します</li>
+              <li>● 園の活動を妨げないことを伝えます</li>
+              <li>● 送迎バスの安全確認が目的であることを明確にします</li>
+              <li>● 他の保護者も利用している事例を紹介します</li>
             </ul>
           </div>
 

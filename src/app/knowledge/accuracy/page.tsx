@@ -100,17 +100,17 @@ export default function AccuracyKnowledgePage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">機種選びのポイント</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・GPS+GLONASS+みちびき+Wi-Fi対応の機種を選ぶ</li>
-                <li>・1.5分以上の更新間隔に対応した機種を選ぶ</li>
-                <li>・Wi-Fi測位対応機種で屋内の精度を補う</li>
+                <li>・GPS+GLONASS+みちびき+Wi-Fi対応の機種を選びます</li>
+                <li>・1.5分以上の更新間隔に対応した機種を選びます</li>
+                <li>・Wi-Fi測位対応機種で屋内の精度を補います</li>
               </ul>
             </div>
             <div className="bg-blue-light rounded-xl p-6">
               <h3 className="font-bold text-blue mb-3">使い方のポイント</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・更新間隔を1.5〜3分に設定する</li>
-                <li>・ファームウェアを常に最新に更新する</li>
-                <li>・バッテリー残量を20%以上に維持する</li>
+                <li>・更新間隔を1.5〜3分に設定します</li>
+                <li>・ファームウェアを常に最新に更新します</li>
+                <li>・バッテリー残量を20%以上に維持します</li>
               </ul>
             </div>
           </div>

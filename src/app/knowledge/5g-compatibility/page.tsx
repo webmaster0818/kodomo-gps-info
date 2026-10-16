@@ -95,11 +95,11 @@ export default function FiveGCompatibilityPage() {
             「子供用GPSが5Gに対応していないと不安」とお考えの方もいらっしゃいます。<strong>子供用GPSに5Gは不要で、4G（LTE）で問題なく利用できます</strong>。このページでは、現状の5G対応状況、4Gで十分な理由、3G停波の影響、今後の展望を解説します。
           </p>
 
-          <h2 className="section-title">要点：子供用GPSに5Gは不要です</h2>
+          <h2 className="section-title">子供用GPSに5Gは不要です</h2>
           <div className="card-hover p-6 mb-8 border-l-4 border-orange">
             <p className="text-g600 mb-3">
               子供用GPS端末が送受信するデータは<strong>位置情報（緯度・経度）のみで1回あたり数KB</strong>程度です。
-              これは4G（LTE）の通信速度で1秒以内に送信が完了するデータ量であり、5Gの超高速通信は必要ありません。
+              これは4G（LTE）の通信速度で1秒以内に送信が完了するデータ量で、5Gの超高速通信は必要ありません。
             </p>
             <p className="text-g600">
               5Gに対応すると、チップのコスト増加やバッテリー消費の増大といったデメリットが生じます。

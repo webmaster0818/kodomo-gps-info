@@ -138,7 +138,7 @@ export default function MimoriPage() {
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・月額748円で最安ではない</li>
+                <li>・月額748円で最安ではない点</li>
                 <li>・本体価格8,580円はやや高め</li>
                 <li>・双方向のトーク機能には非対応</li>
                 <li>・端末がやや大きめ（約55g）</li>

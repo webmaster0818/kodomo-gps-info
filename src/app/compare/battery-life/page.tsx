@@ -54,7 +54,7 @@ export default function BatteryLifeComparePage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">要点：充電忘れ対策には「位置情報専用」の機種が適している</h2>
+            <h2 className="font-extrabold text-g800 mb-2">充電忘れ対策には「位置情報専用」の機種が適しています</h2>
             <p className="text-g600">
               子供用GPSの電池持ちは機種で大きく異なります。<strong>位置情報専用のあんしんウォッチャー・みてねみまもりGPSは最大約2カ月</strong>と、特に長持ちします。一方、<strong>通話やメッセージができるスマートフォン型・ウォッチ型（Hamic・myFirst Fone）は数日</strong>で、ほぼ毎日の充電が必要です。電池切れで見守れない状態を防ぐには、電池持ちの長い位置情報専用機種をおすすめします。
             </p>
@@ -83,7 +83,7 @@ export default function BatteryLifeComparePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-8">※電池持ちは各社公式の公表値にもとづく目安であり、位置情報の更新頻度・利用状況・気温により変動します。最新の仕様は、各公式サイトにてご確認ください。</p>
+          <p className="text-xs text-g500 mb-8">※電池持ちは各社公式の公表値にもとづく目安で、位置情報の更新頻度・利用状況・気温により変動します。最新の仕様は、各公式サイトにてご確認ください。</p>
 
           <h2 className="section-title">各機種の電池持ちのポイント</h2>
           <div className="space-y-3 mb-8">

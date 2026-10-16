@@ -162,7 +162,7 @@ export default function InsurancePage() {
           </div>
 
           <div className="bg-blue-light rounded-xl p-5 mb-8">
-            <h3 className="font-bold text-g800 mb-2">まとめ：補償への加入の判断基準</h3>
+            <h3 className="font-bold text-g800 mb-2">補償への加入の判断基準</h3>
             <p className="text-sm text-g600">
               お子さまが低学年（小1〜小3）の場合は、紛失・故障のリスクが高いため、補償への加入をおすすめします。月額165〜330円の追加で、万が一の際の数千円の出費を避けることができます。高学年で端末の扱いに慣れている場合は、標準保証のみでも十分です。
             </p>

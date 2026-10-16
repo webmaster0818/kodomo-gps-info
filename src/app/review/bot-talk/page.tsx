@@ -53,7 +53,7 @@ export default function BotTalkPage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">要点：位置確認に加えて「トーク・通話」や電子マネーも必要な場合はBoTトーク</h2>
+            <h2 className="font-extrabold text-g800 mb-2">位置確認に加えて「トーク・通話」や電子マネーも必要な場合は、BoTトークが適しています</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：トークプランでお子さまと<strong>メッセージ・通話</strong>ができます。<strong>見守りウォレット</strong>（電子マネー）を備え、<strong>AI行動学習</strong>でいつもと異なる動きを通知します。</li>
               <li>・<strong>弱み</strong>：多機能な分、<strong>トークプランは月額748円</strong>とやや高めです。位置精度に特化した設計ではありません。</li>

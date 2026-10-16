@@ -49,7 +49,7 @@ export default function SummerShortTermPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">要点：契約期間の縛りがない機種であれば、夏休みのみの利用も可能です</h2>
+            <h2 className="font-extrabold text-g800 mb-2">契約期間の縛りがない機種であれば、夏休みのみの利用も可能です</h2>
             <p className="text-g600">
               夏休みは学童・帰省・旅行・テーマパークなど、普段と行動範囲が変わり、<strong>迷子や見守りに関する不安が増える時期</strong>です。子供用GPSは<strong>契約期間の縛りや解約金がない機種が多く</strong>、本体を購入して数カ月のみ使用し、終了後に解約するという使い方ができます。本体は翌年の夏や、登下校で使い始める際にも再利用できるため、夏休みのみの利用も十分に選択肢となります。
             </p>

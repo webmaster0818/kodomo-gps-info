@@ -54,7 +54,7 @@ export default function MitenePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">まとめ：家族アルバム「みてね」のMIXIが運営し、3機種から選べるサービスです。大手運営の安心感を重視するご家庭に適しています</h2>
+            <h2 className="font-extrabold text-g800 mb-2">家族アルバム「みてね」のMIXIが運営し、3機種から選べるサービスです。大手企業が運営する安心感を重視するご家庭に適しています。</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：東証プライム上場の<strong>MIXI（旧ミクシィ）</strong>が運営しています。用途に応じて<strong>3機種（MG05・トーク・トークPlus）</strong>から選べます。</li>
               <li>・<strong>弱み</strong>：トーク・通話を使う場合は上位プランとなり、月額が上がります。位置精度に特化した設計ではありません。</li>
@@ -169,21 +169,21 @@ export default function MitenePage() {
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額528円〜の業界最安級の料金</li>
-                <li>・バッテリー最大2カ月で充電の手間が少ない</li>
+                <li>・バッテリー最大2カ月で充電の手間が少ない点</li>
                 <li>・利用者数No.1とされる実績</li>
                 <li>・「みてね」アプリの使いやすいUI</li>
                 <li>・トークPlus対応でコミュニケーションも可能</li>
-                <li>・GPS+Wi-Fi測位で位置精度が高い</li>
-                <li>・小型軽量（約40g）でランドセルに入れやすい</li>
+                <li>・GPS+Wi-Fi測位による高い位置精度</li>
+                <li>・小型軽量（約40g）でランドセルに入れやすい点</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・トーク機能は追加料金（月額748円）が必要</li>
-                <li>・SOSボタンは搭載されていない</li>
-                <li>・本体カラーの選択肢が限られる</li>
-                <li>・屋内での精度はやや落ちる場合がある</li>
+                <li>・SOSボタンは非搭載</li>
+                <li>・本体カラーの選択肢が限られる点</li>
+                <li>・屋内での精度がやや落ちる場合がある点</li>
                 <li>・通話機能は非対応</li>
               </ul>
             </div>

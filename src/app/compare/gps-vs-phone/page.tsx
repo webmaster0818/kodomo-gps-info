@@ -91,21 +91,21 @@ export default function GpsVsPhonePage() {
             <div className="card-hover p-6">
               <h3 className="font-bold text-blue mb-3">低学年（小1〜小3）→ GPS端末</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・操作がシンプルで、子供が迷わずに使える</li>
-                <li>・ランドセルに入れるだけで使える</li>
-                <li>・学校への持ち込みが容易</li>
-                <li>・月額費用が安い</li>
-                <li>・紛失・破損のリスクが低い</li>
+                <li>・操作がシンプルで、子供が迷わずに使える点</li>
+                <li>・ランドセルに入れるだけで使える点</li>
+                <li>・学校への持ち込みが容易な点</li>
+                <li>・月額費用が安い点</li>
+                <li>・紛失・破損のリスクが低い点</li>
               </ul>
             </div>
             <div className="card-hover p-6">
               <h3 className="font-bold text-orange mb-3">高学年（小4〜小6）→ キッズケータイ</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・行動範囲が広がり、通話が必要になる</li>
-                <li>・塾や習い事の連絡手段として便利</li>
-                <li>・緊急時に直接通話できる</li>
-                <li>・自立心を育てる機会になる</li>
-                <li>・中学進学後のスマートフォンへの移行に向けた準備になる</li>
+                <li>・行動範囲が広がり、通話が必要になる時期である点</li>
+                <li>・塾や習い事の連絡手段として便利な点</li>
+                <li>・緊急時に直接通話できる点</li>
+                <li>・自立心を育てる機会になる点</li>
+                <li>・中学進学後のスマートフォンへの移行に向けた準備になる点</li>
               </ul>
             </div>
           </div>

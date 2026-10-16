@@ -140,9 +140,9 @@ export default function MyFirstFonePage() {
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・本体価格が18,000円〜と高め</li>
-                <li>・SIMの別途契約で月額コストが高くなる</li>
+                <li>・SIMの別途契約で月額コストが高くなる点</li>
                 <li>・バッテリー持ちは約1〜2日と短め</li>
-                <li>・学校での使用が制限される場合がある</li>
+                <li>・学校での使用が制限される場合がある点</li>
                 <li>・多機能な分、操作がやや複雑</li>
               </ul>
             </div>

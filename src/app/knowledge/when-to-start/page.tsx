@@ -106,7 +106,7 @@ export default function WhenToStartPage() {
               「何歳まで」に決まった基準はなく、公的な統計もありません。実際には<strong>「通話・メッセージなどの連絡手段が必要になったか」</strong>によって切り替えを判断するケースが多いため、学年ごとの目安を以下に整理します。
             </p>
             <ul className="text-sm text-g700 leading-7 space-y-1.5">
-              <li>・<strong>小学生（低〜中学年）</strong>：保護者主導の見守りが中心となります。位置が分かれば十分な時期であり、<strong>GPS単機能が最も役立ちます</strong>。</li>
+              <li>・<strong>小学生（低〜中学年）</strong>：保護者主導の見守りが中心となります。位置が分かれば十分な時期で、<strong>GPS単機能が最も役立ちます</strong>。</li>
               <li>・<strong>高学年（小5〜6）</strong>：塾・習い事・友人宅など行動範囲が拡大します。連絡手段の必要性が生じ始め、GPSを継続するかキッズ携帯に切り替えるかを検討するご家庭が増えます。</li>
               <li>・<strong>中学進学</strong>：部活動・友人との連絡やスマートフォン所持率の上昇により、<strong>GPSからキッズ携帯／スマートフォンへ移行</strong>するご家庭が多くなります。</li>
             </ul>

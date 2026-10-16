@@ -132,19 +132,19 @@ export default function HamicPage() {
                 <li>・カメラを搭載し、写真の共有が可能</li>
                 <li>・GPS見守り機能を標準搭載</li>
                 <li>・SIM込みで月額1,100円のわかりやすい料金</li>
-                <li>・スマートフォンを持たせる前の練習に適している</li>
+                <li>・スマートフォンを持たせる前の練習に適している点</li>
                 <li>・保護者による利用制限管理が充実</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・月額1,100円はGPS端末より高い</li>
+                <li>・月額1,100円とGPS端末より高い料金</li>
                 <li>・本体価格12,100円の初期費用が必要</li>
                 <li>・バッテリーの持ちは2〜3日と短め</li>
                 <li>・音声通話には非対応</li>
-                <li>・学校への持ち込みが制限される可能性がある</li>
-                <li>・画面があるため、遊びに使用される懸念がある</li>
+                <li>・学校への持ち込みが制限される可能性がある点</li>
+                <li>・画面があるため、遊びに使用される懸念がある点</li>
               </ul>
             </div>
           </div>

@@ -97,10 +97,10 @@ export default function SafetyPage() {
             <div className="card-hover p-5">
               <h3 className="font-bold text-g800 mb-2">お子さまへの教え方</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・「怖いことがあったら押す」ことを伝える</li>
-                <li>・実際にボタンを押す練習をする</li>
-                <li>・いたずらで押さないことを約束する</li>
-                <li>・定期的に使い方を確認する</li>
+                <li>・「怖いことがあったら押す」ことを伝えます</li>
+                <li>・実際にボタンを押す練習をします</li>
+                <li>・いたずらで押さないことを約束します</li>
+                <li>・定期的に使い方を確認します</li>
               </ul>
             </div>
           </div>

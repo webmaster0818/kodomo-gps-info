@@ -85,20 +85,20 @@ export default function BotVsMitenePage() {
           <h2 className="section-title">BoTトークが適しているご家庭</h2>
           <div className="card-hover p-5 mb-6">
             <ul className="space-y-2 text-g600">
-              <li>✓ 音声メッセージによるコミュニケーションを重視したい</li>
-              <li>✓ 見守りウォレット（交通系IC連携）機能を使いたい</li>
-              <li>✓ AI学習で移動パターンを把握したい</li>
-              <li>✓ 小学生のうちからトーク機能で積極的に会話したい</li>
+              <li>✓ 音声メッセージによるコミュニケーションを重視したい方</li>
+              <li>✓ 見守りウォレット（交通系IC連携）機能を使いたい方</li>
+              <li>✓ AI学習で移動パターンを把握したい方</li>
+              <li>✓ 小学生のうちからトーク機能で積極的に会話したい方</li>
             </ul>
           </div>
 
           <h2 className="section-title">みてねみまもりGPSが適しているご家庭</h2>
           <div className="card-hover p-5 mb-8">
             <ul className="space-y-2 text-g600">
-              <li>✓ 初期費用を抑えて始めたい（端末2,904円）</li>
-              <li>✓ バッテリーの持ちを最優先したい（最大2カ月）</li>
-              <li>✓ 位置情報の確認を中心にシンプルに使いたい</li>
-              <li>✓ トーク機能が必要なときだけプランを切り替えたい</li>
+              <li>✓ 初期費用を抑えて始めたい方（端末2,904円）</li>
+              <li>✓ バッテリーの持ちを最優先したい方（最大2カ月）</li>
+              <li>✓ 位置情報の確認を中心にシンプルに使いたい方</li>
+              <li>✓ トーク機能が必要なときだけプランを切り替えたい方</li>
             </ul>
           </div>
 

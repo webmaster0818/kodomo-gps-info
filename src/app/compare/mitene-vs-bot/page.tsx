@@ -91,21 +91,21 @@ export default function MiteneVsBotPage() {
             <div className="card-hover p-6">
               <h3 className="font-bold text-blue mb-3">みてねがおすすめの方</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・バッテリー持ちを重視したい</li>
-                <li>・月額コストを最小限に抑えたい</li>
-                <li>・家族アプリ「みてね」を使っている</li>
-                <li>・シンプルに位置確認だけしたい</li>
-                <li>・充電の手間をできるだけ減らしたい</li>
+                <li>・バッテリー持ちを重視したい方</li>
+                <li>・月額コストを最小限に抑えたい方</li>
+                <li>・家族アプリ「みてね」を使っている方</li>
+                <li>・シンプルに位置確認だけしたい方</li>
+                <li>・充電の手間をできるだけ減らしたい方</li>
               </ul>
             </div>
             <div className="card-hover p-6">
               <h3 className="font-bold text-orange mb-3">BoTトークがおすすめの方</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・お子さまとメッセージのやり取りをしたい</li>
-                <li>・AIの行動学習機能に魅力を感じる</li>
-                <li>・自動で通知を最適化してほしい</li>
-                <li>・通学路の異常を検知してほしい</li>
-                <li>・音声メッセージを手軽に使いたい</li>
+                <li>・お子さまとメッセージのやり取りをしたい方</li>
+                <li>・AIの行動学習機能を利用したい方</li>
+                <li>・通知の自動最適化を希望する方</li>
+                <li>・通学路での異常の検知を希望する方</li>
+                <li>・音声メッセージを手軽に使いたい方</li>
               </ul>
             </div>
           </div>

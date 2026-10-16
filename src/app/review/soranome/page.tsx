@@ -54,7 +54,7 @@ export default function SoranomePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">まとめ：位置精度を最優先する場合はソラノメ（通話は不要で、居場所を正確に把握したいご家庭向け）</h2>
+            <h2 className="font-extrabold text-g800 mb-2">位置精度を最優先する場合はソラノメが適しています（通話は不要で、居場所を正確に把握したいご家庭向けの機種です）</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：GPS+Wi-Fi+基地局の<strong>3測位</strong>により、屋内・地下も含めて位置精度が高くなっています。SOSボタン・IP55防水も搭載しています。</li>
               <li>・<strong>弱み</strong>：バッテリーが<strong>最大約1週間</strong>と短く、本体は<strong>14,520円</strong>とやや高めです。<strong>通話・トーク機能はありません</strong>。</li>

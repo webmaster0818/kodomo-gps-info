@@ -57,7 +57,7 @@ export default function AnshinWatcherPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8 bg-blue-light/50 border-l-4 border-blue rounded-xl">
-            <h2 className="font-extrabold text-g800 mb-3">要点：あんしんウォッチャーの「寿命」</h2>
+            <h2 className="font-extrabold text-g800 mb-3">あんしんウォッチャーの「寿命」</h2>
             <ul className="space-y-2 text-sm text-g700">
               <li>・<strong>電池持ち</strong>：1回の充電で<strong>最大約2カ月</strong>です（1,500mAh・位置更新頻度で変動／USB Type-C充電）。</li>
               <li>・<strong>電池交換</strong>：内蔵式のため<strong>交換できません</strong>（公式FAQに明記）。劣化した場合は端末ごとの買い替えが前提です。</li>
@@ -158,7 +158,7 @@ export default function AnshinWatcherPage() {
               <li>・電池残量が少なくなるとアプリに通知が届くため、充電忘れが起こりにくい設計です。</li>
             </ul>
             <p className="text-sm text-g600">
-              「電池を交換すれば長く使えるか」を気にされる方は多いですが、交換はできません。リチウムイオン電池の一般的な劣化を考慮し、数年単位での買い替えを見込んでおくことをおすすめします。
+              「電池を交換すれば長く使えるか」を気にされる方は多くいらっしゃいますが、交換はできません。リチウムイオン電池の一般的な劣化を考慮し、数年単位での買い替えを見込んでおくことをおすすめします。
             </p>
             <p className="text-xs text-g400 mt-2">出典：au公式デバイスページ、KDDI公式FAQ「電池パックは交換できますか？」（2026年6月12日確認）</p>
           </div>
@@ -211,7 +211,7 @@ export default function AnshinWatcherPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・2台目月額0円で兄弟での利用に適している</li>
+                <li>・2台目月額0円で、兄弟での利用に適している点</li>
                 <li>・月額539円+長期無料特典（通常版12カ月）</li>
                 <li>・最低利用期間・解約違約金なし</li>
                 <li>・契約者含め最大10人で見守り可能</li>
@@ -226,7 +226,7 @@ export default function AnshinWatcherPage() {
                 <li>・電池が内蔵式で交換不可（劣化したら買い替え）</li>
                 <li>・1つのau IDで登録できるのは2台まで</li>
                 <li>・海外では利用不可</li>
-                <li>・解約した端末は原則再利用できない</li>
+                <li>・解約した端末は原則再利用できない点</li>
               </ul>
             </div>
           </div>

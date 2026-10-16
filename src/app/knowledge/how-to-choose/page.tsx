@@ -82,7 +82,7 @@ export default function HowToChoosePage() {
               <ul className="space-y-1 text-sm text-g700">
                 <li>・月額528円〜</li>
                 <li>・バッテリー長持ち</li>
-                <li>・学校への持ち込みが可能な場合が多い</li>
+                <li>・学校への持ち込みが可能な場合が多い点</li>
                 <li>・操作不要</li>
               </ul>
               <p className="text-xs text-blue font-bold mt-3">おすすめ: 小1〜小4</p>
@@ -94,7 +94,7 @@ export default function HowToChoosePage() {
                 <li>・月額998円〜</li>
                 <li>・通話・ビデオ通話が可能</li>
                 <li>・カメラ搭載</li>
-                <li>・デザイン性が高い</li>
+                <li>・高いデザイン性</li>
               </ul>
               <p className="text-xs text-orange font-bold mt-3">おすすめ: 小3〜小6</p>
             </div>

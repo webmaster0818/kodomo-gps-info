@@ -130,7 +130,7 @@ export default function ElementaryPage() {
                 <ul className="space-y-1 text-xs text-g700">
                   <li>・通話機能がないGPS端末</li>
                   <li>・音が鳴らない設定にできる端末</li>
-                  <li>・ランドセルに入れたままで授業を受ける</li>
+                  <li>・授業中はランドセルに入れたままにすること</li>
                   <li>・学校への届出・申請済み</li>
                 </ul>
               </div>
@@ -140,7 +140,7 @@ export default function ElementaryPage() {
                   <li>・通話機能付き（キッズケータイ等）</li>
                   <li>・画面付き（myFirst Fone、Hamic等）</li>
                   <li>・音が鳴る設定のままの端末</li>
-                  <li>・学校への届出をしていない</li>
+                  <li>・学校への届出をしていない端末</li>
                 </ul>
               </div>
             </div>

@@ -129,22 +129,22 @@ export default function WatchTypePage() {
               <h3 className="font-bold text-blue mb-2">腕時計型が向いているお子さま</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・小学校中〜高学年（8歳〜12歳）</li>
-                <li>・GPS端末を忘れやすい・なくしやすい</li>
-                <li>・保護者と電話で連絡を取りたい</li>
-                <li>・友達同士で遊びに行く機会が多い</li>
-                <li>・スマートフォンを持たせるにはまだ早い</li>
-                <li>・おしゃれに興味がある年頃</li>
+                <li>・GPS端末を忘れやすい・なくしやすいお子さま</li>
+                <li>・保護者と電話で連絡を取りたいお子さま</li>
+                <li>・友達同士で遊びに行く機会が多いお子さま</li>
+                <li>・スマートフォンを持たせるにはまだ早いお子さま</li>
+                <li>・おしゃれに興味がある年頃のお子さま</li>
               </ul>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-orange mb-2">通常GPS端末が向いているお子さま</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・小学校低学年（6歳〜8歳）</li>
-                <li>・登下校中の位置確認が主目的</li>
-                <li>・操作が不要でシンプルな端末がよい</li>
-                <li>・月額コストを抑えたい</li>
-                <li>・学校持ち込みを確実にしたい</li>
-                <li>・充電の手間を減らしたい</li>
+                <li>・登下校中の位置確認が主な目的の方</li>
+                <li>・操作が不要でシンプルな端末を希望する方</li>
+                <li>・月額コストを抑えたい方</li>
+                <li>・学校への持ち込みを確実にしたい方</li>
+                <li>・充電の手間を減らしたい方</li>
               </ul>
             </div>
           </div>

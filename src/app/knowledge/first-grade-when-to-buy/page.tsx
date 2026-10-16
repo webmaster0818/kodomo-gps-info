@@ -57,7 +57,7 @@ export default function FirstGradeWhenToBuyPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">要点：2月（新入生説明会の前後）までに購入・設定を済ませる</h2>
+            <h2 className="font-extrabold text-g800 mb-2">2月（新入生説明会の前後）までの購入・設定をおすすめします</h2>
             <p className="text-g600">
               小学校入学に向けた子供用GPSは、<strong>就学時健診のある10〜11月に検討を始め、年明けに比較し、2月までに購入・設定まで終えておく</strong>ことが理想です。<strong>4月の入学直前は、品薄・発送遅延・設定が間に合わないといったリスク</strong>があるため、避けることをおすすめします。入学初日から安心して使えるよう、早めの準備をおすすめします。
             </p>

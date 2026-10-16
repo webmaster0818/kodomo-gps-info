@@ -103,7 +103,7 @@ export default function SchoolTripComparePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 要点ブロック */}
           <div className="card-hover p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">要点：行事には「音が鳴らない位置情報専用」の機種を選び、事前に担任の先生へ確認する</h2>
+            <h2 className="font-extrabold text-g800 mb-2">行事には「音が鳴らない位置情報専用」の機種を選び、事前に担任の先生へ確認することをおすすめします</h2>
             <p className="text-g600 mb-3">
               遠足・修学旅行などの学校行事に子供GPSを持たせたい場合、<strong>通話・トーク機能がなく音が鳴らない位置情報専用のタイプ</strong>が適しています。授業や行事の妨げになりにくく、ランドセルやリュックに入れたままで使えます。ただし、<strong>行事での持ち込み可否は学校の判断によります</strong>。引率が付く校外学習では「不要」とされる場合があり、宿泊行事では持ち物を一括管理して持ち込み不可とする学校も少なくありません。
             </p>
@@ -139,7 +139,7 @@ export default function SchoolTripComparePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-8">※料金は本体価格・月額ともに（税込）です。電池持ちは各社公式の公表値にもとづく目安であり、位置情報の更新頻度や利用状況により変動します。みてねみまもりGPSのトークPlusプラン（月額748円）は音が鳴るため、上表では位置情報プランの値を記載しています。最新の料金・仕様は各公式サイトでご確認ください（2026年6月確認）。</p>
+          <p className="text-xs text-g500 mb-8">※料金は本体価格・月額ともに（税込）です。電池持ちは各社公式の公表値にもとづく目安で、位置情報の更新頻度や利用状況により変動します。みてねみまもりGPSのトークPlusプラン（月額748円）は音が鳴るため、上表では位置情報プランの値を記載しています。最新の料金・仕様は各公式サイトでご確認ください（2026年6月確認）。</p>
 
           <h2 className="section-title">各機種の「行事向け」ポイント</h2>
           <div className="space-y-3 mb-8">

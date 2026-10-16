@@ -127,7 +127,7 @@ export default function HalococoPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">利点</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・家電量販店で実物を見て購入できる</li>
+                <li>・家電量販店で実物を見て購入できる点</li>
                 <li>・月額528円の業界最安級料金</li>
                 <li>・本体5,280円の手頃な価格</li>
                 <li>・シンプルな操作で誰でも簡単に設定可能</li>
@@ -139,10 +139,10 @@ export default function HalococoPage() {
               <h3 className="font-bold text-orange-dark mb-3">欠点</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・トーク・メッセージ機能は非対応</li>
-                <li>・SOSボタンは搭載されていない</li>
+                <li>・SOSボタンは非搭載</li>
                 <li>・購入はエディオン系列に限定</li>
-                <li>・他機種と比べて特筆する独自機能は少ない</li>
-                <li>・知名度が他の人気機種よりやや低い</li>
+                <li>・他機種と比べて特筆する独自機能が少ない点</li>
+                <li>・知名度が他の人気機種よりやや低い点</li>
               </ul>
             </div>
           </div>

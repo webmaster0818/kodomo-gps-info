@@ -115,7 +115,7 @@ export default function CostComparePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論ブロック */}
           <div className="card-hover p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">要点：「本体だけ／月額だけ」ではなく、3年総額（TCO）で比較する</h2>
+            <h2 className="font-extrabold text-g800 mb-2">「本体だけ／月額だけ」ではなく、3年総額（TCO）での比較をおすすめします</h2>
             <p className="text-g600 mb-3">
               子供GPSは本体代に加えて<strong>毎月の月額（通信費・サービス利用料）</strong>がかかります。本体が安くても月額が高いと長く使うほど割高になり、逆に本体が高めでも月額・初期費用が抑えられていれば長期では有利です。そのため、<strong>使う年数（目安3年）の総額＝本体＋月額×利用月数＋初期費用＝TCO</strong>で比較することをおすすめします。
             </p>

@@ -85,7 +85,7 @@ export default function FirstGraderPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8" style={{ borderLeft: '4px solid #3B82F6' }}>
-            <h2 className="font-extrabold text-g800 mb-3">要点：入学準備のGPS選びは「3月中の設定完了」が目標</h2>
+            <h2 className="font-extrabold text-g800 mb-3">入学準備のGPS選びは「3月中の設定完了」を目標にすることをおすすめします</h2>
             <ul className="space-y-2 text-sm text-g700">
               <li>・一人での登下校が始まる<strong>入学と同時</strong>に使い始めるご家庭が最も多くなっています。3月中に「校則の確認→購入→設定→通学路での練習」まで済ませることが理想です。</li>
               <li>・新1年生には、<strong>音が鳴らない位置情報専用タイプ</strong>をおすすめします（学校に持ち込みやすく、操作も不要なためです）。</li>

@@ -102,7 +102,7 @@ export default function SummerVacationPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8" style={{ borderLeft: '4px solid #3B82F6' }}>
-            <h2 className="font-extrabold text-g800 mb-3">要点：夏休みは「エリア通知の登録変更」と「電池持ち」を基準に選ぶ</h2>
+            <h2 className="font-extrabold text-g800 mb-3">夏休みは「エリア通知の登録変更」と「電池持ち」を基準に選ぶことをおすすめします</h2>
             <ul className="space-y-2 text-sm text-g700">
               <li>・夏休みは行動範囲が「学校⇔自宅」から「祖父母宅・学童・旅行先」へ変わります。<strong>エリア通知の登録を出発前に切り替える</strong>ことが、最も重要な準備です</li>
               <li>・帰省や旅行では、充電環境が不安定になりがちです。<strong>電池持ちの長い機種（最大約2カ月クラス）であれば、充電器なしで期間中を過ごせます</strong></li>

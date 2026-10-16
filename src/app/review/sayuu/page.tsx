@@ -52,7 +52,7 @@ export default function SayuuPage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-orange bg-orange-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">まとめ：交通安全機能を最も重視する場合はSayuUが適しています。左右確認検知・走行検知と双方向通話を求めるご家庭向けです（料金は高めです）</h2>
+            <h2 className="font-extrabold text-g800 mb-2">交通安全機能を最も重視する場合はSayuUが適しています。左右確認検知・走行検知と双方向通話を求めるご家庭向けです（料金は高めです）</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：他機種にない<strong>左右確認検知・走行検知</strong>の交通安全機能を備え、<strong>双方向通話</strong>にも対応しています。トヨタが提供する製品です。</li>
               <li>・<strong>弱み</strong>：月額<strong>1,210円</strong>と他機種の約2倍で、本体も<strong>16,500円</strong>と高額です。バッテリーは<strong>最大約3日</strong>のため毎日の充電が必要で、テキストのトーク機能はありません。</li>
@@ -159,7 +159,7 @@ export default function SayuuPage() {
                 <li>・双方向通話で緊急時にも連絡が可能</li>
                 <li>・走行検知で不審な移動を早期発見</li>
                 <li>・トヨタブランドの高い信頼性</li>
-                <li>・お子さまの交通安全の習慣づくりに役立つ</li>
+                <li>・お子さまの交通安全の習慣づくりに役立つ点</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
@@ -169,7 +169,7 @@ export default function SayuuPage() {
                 <li>・本体価格が16,500円と高額</li>
                 <li>・バッテリーは最大3日間で、毎日の充電が必要</li>
                 <li>・トーク（テキスト）機能は非搭載</li>
-                <li>・初期コストが高い</li>
+                <li>・高い初期コスト</li>
               </ul>
             </div>
           </div>

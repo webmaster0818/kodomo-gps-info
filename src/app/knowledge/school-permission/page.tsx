@@ -80,11 +80,11 @@ export default function SchoolPermissionPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">要点：GPS端末は「原則禁止」の対象ではありません</h2>
+          <h2 className="section-title">GPS端末は「原則禁止」の対象ではありません</h2>
           <div className="card-hover p-5 mb-8">
             <p className="text-sm text-g600 mb-3">
               文部科学省の通知（令和2年7月31日「学校における携帯電話の取扱い等について」）で小学校への持ち込みが原則禁止とされているのは<strong>「携帯電話」</strong>です。
-              通知の中で例示されているのは子供向け携帯電話やフィルタリング付き携帯電話であり、<strong>通話機能のないGPS専用端末の扱いを直接定めた記述は確認されていません</strong>。
+              通知の中で例示されているのは子供向け携帯電話やフィルタリング付き携帯電話で、<strong>通話機能のないGPS専用端末の扱いを直接定めた記述は確認されていません</strong>。
             </p>
             <p className="text-sm text-g600 mb-3">
               したがって、「GPSは文科省が禁止している」「文科省が許可している」のいずれも正確ではなく、<strong>最終的な判断は各学校が行います</strong>。

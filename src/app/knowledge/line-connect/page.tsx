@@ -104,19 +104,19 @@ export default function LineConnectPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・普段使っているLINEで通知を受け取れる</li>
-                <li>・家族全員が同じチャットで情報共有できる</li>
-                <li>・LINEグループで祖父母にも伝えやすい</li>
-                <li>・専用アプリを開かずに位置状況を把握可能</li>
+                <li>・普段使っているLINEで通知を受け取れる点</li>
+                <li>・家族全員が同じチャットで情報共有できる点</li>
+                <li>・LINEグループで祖父母にも伝えやすい点</li>
+                <li>・専用アプリを開かずに位置状況を把握できる点</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・全機種が対応しているわけではない</li>
-                <li>・通知がLINEのトークに埋もれる可能性がある</li>
-                <li>・LINEのサーバー遅延により通知が遅れるおそれがある</li>
-                <li>・専用アプリほど詳細な履歴を確認できない場合がある</li>
+                <li>・全機種が対応しているわけではない点</li>
+                <li>・通知がLINEのトークに埋もれる可能性がある点</li>
+                <li>・LINEのサーバー遅延により通知が遅れるおそれがある点</li>
+                <li>・専用アプリほど詳細な履歴を確認できない場合がある点</li>
               </ul>
             </div>
           </div>
@@ -124,10 +124,10 @@ export default function LineConnectPage() {
           <h2 className="section-title">LINE連携の有無を確認する際のポイント</h2>
           <div className="card-hover p-5 mb-8">
             <ul className="space-y-2 text-sm text-g700">
-              <li>・公式サイトの機能一覧で「LINE通知」「LINE連携」の項目を探す</li>
-              <li>・アプリストアのレビューを「LINE通知」「便利」などのキーワードで検索する</li>
-              <li>・公式FAQで設定方法や制限事項を確認する</li>
-              <li>・不明点は各社のサポート窓口にお問い合わせいただく</li>
+              <li>・公式サイトの機能一覧で「LINE通知」「LINE連携」の項目を確認します</li>
+              <li>・アプリストアのレビューを「LINE通知」「便利」などのキーワードで検索します</li>
+              <li>・公式FAQで設定方法や制限事項を確認します</li>
+              <li>・不明点は各社のサポート窓口にお問い合わせください</li>
             </ul>
           </div>
 

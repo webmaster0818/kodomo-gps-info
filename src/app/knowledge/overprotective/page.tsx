@@ -54,21 +54,21 @@ export default function OverprotectivePage() {
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">監視（避けるべき使い方）</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・5分おきに位置を確認する</li>
-                <li>・移動するたびに電話で問い詰める</li>
-                <li>・子供に内緒でGPSを持たせる</li>
-                <li>・友達の家にいることを逐一指摘する</li>
-                <li>・GPSを外すことを許さない</li>
+                <li>・5分おきの位置確認</li>
+                <li>・移動のたびに電話で問い詰めること</li>
+                <li>・子供に内緒でGPSを持たせること</li>
+                <li>・友達の家にいることを逐一指摘すること</li>
+                <li>・GPSを外すことを一切認めないこと</li>
               </ul>
             </div>
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">見守り（適切な使い方）</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・エリア通知で異常時のみ確認する</li>
-                <li>・帰宅が遅いときだけ位置を見る</li>
-                <li>・子供にGPSの目的を説明する</li>
-                <li>・通知がなければ安心して見守る</li>
-                <li>・成長に合わせて使い方を変える</li>
+                <li>・エリア通知による異常時のみの確認</li>
+                <li>・帰宅が遅いときだけの位置確認</li>
+                <li>・子供へのGPSの目的の説明</li>
+                <li>・通知がない場合は確認を控えること</li>
+                <li>・成長に合わせた使い方の見直し</li>
               </ul>
             </div>
           </div>
