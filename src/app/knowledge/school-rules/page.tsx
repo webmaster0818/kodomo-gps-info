@@ -5,18 +5,18 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '小学校のGPS持ち込みは許可される？ルールと申請方法【2026年】シーン別可否表・先生への確認テンプレ付き',
   description:
-    'GPS端末の小学校持ち込みは許可される？文科省通知（2文科初第670号）の正確な解説に加え、登下校・遠足・宿泊行事などシーン別の可否早見表、担任への確認質問テンプレ、申請理由の例文、ランドセルへの入れ方まで網羅した保護者向けハブ記事です。',
+    'GPS端末の小学校への持ち込みが許可されるかについて、文部科学省の通知（2文科初第670号）の内容を解説します。登下校・遠足・宿泊行事などシーン別の可否早見表、担任の先生への確認に使える質問例、申請理由の例文、ランドセルへの入れ方もまとめた保護者向けの記事です。',
 };
 
 const faqData = [
-  { q: 'GPS端末は学校に持ち込めますか？', a: 'ほとんどの小学校でGPS端末の持ち込みは許可されています。通話機能のない位置確認専用端末は「携帯電話」に該当しないため、規制の対象外となるケースが多いです。' },
-  { q: '持ち込み申請は必要ですか？', a: '学校によります。事前に担任の先生に確認し、必要であれば持ち込み許可申請書を提出しましょう。多くの場合、口頭での確認だけでOKな学校もあります。' },
-  { q: 'ランドセルのどこに入れればいい？', a: 'ランドセルの小ポケットや内側のファスナーポケットが最適です。専用のケースやストラップを使って固定すると、落下や紛失を防げます。' },
-  { q: '授業中に音が鳴りませんか？', a: 'GPS端末は基本的に音が鳴りません。トーク機能付きの機種でも、通知音をオフに設定できます。バイブレーション機能のみにしておけば授業の妨げになりません。' },
-  { q: 'キッズケータイは持ち込めますか？', a: '文部科学省のガイドラインでは、小学校への携帯電話の持ち込みは「原則禁止」とされています。ただし、保護者が申請すれば許可される学校もあります。GPS端末の方が持ち込みやすいです。' },
-  { q: 'GPSをこっそり持たせたら学校にバレますか？', a: '音や光が出ない位置情報専用のGPS端末は、ランドセルに入れたままなら日常的に気づかれることはまずありません。ただし持ち物検査や紛失時にトラブルになる可能性があるため、当サイトでは無断で持たせるのではなく、本ページの例文を使って事前に学校へ確認・申請することをおすすめします。多くの学校で正規に許可される持ち物です。' },
-  { q: '先生にGPS持ち込みを反対されたら？', a: '「通話機能がなく授業に影響しない」「防犯目的である」「ランドセルに入れたまま」という点を説明しましょう。それでも不可の場合は、登下校時のみランドセル内に入れる形で交渉してみてください。' },
-  { q: '遠足や修学旅行にもGPSを持って行けますか？', a: '学校により対応が分かれます。引率がつく校外学習や、持ち物を一括管理する宿泊行事（林間学校・修学旅行）では持ち込み不可とする学校も少なくありません。判断が分かれるシーンなので、必ず事前に担任・学校へ確認してください。本文の「シーン別可否早見表」も参考にしてください。' },
+  { q: 'GPS端末は学校に持ち込めますか？', a: 'ほとんどの小学校でGPS端末の持ち込みは許可されています。通話機能のない位置確認専用端末は「携帯電話」に該当しないため、規制の対象外となるケースが多く見られます。' },
+  { q: '持ち込み申請は必要ですか？', a: '学校により異なります。事前に担任の先生へ確認し、必要な場合は持ち込み許可申請書を提出してください。口頭での確認のみで足りる学校も多くあります。' },
+  { q: 'ランドセルのどこに入れればよいですか？', a: 'ランドセルの小ポケットや内側のファスナーポケットが適しています。専用のケースやストラップで固定すると、落下や紛失を防げます。' },
+  { q: '授業中に音が鳴ることはありませんか？', a: 'GPS端末は基本的に音が鳴りません。トーク機能付きの機種でも、通知音をオフに設定できます。バイブレーション機能のみにしておけば、授業の妨げにはなりません。' },
+  { q: 'キッズケータイは持ち込めますか？', a: '文部科学省のガイドラインでは、小学校への携帯電話の持ち込みは「原則禁止」とされています。ただし、保護者の申請により許可する学校もあります。GPS端末のほうが、持ち込みの許可を得やすい傾向があります。' },
+  { q: 'GPSを学校に無断で持たせた場合、気づかれますか？', a: '音や光が出ない位置情報専用のGPS端末は、ランドセルに入れたままであれば、日常的に気づかれることはほとんどありません。ただし、持ち物検査や紛失時にトラブルになる可能性があります。当サイトでは、無断で持たせるのではなく、本ページの例文を使って事前に学校へ確認・申請することをおすすめします。多くの学校で正規に許可されている持ち物です。' },
+  { q: '先生にGPSの持ち込みを反対された場合は、どうすればよいですか？', a: '「通話機能がなく授業に影響しない」「防犯目的である」「ランドセルに入れたままにする」という点をご説明ください。それでも認められない場合は、登下校時のみランドセル内に入れる形での相談をおすすめします。' },
+  { q: '遠足や修学旅行にもGPSを持って行けますか？', a: '学校により対応が分かれます。引率が付く校外学習や、持ち物を一括管理する宿泊行事（林間学校・修学旅行）では、持ち込み不可とする学校も少なくありません。判断が分かれる場面のため、必ず事前に担任の先生・学校へご確認ください。本文の「シーン別可否早見表」もあわせてご参照ください。' },
 ];
 
 const faqJsonLd = {
@@ -33,7 +33,7 @@ export default function SchoolRulesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-08-02", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS端末の学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-08-02", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '学校持ち込み' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -43,9 +43,9 @@ export default function SchoolRulesPage() {
             <span className="tag-pill bg-orange text-white">持ち込みガイド</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            GPS 学校持ち込みルール
+            GPS端末の学校持ち込みルール
           </h1>
-          <p className="text-g600 text-lg">許可される条件・申請方法・ランドセルへの入れ方を解説</p>
+          <p className="text-g600 text-lg">GPS端末が学校で許可される条件、申請方法、ランドセルへの入れ方を解説します。</p>
         </div>
       </section>
 
@@ -58,7 +58,7 @@ export default function SchoolRulesPage() {
               <strong>小学校は携帯電話の持ち込みを「原則禁止」</strong>とする一方、緊急の連絡手段としてやむを得ない場合などは
               <strong>各学校・教育委員会の判断で例外的に認められる</strong>とされています。
               位置情報のみのGPS端末は「携帯電話」に当たらないと判断する学校が多く、持ち込みが認められるケースが大半ですが、
-              最終的な可否は<strong>各学校の校則・判断によります</strong>。まずは担任の先生に確認するのが確実です。
+              最終的な可否は<strong>各学校の校則・判断によります</strong>。まずは担任の先生にご確認いただくことをおすすめします。
             </p>
             <p className="text-xs text-g500 mb-4">出典：文部科学省「学校における携帯電話の取扱い等について（通知）」令和2年7月31日（2文科初第670号）。GPS端末の扱いは各学校・教育委員会により異なります。</p>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -81,9 +81,9 @@ export default function SchoolRulesPage() {
           <div className="space-y-3 mb-8">
             {[
               { title: '通話機能がない端末', desc: '位置確認のみのGPS端末は携帯電話に該当しないため、ほぼ許可されます。' },
-              { title: 'ランドセル内に収納', desc: '授業中はランドセルに入れたまま。机に出したり操作したりしないことが条件。' },
-              { title: '音が出ない設定', desc: '通知音やバイブレーションをオフにして、授業の妨げにならないようにする。' },
-              { title: '保護者の申請がある', desc: '防犯目的であることを学校に伝え、必要に応じて申請書を提出する。' },
+              { title: 'ランドセル内に収納', desc: '授業中はランドセルに入れたままにし、机に出したり操作したりしないことが条件です。' },
+              { title: '音が出ない設定', desc: '通知音やバイブレーションをオフにし、授業の妨げにならないようにします。' },
+              { title: '保護者の申請がある', desc: '防犯目的であることを学校に伝え、必要に応じて申請書を提出します。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-4">
                 <h3 className="font-bold text-g800 text-sm mb-1">{item.title}</h3>
@@ -93,7 +93,7 @@ export default function SchoolRulesPage() {
           </div>
 
           <h2 className="section-title">シーン別 GPS持ち込み可否の判断早見表</h2>
-          <p className="text-g600 mb-4 text-sm">「登下校だけ？」「遠足や宿泊行事は？」と迷いやすいシーンごとに、一般的な可否の目安をまとめました。可否は学校の判断によるため、迷うシーンは事前に確認しましょう。</p>
+          <p className="text-g600 mb-4 text-sm">「登下校のみか」「遠足や宿泊行事はどうか」など判断に迷いやすい場面ごとに、一般的な可否の目安をまとめました。可否は学校の判断によるため、迷う場面は事前にご確認ください。</p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -105,11 +105,11 @@ export default function SchoolRulesPage() {
               </thead>
               <tbody>
                 {[
-                  { s: '登下校（通学路）', ok: '◎ 認められやすい', p: '防犯目的が明確。ランドセル収納・音オフが前提。' },
-                  { s: '授業中（校内）', ok: '○ ランドセル内ならOKが多い', p: '机に出さない・操作しないことが条件。' },
-                  { s: '校外学習・遠足', ok: '△ 学校に要確認', p: '引率がつくため不要とされる場合も。事前申請が無難。' },
-                  { s: '宿泊行事（林間学校・修学旅行）', ok: '△〜✕ 学校により分かれる', p: '一括管理・持ち込み不可の学校が多い。必ず事前確認。' },
-                  { s: '運動会・参観日など保護者同伴', ok: '○ 同伴時は不要なことも', p: '保護者がそばにいれば持参の必要性は下がる。' },
+                  { s: '登下校（通学路）', ok: '◎ 認められやすい', p: '防犯目的が明確です。ランドセルへの収納と音のオフが前提です。' },
+                  { s: '授業中（校内）', ok: '○ ランドセル内なら認められることが多い', p: '机に出さない・操作しないことが条件です。' },
+                  { s: '校外学習・遠足', ok: '△ 学校に要確認', p: '引率が付くため不要とされる場合があります。事前の申請をおすすめします。' },
+                  { s: '宿泊行事（林間学校・修学旅行）', ok: '△〜✕ 学校により分かれる', p: '一括管理または持ち込み不可とする学校が多いため、必ず事前にご確認ください。' },
+                  { s: '運動会・参観日など保護者同伴', ok: '○ 同伴時は不要な場合あり', p: '保護者がそばにいれば、持参の必要性は下がります。' },
                 ].map((r) => (
                   <tr key={r.s} className="align-top border-b border-gray-100">
                     <td className="p-3 font-bold text-g800 whitespace-nowrap">{r.s}</td>
@@ -120,23 +120,23 @@ export default function SchoolRulesPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-8">※上表は一般的な傾向の目安です。最終的な可否は各学校の校則・判断によります。宿泊行事など判断が分かれるシーンは、必ず事前に担任・学校へ確認してください。</p>
+          <p className="text-xs text-g500 mb-8">※上表は一般的な傾向の目安です。最終的な可否は各学校の校則・判断によります。宿泊行事など判断が分かれる場面は、必ず事前に担任の先生・学校へご確認ください。</p>
 
-          <h2 className="section-title">担任の先生に確認するときの質問テンプレ</h2>
+          <h2 className="section-title">担任の先生への確認に使える質問例</h2>
           <div className="card-hover p-6 mb-8 bg-green-light/40">
-            <p className="text-g600 mb-4 text-sm">いきなり申請書を出す前に、まずは口頭や連絡帳で先生に確認するとスムーズです。そのまま使える質問例を用意しました。</p>
+            <p className="text-g600 mb-4 text-sm">申請書を提出する前に、まず口頭や連絡帳で先生に確認すると円滑に進みます。そのまま使える質問例を掲載しています。</p>
             <ul className="space-y-3 text-sm text-g700">
               <li>「防犯のため、位置確認だけのGPS端末（通話機能なし）を持たせたいのですが、持ち込みは可能でしょうか？」</li>
               <li>「持ち込みにあたって、申請書の提出は必要ですか？必要であれば様式をいただけますか？」</li>
               <li>「授業中はランドセルに入れたまま・音はオフにします。その形で問題ないでしょうか？」</li>
               <li>「遠足や宿泊行事のときの持ち込みについても、ルールがあれば教えてください。」</li>
             </ul>
-            <p className="text-xs text-g500 mt-4">※「防犯目的」「通話機能なし」「ランドセル収納・音オフ」の3点を先に伝えると、許可が下りやすくなります。</p>
+            <p className="text-xs text-g500 mt-4">※「防犯目的」「通話機能なし」「ランドセル収納・音オフ」の3点を先にお伝えすると、許可を得やすくなります。</p>
           </div>
 
           <h2 className="section-title">持ち込み申請の書き方</h2>
           <div className="card-hover p-6 mb-8">
-            <p className="text-g600 mb-4">学校によっては持ち込み許可申請書の提出が必要です。以下のポイントを押さえましょう。</p>
+            <p className="text-g600 mb-4">学校によっては持ち込み許可申請書の提出が必要です。記載にあたっては、以下の点をご確認ください。</p>
             <ul className="space-y-2 text-sm text-g700">
               <li>・端末名と型番を記載（例: みてねみまもりGPS 第3世代）</li>
               <li>・通話機能がないことを明記</li>
@@ -147,9 +147,9 @@ export default function SchoolRulesPage() {
             </ul>
           </div>
 
-          <h2 className="section-title">申請理由の例文（そのままコピペOK）</h2>
+          <h2 className="section-title">申請理由の例文（そのまま使える文例）</h2>
           <div className="card-hover p-6 mb-8">
-            <p className="text-g600 mb-4 text-sm">申請書や連絡帳にそのまま使える文例です。お子さんの状況に合わせて調整してください。</p>
+            <p className="text-g600 mb-4 text-sm">申請書や連絡帳にそのまま使える文例です。お子さまの状況に合わせて調整してください。</p>
             <div className="space-y-4">
               <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
                 <p className="font-bold text-g800 text-sm mb-2">例文A（通学距離・低学年）</p>
@@ -173,13 +173,13 @@ export default function SchoolRulesPage() {
               </div>
               <div className="rounded-lg p-4" style={{ background: 'rgba(59,130,246,0.06)' }}>
                 <p className="font-bold text-g800 text-sm mb-2">例文F（災害・引き渡し時の所在確認）</p>
-                <p className="text-sm text-g700 leading-relaxed">「地震等の災害時や下校時刻の急な変更時に、子どもの所在をすみやかに確認し、確実な引き取りにつなげることを目的として、GPS端末の携行を申請いたします。日常の校内では一切使用せず、ランドセルに入れたままにいたします。」</p>
+                <p className="text-sm text-g700 leading-relaxed">「地震等の災害時や下校時刻の急な変更時に、子供の所在をすみやかに確認し、確実な引き取りにつなげることを目的として、GPS端末の携行を申請いたします。日常の校内では一切使用せず、ランドセルに入れたままにいたします。」</p>
               </div>
             </div>
 
             <div className="mt-6 rounded-lg border border-blue-200 p-5" style={{ background: 'rgba(59,130,246,0.03)' }}>
-              <p className="font-bold text-g800 text-sm mb-2">📝 あわせて添えると通りやすい「家庭での約束（誓約文）」テンプレ</p>
-              <p className="text-sm text-g700 leading-relaxed mb-2">申請理由に以下のような誓約を添えると、学校側が懸念する点（授業妨害・トラブル・紛失責任）に先回りして答えられます。</p>
+              <p className="font-bold text-g800 text-sm mb-2">📝 あわせて添えると許可を得やすい「家庭での約束（誓約文）」の例</p>
+              <p className="text-sm text-g700 leading-relaxed mb-2">申請理由に以下のような誓約を添えると、学校側が懸念する点（授業妨害・トラブル・紛失責任）にあらかじめお答えできます。</p>
               <ul className="text-sm text-g700 leading-relaxed space-y-1">
                 <li>・校内では取り出さず、音や光が出ない状態で携行させます</li>
                 <li>・お子さま自身に操作させず、確認は保護者側のアプリのみで行います</li>
@@ -190,7 +190,7 @@ export default function SchoolRulesPage() {
 
             <div className="mt-6">
               <p className="font-bold text-g800 text-sm mb-2">🔇 主要機種の「音が出るか」早見表（各公式サイト確認・2026年8月2日時点）</p>
-              <p className="text-sm text-g600 mb-3">「音や光が出ない設定にします」と申請するためには、実際に無音で運用できる機種かの確認が必要です。主要6機種の公式情報をまとめました。</p>
+              <p className="text-sm text-g600 mb-3">「音や光が出ない設定にします」と申請するには、実際に無音で運用できる機種かどうかを確認する必要があります。主要6機種の公式情報をまとめました。</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border border-g200 rounded-lg overflow-hidden">
                   <thead>
@@ -212,16 +212,16 @@ export default function SchoolRulesPage() {
               </div>
               <p className="text-xs text-g600 mt-2">※各社公式サイト・公式FAQの記載にもとづきます（2026年8月2日確認）。仕様は機種・ファームウェアで変わる場合があるため、申請前に最新の公式情報をご確認ください。</p>
             </div>
-            <p className="text-sm text-g600 mt-4">状況別の例文をさらに見たい方は <Link href="/knowledge/school-permission/" className="text-blue-600 font-bold underline">学校許可の取り方・申請例文テンプレ（4パターン＋自治体補助一覧）</Link> をご覧ください。</p>
+            <p className="text-sm text-g600 mt-4">状況別の例文は、<Link href="/knowledge/school-permission/" className="text-blue-600 font-bold underline">学校許可の取り方・申請例文テンプレ（4パターン＋自治体補助一覧）</Link> をご覧ください。</p>
           </div>
 
           <h2 className="section-title">ランドセルへの入れ方</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { title: '小ポケット', desc: 'ランドセル前面の小ポケットに入れる方法。出し入れしやすく、忘れにくい場所です。' },
-              { title: '内側ファスナーポケット', desc: 'ランドセル内側のポケットに入れる方法。教科書と分離でき、紛失リスクが低い。' },
-              { title: '専用ケース＋ストラップ', desc: 'GPSをケースに入れてランドセルのフックに固定。落下を防ぎ、充電時の取り出しも簡単。' },
-              { title: 'キーホルダータイプ', desc: 'ランドセルのDカンやファスナーに取り付け。取り外しが最も簡単な方法。' },
+              { title: '小ポケット', desc: 'ランドセル前面の小ポケットに入れる方法です。出し入れしやすく、忘れにくい場所です。' },
+              { title: '内側ファスナーポケット', desc: 'ランドセル内側のポケットに入れる方法です。教科書と分けて収納でき、紛失のリスクが低い方法です。' },
+              { title: '専用ケース＋ストラップ', desc: 'GPS端末をケースに入れ、ランドセルのフックに固定する方法です。落下を防げるうえ、充電時の取り出しも簡単です。' },
+              { title: 'キーホルダータイプ', desc: 'ランドセルのDカンやファスナーに取り付ける方法です。取り外しが最も簡単です。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-4">
                 <h3 className="font-bold text-g800 text-sm mb-1">{item.title}</h3>
@@ -239,8 +239,8 @@ export default function SchoolRulesPage() {
           ))}
 
           <div className="mt-8 card-hover p-5 bg-blue-light rounded-2xl">
-            <h3 className="font-bold text-g800 mb-2">申請書の「理由」に何を書けばいいか迷ったら</h3>
-            <p className="text-sm text-g600 mb-3">コピペで使える申請理由の例文4パターンと、GPS購入補助を行う8自治体の制度一覧をまとめました。</p>
+            <h3 className="font-bold text-g800 mb-2">申請書の「理由」の書き方に迷われた場合</h3>
+            <p className="text-sm text-g600 mb-3">そのまま使える申請理由の例文4パターンと、GPS購入補助を行う8自治体の制度一覧をまとめています。</p>
             <Link href="/knowledge/school-permission/" className="btn-primary inline-block">学校許可の取り方・申請例文テンプレを見る</Link>
           </div>
 
@@ -249,11 +249,11 @@ export default function SchoolRulesPage() {
             <div className="grid sm:grid-cols-2 gap-4">
               <Link href="/knowledge/school-permission/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">学校許可の取り方・申請例文テンプレ</p>
-                <p className="text-xs text-g600">コピペ可の理由例文4種＋自治体補助一覧</p>
+                <p className="text-xs text-g600">そのまま使える理由例文4種と自治体補助一覧</p>
               </Link>
               <Link href="/knowledge/school-trip/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">修学旅行・宿泊行事のGPS</p>
-                <p className="text-xs text-g600">宿泊行事に持って行ける？の判断</p>
+                <p className="text-xs text-g600">宿泊行事への持参可否の判断</p>
               </Link>
               <Link href="/compare/school-trip/" className="card-hover p-4 block">
                 <p className="font-bold text-g800 text-sm mb-1">遠足・修学旅行向けGPS比較</p>
@@ -267,8 +267,8 @@ export default function SchoolRulesPage() {
           </div>
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">学校に持ち込みやすいGPS端末を選ぼう</h2>
-            <p className="text-g600 mb-6 text-sm">音が鳴らない・トークなしの機種なら、学校でも安心です。3年総額で比較しました。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">学校に持ち込みやすいGPS端末の選び方</h2>
+            <p className="text-g600 mb-6 text-sm">音が鳴らない機種やトーク機能のない機種であれば、学校でも安心してご利用いただけます。3年総額で比較しています。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/compare/school-silent/" className="btn-primary">学校向け静音GPSを比較する</Link>
               <Link href="/knowledge/how-to-choose/" className="btn-accent">選び方ガイド</Link>

@@ -19,7 +19,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2 text-lg font-extrabold text-blue no-underline">
           <span className="text-2xl" aria-hidden="true">📍</span>
           <span className="hidden sm:inline">子供見守りGPS最新情報</span>
-          <span className="sm:hidden">見守りGPS情報</span>
+          <span className="sm:hidden">子供見守りGPS最新情報</span>
         </Link>
 
         {/* Desktop nav */}

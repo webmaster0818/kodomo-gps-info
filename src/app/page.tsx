@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供見守りGPS最新情報 | 2026年おすすめGPS端末比較ランキング',
   description:
-    '子供用見守りGPS端末13機種を徹底比較。みてねみまもりGPS、BoTトーク、あんしんウォッチャーなど人気機種の料金・機能・口コミを詳しく紹介。月額528円〜。',
+    '子供用見守りGPS端末13機種を、公式サイトの情報にもとづいて比較しています。みてねみまもりGPS、BoTトーク、あんしんウォッチャーなど主要機種の料金・機能・口コミをご紹介します。月額528円〜。',
 };
 
 const devices = [
@@ -17,14 +17,14 @@ const devices = [
     monthly: '528円〜',
     talk: 'トークPlus対応',
     positioning: 'GPS+GLONASS+みちびき+Wi-Fi',
-    battery: '最大2ヶ月',
+    battery: '最大2カ月',
     feature: '利用者数No.1',
     slug: '/review/mitene/',
     ssSlug: 'ss-mitene',
-    features: ['利用者数No.1の安心感', 'トークPlus対応（月額748円）', '移動履歴の自動記録', '複数の見守り人登録', 'バッテリー持ち最大2ヶ月'],
-    pros: ['月額528円〜の低コスト', 'アプリの使いやすさが好評', '位置精度が高い'],
+    features: ['利用者数No.1の安心感', 'トークPlus対応（月額748円）', '移動履歴の自動記録', '複数の見守り人登録', 'バッテリー持ち最大2カ月'],
+    pros: ['月額528円〜の低価格', 'アプリの操作性に定評がある', '位置精度が高い'],
     cons: ['トーク機能は追加料金', '本体カラーが限られる'],
-    recommend: '初めてGPSを持たせる方・コスパ重視の方',
+    recommend: '初めてGPS端末を持たせる方・費用を抑えたい方',
   },
   {
     rank: 2,
@@ -33,7 +33,7 @@ const devices = [
     monthly: '539円（税込）',
     talk: '非対応',
     positioning: 'GPS+Wi-Fi+携帯基地局',
-    battery: '最大1.5ヶ月',
+    battery: '最大1.5カ月',
     feature: '2台目無料・au品質',
     slug: '/review/anshin-watcher/',
     ssSlug: 'ss-anshin-watcher',
@@ -49,14 +49,14 @@ const devices = [
     monthly: '528円〜',
     talk: 'トーク対応（748円）',
     positioning: 'GPS+GLONASS+みちびき+Wi-Fi',
-    battery: '最大1ヶ月',
+    battery: '最大1カ月',
     feature: '元祖トーク機能・見守りウォレット',
     slug: '/review/bot-talk/',
     ssSlug: 'ss-bot-talk',
     features: ['第6世代の最新モデル', '元祖トーク機能搭載', '見守りウォレット（電子マネー）', 'AIによる行動学習', '生活防水IPX5'],
     pros: ['見守りウォレット機能が便利', 'AI学習で到着予測が正確', 'トーク機能の元祖で実績豊富'],
-    cons: ['バッテリーがやや短め', '月額がトーク付きだと748円'],
-    recommend: 'トーク＋電子マネーで多機能を求める方',
+    cons: ['バッテリーがやや短め', 'トーク機能を利用する場合は月額748円'],
+    recommend: 'トークと電子マネーを併用したい方',
   },
   {
     rank: 4,
@@ -65,13 +65,13 @@ const devices = [
     monthly: '539円（税込）',
     talk: '非対応',
     positioning: 'GPS+Wi-Fi+携帯基地局',
-    battery: '最大1ヶ月',
+    battery: '最大1カ月',
     feature: '最大25人見守り',
     slug: '/review/mamosearch/',
     ssSlug: 'ss-mamosearch',
     features: ['最大25人で見守り可能', '第3世代の最新モデル', 'エリア通知機能', '移動履歴の記録', 'コンパクト設計'],
     pros: ['25人まで見守りに参加できる', '祖父母・親戚も一緒に見守れる', 'コンパクトで軽量'],
-    cons: ['トーク機能なし', 'バッテリーは使い方次第'],
+    cons: ['トーク機能なし', 'バッテリー持ちは設定により変動'],
     recommend: '大家族・祖父母も見守りに参加させたい方',
   },
   {
@@ -86,34 +86,34 @@ const devices = [
     slug: '/review/myfirst-fone/',
     ssSlug: 'ss-myfirst-fone',
     features: ['音声・ビデオ通話対応', 'キッズスマートウォッチ型', 'カメラ搭載', 'SOS機能', '音楽プレーヤー内蔵'],
-    pros: ['通話・ビデオ通話ができる', '腕時計型で紛失しにくい', '多機能で子供が喜ぶ'],
+    pros: ['通話・ビデオ通話ができる', '腕時計型で紛失しにくい', '機能が豊富'],
     cons: ['月額が高め', 'バッテリーが短い', '本体価格が高い'],
-    recommend: '通話機能重視・腕時計型が良い方',
+    recommend: '通話機能を重視する方・腕時計型を希望する方',
   },
 ];
 
 const knowledgeArticles = [
-  { title: 'GPS端末はいつから持たせる？適切な時期を解説', slug: '/knowledge/when-to-start/' },
+  { title: 'GPS端末はいつから持たせる？適切な時期の解説', slug: '/knowledge/when-to-start/' },
   { title: '子供用GPSの選び方ガイド', slug: '/knowledge/how-to-choose/' },
   { title: 'GPSの位置精度はどれくらい？', slug: '/knowledge/accuracy/' },
   { title: '学校への持ち込みルールと対策', slug: '/knowledge/school-rules/' },
-  { title: 'バッテリー持ちを比較検証', slug: '/knowledge/battery/' },
-  { title: 'キッズスマホ vs GPS端末の違い', slug: '/knowledge/smartphone-vs-gps/' },
-  { title: '防水性能を実機テスト', slug: '/knowledge/waterproof-test/' },
-  { title: '見守りGPSの通知機能を徹底解説', slug: '/knowledge/notification-types/' },
+  { title: 'バッテリー持ちの比較', slug: '/knowledge/battery/' },
+  { title: 'キッズスマートフォンとGPS端末の違い', slug: '/knowledge/smartphone-vs-gps/' },
+  { title: '防水性能の比較', slug: '/knowledge/waterproof-test/' },
+  { title: '見守りGPSの通知機能の解説', slug: '/knowledge/notification-types/' },
 ];
 
 const faqData = [
-  { q: '子供用GPSは何歳から持たせるべき？', a: '小学校入学のタイミング（6〜7歳）で持たせ始めるご家庭が最も多いです。一人で登下校を始める時期に合わせて導入するのがおすすめです。保育園・幼稚園の年長さんから練習で持たせる方もいます。' },
-  { q: 'GPS端末の月額料金はいくらかかる？', a: '月額528円〜1,210円が相場です。最安はみてねみまもりGPS（528円）やBoTトーク（528円）。トーク機能付きだと748円程度、トヨタのSayuUは通話対応で1,210円です。2年契約などの縛りはほとんどありません。' },
-  { q: 'キッズ携帯とGPS端末はどっちがいい？', a: 'GPS端末はキッズ携帯より小型・軽量で月額も安いのが魅力です。授業中に鳴る心配もなく、学校への持ち込みもOKな場合が多いです。通話が必要な場合はSayuUやキッズ携帯を検討しましょう。' },
-  { q: 'GPS端末は学校に持って行ける？', a: 'ほとんどの学校で持ち込み可能です。文部科学省も2020年に「登下校時の防犯対策として携帯・GPS端末の持ち込みを認める」方針を示しています。念のため学校に確認することをおすすめします。' },
-  { q: '位置情報の精度はどれくらい？', a: 'GPS＋Wi-Fi＋携帯基地局の複合測位で、屋外では数メートル〜十数メートルの精度です。屋内ではWi-Fi測位により建物内でもある程度の位置把握が可能です。ソラノメなどの3測位対応モデルが精度は高めです。' },
-  { q: 'バッテリーはどれくらい持つ？', a: '機種により大きく異なります。みてねみまもりGPSは最大2ヶ月、BoTトークは最大1ヶ月、SayuUは最大3日間です。位置更新の頻度設定によってもバッテリー持ちは変わります。' },
-  { q: 'トーク・通話機能は必要？', a: 'お子さまとのコミュニケーション手段として便利です。「今から帰るよ」「迎えに来て」など短いメッセージをやり取りできます。必要に応じてトーク対応モデル（みてねトークPlus、BoTトーク）や通話対応のSayuUを選びましょう。' },
-  { q: 'GPS端末の本体価格はいくら？', a: '3,000円〜16,500円程度です。みてねみまもりGPSは5,280円、あんしんウォッチャーは実質無料キャンペーンもあり。SayuUは16,500円と高めですが通話・交通安全機能付きです。' },
-  { q: 'SOS・緊急通知機能はある？', a: 'ソラノメにはSOSボタンが搭載されています。その他の機種もエリア出入り通知やバッテリー低下通知など、異常を知らせる機能があります。SayuUは走行検知で交通事故の可能性を通知します。' },
-  { q: '解約金や最低利用期間はある？', a: 'ほとんどの機種で解約金や最低利用期間はありません。月額課金なのでいつでも解約可能です。ただし本体を分割購入した場合は残債が発生する場合があります。' },
+  { q: '子供用GPSは何歳から持たせるべきですか？', a: '小学校入学のタイミング（6〜7歳）で持たせ始めるご家庭が最も多い傾向です。お子さまが一人で登下校を始める時期に合わせて導入することをおすすめします。保育園・幼稚園の年長から、練習として持たせるご家庭もあります。' },
+  { q: 'GPS端末の月額料金はいくらですか？', a: '月額528円〜1,210円が相場です。最も安いのはみてねみまもりGPS（528円）とBoTトーク（528円）です。トーク機能を利用する場合は748円程度、トヨタのSayuUは通話対応で1,210円です。2年契約などの契約期間の縛りがある機種はほとんどありません。' },
+  { q: 'キッズ携帯とGPS端末はどちらがよいですか？', a: 'GPS端末はキッズ携帯より小型・軽量で、月額料金も抑えられます。授業中に音が鳴る心配が少なく、学校への持ち込みが認められる場合も多くあります。通話が必要な場合は、SayuUやキッズ携帯をご検討ください。' },
+  { q: 'GPS端末は学校に持って行けますか？', a: 'ほとんどの学校で持ち込みが可能です。文部科学省も2020年に「登下校時の防犯対策として携帯・GPS端末の持ち込みを認める」方針を示しています。ご利用前に、在籍する学校へご確認ください。' },
+  { q: '位置情報の精度はどの程度ですか？', a: 'GPS＋Wi-Fi＋携帯基地局の複合測位により、屋外では数メートル〜十数メートルの精度です。屋内でもWi-Fi測位により、ある程度の位置把握が可能です。ソラノメなどの3測位対応モデルは、精度が高い傾向にあります。' },
+  { q: 'バッテリーはどの程度持ちますか？', a: '機種により大きく異なります。みてねみまもりGPSは最大2カ月、BoTトークは最大1カ月、SayuUは最大3日間です。位置更新の頻度設定によっても、バッテリー持ちは変わります。' },
+  { q: 'トーク・通話機能は必要ですか？', a: 'お子さまとの連絡手段として役立ちます。「今から帰るよ」「迎えに来て」などの短いメッセージをやり取りできます。必要に応じて、トーク対応モデル（みてねトークPlus、BoTトーク）や通話対応のSayuUをお選びください。' },
+  { q: 'GPS端末の本体価格はいくらですか？', a: '3,000円〜16,500円程度です。みてねみまもりGPSは5,280円で、あんしんウォッチャーは実質無料となるキャンペーンが実施される場合もあります。SayuUは16,500円と高めですが、通話機能と交通安全機能を備えています。' },
+  { q: 'SOS・緊急通知機能はありますか？', a: 'ソラノメにはSOSボタンが搭載されています。その他の機種にも、エリア出入り通知やバッテリー低下通知など、異常を知らせる機能があります。SayuUは走行検知により、交通事故の可能性を通知します。' },
+  { q: '解約金や最低利用期間はありますか？', a: 'ほとんどの機種で、解約金や最低利用期間は設けられていません。月額課金のため、いつでも解約が可能です。ただし、本体を分割購入した場合は残債が発生することがあります。' },
 ];
 
 const faqJsonLd = {
@@ -155,7 +155,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供見守りGPS最新情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供見守りGPS最新情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "みてねみまもりGPS", "url": "https://gps-kodomo.com/review/mitene/"}, {"@type": "ListItem", "position": 2, "name": "あんしんウォッチャー", "url": "https://gps-kodomo.com/review/anshin-watcher/"}, {"@type": "ListItem", "position": 3, "name": "BoTトーク", "url": "https://gps-kodomo.com/review/bot-talk/"}, {"@type": "ListItem", "position": 4, "name": "まもサーチ", "url": "https://gps-kodomo.com/review/mamosearch/"}, {"@type": "ListItem", "position": 5, "name": "myFirst Fone R2", "url": "https://gps-kodomo.com/review/myfirst-fone/"}]}) }} />
 
       {/* ===== 1. Hero Section ===== */}
@@ -177,13 +177,13 @@ export default function HomePage() {
             2026年最新版 -- 専門家監修
           </p>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-4 drop-shadow-lg">
-            幸せは当たり前の日常にある。
+            子供見守りGPS端末の比較情報
           </h1>
           <p className="text-xl md:text-2xl font-bold text-amber-200 mb-6 drop-shadow-md">
-            当たり前を守るために
+            お子さまの日常の安全を見守るために
           </p>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            お子さまの安全を見守るGPS端末を、専門家の目で徹底比較しました。
+            当サイトでは、お子さまの安全を見守るGPS端末を、専門家の視点と公式サイトの情報にもとづいて比較しています。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -206,7 +206,7 @@ export default function HomePage() {
       <section className="bg-[#FFFBF0] border-b border-amber-100">
         <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
           <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-10">
-            数字で見る安心
+            掲載状況
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -215,14 +215,14 @@ export default function HomePage() {
                 iconAlt: 'GPS解説ページアイコン',
                 number: '85+',
                 unit: 'ページ',
-                label: '徹底解説',
+                label: '解説ページ',
               },
               {
                 icon: '/icon-compare.png',
                 iconAlt: '機種比較アイコン',
                 number: '13',
                 unit: '機種',
-                label: '全機種比較',
+                label: '機種を比較',
               },
               {
                 icon: '/icon-shield.png',
@@ -263,7 +263,7 @@ export default function HomePage() {
             おすすめGPS端末ランキング
           </h2>
           <p className="text-center text-gray-500 mb-10 text-sm">
-            月額料金・機能・口コミを総合的に評価しました
+            月額料金・機能・口コミを総合的に評価しています。
           </p>
 
           <div className="space-y-6">
@@ -357,10 +357,10 @@ export default function HomePage() {
       <section className="bg-white py-14">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-2xl md:text-3xl font-extrabold text-gray-800 mb-3">
-            かんたん3ステップで選ぶ
+            3つのステップによる選び方
           </h2>
           <p className="text-center text-gray-500 mb-10 text-sm">
-            初めてでも迷わない、シンプルな選び方
+            初めてGPS端末を選ぶ方にも分かりやすい手順をご紹介します。
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -370,21 +370,21 @@ export default function HomePage() {
                 icon: '/icon-guide.png',
                 iconAlt: 'ガイドアイコン',
                 title: '目的を決める',
-                desc: '位置確認だけ？トークも必要？通話まで欲しい？お子さまの年齢や生活に合わせて、必要な機能を整理しましょう。',
+                desc: '位置確認のみでよいか、トークや通話も必要かを検討します。お子さまの年齢や生活に合わせて、必要な機能を整理してください。',
               },
               {
                 step: 2,
                 icon: '/icon-compare.png',
                 iconAlt: '比較アイコン',
                 title: '比較する',
-                desc: '月額料金・バッテリー・測位精度など、重視するポイントで各機種を比較。当サイトの比較表が便利です。',
+                desc: '月額料金・バッテリー・測位精度など、重視する項目で各機種を比較します。当サイトの比較表をご活用ください。',
               },
               {
                 step: 3,
                 icon: '/icon-shield.png',
                 iconAlt: 'シールドアイコン',
-                title: '安心して購入',
-                desc: '全機種に解約金なし・最低利用期間なし。合わなければいつでも変更できるので、まずは試してみましょう。',
+                title: '購入する',
+                desc: '掲載機種には、解約金や最低利用期間のない料金体系が多くあります。ご家庭に合わない場合も変更しやすいため、まずはお試しいただくことをおすすめします。',
               },
             ].map((item) => (
               <div
@@ -427,7 +427,7 @@ export default function HomePage() {
               },
               {
                 title: '比較',
-                desc: '機種同士を徹底比較',
+                desc: '機種同士の比較',
                 href: '/compare/',
                 bgColor: 'bg-emerald-50',
                 borderColor: 'border-emerald-200',
@@ -496,12 +496,12 @@ export default function HomePage() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { title: 'コスパ・料金で比較', desc: '本体＋月額の3年総額で結局どれが安いか', href: '/compare/cost/' },
-              { title: '学童・習い事の行き帰り', desc: '一人で通う放課後の見守りにおすすめ', href: '/compare/after-school/' },
-              { title: '学校向け静音GPS', desc: '音が鳴らない・トークなしの機種を比較', href: '/compare/school-silent/' },
-              { title: '電池持ちで比較', desc: '充電頻度が少ない機種ランキング', href: '/compare/battery-life/' },
-              { title: '遠足・修学旅行向け', desc: '行事に持たせる機種と可否の考え方', href: '/compare/school-trip/' },
-              { title: '総合ランキング', desc: '2026年の総合おすすめをチェック', href: '/compare/2026-ranking/' },
+              { title: '料金で比較', desc: '本体代と月額料金の3年間の総額による比較', href: '/compare/cost/' },
+              { title: '学童・習い事の行き帰り', desc: '一人で通う放課後の見守りに適した機種', href: '/compare/after-school/' },
+              { title: '学校向け静音GPS', desc: '音が鳴らない機種・トーク機能のない機種の比較', href: '/compare/school-silent/' },
+              { title: '電池持ちで比較', desc: '充電の頻度が少ない機種のランキング', href: '/compare/battery-life/' },
+              { title: '遠足・修学旅行向け', desc: '行事に持たせる機種と、持ち込み可否の考え方', href: '/compare/school-trip/' },
+              { title: '総合ランキング', desc: '2026年の総合的なおすすめ機種', href: '/compare/2026-ranking/' },
             ].map((c) => (
               <Link
                 key={c.href}
@@ -524,10 +524,10 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_50%,white_0%,transparent_70%)]" />
         <div className="relative z-10 mx-auto max-w-3xl px-4">
           <h2 className="text-2xl md:text-3xl font-extrabold mb-4 leading-snug">
-            お子さまにぴったりの<br className="sm:hidden" />GPSを見つけましょう
+            お子さまに合った<br className="sm:hidden" />GPS端末の選び方
           </h2>
           <p className="text-amber-100 mb-8 text-base md:text-lg">
-            13機種の中から、ご家庭の条件に合った最適なGPS端末をお選びいただけます。
+            当サイトでは、13機種の中からご家庭の条件に合ったGPS端末をお選びいただけるよう、情報を整理しています。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -540,7 +540,7 @@ export default function HomePage() {
               href="#ranking"
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/80 text-white font-bold px-8 py-4 text-lg transition-all hover:bg-white hover:text-amber-700 no-underline"
             >
-              ランキングをもう一度見る
+              ランキングを見る
             </a>
           </div>
         </div>

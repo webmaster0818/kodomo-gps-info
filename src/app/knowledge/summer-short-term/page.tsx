@@ -3,23 +3,23 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '夏休みだけ子供GPSはアリ？短期利用・解約・初期費用を比較【2026年】',
+  title: '夏休みだけ子供GPSを使える？短期利用・解約・初期費用を比較【2026年】',
   description:
-    '「夏休みの間だけ子供にGPSを持たせたい」という方向けに、短期利用しやすい機種・初期費用（本体代）・解約のしやすさを比較。契約縛りや解約金のない機種を選べば、夏休みの数ヶ月だけの利用も可能です。レンタルとの違い、2ヶ月利用の費用シミュレーションも掲載。',
+    '「夏休みの間だけ子供にGPSを持たせたい」とお考えの方に向けて、短期利用に適した機種・初期費用（本体代）・解約のしやすさを比較します。契約期間の縛りや解約金のない機種を選べば、夏休みの数カ月のみの利用も可能です。レンタルとの違いや、2カ月利用した場合の費用シミュレーションも掲載しています。',
   keywords: ['子供GPS', '夏休み', '短期', 'レンタル', '解約', '初期費用', '比較'],
 };
 
 const shortTermData = [
-  { name: 'みてねみまもりGPS', slug: '/review/mitene/', body: '5,280円', monthly: '748円（月々プラン）', bind: 'なし', note: '本体が最安。月々プランなら短期でも無駄が出にくい。' },
-  { name: 'あんしんウォッチャー', slug: '/review/anshin-watcher/', body: '11,000円（通常版）', monthly: '539円（通常版は12カ月無料特典あり）', bind: 'なし（最低利用期間なし）', note: '通常版は一定期間月額無料の特典があり、夏〜秋の短期なら月額負担を抑えやすい。' },
-  { name: 'ソラノメ', slug: '/review/soranome/', body: '14,520円', monthly: '539円', bind: 'なし', note: '本体はやや高め。短期だと本体代の比重が大きくなる。' },
+  { name: 'みてねみまもりGPS', slug: '/review/mitene/', body: '5,280円', monthly: '748円（月々プラン）', bind: 'なし', note: '本体価格が最も安く、月々プランであれば短期利用でも無駄が生じにくい機種です。' },
+  { name: 'あんしんウォッチャー', slug: '/review/anshin-watcher/', body: '11,000円（通常版）', monthly: '539円（通常版は12カ月無料特典あり）', bind: 'なし（最低利用期間なし）', note: '通常版には一定期間月額無料となる特典があり、夏から秋にかけての短期利用であれば月額の負担を抑えやすい機種です。' },
+  { name: 'ソラノメ', slug: '/review/soranome/', body: '14,520円', monthly: '539円', bind: 'なし', note: '本体価格がやや高めのため、短期利用では本体代の比重が大きくなります。' },
 ];
 
 const faqData = [
-  { q: '夏休みだけ子供にGPSを持たせるのはアリ？', a: 'アリです。学童や帰省、旅行、テーマパークなど、夏休みは普段と行動範囲が変わり迷子や見守りの不安が増えます。契約期間の縛りや解約金のない機種を選べば、夏休みの数ヶ月だけ使って終わったら解約する、という使い方ができます。' },
-  { q: '短期だけならレンタルと購入どちらが得？', a: '子供用GPSはレンタルサービスが少なく、本体を購入して使う機種がほとんどです。本体は5,000〜15,000円程度で、月額数百円のため、2〜3ヶ月の短期でも購入＋短期契約のほうが選択肢が多く、結果的に分かりやすいことが多いです。終了後も来年また使えます。' },
-  { q: '解約に違約金はかかりますか？', a: 'みてねみまもりGPS・あんしんウォッチャー・ソラノメはいずれも契約期間の縛りや解約金がありません。ただし、あんしんウォッチャー通常版は「12カ月間 月額無料」などの特典があり、無料期間の途中で解約すると残りの無料特典は無効になります（短期で使い切るなら問題ありません）。' },
-  { q: '夏休みだけ使うなら一番安いのはどれ？', a: '本体代が最も安いのはみてねみまもりGPS（5,280円）です。2ヶ月だけ使う場合、みてねは本体5,280円＋月748円×2＝約6,776円が目安。あんしんウォッチャー通常版は月額無料特典があるため、短期なら実質本体代のみで持てる場合もあります。最新の特典内容は公式でご確認ください。' },
+  { q: '夏休みだけ子供にGPSを持たせることはできますか？', a: 'はい、可能です。学童や帰省、旅行、テーマパークなど、夏休みは普段と行動範囲が変わり、迷子や見守りに関する不安が増える時期です。契約期間の縛りや解約金のない機種を選べば、夏休みの数カ月のみ利用し、終了後に解約するという使い方ができます。' },
+  { q: '短期利用の場合、レンタルと購入のどちらが得ですか？', a: '子供用GPSはレンタルサービスが少なく、本体を購入して使用する機種がほとんどです。本体は5,000〜15,000円程度、月額は数百円のため、2〜3カ月の短期利用であっても、購入と短期契約を組み合わせるほうが選択肢が多く、わかりやすい場合が多くあります。また、利用終了後も翌年に再び使用できます。' },
+  { q: '解約に違約金はかかりますか？', a: 'みてねみまもりGPS・あんしんウォッチャー・ソラノメは、いずれも契約期間の縛りや解約金がありません。ただし、あんしんウォッチャー通常版には「12カ月間 月額無料」などの特典があり、無料期間の途中で解約すると、残りの無料特典は無効になります（短期で利用を終える場合は問題ありません）。' },
+  { q: '夏休みだけ使う場合、最も安い機種はどれですか？', a: '本体代が最も安いのは、みてねみまもりGPS（5,280円）です。2カ月のみ使用する場合、みてねは本体5,280円＋月748円×2＝約6,776円が目安です。あんしんウォッチャー通常版は月額無料の特典があるため、短期であれば実質的に本体代のみで利用できる場合もあります。最新の特典内容は、公式サイトにてご確認ください。' },
 ];
 
 const faqJsonLd = {
@@ -32,7 +32,7 @@ export default function SummerShortTermPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '夏休みだけ子供GPSはアリ？短期利用・解約・初期費用を比較', datePublished: '2026-06-23', dateModified: '2026-06-23', author: { '@type': 'Person', name: 'GPS見守りナビ編集部' }, publisher: { '@type': 'Organization', name: 'GPS子供見守り最新情報' } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '夏休みだけ子供GPSを利用する場合の短期利用・解約・初期費用の比較', datePublished: '2026-06-23', dateModified: '2026-06-23', author: { '@type': 'Person', name: '子供見守りGPS最新情報 編集部' }, publisher: { '@type': 'Organization', name: '子供見守りGPS最新情報' } }) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '夏休みだけGPS' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -41,17 +41,17 @@ export default function SummerShortTermPage() {
             <span className="tag-pill bg-orange text-white">夏休み</span>
             <span className="tag-pill bg-blue text-white">短期利用</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">夏休みだけ子供GPSはアリ？短期利用・解約・初期費用を比較</h1>
-          <p className="text-g600 text-lg">学童・帰省・旅行で行動範囲が変わる夏休み。数ヶ月だけの利用に向く機種を比較します</p>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">夏休みだけ子供GPSを利用する場合の短期利用・解約・初期費用の比較</h1>
+          <p className="text-g600 text-lg">学童・帰省・旅行などで行動範囲が変わる夏休みに向けて、数カ月のみの利用に適した機種を比較します。</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">結論：縛りなしの機種を選べば「夏だけ」でもOK</h2>
+            <h2 className="font-extrabold text-g800 mb-2">要点：契約期間の縛りがない機種であれば、夏休みのみの利用も可能です</h2>
             <p className="text-g600">
-              夏休みは学童・帰省・旅行・テーマパークなど、普段と行動範囲が変わり<strong>迷子や見守りの不安が増える時期</strong>です。子供用GPSは<strong>契約期間の縛りや解約金がない機種が多く</strong>、本体を買って数ヶ月だけ使い、終わったら解約する——という使い方ができます。本体は来年の夏や登下校デビューでも再利用できるため、「夏だけ」でも十分アリです。
+              夏休みは学童・帰省・旅行・テーマパークなど、普段と行動範囲が変わり、<strong>迷子や見守りに関する不安が増える時期</strong>です。子供用GPSは<strong>契約期間の縛りや解約金がない機種が多く</strong>、本体を購入して数カ月のみ使用し、終了後に解約するという使い方ができます。本体は翌年の夏や、登下校で使い始める際にも再利用できるため、夏休みのみの利用も十分に選択肢となります。
             </p>
           </div>
 
@@ -78,9 +78,9 @@ export default function SummerShortTermPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-6">※料金は2026年6月時点で各社公式を確認。特典・キャンペーンは変更されることがあるため、申込前に公式サイトでご確認ください。</p>
+          <p className="text-xs text-g500 mb-6">※料金は2026年6月時点で各社の公式サイトにて確認しています。特典・キャンペーンは変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。</p>
 
-          <h2 className="section-title">「夏休み2ヶ月だけ」の費用シミュレーション</h2>
+          <h2 className="section-title">夏休みの2カ月のみ利用する場合の費用シミュレーション</h2>
           <div className="space-y-3 mb-8">
             {shortTermData.map((m) => (
               <div key={m.name} className="card-hover p-4">
@@ -89,16 +89,16 @@ export default function SummerShortTermPage() {
               </div>
             ))}
             <div className="card-hover p-4 bg-green-light/40">
-              <p className="text-sm text-g700"><strong>目安</strong>：みてねみまもりGPSなら本体5,280円＋月748円×2ヶ月＝<strong>約6,776円</strong>で夏休みを乗り切れます。あんしんウォッチャー通常版は月額無料特典があるため、短期なら実質本体代のみで持てる場合もあります（特典内容は要確認）。</p>
+              <p className="text-sm text-g700"><strong>目安</strong>：みてねみまもりGPSの場合、本体5,280円＋月748円×2カ月＝<strong>約6,776円</strong>で夏休み期間中に利用できます。あんしんウォッチャー通常版は月額無料の特典があるため、短期であれば実質的に本体代のみで利用できる場合もあります（特典内容は公式サイトにてご確認ください）。</p>
             </div>
           </div>
 
-          <h2 className="section-title">短期利用で失敗しないための注意点</h2>
+          <h2 className="section-title">短期利用の際の注意点</h2>
           <ul className="space-y-2 text-sm text-g700 mb-8">
-            <li>・<strong>本体は買い切りが基本</strong>。レンタルは選択肢が少なく、購入のほうが分かりやすいことが多い（来年も使える）。</li>
-            <li>・あんしんウォッチャー通常版の<strong>「月額無料特典」は途中解約で残りが無効</strong>になる。夏だけで使い切るなら問題なし。</li>
-            <li>・解約のタイミングで日割りがない場合があるので、<strong>使い終わったら早めに解約手続き</strong>を。</li>
-            <li>・夏休みは品薄になることがあるため、<strong>使い始めたい日の少し前に購入</strong>しておくと安心。</li>
+            <li>・<strong>本体は買い切りが基本です</strong>。レンタルは選択肢が少なく、購入のほうがわかりやすい場合が多くあります（翌年も使用できます）。</li>
+            <li>・あんしんウォッチャー通常版の<strong>「月額無料特典」は、途中で解約すると残りが無効</strong>になります。夏休みのみで利用を終える場合は問題ありません。</li>
+            <li>・解約時に日割り計算が適用されない場合があるため、<strong>利用終了後は早めの解約手続き</strong>をおすすめします。</li>
+            <li>・夏休みは品薄になることがあるため、<strong>使用を開始したい日より前に余裕を持って購入</strong>することをおすすめします。</li>
           </ul>
 
           <h2 className="section-title">よくある質問</h2>
@@ -110,7 +110,7 @@ export default function SummerShortTermPage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">夏休みの見守りをもっと詳しく</h2>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">夏休みの見守りに関する関連情報</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/knowledge/summer-safety/" className="btn-primary">夏休みの見守りGPS活用ガイド</Link>
               <Link href="/compare/school-silent/" className="btn-accent">学校向け静音GPS比較</Link>

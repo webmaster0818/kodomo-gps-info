@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'Hamic（ハミック）の評判・口コミは？【2026年】キッズスマホ型見守りの実力・料金を解説',
   description:
-    'Hamic（Hamee提供）のキッズスマホ型見守りデバイスを徹底レビュー。LINE的メッセージ機能、カメラ、GPS見守り機能を搭載。スマホデビュー前の練習端末としても最適。',
+    'Hamee提供のキッズスマートフォン型見守りデバイス「Hamic」をレビューします。LINEのようなメッセージ機能、カメラ、GPS見守り機能を搭載しており、スマートフォンを持たせる前の練習用端末としても適しています。',
 };
 
 const faqData = [
-  { q: 'HamicはスマホとGPS端末のどちらに近い？', a: 'Hamicはキッズスマホ型のデバイスです。GPS位置確認に加え、LINE的なメッセージ機能やカメラを搭載しており、スマホに近い使い勝手です。ただし、一般的なアプリのインストールは制限されています。' },
-  { q: 'Hamicの月額料金はいくら？', a: 'Hamic POCKETはデータSIM込みで月額1,100円（税込）です。端末+通信+アプリが一体のサービスなので別途SIM契約は不要です。' },
-  { q: 'メッセージ機能はどう使うの？', a: '専用アプリ「Hamicアプリ」でテキスト・スタンプ・写真のやりとりが可能です。LINEに似た操作感で、お子さまも直感的に使えます。送受信相手は保護者が管理できます。' },
-  { q: 'カメラ機能はありますか？', a: 'はい、カメラを搭載しています。撮影した写真をメッセージで送ったり、保護者のアプリで確認したりできます。' },
-  { q: 'GPS見守り機能はありますか？', a: 'はい、リアルタイム位置確認、移動履歴、エリア通知などのGPS見守り機能を標準搭載しています。' },
-  { q: '対象年齢は何歳くらい？', a: '主に小学校中学年〜高学年（8歳〜12歳）が対象です。スマホを持たせる前の練習端末として活用するご家庭が多いです。' },
+  { q: 'HamicはスマートフォンとGPS端末のどちらに近いですか？', a: 'Hamicはキッズスマートフォン型のデバイスです。GPSによる位置確認に加え、LINEのようなメッセージ機能やカメラを搭載しており、スマートフォンに近い使い勝手です。ただし、一般的なアプリのインストールは制限されています。' },
+  { q: 'Hamicの月額料金はいくらですか？', a: 'Hamic POCKETは、データSIM込みで月額1,100円（税込）です。端末・通信・アプリが一体となったサービスのため、別途SIMを契約する必要はありません。' },
+  { q: 'メッセージ機能はどのように使いますか？', a: '専用アプリ「Hamicアプリ」で、テキスト・スタンプ・写真のやりとりが可能です。LINEに似た操作感のため、お子さまも直感的に使えます。送受信の相手は保護者が管理できます。' },
+  { q: 'カメラ機能はありますか？', a: 'はい。カメラを搭載しています。撮影した写真をメッセージで送信したり、保護者のアプリで確認したりできます。' },
+  { q: 'GPS見守り機能はありますか？', a: 'はい。リアルタイムの位置確認、移動履歴、エリア通知などのGPS見守り機能を標準で搭載しています。' },
+  { q: '対象年齢は何歳くらいですか？', a: '主な対象は小学校中学年〜高学年（8歳〜12歳）です。スマートフォンを持たせる前の練習用端末として活用するご家庭が多くあります。' },
 ];
 
 const faqJsonLd = {
@@ -31,21 +31,21 @@ export default function HamicPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "Hamic 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "Hamic レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'Hamic' }]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-orange text-white">キッズスマホ型</span>
+            <span className="tag-pill bg-orange text-white">キッズスマートフォン型</span>
             <span className="tag-pill bg-blue text-white">メッセージ機能</span>
-            <span className="tag-pill bg-green text-white">カメラ付き</span>
+            <span className="tag-pill bg-green text-white">カメラ搭載</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            Hamic 徹底レビュー
+            Hamic レビュー
           </h1>
-          <p className="text-g600 text-lg">Hamee提供 | キッズスマホ型 | LINE的メッセージ | カメラ | GPS見守り</p>
+          <p className="text-g600 text-lg">Hamee提供 | キッズスマートフォン型 | メッセージ機能 | カメラ | GPS見守り</p>
         </div>
       </section>
 
@@ -54,10 +54,10 @@ export default function HamicPage() {
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="section-title">Hamicとは</h2>
           <p className="text-g600 mb-6">
-            Hamicは、スマホアクセサリー大手のHameeが提供するキッズスマホ型の見守りデバイスです。
-            GPS位置確認はもちろん、LINEのようなメッセージ機能やカメラを搭載しており、
-            「GPS端末では物足りないけどスマホはまだ早い」というご家庭に最適です。
-            保護者が利用範囲を管理できるため、安心してスマホデビューの準備ができます。
+            Hamicは、スマートフォンアクセサリー大手のHameeが提供する、キッズスマートフォン型の見守りデバイスです。
+            GPSによる位置確認に加え、LINEのようなメッセージ機能やカメラを搭載しており、
+            「GPS端末では機能が足りないが、スマートフォンを持たせるにはまだ早い」とお考えのご家庭に適しています。
+            保護者が利用範囲を管理できるため、スマートフォンを持たせる前の準備段階として活用できます。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -67,7 +67,7 @@ export default function HamicPage() {
                 <tbody>
                   {[
                     ['提供元', 'Hamee（ハミィ）'],
-                    ['端末タイプ', 'キッズスマホ型'],
+                    ['端末タイプ', 'キッズスマートフォン型'],
                     ['月額料金', '1,100円（税込・データSIM込）'],
                     ['本体価格', '約12,100円（税込）'],
                     ['測位方式', 'GPS+Wi-Fi'],
@@ -88,16 +88,16 @@ export default function HamicPage() {
               <h3 className="font-bold text-blue mb-3">コミュニケーション機能</h3>
               <div className="space-y-3">
                 <div className="bg-orange-light rounded-xl p-4">
-                  <p className="font-bold text-orange">LINE的メッセージ</p>
-                  <p className="text-sm text-g600 mt-1">テキスト・スタンプ・写真でやりとり。送信相手は保護者が管理。</p>
+                  <p className="font-bold text-orange">LINE風メッセージ</p>
+                  <p className="text-sm text-g600 mt-1">テキスト・スタンプ・写真でやりとりできます。送信相手は保護者が管理します。</p>
                 </div>
                 <div className="bg-blue-light rounded-xl p-4">
                   <p className="font-bold text-blue">カメラ機能</p>
-                  <p className="text-sm text-g600 mt-1">写真撮影してメッセージで送信可能。お子さまの目線を共有。</p>
+                  <p className="text-sm text-g600 mt-1">撮影した写真をメッセージで送信でき、お子さまの目線を共有できます。</p>
                 </div>
                 <div className="bg-green-light rounded-xl p-4">
                   <p className="font-bold text-green-dark">GPS見守り</p>
-                  <p className="text-sm text-g600 mt-1">リアルタイム位置確認・移動履歴・エリア通知を標準搭載。</p>
+                  <p className="text-sm text-g600 mt-1">リアルタイムの位置確認・移動履歴・エリア通知を標準で搭載しています。</p>
                 </div>
               </div>
             </div>
@@ -107,12 +107,12 @@ export default function HamicPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '💬', title: 'メッセージ機能', desc: 'LINE的な操作感でテキスト・スタンプ・写真のやりとりが可能。' },
-              { icon: '📷', title: 'カメラ', desc: '写真を撮って保護者に送信。お子さまの日常を共有。' },
+              { icon: '💬', title: 'メッセージ機能', desc: 'LINEのような操作感で、テキスト・スタンプ・写真のやりとりが可能です。' },
+              { icon: '📷', title: 'カメラ', desc: '撮影した写真を保護者に送信し、お子さまの日常を共有できます。' },
               { icon: '📍', title: 'GPS位置確認', desc: 'リアルタイムでお子さまの現在地を確認できます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録エリアの出入りを自動通知。到着・出発がすぐわかる。' },
-              { icon: '🔒', title: '利用制限管理', desc: '保護者がアプリの利用範囲や連絡先を管理。安心して持たせられる。' },
-              { icon: '📱', title: 'スマホ練習', desc: 'スマホデビュー前の練習端末として最適。段階的にITリテラシーを育成。' },
+              { icon: '🔔', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。到着・出発をすぐに把握できます。' },
+              { icon: '🔒', title: '利用制限管理', desc: '保護者がアプリの利用範囲や連絡先を管理できるため、安心して持たせることができます。' },
+              { icon: '📱', title: 'スマートフォンの練習', desc: 'スマートフォンを持たせる前の練習用端末として適しています。段階的にITリテラシーを育むことができます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>
@@ -128,11 +128,11 @@ export default function HamicPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・LINE的メッセージでコミュニケーション充実</li>
-                <li>・カメラ付きで写真共有が可能</li>
+                <li>・LINEのようなメッセージ機能でコミュニケーションが充実</li>
+                <li>・カメラを搭載し、写真の共有が可能</li>
                 <li>・GPS見守り機能を標準搭載</li>
-                <li>・SIM込み月額1,100円でわかりやすい料金</li>
-                <li>・スマホデビューの練習に最適</li>
+                <li>・SIM込みで月額1,100円のわかりやすい料金</li>
+                <li>・スマートフォンを持たせる前の練習に適している</li>
                 <li>・保護者による利用制限管理が充実</li>
               </ul>
             </div>
@@ -140,11 +140,11 @@ export default function HamicPage() {
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額1,100円はGPS端末より高い</li>
-                <li>・本体価格12,100円で初期費用が必要</li>
-                <li>・バッテリー持ちは2〜3日で短め</li>
+                <li>・本体価格12,100円の初期費用が必要</li>
+                <li>・バッテリーの持ちは2〜3日と短め</li>
                 <li>・音声通話には非対応</li>
-                <li>・学校持ち込みが制限される可能性</li>
-                <li>・画面付きで遊びに使ってしまう懸念</li>
+                <li>・学校への持ち込みが制限される可能性がある</li>
+                <li>・画面があるため、遊びに使用される懸念がある</li>
               </ul>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function HamicPage() {
           {/* CTA */}
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">Hamicが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">キッズスマホ型で見守りもコミュニケーションも。スマホデビュー前の安心な選択肢。</p>
+            <p className="text-g600 mb-6 text-sm">キッズスマートフォン型で、見守りとコミュニケーションの両方に対応しています。スマートフォンを持たせる前の選択肢としてご検討ください。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/kids-phone/" className="btn-accent">キッズケータイとの比較を見る</Link>

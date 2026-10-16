@@ -4,7 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'プライバシーポリシー | 子供見守りGPS最新情報',
   description:
-    '「子供見守りGPS最新情報」のプライバシーポリシー。運営者・株式会社MediaXによる個人情報の取得・利用・管理、Cookie等の取扱いについて定めています。',
+    '「子供見守りGPS最新情報」のプライバシーポリシーです。運営者である株式会社MediaXによる個人情報の取得・利用・管理、Cookie等の取扱いについて定めています。',
 };
 
 export default function PrivacyPolicyPage() {

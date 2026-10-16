@@ -3,18 +3,18 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供GPS 月額料金比較一覧 | 全13機種の費用を徹底比較',
+  title: '子供GPS 月額料金比較一覧 | 全13機種の費用を比較',
   description:
-    '子供用GPS端末13機種の月額料金・本体価格・初期費用・年間コストを一覧で比較。安い順ランキングと2年間の総コスト計算で最もお得なGPS端末がわかります。',
+    '子供用GPS端末13機種の月額料金・本体価格・初期費用・年間コストを一覧で比較します。2年間の総コストを安い順に掲載し、費用面で最も有利なGPS端末をお示しします。',
 };
 
 const faqData = [
-  { q: '最も月額が安い子供GPS端末はどれ？', a: 'みてねみまもりGPS（月額528円）とBoTトーク（月額528円）が最安クラスです。基本的な位置確認機能だけなら、月額500円台から利用できます。' },
-  { q: '本体価格が最も安いのはどれ？', a: 'あんしんウォッチャーが本体5,680円で比較的安価です。みてねみまもりGPSも5,280円と手頃。時期によりキャンペーン割引もあります。' },
-  { q: '初期費用はかかりますか？', a: '多くのGPS端末は本体価格のみで初期費用（事務手数料）は不要です。ソラノメは初期事務手数料3,300円がかかります。' },
-  { q: '2年間の総コストはどれくらい？', a: '最安のみてねみまもりGPS（基本プラン）で約17,952円（本体5,280円＋月額528円×24ヶ月）です。高額機種では5万円を超えるものもあります。' },
-  { q: '解約金はかかりますか？', a: 'ほとんどのGPS端末は契約期間の縛りや解約金がありません。ただし一部の機種では最低利用期間が設定されている場合がありますので、契約時にご確認ください。' },
-  { q: '兄弟割引やお得なプランはある？', a: 'あんしんウォッチャーは2台目の月額が無料になるキャンペーンがあります。また、年払いプランで割引になる機種もあります。' },
+  { q: '月額が最も安い子供GPS端末はどれですか？', a: 'みてねみまもりGPS（月額528円）とBoTトーク（月額528円）が最安クラスです。基本的な位置確認機能のみであれば、月額500円台から利用できます。' },
+  { q: '本体価格が最も安い機種はどれですか？', a: 'あんしんウォッチャーは本体5,680円で、比較的安価です。みてねみまもりGPSも5,280円と手頃な価格です。時期により、キャンペーン割引が実施される場合もあります。' },
+  { q: '初期費用はかかりますか？', a: '多くのGPS端末は本体価格のみで、初期費用（事務手数料）は不要です。ソラノメは初期事務手数料3,300円がかかります。' },
+  { q: '2年間の総コストはどのくらいですか？', a: '最も安いみてねみまもりGPS（基本プラン）で、約17,952円（本体5,280円＋月額528円×24カ月）です。高額な機種では、5万円を超えるものもあります。' },
+  { q: '解約金はかかりますか？', a: 'ほとんどのGPS端末は契約期間の縛りや解約金がありません。ただし、一部の機種では最低利用期間が設定されている場合があるため、契約時にご確認ください。' },
+  { q: '兄弟割引や割安なプランはありますか？', a: 'あんしんウォッチャーには、2台目の月額が無料になるキャンペーンがあります。また、年払いプランで割引になる機種もあります。' },
 ];
 
 const faqJsonLd = {
@@ -48,7 +48,7 @@ export default function PricePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 月額料金比較一覧", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPSの月額料金比較一覧", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '月額料金比較' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -58,15 +58,15 @@ export default function PricePage() {
             <span className="tag-pill bg-orange text-white">全13機種</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            子供GPS 月額料金比較一覧
+            子供GPSの月額料金比較一覧
           </h1>
-          <p className="text-g600 text-lg">全13機種の料金・本体価格・総コストを一覧で比較</p>
+          <p className="text-g600 text-lg">全13機種の料金・本体価格・総コストを一覧で比較します。</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">全13機種 料金比較表</h2>
+          <h2 className="section-title">全13機種の料金比較表</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -92,7 +92,7 @@ export default function PricePage() {
             </table>
           </div>
 
-          <h2 className="section-title">2年間の総コスト 安い順ランキング</h2>
+          <h2 className="section-title">2年間の総コスト（安い順）</h2>
           <div className="space-y-3 mb-8">
             {sorted.map((d, i) => (
               <div key={d.name} className="flex items-center gap-4 card-hover p-4">
@@ -117,8 +117,8 @@ export default function PricePage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">コスパ最強のGPS端末を見つけよう</h2>
-            <p className="text-g600 mb-6 text-sm">料金だけでなく機能・精度も比較して最適な1台を選びましょう。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">費用対効果の高いGPS端末の選び方</h2>
+            <p className="text-g600 mb-6 text-sm">料金だけでなく、機能・精度もあわせて比較したうえでお選びいただくことをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">総合ランキング</Link>
               <Link href="/compare/accuracy/" className="btn-accent">精度比較</Link>

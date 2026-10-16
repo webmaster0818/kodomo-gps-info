@@ -5,21 +5,21 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供用GPSの5G対応状況｜4Gでも問題ない？',
   description:
-    '子供用GPS端末の5G対応状況を解説。現状5G対応機種はほぼなし、4G（LTE）で十分な理由、3G停波の影響、今後の5G展望まで詳しく紹介します。',
+    '子供用GPS端末の5G対応状況を解説します。現状で5G対応機種がほぼないこと、4G（LTE）で十分な理由、3G停波の影響、今後の5Gの展望をご紹介します。',
   keywords: ['子供GPS', '5G', '対応', '4G', 'LTE', '3G停波'],
   openGraph: {
     images: ['/og.png'],
     title: '子供用GPSの5G対応状況｜4Gでも問題ない？',
-    description: '子供用GPSの5G対応状況を解説。4Gで十分な理由と3G停波の影響を紹介。',
+    description: '子供用GPSの5G対応状況を解説します。4Gで十分な理由と3G停波の影響をご紹介します。',
   },
 };
 
 const faqData = [
   { q: '子供用GPSに5G対応機種はありますか？', a: '2026年現在、主要な子供用GPS端末で5Gに対応した機種はほぼありません。みてねみまもりGPS、BoTトーク、あんしんウォッチャー、まもサーチなどの主要機種はすべて4G（LTE）通信を使用しています。GPS端末が送受信するデータ量は非常に少ないため、5Gの超高速通信は不要です。' },
-  { q: '4GのGPS端末で位置精度に問題はありませんか？', a: '全く問題ありません。GPS端末の位置精度は通信規格ではなく、GPS衛星・Wi-Fi・基地局の測位精度で決まります。4Gでも5Gでも、測位した位置情報をサーバーに送信する速度には体感差はありません。4Gの通信速度でも、位置情報のデータ（数KB程度）は1秒以内に送信できます。' },
-  { q: '3G停波で使えなくなるGPS端末はありますか？', a: 'はい、古い世代のGPS端末で3G回線のみに対応していた機種は、3G停波により使用できなくなります。auは2022年3月、ソフトバンクは2024年4月に3Gを停波済み、ドコモは2026年3月末に停波しました。2024年以降に発売された機種はすべて4G対応なので、新しい機種であれば心配不要です。' },
-  { q: '5G対応のGPS端末が出たら買い替えるべきですか？', a: '5G対応というだけで買い替える必要はありません。GPS端末のデータ通信量は非常に少なく、4Gで十分な速度が出ます。買い替えの判断基準は、5G対応よりもバッテリー性能、測位精度、アプリの使いやすさなど、実用面で比較するのがおすすめです。' },
-  { q: '将来4Gが停波する可能性はありますか？', a: '4G（LTE）の停波は当面予定されていません。5Gのエリア拡大は進んでいますが、4Gは2030年代後半まで維持される見込みです。各キャリアも4Gと5Gの併用運用を続ける方針を示しています。現在4G対応のGPS端末を購入しても、少なくとも今後10年以上は問題なく使えるでしょう。' },
+  { q: '4GのGPS端末で位置精度に問題はありませんか？', a: '問題はありません。GPS端末の位置精度は通信規格ではなく、GPS衛星・Wi-Fi・基地局の測位精度で決まります。4Gと5Gのどちらでも、測位した位置情報をサーバーに送信する速度に体感できる差はありません。4Gの通信速度でも、位置情報のデータ（数KB程度）は1秒以内に送信できます。' },
+  { q: '3G停波で使えなくなるGPS端末はありますか？', a: '古い世代のGPS端末のうち、3G回線のみに対応していた機種は、3G停波により使用できなくなります。auは2022年3月、ソフトバンクは2024年4月に3Gを停波済みで、ドコモは2026年3月末に停波しました。2024年以降に発売された機種はすべて4G対応のため、新しい機種であれば影響はありません。' },
+  { q: '5G対応のGPS端末が出たら買い替えるべきですか？', a: '5G対応という理由だけで買い替える必要はありません。GPS端末のデータ通信量は非常に少なく、4Gで十分な速度が得られます。買い替えの際は、5G対応の有無よりも、バッテリー性能、測位精度、アプリの使いやすさなどの実用面で比較することをおすすめします。' },
+  { q: '将来4Gが停波する可能性はありますか？', a: '4G（LTE）の停波は当面予定されていません。5Gのエリア拡大は進んでいますが、4Gは2030年代後半まで維持される見込みです。各キャリアも4Gと5Gの併用運用を続ける方針を示しています。現在4G対応のGPS端末を購入しても、今後10年以上は問題なく使用できる見込みです。' },
   { q: 'GPS端末の通信速度が遅いと感じることはありますか？', a: 'ほとんどの場合、通信速度の遅さを感じることはありません。GPS端末が送信するデータは位置情報（緯度・経度）のみで数KB程度です。4G回線であれば1秒以内に送信が完了します。ただし、電波状況が悪い場所（地下深層部や山間部）では、通信規格に関わらず位置情報の更新に遅延が生じることがあります。' },
 ];
 
@@ -35,28 +35,28 @@ const faqJsonLd = {
 
 const generationComparison = [
   { gen: '3G', speed: '最大14Mbps', status: '停波済み', gpsUse: '使用不可', note: 'au: 2022年3月停波、SB: 2024年4月停波、ドコモ: 2026年3月停波' },
-  { gen: '4G (LTE)', speed: '最大1Gbps', status: '現在主流', gpsUse: '最適', note: '全キャリア人口カバー率99%以上。GPS端末の主流規格。' },
-  { gen: '5G', speed: '最大20Gbps', status: '拡大中', gpsUse: '対応機種なし', note: 'GPS端末には過剰スペック。対応チップのコスト・消費電力が課題。' },
+  { gen: '4G (LTE)', speed: '最大1Gbps', status: '現在主流', gpsUse: '最適', note: '全キャリアで人口カバー率99%以上です。GPS端末の主流の規格です。' },
+  { gen: '5G', speed: '最大20Gbps', status: '拡大中', gpsUse: '対応機種なし', note: 'GPS端末には過剰な性能です。対応チップのコストと消費電力が課題です。' },
 ];
 
 const whyLteEnough = [
-  { icon: '📊', title: 'データ量が極めて少ない', desc: 'GPS端末が送信するデータは位置情報（緯度・経度）のみで1回数KB。1日の通信量は数MB程度。4Gの速度で全く問題ありません。動画やアプリのダウンロードをするわけではないため、高速通信は不要です。' },
-  { icon: '🔋', title: 'バッテリー消費を抑えられる', desc: '5G通信は4Gに比べて消費電力が大きい傾向があります。子供用GPS端末はバッテリー持続時間が重要なため、省電力な4G通信の方が適しています。4Gなら充電間隔を長く保てます。' },
-  { icon: '💰', title: 'コストを抑えられる', desc: '5G対応チップは4G対応チップよりも高価です。子供用GPS端末は手頃な価格が求められるため、4G対応に抑えることでコストパフォーマンスの高い製品を提供できます。' },
-  { icon: '📡', title: 'カバーエリアが広い', desc: '4G（LTE）は人口カバー率99%以上。5Gはまだ都市部中心でカバーエリアが限定的です。通学路全体をカバーするには、現時点では4Gの方が確実です。' },
+  { icon: '📊', title: 'データ量が極めて少ない', desc: 'GPS端末が送信するデータは位置情報（緯度・経度）のみで、1回あたり数KBです。1日の通信量は数MB程度のため、4Gの速度で問題ありません。動画やアプリのダウンロードを行うわけではないため、高速通信は不要です。' },
+  { icon: '🔋', title: 'バッテリー消費を抑えられる', desc: '5G通信は4Gに比べて消費電力が大きい傾向があります。子供用GPS端末ではバッテリー持続時間が重要なため、省電力な4G通信が適しています。4Gであれば充電間隔を長く保てます。' },
+  { icon: '💰', title: 'コストを抑えられる', desc: '5G対応チップは4G対応チップよりも高価です。子供用GPS端末には手頃な価格が求められるため、4G対応に抑えることで、価格を抑えた製品を提供できます。' },
+  { icon: '📡', title: 'カバーエリアが広い', desc: '4G（LTE）は人口カバー率99%以上です。5Gはまだ都市部が中心で、カバーエリアが限定的です。通学路全体をカバーするには、現時点では4Gのほうが確実です。' },
 ];
 
 const threeGShutdown = [
-  { carrier: 'au (KDDI)', shutdownDate: '2022年3月31日', impact: 'au 3G回線のみ対応の旧機種は使用不可に。' },
-  { carrier: 'ソフトバンク', shutdownDate: '2024年4月15日', impact: 'ソフトバンク 3G回線のみ対応の旧機種は使用不可に。' },
-  { carrier: 'ドコモ', shutdownDate: '2026年3月31日', impact: 'ドコモ 3G（FOMA）回線のみ対応の旧機種は使用不可に。' },
+  { carrier: 'au (KDDI)', shutdownDate: '2022年3月31日', impact: 'au 3G回線のみに対応する旧機種は使用できなくなりました。' },
+  { carrier: 'ソフトバンク', shutdownDate: '2024年4月15日', impact: 'ソフトバンク 3G回線のみに対応する旧機種は使用できなくなりました。' },
+  { carrier: 'ドコモ', shutdownDate: '2026年3月31日', impact: 'ドコモ 3G（FOMA）回線のみに対応する旧機種は使用できなくなりました。' },
 ];
 
 const futureOutlook = [
-  { year: '2026年〜', outlook: '子供用GPS端末は引き続き4G（LTE）が主流。5G対応機種は登場していない。' },
-  { year: '2027年〜2028年', outlook: '5G対応チップの低価格化が進む可能性。腕時計型など高機能タイプから5G対応が始まる可能性あり。' },
-  { year: '2029年〜2030年', outlook: '5Gエリアの拡大に伴い、5G対応GPS端末が一般化する可能性。ただし4Gも併用で利用可能。' },
-  { year: '2030年代後半', outlook: '4G停波の議論が始まる可能性。ただし確定ではなく、当面は4G/5G併用が続く見込み。' },
+  { year: '2026年〜', outlook: '子供用GPS端末は引き続き4G（LTE）が主流です。5G対応機種は登場していません。' },
+  { year: '2027年〜2028年', outlook: '5G対応チップの低価格化が進む可能性があります。腕時計型などの高機能タイプから5G対応が始まる可能性があります。' },
+  { year: '2029年〜2030年', outlook: '5Gエリアの拡大に伴い、5G対応GPS端末が一般化する可能性があります。ただし、4Gも併用で利用できる見込みです。' },
+  { year: '2030年代後半', outlook: '4G停波の議論が始まる可能性があります。ただし確定ではなく、当面は4Gと5Gの併用が続く見込みです。' },
 ];
 
 const deviceStatus = [
@@ -73,7 +73,7 @@ export default function FiveGCompatibilityPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの5G対応状況｜4Gでも問題ない？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの5G対応状況｜4Gでも問題ない？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '5G対応状況' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -85,24 +85,24 @@ export default function FiveGCompatibilityPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供用GPSの5G対応状況
           </h1>
-          <p className="text-g600 text-lg">4Gでも問題ない？3G停波の影響と今後の展望</p>
+          <p className="text-g600 text-lg">4Gで問題がない理由、3G停波の影響と今後の展望</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <p className="text-g600 mb-8">
-            「子供用GPSは5Gに対応していないと不安」と思う方もいるかもしれません。結論から言うと、<strong>子供用GPSに5Gは不要で、4G（LTE）で全く問題ありません</strong>。このページでは、現状の5G対応状況、4Gで十分な理由、3G停波の影響、今後の展望を詳しく解説します。
+            「子供用GPSが5Gに対応していないと不安」とお考えの方もいらっしゃいます。<strong>子供用GPSに5Gは不要で、4G（LTE）で問題なく利用できます</strong>。このページでは、現状の5G対応状況、4Gで十分な理由、3G停波の影響、今後の展望を解説します。
           </p>
 
-          <h2 className="section-title">結論：子供用GPSに5Gは不要</h2>
+          <h2 className="section-title">要点：子供用GPSに5Gは不要です</h2>
           <div className="card-hover p-6 mb-8 border-l-4 border-orange">
             <p className="text-g600 mb-3">
               子供用GPS端末が送受信するデータは<strong>位置情報（緯度・経度）のみで1回あたり数KB</strong>程度です。
-              これは4G（LTE）の通信速度で1秒以内に送信が完了するデータ量であり、5Gの超高速通信は全く必要ありません。
+              これは4G（LTE）の通信速度で1秒以内に送信が完了するデータ量であり、5Gの超高速通信は必要ありません。
             </p>
             <p className="text-g600">
-              むしろ5G対応にすると、チップのコスト増加・バッテリー消費の増大というデメリットがあります。
+              5Gに対応すると、チップのコスト増加やバッテリー消費の増大といったデメリットが生じます。
               子供用GPS端末にとっては、<strong>4G（LTE）が最もバランスの良い通信規格</strong>です。
             </p>
           </div>
@@ -200,7 +200,7 @@ export default function FiveGCompatibilityPage() {
           <div className="bg-blue-light rounded-xl p-5 mb-8">
             <h3 className="font-bold text-g800 mb-2">お使いのGPS端末が3G専用かどうかの確認方法</h3>
             <p className="text-sm text-g600">
-              端末のパッケージや取扱説明書に「LTE対応」「4G対応」の記載があれば問題ありません。「3G」「FOMA」「CDMA 1X」のみの記載で「LTE」「4G」の表記がない場合は、3G専用の可能性があります。不明な場合はメーカーのサポートに問い合わせましょう。2020年以降に発売された機種であれば、ほぼすべて4G対応です。
+              端末のパッケージや取扱説明書に「LTE対応」「4G対応」の記載があれば問題ありません。「3G」「FOMA」「CDMA 1X」のみの記載で「LTE」「4G」の表記がない場合は、3G専用の可能性があります。不明な場合は、メーカーのサポートへお問い合わせください。2020年以降に発売された機種であれば、ほぼすべて4G対応です。
             </p>
           </div>
 
@@ -230,8 +230,8 @@ export default function FiveGCompatibilityPage() {
           </div>
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">4Gで安心、今すぐ見守りを始めよう</h2>
-            <p className="text-g600 mb-6 text-sm">5Gを待つ必要はありません。現在の4G対応GPS端末で十分な見守りが可能です。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">現在の4G対応GPS端末で見守りを始められます</h2>
+            <p className="text-g600 mb-6 text-sm">5G対応機種の登場を待つ必要はありません。現在の4G対応GPS端末で十分な見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/compare/2026-ranking/" className="btn-primary">2026年おすすめランキング</Link>
               <Link href="/knowledge/how-to-choose/" className="btn-accent">GPS選び方ガイド</Link>

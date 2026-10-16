@@ -4,7 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '利用規約 | 子供見守りGPS最新情報',
   description:
-    '「子供見守りGPS最新情報」の利用規約。運営者・株式会社MediaXが提供する見守りGPS端末の比較・紹介サービスに関する利用条件を定めています。',
+    '「子供見守りGPS最新情報」の利用規約です。運営者である株式会社MediaXが提供する、見守りGPS端末の比較・紹介サービスに関する利用条件を定めています。',
 };
 
 const articles = [

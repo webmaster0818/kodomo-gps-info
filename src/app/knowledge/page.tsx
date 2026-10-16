@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <SectionIndex section="knowledge" name="お役立ち" lead="子供GPSの基礎知識と使い方の解説記事" />;
+  return <SectionIndex section="knowledge" name="お役立ち" lead="子供GPSの基礎知識と使い方を解説した記事の一覧です" />;
 }

@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '発達特性のあるお子さまとGPS | 見守りと家族の安心',
   description:
-    '発達特性のあるお子さまや、思わぬ場所へ出かけてしまうお子さまを見守るためのGPS活用ガイド。自治体のSOSネットワークや福祉用具助成の確認方法も紹介します。',
+    '発達特性のあるお子さまや、思わぬ場所へ出かけてしまうことがあるお子さまを見守るためのGPS活用ガイドです。自治体のSOSネットワークや福祉用具の助成の確認方法もご紹介します。',
 };
 
 const faqData = [
-  { q: '発達特性のある子にはどんなGPSが向いていますか？', a: 'ランドセルやポケットに入れられるコンパクトで軽量な端末、本人が取り外しにくい装着方法、長寿命バッテリーのものが向いています。トーク機能よりも位置情報の正確さを重視して選びましょう。' },
-  { q: '自治体の「SOSネットワーク」とは何ですか？', a: '多くの自治体で行方不明時の迅速な発見を目指す「徘徊SOSネットワーク」が整備されています。事前登録しておくと、行方不明時に地域で情報共有されます。お住まいの自治体窓口で詳細をご確認ください。' },
-  { q: '福祉用具の助成は受けられますか？', a: '一部の自治体では、認知症や発達特性のある方向けにGPS端末の助成制度があります。「お住まいの自治体名 + GPS 助成」で検索するか、福祉窓口でご確認ください。制度の有無・条件は自治体により大きく異なります。' },
-  { q: '学校や放課後デイと連携できますか？', a: '保護者の同意のもと、家族間で位置情報を共有できるGPSであれば、学校や支援者にも必要に応じてアプリアカウントを共有する方法があります。ただし個人情報の扱いは慎重に検討してください。' },
-  { q: 'GPSで本人が嫌がる場合は？', a: 'ご本人の特性やコミュニケーション方法に応じて、装着方法を工夫することが大切です。医師・支援者・ご家族で相談しながら、安全と本人の気持ちのバランスを取りましょう。' },
-  { q: '高齢の家族にも使えますか？', a: '機種的には使用可能ですが、高齢者向けに設計されたGPS端末の方が操作性やSOSボタンの使いやすさで適していることがあります。「子供GPSと高齢者GPSの違い」ページも参考にしてください。' },
+  { q: '発達特性のあるお子さまには、どのようなGPSが適していますか？', a: 'ランドセルやポケットに入れられる、コンパクトで軽量な端末が適しています。あわせて、ご本人が取り外しにくい装着方法をとれることや、バッテリーが長く持続することも重要です。トーク機能よりも、位置情報の正確さを重視して選ぶことをおすすめします。' },
+  { q: '自治体の「SOSネットワーク」とは何ですか？', a: '多くの自治体では、行方不明時の迅速な発見を目的とした「徘徊SOSネットワーク」が整備されています。事前に登録しておくと、行方不明時に地域で情報が共有されます。詳細は、お住まいの自治体の窓口にてご確認ください。' },
+  { q: '福祉用具の助成は受けられますか？', a: '一部の自治体では、認知症や発達特性のある方を対象としたGPS端末の助成制度があります。「お住まいの自治体名 + GPS 助成」で検索するか、福祉窓口にてご確認ください。制度の有無・条件は、自治体によって大きく異なります。' },
+  { q: '学校や放課後デイと連携できますか？', a: '家族間で位置情報を共有できるGPSであれば、保護者の同意のもと、必要に応じて学校や支援者にもアプリのアカウントを共有する方法があります。ただし、個人情報の取り扱いについては慎重にご検討ください。' },
+  { q: 'ご本人がGPSを嫌がる場合はどうすればよいですか？', a: 'ご本人の特性やコミュニケーション方法に応じて、装着方法を工夫することが大切です。医師・支援者・ご家族で相談しながら、安全とご本人の気持ちの両立を図ることをおすすめします。' },
+  { q: '高齢の家族にも使えますか？', a: '機能上は使用可能ですが、操作性やSOSボタンの使いやすさの面では、高齢者向けに設計されたGPS端末のほうが適している場合があります。「子供GPSと高齢者GPSの違い」のページもあわせてご参照ください。' },
 ];
 
 const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqData.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
@@ -23,13 +23,13 @@ export default function DisabilityPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "発達特性のあるお子さまとGPS", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "発達特性のあるお子さまとGPS", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '発達特性・見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">発達特性のあるお子さまとGPS</h1>
-          <p className="text-g600 text-lg">見守りと家族の安心を両立するGPS活用と、地域の支援制度について</p>
+          <p className="text-g600 text-lg">見守りと家族の安心を両立するためのGPSの活用方法と、地域の支援制度についてご説明します。</p>
         </div>
       </section>
 
@@ -45,9 +45,9 @@ export default function DisabilityPage() {
           <h2 className="section-title">GPSが役立つシーン</h2>
           <div className="space-y-4 mb-8">
             {[
-              { title: '登下校や移動時の見守り', desc: '決まったルートでの移動中に、位置を把握することで早期発見につながります。' },
-              { title: '想定外の外出時の発見', desc: 'ふと家を離れてしまった場合にも、位置情報で居場所を確認できます。' },
-              { title: '長時間の外出先での安心', desc: '学校・放課後デイ・公園など、複数の活動場所でも見守れます。' },
+              { title: '登下校や移動時の見守り', desc: '決まったルートでの移動中に位置を把握することで、早期の発見につながります。' },
+              { title: '想定外の外出時の発見', desc: '予期せず家を離れてしまった場合にも、位置情報で居場所を確認できます。' },
+              { title: '長時間の外出先での見守り', desc: '学校・放課後等デイサービス・公園など、複数の活動場所でも見守ることができます。' },
               { title: '家族間の情報共有', desc: '保護者だけでなく、祖父母・支援者などにも位置情報を共有することで、支える人の輪を広げられます。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5">
@@ -62,30 +62,30 @@ export default function DisabilityPage() {
             <div className="card-hover p-5">
               <p className="text-2xl mb-2">🔋</p>
               <h3 className="font-bold text-g800 mb-1">長寿命バッテリー</h3>
-              <p className="text-sm text-g600">充電忘れによる「見守り空白」を防ぐため、みてね・あんしんウォッチャーなど最大2ヶ月持つ機種が安心。</p>
+              <p className="text-sm text-g600">充電忘れによる見守りの空白を防ぐため、みてね・あんしんウォッチャーなど、最大2カ月持続する機種をおすすめします。</p>
             </div>
             <div className="card-hover p-5">
               <p className="text-2xl mb-2">📍</p>
               <h3 className="font-bold text-g800 mb-1">測位精度の高さ</h3>
-              <p className="text-sm text-g600">ソラノメのGPS+Wi-Fi+基地局の3測位など、屋内でも精度が保たれる機種が有利。</p>
+              <p className="text-sm text-g600">ソラノメのGPS+Wi-Fi+基地局の3測位など、屋内でも精度が保たれる機種が適しています。</p>
             </div>
             <div className="card-hover p-5">
               <p className="text-2xl mb-2">🎒</p>
               <h3 className="font-bold text-g800 mb-1">装着のしやすさ</h3>
-              <p className="text-sm text-g600">軽量コンパクトで、ご本人が取り外ししにくい装着方法を工夫できる機種を選びましょう。</p>
+              <p className="text-sm text-g600">軽量・コンパクトで、ご本人が取り外しにくい装着方法を工夫できる機種をおすすめします。</p>
             </div>
             <div className="card-hover p-5">
               <p className="text-2xl mb-2">👥</p>
               <h3 className="font-bold text-g800 mb-1">複数人見守り</h3>
-              <p className="text-sm text-g600">BoTトーク無制限・まもサーチ25人など、支援者と情報共有しやすい機種が助けになります。</p>
+              <p className="text-sm text-g600">BoTトーク（無制限）・まもサーチ（25人）など、支援者と情報を共有しやすい機種が役立ちます。</p>
             </div>
           </div>
 
           <h2 className="section-title">自治体の支援制度</h2>
           <div className="card-hover p-5 mb-8">
             <p className="text-g600 mb-3">
-              多くの自治体で以下のような制度が整備されています。具体的な条件・制度内容は自治体によって大きく異なるため、
-              お住まいの地域の福祉窓口やホームページで必ずご確認ください。
+              多くの自治体では、以下のような制度が整備されています。具体的な条件・制度内容は自治体によって大きく異なるため、
+              お住まいの地域の福祉窓口やホームページにて、必ずご確認ください。
             </p>
             <ul className="space-y-2 text-g600">
               <li>・徘徊SOSネットワーク（行方不明時の情報共有）</li>
@@ -99,7 +99,7 @@ export default function DisabilityPage() {
           {faqData.map((faq, i) => (<details key={i} className="faq-item"><summary>{faq.q}</summary><div className="faq-answer">{faq.a}</div></details>))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">選び方を詳しく見る</h2>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">GPS端末の選び方</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/knowledge/how-to-choose/" className="btn-primary">選び方ガイド</Link>
               <Link href="/knowledge/elderly-difference/" className="btn-accent">高齢者GPSとの違い</Link>

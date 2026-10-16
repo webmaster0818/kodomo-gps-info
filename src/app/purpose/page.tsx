@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <SectionIndex section="purpose" name="目的別" lead="目的・条件ごとの子供GPSの選び方" />;
+  return <SectionIndex section="purpose" name="目的別" lead="目的・条件ごとに子供GPSの選び方をまとめた記事の一覧です" />;
 }

@@ -5,20 +5,20 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '学校に持たせやすい完全静音GPS比較【2026年】音が鳴らない・トークなし機種を3年総額で比較',
   description:
-    '小学校に持ち込みやすい「音が鳴らない・通話/トークなし」の子供用GPSだけを厳選して比較。みてねみまもりGPS・あんしんウォッチャー・ソラノメを、本体＋月額×36ヶ月の3年総額（TCO）で比較し、結局どれが安いかを提示。学校が嫌がる音・スマホ化を避けたい保護者向けです。',
+    '小学校に持ち込みやすい「音が鳴らない・通話/トークなし」の子供用GPSに絞って比較します。みてねみまもりGPS・あんしんウォッチャー・ソラノメを、本体＋月額×36カ月の3年総額（TCO）で比較し、最も安い機種をお示しします。学校が懸念する音の発生やスマートフォン化を避けたい保護者向けの記事です。',
   keywords: ['子供GPS', '学校', '静音', '音が鳴らない', '比較', 'トークなし', '持ち込み'],
 };
 
 const tcoData = [
-  { name: 'みてねみまもりGPS', slug: '/review/mitene/', body: '5,280円', monthly: '528円', tco: '24,288円', note: '位置情報プラン（トークなし）。3機種で最安。' },
-  { name: 'あんしんウォッチャー', slug: '/review/anshin-watcher/', body: '11,000円', monthly: '539円', tco: '30,404円', note: '通話・トークなし。2台目の月額が0円で兄弟利用に強い。' },
-  { name: 'ソラノメ', slug: '/review/soranome/', body: '14,520円', monthly: '539円', tco: '33,924円', note: '位置情報専用。本体はやや高め。' },
+  { name: 'みてねみまもりGPS', slug: '/review/mitene/', body: '5,280円', monthly: '528円', tco: '24,288円', note: '位置情報プラン（トークなし）です。3機種の中で最も安価です。' },
+  { name: 'あんしんウォッチャー', slug: '/review/anshin-watcher/', body: '11,000円', monthly: '539円', tco: '30,404円', note: '通話・トーク機能はありません。2台目の月額が0円のため、兄弟での利用に適しています。' },
+  { name: 'ソラノメ', slug: '/review/soranome/', body: '14,520円', monthly: '539円', tco: '33,924円', note: '位置情報専用の機種です。本体価格はやや高めです。' },
 ];
 
 const faqData = [
-  { q: '学校に持たせるGPSはどう選べばいい？', a: '学校が懸念するのは「授業中に音が鳴る」「スマホのように使われる」ことです。そのため、通話・トーク機能がなく音が鳴らない（または通知音をオフにできる）位置情報専用のGPSが持ち込みやすいです。本ページではその条件を満たす機種だけを比較しています。' },
-  { q: '結局どの機種が一番安いですか？', a: '本体＋月額×36ヶ月の3年総額（TCO）で比べると、みてねみまもりGPSが24,288円で最安です。兄弟2人で使う場合は、2台目の月額が0円になるあんしんウォッチャーが割安になります（2台で約41,404円＝1人あたり約20,702円）。' },
-  { q: 'トーク機能つきのGPSは学校に持ち込めませんか？', a: '一概に不可とは言えませんが、校内で音声メッセージの送受信ができるトーク機能は「授業の妨げ」「スマホ化」と見なされやすく、学校が敬遠する傾向があります。学校用には音が鳴らない位置情報専用機種が無難です。最終的な可否は各校の判断によるため、事前に確認しましょう。' },
+  { q: '学校に持たせるGPSは、どのように選べばよいですか？', a: '学校が懸念するのは「授業中に音が鳴る」「スマートフォンのように使われる」ことです。そのため、通話・トーク機能がなく音が鳴らない（または通知音をオフにできる）位置情報専用のGPSが持ち込みやすい傾向があります。本ページではその条件を満たす機種だけを比較しています。' },
+  { q: '最も安い機種はどれですか？', a: '本体＋月額×36カ月の3年総額（TCO）で比べると、みてねみまもりGPSが24,288円で最安です。兄弟2人で使う場合は、2台目の月額が0円になるあんしんウォッチャーが割安になります（2台で約41,404円＝1人あたり約20,702円）。' },
+  { q: 'トーク機能付きのGPSは学校に持ち込めませんか？', a: '一概に不可とはいえませんが、校内で音声メッセージの送受信ができるトーク機能は「授業の妨げ」「スマートフォン化」と見なされやすく、学校が敬遠する傾向があります。学校用には、音が鳴らない位置情報専用機種をおすすめします。最終的な可否は各校の判断によるため、事前にご確認ください。' },
   { q: '音が鳴らない設定にできますか？', a: 'みてねみまもりGPS（位置情報プラン）やソラノメは通話・トークがなく音が鳴りません。あんしんウォッチャーは通話・トークがなく、通知音もオフに設定できます。いずれも授業中はランドセルに入れたままで問題ありません。' },
 ];
 
@@ -32,7 +32,7 @@ export default function SchoolSilentComparePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '学校に持たせやすい完全静音GPS比較', datePublished: '2026-06-23', dateModified: '2026-06-23', author: { '@type': 'Person', name: 'GPS見守りナビ編集部' }, publisher: { '@type': 'Organization', name: 'GPS子供見守り最新情報' } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '学校に持たせやすい完全静音GPS比較', datePublished: '2026-06-23', dateModified: '2026-06-23', author: { '@type': 'Person', name: '子供見守りGPS最新情報 編集部' }, publisher: { '@type': 'Organization', name: '子供見守りGPS最新情報' } }) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '学校向け静音GPS比較' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -42,7 +42,7 @@ export default function SchoolSilentComparePage() {
             <span className="tag-pill bg-orange text-white">静音・3年総額比較</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">学校に持たせやすい完全静音GPS比較</h1>
-          <p className="text-g600 text-lg">音が鳴らない・トーク/通話なしの機種を、3年総額（本体＋月額×36ヶ月）で比較</p>
+          <p className="text-g600 text-lg">音が鳴らない・トーク/通話なしの機種を、3年総額（本体＋月額×36カ月）で比較します。</p>
         </div>
       </section>
 
@@ -50,7 +50,7 @@ export default function SchoolSilentComparePage() {
         <div className="mx-auto max-w-4xl px-4">
           <div className="card-hover p-6 mb-8">
             <p className="text-g600">
-              小学校がGPSの持ち込みで気にするのは「<strong>授業中に音が鳴る</strong>」「<strong>スマホのように使われる</strong>」ことです。そこでこのページでは、<strong>通話・トーク機能がなく音が鳴らない（または通知音をオフにできる）位置情報専用のGPS</strong>だけを厳選して比較しました。さらに、本体価格に隠れがちな月額を含めた<strong>3年総額（TCO）</strong>で「結局どれが安いか」を提示します。
+              小学校がGPSの持ち込みで気にするのは「<strong>授業中に音が鳴る</strong>」「<strong>スマートフォンのように使われる</strong>」ことです。そこで本ページでは、<strong>通話・トーク機能がなく音が鳴らない（または通知音をオフにできる）位置情報専用のGPS</strong>に絞って比較しました。あわせて、本体価格だけでは見えにくい月額を含めた<strong>3年総額（TCO）</strong>で、最も安い機種をお示しします。
             </p>
           </div>
 
@@ -77,11 +77,11 @@ export default function SchoolSilentComparePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-4">※3年総額＝本体価格＋月額×36ヶ月で算出した目安です。事務手数料・送料・キャンペーン割引は含みません。料金は2026年6月時点で各社公式を確認。最新の料金・プランは公式サイトでご確認ください。</p>
+          <p className="text-xs text-g500 mb-4">※3年総額＝本体価格＋月額×36カ月で算出した目安です。事務手数料・送料・キャンペーン割引は含みません。料金は2026年6月時点で各社公式サイトにて確認しています。最新の料金・プランは公式サイトでご確認ください。</p>
 
           <div className="card-hover p-5 mb-8 bg-green-light/40">
-            <h3 className="font-bold text-g800 mb-2">兄弟で使うなら「あんしんウォッチャー」が割安</h3>
-            <p className="text-sm text-g600">あんしんウォッチャーは<strong>2台目の月額が0円</strong>（1つのau IDで2台まで）。兄弟2人で使うと3年総額は約41,404円（本体11,000円×2＋月額539円×36）＝<strong>1人あたり約20,702円</strong>となり、1台ずつ別機種を持つより割安です。1人で使うならみてねみまもりGPSが最安です。</p>
+            <h3 className="font-bold text-g800 mb-2">兄弟で使う場合は「あんしんウォッチャー」が割安</h3>
+            <p className="text-sm text-g600">あんしんウォッチャーは<strong>2台目の月額が0円</strong>（1つのau IDで2台まで）です。兄弟2人で使うと3年総額は約41,404円（本体11,000円×2＋月額539円×36）＝<strong>1人あたり約20,702円</strong>となり、1台ずつ別機種を持つより割安です。1人で使う場合は、みてねみまもりGPSが最も安価です。</p>
           </div>
 
           <h2 className="section-title">各機種の「学校向け」ポイント</h2>
@@ -94,12 +94,12 @@ export default function SchoolSilentComparePage() {
             ))}
           </div>
 
-          <h2 className="section-title">学校には不向きなタイプ（注意）</h2>
+          <h2 className="section-title">学校には不向きなタイプ（注意点）</h2>
           <div className="card-hover p-6 mb-8">
             <p className="text-g600 mb-2">
-              <strong>トーク（音声・テキストメッセージ）や通話機能がついた機種</strong>は、校内で音が鳴ったり「スマホのように使われる」と見なされたりして、学校が敬遠する傾向があります。具体的には、みてねみまもりGPSの<strong>トークPlusプラン</strong>、BoTトーク、Hamic、キッズケータイ、myFirst Fone などのトーク・通話対応モデルです。
+              <strong>トーク（音声・テキストメッセージ）や通話機能を備えた機種</strong>は、校内で音が鳴ったり「スマートフォンのように使われる」と見なされたりするため、学校が敬遠する傾向があります。具体的には、みてねみまもりGPSの<strong>トークPlusプラン</strong>、BoTトーク、Hamic、キッズケータイ、myFirst Fone などのトーク・通話対応モデルです。
             </p>
-            <p className="text-g600 text-sm">これらは家庭での連絡用には便利ですが、学校用としては音が鳴らない位置情報専用モデルを選ぶのが無難です。最終的な持ち込み可否は各校の判断によるため、<Link href="/knowledge/school-rules/" className="text-blue underline">学校のルール</Link>を事前に確認してください。</p>
+            <p className="text-g600 text-sm">これらは家庭での連絡用には便利ですが、学校用としては、音が鳴らない位置情報専用モデルをおすすめします。最終的な持ち込み可否は各校の判断によるため、<Link href="/knowledge/school-rules/" className="text-blue underline">学校のルール</Link>を事前に確認してください。</p>
           </div>
 
           <h2 className="section-title">よくある質問</h2>
@@ -111,8 +111,8 @@ export default function SchoolSilentComparePage() {
           ))}
 
           <div className="mt-8 card-hover p-5 bg-blue-light rounded-2xl">
-            <h3 className="font-bold text-g800 mb-2">学校への持ち込みルールも確認しておこう</h3>
-            <p className="text-sm text-g600 mb-3">持ち込みの可否・申請方法・先生への確認テンプレは、学校ルールのまとめページで解説しています。遠足・修学旅行など行事に持たせたい場合は専用の比較ページも参考にしてください。</p>
+            <h3 className="font-bold text-g800 mb-2">学校への持ち込みルールの確認</h3>
+            <p className="text-sm text-g600 mb-3">持ち込みの可否・申請方法・先生への確認に使える質問例は、学校ルールのまとめページで解説しています。遠足・修学旅行など行事に持たせたい場合は、専用の比較ページもご参照ください。</p>
             <div className="flex flex-wrap gap-3">
               <Link href="/knowledge/school-rules/" className="btn-primary inline-block">GPSの学校持ち込みルールを見る</Link>
               <Link href="/compare/school-trip/" className="btn-accent inline-block">遠足・修学旅行向けGPS比較</Link>
@@ -120,7 +120,7 @@ export default function SchoolSilentComparePage() {
           </div>
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">機種ごとの詳細を見る</h2>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">機種ごとの詳細</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/compare/cost/" className="btn-primary">コスパ・料金比較</Link>
               <Link href="/compare/after-school/" className="btn-accent">学童・習い事の行き帰り比較</Link>

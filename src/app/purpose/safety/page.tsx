@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供GPS 防犯・安全重視で選ぶ | SOS・不審者情報・危険エリア通知比較',
   description:
-    '防犯・安全機能に優れた子供用GPS端末を比較。SOS機能、不審者情報連動（みもり）、交通安全サポート（SayuU）、危険エリア通知、防犯ブザー有無を徹底比較。',
+    '防犯・安全機能に優れた子供用GPS端末を比較します。SOS機能、不審者情報との連動（みもり）、交通安全サポート（SayuU）、危険エリア通知、防犯ブザーの有無を比較しています。',
 };
 
 const faqData = [
-  { q: 'SOS機能がある子供用GPSはどれ？', a: 'myFirst FoneにはSOSボタンが搭載されており、長押しで緊急連絡先に位置情報付き通知が自動送信されます。キッズケータイにも防犯ブザー+自動発信機能があります。' },
-  { q: '不審者情報と連動するGPSはありますか？', a: 'みもり（ドリームエリア）は日本不審者情報センターのデータと連動し、お子さまが不審者出没エリアに近づくと自動通知します。この機能は業界唯一です。' },
-  { q: '交通安全機能があるGPSは？', a: 'SayuU（トヨタ）は交通安全サポート機能を搭載しており、交通事故多発地点への接近を通知します。トヨタの交通安全データを活用した独自機能です。' },
-  { q: '危険エリア通知機能とは？', a: 'お子さまが登録した危険エリア（交差点、水辺、工事現場など）に近づくとGPS端末から警告音が鳴り、同時に保護者にも通知される機能です。みもりが代表的です。' },
-  { q: '防犯ブザー付きのGPS端末はありますか？', a: 'GPS端末単体では防犯ブザー搭載モデルは少ないですが、キッズケータイには標準搭載されています。GPS端末と別に防犯ブザーを持たせるご家庭もあります。' },
-  { q: '一番防犯に強いGPSはどれ？', a: '総合的な防犯力ではみもり（不審者情報連動+危険エリア通知+音声メッセージ）がトップです。通話でのSOS対応を重視するならmyFirst Foneがおすすめです。' },
+  { q: 'SOS機能がある子供用GPSはどれですか？', a: 'myFirst FoneにはSOSボタンが搭載されており、長押しすると緊急連絡先に位置情報付きの通知が自動で送信されます。キッズケータイにも、防犯ブザーと自動発信の機能があります。' },
+  { q: '不審者情報と連動するGPSはありますか？', a: 'みもり（ドリームエリア）は日本不審者情報センターのデータと連動しており、お子さまが不審者の出没エリアに近づくと自動で通知します。この機能は業界で唯一の機能です。' },
+  { q: '交通安全機能があるGPSはありますか？', a: 'SayuU（トヨタ）は交通安全サポート機能を搭載しており、交通事故の多発地点への接近を通知します。トヨタの交通安全データを活用した独自の機能です。' },
+  { q: '危険エリア通知機能とはどのような機能ですか？', a: 'お子さまが登録された危険エリア（交差点、水辺、工事現場など）に近づくと、GPS端末から警告音が鳴り、同時に保護者にも通知される機能です。代表的な機種はみもりです。' },
+  { q: '防犯ブザー付きのGPS端末はありますか？', a: 'GPS端末単体では防犯ブザーを搭載したモデルは少ないものの、キッズケータイには標準で搭載されています。GPS端末とは別に、防犯ブザーを持たせるご家庭もあります。' },
+  { q: '最も防犯機能が充実したGPSはどれですか？', a: '総合的な防犯機能では、みもり（不審者情報との連動・危険エリア通知・音声メッセージ）が最も充実しています。通話によるSOS対応を重視する場合は、myFirst Foneをおすすめします。' },
 ];
 
 const faqJsonLd = {
@@ -31,7 +31,7 @@ export default function SafetyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 防犯・安全重視で選ぶ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 防犯・安全重視で選ぶ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '防犯・安全重視' }]} />
 
       {/* Hero */}
@@ -44,7 +44,7 @@ export default function SafetyPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             防犯・安全重視で選ぶ 子供用GPS
           </h1>
-          <p className="text-g600 text-lg">SOS機能 | 不審者情報連動 | 交通安全 | 危険エリア通知 比較</p>
+          <p className="text-g600 text-lg">SOS機能・不審者情報との連動・交通安全・危険エリア通知の比較</p>
         </div>
       </section>
 
@@ -60,10 +60,10 @@ export default function SafetyPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {[
-              { icon: '🚨', title: 'SOS緊急通知', desc: 'ボタン一つで緊急連絡先に位置情報付き通知を送信。', models: 'myFirst Fone' },
-              { icon: '👤', title: '不審者情報連動', desc: '不審者出没エリアへの接近を自動検知・通知。', models: 'みもり' },
-              { icon: '🚗', title: '交通安全サポート', desc: '事故多発地点への接近を通知。', models: 'SayuU' },
-              { icon: '⚠️', title: '危険エリア通知', desc: '指定した危険エリアで端末から警告音。', models: 'みもり' },
+              { icon: '🚨', title: 'SOS緊急通知', desc: 'ボタン一つで、緊急連絡先に位置情報付きの通知を送信します。', models: 'myFirst Fone' },
+              { icon: '👤', title: '不審者情報連動', desc: '不審者の出没エリアへの接近を自動で検知し、通知します。', models: 'みもり' },
+              { icon: '🚗', title: '交通安全サポート', desc: '事故の多発地点への接近を通知します。', models: 'SayuU' },
+              { icon: '⚠️', title: '危険エリア通知', desc: '指定した危険エリアで、端末から警告音が鳴ります。', models: 'みもり' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>
@@ -75,7 +75,7 @@ export default function SafetyPage() {
           </div>
 
           {/* 防犯機能比較表 */}
-          <h2 className="section-title">防犯・安全機能 比較表</h2>
+          <h2 className="section-title">防犯・安全機能の比較表</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -114,12 +114,12 @@ export default function SafetyPage() {
           </div>
 
           {/* 防犯重視おすすめ */}
-          <h2 className="section-title">防犯重視で選ぶ おすすめTOP3</h2>
+          <h2 className="section-title">防犯を重視する場合のおすすめ機種TOP3</h2>
           <div className="space-y-4 mb-8">
             {[
-              { rank: 1, name: 'みもり', tag: '防犯力No.1', reason: '不審者情報連動+危険エリア通知で業界唯一の防犯GPS。音声メッセージでお子さまに注意喚起も可能。防犯を最優先するなら一択。', href: '/review/mimori/' },
-              { rank: 2, name: 'myFirst Fone', tag: 'SOS搭載', reason: 'SOSボタン搭載で緊急時に位置情報付き通知を自動送信。音声通話で直接連絡も取れる安心感。', href: '/review/myfirst-fone/' },
-              { rank: 3, name: 'SayuU', tag: '交通安全', reason: 'トヨタの交通安全データを活用した事故多発地点通知。通学路の交通事故リスクが心配な方に。', href: '/review/sayuu/' },
+              { rank: 1, name: 'みもり', tag: '防犯機能が最も充実', reason: '不審者情報との連動と危険エリア通知を備えた、業界で唯一の防犯GPSです。音声メッセージでお子さまに注意を促すこともできます。防犯を最も重視する場合に適した機種です。', href: '/review/mimori/' },
+              { rank: 2, name: 'myFirst Fone', tag: 'SOS搭載', reason: 'SOSボタンを搭載しており、緊急時に位置情報付きの通知を自動で送信します。音声通話で直接連絡を取ることもできます。', href: '/review/myfirst-fone/' },
+              { rank: 3, name: 'SayuU', tag: '交通安全', reason: 'トヨタの交通安全データを活用し、事故の多発地点への接近を通知します。通学路での交通事故が心配な方に適しています。', href: '/review/sayuu/' },
             ].map((item) => (
               <div key={item.rank} className="flex gap-4 items-start card-hover p-5">
                 <span className="flex-shrink-0 w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center font-bold">
@@ -149,8 +149,8 @@ export default function SafetyPage() {
 
           {/* CTA */}
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまの安全を守るGPSを見つけよう</h2>
-            <p className="text-g600 mb-6 text-sm">防犯機能充実のGPS端末で、通学路も放課後も安心の見守りを。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまの安全を守るGPSの選び方</h2>
+            <p className="text-g600 mb-6 text-sm">防犯機能が充実したGPS端末により、通学路でも放課後でも見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキングを見る</Link>
               <Link href="/purpose/elementary/" className="btn-accent">小学生・入学準備で選ぶ</Link>

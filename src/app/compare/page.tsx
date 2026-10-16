@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <SectionIndex section="compare" name="比較" lead="子供GPSの機種・料金・機能の比較記事" />;
+  return <SectionIndex section="compare" name="比較" lead="子供GPSの機種・料金・機能を比較した記事の一覧です" />;
 }

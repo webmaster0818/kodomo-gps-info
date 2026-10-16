@@ -3,17 +3,17 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'みてね vs BoTトーク どっちがいい？10項目で徹底比較',
+  title: 'みてね vs BoTトーク どっちがいい？10項目で比較',
   description:
-    'みてねみまもりGPSとBoTトークを月額料金・本体価格・トーク機能・バッテリー・測位精度など10項目で徹底比較。お子さまに合ったGPS端末がわかります。',
+    'みてねみまもりGPSとBoTトークを、月額料金・本体価格・トーク機能・バッテリー・測位精度など10項目で比較します。お子さまに合ったGPS端末を選ぶための情報を掲載しています。',
 };
 
 const faqData = [
-  { q: 'みてねとBoTトーク、月額料金が安いのはどっち？', a: 'みてねみまもりGPSの基本プランが月額528円で最安です。BoTトークは月額528円〜ですが、トーク機能付きプランはみてね（748円）の方がBoTトーク（748円）と同額です。' },
-  { q: 'トーク機能はどちらが優れていますか？', a: 'BoTトークは音声メッセージ送受信に特化しており、ボタン操作だけで簡単にメッセージを送れます。みてねのトークPlusはテキスト＋音声に対応しています。用途に応じてお選びください。' },
-  { q: 'バッテリー持ちが良いのはどちらですか？', a: 'みてねみまもりGPSが最大約2ヶ月、BoTトークが最大約1ヶ月です。充電頻度を減らしたい方にはみてねが向いています。' },
+  { q: 'みてねとBoTトークでは、月額料金が安いのはどちらですか？', a: 'みてねみまもりGPSの基本プランが月額528円で最安です。BoTトークは月額528円〜で、トーク機能付きプランはみてね（748円）とBoTトーク（748円）で同額です。' },
+  { q: 'トーク機能はどちらが優れていますか？', a: 'BoTトークは音声メッセージの送受信に特化しており、ボタン操作だけで簡単にメッセージを送れます。みてねのトークPlusは、テキストと音声に対応しています。用途に応じてお選びください。' },
+  { q: 'バッテリー持ちが良いのはどちらですか？', a: 'みてねみまもりGPSが最大約2カ月、BoTトークが最大約1カ月です。充電の頻度を減らしたい方には、みてねが適しています。' },
   { q: '位置情報の精度はどちらが高いですか？', a: 'どちらもGPS+GLONASS+みちびき+Wi-Fiの複合測位に対応しており、精度はほぼ同等です。環境による誤差も同程度です。' },
-  { q: 'どちらを選べばいいか迷っています。', a: 'バッテリー重視・コスト重視ならみてね、トーク機能を重視するならBoTトークがおすすめです。どちらも高い評価を得ている定番機種です。' },
+  { q: 'どちらを選べばいいか迷っています。', a: 'バッテリーやコストを重視する場合はみてね、トーク機能を重視する場合はBoTトークをおすすめします。どちらも高い評価を得ている定番機種です。' },
 ];
 
 const faqJsonLd = {
@@ -30,7 +30,7 @@ const compareItems = [
   { item: '月額料金', mitene: '528円〜', bot: '528円〜' },
   { item: '本体価格', mitene: '5,280円', bot: '5,280円' },
   { item: 'トーク機能', mitene: 'トークPlus（748円）', bot: '標準搭載（748円）' },
-  { item: 'バッテリー', mitene: '最大約2ヶ月', bot: '最大約1ヶ月' },
+  { item: 'バッテリー', mitene: '最大約2カ月', bot: '最大約1カ月' },
   { item: '測位精度', mitene: 'GPS+GLONASS+みちびき+Wi-Fi', bot: 'GPS+GLONASS+みちびき+Wi-Fi' },
   { item: '見守り人数', mitene: '複数人（無料）', bot: '複数人（無料）' },
   { item: 'アプリ', mitene: 'みてねみまもりGPS', bot: 'BoTトークアプリ' },
@@ -43,20 +43,20 @@ export default function MiteneVsBotPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてね vs BoTトーク どっちがいい？10項目で徹底比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてね vs BoTトーク どっちがいい？10項目で比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'みてね vs BoTトーク' }]} />
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-blue text-white">徹底比較</span>
+            <span className="tag-pill bg-blue text-white">比較</span>
             <span className="tag-pill bg-orange text-white">10項目</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            みてね vs BoTトーク どっちがいい？
+            みてね vs BoTトーク どちらがよい？
           </h1>
-          <p className="text-g600 text-lg">人気2大GPS端末を10項目で徹底比較します</p>
+          <p className="text-g600 text-lg">人気の2機種のGPS端末を、10項目で比較します。</p>
         </div>
       </section>
 
@@ -101,7 +101,7 @@ export default function MiteneVsBotPage() {
             <div className="card-hover p-6">
               <h3 className="font-bold text-orange mb-3">BoTトークがおすすめの方</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・お子さまとメッセージのやりとりをしたい</li>
+                <li>・お子さまとメッセージのやり取りをしたい</li>
                 <li>・AIの行動学習機能に魅力を感じる</li>
                 <li>・自動で通知を最適化してほしい</li>
                 <li>・通学路の異常を検知してほしい</li>
@@ -121,7 +121,7 @@ export default function MiteneVsBotPage() {
 
           {/* CTA */}
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">各機種の詳細レビューもチェック</h2>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">各機種の詳細レビュー</h2>
             <p className="text-g600 mb-6 text-sm">それぞれの機種の詳しい機能・口コミはレビューページでご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/mitene/" className="btn-primary">みてねのレビュー</Link>

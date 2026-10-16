@@ -3,18 +3,18 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'GPSは室内でも使える？建物内での精度と対策【徹底解説】',
+  title: 'GPSは室内でも使える？建物内での精度と対策【解説】',
   description:
-    'GPS端末は室内で精度が落ちる理由をわかりやすく解説。Wi-Fiや携帯基地局測位による補助、機種別の室内精度比較、学校・ショッピングモール内での実用性を紹介します。',
+    'GPS端末の精度が室内で低下する理由を解説します。Wi-Fiや携帯基地局測位による補助、機種別の室内精度の比較、学校・ショッピングモール内での実用性をご紹介します。',
 };
 
 const faqData = [
-  { q: 'GPS端末は室内では全く使えないの？', a: 'GPS衛星の電波は建物内では大幅に弱まりますが、Wi-Fi測位や携帯基地局測位を併用する機種なら室内でもおおよその位置を把握できます。精度は屋外より落ちますが「建物の中にいる」ことはわかります。' },
-  { q: '学校の中でも子供の位置はわかる？', a: '校舎内では衛星測位が困難ですが、多くの機種で携帯基地局測位により「学校の敷地内にいる」程度の位置は確認できます。ただし教室単位の特定は難しいのが現状です。' },
-  { q: 'ショッピングモールの中では？', a: 'ショッピングモールにはWi-Fiスポットが多いため、Wi-Fi測位対応機種なら比較的精度が保たれます。フロア（階数）の特定は難しいですが、施設内にいることは確認できます。' },
-  { q: 'Wi-Fi測位に対応した機種はどれ？', a: 'みもり、ソラノメ、あんしんウォッチャーなどがWi-Fi測位に対応しています。Wi-Fi対応機種を選ぶことで、室内での精度低下を軽減できます。' },
-  { q: '地下鉄や地下街ではGPSは使える？', a: '地下ではGPS衛星の電波が完全に遮断されます。携帯基地局の電波が届く範囲であれば大まかな位置は取得できますが、精度は数百メートル単位になることがあります。' },
-  { q: '室内精度を改善する方法はある？', a: 'Wi-Fi測位対応の機種を選ぶことが最も効果的です。また、更新間隔を短く設定し、室内から屋外に出た際にすぐ正確な位置を取得できるようにしておくと実用的です。' },
+  { q: 'GPS端末は室内ではまったく使えないのですか？', a: 'GPS衛星の電波は建物内で大幅に弱まりますが、Wi-Fi測位や携帯基地局測位を併用する機種であれば、室内でもおおよその位置を把握できます。精度は屋外より低下しますが、「建物の中にいる」ことは確認できます。' },
+  { q: '学校の中でも子供の位置はわかりますか？', a: '校舎内では衛星による測位が困難ですが、多くの機種では携帯基地局測位により、「学校の敷地内にいる」程度の位置を確認できます。ただし、教室単位での特定は現状では困難です。' },
+  { q: 'ショッピングモールの中では位置がわかりますか？', a: 'ショッピングモールにはWi-Fiスポットが多いため、Wi-Fi測位に対応した機種であれば、比較的精度が保たれます。フロア（階数）の特定は困難ですが、施設内にいることは確認できます。' },
+  { q: 'Wi-Fi測位に対応した機種はどれですか？', a: 'みもり、ソラノメ、あんしんウォッチャーなどがWi-Fi測位に対応しています。Wi-Fi対応機種を選ぶことで、室内での精度の低下を軽減できます。' },
+  { q: '地下鉄や地下街ではGPSは使えますか？', a: '地下ではGPS衛星の電波が完全に遮断されます。携帯基地局の電波が届く範囲であれば、おおよその位置を取得できますが、精度は数百メートル単位になることがあります。' },
+  { q: '室内での精度を改善する方法はありますか？', a: 'Wi-Fi測位に対応した機種を選ぶことが最も効果的です。また、更新間隔を短く設定しておくと、室内から屋外に出た際にすぐ正確な位置を取得できるため実用的です。' },
 ];
 
 const faqJsonLd = {
@@ -31,19 +31,19 @@ export default function IndoorAccuracyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPSは室内でも使える？建物内での精度と対策【徹底解説】", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPSは室内でも使える？建物内での精度と対策【解説】", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '室内でのGPS精度' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">室内精度</span>
-            <span className="tag-pill bg-orange text-white">徹底解説</span>
+            <span className="tag-pill bg-orange text-white">解説</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             GPSは室内でも使える？建物内での精度と対策
           </h1>
-          <p className="text-g600 text-lg">室内でGPS精度が落ちる理由と、その対策を詳しく解説します</p>
+          <p className="text-g600 text-lg">室内でGPSの精度が低下する理由と、その対策を解説します。</p>
         </div>
       </section>
 
@@ -52,9 +52,9 @@ export default function IndoorAccuracyPage() {
           <h2 className="section-title">GPSの仕組みと衛星信号</h2>
           <div className="card-hover p-6 mb-8">
             <p className="text-g600 mb-4">
-              GPSは地球上空約20,000kmを周回する人工衛星から発信される電波を受信して位置を計算します。
+              GPSは、地球上空約20,000kmを周回する人工衛星から発信される電波を受信して位置を計算します。
               電波は光速で届きますが、コンクリートや鉄筋といった建築素材は電波を大幅に減衰させます。
-              そのため、屋外では高精度な測位が可能でも、建物内に入ると衛星からの信号を十分に受信できなくなります。
+              そのため、屋外では高精度な測位が可能であっても、建物内に入ると衛星からの信号を十分に受信できなくなります。
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="bg-blue-light rounded-xl p-4 text-center">
@@ -72,13 +72,13 @@ export default function IndoorAccuracyPage() {
             </div>
           </div>
 
-          <h2 className="section-title">室内で精度が落ちる理由</h2>
+          <h2 className="section-title">室内で精度が低下する理由</h2>
           <div className="space-y-4 mb-8">
             {[
-              { title: '衛星電波の遮断', desc: 'コンクリートの壁、鉄筋、屋根がGPS電波を遮断します。特に鉄筋コンクリート造（RC造）の建物では、衛星からの電波がほとんど届きません。木造建築では多少透過しますが、精度は大幅に低下します。' },
-              { title: 'マルチパス（反射波）の影響', desc: '建物内に僅かに入り込んだ衛星電波が壁や天井で反射し、端末に複数の経路で到達します。この反射波が測位計算を狂わせ、実際の位置とは異なるポイントが表示される原因になります。' },
-              { title: '受信衛星数の不足', desc: '正確な測位には最低4基の衛星を同時受信する必要がありますが、室内では受信できる衛星数が1〜2基以下に減少します。衛星数が不足すると測位そのものができなくなります。' },
-              { title: '信号強度の低下', desc: '壁を透過した電波は信号強度が大幅に低下し、ノイズに埋もれやすくなります。端末が受信しても精度が極端に悪い位置情報しか得られないことがあります。' },
+              { title: '衛星電波の遮断', desc: 'コンクリートの壁、鉄筋、屋根がGPSの電波を遮断します。特に鉄筋コンクリート造（RC造）の建物では、衛星からの電波がほとんど届きません。木造建築では電波が多少透過しますが、精度は大幅に低下します。' },
+              { title: 'マルチパス（反射波）の影響', desc: '建物内にわずかに入り込んだ衛星の電波が壁や天井で反射し、複数の経路で端末に到達します。この反射波が測位計算に誤差を生じさせ、実際とは異なる位置が表示される原因となります。' },
+              { title: '受信衛星数の不足', desc: '正確な測位には最低4基の衛星を同時に受信する必要がありますが、室内では受信できる衛星数が1〜2基以下に減少します。衛星数が不足すると、測位そのものができなくなります。' },
+              { title: '信号強度の低下', desc: '壁を透過した電波は信号強度が大幅に低下し、ノイズに埋もれやすくなります。端末が受信できた場合でも、精度が著しく低い位置情報しか得られないことがあります。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5">
                 <h3 className="font-bold text-g800 mb-1">{item.title}</h3>
@@ -91,7 +91,7 @@ export default function IndoorAccuracyPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="bg-blue-light rounded-xl p-6">
               <h3 className="font-bold text-blue mb-3">Wi-Fi測位の仕組み</h3>
-              <p className="text-sm text-g600 mb-3">周囲のWi-Fiアクセスポイントの電波強度と位置データベースを照合して位置を推定します。</p>
+              <p className="text-sm text-g600 mb-3">周囲のWi-Fiアクセスポイントの電波強度と位置データベースを照合し、位置を推定します。</p>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・精度: 15〜50m程度</li>
                 <li>・ショッピングモールや駅で有効</li>
@@ -101,11 +101,11 @@ export default function IndoorAccuracyPage() {
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">携帯基地局測位の仕組み</h3>
-              <p className="text-sm text-g600 mb-3">接続している携帯電話基地局の位置から大まかな現在地を推定します。</p>
+              <p className="text-sm text-g600 mb-3">接続している携帯電話基地局の位置から、おおよその現在地を推定します。</p>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・精度: 100〜1,000m程度</li>
                 <li>・ほぼ全ての場所で利用可能</li>
-                <li>・GPS・Wi-Fiが使えない時の最終手段</li>
+                <li>・GPS・Wi-Fiが使えない場合の補完手段</li>
                 <li>・「エリア内にいる」程度の確認に有効</li>
               </ul>
             </div>
@@ -144,10 +144,10 @@ export default function IndoorAccuracyPage() {
           <h2 className="section-title">場所別の実用性</h2>
           <div className="space-y-4 mb-8">
             {[
-              { place: '学校（校舎内）', desc: '校舎はRC造が多く、GPS衛星の受信は困難です。携帯基地局測位により「学校の敷地内にいる」ことは確認できます。ジオフェンスを学校に設定すれば、到着・出発の通知は正常に機能します。', level: '基本的な位置把握は可能' },
-              { place: 'ショッピングモール', desc: 'Wi-Fiスポットが密集しているため、Wi-Fi測位対応機種なら比較的正確に位置がわかります。ただしフロア（階数）の特定は困難です。入退館の通知はジオフェンスで対応できます。', level: '比較的良好（Wi-Fi対応機種）' },
-              { place: '自宅（木造）', desc: '木造住宅はコンクリートより電波を通しやすく、窓際であればGPS衛星を受信できることもあります。Wi-Fi測位も自宅のルーターを利用して位置精度を補完します。', level: '窓際なら良好' },
-              { place: '地下鉄・地下街', desc: '地下ではGPS衛星電波は完全に遮断されます。携帯基地局の電波が届けば大まかなエリアは把握できますが、精度は数百メートル単位になります。', level: '大まかなエリアのみ' },
+              { place: '学校（校舎内）', desc: '校舎はRC造が多く、GPS衛星の電波の受信は困難です。携帯基地局測位により、「学校の敷地内にいる」ことは確認できます。学校にエリア通知（ジオフェンス）を設定すれば、到着・出発の通知は正常に機能します。', level: '基本的な位置把握は可能' },
+              { place: 'ショッピングモール', desc: 'Wi-Fiスポットが密集しているため、Wi-Fi測位に対応した機種であれば、比較的正確に位置を把握できます。ただし、フロア（階数）の特定は困難です。入退館の通知はエリア通知で対応できます。', level: '比較的良好（Wi-Fi対応機種）' },
+              { place: '自宅（木造）', desc: '木造住宅はコンクリートより電波を通しやすく、窓際であればGPS衛星の電波を受信できる場合もあります。また、Wi-Fi測位が自宅のルーターを利用して位置精度を補完します。', level: '窓際なら良好' },
+              { place: '地下鉄・地下街', desc: '地下ではGPS衛星の電波が完全に遮断されます。携帯基地局の電波が届けばおおよそのエリアは把握できますが、精度は数百メートル単位となります。', level: 'おおよそのエリアのみ' },
             ].map((item) => (
               <div key={item.place} className="card-hover p-5">
                 <div className="flex items-center justify-between mb-2">
@@ -168,8 +168,8 @@ export default function IndoorAccuracyPage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">室内精度に強いGPS端末を探そう</h2>
-            <p className="text-g600 mb-6 text-sm">Wi-Fi測位対応の機種を選んで、室内でも安心の見守りを実現しましょう。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">室内精度に優れたGPS端末の選び方</h2>
+            <p className="text-g600 mb-6 text-sm">室内での見守りを重視する場合は、Wi-Fi測位に対応した機種をおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/knowledge/accuracy/" className="btn-primary">GPS精度の仕組み</Link>
               <Link href="/compare/accuracy/" className="btn-accent">精度比較ページ</Link>

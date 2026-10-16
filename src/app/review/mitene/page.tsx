@@ -5,17 +5,17 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'みてねみまもりGPS 機種比較レビュー【2026年】MG05・トーク・トークPlusの違い',
   description:
-    'みてねみまもりGPS（MIXI）の機能・料金・口コミを徹底レビュー。月額528円〜、トークPlus対応、バッテリー最大2ヶ月。利用者数No.1の実力と選ばれる理由を詳しく解説。',
+    'みてねみまもりGPS（MIXI）の機能・料金・口コミをレビューします。月額528円〜で、トークPlusに対応し、バッテリーは最大2カ月です。利用者数No.1とされる理由と、選ばれる背景を解説します。',
 };
 
 const faqData = [
-  { q: 'みてねみまもりGPSの実際の口コミはどこで読めますか？', a: '楽天市場など販売ページのレビュー欄で購入者の実際の口コミが読めます。機種(MG05/トーク/トークPlus)によって機能が異なるため、口コミがどの機種への投稿かを確認してから参考にするのがおすすめです。当ページは公式の料金・仕様(確認日つき)のみで整理し、口コミの転載・創作はしていません。' },
-  { q: 'みてねみまもりGPSの月額料金はいくら？', a: '基本プラン（位置確認のみ）は月額528円（税込）です。トークPlus機能付きプランは月額748円（税込）です。いずれも契約期間の縛りや解約金はありません。' },
-  { q: 'トークPlus機能とは何ですか？', a: 'トークPlusは、お子さまとテキスト・音声メッセージのやりとりができる機能です。GPS端末のボタンを押して定型メッセージや音声を送信でき、保護者のスマホアプリからもメッセージを送れます。' },
-  { q: 'バッテリーはどれくらい持ちますか？', a: '最大約2ヶ月持ちます。ただし位置情報の更新頻度やトーク機能の使用頻度によって変動します。更新間隔を長めに設定するとバッテリー持ちが向上します。' },
-  { q: '本体価格はいくらですか？', a: '本体価格は5,280円（税込）です。公式サイトやECサイトで購入可能。時期によってはキャンペーン割引もあります。' },
-  { q: '何人で見守りできますか？', a: '複数人で見守りが可能です。おじいちゃん・おばあちゃんなど家族みんなでお子さまの位置を確認できます。見守り人の追加は無料です。' },
-  { q: '学校に持って行っても大丈夫？', a: 'はい、ほとんどの学校で持ち込み可能です。小型・軽量でランドセルに入れておけるサイズ。音が鳴らないので授業の妨げになりません。念のため学校の規則をご確認ください。' },
+  { q: 'みてねみまもりGPSの実際の口コミはどこで読めますか？', a: '楽天市場などの販売ページのレビュー欄で、購入者の口コミをご覧いただけます。機種（MG05／トーク／トークPlus）によって機能が異なるため、どの機種に対する口コミかを確認したうえで参考にされることをおすすめします。当ページでは公式の料金・仕様のみを掲載し、確認日を記載しています。口コミの転載・創作は行っていません。' },
+  { q: 'みてねみまもりGPSの月額料金はいくら？', a: '基本プラン（位置確認のみ）は月額528円（税込）、トークPlus機能付きのプランは月額748円（税込）です。いずれも契約期間の縛りや解約金はありません。' },
+  { q: 'トークPlus機能とは何ですか？', a: 'トークPlusは、お子さまとテキスト・音声メッセージのやりとりができる機能です。GPS端末のボタンを押して定型メッセージや音声を送信できるほか、保護者のスマートフォンアプリからもメッセージを送信できます。' },
+  { q: 'バッテリーはどれくらい持ちますか？', a: '最大約2カ月です。ただし、位置情報の更新頻度やトーク機能の使用頻度によって変動します。更新間隔を長めに設定すると、バッテリーの持ちが向上します。' },
+  { q: '本体価格はいくらですか？', a: '本体価格は5,280円（税込）です。公式サイトやECサイトで購入できます。時期によっては、キャンペーンによる割引が実施される場合もあります。' },
+  { q: '何人で見守りできますか？', a: '複数人での見守りが可能です。祖父母を含むご家族全員で、お子さまの位置を確認できます。見守り人の追加は無料です。' },
+  { q: '学校に持って行っても大丈夫？', a: 'はい、ほとんどの学校で持ち込み可能です。小型・軽量で、ランドセルに入れておけるサイズです。音が鳴らないため、授業の妨げになりません。念のため、学校の規則をご確認ください。' },
 ];
 
 const faqJsonLd = {
@@ -32,7 +32,7 @@ export default function MitenePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS レビュー", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みてねみまもりGPS' }]} />
 
       {/* Hero */}
@@ -43,9 +43,9 @@ export default function MitenePage() {
             <span className="tag-pill bg-blue text-white">月額528円〜</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            みてねみまもりGPS 徹底レビュー
+            みてねみまもりGPS レビュー
           </h1>
-          <p className="text-g600 text-lg">MIXI提供 | トークPlus対応 | バッテリー最大2ヶ月</p>
+          <p className="text-g600 text-lg">MIXI提供 | トークPlus対応 | バッテリー最大2カ月</p>
         </div>
       </section>
 
@@ -54,22 +54,22 @@ export default function MitenePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">結論：家族アルバム「みてね」のMIXIが運営。3機種から選べ、大手の安心感を重視する家庭向き</h2>
+            <h2 className="font-extrabold text-g800 mb-2">まとめ：家族アルバム「みてね」のMIXIが運営し、3機種から選べるサービスです。大手運営の安心感を重視するご家庭に適しています</h2>
             <ul className="space-y-1.5 text-sm text-g700">
-              <li>・<strong>強み</strong>：東証プライム上場の<strong>MIXI（旧ミクシィ）</strong>運営で安心感／用途で選べる<strong>3機種（MG05・トーク・トークPlus）</strong></li>
-              <li>・<strong>弱み</strong>：トーク・通話まで使うと上位プランで月額が上がる／位置精度に特化した設計ではない</li>
-              <li>・<strong>料金</strong>：月額<strong>528円〜748円</strong>（プラン・機種による）</li>
-              <li>・<strong>向く人</strong>：大手運営の安心感を重視／将来トークも使いたい家庭。<strong>向かない人</strong>：とにかく最安・位置精度を最優先したい家庭</li>
+              <li>・<strong>強み</strong>：東証プライム上場の<strong>MIXI（旧ミクシィ）</strong>が運営しています。用途に応じて<strong>3機種（MG05・トーク・トークPlus）</strong>から選べます。</li>
+              <li>・<strong>弱み</strong>：トーク・通話を使う場合は上位プランとなり、月額が上がります。位置精度に特化した設計ではありません。</li>
+              <li>・<strong>料金</strong>：月額<strong>528円〜748円</strong>です（プラン・機種により異なります）。</li>
+              <li>・<strong>適したご家庭</strong>：大手企業が運営する安心感を重視するご家庭、将来トーク機能も使いたいご家庭です。<strong>適さないご家庭</strong>：最安値や位置精度を最優先するご家庭です。</li>
             </ul>
-            <p className="text-xs text-g500 mt-3">出典：みてねみまもりGPS公式（製品・料金ページ）。料金・仕様は変更される場合があるため申込前に公式をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
+            <p className="text-xs text-g500 mt-3">出典：みてねみまもりGPS公式（製品・料金ページ）。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
           </div>
 
           <h2 className="section-title">みてねみまもりGPSとは</h2>
           <p className="text-g600 mb-6">
             みてねみまもりGPSは、MIXI（旧ミクシィ）が提供する子供用GPS端末です。
-            家族向けアプリ「みてね」の知見を活かした使いやすさで、利用者数No.1を誇ります。
-            月額528円からの手頃な料金設定と、最大2ヶ月持つバッテリーが特徴。
-            2025年にはトークPlus機能も追加され、お子さまとのコミュニケーションも可能になりました。
+            家族向けアプリ「みてね」の知見を活かした使いやすさが評価され、利用者数No.1とされています。
+            月額528円からの手頃な料金設定と、最大2カ月持続するバッテリーが特徴です。
+            2025年にはトークPlus機能が追加され、お子さまとのコミュニケーションも可能になりました。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -82,7 +82,7 @@ export default function MitenePage() {
                     ['月額料金', '528円（税込）/ 748円（トークPlus）'],
                     ['本体価格', '5,280円（税込）'],
                     ['測位方式', 'GPS+GLONASS+みちびき+Wi-Fi'],
-                    ['バッテリー', '最大約2ヶ月'],
+                    ['バッテリー', '最大約2カ月'],
                     ['通信回線', 'SoftBank LTE'],
                     ['防水', '生活防水（IPX5）'],
                     ['サイズ', '約48.5×48.5×15mm'],
@@ -115,7 +115,7 @@ export default function MitenePage() {
 
           {/* 機種比較 */}
           <h2 className="section-title">3機種の違い（MG05 / トーク / トークPlus）</h2>
-          <p className="text-g600 mb-4 text-sm">みてねみまもりGPSには現在3つの型番があります。トーク機能の要否と防犯ブザーの有無で選ぶのが基本です（2026年6月14日 公式確認）。</p>
+          <p className="text-g600 mb-4 text-sm">みてねみまもりGPSには、現在3つの型番があります。トーク機能の要否と防犯ブザーの有無で選ぶことが基本です（2026年6月14日 公式サイトにて確認）。</p>
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-sm">
               <thead>
@@ -127,32 +127,32 @@ export default function MitenePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">MG05</td><td className="py-2 px-2">約2,904円/月528円</td><td className="py-2 px-2">なし(お知らせボタン)</td><td className="py-2 px-2">最安。位置確認中心の家庭向け。最大約2ヶ月電池</td></tr>
-                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トーク(MT05)</td><td className="py-2 px-2">約4,280円/月748円</td><td className="py-2 px-2">あり(音声40秒・無制限)</td><td className="py-2 px-2">双方向ボイスメッセージ対応。共働き・外出が多い家庭向け</td></tr>
-                <tr><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トークPlus(MB06)</td><td className="py-2 px-2">約5,280円/月748円</td><td className="py-2 px-2">あり</td><td className="py-2 px-2">最新。防犯ブザー(約85dB)+ディスプレイ搭載。やや大型89g・電池最大約3週間</td></tr>
+                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">MG05</td><td className="py-2 px-2">約2,904円/月528円</td><td className="py-2 px-2">なし(お知らせボタン)</td><td className="py-2 px-2">最安。位置確認中心のご家庭向け。電池最大約2カ月</td></tr>
+                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トーク(MT05)</td><td className="py-2 px-2">約4,280円/月748円</td><td className="py-2 px-2">あり(音声40秒・無制限)</td><td className="py-2 px-2">双方向ボイスメッセージ対応。共働き・外出が多いご家庭向け</td></tr>
+                <tr><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トークPlus(MB06)</td><td className="py-2 px-2">約5,280円/月748円</td><td className="py-2 px-2">あり</td><td className="py-2 px-2">最新機種。防犯ブザー(約85dB)+ディスプレイ搭載。やや大型の89g・電池最大約3週間</td></tr>
               </tbody>
             </table>
           </div>
           <div className="card-hover p-5 mb-8">
-            <h3 className="font-bold text-g800 mb-2">どれを選ぶ？</h3>
+            <h3 className="font-bold text-g800 mb-2">機種の選び方</h3>
             <ul className="space-y-2 text-sm text-g700">
-              <li>・<strong>在宅家庭・コスト重視</strong> → MG05(お知らせボタンのみで十分・最安)</li>
-              <li>・<strong>子どもと連絡を取りたい</strong> → トーク(MT05)。音声メッセージで「今どこ？」のやりとりが可能</li>
-              <li>・<strong>防犯ブザーも1台にまとめたい</strong> → トークPlus(MB06)。ただし89gとやや重く、電池は約3週間と短め。学校では音・画面が友人の関心を引く可能性も</li>
+              <li>・<strong>在宅のご家庭・コスト重視</strong> → MG05が適しています（お知らせボタンのみで足りる場合に適した最安の機種です）。</li>
+              <li>・<strong>お子さまと連絡を取りたい</strong> → トーク（MT05）が適しています。音声メッセージで「今どこ？」といったやりとりが可能です。</li>
+              <li>・<strong>防犯ブザーも1台にまとめたい</strong> → トークPlus（MB06）が適しています。ただし、89gとやや重く、電池は約3週間と短めです。また、学校では音や画面が友人の関心を引く可能性があります。</li>
             </ul>
-            <p className="text-xs text-g400 mt-3">全機種ともL1/L5デュアルバンドGNSS+Wi-Fi+基地局測位。見守る大人の人数は無制限。出典: みてねみまもりGPS公式(family-album.com)2026年6月14日確認</p>
+            <p className="text-xs text-g400 mt-3">全機種ともL1/L5デュアルバンドGNSS+Wi-Fi+基地局測位に対応しています。見守る大人の人数に制限はありません。出典: みてねみまもりGPS公式(family-album.com)2026年6月14日確認</p>
           </div>
 
           {/* Features */}
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を確認。GPS+Wi-Fiの複合測位で高精度。' },
-              { icon: '📝', title: '移動履歴の自動記録', desc: '1日の移動経路を自動で記録。通学路の確認や行動パターンの把握に。' },
-              { icon: '🔔', title: 'エリア通知', desc: '学校や自宅など設定したエリアへの出入りを自動通知。到着・出発がすぐわかる。' },
-              { icon: '💬', title: 'トークPlus機能', desc: '音声メッセージや定型文でお子さまとやりとり。キーホルダーのボタンで簡単送信。' },
-              { icon: '🔋', title: 'バッテリー長持ち', desc: '最大2ヶ月の長寿命バッテリー。充電の手間を大幅に削減。' },
-              { icon: '👨‍👩‍👧', title: '複数人見守り', desc: '家族みんなでお子さまの位置を確認可能。見守り人の追加は無料。' },
+              { icon: '📍', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を確認できます。GPS+Wi-Fiの複合測位により、高い精度を実現しています。' },
+              { icon: '📝', title: '移動履歴の自動記録', desc: '1日の移動経路を自動で記録します。通学路の確認や行動パターンの把握に役立ちます。' },
+              { icon: '🔔', title: 'エリア通知', desc: '学校や自宅など、設定したエリアへの出入りを自動で通知します。到着・出発をすぐに把握できます。' },
+              { icon: '💬', title: 'トークPlus機能', desc: '音声メッセージや定型文で、お子さまとやりとりできます。キーホルダーのボタンで簡単に送信できます。' },
+              { icon: '🔋', title: 'バッテリー長持ち', desc: 'バッテリーは最大2カ月持続し、充電の手間を大幅に削減できます。' },
+              { icon: '👨‍👩‍👧', title: '複数人見守り', desc: 'ご家族全員でお子さまの位置を確認できます。見守り人の追加は無料です。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>
@@ -169,8 +169,8 @@ export default function MitenePage() {
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額528円〜の業界最安級の料金</li>
-                <li>・バッテリー最大2ヶ月で充電の手間が少ない</li>
-                <li>・利用者数No.1の安心感と実績</li>
+                <li>・バッテリー最大2カ月で充電の手間が少ない</li>
+                <li>・利用者数No.1とされる実績</li>
                 <li>・「みてね」アプリの使いやすいUI</li>
                 <li>・トークPlus対応でコミュニケーションも可能</li>
                 <li>・GPS+Wi-Fi測位で位置精度が高い</li>
@@ -193,11 +193,11 @@ export default function MitenePage() {
           <h2 className="section-title">使い方・設定手順</h2>
           <div className="space-y-4 mb-8 max-w-2xl">
             {[
-              { step: 1, title: '本体を購入', desc: '公式サイトまたはECサイトで本体（5,280円）を購入。' },
-              { step: 2, title: 'アプリをダウンロード', desc: 'iOS/Androidの「みてねみまもりGPS」アプリをインストール。' },
-              { step: 3, title: 'アカウント登録・端末登録', desc: 'アプリの案内に従い、GPS端末を登録。QRコードで簡単セットアップ。' },
-              { step: 4, title: '見守り設定', desc: 'エリア通知や更新頻度を設定。見守り人の追加も可能。' },
-              { step: 5, title: 'ランドセルに入れて完了', desc: 'お子さまのランドセルやポケットに入れれば見守りスタート。' },
+              { step: 1, title: '本体を購入', desc: '公式サイトまたはECサイトで本体（5,280円）を購入します。' },
+              { step: 2, title: 'アプリをダウンロード', desc: 'iOS/Android向けの「みてねみまもりGPS」アプリをインストールします。' },
+              { step: 3, title: 'アカウント登録・端末登録', desc: 'アプリの案内に従い、GPS端末を登録します。QRコードを読み取るだけで設定できます。' },
+              { step: 4, title: '見守り設定', desc: 'エリア通知や更新頻度を設定します。見守り人の追加も可能です。' },
+              { step: 5, title: 'ランドセルに入れて完了', desc: 'お子さまのランドセルやポケットに入れると、見守りが始まります。' },
             ].map((s) => (
               <div key={s.step} className="flex gap-4 items-start card-hover p-4">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm">
@@ -212,23 +212,23 @@ export default function MitenePage() {
           </div>
 
           {/* FAQ */}
-          <h2 className="section-title">こんな家庭におすすめ / 向かない家庭</h2>
+          <h2 className="section-title">おすすめのご家庭／適さないご家庭</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-2">おすすめの家庭</h3>
+              <h3 className="font-bold text-blue mb-2">おすすめのご家庭</h3>
               <ul className="space-y-1.5 text-sm text-g700">
-                <li>・大手（MIXI）運営の安心感を重視したい</li>
-                <li>・家族アルバム「みてね」を使っていて連携したい</li>
-                <li>・まずGPSで始めて、将来トーク・通話も検討したい（3機種から選べる）</li>
-                <li>・家族みんなで見守りを共有したい</li>
+                <li>・大手（MIXI）運営の安心感を重視したいご家庭</li>
+                <li>・家族アルバム「みてね」を利用しており、連携したいご家庭</li>
+                <li>・まずGPSから始め、将来トーク・通話も検討したいご家庭（3機種から選択可能）</li>
+                <li>・ご家族全員で見守りを共有したいご家庭</li>
               </ul>
             </div>
             <div className="card-hover p-5">
-              <h3 className="font-bold text-orange-dark mb-2">向かない家庭</h3>
+              <h3 className="font-bold text-orange-dark mb-2">適さないご家庭</h3>
               <ul className="space-y-1.5 text-sm text-g700">
-                <li>・とにかく月額・本体を最安に抑えたい</li>
-                <li>・屋内・地下での位置精度を最優先したい（→3測位機種へ）</li>
-                <li>・最初からトーク・通話が必須（上位プラン前提になる）</li>
+                <li>・月額・本体価格を最安に抑えたいご家庭</li>
+                <li>・屋内・地下での位置精度を最優先したいご家庭（3測位対応機種をおすすめします）</li>
+                <li>・当初からトーク・通話が必須のご家庭（上位プランが前提となります）</li>
               </ul>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function MitenePage() {
           {/* CTA */}
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みてねみまもりGPSが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">月額528円〜、利用者数No.1のGPS端末で安心の見守りを始めましょう。</p>
+            <p className="text-g600 mb-6 text-sm">月額528円〜、利用者数No.1とされるGPS端末です。他機種との比較もあわせてご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/bot-talk/" className="btn-accent">次のレビュー: BoTトーク</Link>

@@ -22,7 +22,7 @@ export default function SectionIndex({ section, name, lead }: { section: string;
       <Breadcrumb items={[{ name }]} />
       <div className="mx-auto max-w-6xl px-4 pt-2">
         <h1 className="text-2xl md:text-3xl font-bold mb-3">{name}</h1>
-        <p className="text-g500">{lead}（全{pages.length}ページ）</p>
+        <p className="text-g500">{lead}。全{pages.length}ページを掲載しています。</p>
       </div>
     </>
   );

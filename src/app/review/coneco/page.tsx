@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'coneco（コネコ）の評判・口コミは？【2026年】1分間隔追跡GPSの実力・料金を解説',
   description:
-    'coneco（カーメイト）の機能・料金・口コミを徹底レビュー。1分間隔のリアルタイム追跡、車載機器メーカーの高精度測位技術。位置情報の更新頻度を重視する方に最適。',
+    'coneco（カーメイト）の機能・料金・口コミをレビューします。1分間隔のリアルタイム追跡と、車載機器メーカーの高精度な測位技術が特長です。位置情報の更新頻度を重視する方に適した機種です。',
 };
 
 const faqData = [
-  { q: 'conecoの位置更新頻度は？', a: '最短1分間隔でリアルタイム追跡が可能です。他の多くのGPS端末が3〜5分間隔である中、業界トップクラスの更新頻度です。' },
-  { q: 'conecoの月額料金はいくら？', a: '月額480円（税込）です。本体価格は別途必要ですが、月額料金は業界でも低価格帯に位置しています。' },
-  { q: 'カーメイトはどんな会社？', a: 'カーメイトは車載用品メーカーとして50年以上の歴史を持つ東証上場企業です。GPS測位やセンサー技術のノウハウを活かした高精度な位置情報端末を開発しています。' },
-  { q: 'バッテリーはどのくらい持ちますか？', a: '1分間隔の高頻度更新時は約3〜4日、通常更新（3分間隔）で約1〜2週間持ちます。更新頻度とバッテリー持ちのバランスを調整できます。' },
-  { q: '防水性能はありますか？', a: 'IPX4相当の生活防水対応です。多少の雨なら問題ありませんが、水没には対応していません。' },
-  { q: 'エリア通知機能はありますか？', a: 'はい、登録したエリアへの出入りを自動通知します。学校や塾への到着・出発の確認に便利です。' },
+  { q: 'conecoの位置更新頻度はどのくらいですか？', a: '最短1分間隔でリアルタイム追跡が可能です。他の多くのGPS端末が3〜5分間隔である中、業界トップクラスの更新頻度です。' },
+  { q: 'conecoの月額料金はいくらですか？', a: '月額480円（税込）です。本体価格は別途必要ですが、月額料金は業界でも低価格帯に位置しています。' },
+  { q: 'カーメイトはどのような会社ですか？', a: 'カーメイトは車載用品メーカーとして50年以上の歴史を持つ東証上場企業です。GPS測位やセンサー技術のノウハウを活かした高精度な位置情報端末を開発しています。' },
+  { q: 'バッテリーはどのくらい持ちますか？', a: '1分間隔の高頻度更新時は約3〜4日、通常更新（3分間隔）では約1〜2週間持ちます。更新頻度とバッテリー持ちのバランスを調整できます。' },
+  { q: '防水性能はありますか？', a: 'IPX4相当の生活防水に対応しています。多少の雨であれば問題ありませんが、水没には対応していません。' },
+  { q: 'エリア通知機能はありますか？', a: 'はい。登録したエリアへの出入りを自動で通知します。学校や塾への到着・出発の確認に役立ちます。' },
 ];
 
 const faqJsonLd = {
@@ -31,7 +31,7 @@ export default function ConecoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "coneco 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "coneco のレビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'coneco' }]} />
 
       {/* Hero */}
@@ -42,7 +42,7 @@ export default function ConecoPage() {
             <span className="tag-pill bg-blue text-white">高精度測位</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            coneco 徹底レビュー
+            conecoのレビュー
           </h1>
           <p className="text-g600 text-lg">カーメイト提供 | 1分間隔リアルタイム追跡 | 車載技術の高精度GPS</p>
         </div>
@@ -54,9 +54,9 @@ export default function ConecoPage() {
           <h2 className="section-title">conecoとは</h2>
           <p className="text-g600 mb-6">
             conecoは、車載用品メーカー大手のカーメイトが提供する子供用GPS端末です。
-            最大の特徴は業界トップクラスの1分間隔リアルタイム追跡。
-            車載機器で培ったGPS測位技術を子供向けに最適化しており、高い位置精度を誇ります。
-            「今どこにいるか」をより正確に、よりリアルタイムに知りたい保護者に選ばれています。
+            最大の特徴は、業界トップクラスの1分間隔のリアルタイム追跡です。
+            車載機器で培ったGPS測位技術を子供向けに最適化しており、高い位置精度を備えています。
+            お子さまの現在地を、より正確かつリアルタイムに把握したい保護者に選ばれています。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -88,11 +88,11 @@ export default function ConecoPage() {
               <div className="space-y-3">
                 <div className="bg-orange-light rounded-xl p-4">
                   <p className="font-bold text-orange">coneco（1分間隔）</p>
-                  <p className="text-sm text-g600 mt-1">ほぼリアルタイムで移動を把握。帰り道の様子がよくわかる。</p>
+                  <p className="text-sm text-g600 mt-1">ほぼリアルタイムで移動を把握でき、帰り道の様子を詳しく確認できます。</p>
                 </div>
                 <div className="bg-blue-light rounded-xl p-4">
                   <p className="font-bold text-blue">一般的なGPS（3〜5分間隔）</p>
-                  <p className="text-sm text-g600 mt-1">大まかな位置は把握可能。タイムラグあり。</p>
+                  <p className="text-sm text-g600 mt-1">大まかな位置は把握できますが、タイムラグがあります。</p>
                 </div>
               </div>
             </div>
@@ -102,12 +102,12 @@ export default function ConecoPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '⚡', title: '1分間隔追跡', desc: '業界トップクラスの更新頻度。お子さまの移動をほぼリアルタイムで把握。' },
-              { icon: '📍', title: '高精度測位', desc: '車載機器メーカーの技術力で高い位置精度を実現。' },
-              { icon: '📝', title: '移動履歴', desc: '細かい間隔での位置記録で、通学路を詳細に把握可能。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録エリアの出入りを自動通知。到着・出発がすぐわかる。' },
-              { icon: '🔋', title: '更新頻度切り替え', desc: '1分・3分・5分から選択可能。バッテリーとのバランス調整。' },
-              { icon: '🎒', title: '超軽量設計', desc: '約33gの軽量ボディ。ランドセルに入れても負担なし。' },
+              { icon: '⚡', title: '1分間隔追跡', desc: '業界トップクラスの更新頻度で、お子さまの移動をほぼリアルタイムで把握できます。' },
+              { icon: '📍', title: '高精度測位', desc: '車載機器メーカーの技術力により、高い位置精度を実現しています。' },
+              { icon: '📝', title: '移動履歴', desc: '細かい間隔で位置を記録するため、通学路を詳細に把握できます。' },
+              { icon: '🔔', title: 'エリア通知', desc: '登録したエリアの出入りを自動で通知し、到着・出発をすぐに確認できます。' },
+              { icon: '🔋', title: '更新頻度切り替え', desc: '1分・3分・5分から選択でき、バッテリー持ちとのバランスを調整できます。' },
+              { icon: '🎒', title: '軽量設計', desc: '約33gの軽量ボディで、ランドセルに入れても負担になりません。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>
@@ -123,22 +123,22 @@ export default function ConecoPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・1分間隔の業界最速リアルタイム追跡</li>
+                <li>・1分間隔の業界最速のリアルタイム追跡</li>
                 <li>・車載機器メーカーの高い測位精度</li>
                 <li>・月額480円の低価格</li>
-                <li>・約33gの超軽量コンパクト設計</li>
-                <li>・更新頻度を柔軟に変更可能</li>
-                <li>・東証上場企業の安心感</li>
+                <li>・約33gの軽量・コンパクト設計</li>
+                <li>・更新頻度を柔軟に変更できます</li>
+                <li>・東証上場企業が提供</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・1分間隔使用時はバッテリー消費が速い</li>
-                <li>・トーク・メッセージ機能は非対応</li>
-                <li>・SOSボタンは搭載されていない</li>
-                <li>・防水性能はIPX4で他機種よりやや低い</li>
-                <li>・不審者情報連動などの防犯機能はなし</li>
+                <li>・1分間隔での使用時は、バッテリー消費が速くなります</li>
+                <li>・トーク・メッセージ機能には対応していません</li>
+                <li>・SOSボタンは搭載されていません</li>
+                <li>・防水性能はIPX4で、他機種よりやや低くなっています</li>
+                <li>・不審者情報との連動などの防犯機能はありません</li>
               </ul>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function ConecoPage() {
           {/* CTA */}
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">conecoが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">1分間隔のリアルタイム追跡で、お子さまの「今」がすぐわかります。</p>
+            <p className="text-g600 mb-6 text-sm">1分間隔のリアルタイム追跡により、お子さまの現在地をすぐに確認できます。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/myfirst-fone/" className="btn-accent">次のレビュー: myFirst Fone</Link>

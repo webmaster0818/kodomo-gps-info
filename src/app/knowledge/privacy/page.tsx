@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供GPS プライバシーと位置情報の取扱い | 各社比較',
   description:
-    '子供GPS端末のプライバシーと位置情報の取扱いを各社比較。データの保存期間、第三者提供の有無、子供のプライバシーとの付き合い方を詳しく解説します。',
+    '子供GPS端末のプライバシーと位置情報の取扱いを各社で比較します。データの保存期間、第三者提供の有無、お子さまのプライバシーへの配慮の仕方を解説します。',
 };
 
 const faqData = [
   { q: '子供の位置情報データは安全ですか？', a: '主要メーカーはすべて暗号化通信を使用し、位置情報データを厳格に管理しています。ただし、各社のプライバシーポリシーを事前に確認することをおすすめします。' },
-  { q: '位置情報のデータはどれくらい保存される？', a: '機種により異なりますが、1ヶ月〜3ヶ月が一般的です。みてねみまもりGPSは約90日、BoTトークは約1ヶ月の移動履歴を保存します。' },
-  { q: '位置情報が第三者に提供されることはある？', a: '主要メーカーは個人を特定できる形での第三者提供を行っていません。ただし、統計データとして匿名化した上で活用する場合があると明記しているメーカーもあります。' },
-  { q: '子供が大きくなったらGPSを外すべき？', a: '子供の成長に合わせて使い方を変えることが大切です。小学校高学年になったら「いつでも見ているわけではない」と伝え、徐々に確認頻度を減らしていくのが理想です。' },
-  { q: '子供にGPSを持たせていることを伝えるべき？', a: 'はい、隠さず伝えることをおすすめします。「あなたの安全のため」と説明し、信頼関係を築きましょう。秘密にすると、知られた時に不信感につながります。' },
-  { q: '退会したらデータは削除される？', a: 'ほとんどのサービスでは、退会後に個人データが削除されます。具体的な削除期間は各社のプライバシーポリシーで確認できます。' },
+  { q: '位置情報のデータはどれくらい保存されますか？', a: '機種により異なりますが、1カ月〜3カ月が一般的です。みてねみまもりGPSは約90日、BoTトークは約1カ月の移動履歴を保存します。' },
+  { q: '位置情報が第三者に提供されることはありますか？', a: '主要メーカーは、個人を特定できる形での第三者提供を行っていません。ただし、匿名化したうえで統計データとして活用する場合があると明記しているメーカーもあります。' },
+  { q: 'お子さまが大きくなったら、GPSを外すべきですか？', a: 'お子さまの成長に合わせて使い方を変えることが大切です。小学校高学年になったら「いつでも見ているわけではない」と伝え、徐々に確認頻度を減らしていくことをおすすめします。' },
+  { q: 'お子さまにGPSを持たせていることを伝えるべきですか？', a: 'はい。隠さずに伝えることをおすすめします。「あなたの安全のため」と説明し、信頼関係を築くことが大切です。秘密にしていると、知られたときに不信感につながります。' },
+  { q: '退会したらデータは削除されますか？', a: 'ほとんどのサービスでは、退会後に個人データが削除されます。具体的な削除期間は各社のプライバシーポリシーで確認できます。' },
 ];
 
 const faqJsonLd = {
@@ -28,18 +28,18 @@ const faqJsonLd = {
 };
 
 const privacyComparison = [
-  { name: 'みてねみまもりGPS', encryption: '暗号化通信', retention: '約90日', thirdParty: '匿名統計のみ', deletion: '退会後削除' },
-  { name: 'BoTトーク', encryption: '暗号化通信', retention: '約30日', thirdParty: '匿名統計のみ', deletion: '退会後削除' },
-  { name: 'あんしんウォッチャー', encryption: '暗号化通信', retention: '約90日', thirdParty: 'なし', deletion: '退会後削除' },
-  { name: 'ソラノメ', encryption: '暗号化通信', retention: '約30日', thirdParty: '匿名統計のみ', deletion: '退会後削除' },
-  { name: 'みもり', encryption: '暗号化通信', retention: '約90日', thirdParty: '不審者情報連動', deletion: '退会後削除' },
+  { name: 'みてねみまもりGPS', encryption: '暗号化通信', retention: '約90日', thirdParty: '匿名統計のみ', deletion: '退会後に削除' },
+  { name: 'BoTトーク', encryption: '暗号化通信', retention: '約30日', thirdParty: '匿名統計のみ', deletion: '退会後に削除' },
+  { name: 'あんしんウォッチャー', encryption: '暗号化通信', retention: '約90日', thirdParty: 'なし', deletion: '退会後に削除' },
+  { name: 'ソラノメ', encryption: '暗号化通信', retention: '約30日', thirdParty: '匿名統計のみ', deletion: '退会後に削除' },
+  { name: 'みもり', encryption: '暗号化通信', retention: '約90日', thirdParty: '不審者情報連動', deletion: '退会後に削除' },
 ];
 
 export default function PrivacyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS プライバシーと位置情報の取扱い", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS プライバシーと位置情報の取扱い", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: 'プライバシー' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -51,7 +51,7 @@ export default function PrivacyPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供GPS プライバシーと位置情報の取扱い
           </h1>
-          <p className="text-g600 text-lg">各社の位置情報管理体制と子供のプライバシーとの付き合い方</p>
+          <p className="text-g600 text-lg">各社の位置情報の管理体制と、お子さまのプライバシーへの配慮</p>
         </div>
       </section>
 
@@ -92,13 +92,13 @@ export default function PrivacyPage() {
             </p>
           </div>
 
-          <h2 className="section-title">子供のプライバシーとの付き合い方</h2>
+          <h2 className="section-title">お子さまのプライバシーへの配慮</h2>
           <div className="space-y-4 mb-8">
             {[
-              { title: 'GPSを持たせていることを隠さない', desc: '子供に「お守りとして持ってね」と説明しましょう。秘密にすると、知られた時に信頼関係が崩れます。' },
-              { title: '見守りの目的を説明する', desc: '「監視」ではなく「安全のため」という目的を丁寧に伝えましょう。子供が納得していることが大切です。' },
-              { title: '成長に合わせて使い方を変える', desc: '低学年は常時確認、中学年は登下校時のみ、高学年は緊急時のみ確認するなど、段階的に変化させましょう。' },
-              { title: '位置情報の確認頻度を意識する', desc: '5分おきにチェックする必要はありません。エリア通知を活用し、異常がなければ確認しない姿勢も大切です。' },
+              { title: 'GPSを持たせていることを隠さない', desc: 'お子さまに「お守りとして持ってね」と説明することをおすすめします。秘密にしていると、知られたときに信頼関係が損なわれます。' },
+              { title: '見守りの目的を説明する', desc: '「監視」ではなく「安全のため」という目的を丁寧に伝えます。お子さまが納得していることが大切です。' },
+              { title: '成長に合わせて使い方を変える', desc: '低学年は常時確認、中学年は登下校時のみ、高学年は緊急時のみ確認するなど、段階的に変化させることをおすすめします。' },
+              { title: '位置情報の確認頻度を意識する', desc: '5分おきに確認する必要はありません。エリア通知を活用し、異常がなければ確認しない姿勢も大切です。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5">
                 <h3 className="font-bold text-g800 text-sm mb-1">{item.title}</h3>
@@ -116,8 +116,8 @@ export default function PrivacyPage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">安心して使えるGPS端末を選ぼう</h2>
-            <p className="text-g600 mb-6 text-sm">プライバシーに配慮した使い方で、お子さまの安全を守りましょう。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">安心して使えるGPS端末の選び方</h2>
+            <p className="text-g600 mb-6 text-sm">プライバシーに配慮した使い方で、お子さまの安全を守ることが大切です。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/knowledge/overprotective/" className="btn-primary">過保護にならない使い方</Link>
               <Link href="/" className="btn-accent">おすすめランキング</Link>

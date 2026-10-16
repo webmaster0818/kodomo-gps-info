@@ -5,11 +5,11 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    default: '子供見守りGPS最新情報 | 2025年おすすめGPS端末比較ランキング',
+    default: '子供見守りGPS最新情報 | 2026年おすすめGPS端末比較ランキング',
     template: '%s | 子供見守りGPS最新情報',
   },
   description:
-    '子供用見守りGPS端末13機種を徹底比較。みてねみまもりGPS、BoTトーク、あんしんウォッチャーなど人気機種の料金・機能・口コミを詳しく紹介。月額528円〜、お子さまの安全を守る最適なGPSが見つかります。',
+    '子供用見守りGPS端末13機種を、公式サイトの情報にもとづいて比較しています。みてねみまもりGPS、BoTトーク、あんしんウォッチャーなど主要機種の料金・機能・口コミをご紹介します。月額528円〜。',
   keywords: [
     '子供 GPS',
     '見守り GPS',

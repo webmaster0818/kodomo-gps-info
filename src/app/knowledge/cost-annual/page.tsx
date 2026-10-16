@@ -5,22 +5,22 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ',
   description:
-    '子供用GPS端末の年間コストを徹底比較。主要6機種の初期費用・月額料金・年間トータルコストを一覧表で紹介。2年・3年の長期コスト比較やコスパの良い選び方、隠れコストまで解説します。',
+    '子供用GPS端末の年間コストを比較します。主要6機種の初期費用・月額料金・年間の総費用を一覧表で紹介し、2年・3年の長期費用の比較、費用対効果の高い選び方、見落としやすい費用まで解説します。',
   keywords: ['子供GPS', '年間コスト', '比較', 'ランニングコスト', '月額料金', '初期費用'],
   openGraph: {
     images: ['/og.png'],
     title: '子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ',
-    description: '子供用GPS端末の年間コストを徹底比較。主要6機種の初期費用・月額料金・年間トータルコストを一覧表で紹介。',
+    description: '子供用GPS端末の年間コストを比較します。主要6機種の初期費用・月額料金・年間の総費用を一覧表で紹介します。',
   },
 };
 
 const faqData = [
-  { q: '子供用GPSの年間コストはどれくらいですか？', a: '最安クラスで年間約10,000〜12,000円（初期費用含む）、標準的な機種で約13,000〜18,000円、多機能な腕時計型で約25,000〜35,000円が目安です。2年目以降は月額料金のみのため、初年度より安くなります。' },
-  { q: '初期費用が無料のGPS端末はありますか？', a: 'あんしんウォッチャー LE（au）は本体代が実質無料のキャンペーンを実施していることがあります。ただし月額料金や契約期間の条件がある場合があるため、総コストで比較することが重要です。' },
-  { q: '月額料金の支払い方法は？', a: 'クレジットカード払いが主流です。一部の機種ではキャリア決済にも対応しています。年払いで割引になるサービスもあるため、長期利用が前提なら年払いを検討しましょう。' },
-  { q: '解約金はかかりますか？', a: '多くのGPS端末は最低利用期間がなく、解約金は発生しません。ただし一部の機種では契約から一定期間内の解約で違約金がかかるケースがあるため、契約前に確認しましょう。' },
-  { q: 'バッテリー劣化で買い替えが必要になる時期は？', a: '一般的に2〜3年でバッテリーの持ちが短くなります。バッテリー交換はできない機種がほとんどのため、本体ごとの買い替えになります。月額契約は引き継げるケースが多いです。' },
-  { q: 'きょうだいで使う場合の費用は？', a: '各社とも端末ごとに月額料金がかかります。2台目以降の割引がある機種は少ないため、基本的には台数分の費用が必要です。保護者アプリは1つで複数台管理できるのが一般的です。' },
+  { q: '子供用GPSの年間コストはどれくらいですか？', a: '最安クラスで年間約10,000〜12,000円（初期費用含む）、標準的な機種で約13,000〜18,000円、多機能な腕時計型で約25,000〜35,000円が目安です。2年目以降は月額料金のみとなるため、初年度より安くなります。' },
+  { q: '初期費用が無料のGPS端末はありますか？', a: 'あんしんウォッチャー LE（au）は本体代が実質無料のキャンペーンを実施していることがあります。ただし、月額料金や契約期間に条件が設けられている場合があるため、総費用で比較することが重要です。' },
+  { q: '月額料金の支払い方法を教えてください。', a: 'クレジットカード払いが主流です。一部の機種では、キャリア決済にも対応しています。年払いで割引となるサービスもあるため、長期利用を前提とする場合は年払いをご検討ください。' },
+  { q: '解約金はかかりますか？', a: '多くのGPS端末は最低利用期間がなく、解約金は発生しません。ただし、一部の機種では契約から一定期間内に解約すると違約金がかかる場合があるため、契約前にご確認ください。' },
+  { q: 'バッテリー劣化により買い替えが必要になる時期の目安を教えてください。', a: '一般的に2〜3年でバッテリーの持ちが短くなります。バッテリー交換ができない機種がほとんどのため、本体ごと買い替えることになります。月額契約は引き継げる場合が多くあります。' },
+  { q: 'きょうだいで使う場合の費用を教えてください。', a: '各社とも端末ごとに月額料金がかかります。2台目以降の割引がある機種は少ないため、基本的には台数分の費用が必要です。保護者用アプリは、1つで複数台を管理できるのが一般的です。' },
 ];
 
 const faqJsonLd = {
@@ -42,17 +42,17 @@ const costData = [
 ];
 
 const hiddenCosts = [
-  { title: '充電ケーブル予備', cost: '500〜1,000円', desc: '自宅用と予備で2本あると安心。USB Type-C対応が主流。' },
-  { title: '保護ケース・カバー', cost: '500〜2,000円', desc: '落下防止や防水強化のためのシリコンケース。必須ではないが、あると端末が長持ち。' },
-  { title: 'ストラップ・キーホルダー', cost: '300〜800円', desc: 'ランドセルやカバンに取り付けるためのアクセサリー。紛失防止に有効。' },
-  { title: 'バッテリー劣化による買い替え', cost: '5,000〜7,000円（2〜3年後）', desc: 'バッテリー交換不可の機種が多く、本体ごとの買い替えが必要。月額はそのまま。' },
+  { title: '充電ケーブル予備', cost: '500〜1,000円', desc: '自宅用と予備の2本があると安心です。USB Type-C対応が主流です。' },
+  { title: '保護ケース・カバー', cost: '500〜2,000円', desc: '落下防止や防水性の強化を目的としたシリコンケースです。必須ではありませんが、装着すると端末が長持ちします。' },
+  { title: 'ストラップ・キーホルダー', cost: '300〜800円', desc: 'ランドセルやカバンに取り付けるためのアクセサリーです。紛失防止に有効です。' },
+  { title: 'バッテリー劣化による買い替え', cost: '5,000〜7,000円（2〜3年後）', desc: 'バッテリー交換ができない機種が多く、本体ごとの買い替えが必要です。月額料金は変わりません。' },
 ];
 
 export default function CostAnnualPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '年間コスト比較' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -64,7 +64,7 @@ export default function CostAnnualPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供用GPSの年間コスト比較
           </h1>
-          <p className="text-g600 text-lg">月額料金と初期費用の総まとめ｜長期コストで賢く選ぶ</p>
+          <p className="text-g600 text-lg">月額料金と初期費用をまとめ、長期的な費用にもとづく選び方を解説します。</p>
         </div>
       </section>
 
@@ -74,11 +74,11 @@ export default function CostAnnualPage() {
           <p className="text-g600 mb-6">
             子供用GPS端末のコストは「初期費用（本体代）」と「月額料金（通信費・サービス利用料）」の2つで構成されます。
             初期費用は5,000円〜27,000円、月額料金は528円〜998円と幅があります。
-            1年だけの比較では初期費用の影響が大きくなりますが、2〜3年の長期利用では月額料金の差がトータルコストに大きく影響します。
+            1年間のみの比較では初期費用の影響が大きくなりますが、2〜3年の長期利用では、月額料金の差が総費用に大きく影響します。
           </p>
 
           <h2 className="section-title">主要GPS端末の年間コスト比較表</h2>
-          <p className="text-sm text-g500 mb-3">※ 価格は税込。2026年5月時点の公式サイト掲載価格に基づく。キャンペーン割引は含まず。</p>
+          <p className="text-sm text-g500 mb-3">※ 価格はすべて（税込）で表示しています。2026年5月時点の公式サイト掲載価格にもとづいています。キャンペーン割引は含んでいません。</p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -106,13 +106,13 @@ export default function CostAnnualPage() {
             </table>
           </div>
 
-          <h2 className="section-title">コスト比較のポイント</h2>
+          <h2 className="section-title">費用を比較する際の確認事項</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '💰', title: '1年目は初期費用で差がつく', desc: '本体代が5,280円と11,000円では、月額が同じでも1年目の差は約5,700円。初期費用の安さは短期利用なら大きなメリット。' },
-              { icon: '📊', title: '2年以上なら月額重視', desc: '2年目以降は月額料金のみ。月額528円と748円の差は年間2,640円。3年間で約8,000円の差になります。' },
-              { icon: '🔍', title: '機能と価格のバランス', desc: 'トーク機能付きは月額が高め。トーク不要なら月額528円クラスで十分。必要な機能だけを選ぶのがコスパの秘訣。' },
-              { icon: '⏰', title: '利用期間で選ぶ', desc: '小1〜小6まで使うなら6年分のコスト試算を。途中で買い替えが発生する前提で、2〜3年サイクルの合計額で比較。' },
+              { icon: '💰', title: '1年目は初期費用による差', desc: '本体代が5,280円と11,000円の場合、月額が同じでも1年目の差は約5,700円となります。短期利用の場合、初期費用の安さは大きな利点です。' },
+              { icon: '📊', title: '2年以上の利用は月額料金を重視', desc: '2年目以降は月額料金のみとなります。月額528円と748円の差は年間2,640円で、3年間では約8,000円の差になります。' },
+              { icon: '🔍', title: '機能と価格のバランス', desc: 'トーク機能付きの機種は、月額料金が高めです。トーク機能が不要であれば、月額528円程度の機種で十分です。必要な機能のみを選ぶことが、費用を抑えるための要点です。' },
+              { icon: '⏰', title: '利用期間に応じた選択', desc: '小1〜小6まで使う場合は、6年分の費用を試算することをおすすめします。途中で買い替えが発生する前提で、2〜3年周期の合計額で比較してください。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
                 <p className="text-2xl">{item.icon}</p>
@@ -124,14 +124,14 @@ export default function CostAnnualPage() {
             ))}
           </div>
 
-          <h2 className="section-title">コスパの良い選び方</h2>
+          <h2 className="section-title">費用対効果の高い選び方</h2>
           <div className="space-y-4 mb-8">
             {[
-              { step: 1, title: '必要な機能を洗い出す', desc: '位置確認のみで良いのか、トーク機能も欲しいのか。機能を絞ることで月額を抑えられます。' },
-              { step: 2, title: '利用予定年数を決める', desc: '1年だけなら初期費用重視、3年以上なら月額重視で選ぶとトータルコストが抑えられます。' },
-              { step: 3, title: 'キャンペーンを活用する', desc: '入学シーズン（3〜4月）や年末年始にキャンペーンが多い。本体代割引や月額無料期間を活用。' },
-              { step: 4, title: '年払い割引を確認する', desc: '一部サービスでは年払いで月額が割引に。長期利用が確定しているなら年払いがお得。' },
-              { step: 5, title: '隠れコストも含めて判断する', desc: 'ケースや充電ケーブルの予備、バッテリー劣化による買い替えなど、本体+月額以外の費用も計算に入れましょう。' },
+              { step: 1, title: '必要な機能の洗い出し', desc: '位置確認のみでよいのか、トーク機能も必要なのかを整理します。機能を絞ることで、月額料金を抑えられます。' },
+              { step: 2, title: '利用予定年数の決定', desc: '1年間のみであれば初期費用を、3年以上であれば月額料金を重視して選ぶと、総費用を抑えられます。' },
+              { step: 3, title: 'キャンペーンの活用', desc: '入学シーズン（3〜4月）や年末年始は、キャンペーンが多く実施されます。本体代の割引や月額料金の無料期間の活用をおすすめします。' },
+              { step: 4, title: '年払い割引の確認', desc: '一部のサービスでは、年払いにより月額料金が割引されます。長期利用が確定している場合は、年払いが割安です。' },
+              { step: 5, title: '見落としやすい費用を含めた判断', desc: 'ケースや充電ケーブルの予備、バッテリー劣化による買い替えなど、本体代と月額料金以外の費用も含めて試算することをおすすめします。' },
             ].map((s) => (
               <div key={s.step} className="flex gap-4 items-start card-hover p-4">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue text-white flex items-center justify-center font-bold text-sm">
@@ -145,7 +145,7 @@ export default function CostAnnualPage() {
             ))}
           </div>
 
-          <h2 className="section-title">隠れコスト（本体+月額以外の費用）</h2>
+          <h2 className="section-title">見落としやすい費用（本体代と月額料金以外の費用）</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {hiddenCosts.map((item) => (
               <div key={item.title} className="card-hover p-5">
@@ -165,11 +165,11 @@ export default function CostAnnualPage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">コスパで選ぶなら長期コストで比較</h2>
-            <p className="text-g600 mb-6 text-sm">初期費用だけでなく、2〜3年のトータルコストで比較するのが賢い選び方です。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">長期的な費用による比較</h2>
+            <p className="text-g600 mb-6 text-sm">初期費用だけでなく、2〜3年間の総費用で比較することをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/compare/price/" className="btn-primary">月額料金比較</Link>
-              <Link href="/knowledge/how-to-choose/" className="btn-accent">GPS選び方ガイド</Link>
+              <Link href="/knowledge/how-to-choose/" className="btn-accent">GPS端末の選び方ガイド</Link>
             </div>
           </div>
         </div>

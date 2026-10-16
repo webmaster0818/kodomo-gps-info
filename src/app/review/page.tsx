@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <SectionIndex section="review" name="機種レビュー" lead="子供GPS各機種の料金・機能・口コミのレビュー" />;
+  return <SectionIndex section="review" name="機種レビュー" lead="子供GPS各機種の料金・機能・口コミをまとめたレビュー記事の一覧です" />;
 }

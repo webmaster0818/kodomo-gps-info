@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'まもサーチ3の評判・口コミは？【2026年】最大25人で見守れるGPSの実力・料金を解説',
   description:
-    'まもサーチ3（BBソフトサービス・現行第3世代）を徹底レビュー。最大25人見守り、月額539円、コンパクト設計。大家族に最適なGPS端末の機能・料金・口コミを詳しく解説。',
+    'まもサーチ3（BBソフトサービス・現行第3世代）をレビューします。最大25人で見守りができ、月額539円でコンパクトな設計です。大家族に適したGPS端末の機能・料金・口コミを詳しく解説します。',
 };
 
 const faqData = [
-  { q: 'まもサーチの最大見守り人数は？', a: '最大25人で見守りが可能です。両親・祖父母・親戚・近所の方など、多くの人でお子さまを見守ることができます。これは業界最多クラスの人数です。' },
-  { q: '月額料金はいくらですか？', a: '月額539円（税込）です。契約期間の縛りや解約金はありません。本体代金は別途必要です。' },
-  { q: '第3世代の改良点は？', a: '第3世代ではバッテリー持ちの向上、測位精度の改善、本体のさらなるコンパクト化が実現されています。アプリのUIも改善されより使いやすくなりました。' },
-  { q: 'バッテリーはどれくらい持つ？', a: '最大約1ヶ月です。位置情報の更新頻度設定によって変動します。' },
+  { q: 'まもサーチの最大見守り人数は何人ですか？', a: '最大25人で見守りが可能です。両親・祖父母・親戚・近所の方など、多くの人でお子さまを見守ることができます。これは業界最多クラスの人数です。' },
+  { q: '月額料金はいくらですか？', a: '月額539円（税込）です。契約期間の拘束や解約金はありません。本体代金は別途必要です。' },
+  { q: '第3世代の改良点を教えてください。', a: '第3世代では、バッテリー持ちの向上、測位精度の改善、本体のさらなる小型化が図られています。アプリの操作画面も改善され、より使いやすくなりました。' },
+  { q: 'バッテリーはどのくらい持ちますか？', a: '最大約1カ月です。位置情報の更新頻度の設定によって変動します。' },
   { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認に特化したシンプルなGPS端末です。' },
-  { q: 'どこで購入できますか？', a: '公式サイトやAmazon、家電量販店のオンラインストアで購入可能です。' },
+  { q: 'どこで購入できますか？', a: '公式サイトやAmazon、家電量販店のオンラインストアで購入できます。' },
 ];
 
 const faqJsonLd = {
@@ -31,29 +31,29 @@ export default function MamosearchPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ3 徹底レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ3 レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'まもサーチ' }]} />
 
       <section className="bg-gradient-to-br from-green-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-green text-white">最大25人見守り</span>
+            <span className="tag-pill bg-green text-white">最大25人で見守り</span>
             <span className="tag-pill bg-blue text-white">第3世代</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            まもサーチ 徹底レビュー
+            まもサーチのレビュー
           </h1>
-          <p className="text-g600 text-lg">BBソフトサービス提供 | 月額539円 | コンパクト設計</p>
+          <p className="text-g600 text-lg">BBソフトサービスが提供する、月額539円のコンパクトなGPS端末です。</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">まもサーチとは</h2>
+          <h2 className="section-title">まもサーチの概要</h2>
           <p className="text-g600 mb-6">
             まもサーチは、BBソフトサービスが提供する子供用GPS端末です。
-            最大の特徴は業界最多クラスの25人まで見守りメンバーを登録できること。
-            両親だけでなく、祖父母・親戚・ご近所の方まで、地域ぐるみでお子さまを見守れます。
+            最大の特徴は、業界最多クラスとなる25人まで見守りメンバーを登録できることです。
+            両親だけでなく、祖父母・親戚・ご近所の方まで、地域全体でお子さまを見守れます。
             第3世代の最新モデルでは、バッテリー持ちと測位精度がさらに向上しています。
           </p>
 
@@ -68,7 +68,7 @@ export default function MamosearchPage() {
                     ['月額料金', '539円（税込）'],
                     ['本体価格', '5,280円（税込）'],
                     ['測位方式', 'GPS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '最大約1ヶ月'],
+                    ['バッテリー', '最大約1カ月'],
                     ['最大見守り人数', '25人'],
                     ['通信回線', 'SoftBank LTE'],
                     ['防水', '生活防水（IPX5）'],
@@ -106,12 +106,12 @@ export default function MamosearchPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '👨‍👩‍👧‍👦', title: '最大25人見守り', desc: '業界最多。祖父母・親戚・地域の人まで幅広く見守りに参加。' },
-              { icon: '📍', title: '現在地確認', desc: 'アプリからリアルタイムでお子さまの位置を確認。' },
-              { icon: '🔔', title: 'エリア通知', desc: '設定エリアの出入りを自動通知。登下校の確認に。' },
-              { icon: '📊', title: '移動履歴', desc: '過去の移動ルートを確認。行動パターンを把握。' },
-              { icon: '📦', title: 'コンパクト設計', desc: '第3世代でさらに小型化。ランドセルに入れても邪魔にならない。' },
-              { icon: '🔋', title: '長持ちバッテリー', desc: '最大1ヶ月の長寿命。充電の手間を軽減。' },
+              { icon: '👨‍👩‍👧‍👦', title: '最大25人で見守り', desc: '業界最多の人数です。祖父母・親戚・地域の方まで、幅広く見守りに参加できます。' },
+              { icon: '📍', title: '現在地確認', desc: 'アプリから、リアルタイムでお子さまの位置を確認できます。' },
+              { icon: '🔔', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。登下校の確認に役立ちます。' },
+              { icon: '📊', title: '移動履歴', desc: '過去の移動ルートを確認でき、行動パターンを把握できます。' },
+              { icon: '📦', title: 'コンパクト設計', desc: '第3世代でさらに小型化しました。ランドセルに入れても邪魔になりません。' },
+              { icon: '🔋', title: '長持ちバッテリー', desc: '最大1カ月持続し、充電の手間を軽減できます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>
@@ -121,20 +121,20 @@ export default function MamosearchPage() {
             ))}
           </div>
 
-          <h2 className="section-title">メリット・デメリット</h2>
+          <h2 className="section-title">利点と欠点</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="bg-green-light rounded-xl p-6">
-              <h3 className="font-bold text-green-dark mb-3">メリット</h3>
+              <h3 className="font-bold text-green-dark mb-3">利点</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・最大25人で見守りに参加可能（業界最多）</li>
                 <li>・月額539円の手頃な料金</li>
                 <li>・第3世代でバッテリー・精度が向上</li>
                 <li>・コンパクトで軽量な設計</li>
-                <li>・祖父母や地域ぐるみの見守りに最適</li>
+                <li>・祖父母や地域全体での見守りに最適</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
-              <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
+              <h3 className="font-bold text-orange-dark mb-3">欠点</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・トーク・通話機能なし</li>
                 <li>・SOSボタンなし</li>
@@ -154,7 +154,7 @@ export default function MamosearchPage() {
 
           <div className="mt-10 text-center bg-gradient-to-r from-green-light to-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">まもサーチが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">最大25人の見守りで、大家族やご近所ぐるみの安全見守りが実現できます。</p>
+            <p className="text-g600 mb-6 text-sm">最大25人で見守れるため、大家族やご近所と協力した見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/sayuu/" className="btn-accent">次: SayuU（サユー）</Link>

@@ -33,8 +33,8 @@ export default function Footer() {
               <span aria-hidden="true">📍</span>子供見守りGPS最新情報
             </p>
             <p className="text-sm text-g300 leading-relaxed">
-              お子さまの安全を見守るGPS端末を徹底比較。
-              最新の機能・料金・口コミをわかりやすくご紹介します。
+              当サイトでは、お子さまの安全を見守るGPS端末を比較しています。
+              各機種の機能・料金・口コミを、公式サイトの情報にもとづいてご紹介します。
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
           </ul>
           <div className="text-center text-xs text-g500">
             <p>&copy; 2025 子供見守りGPS最新情報 All Rights Reserved.</p>
-            <p className="mt-1">※ 掲載情報は2025年4月時点のものです。最新情報は各公式サイトをご確認ください。</p>
+            <p className="mt-1">※ 掲載情報は各ページに記載の確認日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。</p>
           </div>
         </div>
       </div>

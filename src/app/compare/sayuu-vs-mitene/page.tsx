@@ -5,15 +5,15 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'トヨタ SayuU vs みてねみまもりGPS 比較 | 交通安全かシンプルか',
   description:
-    'トヨタSayuUとみてねみまもりGPSを徹底比較。交通安全機能重視のSayuUと、シンプル設計で月額528円のみてね、家庭の優先順位で選ぶ判断材料をまとめました。',
+    'トヨタのSayuUとみてねみまもりGPSを比較します。交通安全機能を重視したSayuUと、シンプルな設計で月額528円のみてねについて、ご家庭の優先順位に応じて選ぶための判断材料をまとめています。',
 };
 
 const faqData = [
-  { q: 'SayuUとみてねの一番の違いは何ですか？', a: 'SayuUは交通安全サポート（左右確認検知・走行検知など）を特徴とするトヨタ開発のGPSで、みてねはシンプルな位置情報共有とトーク機能を提供するMIXIのGPSです。月額料金も大きく異なります（SayuU 1,210円／みてね 528円）。' },
-  { q: '月額料金の差はどれくらいですか？', a: '月額ベースでSayuUは1,210円、みてねは528円で、年間で約8,000円の差が出ます。機能差をどう評価するかが判断のポイントです。' },
-  { q: 'SayuUの「左右確認検知」とはどんな機能ですか？', a: '子どもが道路を渡る前に左右を確認したかを検知し、保護者に記録として通知する機能です。交通安全教育のサポートとして開発されたトヨタ独自の機能で、公式サイトに詳細が掲載されています。' },
-  { q: 'どちらも通話はできますか？', a: 'SayuUは通話機能を搭載、みてねはトーク（音声メッセージ）機能を提供します。リアルタイムの通話ができるのはSayuUです。' },
-  { q: '初期費用の違いは？', a: 'SayuUは端末16,500円、みてねは端末2,904円と大きな差があります。機能の豊富さと初期費用のバランスを考慮しましょう。' },
+  { q: 'SayuUとみてねの一番の違いは何ですか？', a: 'SayuUは、交通安全サポート（左右確認検知・走行検知など）を特徴とするトヨタ開発のGPSです。一方、みてねは、シンプルな位置情報の共有とトーク機能を提供するMIXIのGPSです。月額料金も大きく異なります（SayuU 1,210円／みてね 528円）。' },
+  { q: '月額料金の差はどれくらいですか？', a: '月額ではSayuUが1,210円、みてねが528円で、年間では約8,000円の差が生じます。機能の差をどう評価するかが、判断のポイントです。' },
+  { q: 'SayuUの「左右確認検知」とはどんな機能ですか？', a: 'お子さまが道路を渡る前に左右を確認したかどうかを検知し、保護者に記録として通知する機能です。交通安全教育のサポートとして開発されたトヨタ独自の機能であり、詳細は公式サイトに掲載されています。' },
+  { q: 'どちらも通話はできますか？', a: 'SayuUは通話機能を搭載しており、みてねはトーク（音声メッセージ）機能を提供しています。リアルタイムで通話ができるのはSayuUです。' },
+  { q: '初期費用の違いは？', a: 'SayuUは端末が16,500円、みてねは端末が2,904円と、大きな差があります。機能の豊富さと初期費用のバランスを考慮して選ぶことをおすすめします。' },
 ];
 
 const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqData.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
@@ -25,27 +25,27 @@ const comparison = [
   { item: '通話機能', sayuu: '◎ 対応', mitene: '音声メッセージのみ' },
   { item: '左右確認検知', sayuu: '◎ あり（独自機能）', mitene: '—' },
   { item: '走行検知', sayuu: '◎ あり（独自機能）', mitene: '—' },
-  { item: 'バッテリー持ち', sayuu: '毎日充電が推奨', mitene: '最大2ヶ月' },
-  { item: '主な用途', sayuu: '交通安全教育サポート', mitene: 'シンプル見守り' },
+  { item: 'バッテリー持ち', sayuu: '毎日の充電を推奨', mitene: '最大2カ月' },
+  { item: '主な用途', sayuu: '交通安全教育のサポート', mitene: 'シンプルな見守り' },
 ];
 
 export default function SayuuVsMitenePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "トヨタ SayuU vs みてねみまもりGPS 比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "GPS見守りナビ編集部"}, "publisher": {"@type": "Organization", "name": "GPS子供見守り最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "トヨタ SayuU vs みてねみまもりGPS 比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'SayuU vs みてね' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">トヨタ SayuU vs みてねみまもりGPS</h1>
-          <p className="text-g600 text-lg">交通安全サポートかシンプル見守りか。ニーズ別の選び方を徹底解説</p>
+          <p className="text-g600 text-lg">交通安全サポートを重視するか、シンプルな見守りを重視するか、ニーズ別の選び方を解説します</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">基本スペック比較</h2>
+          <h2 className="section-title">基本スペックの比較</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead><tr className="bg-blue text-white"><th className="p-3 text-left">項目</th><th className="p-3 text-left">SayuU（トヨタ）</th><th className="p-3 text-left">みてねみまもりGPS</th></tr></thead>
@@ -61,23 +61,23 @@ export default function SayuuVsMitenePage() {
             </table>
           </div>
 
-          <h2 className="section-title">SayuUが向いている家庭</h2>
+          <h2 className="section-title">SayuUが向いているご家庭</h2>
           <div className="card-hover p-5 mb-6">
             <ul className="space-y-2 text-g600">
-              <li>✓ 小1の入学時に交通安全教育もセットで考えたい</li>
+              <li>✓ 小学1年生の入学時に、交通安全教育もあわせて考えたい</li>
               <li>✓ 毎日の通学路での安全行動を確認したい</li>
               <li>✓ 通話でリアルタイムに連絡を取りたい</li>
-              <li>✓ 月額コストより機能の充実度を優先したい</li>
+              <li>✓ 月額費用より機能の充実度を優先したい</li>
             </ul>
           </div>
 
-          <h2 className="section-title">みてねみまもりGPSが向いている家庭</h2>
+          <h2 className="section-title">みてねみまもりGPSが向いているご家庭</h2>
           <div className="card-hover p-5 mb-8">
             <ul className="space-y-2 text-g600">
-              <li>✓ コストを抑えてシンプルに見守りたい</li>
-              <li>✓ バッテリー持ちを最優先したい（最大2ヶ月）</li>
-              <li>✓ 位置情報の確認がメインで、通話は不要</li>
-              <li>✓ 月額500円台で続けやすい料金を希望</li>
+              <li>✓ 費用を抑えてシンプルに見守りたい</li>
+              <li>✓ バッテリー持ちを最優先したい（最大2カ月）</li>
+              <li>✓ 位置情報の確認が主な目的で、通話は不要</li>
+              <li>✓ 月額500円台の続けやすい料金を希望する</li>
             </ul>
           </div>
 
@@ -87,7 +87,7 @@ export default function SayuuVsMitenePage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">ランキングで他機種もチェック</h2>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">他機種のランキング</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>
               <Link href="/review/sayuu/" className="btn-accent">SayuU詳細レビュー</Link>
