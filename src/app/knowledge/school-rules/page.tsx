@@ -57,30 +57,16 @@ export default function SchoolRulesPage() {
               文部科学省の通知「学校における携帯電話の取扱い等について」（令和2年7月31日・2文科初第670号）では、
               <strong>小学校は携帯電話の持ち込みを「原則禁止」</strong>とする一方、緊急の連絡手段としてやむを得ない場合などは
               <strong>各学校・教育委員会の判断で例外的に認められる</strong>とされています。
-              位置情報のみのGPS端末は「携帯電話」に当たらないと判断する学校が多く、持ち込みが認められるケースが大半ですが、
+              通話機能の無い位置情報のみのGPS端末を「携帯電話」と同じに扱うかどうかは、学校・教育委員会によって異なり、
               最終的な可否は<strong>各学校の校則・判断によります</strong>。まずは担任の先生にご確認いただくことをおすすめします。
             </p>
-            <p className="text-xs text-g500 mb-4">出典：文部科学省「学校における携帯電話の取扱い等について（通知）」令和2年7月31日（2文科初第670号）。GPS端末の扱いは各学校・教育委員会により異なります。</p>
-            <div className="grid sm:grid-cols-3 gap-4">
-              <div className="bg-green-light rounded-xl p-4 text-center">
-                <p className="text-2xl font-extrabold text-green-dark">約90%</p>
-                <p className="text-sm text-g600">GPS端末の持ち込みを許可</p>
-              </div>
-              <div className="bg-orange-light rounded-xl p-4 text-center">
-                <p className="text-2xl font-extrabold text-orange">約8%</p>
-                <p className="text-sm text-g600">申請が必要</p>
-              </div>
-              <div className="bg-blue-light rounded-xl p-4 text-center">
-                <p className="text-2xl font-extrabold text-blue">約2%</p>
-                <p className="text-sm text-g600">持ち込み不可</p>
-              </div>
-            </div>
+            <p className="text-xs text-g500">出典：文部科学省「学校における携帯電話の取扱い等について（通知）」令和2年7月31日（2文科初第670号）。GPS端末の扱いは各学校・教育委員会により異なります。全国の学校での許可の割合を示す公的な統計は、当サイトでは確認できていません。</p>
           </div>
 
           <h2 className="section-title">許可されるケースと条件</h2>
           <div className="space-y-3 mb-8">
             {[
-              { title: '通話機能がない端末', desc: '位置確認のみのGPS端末は携帯電話に該当しないため、ほぼ許可されます。' },
+              { title: '通話機能がない端末', desc: '位置確認のみのGPS端末は、携帯電話と区別して持ち込みを認める学校があります。' },
               { title: 'ランドセル内に収納', desc: '授業中はランドセルに入れたままにし、机に出したり操作したりしないことが条件です。' },
               { title: '音が出ない設定', desc: '通知音やバイブレーションをオフにし、授業の妨げにならないようにします。' },
               { title: '保護者の申請がある', desc: '防犯目的であることを学校に伝え、必要に応じて申請書を提出します。' },
