@@ -188,7 +188,7 @@ export default function SchoolRulesPage() {
                   </thead>
                   <tbody>
                     <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">あんしんウォッチャー</td><td className="px-3 py-2.5">なし（スピーカー非内蔵・バイブなし）</td><td className="px-3 py-2.5">設定不要で常時無音（公式FAQ明記）</td></tr>
-                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">soranome</td><td className="px-3 py-2.5">なし（「音が鳴る機能はございません」・SOS発信も無音）</td><td className="px-3 py-2.5">設定不要で常時無音</td></tr>
+                    <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">soranome（販売終了）</td><td className="px-3 py-2.5">なし（「音が鳴る機能はございません」・SOS発信も無音）</td><td className="px-3 py-2.5">設定不要で常時無音</td></tr>
                     <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">みまもりGPS（旧どこかなGPS）</td><td className="px-3 py-2.5">通常運用ではほぼなし（電源オフ時の音等のみ）</td><td className="px-3 py-2.5">「電源を切るとき以外に音は鳴りません」（公式FAQ）</td></tr>
                     <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">BoTトーク</td><td className="px-3 py-2.5">あり（トーク再生・着信音）</td><td className="px-3 py-2.5">サイレントモードが標準（トークも無音で受信）</td></tr>
                     <tr className="border-t border-g100"><td className="px-3 py-2.5 font-bold whitespace-nowrap">みてねみまもりGPS</td><td className="px-3 py-2.5">機種による（MB06/MT05はボイスメッセージあり）</td><td className="px-3 py-2.5">通知音オン/オフ切替可（「学校では音を鳴らさずに使えます」と公式案内）</td></tr>

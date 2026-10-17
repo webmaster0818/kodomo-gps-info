@@ -46,7 +46,7 @@ const deviceWaterproof = [
   { name: 'BoTトーク', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約50g' },
   { name: 'あんしんウォッチャー', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約53g' },
   { name: 'まもサーチ', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約36g' },
-  { name: 'soranome', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
+  { name: 'soranome（販売終了）', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
   { name: 'myFirst Fone R2', rating: 'IP68', rain: '◎', sweat: '◎', wash: '○', pool: '△', weight: '約58g' },
   { name: 'coneco', rating: 'IPX4', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約60g' },
   { name: 'Hamic POCKET', rating: 'IPX4', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約107g' },

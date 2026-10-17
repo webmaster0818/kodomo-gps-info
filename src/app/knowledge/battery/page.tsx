@@ -36,7 +36,7 @@ const batteryData = [
   { name: 'みもり', battery: '約3〜4週間(容量2000mAh)', charge: 'USB Type-C', level: 3 },
   { name: 'さゆう', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
   { name: 'ハロここ', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
-  { name: 'ソラノメ', battery: '約1週間(容量700mAh)', charge: 'USB Type-C', level: 2 },
+  { name: 'ソラノメ（販売終了）', battery: '約1週間(容量700mAh)', charge: 'USB Type-C', level: 2 },
   { name: 'ハミック', battery: '約2〜3日', charge: 'USB Type-C', level: 1 },
   { name: 'myFirst Fone', battery: '約1〜2日', charge: 'マグネット充電', level: 1 },
 ];

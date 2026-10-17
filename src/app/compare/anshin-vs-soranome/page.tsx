@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'あんしんウォッチャー vs ソラノメ どっちがいい？10項目比較',
   description:
-    'あんしんウォッチャーとソラノメを、月額料金・本体価格・精度・バッテリーなど10項目で比較します。2台目のコストの違いや、ご家庭に合った選び方を解説します。',
+    'あんしんウォッチャーとソラノメを、月額料金・本体価格・精度・バッテリーなど10項目で比較します。2台目のコストの違いも解説します。ソラノメの現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年10月17日 公式確認）。',
 };
 
 const faqData = [
@@ -13,7 +13,7 @@ const faqData = [
   { q: '2台目のコストはどう違いますか？', a: 'あんしんウォッチャーは、2台目の月額が無料（本体代のみ）です。ソラノメは、2台目も月額539円がかかります。兄弟2人に持たせる場合、年間で約6,468円の差が生じます。' },
   { q: 'バッテリー持ちはどちらが良い？', a: 'あんしんウォッチャーは最大約1.5カ月、ソラノメは最大約1週間です。バッテリー持ちでは、あんしんウォッチャーが大きく優れています。' },
   { q: '精度に違いはありますか？', a: 'どちらも、GPS+Wi-Fi+基地局の複合測位に対応しています。ソラノメはGPS+GLONASS+みちびきに対応しており、衛星測位の精度がやや高い場合があります。' },
-  { q: '結局どちらがおすすめですか？', a: '兄弟で使う場合は2台目無料のあんしんウォッチャー、衛星測位の精度やデザインを重視する場合はソラノメをおすすめします。' },
+  { q: '結局どちらがおすすめですか？', a: 'ソラノメの現行端末は2026年4月1日付の公式告知で販売を終了しており、新規の購入はできません（2026年10月17日 公式確認）。これから購入する場合は、販売中のあんしんウォッチャーが対象になります。兄弟で使う場合も、1つのau IDで2台目まで月額の追加なしで使えます。' },
 ];
 
 const faqJsonLd = {
@@ -43,7 +43,7 @@ export default function AnshinVsSoranomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャー vs ソラノメ どっちがいい？10項目比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャー vs ソラノメ どっちがいい？10項目比較", "datePublished": "2026-03-15", "dateModified": "2026-10-17", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'あんしんウォッチャー vs ソラノメ' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -55,12 +55,15 @@ export default function AnshinVsSoranomePage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             あんしんウォッチャー vs ソラノメ 比較
           </h1>
-          <p className="text-g600 text-lg">兄弟で使う場合の選び方を含め、コスト・精度・機能を10項目で比較します。</p>
+          <p className="text-g600 text-lg">兄弟で使う場合のコストを含め、精度・機能を10項目で比較します。</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 mb-6 text-sm text-gray-700">
+            <strong>【販売終了・2026年10月17日 公式確認】</strong>ソラノメ（soranome）は、公式サイトの2026年4月1日付の告知で現行端末の販売を終了しています（次期端末は開発中と発表）。以下の比較は現行端末の情報で、これから購入する場合は販売中のあんしんウォッチャーなどが対象になります。
+          </div>
           <h2 className="section-title">10項目比較表</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
@@ -68,7 +71,7 @@ export default function AnshinVsSoranomePage() {
                 <tr className="bg-blue-light">
                   <th className="py-3 px-4 text-left font-bold text-g800">比較項目</th>
                   <th className="py-3 px-4 text-left font-bold text-blue">あんしんウォッチャー</th>
-                  <th className="py-3 px-4 text-left font-bold text-orange">ソラノメ</th>
+                  <th className="py-3 px-4 text-left font-bold text-orange">ソラノメ（販売終了）</th>
                 </tr>
               </thead>
               <tbody>
@@ -94,7 +97,7 @@ export default function AnshinVsSoranomePage() {
                 <p className="text-lg font-extrabold text-green-dark mt-2">2台目の月額が不要</p>
               </div>
               <div className="bg-orange-light rounded-xl p-4">
-                <h3 className="font-bold text-orange-dark mb-2">ソラノメ（2台）</h3>
+                <h3 className="font-bold text-orange-dark mb-2">ソラノメ（2台・販売終了）</h3>
                 <p className="text-sm text-g700">月額: 1,078円（539円 x 2台）</p>
                 <p className="text-sm text-g700">年間: 12,936円 + 本体代</p>
                 <p className="text-lg font-extrabold text-orange-dark mt-2">年間差額: 約6,468円</p>
@@ -115,7 +118,7 @@ export default function AnshinVsSoranomePage() {
             <p className="text-g600 mb-6 text-sm">各機種の詳しい機能・口コミは、レビューページにてご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/anshin-watcher/" className="btn-primary">あんしんウォッチャーのレビュー</Link>
-              <Link href="/review/soranome/" className="btn-accent">ソラノメのレビュー</Link>
+              <Link href="/review/soranome/" className="btn-accent">ソラノメのレビュー（販売終了）</Link>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ const deviceData = [
   { name: 'あんしんウォッチャー', overseas: '不可', reason: '日本国内SIM内蔵・交換不可', sim: '内蔵SIM（au）' },
   { name: 'BoTトーク', overseas: '不可', reason: '日本国内SIM内蔵・交換不可', sim: '内蔵SIM（docomo）' },
   { name: 'まもサーチ', overseas: '不可', reason: '日本国内SIM内蔵・交換不可', sim: '内蔵SIM' },
-  { name: 'soranome', overseas: '不可', reason: '日本国内SIM内蔵・交換不可', sim: '内蔵SIM（docomo）' },
+  { name: 'soranome（販売終了）', overseas: '不可', reason: '日本国内SIM内蔵・交換不可', sim: '内蔵SIM（docomo）' },
   { name: 'myFirst Fone R2', overseas: '条件付きで可', reason: 'eSIM対応・海外プランの別途契約が必要', sim: 'eSIM（別途契約）' },
 ];
 

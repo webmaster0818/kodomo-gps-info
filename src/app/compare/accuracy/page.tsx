@@ -39,7 +39,7 @@ const accuracyData = [
   { name: 'みてねみまもりGPS', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
   { name: 'BoTトーク', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
   { name: 'あんしんウォッチャー', systems: 'GPS+Wi-Fi+基地局', interval: '1.5分〜', indoor: '普通' },
-  { name: 'ソラノメ', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
+  { name: 'ソラノメ（販売終了）', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
   { name: 'みもり', systems: 'GPS+GLONASS+Wi-Fi', interval: '2分〜', indoor: '良好' },
   { name: 'まもサーチ', systems: 'GPS+Wi-Fi+基地局', interval: '2分〜', indoor: '普通' },
   { name: 'コネコ', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '3分〜', indoor: '良好' },

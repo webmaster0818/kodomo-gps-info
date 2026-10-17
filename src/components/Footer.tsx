@@ -4,7 +4,7 @@ const deviceLinks = [
   { label: 'みてねみまもりGPS', href: '/review/mitene/' },
   { label: 'BoTトーク', href: '/review/bot-talk/' },
   { label: 'あんしんウォッチャー', href: '/review/anshin-watcher/' },
-  { label: 'ソラノメ', href: '/review/soranome/' },
+  { label: 'ソラノメ（販売終了）', href: '/review/soranome/' },
   { label: 'まもサーチ', href: '/review/mamosearch/' },
   { label: 'SayuU（サユー）', href: '/review/sayuu/' },
 ];

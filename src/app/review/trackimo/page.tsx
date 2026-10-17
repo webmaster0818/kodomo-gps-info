@@ -219,7 +219,7 @@ export default function TrackimoPage() {
               { href: '/compare/after-school/', label: '習い事・学童の送迎見守り比較' },
               { href: '/review/mamosearch/', label: 'まもサーチ（子供見守り専用機）レビュー' },
               { href: '/review/mitene/', label: 'みてねみまもりGPS レビュー' },
-              { href: '/review/soranome/', label: 'ソラノメ レビュー' },
+              { href: '/review/soranome/', label: 'ソラノメ レビュー（販売終了）' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="card-hover p-4 flex items-center justify-between text-sm font-semibold text-blue">
                 <span>{l.label}</span>

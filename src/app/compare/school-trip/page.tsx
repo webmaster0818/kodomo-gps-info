@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '遠足・修学旅行に子供GPSは持たせていい？おすすめ比較【2026年】',
   description:
-    '遠足・修学旅行・校外学習に子供GPSを持たせる際の比較ガイドです。学校行事には音が鳴らない位置情報専用のタイプが適しており、事前に担任の先生へ確認することが前提です。みてねみまもりGPS・あんしんウォッチャー・ソラノメを料金・電池持ち・静音性で比較し、行事ごとの注意点とよくある質問をまとめています。',
+    '遠足・修学旅行・校外学習に子供GPSを持たせる際の比較ガイドです。学校行事には音が鳴らない位置情報専用のタイプが適しており、事前に担任の先生へ確認することが前提です。みてねみまもりGPS・あんしんウォッチャー・ソラノメ（販売終了）を料金・電池持ち・静音性で比較し、行事ごとの注意点とよくある質問をまとめています。',
   keywords: ['子供GPS', '遠足', '修学旅行', '校外学習', '宿泊行事', '比較', '静音', '持ち込み'],
 };
 
@@ -31,13 +31,13 @@ const tripData = [
     note: '電池持ちが長く、宿泊行事でも充電切れになりにくい機種です。兄弟で持たせる場合は、2台目の月額が0円になるため割安です。',
   },
   {
-    name: 'ソラノメ',
+    name: 'ソラノメ（販売終了）',
     slug: '/review/soranome/',
     body: '14,520円',
     monthly: '539円',
     battery: '最大約1週間',
-    silent: '◎ 位置情報専用で音が鳴らない',
-    note: '位置精度を重視した位置情報専用機です。電池持ちは上記2機種より短いため、宿泊行事では充電の用意をおすすめします。',
+    silent: '位置情報専用で音が鳴らない',
+    note: '2026年4月1日付の公式告知で現行端末の販売が終了しています（2026年10月17日 公式確認）。新規の購入はできません。既にお持ちの場合、電池持ちは上記2機種より短いため、宿泊行事では充電器を用意してください。',
   },
 ];
 
@@ -211,7 +211,6 @@ export default function SchoolTripComparePage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/mitene/" className="btn-primary">みてねみまもりGPS</Link>
               <Link href="/review/anshin-watcher/" className="btn-accent">あんしんウォッチャー</Link>
-              <Link href="/review/soranome/" className="btn-primary">ソラノメ</Link>
             </div>
           </div>
         </div>

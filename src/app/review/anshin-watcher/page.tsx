@@ -244,7 +244,7 @@ export default function AnshinWatcherPage() {
             <p className="text-g600 mb-6 text-sm">2台目月額0円とau品質を備え、兄弟・姉妹の見守りに適したGPS端末です。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
-              <Link href="/review/soranome/" className="btn-accent">次: ソラノメ</Link>
+              <Link href="/review/soranome/" className="btn-accent">次: ソラノメ（販売終了）</Link>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ const sizeData = [
   { name: 'まもサーチ', width: 47, height: 47, depth: 15, weight: 36, type: 'ポケット型', battery: '約1週間', sizeImage: '500円玉約2.5枚分' },
   { name: 'あんしんウォッチャー', width: 50, height: 50, depth: 19, weight: 53, type: 'ポケット型', battery: '約1.5カ月', sizeImage: '消しゴム程度' },
   { name: 'BoTトーク', width: 50, height: 50, depth: 21, weight: 46, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
-  { name: 'soranome', width: 51, height: 51, depth: 15, weight: 39, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
+  { name: 'soranome（販売終了）', width: 51, height: 51, depth: 15, weight: 39, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
   { name: 'coneco', width: 51, height: 51, depth: 20, weight: 44, type: 'ポケット型', battery: '約1週間', sizeImage: '消しゴム程度' },
   { name: 'みもり', width: 54, height: 54, depth: 20, weight: 55, type: 'ポケット型', battery: '約1週間', sizeImage: '名刺の半分程度' },
   { name: 'myFirst Fone R2', width: 43, height: 43, depth: 16, weight: 58, type: '腕時計型', battery: '約2日', sizeImage: '子供用腕時計サイズ' },
@@ -55,7 +55,7 @@ const sizeReferences = [
 
 const weightCategories = [
   { category: '超軽量（30g以下）', models: ['みてねみまもりGPS（26g）'], merit: '持っていることをほとんど意識しない軽さです。幼児や低学年に適しています。', demerit: 'バッテリー容量が少なめの傾向があります。' },
-  { category: '軽量（30〜50g）', models: ['まもサーチ（36g）', 'soranome（39g）', 'coneco（44g）', 'BoTトーク（46g）'], merit: 'バッテリーと軽さのバランスが良く、最も選択肢が多い区分です。', demerit: '特にありません。最もバランスの良い区分です。' },
+  { category: '軽量（30〜50g）', models: ['まもサーチ（36g）', 'coneco（44g）', 'BoTトーク（46g）'], merit: 'バッテリーと軽さのバランスが良く、最も選択肢が多い区分です。', demerit: '特にありません。最もバランスの良い区分です。' },
   { category: '標準（50〜60g）', models: ['あんしんウォッチャー（53g）', 'みもり（55g）', 'myFirst Fone R2（58g）'], merit: 'バッテリー容量が大きく、多機能モデルが多い区分です。', demerit: 'ポケットに入れると、少し重さを感じる場合があります。' },
   { category: '重め（100g以上）', models: ['Hamic POCKET L（117g）'], merit: '画面付きのスマートフォン型で、多機能です。', demerit: 'ランドセルへの収納をおすすめします。ポケットには不向きです。' },
 ];

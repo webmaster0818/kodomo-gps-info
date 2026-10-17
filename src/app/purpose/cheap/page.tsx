@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供GPS 安い順ランキング | 月額料金比較とコスパ重視のおすすめTOP5',
   description:
-    '子供用GPS端末13機種を、月額料金の安い順に比較します。本体価格を含めた総コストの計算、2台目割引の情報、コスパランキングTOP5を掲載しています。最安で月額480円から利用できる見守りGPSを紹介します。',
+    '子供用GPS端末11機種を、月額料金の安い順に比較します。本体価格を含めた総コストの計算、2台目割引の情報、コスパランキングTOP5を掲載しています。最安で月額480円から利用できる見守りGPSを紹介します。',
 };
 
 const faqData = [
@@ -44,14 +44,14 @@ export default function CheapPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供GPS 安い順ランキング・コスパ比較
           </h1>
-          <p className="text-g600 text-lg">全13機種の月額料金比較 | 本体込み総コスト | コスパTOP5</p>
+          <p className="text-g600 text-lg">全11機種の月額料金比較 | 本体込み総コスト | コスパTOP5</p>
         </div>
       </section>
 
       {/* 料金比較表 */}
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">全13機種 月額料金比較（安い順）</h2>
+          <h2 className="section-title">全11機種 月額料金比較（安い順）</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -70,13 +70,12 @@ export default function CheapPage() {
                   ['3', 'BoTトーク', '528円', '5,280円', '11,616円', '/review/bot-talk/'],
                   ['4', 'はろここ', '528円', '5,280円', '11,616円', '/review/halococo/'],
                   ['5', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
-                  ['6', 'soranome', '539円', '9,020円', '15,488円', '/review/soranome/'],
-                  ['7', 'まもサーチ', '539円', '5,280円', '11,748円', '/review/mamosearch/'],
-                  ['8', 'みもり', '748円', '8,580円', '17,556円', '/review/mimori/'],
-                  ['9', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
-                  ['10', 'Hamic', '1,100円', '12,100円', '25,300円', '/review/hamic/'],
-                  ['11', 'SayuU', '1,210円', '13,200円', '27,720円', '/review/sayuu/'],
-                  ['12', 'myFirst Fone', '約980円〜', '約18,000円〜', '約29,760円〜', '/review/myfirst-fone/'],
+                  ['6', 'まもサーチ', '539円', '5,280円', '11,748円', '/review/mamosearch/'],
+                  ['7', 'みもり', '748円', '8,580円', '17,556円', '/review/mimori/'],
+                  ['8', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
+                  ['9', 'Hamic', '1,100円', '12,100円', '25,300円', '/review/hamic/'],
+                  ['10', 'SayuU', '1,210円', '13,200円', '27,720円', '/review/sayuu/'],
+                  ['11', 'myFirst Fone', '約980円〜', '約18,000円〜', '約29,760円〜', '/review/myfirst-fone/'],
                 ].map(([rank, name, monthly, device, annual, href]) => (
                   <tr key={rank + name} className="border-b border-g100">
                     <td className="p-3 font-bold text-orange">{rank}</td>

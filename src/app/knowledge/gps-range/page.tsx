@@ -65,7 +65,7 @@ const deviceComparison = [
   { name: 'BoTトーク', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'AI学習で精度向上' },
   { name: 'あんしんウォッチャー', carrier: 'au LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'au回線で山間部に強い' },
   { name: 'まもサーチ', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: '軽量・コンパクト' },
-  { name: 'soranome', carrier: 'ドコモ LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵SIM', note: 'ドコモ回線で都市部に強い' },
+  { name: 'soranome（販売終了）', carrier: 'ドコモ LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵SIM', note: 'ドコモ回線で都市部に強い' },
   { name: 'myFirst Fone R2', carrier: 'ドコモ/ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: 'nano SIM', note: '腕時計型・通話対応' },
   { name: 'coneco', carrier: 'ドコモ LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵SIM', note: 'メッセージ送受信対応' },
 ];
@@ -210,7 +210,7 @@ export default function GpsRangePage() {
             {[
               { carrier: 'ソフトバンク LTE', coverage: '人口カバー率99%以上', strength: '都市部・住宅地で安定しており、地下鉄駅もカバーしています。', weakness: '山間部・離島の一部では圏外となる可能性があります。', devices: 'みてね / BoT / まもサーチ' },
               { carrier: 'au (KDDI) LTE', coverage: '人口カバー率99%以上', strength: '山間部・郊外のカバー率が高く、800MHz帯のプラチナバンドを使用しています。', weakness: '都市部では3キャリアの差はほとんどありません。', devices: 'あんしんウォッチャー' },
-              { carrier: 'ドコモ LTE', coverage: '人口カバー率99%以上', strength: '基地局数が全国最大で、都市部での安定性が高い回線です。', weakness: '山間部ではauとほぼ同等です。', devices: 'soranome / coneco / myFirst Fone' },
+              { carrier: 'ドコモ LTE', coverage: '人口カバー率99%以上', strength: '基地局数が全国最大で、都市部での安定性が高い回線です。', weakness: '山間部ではauとほぼ同等です。', devices: 'coneco / myFirst Fone' },
             ].map((c) => (
               <div key={c.carrier} className="card-hover p-5">
                 <h3 className="font-bold text-g800 mb-1">{c.carrier}</h3>

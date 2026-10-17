@@ -44,7 +44,7 @@ const deviceCompare = [
   { device: 'みてねみまもりGPS', share: '最大10人', method: 'アプリから招待コード送信', note: 'LINEでの通知にも対応しており、祖父母にも使いやすい設計です。' },
   { device: 'あんしんウォッチャー', share: '最大9人', method: 'メールアドレスで招待', note: 'au以外のキャリアでも利用でき、Web版もあります。' },
   { device: 'BoTトーク', share: '最大5人', method: 'アプリ内で家族追加', note: 'トーク機能で、祖父母とお子さまが直接やり取りできます。' },
-  { device: 'soranome（ソラノメ）', share: '最大4人', method: 'アプリから追加', note: 'シンプルな画面で、高齢の方にも見やすい設計です。' },
+  { device: 'soranome（ソラノメ・販売終了）', share: '最大4人', method: 'アプリから追加', note: 'シンプルな画面で、高齢の方にも見やすい設計です。' },
 ];
 
 const tips = [

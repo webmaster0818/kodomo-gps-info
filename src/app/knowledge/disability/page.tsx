@@ -67,7 +67,7 @@ export default function DisabilityPage() {
             <div className="card-hover p-5">
               <p className="text-2xl mb-2">📍</p>
               <h3 className="font-bold text-g800 mb-1">測位精度の高さ</h3>
-              <p className="text-sm text-g600">ソラノメのGPS+Wi-Fi+基地局の3測位など、屋内でも精度が保たれる機種が適しています。</p>
+              <p className="text-sm text-g600">GPS+Wi-Fi+基地局の3測位に対応するなど、屋内でも精度が保たれる機種が適しています。</p>
             </div>
             <div className="card-hover p-5">
               <p className="text-2xl mb-2">🎒</p>

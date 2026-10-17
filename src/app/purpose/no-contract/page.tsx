@@ -31,7 +31,7 @@ const contractData = [
   { name: 'みてねみまもりGPS', term: '縛りなし', fee: 'なし', note: '月額528円。詳細は公式サイトにてご確認ください', href: '/review/mitene/' },
   { name: 'BoTトーク', term: '縛りなし', fee: 'なし', note: '月額528〜748円。詳細は公式サイトにてご確認ください', href: '/review/bot-talk/' },
   { name: 'あんしんウォッチャー', term: '縛りなし', fee: 'なし', note: '2台目月額無料。詳細は公式サイトにてご確認ください', href: '/review/anshin-watcher/' },
-  { name: 'soranome', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '契約条件は公式サイトにて最新情報をご確認ください', href: '/review/soranome/' },
+  { name: 'soranome（販売終了）', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '2026年4月1日付の公式告知で現行端末の販売が終了しています（2026年10月17日 公式確認）。', href: '/review/soranome/' },
   { name: 'まもサーチ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '見守り最大25人。詳細は公式サイトにてご確認ください', href: '/review/mamosearch/' },
   { name: 'SayuU', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '月額1,210円。契約条件は公式サイトにてご確認ください', href: '/review/sayuu/' },
   { name: 'みもり', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/mimori/' },

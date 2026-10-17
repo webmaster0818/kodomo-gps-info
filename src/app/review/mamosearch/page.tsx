@@ -87,7 +87,7 @@ export default function MamosearchPage() {
                 {[
                   { name: 'まもサーチ', count: 25, pct: 100 },
                   { name: 'あんしんウォッチャー', count: 9, pct: 36 },
-                  { name: 'ソラノメ', count: 4, pct: 16 },
+                  { name: 'ソラノメ（販売終了）', count: 4, pct: 16 },
                 ].map((item) => (
                   <div key={item.name}>
                     <div className="flex justify-between text-sm mb-1">

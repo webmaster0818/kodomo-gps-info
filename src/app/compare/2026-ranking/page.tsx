@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '【2026年最新】子供用GPSおすすめランキング14選｜全機種比較',
+  title: '【2026年最新】子供用GPSおすすめランキング13選｜全機種比較',
   description:
-    '2026年最新の子供用GPSおすすめランキング14選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
+    '2026年最新の子供用GPSおすすめランキング13選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
   keywords: ['子供GPS', 'おすすめ', 'ランキング', '2026', '比較', '全機種', '最新'],
   openGraph: {
     images: ['/og.png'],
-    title: '【2026年最新】子供用GPSおすすめランキング14選｜全機種比較',
-    description: '2026年最新の子供用GPSおすすめランキング14選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。',
+    title: '【2026年最新】子供用GPSおすすめランキング13選｜全機種比較',
+    description: '2026年最新の子供用GPSおすすめランキング13選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。',
   },
 };
 
@@ -73,16 +73,7 @@ const rankingData = [
     review: '/review/mamosearch/',
   },
   {
-    rank: 5, name: 'soranome（ソラノメ）', score: 85, initial: 9020, monthly: 539,
-    battery: '最大1週間', waterproof: 'IP55', weight: '約39g', carrier: 'ドコモ LTE',
-    notifications: 'エリア通知/SOS/バッテリー低下/定時',
-    merit: 'ドコモ回線のため都市部での通信が安定しています。デザイン性が高く、子供に人気があります。コンパクトで軽量です。',
-    demerit: 'バッテリー持ちが約1週間と短めです。初期費用も高めです。',
-    recommend: 'ドコモ回線のエリアで使いたい方、デザインを重視する方',
-    review: '/review/soranome/',
-  },
-  {
-    rank: 6, name: 'myFirst Fone R2', score: 84, initial: 26980, monthly: 998,
+    rank: 5, name: 'myFirst Fone R2', score: 84, initial: 26980, monthly: 998,
     battery: '約2日', waterproof: 'IP68', weight: '約58g', carrier: 'ドコモ/ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '腕時計型で、通話・ビデオ通話が可能です。防水性能は最高等級のIP68です。カメラと音楽再生機能を備えています。',
@@ -91,7 +82,7 @@ const rankingData = [
     review: '/review/myfirst-fone/',
   },
   {
-    rank: 7, name: 'coneco（コネコ）', score: 82, initial: 8580, monthly: 748,
+    rank: 6, name: 'coneco（コネコ）', score: 82, initial: 8580, monthly: 748,
     battery: '約2週間', waterproof: 'IPX4', weight: '約60g', carrier: 'ドコモ LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: 'テキストメッセージの送受信が可能です。定型文を端末のボタンで選んで送信できます。ドコモ回線を利用しています。',
@@ -100,7 +91,7 @@ const rankingData = [
     review: '/review/coneco/',
   },
   {
-    rank: 8, name: 'キッズフォン3', score: 81, initial: 20880, monthly: 539,
+    rank: 7, name: 'キッズフォン3', score: 81, initial: 20880, monthly: 539,
     battery: '約2日', waterproof: 'IPX5/IPX8', weight: '約115g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '通話・SMSに対応しています。カメラを搭載し、防犯ブザーとも連動します。ソフトバンクショップでサポートを受けられます。',
@@ -109,7 +100,7 @@ const rankingData = [
     review: '/review/kids-phone/',
   },
   {
-    rank: 9, name: 'Hamic POCKET（ハミックポケット）', score: 79, initial: 12100, monthly: 1100,
+    rank: 8, name: 'Hamic POCKET（ハミックポケット）', score: 79, initial: 12100, monthly: 1100,
     battery: '約2日', waterproof: 'IPX4', weight: '約107g', carrier: 'ドコモ LTE',
     notifications: 'エリア通知/SOS/バッテリー低下',
     merit: 'メッセージ・通話に対応しています。スマートフォンを持つ前の段階として使うことができ、子供向けの画面設計です。',
@@ -118,7 +109,7 @@ const rankingData = [
     review: '/review/hamic/',
   },
   {
-    rank: 10, name: 'ミモリ', score: 78, initial: 7480, monthly: 748,
+    rank: 9, name: 'ミモリ', score: 78, initial: 7480, monthly: 748,
     battery: '約3週間', waterproof: 'IP55', weight: '約55g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '防犯ブザー一体型です。ブザーを鳴らすと位置情報と録音を自動で送信し、見守りと防犯を両立できます。',
@@ -127,7 +118,7 @@ const rankingData = [
     review: '/review/mimori/',
   },
   {
-    rank: 11, name: 'ハロここ', score: 77, initial: 6380, monthly: 580,
+    rank: 10, name: 'ハロここ', score: 77, initial: 6380, monthly: 580,
     battery: '約1カ月', waterproof: 'IP55', weight: '約42g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: 'コンパクトで軽量です。月額580円と手頃で、機能がシンプルなため使いやすい機種です。',
@@ -136,7 +127,7 @@ const rankingData = [
     review: '/review/halococo/',
   },
   {
-    rank: 12, name: 'あんしんウォッチャー LE', score: 75, initial: 5980, monthly: 539,
+    rank: 11, name: 'あんしんウォッチャー LE', score: 75, initial: 5980, monthly: 539,
     battery: '最大1カ月', waterproof: 'IP55', weight: '約53g', carrier: 'au LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '通常版より初期費用が安く、au回線のカバー力はそのままです。基本機能は通常版と同等です。',
@@ -145,7 +136,7 @@ const rankingData = [
     review: '/review/anshin-watcher/',
   },
   {
-    rank: 13, name: 'まもサーチ ミニ', score: 74, initial: 3980, monthly: 528,
+    rank: 12, name: 'まもサーチ ミニ', score: 74, initial: 3980, monthly: 528,
     battery: '約2週間', waterproof: 'IP55', weight: '約30g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下',
     merit: '業界最安クラスの初期費用です。約30gと非常に軽量で、試験的な導入に適しています。',
@@ -154,7 +145,7 @@ const rankingData = [
     review: '/review/mamosearch/',
   },
   {
-    rank: 14, name: 'みもりGPS ライト', score: 72, initial: 4980, monthly: 528,
+    rank: 13, name: 'みもりGPS ライト', score: 72, initial: 4980, monthly: 528,
     battery: '約2週間', waterproof: 'IP55', weight: '約48g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下',
     merit: '低価格ながら防犯ブザー機能を備えており、初期費用を抑えつつ防犯対策も行えます。',
@@ -216,7 +207,7 @@ export default function Ranking2026Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング14選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング13選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -226,7 +217,7 @@ export default function Ranking2026Page() {
             <span className="tag-pill bg-blue text-white">ランキング</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            【2026年最新】子供用GPSおすすめランキング14選
+            【2026年最新】子供用GPSおすすめランキング13選
           </h1>
           <p className="text-g600 text-lg">全機種を5つの評価軸で比較し、お子さまに合った1台を選ぶための情報をまとめています。</p>
         </div>
@@ -256,7 +247,7 @@ export default function Ranking2026Page() {
             ))}
           </div>
 
-          <h2 className="section-title">総合ランキング 1〜14位</h2>
+          <h2 className="section-title">総合ランキング 1〜13位</h2>
           <div className="space-y-6 mb-10">
             {rankingData.map((d) => (
               <div key={d.rank} className={`card-hover p-6 ${d.rank <= 3 ? 'border-l-4 border-orange' : ''}`}>

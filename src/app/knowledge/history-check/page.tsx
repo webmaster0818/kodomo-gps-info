@@ -37,7 +37,7 @@ const deviceGuides = [
   { name: 'みてねみまもりGPS', period: '最大90日間', steps: 'アプリ「みてねみまもりGPS」を開く → 「きろく」タブ → 日付を選択 → 地図上に移動ルートが表示', note: 'タイムライン表示で、時刻ごとの位置を確認できます。' },
   { name: 'あんしんウォッチャー', period: '最大90日間', steps: 'au HOME アプリを開く → 端末を選択 → 「移動りれき」→ 日付指定で地図表示', note: '指定した日時の位置情報をピンポイントで確認できます。' },
   { name: 'BoTトーク', period: '最大1年間', steps: 'BoTトークアプリを開く → 「きろく」→ カレンダーから日付選択 → ルートと滞在地点を表示', note: 'AI学習で「いつもの場所」を自動で認識し、異常の検知に活用できます。' },
-  { name: 'soranome（ソラノメ）', period: '最大30日間', steps: 'soranomeアプリを開く → 「履歴」→ 日時を選択 → 移動ルートを地図で確認', note: 'シンプルな画面で、操作しやすい設計です。' },
+  { name: 'soranome（ソラノメ・販売終了）', period: '最大30日間', steps: 'soranomeアプリを開く → 「履歴」→ 日時を選択 → 移動ルートを地図で確認', note: 'シンプルな画面で、操作しやすい設計です。' },
 ];
 
 const usageIdeas = [
@@ -107,7 +107,7 @@ export default function HistoryCheckPage() {
                   { name: 'みてねみまもりGPS', period: '90日', interval: '1.5分', export: '非対応' },
                   { name: 'あんしんウォッチャー', period: '90日', interval: '3分', export: '非対応' },
                   { name: 'BoTトーク', period: '1年', interval: '3分', export: '非対応' },
-                  { name: 'soranome', period: '30日', interval: '3分', export: '非対応' },
+                  { name: 'soranome（販売終了）', period: '30日', interval: '3分', export: '非対応' },
                 ].map((d) => (
                   <tr key={d.name} className="border-t border-g200">
                     <td className="py-2 font-medium text-g800">{d.name}</td>

@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'soranome（ソラノメ）の評判・口コミは？【2026年】3測位の精度・料金を解説',
   description:
-    'soranome（ソラノメ）をレビューします。GPS+Wi-Fi+基地局の3測位とSOSボタンを搭載し、月額539円で最大4人の見守りに対応しています。位置精度を重視する方におすすめの機種です。',
+    'soranome（ソラノメ）をレビューします。GPS+Wi-Fi+基地局の3測位とSOSボタンを搭載し、月額539円で最大4人の見守りに対応しています。現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年10月17日 公式確認）。',
 };
 
 const faqData = [
@@ -16,8 +16,9 @@ const faqData = [
   { q: '何人で見守りできますか？', a: '最大4人まで見守りメンバーを登録できます。両親と祖父母など、家族で見守りを分担できます。' },
   { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認・SOS・エリア通知に特化したGPS端末です。' },
   { q: 'ソラノメの評判・口コミはどうですか？', a: '公式スペックと仕様から客観的に評価すると、GPS+Wi-Fi+基地局の3測位による位置精度の高さとSOSボタンが強みとして挙げられます。一方、バッテリーが最大約1週間と短い点、本体価格が14,520円とやや高い点は、使い勝手の面で指摘されやすい特性です。当サイトでは体験談の創作は行わず、公式仕様にもとづき評価しています。実際の口コミは販売ページやレビューサイトの出典付き情報をご確認ください。' },
-  { q: 'ソラノメと他の機種の違いは？', a: '最大の違いは「3測位による位置精度重視」の設計です。GPSのみの機種より屋内や地下での位置特定に強い一方、位置更新の頻度が高いぶんバッテリーは最大約1週間と短めです。通話・トーク機能はないため、お子さまとメッセージのやり取りをしたい場合は、BoTトークやみてねみまもりGPSなど通話・トーク対応機種が候補となります。精度を優先するか、電池持ち・通話を優先するかで選び分けることをおすすめします。' },
-  { q: 'ソラノメは解約に縛りや違約金がありますか？', a: '契約期間の縛り・解約金はありません。月額539円（税込）で、いつでも解約できます（別途、本体代金14,520円が必要です）。長期の縛りを避けたいご家庭にも向いています。' },
+  { q: 'ソラノメと他の機種の違いは？', a: '最大の違いは「3測位による位置精度重視」の設計です。GPSのみの機種より屋内や地下での位置特定に強い一方、位置更新の頻度が高いぶんバッテリーは最大約1週間と短めです。通話・トーク機能はないため、お子さまとメッセージのやり取りをしたい場合は、BoTトークやみてねみまもりGPSなど通話・トーク対応機種が候補となります。なお、現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年10月17日 公式確認）。' },
+  { q: 'ソラノメは解約に縛りや違約金がありますか？', a: '契約期間の縛り・解約金はありません。月額539円（税込）で、いつでも解約できます（別途、本体代金14,520円が必要です）。現行端末は2026年4月1日付の公式告知で販売を終了しているため、新規の契約・購入はできません（2026年10月17日 公式確認）。' },
+  { q: 'ソラノメは今も購入できますか？', a: '購入できません。公式サイトの2026年4月1日付の告知で現行端末の販売を終了しており、次期端末は開発中と発表されています。2026年10月17日の公式確認時点で、次期端末の発売時期は告知されていません。通話・トークのない位置情報専用の機種を探している場合は、みてねみまもりGPS（位置情報プラン）やあんしんウォッチャーが販売中です。' },
 ];
 
 const faqJsonLd = {
@@ -34,12 +35,13 @@ export default function SoranomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）のレビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-09", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）のレビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-17", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'soranome（ソラノメ）' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
+            <span className="tag-pill bg-g400 text-white">販売終了</span>
             <span className="tag-pill bg-blue text-white">3測位対応</span>
             <span className="tag-pill bg-orange text-white">SOSボタン搭載</span>
           </div>
@@ -54,25 +56,25 @@ export default function SoranomePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">位置精度を最優先する場合はソラノメが適しています（通話は不要で、居場所を正確に把握したいご家庭向けの機種です）</h2>
+            <h2 className="font-extrabold text-g800 mb-2">ソラノメの現行端末は販売終了しています（2026年10月17日 公式確認）</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：GPS+Wi-Fi+基地局の<strong>3測位</strong>により、屋内・地下も含めて位置精度が高くなっています。SOSボタン・IP55防水も搭載しています。</li>
               <li>・<strong>弱み</strong>：バッテリーが<strong>最大約1週間</strong>と短く、本体は<strong>14,520円</strong>とやや高めです。<strong>通話・トーク機能はありません</strong>。</li>
               <li>・<strong>料金</strong>：月額<strong>539円</strong>で、契約期間の縛りや解約金はありません。</li>
-              <li>・<strong>向いているご家庭</strong>：登下校の位置を正確に把握したいご家庭、通話は不要なご家庭です。<strong>向いていないご家庭</strong>：お子さまと連絡を取りたいご家庭、電池をこまめに充電したくないご家庭です。</li>
+              <li>・<strong>販売状況</strong>：公式サイトの2026年4月1日付の告知で現行端末の販売を終了し、次期端末は開発中と発表されています。2026年10月17日時点で、次期端末の発売時期は告知されていません。</li>
             </ul>
-            <p className="text-xs text-g500 mt-3">出典：エスキュービズム公式（ソラノメ製品ページ・仕様）。料金・仕様は変更される場合があるため、お申し込み前に公式サイトをご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
+            <p className="text-xs text-g500 mt-3">出典：エスキュービズム公式（ソラノメ製品ページ・仕様）。最新の状況は公式サイトでご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
           </div>
 
           <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 mb-6 text-sm text-gray-700">
-            <strong>【重要・2026年8月5日確認】</strong>公式サイトの2026年4月1日付告知により、soranomeの<strong>現行端末は販売終了</strong>となっています(次期端末を開発中と発表)。以下のレビューは現行端末の情報です。新規購入をご検討中の方は、<a href="https://soranome.net/" target="_blank" rel="noopener noreferrer nofollow" className="underline text-blue-600">公式サイト</a>で最新状況をご確認ください。
+            <strong>【重要・2026年10月17日 公式確認】</strong>公式サイトの2026年4月1日付告知により、soranomeの<strong>現行端末は販売終了</strong>となっています(次期端末を開発中と発表)。以下のレビューは現行端末の情報で、新規の購入はできません。最新の状況は、<a href="https://soranome.net/" target="_blank" rel="noopener noreferrer nofollow" className="underline text-blue-600">公式サイト</a>でご確認ください。
           </div>
           <h2 className="section-title">soranome（ソラノメ）とは</h2>
           <p className="text-g600 mb-6">
             soranome（ソラノメ）は、エスキュービズムが提供する子供用GPS端末です。
             GPS+Wi-Fi+携帯基地局の3測位システムにより、屋内外を問わず高精度な位置特定が可能です。
             SOSボタンを搭載しており、お子さまが緊急時にワンプッシュで保護者に通知できます。
-            月額539円と手頃な価格で、位置精度と安全性を重視するご家庭におすすめします。
+            現行端末は2026年4月1日付の公式告知で販売を終了しており、以下は既にお持ちの方向けの情報です。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -159,10 +161,10 @@ export default function SoranomePage() {
             </div>
           </div>
 
-          <h2 className="section-title">おすすめのご家庭・向かないご家庭</h2>
+          <h2 className="section-title">現行端末が向いていたご家庭・向かないご家庭</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-2">おすすめのご家庭</h3>
+              <h3 className="font-bold text-blue mb-2">向いていたご家庭</h3>
               <ul className="space-y-1.5 text-sm text-g700">
                 <li>・登下校の位置を正確に把握したいご家庭</li>
                 <li>・ビル内や地下街など、GPSが届きにくい場所も通るご家庭</li>
@@ -190,8 +192,8 @@ export default function SoranomePage() {
           ))}
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-green-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">ソラノメが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">3測位＋SOSボタンで、位置精度と安全性を両立したGPS端末です。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">販売中の機種を探している方へ</h2>
+            <p className="text-g600 mb-6 text-sm">ソラノメの現行端末は販売を終了しています。位置情報専用の機種は、他の機種との比較からお選びいただけます。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/mamosearch/" className="btn-accent">次: まもサーチ</Link>

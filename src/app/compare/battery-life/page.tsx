@@ -14,7 +14,7 @@ const batteryData = [
   { name: 'みてねみまもりGPS', slug: '/review/mitene/', battery: '最大約2カ月', type: '位置情報専用', note: '更新間隔を長めにすると、さらに長く持ちます。充電忘れが心配なご家庭に適しています。' },
   { name: 'まもサーチ', slug: '/review/mamosearch/', battery: '最大約1カ月', type: '位置情報専用', note: 'シンプルな位置情報専用機です。月1回程度の充電で運用できます。' },
   { name: 'BoTトーク(旧GPS BoTは完売)', slug: '/review/bot-talk/', battery: '最大約1カ月', type: '位置情報（トーク版あり）', note: 'トーク機能を使うと、電池の消費が増えます。' },
-  { name: 'ソラノメ', slug: '/review/soranome/', battery: '最大約1週間', type: '位置情報専用', note: '更新頻度が高めのため、こまめな充電が前提となります。' },
+  { name: 'ソラノメ（販売終了）', slug: '/review/soranome/', battery: '最大約1週間', type: '位置情報専用', note: '2026年4月1日付の公式告知で現行端末の販売が終了しています（2026年10月17日 公式確認）。' },
   { name: 'coneco', slug: '/review/coneco/', battery: '約3日〜2週間', type: '位置情報専用', note: '更新頻度の設定により、電池持ちが大きく変わります。' },
   { name: 'Hamic', slug: '/review/hamic/', battery: '約2〜3日', type: 'キッズスマートフォン型', note: '通話・メッセージ機能があるため、電池持ちは短めです。ほぼ毎日の充電が必要です。' },
   { name: 'myFirst Fone', slug: '/review/myfirst-fone/', battery: '約1〜2日', type: '通話/スマートウォッチ型', note: '通話・ビデオ通話に対応しているため、消費が大きい機種です。毎日の充電が必要です。' },

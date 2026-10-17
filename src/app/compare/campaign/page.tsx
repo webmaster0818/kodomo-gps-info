@@ -100,7 +100,7 @@ export default function CampaignPage() {
               { name: 'あんしんウォッチャー', desc: '2台目の月額料金無料が常設されています。期間限定の本体割引情報は、公式サイトにてご確認ください。', href: '/review/anshin-watcher/' },
               { name: 'まもサーチ', desc: '公式サイトで季節限定セールが実施される場合があります。詳細は公式サイトにてご確認ください。', href: '/review/mamosearch/' },
               { name: 'SayuU', desc: '交通安全に特化したモデルです。キャンペーン情報は公式サイトにてご確認ください。', href: '/review/sayuu/' },
-              { name: 'soranome', desc: 'キャンペーン情報は公式サイトにてご確認ください。', href: '/review/soranome/' },
+              { name: 'soranome（販売終了）', desc: '2026年4月1日付の公式告知で現行端末の販売が終了しています（2026年10月17日 公式確認）。', href: '/review/soranome/' },
             ].map((item) => (
               <div key={item.name} className="card-hover p-5">
                 <h3 className="font-bold text-g800 mb-1">
