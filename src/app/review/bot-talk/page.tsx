@@ -180,6 +180,7 @@ export default function BotTalkPage() {
               <div className="faq-answer">{faq.a}</div>
             </details>
           ))}
+          <p className="text-sm text-g600 mt-3">BoTを含む主要5機種の海外利用の可否（公式FAQ）と、海外旅行中の代わりの方法は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>でまとめています。</p>
 
           <div className="mt-10 text-center bg-gradient-to-r from-green-light to-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">BoTトークをご検討中の方へ</h2>

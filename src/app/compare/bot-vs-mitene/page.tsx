@@ -109,6 +109,7 @@ export default function BotVsMitenePage() {
               <div className="faq-answer">{faq.a}</div>
             </details>
           ))}
+          <p className="text-sm text-g600 mt-3">BoTとみてねみまもりGPSを含む主要5機種の海外利用の可否（公式FAQ）は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>でまとめています。</p>
 
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">その他の機種との比較</h2>

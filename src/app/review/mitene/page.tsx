@@ -240,6 +240,7 @@ export default function MitenePage() {
               <div className="faq-answer">{faq.a}</div>
             </details>
           ))}
+          <p className="text-sm text-g600 mt-3">みてねみまもりGPSを含む主要5機種の海外利用の可否（公式FAQ）と、海外旅行中の代わりの方法は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>でまとめています。</p>
 
           {/* CTA */}
           <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
