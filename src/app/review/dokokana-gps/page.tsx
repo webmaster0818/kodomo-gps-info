@@ -233,7 +233,7 @@ export default function DokokanaGpsPage() {
             <p className="text-g600 mb-6 text-sm">みまもりGPSは、月額528円で2周波GPSに対応した位置確認特化型の端末です。連絡機能が必要な場合は、他機種もあわせてご比較ください。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
-              <Link href="/review/amuelink/" className="btn-accent">次: amue link（話せるGPS）</Link>
+              <Link href="/review/bot-talk/" className="btn-accent">次: BoTトーク（話せるGPS）</Link>
             </div>
           </div>
         </div>
