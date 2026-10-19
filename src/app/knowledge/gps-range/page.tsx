@@ -62,7 +62,7 @@ const positioningMethods = [
 
 const deviceComparison = [
   { name: 'みてねみまもりGPS', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: '複数測位の自動切替' },
-  { name: 'BoTトーク', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'AI学習で精度向上' },
+  { name: 'BoTトーク', carrier: 'LTE-M（ドコモLTEエリア）', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'AI学習で精度向上' },
   { name: 'あんしんウォッチャー', carrier: 'au LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'au回線で山間部に強い' },
   { name: 'まもサーチ', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: '軽量・コンパクト' },
   { name: 'soranome（販売終了）', carrier: 'ドコモ LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵SIM', note: 'ドコモ回線で都市部に強い' },

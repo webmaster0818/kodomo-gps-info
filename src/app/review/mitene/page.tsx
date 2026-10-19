@@ -32,7 +32,7 @@ export default function MitenePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS レビュー", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みてねみまもりGPS' }]} />
 
       {/* Hero */}
@@ -115,7 +115,7 @@ export default function MitenePage() {
 
           {/* 機種比較 */}
           <h2 className="section-title">3機種の違い（MG05 / トーク / トークPlus）</h2>
-          <p className="text-g600 mb-4 text-sm">みてねみまもりGPSには、現在3つの型番があります。トーク機能の要否と防犯ブザーの有無で選ぶことが基本です（2026年6月14日 公式サイトにて確認）。</p>
+          <p className="text-g600 mb-4 text-sm">みてねみまもりGPSには、現在3つの型番があります。トーク機能の要否と防犯ブザーの有無で選ぶことが基本です（本体価格・月額は2026年10月19日に公式サイト mitene.us/gps の定価を確認。キャンペーン期間中は割引される場合があります）。</p>
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-sm">
               <thead>
@@ -127,9 +127,9 @@ export default function MitenePage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">MG05</td><td className="py-2 px-2">約2,904円/月528円</td><td className="py-2 px-2">なし(お知らせボタン)</td><td className="py-2 px-2">最安。位置確認中心のご家庭向け。電池最大約2カ月</td></tr>
-                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トーク(MT05)</td><td className="py-2 px-2">約4,280円/月748円</td><td className="py-2 px-2">あり(音声40秒・無制限)</td><td className="py-2 px-2">双方向ボイスメッセージ対応。共働き・外出が多いご家庭向け</td></tr>
-                <tr><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トークPlus(MB06)</td><td className="py-2 px-2">約5,280円/月748円</td><td className="py-2 px-2">あり</td><td className="py-2 px-2">最新機種。防犯ブザー(約85dB)+ディスプレイ搭載。やや大型の89g・電池最大約3週間</td></tr>
+                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">MG05</td><td className="py-2 px-2">5,280円/月528円</td><td className="py-2 px-2">なし(お知らせボタン)</td><td className="py-2 px-2">最安。位置確認中心のご家庭向け。電池最大約2カ月</td></tr>
+                <tr className="border-b border-g100"><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トーク(MT05)</td><td className="py-2 px-2">5,680円/月748円</td><td className="py-2 px-2">あり(音声40秒・無制限)</td><td className="py-2 px-2">双方向ボイスメッセージ対応。共働き・外出が多いご家庭向け</td></tr>
+                <tr><td className="py-2 px-2 font-semibold text-g700 whitespace-nowrap">トークPlus(MB06)</td><td className="py-2 px-2">7,480円/月748円</td><td className="py-2 px-2">あり</td><td className="py-2 px-2">最新機種。防犯ブザー(約85dB)+ディスプレイ搭載。やや大型の89g・電池最大約3週間</td></tr>
               </tbody>
             </table>
           </div>

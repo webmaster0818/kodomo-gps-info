@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'BoTトークの評判・口コミは？【2026年】トーク機能・見守りウォレット・料金を解説',
+  title: 'BoTトークの評判・口コミは？海外では使える？【2026年10月】料金・トーク機能を公式情報で解説',
   description:
-    'BoTトーク（ビーサイズ）第6世代をレビューします。元祖トーク機能、見守りウォレット、AI行動学習を搭載しています。月額528円〜748円の料金をはじめ、機能・口コミについて解説します。',
+    'BoTトーク（ビーサイズ）第6世代をレビューします。端末は海外では使えません（公式ヘルプ）が、子どもが日本・保護者が海外なら位置確認が可能です。月額528円〜748円の料金、トーク機能、見守りウォレット、口コミを読むときのポイントを解説します。',
 };
 
 const faqData = [
@@ -14,8 +14,8 @@ const faqData = [
   { q: 'BoTトークの月額料金はいくら？', a: 'GPSプラン（位置確認のみ）は月額528円（税込）、トークプラン（メッセージ送受信）は月額748円（税込）です。契約期間の縛りや解約金はありません。' },
   { q: '見守りウォレットとは何ですか？', a: '見守りウォレットは、BoTトークに搭載された電子マネー機能です。保護者がアプリからチャージし、お子さまがコンビニなどでの支払いに使えます。利用履歴は保護者のアプリに通知されます。' },
   { q: 'AI行動学習とはどんな機能？', a: 'お子さまの日常の行動パターンをAIが学習し、いつもと異なるルートを通った場合や、予定時刻に到着しない場合に通知する機能です。使うほど精度が向上します。' },
-  { q: 'バッテリーはどれくらい持ちますか？', a: '最大約1カ月です。位置情報の更新頻度やトーク機能の使用頻度によって変動します。' },
-  { q: '防水性能はありますか？', a: 'IPX5の生活防水に対応しています。雨に濡れても問題ありませんが、水没には対応していません。' },
+  { q: 'バッテリーはどれくらい持ちますか？', a: '公式の公表値は、GPSプランが電池優先モードで最長1ヶ月以上・頻度優先モードで最長3週間以上、GPS＆トークプランが電池優先モードで最長2週以上・頻度優先モードで最長1週間以上です。条件によっては1〜2日で充電が必要になる場合があると公式FAQに記載されています（2026年10月19日確認）。' },
+  { q: '防水性能はありますか？', a: '公式サイトでは「生活防水」「防塵」と案内されています（IP等級の記載はありません。2026年10月19日確認）。雨に濡れる程度を想定したもので、水没には対応していません。' },
   { q: '第6世代の新機能は？', a: '第6世代では、処理速度の向上、バッテリー効率の改善、見守りウォレット機能の追加、より高精度なAI行動学習の搭載が行われています。' },
 ];
 
@@ -33,7 +33,7 @@ export default function BotTalkPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "BoTトーク レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-09", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "BoTトーク レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'BoTトーク' }]} />
 
       <section className="bg-gradient-to-br from-green-light to-white py-12">
@@ -57,6 +57,7 @@ export default function BotTalkPage() {
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：トークプランでお子さまと<strong>メッセージ・通話</strong>ができます。<strong>見守りウォレット</strong>（電子マネー）を備え、<strong>AI行動学習</strong>でいつもと異なる動きを通知します。</li>
               <li>・<strong>弱み</strong>：多機能な分、<strong>トークプランは月額748円</strong>とやや高めです。位置精度に特化した設計ではありません。</li>
+              <li>・<strong>海外での利用</strong>：端末は日本国内のLTE網を使うため、<strong>海外に持ち出すと使えません</strong>。お子さまが日本国内にいて、保護者が海外にいる場合は、アプリから位置を確認できます（<a href="https://support.bot.app/hc/ja/articles/13238381889561" target="_blank" rel="noopener noreferrer" className="text-blue underline">BoT公式ヘルプ</a>・2026年10月15日確認）。他機種の可否は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>にまとめています。</li>
               <li>・<strong>料金</strong>：GPSプラン月額<strong>528円</strong>／トークプラン<strong>748円</strong>で、契約期間の縛りや解約金はありません。</li>
               <li>・<strong>適しているご家庭</strong>：位置確認だけでなく、お子さまと連絡も取りたいご家庭です。<strong>適していないご家庭</strong>：できるだけ安く位置確認のみを行いたいご家庭です（GPS特化機種をおすすめします）。</li>
             </ul>
@@ -81,10 +82,10 @@ export default function BotTalkPage() {
                     ['月額料金', '528円 / 748円（トーク付き）'],
                     ['本体価格', '5,280円（税込）'],
                     ['測位方式', 'GPS+GLONASS+みちびき+Wi-Fi'],
-                    ['バッテリー', '最大約1カ月'],
-                    ['通信回線', 'SoftBank LTE'],
-                    ['防水', 'IPX5（生活防水）'],
-                    ['重量', '約50g'],
+                    ['バッテリー', 'GPSプラン：最長1ヶ月以上（バッテリー優先モード）／GPS＆トークプラン：最長2週以上'],
+                    ['通信方式', 'LTE-M（ドコモLTEエリア）'],
+                    ['防水', '生活防水・防塵（IP等級の記載なし）'],
+                    ['大きさ・重量', '50×50×21mm・約58g'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -93,6 +94,7 @@ export default function BotTalkPage() {
                   ))}
                 </tbody>
               </table>
+              <p className="text-xs text-g500 mt-2">出典：<a href="https://www.bsize.com/bot/talk" target="_blank" rel="noopener noreferrer" className="text-blue underline">BoTトーク公式</a>（仕様・料金、2026年10月19日確認）</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-3">料金プラン</h3>

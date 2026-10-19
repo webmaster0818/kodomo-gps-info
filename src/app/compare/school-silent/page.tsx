@@ -77,7 +77,7 @@ export default function SchoolSilentComparePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-4">※3年総額＝本体価格＋月額×36カ月で算出した目安です。事務手数料・送料・キャンペーン割引は含みません。料金は2026年6月時点で各社公式サイトにて確認しています。最新の料金・プランは公式サイトでご確認ください。</p>
+          <p className="text-xs text-g500 mb-4">※3年総額＝本体価格＋月額×36カ月で算出した目安です。事務手数料・送料・キャンペーン割引は含みません。みてねみまもりGPS（MG05：本体5,280円・月額528円）は2026年10月19日に公式サイトで再確認しました。そのほかの料金は2026年6月時点で各社公式サイトにて確認しています。最新の料金・プランは公式サイトでご確認ください。</p>
 
           <div className="card-hover p-5 mb-8 bg-green-light/40">
             <h3 className="font-bold text-g800 mb-2">兄弟で使う場合は「あんしんウォッチャー」が割安</h3>

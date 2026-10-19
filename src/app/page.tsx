@@ -500,6 +500,7 @@ export default function HomePage() {
               { title: '学童・習い事の行き帰り', desc: '一人で通う放課後の見守りに適した機種', href: '/compare/after-school/' },
               { title: '学校向け静音GPS', desc: '音が鳴らない機種・トーク機能のない機種の比較', href: '/compare/school-silent/' },
               { title: '電池持ちで比較', desc: '充電の頻度が少ない機種のランキング', href: '/compare/battery-life/' },
+              { title: '大きさ・重さで比較', desc: '10機種の公式サイズ・重さ・防水等級の一覧', href: '/compare/size-weight/' },
               { title: '遠足・修学旅行向け', desc: '行事に持たせる機種と、持ち込み可否の考え方', href: '/compare/school-trip/' },
               { title: '総合ランキング', desc: '2026年の総合的なおすすめ機種', href: '/compare/2026-ranking/' },
             ].map((c) => (

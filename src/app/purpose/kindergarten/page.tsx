@@ -49,9 +49,9 @@ const selectionPoints = [
 ];
 
 const recommendedDevices = [
-  { name: 'みてねみまもりGPS 第3世代', weight: '約26g', battery: '約2週間', monthly: '528円/月', features: ['業界最軽量クラスの26g', '操作不要のシンプル設計', 'エリア通知対応', '生活防水（IPX5）'], best: '軽さを重視する場合に最適' },
-  { name: 'あんしんウォッチャー', weight: '約53g', battery: '約1.5カ月', monthly: '539円/月（※初月無料）', features: ['au回線による安定した通信', '最長1.5カ月のバッテリー', 'エリア通知・行動履歴対応', '充電頻度を減らしたい方向け'], best: 'バッテリー持ちを重視する場合に最適' },
-  { name: 'まもサーチ', weight: '約36g', battery: '約1週間', monthly: '528円/月', features: ['コンパクトな丸型デザイン', 'ストラップ穴があり取り付けが簡単', '迷子防止通知機能', '生活防水（IPX5）'], best: '費用対効果を重視する場合に最適' },
+  { name: 'みてねみまもりGPS（MG05）', weight: '約61g', battery: '最大2ヶ月（省エネモード）', monthly: '528円/月', features: ['お知らせボタン搭載・トーク機能なし', '操作不要のシンプル設計', 'エリア通知対応', '防水防塵（IP55）'], best: '月額を抑えて位置確認したい場合に適しています' },
+  { name: 'あんしんウォッチャー', weight: '約53g', battery: '最大2カ月', monthly: '539円/月（※初月無料）', features: ['au回線による安定した通信', '最大2カ月のバッテリー', 'エリア通知・行動履歴対応', '充電頻度を減らしたい方向け'], best: 'バッテリー持ちを重視する場合に最適' },
+  { name: 'まもサーチ3', weight: '約39g', battery: '最大2か月（電池長持ちモード）', monthly: '528円/月', features: ['当サイト比較の販売中機種で最も軽い約39g', 'ストラップ穴があり取り付けが簡単', '迷子防止通知機能', '防水防塵（IP65）'], best: '軽さを重視する場合に適しています' },
 ];
 
 const attachMethods = [
@@ -72,7 +72,7 @@ export default function KindergartenPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "幼稚園・保育園児にGPS見守りは必要？選び方とおすすめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "幼稚園・保育園児にGPS見守りは必要？選び方とおすすめ", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '幼稚園・保育園児のGPS見守り' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
