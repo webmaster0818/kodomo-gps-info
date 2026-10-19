@@ -31,7 +31,7 @@ export default function MimoriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みもりのレビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みもりのレビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みもり' }]} />
 
       {/* Hero */}
@@ -69,11 +69,11 @@ export default function MimoriPage() {
                     ['月額料金', '748円（税込）'],
                     ['本体価格', '8,580円（税込）'],
                     ['測位方式', 'GPS+GLONASS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '約1〜2カ月'],
+                    ['バッテリー', '最大2ヶ月（エコモード）／最大1.5カ月（更新間隔優先モード）'],
                     ['通信回線', 'SoftBank LTE'],
                     ['防水', '生活防水（IPX5）'],
-                    ['サイズ', '約54×54×20mm'],
-                    ['重量', '約55g'],
+                    ['サイズ', '52×52×22mm（みもり3 MR-03B）'],
+                    ['重量', '約62g'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -141,7 +141,7 @@ export default function MimoriPage() {
                 <li>・月額748円で最安ではない点</li>
                 <li>・本体価格8,580円はやや高め</li>
                 <li>・双方向のトーク機能には非対応</li>
-                <li>・端末がやや大きめ（約55g）</li>
+                <li>・端末がやや大きめ（約62g）</li>
                 <li>・音声メッセージは保護者からお子さまへの一方向のみ</li>
               </ul>
             </div>
@@ -162,7 +162,7 @@ export default function MimoriPage() {
             <p className="text-g600 mb-6 text-sm">みもりは不審者情報連動を備え、防犯機能の充実度はトップクラスです。お子さまの安全を最優先に考える方に適しています。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
-              <Link href="/review/coneco/" className="btn-accent">次のレビュー: coneco</Link>
+              <Link href="/review/coneco/" className="btn-accent">次のレビュー: coneco（新規販売終了）</Link>
             </div>
           </div>
         </div>

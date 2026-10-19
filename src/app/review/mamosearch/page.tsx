@@ -31,7 +31,7 @@ export default function MamosearchPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ3 レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ3 レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'まもサーチ' }]} />
 
       <section className="bg-gradient-to-br from-green-light to-white py-12">
@@ -68,10 +68,11 @@ export default function MamosearchPage() {
                     ['月額料金', '539円（税込）'],
                     ['本体価格', '5,280円（税込）'],
                     ['測位方式', 'GPS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '最大約1カ月'],
+                    ['バッテリー', '最大2か月（電池長持ちモード）／最大6週間（頻度優先モード）'],
                     ['最大見守り人数', '25人'],
                     ['通信回線', 'SoftBank LTE'],
-                    ['防水', '生活防水（IPX5）'],
+                    ['防水', 'IP65'],
+                    ['大きさ・重量', '49×49×15.5mm・約39g'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -111,7 +112,7 @@ export default function MamosearchPage() {
               { icon: '🔔', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。登下校の確認に役立ちます。' },
               { icon: '📊', title: '移動履歴', desc: '過去の移動ルートを確認でき、行動パターンを把握できます。' },
               { icon: '📦', title: 'コンパクト設計', desc: '第3世代でさらに小型化しました。ランドセルに入れても邪魔になりません。' },
-              { icon: '🔋', title: '長持ちバッテリー', desc: '最大1カ月持続し、充電の手間を軽減できます。' },
+              { icon: '🔋', title: '長持ちバッテリー', desc: '電池長持ちモードで最大2か月持続し、充電の手間を軽減できます（公式）。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <p className="text-2xl mb-2">{f.icon}</p>

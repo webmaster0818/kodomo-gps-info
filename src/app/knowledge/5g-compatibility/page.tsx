@@ -66,7 +66,7 @@ const deviceStatus = [
   { name: 'まもサーチ', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
   { name: 'soranome（販売終了）', network: '4G (ドコモ LTE)', fiveG: '非対応', status: '問題なし' },
   { name: 'myFirst Fone R2', network: '4G (ドコモ/ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
-  { name: 'coneco', network: '4G (ドコモ LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'coneco（新規販売終了）', network: '4G (ドコモ LTE)', fiveG: '非対応', status: '問題なし' },
 ];
 
 export default function FiveGCompatibilityPage() {

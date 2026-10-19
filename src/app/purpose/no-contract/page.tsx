@@ -35,7 +35,7 @@ const contractData = [
   { name: 'まもサーチ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '見守り最大25人。詳細は公式サイトにてご確認ください', href: '/review/mamosearch/' },
   { name: 'SayuU', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '月額1,210円。契約条件は公式サイトにてご確認ください', href: '/review/sayuu/' },
   { name: 'みもり', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/mimori/' },
-  { name: 'coneco', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/coneco/' },
+  { name: 'coneco（新規販売終了）', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/coneco/' },
   { name: 'myFirst Fone', term: 'SIM契約による', fee: '公式サイトで要確認', note: 'SIMは別契約のため、条件は提供元にてご確認ください', href: '/review/myfirst-fone/' },
   { name: 'はろここ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/halococo/' },
   { name: 'キッズフォン', term: 'キャリア契約による', fee: 'キャリア契約による', note: 'キャリア契約に準ずる', href: '/review/kids-phone/' },

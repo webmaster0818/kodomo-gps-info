@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '【2026年最新】子供用GPSおすすめランキング13選｜全機種比較',
+  title: '【2026年最新】子供用GPSおすすめランキング12選｜全機種比較',
   description:
-    '2026年最新の子供用GPSおすすめランキング13選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
+    '2026年最新の子供用GPSおすすめランキング12選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
   keywords: ['子供GPS', 'おすすめ', 'ランキング', '2026', '比較', '全機種', '最新'],
   openGraph: {
     images: ['/og.png'],
-    title: '【2026年最新】子供用GPSおすすめランキング13選｜全機種比較',
-    description: '2026年最新の子供用GPSおすすめランキング13選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。',
+    title: '【2026年最新】子供用GPSおすすめランキング12選｜全機種比較',
+    description: '2026年最新の子供用GPSおすすめランキング12選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。',
   },
 };
 
@@ -37,8 +37,8 @@ const faqJsonLd = {
 
 const rankingData = [
   {
-    rank: 1, name: 'みてねみまもりGPS 第3世代', score: 95, initial: 5280, monthly: 528,
-    battery: '最大2カ月', waterproof: 'IP55', weight: '約56g', carrier: 'ソフトバンク LTE',
+    rank: 1, name: 'みてねみまもりGPS（MG05）', score: 95, initial: 5280, monthly: 528,
+    battery: '最大2カ月', waterproof: 'IP55', weight: '約61g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/速度異常/定時',
     merit: 'バッテリー持ちが長く、月額料金も低く抑えられています。アプリの操作性にも定評があります。みまもりAIが行動パターンを学習します。',
     demerit: '防水性能はIP55で標準的です。トーク機能はありません。',
@@ -47,7 +47,7 @@ const rankingData = [
   },
   {
     rank: 2, name: 'BoTトーク', score: 92, initial: 5280, monthly: 748,
-    battery: '最大1カ月', waterproof: 'IP55', weight: '約50g', carrier: 'ソフトバンク LTE',
+    battery: '最長1ヶ月以上（GPSプラン）', waterproof: '生活防水・防塵', weight: '約58g', carrier: 'LTE-M（ドコモLTEエリア）',
     notifications: 'エリア通知/SOS/バッテリー低下/速度異常/定時/長時間停止',
     merit: '音声メッセージの送受信が可能です。AIが通学ルートを自動で学習し、ルートを外れた際に通知します。通知機能が最も充実しています。',
     demerit: '月額料金は528円クラスの機種より高めです。トーク機能を利用するとバッテリー消費が増えます。',
@@ -56,7 +56,7 @@ const rankingData = [
   },
   {
     rank: 3, name: 'あんしんウォッチャー', score: 90, initial: 11000, monthly: 539,
-    battery: '最大1.5カ月', waterproof: 'IP55', weight: '約53g', carrier: 'au LTE',
+    battery: '最大2カ月', waterproof: 'IP55', weight: '約53g', carrier: 'au LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: 'au回線のため山間部のカバー率が高い点が特長です。auユーザーはキャリア決済に対応しています。セコムとの連携オプションもあります。',
     demerit: '初期費用が11,000円とやや高めです。速度異常通知には対応していません。',
@@ -64,34 +64,25 @@ const rankingData = [
     review: '/review/anshin-watcher/',
   },
   {
-    rank: 4, name: 'まもサーチ', score: 87, initial: 5280, monthly: 528,
-    battery: '最大1カ月', waterproof: 'IP55', weight: '約36g', carrier: 'ソフトバンク LTE',
+    rank: 4, name: 'まもサーチ3', score: 87, initial: 5280, monthly: 528,
+    battery: '最大2か月', waterproof: 'IP65', weight: '約39g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時/長時間停止',
-    merit: '業界最軽量クラスの約36gです。長時間停止通知に対応しています。ストラップホールがあり、取り付けが容易です。',
-    demerit: 'バッテリー持ちは1カ月とやや短めです。速度異常通知には対応していません。',
+    merit: '約39gで、当サイトが比較した販売中の機種では最も軽量です。長時間停止通知に対応しています。ストラップホールがあり、取り付けが容易です。',
+    demerit: '速度異常通知には対応していません。',
     recommend: '軽さを重視する方、ランドセルに入れられる小型の端末を希望する方',
     review: '/review/mamosearch/',
   },
   {
     rank: 5, name: 'myFirst Fone R2', score: 84, initial: 26980, monthly: 998,
-    battery: '約2日', waterproof: 'IP68', weight: '約58g', carrier: 'ドコモ/ソフトバンク LTE',
+    battery: '連続通話 約6時間', waterproof: 'IPX8', weight: '約48g', carrier: 'ドコモ/ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
-    merit: '腕時計型で、通話・ビデオ通話が可能です。防水性能は最高等級のIP68です。カメラと音楽再生機能を備えています。',
+    merit: '腕時計型で、通話・ビデオ通話が可能です。防水性能はIPX8（生活防水・水深3mで5分まで）と公表されています。カメラと音楽再生機能を備えています。',
     demerit: '初期費用・月額料金ともに最高クラスです。バッテリーは2日程度です。学校で使用できない場合があります。',
     recommend: '通話機能が必要な方、多機能な腕時計型を希望する方',
     review: '/review/myfirst-fone/',
   },
   {
-    rank: 6, name: 'coneco（コネコ）', score: 82, initial: 8580, monthly: 748,
-    battery: '約2週間', waterproof: 'IPX4', weight: '約60g', carrier: 'ドコモ LTE',
-    notifications: 'エリア通知/SOS/バッテリー低下/定時',
-    merit: 'テキストメッセージの送受信が可能です。定型文を端末のボタンで選んで送信できます。ドコモ回線を利用しています。',
-    demerit: '防水性能がIPX4と低めです。月額料金も高めです。',
-    recommend: 'テキストメッセージでやり取りしたい方',
-    review: '/review/coneco/',
-  },
-  {
-    rank: 7, name: 'キッズフォン3', score: 81, initial: 20880, monthly: 539,
+    rank: 6, name: 'キッズフォン3', score: 81, initial: 20880, monthly: 539,
     battery: '約2日', waterproof: 'IPX5/IPX8', weight: '約115g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '通話・SMSに対応しています。カメラを搭載し、防犯ブザーとも連動します。ソフトバンクショップでサポートを受けられます。',
@@ -100,7 +91,7 @@ const rankingData = [
     review: '/review/kids-phone/',
   },
   {
-    rank: 8, name: 'Hamic POCKET（ハミックポケット）', score: 79, initial: 12100, monthly: 1100,
+    rank: 7, name: 'Hamic POCKET（ハミックポケット）', score: 79, initial: 12100, monthly: 1100,
     battery: '約2日', waterproof: 'IPX4', weight: '約107g', carrier: 'ドコモ LTE',
     notifications: 'エリア通知/SOS/バッテリー低下',
     merit: 'メッセージ・通話に対応しています。スマートフォンを持つ前の段階として使うことができ、子供向けの画面設計です。',
@@ -109,8 +100,8 @@ const rankingData = [
     review: '/review/hamic/',
   },
   {
-    rank: 9, name: 'ミモリ', score: 78, initial: 7480, monthly: 748,
-    battery: '約3週間', waterproof: 'IP55', weight: '約55g', carrier: 'ソフトバンク LTE',
+    rank: 8, name: 'ミモリ', score: 78, initial: 7480, monthly: 748,
+    battery: '最大2ヶ月（エコモード）', waterproof: 'IPX5', weight: '約62g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '防犯ブザー一体型です。ブザーを鳴らすと位置情報と録音を自動で送信し、見守りと防犯を両立できます。',
     demerit: '月額料金がやや高めです。アプリの機能はシンプルです。',
@@ -118,7 +109,7 @@ const rankingData = [
     review: '/review/mimori/',
   },
   {
-    rank: 10, name: 'ハロここ', score: 77, initial: 6380, monthly: 580,
+    rank: 9, name: 'ハロここ', score: 77, initial: 6380, monthly: 580,
     battery: '約1カ月', waterproof: 'IP55', weight: '約42g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: 'コンパクトで軽量です。月額580円と手頃で、機能がシンプルなため使いやすい機種です。',
@@ -127,7 +118,7 @@ const rankingData = [
     review: '/review/halococo/',
   },
   {
-    rank: 11, name: 'あんしんウォッチャー LE', score: 75, initial: 5980, monthly: 539,
+    rank: 10, name: 'あんしんウォッチャー LE', score: 75, initial: 5980, monthly: 539,
     battery: '最大1カ月', waterproof: 'IP55', weight: '約53g', carrier: 'au LTE',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
     merit: '通常版より初期費用が安く、au回線のカバー力はそのままです。基本機能は通常版と同等です。',
@@ -136,7 +127,7 @@ const rankingData = [
     review: '/review/anshin-watcher/',
   },
   {
-    rank: 12, name: 'まもサーチ ミニ', score: 74, initial: 3980, monthly: 528,
+    rank: 11, name: 'まもサーチ ミニ', score: 74, initial: 3980, monthly: 528,
     battery: '約2週間', waterproof: 'IP55', weight: '約30g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下',
     merit: '業界最安クラスの初期費用です。約30gと非常に軽量で、試験的な導入に適しています。',
@@ -145,7 +136,7 @@ const rankingData = [
     review: '/review/mamosearch/',
   },
   {
-    rank: 13, name: 'みもりGPS ライト', score: 72, initial: 4980, monthly: 528,
+    rank: 12, name: 'みもりGPS ライト', score: 72, initial: 4980, monthly: 528,
     battery: '約2週間', waterproof: 'IP55', weight: '約48g', carrier: 'ソフトバンク LTE',
     notifications: 'エリア通知/SOS/バッテリー低下',
     merit: '低価格ながら防犯ブザー機能を備えており、初期費用を抑えつつ防犯対策も行えます。',
@@ -181,7 +172,6 @@ const purposeRecommendations = [
     picks: [
       { name: 'BoTトーク', reason: '音声メッセージ、AI学習、通知機能が最も充実しています。' },
       { name: 'myFirst Fone R2', reason: '通話・ビデオ通話・カメラ・音楽再生の機能をすべて備えています。' },
-      { name: 'coneco', reason: 'テキストメッセージの送受信でやり取りが可能です。' },
     ],
   },
   {
@@ -207,7 +197,7 @@ export default function Ranking2026Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング13選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング12選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -217,7 +207,7 @@ export default function Ranking2026Page() {
             <span className="tag-pill bg-blue text-white">ランキング</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            【2026年最新】子供用GPSおすすめランキング13選
+            【2026年最新】子供用GPSおすすめランキング12選
           </h1>
           <p className="text-g600 text-lg">全機種を5つの評価軸で比較し、お子さまに合った1台を選ぶための情報をまとめています。</p>
         </div>
@@ -247,7 +237,7 @@ export default function Ranking2026Page() {
             ))}
           </div>
 
-          <h2 className="section-title">総合ランキング 1〜13位</h2>
+          <h2 className="section-title">総合ランキング 1〜12位</h2>
           <div className="space-y-6 mb-10">
             {rankingData.map((d) => (
               <div key={d.rank} className={`card-hover p-6 ${d.rank <= 3 ? 'border-l-4 border-orange' : ''}`}>
@@ -353,7 +343,7 @@ export default function Ranking2026Page() {
                 { q: '通話機能は必要ですか？', yes: 'myFirst Fone R2 / キッズフォン3 / Hamic POCKET をおすすめします', no: '次の質問へ' },
                 { q: '音声メッセージ（トーク）機能は必要ですか？', yes: 'BoTトーク をおすすめします', no: '次の質問へ' },
                 { q: '山間部や郊外で使いますか？', yes: 'あんしんウォッチャー（au回線）をおすすめします', no: '次の質問へ' },
-                { q: '防水性能を重視しますか？', yes: 'myFirst Fone R2（IP68）をおすすめします', no: '次の質問へ' },
+                { q: '防水性能を重視しますか？', yes: 'myFirst Fone R2（IPX8）をおすすめします', no: '次の質問へ' },
                 { q: '費用を最も重視しますか？', yes: 'みてねみまもりGPS をおすすめします（費用対効果が最も優れた機種）', no: 'まもサーチ（最軽量）をおすすめします' },
               ].map((item, i) => (
                 <div key={i} className="bg-blue-light rounded-lg p-4">

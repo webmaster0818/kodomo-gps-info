@@ -87,7 +87,6 @@ export default function ElementaryPage() {
                 {[
                   { name: 'みてねみまもりGPS', reason: '利用者No.1、バッテリー2カ月、528円', href: '/review/mitene/' },
                   { name: 'あんしんウォッチャー', reason: 'KDDIの通信品質、2台目無料、兄弟での利用向け', href: '/review/anshin-watcher/' },
-                  { name: 'coneco', reason: '1分間隔の位置更新、480円で最安', href: '/review/coneco/' },
                 ].map((item) => (
                   <div key={item.name} className="bg-white rounded-lg p-3">
                     <Link href={item.href} className="font-semibold text-blue text-sm hover:underline">{item.name}</Link>

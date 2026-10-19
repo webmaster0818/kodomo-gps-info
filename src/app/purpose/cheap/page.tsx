@@ -3,18 +3,18 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供GPS 安い順ランキング | 月額料金比較とコスパ重視のおすすめTOP5',
+  title: '子供GPS 安い順ランキング | 月額料金比較とコスパ重視のおすすめTOP4',
   description:
-    '子供用GPS端末11機種を、月額料金の安い順に比較します。本体価格を含めた総コストの計算、2台目割引の情報、コスパランキングTOP5を掲載しています。最安で月額480円から利用できる見守りGPSを紹介します。',
+    '子供用GPS端末10機種を、月額料金の安い順に比較します。本体価格を含めた総コストの計算、2台目割引の情報、コスパランキングTOP4を掲載しています。月額528円から利用できる見守りGPSを紹介します。',
 };
 
 const faqData = [
-  { q: '子供用GPS端末で一番安いのはどれ？', a: '月額料金が最も安いのは、conecoの月額480円（税込）です。次いで、みてねみまもりGPS、BoTトーク、はろここが月額528円で並びます。' },
-  { q: '本体価格も含めると一番お得なのは？', a: '本体価格と月額料金を合わせた年間総コストで比較すると、本体3,800円・月額480円のconecoが初年度最安です。ただし、2台目まで考慮すると、あんしんウォッチャー（2台目無料）がお得です。' },
+  { q: '子供用GPS端末で一番安いのはどれ？', a: '販売中の機種で月額料金が最も安いのは、みてねみまもりGPS、BoTトーク、はろここの月額528円（税込）です。月額480円だったconecoは、本体の新規販売を終了しています（カーメイト公式・2026年10月19日確認）。' },
+  { q: '本体価格も含めると一番お得なのは？', a: '本体価格と月額料金を合わせた年間総コストで比較すると、みてねみまもりGPS・BoTトーク・はろここ（本体5,280円・月額528円で11,616円）が初年度最安です。ただし、2台目まで考慮すると、あんしんウォッチャー（2台目無料）がお得です。' },
   { q: '2台目割引がある機種はありますか？', a: 'あんしんウォッチャー（KDDI）は、2台目の月額料金が無料です。兄弟で使う場合には、費用を大きく抑えられます。' },
   { q: '安い機種は機能が少ないですか？', a: '月額480円〜528円の機種でも、位置確認・移動履歴・エリア通知などの基本機能は充実しています。トーク機能やSOS機能が必要な場合は、追加料金のプランをご検討ください。' },
   { q: '途中で解約できますか？', a: 'ほとんどのGPS端末には、契約期間の縛りや解約金がありません。不要になった場合は、いつでも解約できます。ただし、端末によっては最低利用期間が設けられている場合があるため、事前にご確認ください。' },
-  { q: '初期費用はいくらかかりますか？', a: '初期費用は主に本体価格のみです。最安のconecoで3,800円、一般的な機種で5,000円〜8,000円程度です。事務手数料や初期登録料は、無料の機種が多くなっています。' },
+  { q: '初期費用はいくらかかりますか？', a: '初期費用は主に本体価格のみです。販売中の主要機種では5,280円前後から、高機能な機種では1万円を超えるものもあります。事務手数料や初期登録料は、無料の機種が多くなっています。' },
 ];
 
 const faqJsonLd = {
@@ -44,14 +44,14 @@ export default function CheapPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供GPS 安い順ランキング・コスパ比較
           </h1>
-          <p className="text-g600 text-lg">全11機種の月額料金比較 | 本体込み総コスト | コスパTOP5</p>
+          <p className="text-g600 text-lg">全10機種の月額料金比較 | 本体込み総コスト | コスパTOP4</p>
         </div>
       </section>
 
       {/* 料金比較表 */}
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">全11機種 月額料金比較（安い順）</h2>
+          <h2 className="section-title">全10機種 月額料金比較（安い順）</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -65,17 +65,16 @@ export default function CheapPage() {
               </thead>
               <tbody>
                 {[
-                  ['1', 'coneco', '480円', '6,600円', '12,360円', '/review/coneco/'],
-                  ['2', 'みてねみまもりGPS', '528円', '5,280円', '11,616円', '/review/mitene/'],
-                  ['3', 'BoTトーク', '528円', '5,280円', '11,616円', '/review/bot-talk/'],
-                  ['4', 'はろここ', '528円', '5,280円', '11,616円', '/review/halococo/'],
-                  ['5', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
-                  ['6', 'まもサーチ', '539円', '5,280円', '11,748円', '/review/mamosearch/'],
-                  ['7', 'みもり', '748円', '8,580円', '17,556円', '/review/mimori/'],
-                  ['8', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
-                  ['9', 'Hamic', '1,100円', '12,100円', '25,300円', '/review/hamic/'],
-                  ['10', 'SayuU', '1,210円', '13,200円', '27,720円', '/review/sayuu/'],
-                  ['11', 'myFirst Fone', '約980円〜', '約18,000円〜', '約29,760円〜', '/review/myfirst-fone/'],
+                  ['1', 'みてねみまもりGPS', '528円', '5,280円', '11,616円', '/review/mitene/'],
+                  ['2', 'BoTトーク', '528円', '5,280円', '11,616円', '/review/bot-talk/'],
+                  ['3', 'はろここ', '528円', '5,280円', '11,616円', '/review/halococo/'],
+                  ['4', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
+                  ['5', 'まもサーチ', '539円', '5,280円', '11,748円', '/review/mamosearch/'],
+                  ['6', 'みもり', '748円', '8,580円', '17,556円', '/review/mimori/'],
+                  ['7', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
+                  ['8', 'Hamic', '1,100円', '12,100円', '25,300円', '/review/hamic/'],
+                  ['9', 'SayuU', '1,210円', '13,200円', '27,720円', '/review/sayuu/'],
+                  ['10', 'myFirst Fone', '約980円〜', '約18,000円〜', '約29,760円〜', '/review/myfirst-fone/'],
                 ].map(([rank, name, monthly, device, annual, href]) => (
                   <tr key={rank + name} className="border-b border-g100">
                     <td className="p-3 font-bold text-orange">{rank}</td>
@@ -115,15 +114,14 @@ export default function CheapPage() {
             </div>
           </div>
 
-          {/* コスパTOP5 */}
-          <h2 className="section-title">コスパランキングTOP5</h2>
+          {/* コスパTOP4 */}
+          <h2 className="section-title">コスパランキングTOP4</h2>
           <div className="space-y-4 mb-8">
             {[
               { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、利用者数No.1です。バッテリーが2カ月持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
               { rank: 2, name: 'あんしんウォッチャー', reason: '2台目無料のため、兄弟での利用に適しています。KDDI品質の安定した通信で、au以外の回線の保護者でも利用できます。', href: '/review/anshin-watcher/' },
-              { rank: 3, name: 'coneco', reason: '月額480円で業界最安です。1分間隔の追跡に対応した高機能な機種で、価格以上の価値があります。', href: '/review/coneco/' },
-              { rank: 4, name: 'まもサーチ', reason: '月額539円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
-              { rank: 5, name: 'BoTトーク', reason: '月額528円の基本プランでも、高精度なAI学習を搭載しています。トーク付きのプランでも748円です。', href: '/review/bot-talk/' },
+              { rank: 3, name: 'まもサーチ', reason: '月額539円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
+              { rank: 4, name: 'BoTトーク', reason: '月額528円の基本プランでも、高精度なAI学習を搭載しています。トーク付きのプランでも748円です。', href: '/review/bot-talk/' },
             ].map((item) => (
               <div key={item.rank} className="flex gap-4 items-start card-hover p-4">
                 <span className="flex-shrink-0 w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center font-bold">

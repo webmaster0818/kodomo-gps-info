@@ -42,13 +42,13 @@ const ipRatings = [
 ];
 
 const deviceWaterproof = [
-  { name: 'みてねみまもりGPS 第3世代', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約56g' },
-  { name: 'BoTトーク', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約50g' },
+  { name: 'みてねみまもりGPS（MG05）', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約61g' },
+  { name: 'BoTトーク', rating: '生活防水・防塵（等級の記載なし）', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約58g' },
   { name: 'あんしんウォッチャー', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約53g' },
-  { name: 'まもサーチ', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約36g' },
+  { name: 'まもサーチ3', rating: 'IP65', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
   { name: 'soranome（販売終了）', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
-  { name: 'myFirst Fone R2', rating: 'IP68', rain: '◎', sweat: '◎', wash: '○', pool: '△', weight: '約58g' },
-  { name: 'coneco', rating: 'IPX4', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約60g' },
+  { name: 'myFirst Fone R2', rating: 'IPX8（水深3mで5分まで）', rain: '◎', sweat: '◎', wash: '○', pool: '△', weight: '約48g' },
+  { name: 'coneco（新規販売終了）', rating: 'IPX3相当', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約64g' },
   { name: 'Hamic POCKET', rating: 'IPX4', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約107g' },
   { name: 'キッズフォン3', rating: 'IPX5/IPX8', rain: '○', sweat: '○', wash: '○', pool: '△', weight: '約115g' },
 ];
@@ -72,7 +72,7 @@ export default function WaterproofTestPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの防水性能比較｜プール・雨・汗でも大丈夫？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの防水性能比較｜プール・雨・汗でも大丈夫？", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '防水性能比較' }]} />
 
       <section className="bg-gradient-to-br from-blue-light to-white py-12">
@@ -149,13 +149,14 @@ export default function WaterproofTestPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-g500 mb-8">※防水等級と重さは各社公式サイトの仕様（2026年10月19日確認。キッズフォン3・Hamic POCKETを除く）にもとづきます。雨・汗・水洗い・プールの可否は、防水等級から当サイトが判断した目安です。</p>
 
           <h2 className="section-title">シーン別の安全性ガイド</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
               { scene: '雨天の通学', icon: '☂️', verdict: '基本OK', desc: 'IP55以上のほとんどの機種で問題ありません。ランドセルの内側やカバーの中に入れておくと、より安心です。豪雨の際は防水ポーチの併用をおすすめします。' },
               { scene: '汗をかく運動時', icon: '🏃', verdict: '基本OK', desc: '日常的な発汗程度であれば、ほとんど影響はありません。ただし、腕時計型は汗の塩分で肌側の端子が腐食しやすいため、定期的に拭き取ってください。' },
-              { scene: 'プール・水遊び', icon: '🏊', verdict: '非推奨', desc: 'IP68のmyFirst Fone R2でも、公式にはプールでの使用は推奨されていません。塩素がパッキンを劣化させる可能性があるためです。プールの際はロッカーに保管することをおすすめします。' },
+              { scene: 'プール・水遊び', icon: '🏊', verdict: '非推奨', desc: 'IPX8のmyFirst Fone R2でも、公式の条件は「水深3mで5分まで」で、プールなど長時間の水中での使用は想定されていません。塩素がパッキンを劣化させる可能性があるためです。プールの際はロッカーに保管することをおすすめします。' },
               { scene: '水洗い・流水すすぎ', icon: '🚿', verdict: 'IPX7以上OK', desc: 'IPX7以上であれば、流水での軽い洗浄は可能です。ただし、充電端子に水が入らないよう注意し、洗浄後は十分に乾燥させてください。' },
               { scene: '雪遊び', icon: '⛄', verdict: '条件付きOK', desc: '雪そのものはIP55以上であれば問題ありませんが、溶けた水が端末内に浸入するおそれがあります。手袋の中に入れるなどの工夫をおすすめします。また、低温はバッテリー性能を低下させます。' },
               { scene: '泥遊び・砂場', icon: '🏖️', verdict: 'IP6X推奨', desc: 'IP67/IP68であれば防塵性能も備えているため安心です。IPX5などの防塵性能のない機種は、充電端子に砂が詰まるおそれがあるため注意が必要です。' },

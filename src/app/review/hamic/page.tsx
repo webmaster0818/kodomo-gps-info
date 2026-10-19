@@ -31,7 +31,7 @@ export default function HamicPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "Hamic レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "Hamic レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'Hamic' }]} />
 
       {/* Hero */}
@@ -73,8 +73,8 @@ export default function HamicPage() {
                     ['測位方式', 'GPS+Wi-Fi'],
                     ['メッセージ', 'テキスト・スタンプ・写真'],
                     ['カメラ', '搭載'],
-                    ['防水', '生活防水'],
-                    ['バッテリー', '約2〜3日'],
+                    ['防水', 'IP64（Hamic POCKET L・専用ケース装着時）'],
+                    ['バッテリー', '約1.5日が目安（Hamic POCKET L・2,000mAh）'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>

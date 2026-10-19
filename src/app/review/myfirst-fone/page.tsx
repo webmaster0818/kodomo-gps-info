@@ -13,7 +13,7 @@ const faqData = [
   { q: 'myFirst Foneの月額料金はいくら？', a: '端末本体の月額料金は不要ですが、通話・データ通信のためにSIMカード（月額約980円〜）の契約が別途必要です。格安SIMも利用できます。' },
   { q: 'SOS機能はどう使うの？', a: '端末のSOSボタンを長押しすると、事前に登録した緊急連絡先に自動で通知が送られます。同時に端末の位置情報も送信されるため、迅速に対応できます。' },
   { q: 'カメラ機能はありますか？', a: 'はい、インカメラを搭載しています。ビデオ通話に使えるほか、お子さまが写真を撮影してアプリに送信することもできます。' },
-  { q: '防水性能はありますか？', a: 'IP68の防水・防塵性能を備えています。手洗いの際や雨の日でも使用できます。ただし、水泳中の使用は推奨されていません。' },
+  { q: '防水性能はありますか？', a: '公式サイトでは「生活防水 IPX8」（水深3mで5分まで）と案内されています（2026年10月19日確認）。手洗いの際や雨の日でも使用できますが、水泳など長時間の水中での使用は想定されていません。' },
   { q: '対象年齢は何歳くらい？', a: '主な対象年齢は5歳〜12歳程度です。腕時計型のためランドセルに入れ忘れるリスクがなく、常に身に着けていられる点が、小さなお子さまにも適しています。' },
 ];
 
@@ -31,7 +31,7 @@ export default function MyFirstFonePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "myFirst Fone レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "myFirst Fone レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'myFirst Fone' }]} />
 
       {/* Hero */}
@@ -73,7 +73,7 @@ export default function MyFirstFonePage() {
                     ['測位方式', 'GPS+GLONASS+Wi-Fi'],
                     ['通話', '音声通話・ビデオ通話対応'],
                     ['カメラ', 'インカメラ搭載'],
-                    ['防水', 'IP68（防水・防塵）'],
+                    ['防水', 'IPX8（生活防水・水深3mで5分まで）'],
                     ['SOS', '緊急通知ボタン搭載'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
@@ -132,7 +132,7 @@ export default function MyFirstFonePage() {
                 <li>・SOSボタンによる緊急時の備え</li>
                 <li>・腕時計型で置き忘れの心配なし</li>
                 <li>・カメラ付きでビデオ通話や写真撮影に対応</li>
-                <li>・IP68の高い防水・防塵性能</li>
+                <li>・生活防水 IPX8（水深3mで5分まで）</li>
                 <li>・音楽再生などのエンタメ機能も充実</li>
               </ul>
             </div>

@@ -159,7 +159,7 @@ export default function WatchTypePage() {
               <Link href="/review/myfirst-fone/" className="text-blue hover:underline">myFirst Fone 詳細レビュー</Link>
             </h3>
             <p className="text-g600 text-sm mb-4">
-              腕時計型キッズGPSの代表的な機種です。音声通話・ビデオ通話・カメラ・SOS・音楽再生・IP68防水と
+              腕時計型キッズGPSの代表的な機種です。音声通話・ビデオ通話・カメラ・SOS・音楽再生・生活防水（IPX8）と
               多くの機能を搭載したキッズスマートウォッチです。日本語および日本のSIMに対応しているため、国内でも安心して使えます。
             </p>
             <div className="grid sm:grid-cols-3 gap-3">
