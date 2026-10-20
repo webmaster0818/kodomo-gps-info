@@ -14,7 +14,7 @@ const faqData = [
   { q: 'Wi-Fi測位とは何ですか？', a: '周囲のWi-Fiアクセスポイントの位置情報を利用して現在地を推定する仕組みです。屋内やビル街など衛星電波が届きにくい場所での精度向上に役立ちます。' },
   { q: '更新間隔は、どのくらいに設定するのがよいですか？', a: '通学時の見守りなら1.5分〜3分間隔が一般的です。更新間隔を短くすると精度は上がりますが、バッテリー消費が増えます。' },
   { q: '屋内での精度はどうなりますか？', a: '屋内ではGPS衛星の電波が届きにくく、精度が大きく低下します。Wi-Fi測位に対応した機種であれば、屋内でもある程度の精度を維持できます。' },
-  { q: '精度が最も高い機種はどれですか？', a: 'GPS・GLONASS・みちびき・Wi-Fiの4方式に対応した機種（みてねみまもりGPS、BoTトーク等）が、最も精度が高い傾向にあります。' },
+  { q: '精度が最も高い機種はどれですか？', a: '複数の測位衛星（GNSS）に Wi-Fi・携帯基地局を組み合わせる機種（みてねみまもりGPS、BoTトーク等）は、屋内や建物の多い場所でも位置を補いやすい構成です。対応する衛星は機種ごとに異なります（下表・各社公式・2026年10月20日確認）。実際の精度は環境によって変わるため、目安としてお考えください。' },
 ];
 
 const faqJsonLd = {
@@ -36,8 +36,8 @@ const positioningSystems = [
 ];
 
 const accuracyData = [
-  { name: 'みてねみまもりGPS', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
-  { name: 'BoTトーク', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
+  { name: 'みてねみまもりGPS', systems: 'GPS+みちびき+BeiDou+Galileo+GLONASS+Wi-Fi+基地局', interval: '1.5分〜', indoor: '良好' },
+  { name: 'BoTトーク', systems: 'GPS+みちびき+BeiDou+Galileo+SBAS+Wi-Fi+基地局', interval: '1.5分〜', indoor: '良好' },
   { name: 'あんしんウォッチャー', systems: 'GPS+Wi-Fi+基地局', interval: '1.5分〜', indoor: '普通' },
   { name: 'ソラノメ（販売終了）', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
   { name: 'みもり', systems: 'GPS+GLONASS+Wi-Fi', interval: '2分〜', indoor: '良好' },
