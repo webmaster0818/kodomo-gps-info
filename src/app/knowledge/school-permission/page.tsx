@@ -64,7 +64,7 @@ export default function SchoolPermissionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPSの学校持ち込み許可の取り方｜申請理由の例文と自治体の補助制度一覧", "datePublished": "2026-06-12", "dateModified": "2026-06-12", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '学校許可の取り方' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">申請例文を掲載</span>
@@ -176,7 +176,7 @@ export default function SchoolPermissionPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-green-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-green-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">許可を得た後の端末選び</h2>
             <p className="text-g600 mb-6 text-sm">学校に持たせやすいのは、通話機能のない無音の位置確認専用GPSです。</p>
             <div className="flex flex-wrap justify-center gap-4">

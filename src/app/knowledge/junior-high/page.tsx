@@ -26,7 +26,7 @@ export default function JuniorHighPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "中学生にGPSは必要？塾・部活・スマホとの使い分けガイド", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '中学生向け' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">中学生にGPSは必要？</h1>
           <p className="text-g600 text-lg">塾・部活での活用、スマートフォンとの使い分け、思春期の子供を見守る際の考え方を解説します。</p>
@@ -38,22 +38,22 @@ export default function JuniorHighPage() {
           <h2 className="section-title">中学生にGPSが役立つ場面</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📚</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">塾帰り・夜遅い時間</h3>
               <p className="text-sm text-g600">帰宅時間が遅い塾帰りに、現在地を確認できるため安心です。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🏃</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">部活の遠征・大会</h3>
               <p className="text-sm text-g600">練習試合や遠征など、普段と異なる場所への移動も確認できます。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🚆</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">電車通学</h3>
               <p className="text-sm text-g600">乗り換えや遅延時の状況も把握できます。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📱</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">スマートフォンを持たせていないご家庭</h3>
               <p className="text-sm text-g600">スマートフォンを持たせない方針の場合でも、GPS端末で見守ることができます。</p>
             </div>
@@ -86,7 +86,7 @@ export default function JuniorHighPage() {
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (<details key={i} className="faq-item"><summary>{faq.q}</summary><div className="faq-answer">{faq.a}</div></details>))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">中学生に適した機種を探す</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>

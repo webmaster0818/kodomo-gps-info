@@ -35,7 +35,7 @@ export default function TalkPage() {
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: 'トーク機能付き' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">会話ができるGPS</span>
@@ -146,7 +146,7 @@ export default function TalkPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまと会話ができるGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">トーク機能付きGPSは、位置確認に加えて連絡手段も確保できます。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -37,7 +37,7 @@ export default function DokokanaGpsPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みまもりGPS（旧どこかなGPS）' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">月額528円</span>
@@ -119,15 +119,14 @@ export default function DokokanaGpsPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: 'リアルタイム位置確認', desc: '2周波GPS（L1＋L5）に対応しており、ビル街でも測位のズレを抑えやすくなっています。' },
-              { icon: '📝', title: '移動履歴（最大3カ月）', desc: '過去最大3カ月分の移動履歴を保存できます。通学路や行動の確認に役立ちます。' },
-              { icon: '🔔', title: 'エリア通知（最大15ヶ所）', desc: '学校・自宅・塾など最大15ヶ所を登録でき、出入りを自動で通知します。' },
-              { icon: '🚃', title: '乗り物検知', desc: '電車・車などでの移動を検知して通知します。' },
-              { icon: '👋', title: 'はなれたアラート', desc: '保護者の端末と一定の距離が離れると知らせる機能です。' },
-              { icon: '👨‍👩‍👧‍👦', title: '最大11台で見守り', desc: '1台のGPSを最大11台のスマートフォンで共有でき、ご家族全員で見守ることができます。' },
+              { icon: '', title: 'リアルタイム位置確認', desc: '2周波GPS（L1＋L5）に対応しており、ビル街でも測位のズレを抑えやすくなっています。' },
+              { icon: '', title: '移動履歴（最大3カ月）', desc: '過去最大3カ月分の移動履歴を保存できます。通学路や行動の確認に役立ちます。' },
+              { icon: '', title: 'エリア通知（最大15ヶ所）', desc: '学校・自宅・塾など最大15ヶ所を登録でき、出入りを自動で通知します。' },
+              { icon: '', title: '乗り物検知', desc: '電車・車などでの移動を検知して通知します。' },
+              { icon: '', title: 'はなれたアラート', desc: '保護者の端末と一定の距離が離れると知らせる機能です。' },
+              { icon: '', title: '最大11台で見守り', desc: '1台のGPSを最大11台のスマートフォンで共有でき、ご家族全員で見守ることができます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -227,7 +226,7 @@ export default function DokokanaGpsPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-6 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-6 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みまもりGPSをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">みまもりGPSは、月額528円で2周波GPSに対応した位置確認特化型の端末です。連絡機能が必要な場合は、他機種もあわせてご比較ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

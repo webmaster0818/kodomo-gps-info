@@ -34,10 +34,10 @@ const faqJsonLd = {
 };
 
 const shareSteps = [
-  { icon: '📱', title: 'アプリのインストール', desc: '祖父母のスマートフォンに対応アプリをインストールします。App StoreまたはGoogle Playからダウンロードしてください。' },
-  { icon: '👤', title: 'アカウント作成・招待', desc: '保護者のアカウントから「家族を招待」機能で祖父母を追加します。メールまたはQRコードで招待できます。' },
-  { icon: '🔔', title: '通知設定の調整', desc: '祖父母に必要な通知のみを有効にします。到着通知だけをオンにし、頻繁な更新通知はオフにすることをおすすめします。' },
-  { icon: '✅', title: '動作の確認', desc: '実際にお子さまが移動して、通知が届くかどうかを確認します。あわせて、操作方法を一緒に練習します。' },
+  { icon: '', title: 'アプリのインストール', desc: '祖父母のスマートフォンに対応アプリをインストールします。App StoreまたはGoogle Playからダウンロードしてください。' },
+  { icon: '', title: 'アカウント作成・招待', desc: '保護者のアカウントから「家族を招待」機能で祖父母を追加します。メールまたはQRコードで招待できます。' },
+  { icon: '', title: '通知設定の調整', desc: '祖父母に必要な通知のみを有効にします。到着通知だけをオンにし、頻繁な更新通知はオフにすることをおすすめします。' },
+  { icon: '', title: '動作の確認', desc: '実際にお子さまが移動して、通知が届くかどうかを確認します。あわせて、操作方法を一緒に練習します。' },
 ];
 
 const deviceCompare = [
@@ -61,7 +61,7 @@ export default function GrandparentsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "おじいちゃん・おばあちゃんとGPS位置情報を共有する方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '祖父母との共有' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">祖父母</span>
@@ -135,13 +135,12 @@ export default function GrandparentsPage() {
           <h2 className="section-title">離れて暮らす祖父母との活用例</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '🏠', title: '帰省中の見守り', desc: '祖父母宅の周辺にエリア通知（ジオフェンス）を設定しておけば、お子さまが遊びに出かけても帰宅を確認できます。' },
-              { icon: '📞', title: '日常の安心材料', desc: '離れていても、アプリでお孫さんの位置を確認できます。電話をする際の話題にもなります。' },
-              { icon: '🚌', title: '祖父母宅への移動確認', desc: 'お子さまが一人でバスや電車に乗って祖父母宅に向かう際、到着まで見守ることができます。' },
-              { icon: '👨‍👩‍👧', title: '三世代での見守りの共有', desc: '保護者と祖父母の全員が同じアプリで見守ることで、家族全体の安心感が高まります。' },
+              { icon: '', title: '帰省中の見守り', desc: '祖父母宅の周辺にエリア通知（ジオフェンス）を設定しておけば、お子さまが遊びに出かけても帰宅を確認できます。' },
+              { icon: '', title: '日常の安心材料', desc: '離れていても、アプリでお孫さんの位置を確認できます。電話をする際の話題にもなります。' },
+              { icon: '', title: '祖父母宅への移動確認', desc: 'お子さまが一人でバスや電車に乗って祖父母宅に向かう際、到着まで見守ることができます。' },
+              { icon: '', title: '三世代での見守りの共有', desc: '保護者と祖父母の全員が同じアプリで見守ることで、家族全体の安心感が高まります。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -160,7 +159,7 @@ export default function GrandparentsPage() {
 
           <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">祖父母と一緒に築く見守り体制</h2>
             <p className="text-g600 mb-6 text-sm">ご家族全員で位置情報を共有し、見守りの体制を整えることをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

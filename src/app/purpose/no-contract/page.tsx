@@ -50,7 +50,7 @@ export default function NoContractPage() {
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '縛りなし・解約金なし' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">縛りなし</span>
@@ -74,17 +74,17 @@ export default function NoContractPage() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📄</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">契約期間の縛りなし</h3>
               <p className="text-sm text-g600">1カ月から利用できる機種が多く、短期のイベントでの利用にも適しています。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">💴</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">解約金なし</h3>
               <p className="text-sm text-g600">利用をやめる際に費用がかからない機種が一般的です。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📱</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">スマートフォンへの移行が容易</h3>
               <p className="text-sm text-g600">中学生になりスマートフォンに切り替えるタイミングで解約できます。</p>
             </div>
@@ -138,7 +138,7 @@ export default function NoContractPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">縛りなしで始められるGPSの探し方</h2>
             <p className="text-g600 mb-6 text-sm">いつでも解約できる機種であれば、お子さまの見守りを気軽に始められます。</p>
             <div className="flex flex-wrap justify-center gap-4">

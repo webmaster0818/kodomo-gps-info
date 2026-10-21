@@ -34,7 +34,7 @@ export default function LongBatteryPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS バッテリー長持ちで選ぶ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: 'バッテリー長持ち' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">最大2カ月</span>
@@ -90,13 +90,12 @@ export default function LongBatteryPage() {
           <h2 className="section-title">バッテリーを長く使うための工夫</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '🔋', title: '更新間隔を長めに設定する', desc: 'リアルタイム性を重視しない場合は、更新間隔を10〜15分に設定すると消費を抑えられます。' },
-              { icon: '📅', title: '充電日を固定する', desc: '「毎月1日に充電」など家族で決めて習慣にすると、充電忘れを防げます。' },
-              { icon: '📵', title: '使わない機能をオフにする', desc: 'トーク機能や通知を使わない場合は、アプリ側で無効にするとバッテリー消費を減らせます。' },
-              { icon: '🏠', title: 'Wi-Fi環境を活用する', desc: '自宅のWi-Fiを登録すると、Wi-Fi圏内ではGPSの消費電力を抑えられる機種があります。' },
+              { icon: '', title: '更新間隔を長めに設定する', desc: 'リアルタイム性を重視しない場合は、更新間隔を10〜15分に設定すると消費を抑えられます。' },
+              { icon: '', title: '充電日を固定する', desc: '「毎月1日に充電」など家族で決めて習慣にすると、充電忘れを防げます。' },
+              { icon: '', title: '使わない機能をオフにする', desc: 'トーク機能や通知を使わない場合は、アプリ側で無効にするとバッテリー消費を減らせます。' },
+              { icon: '', title: 'Wi-Fi環境を活用する', desc: '自宅のWi-Fiを登録すると、Wi-Fi圏内ではGPSの消費電力を抑えられる機種があります。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -127,7 +126,7 @@ export default function LongBatteryPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">充電の手間を減らせる機種選び</h2>
             <p className="text-g600 mb-6 text-sm">最大2カ月持つモデルを選ぶことで、日々の充電の負担を軽減できます。</p>
             <div className="flex flex-wrap justify-center gap-4">

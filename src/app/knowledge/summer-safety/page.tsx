@@ -18,28 +18,28 @@ const faqData = [
 
 const scenes = [
   {
-    icon: '🎆',
+    icon: '',
     title: '夏祭り・花火大会（人混みではぐれる）',
     risk: '露店や人波に紛れて一瞬で見失いやすい場所です。',
     use: 'リアルタイムの位置確認により、すぐに居場所を確認できます。集合場所をエリア通知に登録すると、離れた際に通知を受けられます。トーク機能付きの機種であれば連絡も可能です。',
     caution: '人混みや建物の密集地では精度が落ちることがあるため、目立つ服装や迷子札も併用してください。',
   },
   {
-    icon: '🏊',
+    icon: '',
     title: 'プール・海・川など水辺（夏の最大の死亡リスク）',
     risk: '警察庁の統計では、夏期の中学生以下の水の事故による死者・行方不明者の約6割が河川で、行為の約7割が水遊び中です。',
     use: '危険な河川・池をエリア通知に登録し、接近時に保護者へ通知します。行動履歴により、普段と異なる水辺のルートを把握できます。',
-    caution: '⚠️ GPSで溺水を防ぐことはできません。監視員のいる区域の利用、ライフジャケットの着用、大人の付き添いが大前提です（消費者庁）。GPSは「接近の検知」を補助するものです。',
+    caution: ' GPSで溺水を防ぐことはできません。監視員のいる区域の利用、ライフジャケットの着用、大人の付き添いが大前提です（消費者庁）。GPSは「接近の検知」を補助するものです。',
   },
   {
-    icon: '🏡',
+    icon: '',
     title: '帰省（土地勘のない祖父母宅周辺）',
     risk: '子供・保護者ともに地理に不慣れで、河川や用水路、人通りの少ない道などのリスクがあります。',
     use: '現在地を地図ですぐに確認できます。祖父母宅をホームに登録すると、出発・到着の通知を受けられます。子供が単独で行動した際の移動履歴も把握できます。',
     caution: '滞在前に、周辺の危険箇所（川・池・交通量の多い道）を家族で確認しておくことをおすすめします。',
   },
   {
-    icon: '🚄',
+    icon: '',
     title: '旅行先・テーマパーク・駅・SA（見失いやすい場所）',
     risk: '大型施設・駅・サービスエリアで一瞬目を離した間に見失う事例は、体験談でも多く見られます。',
     use: '位置確認ですぐに居場所を確認でき、混雑した施設での集合に活用できます。長期休みの間だけトーク機能のあるプランに切り替える運用も可能です。',
@@ -60,7 +60,7 @@ export default function SummerSafetyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "夏休みの子供見守りGPS活用ガイド｜夏祭り・帰省・水辺の迷子&事故対策", "datePublished": "2026-06-14", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '夏休みの見守り' }]} />
 
-      <section className="bg-gradient-to-br from-orange-light to-white py-12">
+      <section className="bg-orange-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">夏休み特集</span>
@@ -93,7 +93,6 @@ export default function SummerSafetyPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {scenes.map((s) => (
               <div key={s.title} className="card-hover p-5">
-                <p className="text-2xl mb-2">{s.icon}</p>
                 <h3 className="font-bold text-g800 mb-2">{s.title}</h3>
                 <p className="text-sm text-g600 mb-2"><span className="font-bold text-g700">リスク: </span>{s.risk}</p>
                 <p className="text-sm text-g600 mb-2"><span className="font-bold text-green-dark">GPS活用: </span>{s.use}</p>
@@ -117,7 +116,7 @@ export default function SummerSafetyPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-orange-light to-blue-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">夏に向けたGPSの選び方</h2>
             <p className="text-g600 mb-6 text-sm">人混みでの位置確認・エリア通知・トーク機能など、夏の利用場面に合った機能でお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -26,7 +26,7 @@ export default function CarrierPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "ドコモ・au・ソフトバンク キッズGPS/ケータイ キャリア別比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'キャリア別比較' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">ドコモ・au・ソフトバンク キャリア別比較</h1>
           <p className="text-g600 text-lg">大手3キャリアのキッズGPS・キッズケータイを比較し、GPS専業サービスとの違いを解説します</p>
@@ -72,7 +72,7 @@ export default function CarrierPage() {
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (<details key={i} className="faq-item"><summary>{faq.q}</summary><div className="faq-answer">{faq.a}</div></details>))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">全機種を比較する</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>

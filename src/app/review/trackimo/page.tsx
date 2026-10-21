@@ -36,7 +36,7 @@ export default function TrackimoPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'トラッキモGPS（Trackimo）' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">買取型・返却不要</span>
@@ -116,15 +116,14 @@ export default function TrackimoPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: 'リアルタイム追跡', desc: '更新間隔を1〜120分で設定し、アプリから現在地を確認できます。' },
-              { icon: '🌏', title: 'みちびき対応の測位', desc: 'GPS+GLONASS+BeiDou+みちびきに加え、Wi-Fi/基地局測位に対応しています。' },
-              { icon: '🔔', title: 'エリア通知', desc: '設定したエリアへの出入りや移動を検知して通知します（アラート機能）。' },
-              { icon: '📝', title: '移動履歴', desc: '過去の移動履歴を確認できます。CSV出力に対応するモデルもあります。' },
-              { icon: '🔋', title: '低電池通知', desc: 'バッテリー残量が少なくなると通知します。充電忘れの防止に役立ちます。' },
-              { icon: '📦', title: '買取型・返却不要', desc: '本体価格に1年分の通信費が含まれます。返却不要で長く使えます。' },
+              { icon: '', title: 'リアルタイム追跡', desc: '更新間隔を1〜120分で設定し、アプリから現在地を確認できます。' },
+              { icon: '', title: 'みちびき対応の測位', desc: 'GPS+GLONASS+BeiDou+みちびきに加え、Wi-Fi/基地局測位に対応しています。' },
+              { icon: '', title: 'エリア通知', desc: '設定したエリアへの出入りや移動を検知して通知します（アラート機能）。' },
+              { icon: '', title: '移動履歴', desc: '過去の移動履歴を確認できます。CSV出力に対応するモデルもあります。' },
+              { icon: '', title: '低電池通知', desc: 'バッテリー残量が少なくなると通知します。充電忘れの防止に役立ちます。' },
+              { icon: '', title: '買取型・返却不要', desc: '本体価格に1年分の通信費が含まれます。返却不要で長く使えます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -229,7 +228,7 @@ export default function TrackimoPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-6 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-6 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">位置確認中心で長く使いたい方へ</h2>
             <p className="text-g600 mb-6 text-sm">通話やメッセージが必要な場合は、他のタイプもあわせてご検討ください。目的に合った1台を選ぶことをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

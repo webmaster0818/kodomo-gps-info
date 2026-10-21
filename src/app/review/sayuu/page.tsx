@@ -34,7 +34,7 @@ export default function SayuuPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-17", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'SayuU（サユー）' }]} />
 
-      <section className="bg-gradient-to-br from-orange-light to-white py-12">
+      <section className="bg-orange-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">トヨタ開発</span>
@@ -134,15 +134,14 @@ export default function SayuuPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '🚗', title: '交通安全サポート', desc: '左右確認検知と走行検知で、お子さまの交通安全を見守ります。' },
-              { icon: '📞', title: '双方向通話', desc: '保護者・お子さまの双方から通話が可能です。緊急時の連絡手段として活用できます。' },
-              { icon: '📍', title: '位置確認', desc: 'GPS+みちびき+GLONASSで、リアルタイムに位置を把握できます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。' },
-              { icon: '📊', title: '移動履歴', desc: '過去の移動経路を記録し、確認できます。' },
-              { icon: '🛡️', title: 'トヨタ品質', desc: '自動車メーカーの品質基準で製造されており、耐久性に優れています。' },
+              { icon: '', title: '交通安全サポート', desc: '左右確認検知と走行検知で、お子さまの交通安全を見守ります。' },
+              { icon: '', title: '双方向通話', desc: '保護者・お子さまの双方から通話が可能です。緊急時の連絡手段として活用できます。' },
+              { icon: '', title: '位置確認', desc: 'GPS+みちびき+GLONASSで、リアルタイムに位置を把握できます。' },
+              { icon: '', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。' },
+              { icon: '', title: '移動履歴', desc: '過去の移動経路を記録し、確認できます。' },
+              { icon: '', title: 'トヨタ品質', desc: '自動車メーカーの品質基準で製造されており、耐久性に優れています。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -204,7 +203,7 @@ export default function SayuuPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-orange-light to-blue-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">SayuU（サユー）が気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">トヨタの技術を活かし、お子さまの交通安全に配慮しながら見守ることができるGPS端末です。</p>
             <div className="flex flex-wrap justify-center gap-4">

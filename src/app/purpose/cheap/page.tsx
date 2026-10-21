@@ -35,7 +35,7 @@ export default function CheapPage() {
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '安い・コスパ重視' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">コスパ重視</span>
@@ -147,7 +147,7 @@ export default function CheapPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">コストパフォーマンスに優れたGPSの選び方</h2>
             <p className="text-g600 mb-6 text-sm">月額480円から、手頃な価格でお子さまの見守りを始められます。</p>
             <div className="flex flex-wrap justify-center gap-4">

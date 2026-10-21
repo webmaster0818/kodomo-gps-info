@@ -26,7 +26,7 @@ export default function SummerWinterPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 夏冬の使い方", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '夏冬の使い方' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">子供GPS 夏冬の使い方</h1>
           <p className="text-g600 text-lg">温度・湿度・水への耐性を理解し、季節を問わず安全に使うための解説です</p>
@@ -35,7 +35,7 @@ export default function SummerWinterPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">🌞 夏場の注意点</h2>
+          <h2 className="section-title"> 夏場の注意点</h2>
           <div className="space-y-4 mb-8">
             {[
               { title: '車内に置いたままにしない', desc: '真夏の車内は50℃以上になることがあり、電子機器のバッテリー膨張や故障の原因になります。車を降りる際は、必ず持ち歩いてください。' },
@@ -50,7 +50,7 @@ export default function SummerWinterPage() {
             ))}
           </div>
 
-          <h2 className="section-title">❄️ 冬場の注意点</h2>
+          <h2 className="section-title"> 冬場の注意点</h2>
           <div className="space-y-4 mb-8">
             {[
               { title: '低温でバッテリー持ちが短くなる', desc: 'リチウムイオン電池は低温環境で一時的に容量が低下するため、冬はバッテリーの持ちが通常より短くなります。充電状況をこまめにご確認ください。' },
@@ -68,7 +68,7 @@ export default function SummerWinterPage() {
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (<details key={i} className="faq-item"><summary>{faq.q}</summary><div className="faq-answer">{faq.a}</div></details>))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">防水対応の機種を探す</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/purpose/waterproof/" className="btn-primary">防水機種ガイド</Link>

@@ -93,7 +93,7 @@ export default function AfterSchoolComparePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '学童・習い事の行き帰りに子供GPS比較', datePublished: '2026-06-27', dateModified: '2026-06-27', author: { '@type': 'Person', name: '子供見守りGPS最新情報 編集部' }, publisher: { '@type': 'Organization', name: '子供見守りGPS最新情報' } }) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '学童・習い事向けGPS比較' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">放課後の見守り</span>
@@ -208,7 +208,7 @@ export default function AfterSchoolComparePage() {
             </div>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">機種ごとの詳細</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/mitene/" className="btn-primary">みてねみまもりGPS</Link>

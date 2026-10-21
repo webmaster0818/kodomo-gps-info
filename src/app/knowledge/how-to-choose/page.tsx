@@ -28,13 +28,13 @@ const faqJsonLd = {
 };
 
 const points = [
-  { icon: '💰', title: '月額料金', desc: '528円〜1,100円まで幅があります。基本的な位置確認のみであれば500円台で十分です。トーク機能付きは700円台からです。家計に合った料金プランをお選びください。' },
-  { icon: '🔋', title: 'バッテリー持ち', desc: '最大2カ月持つ機種から毎日充電が必要な機種まで、差が大きい項目です。充電忘れが心配な場合は、1カ月以上持つ機種をおすすめします。更新間隔を長くすると、バッテリー持ちが良くなります。' },
-  { icon: '💬', title: 'トーク機能', desc: 'テキストや音声メッセージでお子さまとやり取りできる機能です。低学年では不要な場合も多いものの、共働きのご家庭では帰宅の連絡を受けられることが大きな安心につながります。' },
-  { icon: '📍', title: '測位精度', desc: 'GPS+GLONASS+みちびき+Wi-Fiの複合測位に対応した機種は、精度が高い傾向にあります。ビル街や屋内での精度もご確認ください。更新間隔も精度に影響します。' },
-  { icon: '📏', title: 'サイズ・重量', desc: '40g〜110g、硬貨大〜カード大までさまざまです。ランドセルに入れる場合は50g以下が適しています。腕時計型は、手首への負担も考慮してください。' },
-  { icon: '💧', title: '防水性能', desc: 'IPX5（生活防水）以上をおすすめします。雨の日の通学や水たまりでの遊びにも対応できます。完全防水（IPX8）の機種は少数です。' },
-  { icon: '📱', title: 'アプリの使いやすさ', desc: '毎日開くアプリのため、画面の分かりやすさと操作性は重要です。地図の見やすさ、通知設定の柔軟さ、動作の軽さをご確認ください。アプリストアの評価も参考になります。' },
+  { icon: '', title: '月額料金', desc: '528円〜1,100円まで幅があります。基本的な位置確認のみであれば500円台で十分です。トーク機能付きは700円台からです。家計に合った料金プランをお選びください。' },
+  { icon: '', title: 'バッテリー持ち', desc: '最大2カ月持つ機種から毎日充電が必要な機種まで、差が大きい項目です。充電忘れが心配な場合は、1カ月以上持つ機種をおすすめします。更新間隔を長くすると、バッテリー持ちが良くなります。' },
+  { icon: '', title: 'トーク機能', desc: 'テキストや音声メッセージでお子さまとやり取りできる機能です。低学年では不要な場合も多いものの、共働きのご家庭では帰宅の連絡を受けられることが大きな安心につながります。' },
+  { icon: '', title: '測位精度', desc: 'GPS+GLONASS+みちびき+Wi-Fiの複合測位に対応した機種は、精度が高い傾向にあります。ビル街や屋内での精度もご確認ください。更新間隔も精度に影響します。' },
+  { icon: '', title: 'サイズ・重量', desc: '40g〜110g、硬貨大〜カード大までさまざまです。ランドセルに入れる場合は50g以下が適しています。腕時計型は、手首への負担も考慮してください。' },
+  { icon: '', title: '防水性能', desc: 'IPX5（生活防水）以上をおすすめします。雨の日の通学や水たまりでの遊びにも対応できます。完全防水（IPX8）の機種は少数です。' },
+  { icon: '', title: 'アプリの使いやすさ', desc: '毎日開くアプリのため、画面の分かりやすさと操作性は重要です。地図の見やすさ、通知設定の柔軟さ、動作の軽さをご確認ください。アプリストアの評価も参考になります。' },
 ];
 
 export default function HowToChoosePage() {
@@ -44,7 +44,7 @@ export default function HowToChoosePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 選び方ガイド", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '選び方ガイド' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">選び方ガイド</span>
@@ -67,7 +67,7 @@ export default function HowToChoosePage() {
                   {i + 1}
                 </span>
                 <div>
-                  <h3 className="font-bold text-g800 mb-1">{p.icon} {p.title}</h3>
+                  <h3 className="font-bold text-g800 mb-1">{p.title}</h3>
                   <p className="text-sm text-g600">{p.desc}</p>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function HowToChoosePage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">各機種の比較</h2>
             <p className="text-g600 mb-6 text-sm">13機種の料金・機能を比較し、お子さまに合った1台をお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

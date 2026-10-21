@@ -41,10 +41,10 @@ const deviceGuides = [
 ];
 
 const usageIdeas = [
-  { icon: '🗺️', title: '通学ルートの安全確認', desc: '毎日の通学ルートを確認し、危険な道を通っていないかを確認できます。安全なルートを一緒に考えるきっかけにもなります。' },
-  { icon: '⏰', title: '帰宅時間の把握', desc: '実際の帰宅時間を履歴で確認できます。寄り道の傾向を把握し、約束の時間を守れているかを確認できます。' },
-  { icon: '📊', title: '行動パターンの分析', desc: '曜日ごとの行動パターンを把握できます。いつもと違う動きがあった場合に、早めに気づくことができます。' },
-  { icon: '🚨', title: '万一の際の記録の保全', desc: '事件・事故に巻き込まれた場合、移動履歴は重要な情報源になります。保存期間内のデータを確保しておくことが大切です。' },
+  { icon: '', title: '通学ルートの安全確認', desc: '毎日の通学ルートを確認し、危険な道を通っていないかを確認できます。安全なルートを一緒に考えるきっかけにもなります。' },
+  { icon: '', title: '帰宅時間の把握', desc: '実際の帰宅時間を履歴で確認できます。寄り道の傾向を把握し、約束の時間を守れているかを確認できます。' },
+  { icon: '', title: '行動パターンの分析', desc: '曜日ごとの行動パターンを把握できます。いつもと違う動きがあった場合に、早めに気づくことができます。' },
+  { icon: '', title: '万一の際の記録の保全', desc: '事件・事故に巻き込まれた場合、移動履歴は重要な情報源になります。保存期間内のデータを確保しておくことが大切です。' },
 ];
 
 export default function HistoryCheckPage() {
@@ -54,7 +54,7 @@ export default function HistoryCheckPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの移動履歴の確認方法｜機種別ガイド", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '移動履歴の確認方法' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">移動履歴</span>
@@ -124,7 +124,6 @@ export default function HistoryCheckPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {usageIdeas.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -158,7 +157,7 @@ export default function HistoryCheckPage() {
 
           <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">移動履歴を活用した見守り</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの行動パターンを把握し、安全なルートを一緒に考えることをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -35,7 +35,7 @@ export default function MimoriPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みもり' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">不審者情報連動</span>
@@ -106,15 +106,14 @@ export default function MimoriPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '🚨', title: '不審者情報連動', desc: '全国の不審者情報をリアルタイムで取得し、お子さまが危険エリアに近づくと自動で通知します。' },
-              { icon: '⚠️', title: '危険エリア通知', desc: '事故の多発地点や犯罪の発生エリアで、GPS端末から警告音が鳴ります。' },
-              { icon: '🔊', title: '音声メッセージ', desc: '保護者のスマートフォンから、GPS端末に音声メッセージを送信できます。' },
-              { icon: '📍', title: '位置確認・履歴', desc: 'リアルタイムでの位置確認と、移動履歴の自動記録に対応しています。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。学校・自宅・塾への到着確認に役立ちます。' },
-              { icon: '👨‍👩‍👧', title: '複数人での見守り', desc: 'ご家族全員でお子さまの位置を見守ることができます。' },
+              { icon: '', title: '不審者情報連動', desc: '全国の不審者情報をリアルタイムで取得し、お子さまが危険エリアに近づくと自動で通知します。' },
+              { icon: '', title: '危険エリア通知', desc: '事故の多発地点や犯罪の発生エリアで、GPS端末から警告音が鳴ります。' },
+              { icon: '', title: '音声メッセージ', desc: '保護者のスマートフォンから、GPS端末に音声メッセージを送信できます。' },
+              { icon: '', title: '位置確認・履歴', desc: 'リアルタイムでの位置確認と、移動履歴の自動記録に対応しています。' },
+              { icon: '', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。学校・自宅・塾への到着確認に役立ちます。' },
+              { icon: '', title: '複数人での見守り', desc: 'ご家族全員でお子さまの位置を見守ることができます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -157,7 +156,7 @@ export default function MimoriPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みもりをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">みもりは不審者情報連動を備え、防犯機能の充実度はトップクラスです。お子さまの安全を最優先に考える方に適しています。</p>
             <div className="flex flex-wrap justify-center gap-4">

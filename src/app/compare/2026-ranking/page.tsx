@@ -159,7 +159,7 @@ const fullComparisonData = rankingData.map((d) => ({
 const purposeRecommendations = [
   {
     purpose: '費用重視',
-    icon: '💰',
+    icon: '',
     picks: [
       { name: 'みてねみまもりGPS', reason: '月額528円で、バッテリー持ちが最長クラスです。総合的な費用対効果が最も優れています。' },
       { name: 'まもサーチ ミニ', reason: '初期費用3,980円の最安エントリーモデルです。' },
@@ -168,7 +168,7 @@ const purposeRecommendations = [
   },
   {
     purpose: '機能重視',
-    icon: '🔧',
+    icon: '',
     picks: [
       { name: 'BoTトーク', reason: '音声メッセージ、AI学習、通知機能が最も充実しています。' },
       { name: 'myFirst Fone R2', reason: '通話・ビデオ通話・カメラ・音楽再生の機能をすべて備えています。' },
@@ -176,7 +176,7 @@ const purposeRecommendations = [
   },
   {
     purpose: 'バッテリー重視',
-    icon: '🔋',
+    icon: '',
     picks: [
       { name: 'みてねみまもりGPS', reason: 'バッテリー持ちは最大2カ月です。' },
       { name: 'あんしんウォッチャー', reason: 'バッテリー持ちは最大1.5カ月です。au回線による安定した通信も特長です。' },
@@ -184,7 +184,7 @@ const purposeRecommendations = [
   },
   {
     purpose: '通話機能付き',
-    icon: '📞',
+    icon: '',
     picks: [
       { name: 'myFirst Fone R2', reason: '腕時計型で、通話・ビデオ通話が可能です。' },
       { name: 'キッズフォン3', reason: '電話・SMSに対応し、ソフトバンクショップでサポートを受けられます。' },
@@ -200,7 +200,7 @@ export default function Ranking2026Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング12選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">2026年最新</span>
@@ -315,7 +315,6 @@ export default function Ranking2026Page() {
             {purposeRecommendations.map((p) => (
               <div key={p.purpose} className="card-hover p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-2xl">{p.icon}</span>
                   <h3 className="font-bold text-g800 text-lg">{p.purpose}</h3>
                 </div>
                 <div className="space-y-3">
@@ -366,7 +365,7 @@ export default function Ranking2026Page() {
           <h2 className="section-title">編集部のおすすめ</h2>
           <div className="card-hover p-6 mb-8 border-l-4 border-orange">
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-3xl">🏆</span>
+              <span className="text-3xl"></span>
               <div>
                 <h3 className="font-extrabold text-g800 text-xl">みてねみまもりGPS 第3世代</h3>
                 <p className="text-sm text-orange font-bold">編集部のおすすめ / 総合スコア95点</p>
@@ -407,7 +406,7 @@ export default function Ranking2026Page() {
             <Link href="/knowledge/gps-range/" className="text-blue hover:underline">通信範囲解説</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまに合ったGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">ランキングだけでなく、お子さまの生活スタイルに合った機種を選ぶことが大切です。</p>
             <div className="flex flex-wrap justify-center gap-4">

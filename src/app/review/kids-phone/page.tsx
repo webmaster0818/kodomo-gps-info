@@ -35,7 +35,7 @@ export default function KidsPhonePage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'キッズケータイ vs GPS' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">3キャリア比較</span>
@@ -164,7 +164,7 @@ export default function KidsPhonePage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPS端末を詳しく比較したい方へ</h2>
             <p className="text-g600 mb-6 text-sm">13機種のGPS端末を料金・機能で比較しています。お子さまに合った端末選びにご活用ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

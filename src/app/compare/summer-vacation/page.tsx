@@ -86,7 +86,7 @@ export default function SummerVacationPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "夏休み・帰省の子供見守りGPS比較｜旅行・留守番・祖父母宅で使うなら", "datePublished": "2026-07-04", "dateModified": "2026-07-04", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '用途別比較', href: '/compare/' }, { name: '夏休み・帰省' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">夏休み</span>

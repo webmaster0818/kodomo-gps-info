@@ -40,10 +40,10 @@ const generationComparison = [
 ];
 
 const whyLteEnough = [
-  { icon: '📊', title: 'データ量が極めて少ない', desc: 'GPS端末が送信するデータは位置情報（緯度・経度）のみで、1回あたり数KBです。1日の通信量は数MB程度のため、4Gの速度で問題ありません。動画やアプリのダウンロードを行うわけではないため、高速通信は不要です。' },
-  { icon: '🔋', title: 'バッテリー消費を抑えられる', desc: '5G通信は4Gに比べて消費電力が大きい傾向があります。子供用GPS端末ではバッテリー持続時間が重要なため、省電力な4G通信が適しています。4Gであれば充電間隔を長く保てます。' },
-  { icon: '💰', title: 'コストを抑えられる', desc: '5G対応チップは4G対応チップよりも高価です。子供用GPS端末には手頃な価格が求められるため、4G対応に抑えることで、価格を抑えた製品を提供できます。' },
-  { icon: '📡', title: 'カバーエリアが広い', desc: '4G（LTE）は人口カバー率99%以上です。5Gはまだ都市部が中心で、カバーエリアが限定的です。通学路全体をカバーするには、現時点では4Gのほうが確実です。' },
+  { icon: '', title: 'データ量が極めて少ない', desc: 'GPS端末が送信するデータは位置情報（緯度・経度）のみで、1回あたり数KBです。1日の通信量は数MB程度のため、4Gの速度で問題ありません。動画やアプリのダウンロードを行うわけではないため、高速通信は不要です。' },
+  { icon: '', title: 'バッテリー消費を抑えられる', desc: '5G通信は4Gに比べて消費電力が大きい傾向があります。子供用GPS端末ではバッテリー持続時間が重要なため、省電力な4G通信が適しています。4Gであれば充電間隔を長く保てます。' },
+  { icon: '', title: 'コストを抑えられる', desc: '5G対応チップは4G対応チップよりも高価です。子供用GPS端末には手頃な価格が求められるため、4G対応に抑えることで、価格を抑えた製品を提供できます。' },
+  { icon: '', title: 'カバーエリアが広い', desc: '4G（LTE）は人口カバー率99%以上です。5Gはまだ都市部が中心で、カバーエリアが限定的です。通学路全体をカバーするには、現時点では4Gのほうが確実です。' },
 ];
 
 const threeGShutdown = [
@@ -76,7 +76,7 @@ export default function FiveGCompatibilityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの5G対応状況｜4Gでも問題ない？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '5G対応状況' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">5G・通信規格</span>
@@ -137,7 +137,6 @@ export default function FiveGCompatibilityPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {whyLteEnough.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -229,7 +228,7 @@ export default function FiveGCompatibilityPage() {
             <Link href="/knowledge/troubleshoot/" className="text-blue hover:underline">トラブルシューティング</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">現在の4G対応GPS端末で見守りを始められます</h2>
             <p className="text-g600 mb-6 text-sm">5G対応機種の登場を待つ必要はありません。現在の4G対応GPS端末で十分な見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">

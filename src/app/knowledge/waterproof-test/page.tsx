@@ -54,11 +54,11 @@ const deviceWaterproof = [
 ];
 
 const dangerousCases = [
-  { situation: 'お風呂・温泉', icon: '♨️', reason: '高温の蒸気が防水シールの隙間から内部に侵入します。温泉の硫黄成分は金属端子を腐食させます。', risk: '極めて高い' },
-  { situation: '海水・砂浜', icon: '🏖️', reason: '海水の塩分が端子やスピーカー部分を腐食させます。また、砂がボタンや充電端子に詰まります。', risk: '高い' },
-  { situation: '洗濯機', icon: '🫧', reason: '回転による衝撃と洗剤がパッキンを劣化させ、内部への浸水を引き起こします。', risk: '極めて高い（ほぼ確実に故障）' },
-  { situation: '高圧洗浄', icon: '💦', reason: '家庭用高圧洗浄機の水圧は、IPX5の試験条件を大幅に上回ります。', risk: '高い' },
-  { situation: 'サウナ・スチーム', icon: '🔥', reason: '高温環境はバッテリーと基板に深刻な損傷を与えます。防水パッキンも高温で変形します。', risk: '極めて高い' },
+  { situation: 'お風呂・温泉', icon: '', reason: '高温の蒸気が防水シールの隙間から内部に侵入します。温泉の硫黄成分は金属端子を腐食させます。', risk: '極めて高い' },
+  { situation: '海水・砂浜', icon: '', reason: '海水の塩分が端子やスピーカー部分を腐食させます。また、砂がボタンや充電端子に詰まります。', risk: '高い' },
+  { situation: '洗濯機', icon: '', reason: '回転による衝撃と洗剤がパッキンを劣化させ、内部への浸水を引き起こします。', risk: '極めて高い（ほぼ確実に故障）' },
+  { situation: '高圧洗浄', icon: '', reason: '家庭用高圧洗浄機の水圧は、IPX5の試験条件を大幅に上回ります。', risk: '高い' },
+  { situation: 'サウナ・スチーム', icon: '', reason: '高温環境はバッテリーと基板に深刻な損傷を与えます。防水パッキンも高温で変形します。', risk: '極めて高い' },
 ];
 
 const waterproofAccessories = [
@@ -75,7 +75,7 @@ export default function WaterproofTestPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの防水性能比較｜プール・雨・汗でも大丈夫？", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '防水性能比較' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">防水性能</span>
@@ -154,16 +154,15 @@ export default function WaterproofTestPage() {
           <h2 className="section-title">シーン別の安全性ガイド</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { scene: '雨天の通学', icon: '☂️', verdict: '基本OK', desc: 'IP55以上のほとんどの機種で問題ありません。ランドセルの内側やカバーの中に入れておくと、より安心です。豪雨の際は防水ポーチの併用をおすすめします。' },
-              { scene: '汗をかく運動時', icon: '🏃', verdict: '基本OK', desc: '日常的な発汗程度であれば、ほとんど影響はありません。ただし、腕時計型は汗の塩分で肌側の端子が腐食しやすいため、定期的に拭き取ってください。' },
-              { scene: 'プール・水遊び', icon: '🏊', verdict: '非推奨', desc: 'IPX8のmyFirst Fone R2でも、公式の条件は「水深3mで5分まで」で、プールなど長時間の水中での使用は想定されていません。塩素がパッキンを劣化させる可能性があるためです。プールの際はロッカーに保管することをおすすめします。' },
-              { scene: '水洗い・流水すすぎ', icon: '🚿', verdict: 'IPX7以上OK', desc: 'IPX7以上であれば、流水での軽い洗浄は可能です。ただし、充電端子に水が入らないよう注意し、洗浄後は十分に乾燥させてください。' },
-              { scene: '雪遊び', icon: '⛄', verdict: '条件付きOK', desc: '雪そのものはIP55以上であれば問題ありませんが、溶けた水が端末内に浸入するおそれがあります。手袋の中に入れるなどの工夫をおすすめします。また、低温はバッテリー性能を低下させます。' },
-              { scene: '泥遊び・砂場', icon: '🏖️', verdict: 'IP6X推奨', desc: 'IP67/IP68であれば防塵性能も備えているため安心です。IPX5などの防塵性能のない機種は、充電端子に砂が詰まるおそれがあるため注意が必要です。' },
+              { scene: '雨天の通学', icon: '', verdict: '基本OK', desc: 'IP55以上のほとんどの機種で問題ありません。ランドセルの内側やカバーの中に入れておくと、より安心です。豪雨の際は防水ポーチの併用をおすすめします。' },
+              { scene: '汗をかく運動時', icon: '', verdict: '基本OK', desc: '日常的な発汗程度であれば、ほとんど影響はありません。ただし、腕時計型は汗の塩分で肌側の端子が腐食しやすいため、定期的に拭き取ってください。' },
+              { scene: 'プール・水遊び', icon: '', verdict: '非推奨', desc: 'IPX8のmyFirst Fone R2でも、公式の条件は「水深3mで5分まで」で、プールなど長時間の水中での使用は想定されていません。塩素がパッキンを劣化させる可能性があるためです。プールの際はロッカーに保管することをおすすめします。' },
+              { scene: '水洗い・流水すすぎ', icon: '', verdict: 'IPX7以上OK', desc: 'IPX7以上であれば、流水での軽い洗浄は可能です。ただし、充電端子に水が入らないよう注意し、洗浄後は十分に乾燥させてください。' },
+              { scene: '雪遊び', icon: '', verdict: '条件付きOK', desc: '雪そのものはIP55以上であれば問題ありませんが、溶けた水が端末内に浸入するおそれがあります。手袋の中に入れるなどの工夫をおすすめします。また、低温はバッテリー性能を低下させます。' },
+              { scene: '泥遊び・砂場', icon: '', verdict: 'IP6X推奨', desc: 'IP67/IP68であれば防塵性能も備えているため安心です。IPX5などの防塵性能のない機種は、充電端子に砂が詰まるおそれがあるため注意が必要です。' },
             ].map((item) => (
               <div key={item.scene} className="card-hover p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xl">{item.icon}</span>
                   <h3 className="font-bold text-g800">{item.scene}</h3>
                   <span className={`tag-pill text-white text-xs ${item.verdict.includes('OK') ? 'bg-blue' : 'bg-orange'}`}>{item.verdict}</span>
                 </div>
@@ -179,7 +178,6 @@ export default function WaterproofTestPage() {
           <div className="space-y-4 mb-8">
             {dangerousCases.map((c) => (
               <div key={c.situation} className="card-hover p-5 flex gap-4 items-start">
-                <span className="text-2xl">{c.icon}</span>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <h3 className="font-bold text-g800">{c.situation}</h3>
@@ -240,7 +238,7 @@ export default function WaterproofTestPage() {
             <Link href="/knowledge/troubleshoot/" className="text-blue hover:underline">トラブルシューティング</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">防水性能で選ぶGPS端末</h2>
             <p className="text-g600 mb-6 text-sm">活発なお子さまには、防水・防塵性能の高い端末をおすすめします。雨の日も安心して持たせることができます。</p>
             <div className="flex flex-wrap justify-center gap-4">

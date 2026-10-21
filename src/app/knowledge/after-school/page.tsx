@@ -34,12 +34,12 @@ const faqJsonLd = {
 };
 
 const scenes = [
-  { icon: '🏫', title: '下校時の見守り', desc: '学校を出た時点で通知が届くため、下校の開始をリアルタイムに把握できます。寄り道をした場合も、移動履歴で確認できます。' },
-  { icon: '🏠', title: '学童への移動', desc: '学校から学童保育への移動ルートを確認できます。通常と異なるルートを通った場合にも気づくことができます。' },
-  { icon: '📚', title: '学童保育中', desc: '学童への到着通知で、無事に着いたことを確認できます。ランドセルに入れたままのため、お子さまの活動の妨げになりません。' },
-  { icon: '🚶', title: '学童からの帰宅', desc: '学童の出発通知と自宅への到着通知で、帰り道も見守ることができます。暗くなるのが早い冬場は、特に役立ちます。' },
-  { icon: '🌳', title: '放課後の外遊び', desc: '公園や友達の家など、行動範囲にエリア通知を設定できます。想定したエリアの外に出た場合の通知も可能です。' },
-  { icon: '🏪', title: '一人でのお留守番', desc: '自宅エリアを設定すると、留守番中に外出した場合に検知できます。共働きのご家庭で、保護者が帰宅する前の時間帯に活用できます。' },
+  { icon: '', title: '下校時の見守り', desc: '学校を出た時点で通知が届くため、下校の開始をリアルタイムに把握できます。寄り道をした場合も、移動履歴で確認できます。' },
+  { icon: '', title: '学童への移動', desc: '学校から学童保育への移動ルートを確認できます。通常と異なるルートを通った場合にも気づくことができます。' },
+  { icon: '', title: '学童保育中', desc: '学童への到着通知で、無事に着いたことを確認できます。ランドセルに入れたままのため、お子さまの活動の妨げになりません。' },
+  { icon: '', title: '学童からの帰宅', desc: '学童の出発通知と自宅への到着通知で、帰り道も見守ることができます。暗くなるのが早い冬場は、特に役立ちます。' },
+  { icon: '', title: '放課後の外遊び', desc: '公園や友達の家など、行動範囲にエリア通知を設定できます。想定したエリアの外に出た場合の通知も可能です。' },
+  { icon: '', title: '一人でのお留守番', desc: '自宅エリアを設定すると、留守番中に外出した場合に検知できます。共働きのご家庭で、保護者が帰宅する前の時間帯に活用できます。' },
 ];
 
 const tips = [
@@ -56,7 +56,7 @@ export default function AfterSchoolPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "学童・放課後の見守りにGPSが最適な理由｜活用法を解説", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '学童・放課後の見守り' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">学童・放課後</span>
@@ -82,7 +82,6 @@ export default function AfterSchoolPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {scenes.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -149,7 +148,7 @@ export default function AfterSchoolPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPSを活用した放課後の見守り</h2>
             <p className="text-g600 mb-6 text-sm">エリア通知と位置確認を組み合わせることで、共働きのご家庭でも見守り体制を整えることができます。</p>
             <div className="flex flex-wrap justify-center gap-4">

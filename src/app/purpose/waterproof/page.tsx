@@ -34,7 +34,7 @@ export default function WaterproofPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 防水対応で選ぶ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '防水・雨対応' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">防水対応</span>
@@ -85,13 +85,12 @@ export default function WaterproofPage() {
           <h2 className="section-title">雨の日に使用する際のポイント</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '☔', title: 'ランドセルの内側に入れる', desc: 'ランドセル本体が防水素材であれば、中に入れておくだけで雨の直撃を避けられます。' },
-              { icon: '🧴', title: '防水ポーチの活用', desc: '雨の激しい地域では、ジッパー付きの防水ポーチに入れて二重に保護することをおすすめします。' },
-              { icon: '🔌', title: '充電端子の乾燥', desc: '濡れた状態で充電すると、故障の原因となります。タオルでよく拭いてから充電器に接続してください。' },
-              { icon: '🧼', title: '泥・砂汚れの早期除去', desc: '砂や泥が入り込むと、パッキンが劣化しやすくなります。帰宅後にふき取る習慣をおすすめします。' },
+              { icon: '', title: 'ランドセルの内側に入れる', desc: 'ランドセル本体が防水素材であれば、中に入れておくだけで雨の直撃を避けられます。' },
+              { icon: '', title: '防水ポーチの活用', desc: '雨の激しい地域では、ジッパー付きの防水ポーチに入れて二重に保護することをおすすめします。' },
+              { icon: '', title: '充電端子の乾燥', desc: '濡れた状態で充電すると、故障の原因となります。タオルでよく拭いてから充電器に接続してください。' },
+              { icon: '', title: '泥・砂汚れの早期除去', desc: '砂や泥が入り込むと、パッキンが劣化しやすくなります。帰宅後にふき取る習慣をおすすめします。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -148,7 +147,7 @@ export default function WaterproofPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">雨天にも対応した見守り</h2>
             <p className="text-g600 mb-6 text-sm">通学路での見守りには、十分な防水性能を備えたGPS端末をおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

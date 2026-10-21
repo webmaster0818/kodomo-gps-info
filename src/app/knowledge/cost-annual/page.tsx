@@ -55,7 +55,7 @@ export default function CostAnnualPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '年間コスト比較' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">年間コスト</span>
@@ -109,13 +109,12 @@ export default function CostAnnualPage() {
           <h2 className="section-title">費用を比較する際の確認事項</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '💰', title: '1年目は初期費用による差', desc: '本体代が5,280円と11,000円の場合、月額が同じでも1年目の差は約5,700円となります。短期利用の場合、初期費用の安さは大きな利点です。' },
-              { icon: '📊', title: '2年以上の利用は月額料金を重視', desc: '2年目以降は月額料金のみとなります。月額528円と748円の差は年間2,640円で、3年間では約8,000円の差になります。' },
-              { icon: '🔍', title: '機能と価格のバランス', desc: 'トーク機能付きの機種は、月額料金が高めです。トーク機能が不要であれば、月額528円程度の機種で十分です。必要な機能のみを選ぶことが、費用を抑えるための要点です。' },
-              { icon: '⏰', title: '利用期間に応じた選択', desc: '小1〜小6まで使う場合は、6年分の費用を試算することをおすすめします。途中で買い替えが発生する前提で、2〜3年周期の合計額で比較してください。' },
+              { icon: '', title: '1年目は初期費用による差', desc: '本体代が5,280円と11,000円の場合、月額が同じでも1年目の差は約5,700円となります。短期利用の場合、初期費用の安さは大きな利点です。' },
+              { icon: '', title: '2年以上の利用は月額料金を重視', desc: '2年目以降は月額料金のみとなります。月額528円と748円の差は年間2,640円で、3年間では約8,000円の差になります。' },
+              { icon: '', title: '機能と価格のバランス', desc: 'トーク機能付きの機種は、月額料金が高めです。トーク機能が不要であれば、月額528円程度の機種で十分です。必要な機能のみを選ぶことが、費用を抑えるための要点です。' },
+              { icon: '', title: '利用期間に応じた選択', desc: '小1〜小6まで使う場合は、6年分の費用を試算することをおすすめします。途中で買い替えが発生する前提で、2〜3年周期の合計額で比較してください。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -164,7 +163,7 @@ export default function CostAnnualPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">長期的な費用による比較</h2>
             <p className="text-g600 mb-6 text-sm">初期費用だけでなく、2〜3年間の総費用で比較することをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

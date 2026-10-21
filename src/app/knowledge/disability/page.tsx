@@ -26,7 +26,7 @@ export default function DisabilityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "発達特性のあるお子さまとGPS", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '発達特性・見守り' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">発達特性のあるお子さまとGPS</h1>
           <p className="text-g600 text-lg">見守りと家族の安心を両立するためのGPSの活用方法と、地域の支援制度についてご説明します。</p>
@@ -60,22 +60,22 @@ export default function DisabilityPage() {
           <h2 className="section-title">機種選びのポイント</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🔋</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">長寿命バッテリー</h3>
               <p className="text-sm text-g600">充電忘れによる見守りの空白を防ぐため、みてね・あんしんウォッチャーなど、最大2カ月持続する機種をおすすめします。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📍</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">測位精度の高さ</h3>
               <p className="text-sm text-g600">GPS+Wi-Fi+基地局の3測位に対応するなど、屋内でも精度が保たれる機種が適しています。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🎒</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">装着のしやすさ</h3>
               <p className="text-sm text-g600">軽量・コンパクトで、ご本人が取り外しにくい装着方法を工夫できる機種をおすすめします。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">👥</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">複数人見守り</h3>
               <p className="text-sm text-g600">BoTトーク（無制限）・まもサーチ（25人）など、支援者と情報を共有しやすい機種が役立ちます。</p>
             </div>
@@ -98,7 +98,7 @@ export default function DisabilityPage() {
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (<details key={i} className="faq-item"><summary>{faq.q}</summary><div className="faq-answer">{faq.a}</div></details>))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPS端末の選び方</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/knowledge/how-to-choose/" className="btn-primary">選び方ガイド</Link>

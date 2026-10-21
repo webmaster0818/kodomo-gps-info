@@ -34,7 +34,7 @@ export default function LineConnectPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS LINE連携・みまもり通知の使い方", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: 'LINE連携' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-green text-white">LINE連携</span>
@@ -57,22 +57,22 @@ export default function LineConnectPage() {
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">💬</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">通知をLINEでも受け取る</h3>
               <p className="text-sm text-g600">到着・出発通知や低電力通知をLINEに転送できる機種があります。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📍</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">LINEの位置情報機能と併用</h3>
               <p className="text-sm text-g600">塾や習い事から帰る際に、LINEで位置情報を送ってもらう運用も可能です。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">👨‍👩‍👧</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">家族グループで共有</h3>
               <p className="text-sm text-g600">LINEグループへ通知を送れば、祖父母や親戚にもリアルタイムで共有できます。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🔕</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">通知のオン・オフの個別調整</h3>
               <p className="text-sm text-g600">LINE側で家族ごとに通知のオン・オフを切り替えれば、必要な人にだけ通知が届きます。</p>
             </div>
@@ -139,7 +139,7 @@ export default function LineConnectPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">家族で共有する見守りの活用方法</h2>
             <p className="text-g600 mb-6 text-sm">LINEと専用アプリを適切に組み合わせることで、家族全員で見守りの情報を共有できます。</p>
             <div className="flex flex-wrap justify-center gap-4">

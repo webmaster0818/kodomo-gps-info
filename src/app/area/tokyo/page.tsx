@@ -57,10 +57,10 @@ const recommendedDevices = [
 ];
 
 const tokyoFeatures = [
-  { icon: '🚃', title: '電車乗降通知', desc: '東京の小学生の約3割が電車通学をしています。駅に設定したエリア通知やAI検知により、乗車・降車をリアルタイムで通知するため、乗り過ごしもすぐに把握できます。' },
-  { icon: '🏙️', title: 'ビル街でのWi-Fi測位', desc: '高層ビルが多い都心部では、GPS衛星の電波が遮られやすくなります。Wi-Fiアクセスポイントが密集している東京では、Wi-Fi測位で補完されるため、精度が維持されます。' },
-  { icon: '🚇', title: '地下鉄での位置把握', desc: '東京メトロ・都営地下鉄の全駅でWi-Fiが整備されており、地下鉄の利用中もおおよその位置を把握できます。' },
-  { icon: '📱', title: 'SOS通知', desc: '人混みの中でお子さまが不安を感じた場合、端末のボタンを押すだけで保護者にSOSを通知できます。位置情報も一緒に送られるため、保護者が迎えに行くことができます。' },
+  { icon: '', title: '電車乗降通知', desc: '東京の小学生の約3割が電車通学をしています。駅に設定したエリア通知やAI検知により、乗車・降車をリアルタイムで通知するため、乗り過ごしもすぐに把握できます。' },
+  { icon: '', title: 'ビル街でのWi-Fi測位', desc: '高層ビルが多い都心部では、GPS衛星の電波が遮られやすくなります。Wi-Fiアクセスポイントが密集している東京では、Wi-Fi測位で補完されるため、精度が維持されます。' },
+  { icon: '', title: '地下鉄での位置把握', desc: '東京メトロ・都営地下鉄の全駅でWi-Fiが整備されており、地下鉄の利用中もおおよその位置を把握できます。' },
+  { icon: '', title: 'SOS通知', desc: '人混みの中でお子さまが不安を感じた場合、端末のボタンを押すだけで保護者にSOSを通知できます。位置情報も一緒に送られるため、保護者が迎えに行くことができます。' },
 ];
 
 export default function TokyoPage() {
@@ -70,7 +70,7 @@ export default function TokyoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "東京の子供見守りGPS活用ガイド｜通学路・治安情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'エリア別', href: '/area/' }, { name: '東京' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">東京</span>
@@ -143,7 +143,6 @@ export default function TokyoPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {tokyoFeatures.map((f) => (
               <div key={f.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{f.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{f.title}</h3>
                   <p className="text-sm text-g600">{f.desc}</p>
@@ -182,7 +181,7 @@ export default function TokyoPage() {
             <Link href="/knowledge/gps-range/" className="text-blue hover:underline">通信範囲と届く距離</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">東京での通学時の見守り</h2>
             <p className="text-g600 mb-6 text-sm">電車通学・徒歩通学など、お子さまの通学スタイルに合ったGPSを選ぶことをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

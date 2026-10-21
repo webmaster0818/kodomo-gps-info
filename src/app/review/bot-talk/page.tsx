@@ -36,7 +36,7 @@ export default function BotTalkPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "BoTトーク レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'BoTトーク' }]} />
 
-      <section className="bg-gradient-to-br from-green-light to-white py-12">
+      <section className="bg-green-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-green text-white">第6世代</span>
@@ -116,15 +116,14 @@ export default function BotTalkPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '💬', title: '元祖トーク機能', desc: 'テキスト・音声メッセージを送受信できます。ボタン操作のため、お子さまでも簡単に使えます。' },
-              { icon: '💳', title: '見守りウォレット', desc: '電子マネー機能を搭載しています。保護者がチャージし、利用履歴も確認できます。' },
-              { icon: '🧠', title: 'AI行動学習', desc: '日常の行動パターンを学習し、普段と異なる行動を検知して通知します。使うほど精度が向上します。' },
-              { icon: '📍', title: '高精度測位', desc: 'GNSS（GPS・みちびき・BeiDou・Galileo・SBAS）に Wi-Fi・基地局を組み合わせて位置を測位します（BoT公式・2026年10月20日確認）。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。学校・塾・自宅などを設定できます。' },
-              { icon: '📊', title: '移動履歴', desc: '1日の移動経路を記録・表示します。通学路や行動パターンを確認できます。' },
+              { icon: '', title: '元祖トーク機能', desc: 'テキスト・音声メッセージを送受信できます。ボタン操作のため、お子さまでも簡単に使えます。' },
+              { icon: '', title: '見守りウォレット', desc: '電子マネー機能を搭載しています。保護者がチャージし、利用履歴も確認できます。' },
+              { icon: '', title: 'AI行動学習', desc: '日常の行動パターンを学習し、普段と異なる行動を検知して通知します。使うほど精度が向上します。' },
+              { icon: '', title: '高精度測位', desc: 'GNSS（GPS・みちびき・BeiDou・Galileo・SBAS）に Wi-Fi・基地局を組み合わせて位置を測位します（BoT公式・2026年10月20日確認）。' },
+              { icon: '', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。学校・塾・自宅などを設定できます。' },
+              { icon: '', title: '移動履歴', desc: '1日の移動経路を記録・表示します。通学路や行動パターンを確認できます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -184,7 +183,7 @@ export default function BotTalkPage() {
           ))}
           <p className="text-sm text-g600 mt-3">BoTを含む主要5機種の海外利用の可否（公式FAQ）と、海外旅行中の代わりの方法は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>でまとめています。</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-green-light to-blue-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-green-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">BoTトークをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">トーク・見守りウォレット・AI行動学習を備えた、見守り以外の用途にも対応する多機能GPS端末です。</p>
             <div className="flex flex-wrap justify-center gap-4">

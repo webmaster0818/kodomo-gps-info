@@ -36,21 +36,21 @@ const faqJsonLd = {
 const disabilityTypes = [
   {
     type: '知的障害',
-    icon: '🧠',
+    icon: '',
     risks: ['道に迷いやすい傾向', '危険の判断の難しさ', '助けを求めることの難しさ'],
     gpsPoints: ['シンプルな操作（またはボタンなし）', 'エリア通知（ジオフェンス）が重要', '防水・耐衝撃は必須', 'バッテリー長持ちモデルを推奨'],
     recommended: 'みてねみまもりGPS（操作不要・軽量）',
   },
   {
     type: '発達障害（ASD・ADHD等）',
-    icon: '🌈',
+    icon: '',
     risks: ['飛び出し行動', '感覚過敏で端末を嫌がる可能性', '興味への集中による周囲への注意の低下'],
     gpsPoints: ['最軽量モデルを選ぶ（感覚過敏対策）', '移動速度アラートが有効', 'エリア通知の複数設定', '音・振動が出ない機種'],
     recommended: 'まもサーチ（軽量36g・シンプル設計）',
   },
   {
     type: '身体障害（肢体不自由等）',
-    icon: '♿',
+    icon: '',
     risks: ['車椅子からの転落時', '介助者との連携', '緊急時の自力避難が困難'],
     gpsPoints: ['SOSボタン付きを推奨', '車椅子への固定方法を確認', '通話機能付きも検討', '介助者とのアプリ共有'],
     recommended: 'BoTトーク（SOSボタン+トーク機能付き）',
@@ -86,7 +86,7 @@ export default function DisabledChildPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "障害のあるお子さまのGPS見守り｜特性に合わせた選び方", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '障害のあるお子さまのGPS見守り' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">障害児見守り</span>
@@ -110,7 +110,6 @@ export default function DisabledChildPage() {
             {disabilityTypes.map((d) => (
               <div key={d.type} className="card-hover p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-3xl">{d.icon}</span>
                   <h3 className="font-bold text-g800 text-lg">{d.type}</h3>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4 mb-3">
@@ -145,12 +144,11 @@ export default function DisabledChildPage() {
           <h2 className="section-title">SOSボタン・防水・耐衝撃の重要性</h2>
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '🆘', title: 'SOSボタン', desc: '緊急時にボタンを押すだけで保護者に通知が届きます。お子さまが「困ったらこのボタンを押す」と理解できる場合に有効です。知的障害の程度によっては誤操作のリスクがあるため、オン・オフを設定できる機種をおすすめします。' },
-              { icon: '💧', title: '防水性能', desc: '障害のあるお子さまは、水遊びや飲み物をこぼす機会が多い場合があります。IPX5以上の防水性能があれば、雨天時や水回りでも使用できます。特に感覚遊びで水を使うお子さまには、欠かせない機能です。' },
-              { icon: '💪', title: '耐衝撃性', desc: '端末を投げたり落としたりする頻度が高いお子さまには、耐衝撃設計の端末が必要です。シリコンカバーの装着やリュック内部への固定など、物理的な保護策もあわせて講じることをおすすめします。' },
+              { icon: '', title: 'SOSボタン', desc: '緊急時にボタンを押すだけで保護者に通知が届きます。お子さまが「困ったらこのボタンを押す」と理解できる場合に有効です。知的障害の程度によっては誤操作のリスクがあるため、オン・オフを設定できる機種をおすすめします。' },
+              { icon: '', title: '防水性能', desc: '障害のあるお子さまは、水遊びや飲み物をこぼす機会が多い場合があります。IPX5以上の防水性能があれば、雨天時や水回りでも使用できます。特に感覚遊びで水を使うお子さまには、欠かせない機能です。' },
+              { icon: '', title: '耐衝撃性', desc: '端末を投げたり落としたりする頻度が高いお子さまには、耐衝撃設計の端末が必要です。シリコンカバーの装着やリュック内部への固定など、物理的な保護策もあわせて講じることをおすすめします。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5">
-                <p className="text-2xl mb-2">{item.icon}</p>
                 <h3 className="font-bold text-g800 mb-1">{item.title}</h3>
                 <p className="text-sm text-g600">{item.desc}</p>
               </div>
@@ -227,7 +225,7 @@ export default function DisabledChildPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまの特性に合ったGPSの選び方</h2>
             <p className="text-g600 mb-6 text-sm">障害の種類や程度に合わせて、適した見守り方法をお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

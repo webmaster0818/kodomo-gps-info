@@ -26,7 +26,7 @@ export default function LossPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPSを紛失したら？対処法と落とさない工夫・再発行ガイド", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '紛失対策' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">子供GPSを紛失したら？対処法ガイド</h1>
           <p className="text-g600 text-lg">紛失時に取るべき4つの手順と、落とさないための装着方法の工夫を解説します</p>
@@ -58,22 +58,22 @@ export default function LossPage() {
           <h2 className="section-title">落とさないための装着方法の工夫</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🎒</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">ランドセルの内側ポケット</h3>
               <p className="text-sm text-g600">ファスナー付きのポケットに入れることで、落下のリスクを大きく減らせます。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🔗</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">ストラップによる固定</h3>
               <p className="text-sm text-g600">ショルダーベルトのD環やカバンの内側に、ストラップでつないでおくと安心です。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">📦</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">専用ケース・カバー</h3>
               <p className="text-sm text-g600">各社が販売する専用カバーはストラップホールを備えており、落下防止に役立ちます。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">✏️</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">名前・連絡先の記入</h3>
               <p className="text-sm text-g600">拾った方が連絡できるよう、名前と電話番号を記載しておくことをおすすめします。</p>
             </div>
@@ -82,7 +82,7 @@ export default function LossPage() {
           <h2 className="section-title">よくある質問</h2>
           {faqData.map((faq, i) => (<details key={i} className="faq-item"><summary>{faq.q}</summary><div className="faq-answer">{faq.a}</div></details>))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">紛失対策がしやすい機種の比較</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>

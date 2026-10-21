@@ -59,7 +59,7 @@ const deviceNotificationMatrix = [
 const scenarioSettings = [
   {
     scene: '通学用（平日）',
-    icon: '🏫',
+    icon: '',
     recommended: [
       'エリア通知: 学校・自宅の2箇所をON',
       'SOS通知: 常にON',
@@ -71,7 +71,7 @@ const scenarioSettings = [
   },
   {
     scene: '習い事用（放課後）',
-    icon: '🎹',
+    icon: '',
     recommended: [
       'エリア通知: 塾・教室を追加',
       'SOS通知: 常にON',
@@ -82,7 +82,7 @@ const scenarioSettings = [
   },
   {
     scene: '休日のお出かけ用',
-    icon: '🏞️',
+    icon: '',
     recommended: [
       '位置更新: 5分間隔（バッテリー節約）',
       'SOS通知: 常にON',
@@ -109,7 +109,7 @@ export default function NotificationTypesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの通知機能一覧｜設定方法と活用テクニック", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通知機能一覧' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">通知機能</span>
@@ -207,7 +207,6 @@ export default function NotificationTypesPage() {
             {scenarioSettings.map((s) => (
               <div key={s.scene} className="card-hover p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-2xl">{s.icon}</span>
                   <h3 className="font-bold text-g800 text-lg">{s.scene}</h3>
                 </div>
                 <ul className="space-y-1 mb-3">
@@ -253,7 +252,7 @@ export default function NotificationTypesPage() {
             <Link href="/knowledge/how-to-choose/" className="text-blue hover:underline">GPS端末の選び方ガイド</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">通知機能を活用した見守り</h2>
             <p className="text-g600 mb-6 text-sm">必要な通知のみに絞ることで、大切な通知を見逃さず、継続して快適にご利用いただけます。</p>
             <div className="flex flex-wrap justify-center gap-4">

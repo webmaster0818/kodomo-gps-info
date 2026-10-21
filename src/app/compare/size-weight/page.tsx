@@ -65,7 +65,7 @@ export default function SizeWeightPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの大きさ・重さ比較｜10機種の公式サイズ一覧", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'サイズ・重さ比較' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">サイズ比較</span>
@@ -163,13 +163,12 @@ export default function SizeWeightPage() {
           <h2 className="section-title">サイズ・重さで選ぶポイント</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '🪶', title: '軽さを優先するなら40g前後', desc: '販売中のポケット型ではまもサーチ3（約39g）が最も軽く、あんしんウォッチャー（約53g）が続きます。幼児や低学年で、持たせる位置が服のポケットになる場合の候補です。' },
-              { icon: '🔋', title: '電池持ちは重さではなくモードで比べる', desc: '公表値は「電池長持ちモード」「省エネモード」など条件つきの最大値です。位置の更新間隔を短くすると電池持ちは短くなるため、同じ条件どうしで比べることをおすすめします。' },
-              { icon: '📏', title: '厚みは15〜22mmの幅がある', desc: 'ズボンや上着のポケットに入れる場合は、15mm台のまもサーチ3が薄型です。ランドセルやカバンに入れる場合は、22mmの機種でも大きな差はありません。' },
+              { icon: '', title: '軽さを優先するなら40g前後', desc: '販売中のポケット型ではまもサーチ3（約39g）が最も軽く、あんしんウォッチャー（約53g）が続きます。幼児や低学年で、持たせる位置が服のポケットになる場合の候補です。' },
+              { icon: '', title: '電池持ちは重さではなくモードで比べる', desc: '公表値は「電池長持ちモード」「省エネモード」など条件つきの最大値です。位置の更新間隔を短くすると電池持ちは短くなるため、同じ条件どうしで比べることをおすすめします。' },
+              { icon: '', title: '厚みは15〜22mmの幅がある', desc: 'ズボンや上着のポケットに入れる場合は、15mm台のまもサーチ3が薄型です。ランドセルやカバンに入れる場合は、22mmの機種でも大きな差はありません。' },
               { icon: '⌚', title: '腕時計型・画面付きは学校ルールを確認', desc: '腕時計型や画面付きの機種は、サイズよりも先に学校への持ち込みルールをご確認ください。禁止されている場合は、画面のないポケット型をお選びください。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -186,7 +185,7 @@ export default function SizeWeightPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">サイズ・重さから選ぶGPS端末</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの年齢や使い方に合ったサイズの端末をお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

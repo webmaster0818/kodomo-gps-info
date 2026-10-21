@@ -36,7 +36,7 @@ export default function AccuracyKnowledgePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS精度の仕組み", "datePublished": "2026-03-15", "dateModified": "2026-08-02", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: 'GPS精度の仕組み' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">GPS精度</span>
@@ -82,14 +82,14 @@ export default function AccuracyKnowledgePage() {
           <h2 className="section-title">誤差が生じる5つの原因</h2>
           <div className="space-y-4 mb-8">
             {[
-              { icon: '🏢', title: 'ビル・建物の影響（マルチパス）', desc: 'ビル街では衛星の電波が建物に反射し、端末に到達する経路が複数になります（マルチパス）。これにより、誤差が50m〜100m以上になることがあります。' },
-              { icon: '🌧️', title: '天候の影響', desc: '豪雨や大雪では電波が減衰し、精度が低下します。通常の雨や曇りでは、ほとんど影響はありません。' },
-              { icon: '🏠', title: '屋内での精度低下', desc: '建物の壁や屋根がGPSの電波を遮断するため、屋内では衛星による測位が困難になります。Wi-Fi測位で補完する機種を選ぶことで改善できます。' },
-              { icon: '🚇', title: 'トンネル・地下', desc: 'トンネルや地下では、衛星の電波が完全に遮断されます。最後に測位できた位置が表示されるか、基地局測位によるおおよその位置のみが表示されます。' },
-              { icon: '🔋', title: 'バッテリー残量', desc: 'バッテリー残量が極端に少なくなると、省電力モードに移行し、更新間隔が自動で長くなる機種があります。リアルタイム性が低下する原因となります。' },
+              { icon: '', title: 'ビル・建物の影響（マルチパス）', desc: 'ビル街では衛星の電波が建物に反射し、端末に到達する経路が複数になります（マルチパス）。これにより、誤差が50m〜100m以上になることがあります。' },
+              { icon: '', title: '天候の影響', desc: '豪雨や大雪では電波が減衰し、精度が低下します。通常の雨や曇りでは、ほとんど影響はありません。' },
+              { icon: '', title: '屋内での精度低下', desc: '建物の壁や屋根がGPSの電波を遮断するため、屋内では衛星による測位が困難になります。Wi-Fi測位で補完する機種を選ぶことで改善できます。' },
+              { icon: '', title: 'トンネル・地下', desc: 'トンネルや地下では、衛星の電波が完全に遮断されます。最後に測位できた位置が表示されるか、基地局測位によるおおよその位置のみが表示されます。' },
+              { icon: '', title: 'バッテリー残量', desc: 'バッテリー残量が極端に少なくなると、省電力モードに移行し、更新間隔が自動で長くなる機種があります。リアルタイム性が低下する原因となります。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5">
-                <h3 className="font-bold text-g800 mb-1">{item.icon} {item.title}</h3>
+                <h3 className="font-bold text-g800 mb-1">{item.title}</h3>
                 <p className="text-sm text-g600">{item.desc}</p>
               </div>
             ))}
@@ -136,7 +136,7 @@ export default function AccuracyKnowledgePage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">高精度なGPS端末の比較</h2>
             <p className="text-g600 mb-6 text-sm">正確な見守りを重視する場合は、精度の高い機種をおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -58,10 +58,10 @@ const recommendedDevices = [
 ];
 
 const osakaFeatures = [
-  { icon: '🏪', title: '地下街での位置把握', desc: '梅田・難波の広大な地下街でも、Wi-Fi測位によって位置を把握できます。迷子になりやすい地下街で、GPSが特に役立ちます。' },
-  { icon: '🌡️', title: '暑さ対策と防水', desc: '大阪の夏は猛暑となります。防水性・耐熱性を備えた機種を選ぶことで、汗や雨による故障のリスクを軽減できます。' },
-  { icon: '🚃', title: '私鉄・地下鉄の乗降通知', desc: '大阪はJR・阪急・阪神・近鉄・Osaka Metroなど路線が複雑です。エリア通知やAI検知によって乗降を把握できます。' },
-  { icon: '🏫', title: '塾・習い事の到着通知', desc: '大阪は塾に通う子供が多い地域です。エリア通知を設定すると「塾に着いた」「塾を出た」を自動で通知するため、迎えのタイミングも把握できます。' },
+  { icon: '', title: '地下街での位置把握', desc: '梅田・難波の広大な地下街でも、Wi-Fi測位によって位置を把握できます。迷子になりやすい地下街で、GPSが特に役立ちます。' },
+  { icon: '', title: '暑さ対策と防水', desc: '大阪の夏は猛暑となります。防水性・耐熱性を備えた機種を選ぶことで、汗や雨による故障のリスクを軽減できます。' },
+  { icon: '', title: '私鉄・地下鉄の乗降通知', desc: '大阪はJR・阪急・阪神・近鉄・Osaka Metroなど路線が複雑です。エリア通知やAI検知によって乗降を把握できます。' },
+  { icon: '', title: '塾・習い事の到着通知', desc: '大阪は塾に通う子供が多い地域です。エリア通知を設定すると「塾に着いた」「塾を出た」を自動で通知するため、迎えのタイミングも把握できます。' },
 ];
 
 export default function OsakaPage() {
@@ -71,7 +71,7 @@ export default function OsakaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "大阪の子供見守りGPS活用ガイド｜通学路・治安情報", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'エリア別', href: '/area/' }, { name: '大阪' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">大阪</span>
@@ -144,7 +144,6 @@ export default function OsakaPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {osakaFeatures.map((f) => (
               <div key={f.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{f.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{f.title}</h3>
                   <p className="text-sm text-g600">{f.desc}</p>
@@ -183,7 +182,7 @@ export default function OsakaPage() {
             <Link href="/knowledge/gps-range/" className="text-blue hover:underline">通信範囲と届く距離</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">大阪での通学の見守り</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの通学スタイルとお住まいのエリアに合ったGPS端末をお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -34,7 +34,7 @@ export default function MamosearchPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "まもサーチ3 レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'まもサーチ' }]} />
 
-      <section className="bg-gradient-to-br from-green-light to-white py-12">
+      <section className="bg-green-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-green text-white">最大25人で見守り</span>
@@ -107,15 +107,14 @@ export default function MamosearchPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '👨‍👩‍👧‍👦', title: '最大25人で見守り', desc: '業界最多の人数です。祖父母・親戚・地域の方まで、幅広く見守りに参加できます。' },
-              { icon: '📍', title: '現在地確認', desc: 'アプリから、リアルタイムでお子さまの位置を確認できます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。登下校の確認に役立ちます。' },
-              { icon: '📊', title: '移動履歴', desc: '過去の移動ルートを確認でき、行動パターンを把握できます。' },
-              { icon: '📦', title: 'コンパクト設計', desc: '第3世代でさらに小型化しました。ランドセルに入れても邪魔になりません。' },
-              { icon: '🔋', title: '長持ちバッテリー', desc: '電池長持ちモードで最大2か月持続し、充電の手間を軽減できます（公式）。' },
+              { icon: '', title: '最大25人で見守り', desc: '業界最多の人数です。祖父母・親戚・地域の方まで、幅広く見守りに参加できます。' },
+              { icon: '', title: '現在地確認', desc: 'アプリから、リアルタイムでお子さまの位置を確認できます。' },
+              { icon: '', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。登下校の確認に役立ちます。' },
+              { icon: '', title: '移動履歴', desc: '過去の移動ルートを確認でき、行動パターンを把握できます。' },
+              { icon: '', title: 'コンパクト設計', desc: '第3世代でさらに小型化しました。ランドセルに入れても邪魔になりません。' },
+              { icon: '', title: '長持ちバッテリー', desc: '電池長持ちモードで最大2か月持続し、充電の手間を軽減できます（公式）。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -153,7 +152,7 @@ export default function MamosearchPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-green-light to-blue-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-green-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">まもサーチが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">最大25人で見守れるため、大家族やご近所と協力した見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">

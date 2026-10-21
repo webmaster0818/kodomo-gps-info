@@ -34,7 +34,7 @@ export default function GeofencePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS エリア通知（出発・到着通知）の使い方", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: 'エリア通知' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">ジオフェンス</span>
@@ -59,15 +59,14 @@ export default function GeofencePage() {
           <h2 className="section-title">登録に適したエリアの例</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '🏠', title: '自宅', desc: '帰宅通知を設定すれば、家に着いたタイミングが自動で届きます。' },
-              { icon: '🏫', title: '学校', desc: '朝の登校時・下校時の通知に活用できます。安全な動線を毎日確認できます。' },
-              { icon: '📚', title: '塾・習い事', desc: '到着・出発の通知により、塾へのお迎えの時間を把握できます。' },
-              { icon: '🏋️', title: 'スポーツクラブ', desc: '練習終わりの通知で迎えの準備がしやすくなります。' },
-              { icon: '🧓', title: '祖父母の家', desc: '学童の代わりに利用するご家庭では、到着通知により安心して見守れます。' },
-              { icon: '🌳', title: '公園', desc: '遊びに行くエリアを設定すると、行動範囲を管理しやすくなります。' },
+              { icon: '', title: '自宅', desc: '帰宅通知を設定すれば、家に着いたタイミングが自動で届きます。' },
+              { icon: '', title: '学校', desc: '朝の登校時・下校時の通知に活用できます。安全な動線を毎日確認できます。' },
+              { icon: '', title: '塾・習い事', desc: '到着・出発の通知により、塾へのお迎えの時間を把握できます。' },
+              { icon: '', title: 'スポーツクラブ', desc: '練習終わりの通知で迎えの準備がしやすくなります。' },
+              { icon: '', title: '祖父母の家', desc: '学童の代わりに利用するご家庭では、到着通知により安心して見守れます。' },
+              { icon: '', title: '公園', desc: '遊びに行くエリアを設定すると、行動範囲を管理しやすくなります。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -130,7 +129,7 @@ export default function GeofencePage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">エリア通知を活用した見守り</h2>
             <p className="text-g600 mb-6 text-sm">エリア通知を活用することで、毎回地図を開く手間を大きく減らすことができます。</p>
             <div className="flex flex-wrap justify-center gap-4">
