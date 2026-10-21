@@ -154,7 +154,7 @@ export default function DokokanaGpsPage() {
               <ul className="space-y-2 text-sm text-g700">
                 <li>・通話・トーク機能がない（位置確認専用）</li>
                 <li>・名称変更により月額無料期間が6カ月から1カ月に短縮</li>
-                <li>・通知がメール中心のため見落とす場合がある（口コミ）</li>
+                <li>・アプリの更新やスマートフォンの機種変更のあとに、通知が届かなくなったという声がある（口コミ）</li>
                 <li>・約60gとやや重め</li>
                 <li>・充電方式やサイズの詳細は公式の記載が少なく、確認が必要</li>
               </ul>
@@ -178,14 +178,14 @@ export default function DokokanaGpsPage() {
             <div className="card-hover p-5 bg-orange-light/40">
               <h3 className="font-bold text-orange-dark text-sm mb-2">指摘されている傾向</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・通知がメール中心のため、他のメールに埋もれて気付きにくい場合がある点</li>
+                <li>・2024年7月に通知がメールからアプリのプッシュ通知に変わった前後で、通知が届かなくなった、メールのほうが履歴が残って便利だったという声</li>
                 <li>・初期設定の際に再設定が必要になったという声</li>
                 <li>・GPS精度に誤差を感じるという一部の指摘</li>
               </ul>
             </div>
           </div>
           <p className="text-xs text-g400 mb-8">
-            ※口コミは、公開レビューの傾向を要約したものです。出典: <a href="https://apps.apple.com/jp/app/id1450832383" className="underline" target="_blank" rel="noopener noreferrer">みまもりGPS（App Store）</a>、各レビューサイト（2026年6月確認）
+            ※口コミは、公開レビューの傾向を要約したものです。出典: <a href="https://apps.apple.com/jp/app/id1486547299" className="underline" target="_blank" rel="noopener noreferrer">みまもりGPS（App Store）</a>、各レビューサイト（2026年6月確認。通知に関する記述は2026年10月21日にApp Storeのレビューで再確認）。通知方式の変更は<a href="https://k-tai.watch.impress.co.jp/docs/news/1605650.html" className="underline" target="_blank" rel="noopener noreferrer">ケータイWatch（2024年7月4日）</a>による
           </p>
 
           {/* 向く人・向かない人 */}
@@ -204,7 +204,6 @@ export default function DokokanaGpsPage() {
               <h3 className="font-bold text-orange mb-2">向いていない方</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・お子さまと音声メッセージ・通話で連絡を取りたい方</li>
-                <li>・プッシュ通知で確実に気付きたい方（メール通知を見落としやすい方）</li>
                 <li>・できるだけ軽い端末を持たせたい方</li>
               </ul>
             </div>
