@@ -1,14 +1,14 @@
-// サイトロゴ（2026-10 デザイン刷新・案は施主選択待ち。マーク部分だけ差し替えれば全体に反映される）
+// サイトロゴ（2026-10 デザイン刷新・施主選択M-2「母が子を前に抱いて守る」）
 export function LogoMark({ size = 34, inverse = false }: { size?: number; inverse?: boolean }) {
   const base = inverse ? '#fff' : '#15385F';
   const ink = inverse ? '#15385F' : '#fff';
-  const sub = inverse ? '#1F5FA0' : '#7CC3EE';
   return (
-    <svg width={size} height={size * 1.2} viewBox="0 0 40 48" aria-hidden="true">
-      <path d="M20 2C10.6 2 3 9.4 3 18.6 3 31 20 46 20 46S37 31 37 18.6C37 9.4 29.4 2 20 2Z" fill={base} />
-      <circle cx="15.2" cy="15.5" r="4.3" fill={ink} />
-      <circle cx="25.8" cy="19.2" r="3" fill={sub} />
-      <path d="M9.8 28.5c.6-4.4 2.8-6.8 5.4-6.8s4.8 2.4 5.4 6.8M21.6 28.6c.4-3.1 2.1-4.8 4.2-4.8s3.8 1.7 4.2 4.8" fill="none" stroke={ink} strokeWidth="2.4" strokeLinecap="round" />
+    <svg width={size} height={size} viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="19" cy="10" r="5.6" fill={base} />
+      <path d="M5 47C5 30 11 19.5 21 19.5 31 19.5 39 27 40 36V47Z" fill={base} />
+      <circle cx="28" cy="27.5" r="4.4" fill={ink} />
+      <path d="M21 47C21 39.5 24.1 35 28 35S35 39.5 35 47Z" fill={ink} />
+      <path d="M13 33.5C15.5 41 23 44 32 41.6" fill="none" stroke="#7CC3EE" strokeWidth="3.2" strokeLinecap="round" />
     </svg>
   );
 }
@@ -16,7 +16,7 @@ export function LogoMark({ size = 34, inverse = false }: { size?: number; invers
 export default function SiteLogo({ inverse = false }: { inverse?: boolean }) {
   return (
     <span className="flex items-center gap-2.5">
-      <LogoMark size={30} inverse={inverse} />
+      <LogoMark size={36} inverse={inverse} />
       <span className="leading-none">
         <span className={`block text-[19px] font-black tracking-[0.04em] ${inverse ? 'text-white' : 'text-blue-dark'}`}>
           子供見守り<span className={inverse ? 'text-[#7CC3EE]' : 'text-blue'}>GPS</span>
