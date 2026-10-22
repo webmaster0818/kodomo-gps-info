@@ -68,8 +68,8 @@ export default function CheapPage() {
                   ['1', 'みてねみまもりGPS', '528円', '5,280円', '11,616円', '/review/mitene/'],
                   ['2', 'BoTトーク', '528円', '5,280円', '11,616円', '/review/bot-talk/'],
                   ['3', 'はろここ', '528円', '5,280円', '11,616円', '/review/halococo/'],
-                  ['4', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
-                  ['5', 'まもサーチ', '539円', '5,280円', '11,748円', '/review/mamosearch/'],
+                  ['4', 'まもサーチ', '528円', '5,280円', '11,616円', '/review/mamosearch/'],
+                  ['5', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
                   ['6', 'みもり', '748円', '8,580円', '17,556円', '/review/mimori/'],
                   ['7', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
                   ['8', 'Hamic', '1,100円', '12,100円', '25,300円', '/review/hamic/'],
@@ -120,7 +120,7 @@ export default function CheapPage() {
             {[
               { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、利用者数No.1です。バッテリーが2カ月持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
               { rank: 2, name: 'あんしんウォッチャー', reason: '2台目無料のため、兄弟での利用に適しています。KDDI品質の安定した通信で、au以外の回線の保護者でも利用できます。', href: '/review/anshin-watcher/' },
-              { rank: 3, name: 'まもサーチ', reason: '月額539円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
+              { rank: 3, name: 'まもサーチ', reason: '月額528円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
               { rank: 4, name: 'BoTトーク', reason: '月額528円の基本プランでも、高精度なAI学習を搭載しています。トーク付きのプランでも748円です。', href: '/review/bot-talk/' },
             ].map((item) => (
               <div key={item.rank} className="flex gap-4 items-start card-hover p-4">
