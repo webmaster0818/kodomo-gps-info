@@ -45,7 +45,7 @@ export default function AnshinWatcherPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの寿命と買い替えの目安｜電池交換不可・保証1年・充電できない時の対処", "datePublished": "2026-03-15", "dateModified": "2026-10-20", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'あんしんウォッチャー' }]} />
 
-      <section className="bg-gradient-to-br from-orange-light to-white py-12">
+      <section className="bg-orange-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">2台目無料</span>
@@ -232,15 +232,14 @@ export default function AnshinWatcherPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: '現在地確認', desc: 'アプリからワンタップで現在地を確認できます。GNSS+Wi-Fi+基地局の3方式で測位します。' },
-              { icon: '🔔', title: 'エリア通知', desc: '学校・自宅・塾など、設定したエリアへの到着・出発を自動で通知します。' },
-              { icon: '🆘', title: '現在地通知ボタン', desc: '本体ボタンを3秒長押しすると、保護者に現在地を通知します。緊急時のSOSとして利用できます。' },
-              { icon: '🚃', title: '乗り物検知', desc: '時速15km以上での移動を検知して通知します。電車・車での移動を把握できます。' },
-              { icon: '💰', title: '2台目無料', desc: '兄弟・姉妹で使う場合、1台あたり約270円とコストを大きく抑えられます。' },
-              { icon: '👨‍👩‍👧‍👦', title: '最大10人見守り', desc: '契約者と招待した9人で見守れます。祖父母や親戚も見守りに参加できます。' },
+              { icon: '', title: '現在地確認', desc: 'アプリからワンタップで現在地を確認できます。GNSS+Wi-Fi+基地局の3方式で測位します。' },
+              { icon: '', title: 'エリア通知', desc: '学校・自宅・塾など、設定したエリアへの到着・出発を自動で通知します。' },
+              { icon: '', title: '現在地通知ボタン', desc: '本体ボタンを3秒長押しすると、保護者に現在地を通知します。緊急時のSOSとして利用できます。' },
+              { icon: '', title: '乗り物検知', desc: '時速15km以上での移動を検知して通知します。電車・車での移動を把握できます。' },
+              { icon: '', title: '2台目無料', desc: '兄弟・姉妹で使う場合、1台あたり約270円とコストを大きく抑えられます。' },
+              { icon: '', title: '最大10人見守り', desc: '契約者と招待した9人で見守れます。祖父母や親戚も見守りに参加できます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -280,7 +279,7 @@ export default function AnshinWatcherPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-orange-light to-blue-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">あんしんウォッチャーをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">2台目月額0円とau品質を備え、兄弟・姉妹の見守りに適したGPS端末です。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -40,7 +40,7 @@ const positioningMethods = [
     accuracy: '3〜10m',
     pros: '精度が最も高く、屋外では安定して動作します。',
     cons: '室内・地下・ビルの間では電波を受信できません。',
-    icon: '🛰️',
+    icon: '',
   },
   {
     method: 'Wi-Fi測位',
@@ -48,7 +48,7 @@ const positioningMethods = [
     accuracy: '10〜50m',
     pros: '室内でも位置を取得でき、都市部では精度が高くなります。',
     cons: 'Wi-Fiが少ない地域では精度が低下し、郊外や農村部では機能しにくくなります。',
-    icon: '📶',
+    icon: '',
   },
   {
     method: '基地局測位',
@@ -56,7 +56,7 @@ const positioningMethods = [
     accuracy: '100〜500m',
     pros: 'カバーエリアが最も広く、室内でも機能します。',
     cons: '精度が最も低く、おおよそのエリアしか把握できません。',
-    icon: '📡',
+    icon: '',
   },
 ];
 
@@ -85,7 +85,7 @@ export default function GpsRangePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSの通信範囲と届く距離｜室内・地下でも使える？", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通信範囲と届く距離' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">通信範囲</span>
@@ -126,7 +126,6 @@ export default function GpsRangePage() {
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {positioningMethods.map((m) => (
               <div key={m.method} className="card-hover p-5">
-                <p className="text-3xl mb-2">{m.icon}</p>
                 <h3 className="font-bold text-g800 mb-1">{m.method}</h3>
                 <p className="text-sm text-orange font-semibold mb-1">範囲: {m.range}</p>
                 <p className="text-sm text-blue font-semibold mb-2">精度: {m.accuracy}</p>
@@ -236,13 +235,12 @@ export default function GpsRangePage() {
           <h2 className="section-title">通信範囲を有効に活用するためのポイント</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
-              { icon: '🎒', title: 'ランドセルの外側ポケットに入れる', desc: '金属製の筆箱やタブレットと一緒に入れると、電波が遮断されやすくなります。できるだけ外側のポケットに入れることをおすすめします。' },
-              { icon: '🔋', title: 'バッテリーを切らさない', desc: 'バッテリーが切れると、位置情報を取得できません。週に2〜3回の充電を習慣にすることをおすすめします。' },
-              { icon: '📱', title: '測位間隔を適切に設定する', desc: '位置の更新頻度を高くすると、バッテリーの消費が増えます。通学時は3分間隔、休日は5分間隔など、場面に応じた使い分けをおすすめします。' },
-              { icon: '🗺️', title: '事前にエリアマップを確認する', desc: '通学路や習い事先がLTEのカバーエリア内にあるかどうか、各キャリアの公式サイトで事前にご確認ください。' },
+              { icon: '', title: 'ランドセルの外側ポケットに入れる', desc: '金属製の筆箱やタブレットと一緒に入れると、電波が遮断されやすくなります。できるだけ外側のポケットに入れることをおすすめします。' },
+              { icon: '', title: 'バッテリーを切らさない', desc: 'バッテリーが切れると、位置情報を取得できません。週に2〜3回の充電を習慣にすることをおすすめします。' },
+              { icon: '', title: '測位間隔を適切に設定する', desc: '位置の更新頻度を高くすると、バッテリーの消費が増えます。通学時は3分間隔、休日は5分間隔など、場面に応じた使い分けをおすすめします。' },
+              { icon: '', title: '事前にエリアマップを確認する', desc: '通学路や習い事先がLTEのカバーエリア内にあるかどうか、各キャリアの公式サイトで事前にご確認ください。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -266,7 +264,7 @@ export default function GpsRangePage() {
             <Link href="/knowledge/troubleshoot/" className="text-blue hover:underline">トラブルシューティング</Link>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">通信範囲から考えるGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">お住まいのエリアに合った通信キャリアのGPS端末を選ぶことが、安定した見守りの第一歩です。</p>
             <div className="flex flex-wrap justify-center gap-4">

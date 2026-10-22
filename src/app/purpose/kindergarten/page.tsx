@@ -34,10 +34,10 @@ const faqJsonLd = {
 };
 
 const reasonsData = [
-  { icon: '🚌', title: '送迎バスの置き去り事故防止', desc: '2022年に発生した送迎バスの置き去り事故は社会問題となりました。GPSがあれば、お子さまが園に無事到着したかをリアルタイムで確認でき、万が一バス内に取り残された場合も位置情報から異常を検知できます。エリア通知を設定しておくと、園への到着・出発が自動で通知されます。' },
-  { icon: '🏞️', title: '園外活動・遠足時の安心', desc: '公園での外遊びや遠足など、園外活動中は先生の目が行き届かないことがあります。特に好奇心旺盛な幼児は、一瞬で視界から離れてしまうこともあります。GPSがあれば、万が一はぐれた場合もすぐに位置を特定できます。' },
-  { icon: '🎹', title: '習い事を始める時期の見守り', desc: '幼稚園年中・年長になると、習い事を始めるお子さまが増えます。送迎の間の空白時間や、習い事先への到着確認にGPSが役立ちます。特に祖父母やベビーシッターに送迎を依頼する場合、保護者がリアルタイムで位置を確認できると安心です。' },
-  { icon: '🏠', title: '一時的な預かり・お泊まり', desc: '祖父母の家やお友達の家へのお泊まり、一時預かりの際にGPSがあると、離れていてもお子さまの居場所を確認できます。幼児は自分で連絡を取ることができないため、位置情報が唯一のコミュニケーション手段になる場面もあります。' },
+  { icon: '', title: '送迎バスの置き去り事故防止', desc: '2022年に発生した送迎バスの置き去り事故は社会問題となりました。GPSがあれば、お子さまが園に無事到着したかをリアルタイムで確認でき、万が一バス内に取り残された場合も位置情報から異常を検知できます。エリア通知を設定しておくと、園への到着・出発が自動で通知されます。' },
+  { icon: '', title: '園外活動・遠足時の安心', desc: '公園での外遊びや遠足など、園外活動中は先生の目が行き届かないことがあります。特に好奇心旺盛な幼児は、一瞬で視界から離れてしまうこともあります。GPSがあれば、万が一はぐれた場合もすぐに位置を特定できます。' },
+  { icon: '', title: '習い事を始める時期の見守り', desc: '幼稚園年中・年長になると、習い事を始めるお子さまが増えます。送迎の間の空白時間や、習い事先への到着確認にGPSが役立ちます。特に祖父母やベビーシッターに送迎を依頼する場合、保護者がリアルタイムで位置を確認できると安心です。' },
+  { icon: '', title: '一時的な預かり・お泊まり', desc: '祖父母の家やお友達の家へのお泊まり、一時預かりの際にGPSがあると、離れていてもお子さまの居場所を確認できます。幼児は自分で連絡を取ることができないため、位置情報が唯一のコミュニケーション手段になる場面もあります。' },
 ];
 
 const selectionPoints = [
@@ -55,11 +55,11 @@ const recommendedDevices = [
 ];
 
 const attachMethods = [
-  { location: 'リュック外ポケット', method: 'リュックのサイドポケットやフロントポケットにそのまま入れる方法です。取り出しやすく充電しやすい点が利点ですが、落としやすい点が欠点です。', recommended: '★★★☆☆' },
-  { location: 'リュック内側（キーホルダー取り付け）', method: 'ストラップやキーホルダーで、リュック内側のDカンに固定する方法です。落下防止と盗難防止を兼ねるため、最も安心できます。', recommended: '★★★★★' },
-  { location: '靴のインソール下', method: '超薄型の端末であれば、靴のインソール下に入れることも可能です。ただし防水性能が必須で、対応するサイズの端末は限られます。', recommended: '★★☆☆☆' },
-  { location: '専用ケース＋ズボンのベルトループ', method: 'シリコンケースやクリップ付きケースで、ズボンのウエスト部分に固定する方法です。着替えの際の外し忘れにご注意ください。', recommended: '★★★★☆' },
-  { location: '名札ケースに同梱', method: '園で使用する名札ケース（IDカードホルダー）に、GPS端末を一緒に入れる方法です。園によっては、最も自然に持ち込める方法です。', recommended: '★★★★☆' },
+  { location: 'リュック外ポケット', method: 'リュックのサイドポケットやフロントポケットにそのまま入れる方法です。取り出しやすく充電しやすい点が利点ですが、落としやすい点が欠点です。', recommended: '' },
+  { location: 'リュック内側（キーホルダー取り付け）', method: 'ストラップやキーホルダーで、リュック内側のDカンに固定する方法です。落下防止と盗難防止を兼ねるため、最も安心できます。', recommended: '' },
+  { location: '靴のインソール下', method: '超薄型の端末であれば、靴のインソール下に入れることも可能です。ただし防水性能が必須で、対応するサイズの端末は限られます。', recommended: '' },
+  { location: '専用ケース＋ズボンのベルトループ', method: 'シリコンケースやクリップ付きケースで、ズボンのウエスト部分に固定する方法です。着替えの際の外し忘れにご注意ください。', recommended: '' },
+  { location: '名札ケースに同梱', method: '園で使用する名札ケース（IDカードホルダー）に、GPS端末を一緒に入れる方法です。園によっては、最も自然に持ち込める方法です。', recommended: '' },
 ];
 
 const schoolRules = [
@@ -75,7 +75,7 @@ export default function KindergartenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "幼稚園・保育園児にGPS見守りは必要？選び方とおすすめ", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '幼稚園・保育園児のGPS見守り' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">幼稚園・保育園</span>
@@ -98,7 +98,6 @@ export default function KindergartenPage() {
           <div className="space-y-4 mb-8">
             {reasonsData.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-3xl flex-shrink-0">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800 text-lg mb-1">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -220,7 +219,7 @@ export default function KindergartenPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">幼児の安全を守るGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの年齢・活動に合ったGPS端末の比較に、以下のページをご活用ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

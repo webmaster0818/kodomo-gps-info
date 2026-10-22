@@ -45,7 +45,7 @@ export default function BotVsMitenePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "BoTトーク vs みてねみまもりGPS 詳細比較", "datePublished": "2026-03-15", "dateModified": "2026-10-20", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'BoTトーク vs みてね 詳細比較' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">詳細比較</span>
@@ -125,7 +125,7 @@ export default function BotVsMitenePage() {
           ))}
           <p className="text-sm text-g600 mt-3">BoTとみてねみまもりGPSを含む主要5機種の海外利用の可否（公式FAQ）は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>でまとめています。</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">その他の機種との比較</h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>

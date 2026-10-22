@@ -34,12 +34,12 @@ const faqJsonLd = {
 };
 
 const checkPoints = [
-  { icon: '📋', title: '学校のルール確認', desc: '持ち込み許可の有無を担任の先生に確認します。許可書の提出が必要な場合は、提出期限もご確認ください。' },
-  { icon: '🔋', title: 'バッテリー準備', desc: '出発前にフル充電します。更新間隔を長めに設定し、必要に応じてモバイルバッテリーも用意してください。' },
-  { icon: '🎒', title: '収納場所の確認', desc: 'リュックのポケットなど、落としにくく邪魔にならない場所を子供と一緒に決めておきます。' },
-  { icon: '📡', title: '電波状況の確認', desc: '旅行先の電波エリアを事前に確認します。山間部では位置情報を取得できない場合があることも想定しておきます。' },
-  { icon: '⚙️', title: '通知設定の変更', desc: '旅行用に更新間隔を長めに変更します。エリア通知は無効にするか、宿泊先のみに設定します。' },
-  { icon: '👦', title: '子供への説明', desc: '「迷子になったときのお守り」として説明します。友達に見せびらかさないよう、あわせて伝えておくことをおすすめします。' },
+  { icon: '', title: '学校のルール確認', desc: '持ち込み許可の有無を担任の先生に確認します。許可書の提出が必要な場合は、提出期限もご確認ください。' },
+  { icon: '', title: 'バッテリー準備', desc: '出発前にフル充電します。更新間隔を長めに設定し、必要に応じてモバイルバッテリーも用意してください。' },
+  { icon: '', title: '収納場所の確認', desc: 'リュックのポケットなど、落としにくく邪魔にならない場所を子供と一緒に決めておきます。' },
+  { icon: '', title: '電波状況の確認', desc: '旅行先の電波エリアを事前に確認します。山間部では位置情報を取得できない場合があることも想定しておきます。' },
+  { icon: '', title: '通知設定の変更', desc: '旅行用に更新間隔を長めに変更します。エリア通知は無効にするか、宿泊先のみに設定します。' },
+  { icon: '', title: '子供への説明', desc: '「迷子になったときのお守り」として説明します。友達に見せびらかさないよう、あわせて伝えておくことをおすすめします。' },
 ];
 
 const comparison = [
@@ -57,7 +57,7 @@ export default function SchoolTripPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "修学旅行にGPSを持たせるべき？持ち込みルールと活用法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '修学旅行とGPS' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">修学旅行</span>
@@ -125,7 +125,6 @@ export default function SchoolTripPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {checkPoints.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -159,7 +158,7 @@ export default function SchoolTripPage() {
 
           <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">修学旅行に適したGPS端末</h2>
             <p className="text-g600 mb-6 text-sm">事前に準備を整え、安心して送り出せるよう、修学旅行に適したGPS端末を比較しています。</p>
             <div className="flex flex-wrap justify-center gap-4">

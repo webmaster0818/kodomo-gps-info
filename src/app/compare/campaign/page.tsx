@@ -34,7 +34,7 @@ export default function CampaignPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS キャンペーン・クーポン比較", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: 'キャンペーン・クーポン' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">キャンペーン</span>
@@ -57,17 +57,17 @@ export default function CampaignPage() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">💰</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">初期費用を抑えられる</h3>
               <p className="text-sm text-g600">本体価格の割引や無料キャンペーンにより、5,000〜10,000円ほど節約できる場合があります。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🎁</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">月額割引・無料期間</h3>
               <p className="text-sm text-g600">初月無料や数カ月間の割引など、利用開始時の負担を抑える施策が用意されることがあります。</p>
             </div>
             <div className="card-hover p-5">
-              <p className="text-2xl mb-2">🔄</p>
+              <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">乗り換え特典</h3>
               <p className="text-sm text-g600">他社から乗り換える場合、旧端末の下取りや特別割引が適用されるケースがあります。</p>
             </div>
@@ -130,7 +130,7 @@ export default function CampaignPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">子供GPSをお得に導入するための情報</h2>
             <p className="text-g600 mb-6 text-sm">購入前にキャンペーンの傾向を把握し、適切なタイミングで導入することをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

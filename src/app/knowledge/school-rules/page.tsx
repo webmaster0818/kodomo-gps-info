@@ -36,7 +36,7 @@ export default function SchoolRulesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS端末の学校持ち込みルール", "datePublished": "2026-03-15", "dateModified": "2026-08-02", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '学校持ち込み' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">学校ルール</span>
@@ -94,7 +94,7 @@ export default function SchoolRulesPage() {
                   { s: '登下校（通学路）', ok: '◎ 認められやすい', p: '防犯目的が明確です。ランドセルへの収納と音のオフが前提です。' },
                   { s: '授業中（校内）', ok: '○ ランドセル内なら認められることが多い', p: '机に出さない・操作しないことが条件です。' },
                   { s: '校外学習・遠足', ok: '△ 学校に要確認', p: '引率が付くため不要とされる場合があります。事前の申請をおすすめします。' },
-                  { s: '宿泊行事（林間学校・修学旅行）', ok: '△〜✕ 学校により分かれる', p: '一括管理または持ち込み不可とする学校が多いため、必ず事前にご確認ください。' },
+                  { s: '宿泊行事（林間学校・修学旅行）', ok: '△〜 学校により分かれる', p: '一括管理または持ち込み不可とする学校が多いため、必ず事前にご確認ください。' },
                   { s: '運動会・参観日など保護者同伴', ok: '○ 同伴時は不要な場合あり', p: '保護者がそばにいれば、持参の必要性は下がります。' },
                 ].map((r) => (
                   <tr key={r.s} className="align-top border-b border-gray-100">
@@ -164,7 +164,7 @@ export default function SchoolRulesPage() {
             </div>
 
             <div className="mt-6 rounded-lg border border-blue-200 p-5" style={{ background: 'rgba(59,130,246,0.03)' }}>
-              <p className="font-bold text-g800 text-sm mb-2">📝 あわせて添えると許可を得やすい「家庭での約束（誓約文）」の例</p>
+              <p className="font-bold text-g800 text-sm mb-2"> あわせて添えると許可を得やすい「家庭での約束（誓約文）」の例</p>
               <p className="text-sm text-g700 leading-relaxed mb-2">申請理由に以下のような誓約を添えると、学校側が懸念する点（授業妨害・トラブル・紛失責任）にあらかじめお答えできます。</p>
               <ul className="text-sm text-g700 leading-relaxed space-y-1">
                 <li>・校内では取り出さず、音や光が出ない状態で携行させます</li>
@@ -175,7 +175,7 @@ export default function SchoolRulesPage() {
             </div>
 
             <div className="mt-6">
-              <p className="font-bold text-g800 text-sm mb-2">🔇 主要機種の「音が出るか」早見表（各公式サイト確認・2026年8月2日時点）</p>
+              <p className="font-bold text-g800 text-sm mb-2"> 主要機種の「音が出るか」早見表（各公式サイト確認・2026年8月2日時点）</p>
               <p className="text-sm text-g600 mb-3">「音や光が出ない設定にします」と申請するには、実際に無音で運用できる機種かどうかを確認する必要があります。主要6機種の公式情報をまとめました。</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border border-g200 rounded-lg overflow-hidden">
@@ -252,7 +252,7 @@ export default function SchoolRulesPage() {
             </div>
           </div>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">学校に持ち込みやすいGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">音が鳴らない機種やトーク機能のない機種であれば、学校でも安心してご利用いただけます。3年総額で比較しています。</p>
             <div className="flex flex-wrap justify-center gap-4">

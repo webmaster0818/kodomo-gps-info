@@ -34,7 +34,7 @@ export default function SafetyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPS 犯罪対策・不審者対策", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '犯罪対策' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">犯罪対策</span>
@@ -52,14 +52,14 @@ export default function SafetyPage() {
           <h2 className="section-title">GPSが防犯に役立つ5つの場面</h2>
           <div className="space-y-4 mb-8">
             {[
-              { icon: '🏫', title: '通学路の逸脱検知', desc: 'いつもの通学路から外れた場合に通知が届きます。寄り道や不審な行動パターンにいち早く気付くことができます。エリア通知を細かく設定することがポイントです。' },
-              { icon: '🔔', title: '帰宅遅延の早期発見', desc: 'いつもの時間に学校のエリアを出発しない場合に気付くことができます。「まだ学校にいる」のか「別の場所にいる」のかを一目で確認できます。' },
-              { icon: '🆘', title: 'SOSボタンで緊急通報', desc: '怖い思いをしたときに、ボタン一つで保護者に通知できます。位置情報も同時に通知されるため、すぐに駆け付けることができます。' },
-              { icon: '⚠️', title: '不審者情報との連動', desc: 'みもりは地域の不審者情報と連動しています。お子さまが危険なエリアに近づくと、自動で保護者に通知を送ります。' },
-              { icon: '📋', title: '移動履歴の記録', desc: '万が一の事態が起きた場合、移動履歴は警察への重要な情報提供になります。日々の行動記録は、安全を確認するための記録にもなります。' },
+              { icon: '', title: '通学路の逸脱検知', desc: 'いつもの通学路から外れた場合に通知が届きます。寄り道や不審な行動パターンにいち早く気付くことができます。エリア通知を細かく設定することがポイントです。' },
+              { icon: '', title: '帰宅遅延の早期発見', desc: 'いつもの時間に学校のエリアを出発しない場合に気付くことができます。「まだ学校にいる」のか「別の場所にいる」のかを一目で確認できます。' },
+              { icon: '', title: 'SOSボタンで緊急通報', desc: '怖い思いをしたときに、ボタン一つで保護者に通知できます。位置情報も同時に通知されるため、すぐに駆け付けることができます。' },
+              { icon: '', title: '不審者情報との連動', desc: 'みもりは地域の不審者情報と連動しています。お子さまが危険なエリアに近づくと、自動で保護者に通知を送ります。' },
+              { icon: '', title: '移動履歴の記録', desc: '万が一の事態が起きた場合、移動履歴は警察への重要な情報提供になります。日々の行動記録は、安全を確認するための記録にもなります。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5">
-                <h3 className="font-bold text-g800 mb-1">{item.icon} {item.title}</h3>
+                <h3 className="font-bold text-g800 mb-1">{item.title}</h3>
                 <p className="text-sm text-g600">{item.desc}</p>
               </div>
             ))}
@@ -131,7 +131,7 @@ export default function SafetyPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまの安全を守るGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">SOS機能や不審者情報との連動など、防犯面に優れた機種の比較をご覧ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

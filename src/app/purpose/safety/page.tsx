@@ -35,7 +35,7 @@ export default function SafetyPage() {
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '防犯・安全重視' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">防犯重視</span>
@@ -60,13 +60,12 @@ export default function SafetyPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {[
-              { icon: '🚨', title: 'SOS緊急通知', desc: 'ボタン一つで、緊急連絡先に位置情報付きの通知を送信します。', models: 'myFirst Fone' },
-              { icon: '👤', title: '不審者情報連動', desc: '不審者の出没エリアへの接近を自動で検知し、通知します。', models: 'みもり' },
-              { icon: '🚗', title: '交通安全サポート', desc: '事故の多発地点への接近を通知します。', models: 'SayuU' },
-              { icon: '⚠️', title: '危険エリア通知', desc: '指定した危険エリアで、端末から警告音が鳴ります。', models: 'みもり' },
+              { icon: '', title: 'SOS緊急通知', desc: 'ボタン一つで、緊急連絡先に位置情報付きの通知を送信します。', models: 'myFirst Fone' },
+              { icon: '', title: '不審者情報連動', desc: '不審者の出没エリアへの接近を自動で検知し、通知します。', models: 'みもり' },
+              { icon: '', title: '交通安全サポート', desc: '事故の多発地点への接近を通知します。', models: 'SayuU' },
+              { icon: '', title: '危険エリア通知', desc: '指定した危険エリアで、端末から警告音が鳴ります。', models: 'みもり' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600 mb-2">{f.desc}</p>
                 <p className="text-xs text-blue font-semibold">対応: {f.models}</p>
@@ -148,7 +147,7 @@ export default function SafetyPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">お子さまの安全を守るGPSの選び方</h2>
             <p className="text-g600 mb-6 text-sm">防犯機能が充実したGPS端末により、通学路でも放課後でも見守りが可能です。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -38,7 +38,7 @@ export default function SoranomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）のレビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-17", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'soranome（ソラノメ）' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-g400 text-white">販売終了</span>
@@ -123,15 +123,14 @@ export default function SoranomePage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📡', title: '3測位システム', desc: 'GPS+Wi-Fi+基地局により、屋内外を問わず高精度に位置を特定します。' },
-              { icon: '🆘', title: 'SOSボタン', desc: '緊急時にボタンを長押しすると、保護者全員に通知します。' },
-              { icon: '🔔', title: 'エリア出入り通知', desc: '設定したエリアの出入りを自動で通知します。登下校の確認に役立ちます。' },
-              { icon: '📊', title: '移動履歴', desc: '過去の移動経路を確認でき、通学路の安全を把握できます。' },
-              { icon: '🔋', title: 'バッテリー通知', desc: 'バッテリー残量が少なくなると、保護者に通知します。' },
-              { icon: '👨‍👩‍👧', title: '最大4人見守り', desc: '家族4人まで、お子さまの位置を確認できます。' },
+              { icon: '', title: '3測位システム', desc: 'GPS+Wi-Fi+基地局により、屋内外を問わず高精度に位置を特定します。' },
+              { icon: '', title: 'SOSボタン', desc: '緊急時にボタンを長押しすると、保護者全員に通知します。' },
+              { icon: '', title: 'エリア出入り通知', desc: '設定したエリアの出入りを自動で通知します。登下校の確認に役立ちます。' },
+              { icon: '', title: '移動履歴', desc: '過去の移動経路を確認でき、通学路の安全を把握できます。' },
+              { icon: '', title: 'バッテリー通知', desc: 'バッテリー残量が少なくなると、保護者に通知します。' },
+              { icon: '', title: '最大4人見守り', desc: '家族4人まで、お子さまの位置を確認できます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -191,7 +190,7 @@ export default function SoranomePage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-green-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-green-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">販売中の機種を探している方へ</h2>
             <p className="text-g600 mb-6 text-sm">ソラノメの現行端末は販売を終了しています。位置情報専用の機種は、他の機種との比較からお選びいただけます。</p>
             <div className="flex flex-wrap justify-center gap-4">

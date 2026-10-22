@@ -58,10 +58,10 @@ const costComparison = [
 ];
 
 const usageTips = [
-  { icon: '👦', title: '子供の見守りを優先する', desc: '予算が限られる場合は、まず子供用GPSの導入をおすすめします。ペット用GPSは後から追加できます。' },
-  { icon: '🐕', title: 'ペットは脱走リスクに応じて判断する', desc: '完全室内飼いの猫であれば、玄関にセンサーを設置するほうが費用を抑えられる場合もあります。散歩中のリード外れが心配な犬には、GPS付き首輪が有効です。' },
-  { icon: '📱', title: 'アプリは分けて管理する', desc: '子供用とペット用は別のアプリになるのが一般的です。通知の混同を防ぐため、通知音や表示名を分けて設定してください。' },
-  { icon: '💰', title: '費用は年間で比較する', desc: '初期費用だけでなく、年間の総額で比較することをおすすめします。両方を使う場合は年間3〜5万円が目安です。' },
+  { icon: '', title: '子供の見守りを優先する', desc: '予算が限られる場合は、まず子供用GPSの導入をおすすめします。ペット用GPSは後から追加できます。' },
+  { icon: '', title: 'ペットは脱走リスクに応じて判断する', desc: '完全室内飼いの猫であれば、玄関にセンサーを設置するほうが費用を抑えられる場合もあります。散歩中のリード外れが心配な犬には、GPS付き首輪が有効です。' },
+  { icon: '', title: 'アプリは分けて管理する', desc: '子供用とペット用は別のアプリになるのが一般的です。通知の混同を防ぐため、通知音や表示名を分けて設定してください。' },
+  { icon: '', title: '費用は年間で比較する', desc: '初期費用だけでなく、年間の総額で比較することをおすすめします。両方を使う場合は年間3〜5万円が目安です。' },
 ];
 
 export default function PetAndChildPage() {
@@ -71,7 +71,7 @@ export default function PetAndChildPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供とペットのGPS見守り｜兼用できる？おすすめの使い分け", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別おすすめ', href: '/purpose/' }, { name: '子供とペットのGPS見守り' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">子供&ペット</span>
@@ -134,7 +134,6 @@ export default function PetAndChildPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {usageTips.map((tip) => (
               <div key={tip.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{tip.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{tip.title}</h3>
                   <p className="text-sm text-g600">{tip.desc}</p>
@@ -177,7 +176,7 @@ export default function PetAndChildPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">子供とペット、それぞれに適したGPSの選び方</h2>
             <p className="text-g600 mb-6 text-sm">ご家族の安全を守るために、用途に合ったGPSをお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

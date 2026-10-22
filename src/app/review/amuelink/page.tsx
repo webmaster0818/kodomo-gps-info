@@ -37,7 +37,7 @@ export default function AmuelinkPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'amue link（アミューリンク）' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-light to-white py-12">
+      <section className="bg-orange-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">話せるGPS</span>
@@ -134,15 +134,14 @@ export default function AmuelinkPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '💬', title: '双方向ボイスメッセージ', desc: '端末とアプリの間で音声メッセージを送り合えます。追加料金はかかりません。' },
-              { icon: '📍', title: 'リアルタイム位置確認', desc: 'GPS・みちびき・GLONASS・基地局のマルチ測位と、スマート位置補正を備えています。' },
-              { icon: '🚶', title: '移動手段のAI判別', desc: '徒歩・車・バス・電車を色分けして表示するため、移動履歴を確認しやすくなっています。' },
-              { icon: '🔔', title: '出発・到着通知', desc: '最大10カ所のスポットを設定でき、出入りを自動で通知します。' },
-              { icon: '🌡️', title: '周辺温度センサー', desc: '周辺温度が35℃以上になると通知します。熱中症対策の目安として活用できます。' },
-              { icon: '🪶', title: '約23.7gの軽さ', desc: '世界最小・最軽量クラスです。防水IPX8・防塵IP6Xに対応しています。' },
+              { icon: '', title: '双方向ボイスメッセージ', desc: '端末とアプリの間で音声メッセージを送り合えます。追加料金はかかりません。' },
+              { icon: '', title: 'リアルタイム位置確認', desc: 'GPS・みちびき・GLONASS・基地局のマルチ測位と、スマート位置補正を備えています。' },
+              { icon: '', title: '移動手段のAI判別', desc: '徒歩・車・バス・電車を色分けして表示するため、移動履歴を確認しやすくなっています。' },
+              { icon: '', title: '出発・到着通知', desc: '最大10カ所のスポットを設定でき、出入りを自動で通知します。' },
+              { icon: '', title: '周辺温度センサー', desc: '周辺温度が35℃以上になると通知します。熱中症対策の目安として活用できます。' },
+              { icon: '', title: '約23.7gの軽さ', desc: '世界最小・最軽量クラスです。防水IPX8・防塵IP6Xに対応しています。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -244,7 +243,7 @@ export default function AmuelinkPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-6 text-center bg-gradient-to-r from-orange-light to-blue-light rounded-2xl p-8">
+          <div className="mt-6 text-center bg-orange-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">amue linkが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">会話ができて軽量な、ソニー製のGPS端末です。充電の手間が気になる場合は、電池が長持ちする機種との比較をおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

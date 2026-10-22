@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SiteLogo from '@/components/SiteLogo';
 
 const deviceLinks = [
   { label: 'みてねみまもりGPS', href: '/review/mitene/' },
@@ -11,8 +12,8 @@ const deviceLinks = [
 
 const guideLinks = [
   { label: 'GPSランキング', href: '/#ranking' },
-  { label: '目的別ガイド', href: '/#purpose' },
-  { label: '選び方5ステップ', href: '/#guide' },
+  { label: '目的別ガイド', href: '/purpose/' },
+  { label: '比較表', href: '/#compare-table' },
   { label: 'よくある質問', href: '/faq/' },
 ];
 
@@ -24,15 +25,13 @@ const legalLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-g800 text-white mt-auto">
+    <footer className="bg-blue-dark text-white mt-auto">
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
-            <p className="text-lg font-extrabold mb-3 flex items-center gap-2">
-              <span aria-hidden="true">📍</span>子供見守りGPS最新情報
-            </p>
-            <p className="text-sm text-g300 leading-relaxed">
+            <p className="mb-4"><SiteLogo inverse /></p>
+            <p className="text-sm text-[#C9D6E3] leading-relaxed">
               当サイトでは、お子さまの安全を見守るGPS端末を比較しています。
               各機種の機能・料金・口コミを、公式サイトの情報にもとづいてご紹介します。
             </p>
@@ -40,11 +39,11 @@ export default function Footer() {
 
           {/* Device Links */}
           <div>
-            <p className="font-bold mb-3 text-orange">機種別レビュー</p>
+            <p className="font-bold mb-3 text-[#9FB6CF] text-sm tracking-[0.08em]">機種別レビュー</p>
             <ul className="space-y-2">
               {deviceLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-g300 no-underline hover:text-white transition-colors">
+                  <Link href={link.href} className="text-sm text-[#C9D6E3] no-underline hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -54,11 +53,11 @@ export default function Footer() {
 
           {/* Guide Links */}
           <div>
-            <p className="font-bold mb-3 text-orange">お役立ち情報</p>
+            <p className="font-bold mb-3 text-[#9FB6CF] text-sm tracking-[0.08em]">お役立ち情報</p>
             <ul className="space-y-2">
               {guideLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-g300 no-underline hover:text-white transition-colors">
+                  <Link href={link.href} className="text-sm text-[#C9D6E3] no-underline hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -67,17 +66,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-g600 pt-6">
+        <div className="mt-10 border-t border-white/15 pt-6">
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-4">
             {legalLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-g300 no-underline hover:text-white transition-colors">
+                <Link href={link.href} className="text-[#C9D6E3] no-underline hover:text-white transition-colors">
                   {link.label}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="text-center text-xs text-g500">
+          <div className="text-center text-xs text-[#8FA3B8]">
             <p>&copy; 2025 子供見守りGPS最新情報 All Rights Reserved.</p>
             <p className="mt-1">※ 掲載情報は各ページに記載の確認日時点のものです。ご利用前に、公式サイトにて最新情報をご確認ください。</p>
           </div>

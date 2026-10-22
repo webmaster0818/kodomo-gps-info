@@ -34,7 +34,7 @@ export default function FamilyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPS 兄弟・2台目におすすめ", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '兄弟・2台目' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">兄弟・家族</span>
@@ -116,13 +116,12 @@ export default function FamilyPage() {
           <h2 className="section-title">家族プランを活用する際のポイント</h2>
           <div className="space-y-4 mb-8">
             {[
-              { icon: '👨‍👩‍👧‍👦', title: '共働きのご家庭はご両親とも招待', desc: '父親・母親それぞれのスマートフォンで位置情報を確認できるよう、お二人とも見守る人に追加することをおすすめします。通知も両方に届きます。' },
-              { icon: '👴', title: '祖父母との共有', desc: '離れて暮らす祖父母も招待することで、お孫さんの帰宅や通学の様子を見守ることができます。' },
-              { icon: '🏫', title: '兄弟で通学時間が異なる場合', desc: '別々の学校に通うごきょうだいには、それぞれに端末を持たせて個別に見守るほうが分かりやすくなります。' },
-              { icon: '📲', title: '通知の調整', desc: 'ご家族全員に通知が届くと煩わしい場合は、通知を受け取るメンバーを絞り込める機種側の設定をご活用ください。' },
+              { icon: '', title: '共働きのご家庭はご両親とも招待', desc: '父親・母親それぞれのスマートフォンで位置情報を確認できるよう、お二人とも見守る人に追加することをおすすめします。通知も両方に届きます。' },
+              { icon: '', title: '祖父母との共有', desc: '離れて暮らす祖父母も招待することで、お孫さんの帰宅や通学の様子を見守ることができます。' },
+              { icon: '', title: '兄弟で通学時間が異なる場合', desc: '別々の学校に通うごきょうだいには、それぞれに端末を持たせて個別に見守るほうが分かりやすくなります。' },
+              { icon: '', title: '通知の調整', desc: 'ご家族全員に通知が届くと煩わしい場合は、通知を受け取るメンバーを絞り込める機種側の設定をご活用ください。' },
             ].map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -139,7 +138,7 @@ export default function FamilyPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">ごきょうだいそろっての見守り</h2>
             <p className="text-g600 mb-6 text-sm">2台目の割引や、多人数での見守りに対応した機種を比較し、ご家族に合ったものをお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

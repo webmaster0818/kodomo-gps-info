@@ -35,7 +35,7 @@ export default function HalococoPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'はろここ' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">店舗で買える</span>
@@ -106,15 +106,14 @@ export default function HalococoPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を地図で確認できます。' },
-              { icon: '📝', title: '移動履歴', desc: '1日の移動経路を記録します。通学路の確認や行動パターンの把握に役立ちます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録エリアへの出入りを自動で通知します。学校への到着をすぐに把握できます。' },
-              { icon: '🏪', title: '店舗サポート', desc: 'エディオン店舗で購入・相談ができます。アフターサポートも受けられます。' },
-              { icon: '🔋', title: '長持ちバッテリー', desc: '最大2カ月持続します。充電の手間が少なく、持たせたままにしておけます。' },
-              { icon: '💧', title: '生活防水', desc: 'IPX5の防水対応で雨の日も安心して使えます。' },
+              { icon: '', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を地図で確認できます。' },
+              { icon: '', title: '移動履歴', desc: '1日の移動経路を記録します。通学路の確認や行動パターンの把握に役立ちます。' },
+              { icon: '', title: 'エリア通知', desc: '登録エリアへの出入りを自動で通知します。学校への到着をすぐに把握できます。' },
+              { icon: '', title: '店舗サポート', desc: 'エディオン店舗で購入・相談ができます。アフターサポートも受けられます。' },
+              { icon: '', title: '長持ちバッテリー', desc: '最大2カ月持続します。充電の手間が少なく、持たせたままにしておけます。' },
+              { icon: '', title: '生活防水', desc: 'IPX5の防水対応で雨の日も安心して使えます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -157,7 +156,7 @@ export default function HalococoPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">はろここが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">お近くのエディオンで実物を確認できます。月額528円で、手軽に見守りを始められます。</p>
             <div className="flex flex-wrap justify-center gap-4">

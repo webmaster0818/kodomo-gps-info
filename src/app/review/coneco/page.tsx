@@ -36,7 +36,7 @@ export default function ConecoPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'coneco' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">1分間隔追跡</span>
@@ -109,15 +109,14 @@ export default function ConecoPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '⚡', title: '1分間隔追跡', desc: '業界トップクラスの更新頻度で、お子さまの移動をほぼリアルタイムで把握できます。' },
-              { icon: '📍', title: '高精度測位', desc: '車載機器メーカーの技術力により、高い位置精度を実現しています。' },
-              { icon: '📝', title: '移動履歴', desc: '細かい間隔で位置を記録するため、通学路を詳細に把握できます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録したエリアの出入りを自動で通知し、到着・出発をすぐに確認できます。' },
-              { icon: '🔋', title: '更新頻度切り替え', desc: '1分・3分・5分から選択でき、バッテリー持ちとのバランスを調整できます。' },
-              { icon: '🎒', title: '縦長の形状', desc: '43×106×16mm・約64gの縦長の本体です（公式仕様）。' },
+              { icon: '', title: '1分間隔追跡', desc: '業界トップクラスの更新頻度で、お子さまの移動をほぼリアルタイムで把握できます。' },
+              { icon: '', title: '高精度測位', desc: '車載機器メーカーの技術力により、高い位置精度を実現しています。' },
+              { icon: '', title: '移動履歴', desc: '細かい間隔で位置を記録するため、通学路を詳細に把握できます。' },
+              { icon: '', title: 'エリア通知', desc: '登録したエリアの出入りを自動で通知し、到着・出発をすぐに確認できます。' },
+              { icon: '', title: '更新頻度切り替え', desc: '1分・3分・5分から選択でき、バッテリー持ちとのバランスを調整できます。' },
+              { icon: '', title: '縦長の形状', desc: '43×106×16mm・約64gの縦長の本体です（公式仕様）。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -159,7 +158,7 @@ export default function ConecoPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">conecoの代わりの機種を探す方へ</h2>
             <p className="text-g600 mb-6 text-sm">conecoは新規販売を終了しています。これから購入する場合は、販売中の機種を比較してお選びください。</p>
             <div className="flex flex-wrap justify-center gap-4">

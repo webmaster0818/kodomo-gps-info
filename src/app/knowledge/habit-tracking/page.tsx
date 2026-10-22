@@ -34,12 +34,12 @@ const faqJsonLd = {
 };
 
 const useCases = [
-  { icon: '🎹', title: 'ピアノ教室', desc: '週1回の決まった時間帯の習い事です。到着通知で到着を確認し、出発通知を受けて迎えの準備を始められます。' },
-  { icon: '🏊', title: 'スイミングスクール', desc: '送迎バスの乗降場所をエリア通知に登録します。バスが遅れている場合も、リアルタイムで位置を確認できます。' },
-  { icon: '📖', title: '学習塾', desc: '夜間の帰宅が心配な塾通いでは、出発通知で帰宅の開始を把握し、到着が遅い場合はすぐに確認できます。' },
-  { icon: '⚽', title: 'サッカー・野球', desc: '屋外グラウンドへの移動を見守れます。練習終了後の帰宅も、エリア通知で自動的に通知されます。' },
-  { icon: '🖌️', title: '書道・絵画教室', desc: '一人で通える距離でも、初めのうちはGPSで見守ることをおすすめします。慣れてきたら通知頻度を減らし、自立を促せます。' },
-  { icon: '💻', title: 'プログラミング教室', desc: '駅前や商業施設内にある教室への移動ルートを確認できます。人通りの多いエリアでも位置を特定できます。' },
+  { icon: '', title: 'ピアノ教室', desc: '週1回の決まった時間帯の習い事です。到着通知で到着を確認し、出発通知を受けて迎えの準備を始められます。' },
+  { icon: '', title: 'スイミングスクール', desc: '送迎バスの乗降場所をエリア通知に登録します。バスが遅れている場合も、リアルタイムで位置を確認できます。' },
+  { icon: '', title: '学習塾', desc: '夜間の帰宅が心配な塾通いでは、出発通知で帰宅の開始を把握し、到着が遅い場合はすぐに確認できます。' },
+  { icon: '', title: 'サッカー・野球', desc: '屋外グラウンドへの移動を見守れます。練習終了後の帰宅も、エリア通知で自動的に通知されます。' },
+  { icon: '', title: '書道・絵画教室', desc: '一人で通える距離でも、初めのうちはGPSで見守ることをおすすめします。慣れてきたら通知頻度を減らし、自立を促せます。' },
+  { icon: '', title: 'プログラミング教室', desc: '駅前や商業施設内にある教室への移動ルートを確認できます。人通りの多いエリアでも位置を特定できます。' },
 ];
 
 const settingExamples = [
@@ -57,7 +57,7 @@ export default function HabitTrackingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "習い事・塾の送迎管理にGPSを活用する方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '習い事・塾の送迎管理' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">習い事・塾</span>
@@ -84,7 +84,6 @@ export default function HabitTrackingPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {useCases.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -157,7 +156,7 @@ export default function HabitTrackingPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">習い事の見守りの負担を軽減する方法</h2>
             <p className="text-g600 mb-6 text-sm">到着・出発通知を活用すれば、毎回の電話確認や送迎の負担が大幅に減ります。</p>
             <div className="flex flex-wrap justify-center gap-4">

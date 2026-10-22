@@ -48,12 +48,12 @@ const costSimulation = [
 ];
 
 const managementTips = [
-  { icon: '🏷️', title: '端末に名前を設定する', desc: 'アプリ上で、各端末にお子さまの名前やニックネームを設定します。「たろう」「はなこ」のように、ひと目で誰の端末かが分かるようにしておくことをおすすめします。アイコンや色を設定できるアプリもあります。' },
-  { icon: '🔔', title: '通知音を端末ごとに変える', desc: '兄弟それぞれの端末からの通知音を変えると、スマートフォンの画面を見なくても誰の通知かが分かります。特に、登下校の時間が異なる兄弟の場合に便利です。' },
-  { icon: '📍', title: 'エリア通知を個別に設定する', desc: '兄弟で通う学校や習い事が異なる場合は、それぞれの端末にエリア通知を個別に設定します。不要な通知を減らし、必要な通知だけを受け取れるようになります。' },
-  { icon: '🔋', title: '充電日を決めておく', desc: '複数台の端末を管理していると、充電を忘れやすくなります。「毎週日曜日に全員分を充電する」など、充電日を決めて習慣化することをおすすめします。曜日ごとに色違いの充電ケーブルを使うことも有効です。' },
-  { icon: '👨‍👩‍👧‍👦', title: '家族全員でアプリを共有する', desc: '両親だけでなく、祖父母やベビーシッターにもアプリを共有しておくと、誰が見守る場合でも対応できます。「お迎えの日は祖母が確認する」など、役割を分担することも可能です。' },
-  { icon: '📊', title: '定期的に設定を見直す', desc: '学期ごとに、通知設定やエリア通知の内容を見直します。習い事や通学路に変更があった場合は、速やかに設定を更新してください。' },
+  { icon: '', title: '端末に名前を設定する', desc: 'アプリ上で、各端末にお子さまの名前やニックネームを設定します。「たろう」「はなこ」のように、ひと目で誰の端末かが分かるようにしておくことをおすすめします。アイコンや色を設定できるアプリもあります。' },
+  { icon: '', title: '通知音を端末ごとに変える', desc: '兄弟それぞれの端末からの通知音を変えると、スマートフォンの画面を見なくても誰の通知かが分かります。特に、登下校の時間が異なる兄弟の場合に便利です。' },
+  { icon: '', title: 'エリア通知を個別に設定する', desc: '兄弟で通う学校や習い事が異なる場合は、それぞれの端末にエリア通知を個別に設定します。不要な通知を減らし、必要な通知だけを受け取れるようになります。' },
+  { icon: '', title: '充電日を決めておく', desc: '複数台の端末を管理していると、充電を忘れやすくなります。「毎週日曜日に全員分を充電する」など、充電日を決めて習慣化することをおすすめします。曜日ごとに色違いの充電ケーブルを使うことも有効です。' },
+  { icon: '', title: '家族全員でアプリを共有する', desc: '両親だけでなく、祖父母やベビーシッターにもアプリを共有しておくと、誰が見守る場合でも対応できます。「お迎えの日は祖母が確認する」など、役割を分担することも可能です。' },
+  { icon: '', title: '定期的に設定を見直す', desc: '学期ごとに、通知設定やエリア通知の内容を見直します。習い事や通学路に変更があった場合は、速やかに設定を更新してください。' },
 ];
 
 const sameVsDiff = [
@@ -71,7 +71,7 @@ export default function MultipleChildrenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "兄弟・複数台のGPS管理方法｜アプリで一括管理", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '複数台のGPS管理' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">兄弟・複数台</span>
@@ -176,7 +176,6 @@ export default function MultipleChildrenPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {managementTips.map((tip) => (
               <div key={tip.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{tip.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{tip.title}</h3>
                   <p className="text-sm text-g600">{tip.desc}</p>
@@ -193,7 +192,7 @@ export default function MultipleChildrenPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">兄弟全員の見守りに適したGPS端末</h2>
             <p className="text-g600 mb-6 text-sm">複数台の管理に適した機種を選ぶことで、効率的な見守りが可能になります。</p>
             <div className="flex flex-wrap justify-center gap-4">

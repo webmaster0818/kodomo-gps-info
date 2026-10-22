@@ -37,7 +37,7 @@ export default function ImadocoSearchPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'イマドコサーチ（ドコモ）' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-light to-white py-12">
+      <section className="bg-orange-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">ドコモの位置検索</span>
@@ -132,15 +132,14 @@ export default function ImadocoSearchPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: '位置検索', desc: '保護者のスマートフォンから、お子さまの現在地を地図で確認できます。' },
-              { icon: '🗺️', title: '移動経路の確認', desc: '移動した経路をたどって確認できます。' },
-              { icon: '🆘', title: '防犯ブザー連動通知', desc: '対応端末の防犯ブザーの作動と連動して通知します（対応端末のみ）。' },
-              { icon: '📶', title: 'ドコモ以外でも利用可', desc: '見守る保護者は、ドコモ以外の回線でも利用できます（dアカウントが必要です）。' },
-              { icon: '🛰️', title: '衛星測位に対応（Android）', desc: 'Android向けに、docomo Starlink Directによる衛星測位も開始されています。' },
-              { icon: '☎️', title: '通話もできる端末', desc: 'キッズケータイ／スマートフォンを使用するため、位置確認と通話を1台でまかなえます。' },
+              { icon: '', title: '位置検索', desc: '保護者のスマートフォンから、お子さまの現在地を地図で確認できます。' },
+              { icon: '', title: '移動経路の確認', desc: '移動した経路をたどって確認できます。' },
+              { icon: '', title: '防犯ブザー連動通知', desc: '対応端末の防犯ブザーの作動と連動して通知します（対応端末のみ）。' },
+              { icon: '', title: 'ドコモ以外でも利用可', desc: '見守る保護者は、ドコモ以外の回線でも利用できます（dアカウントが必要です）。' },
+              { icon: '', title: '衛星測位に対応（Android）', desc: 'Android向けに、docomo Starlink Directによる衛星測位も開始されています。' },
+              { icon: '', title: '通話もできる端末', desc: 'キッズケータイ／スマートフォンを使用するため、位置確認と通話を1台でまかなえます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -245,7 +244,7 @@ export default function ImadocoSearchPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-6 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-6 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">位置確認と通話をまとめたい方へ</h2>
             <p className="text-g600 mb-6 text-sm">小型GPSだけで十分な場合は、単体端末もあわせてご比較ください。目的に合った見守り方法を選ぶことをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

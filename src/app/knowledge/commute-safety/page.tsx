@@ -34,12 +34,12 @@ const faqJsonLd = {
 };
 
 const dangerPoints = [
-  { icon: '🚦', title: '交通量の多い交差点', desc: '信号のない交差点や右左折車が多い場所は、最も事故が発生しやすい箇所です。エリア通知で通過のタイミングを確認できます。' },
-  { icon: '🌳', title: '見通しの悪いカーブ・路地', desc: 'ブロック塀や植栽で見通しが悪い場所は、車からも子供が見えにくい危険な場所です。GPSの移動履歴をもとに、迂回ルートをご検討ください。' },
-  { icon: '🏚️', title: '人通りの少ない道', desc: '空き家が多い地域や裏道では、不審者のリスクが高まります。通過時間帯をGPSで記録し、想定外の滞留を検知できます。' },
-  { icon: '🚗', title: '駐車場の出入口', desc: 'コンビニエンスストアやスーパーの駐車場の出入口では、車が急に出てくることがあります。子供の注意力だけでは不十分な場所です。' },
-  { icon: '🌊', title: '川・用水路沿いの道', desc: '特に雨の日は増水のリスクがあります。GPS端末で通常ルートからの逸脱を検知し、危険なエリアへの接近を把握できます。' },
-  { icon: '🚧', title: '工事現場周辺', desc: '一時的な工事により、通学路の安全性が変わることがあります。GPSの移動履歴で、普段と異なるルートを通っていないかをご確認ください。' },
+  { icon: '', title: '交通量の多い交差点', desc: '信号のない交差点や右左折車が多い場所は、最も事故が発生しやすい箇所です。エリア通知で通過のタイミングを確認できます。' },
+  { icon: '', title: '見通しの悪いカーブ・路地', desc: 'ブロック塀や植栽で見通しが悪い場所は、車からも子供が見えにくい危険な場所です。GPSの移動履歴をもとに、迂回ルートをご検討ください。' },
+  { icon: '', title: '人通りの少ない道', desc: '空き家が多い地域や裏道では、不審者のリスクが高まります。通過時間帯をGPSで記録し、想定外の滞留を検知できます。' },
+  { icon: '', title: '駐車場の出入口', desc: 'コンビニエンスストアやスーパーの駐車場の出入口では、車が急に出てくることがあります。子供の注意力だけでは不十分な場所です。' },
+  { icon: '', title: '川・用水路沿いの道', desc: '特に雨の日は増水のリスクがあります。GPS端末で通常ルートからの逸脱を検知し、危険なエリアへの接近を把握できます。' },
+  { icon: '', title: '工事現場周辺', desc: '一時的な工事により、通学路の安全性が変わることがあります。GPSの移動履歴で、普段と異なるルートを通っていないかをご確認ください。' },
 ];
 
 const geofenceTips = [
@@ -56,7 +56,7 @@ export default function CommuteSafetyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "通学路の安全対策｜GPS見守りで子供を守る方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通学路の安全対策' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">通学路</span>
@@ -80,7 +80,6 @@ export default function CommuteSafetyPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {dangerPoints.map((item) => (
               <div key={item.title} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.title}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -147,7 +146,7 @@ export default function CommuteSafetyPage() {
 
           <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPSによる通学路の安全対策</h2>
             <p className="text-g600 mb-6 text-sm">エリア通知と通知設定を活用し、通学路の見守り体制を整えることをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -35,7 +35,7 @@ export default function MyFirstFonePage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'myFirst Fone' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">腕時計型</span>
@@ -107,15 +107,14 @@ export default function MyFirstFonePage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📞', title: '音声・ビデオ通話', desc: '保護者と直接通話できます。ビデオ通話でお子さまの様子も確認できます。' },
-              { icon: '📷', title: 'カメラ機能', desc: '撮影した写真をアプリに送信できます。お子さまの目線での記録が残せます。' },
-              { icon: '🆘', title: 'SOS緊急通知', desc: 'ボタンを長押しすると、緊急連絡先に位置情報付きの通知を自動で送信します。' },
-              { icon: '📍', title: 'リアルタイム位置確認', desc: 'GPS+Wi-Fiの複合測位で、現在地を正確に把握します。' },
+              { icon: '', title: '音声・ビデオ通話', desc: '保護者と直接通話できます。ビデオ通話でお子さまの様子も確認できます。' },
+              { icon: '', title: 'カメラ機能', desc: '撮影した写真をアプリに送信できます。お子さまの目線での記録が残せます。' },
+              { icon: '', title: 'SOS緊急通知', desc: 'ボタンを長押しすると、緊急連絡先に位置情報付きの通知を自動で送信します。' },
+              { icon: '', title: 'リアルタイム位置確認', desc: 'GPS+Wi-Fiの複合測位で、現在地を正確に把握します。' },
               { icon: '⌚', title: '腕時計型デザイン', desc: '手首に着けるため、置き忘れの心配がありません。カラフルなデザインで、お子さまに人気があります。' },
-              { icon: '🎵', title: '音楽再生', desc: '内蔵メモリに音楽を保存して再生できます。お出かけの際の楽しみにもなります。' },
+              { icon: '', title: '音楽再生', desc: '内蔵メモリに音楽を保存して再生できます。お出かけの際の楽しみにもなります。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -158,7 +157,7 @@ export default function MyFirstFonePage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">myFirst Foneをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">腕時計型GPSと通話機能を備え、スマートフォンを持たせる前の選択肢となる端末です。</p>
             <div className="flex flex-wrap justify-center gap-4">

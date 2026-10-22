@@ -35,7 +35,7 @@ export default function HamicPage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'Hamic' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">キッズスマートフォン型</span>
@@ -107,15 +107,14 @@ export default function HamicPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '💬', title: 'メッセージ機能', desc: 'LINEのような操作感で、テキスト・スタンプ・写真のやりとりが可能です。' },
-              { icon: '📷', title: 'カメラ', desc: '撮影した写真を保護者に送信し、お子さまの日常を共有できます。' },
-              { icon: '📍', title: 'GPS位置確認', desc: 'リアルタイムでお子さまの現在地を確認できます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。到着・出発をすぐに把握できます。' },
-              { icon: '🔒', title: '利用制限管理', desc: '保護者がアプリの利用範囲や連絡先を管理できるため、安心して持たせることができます。' },
-              { icon: '📱', title: 'スマートフォンの練習', desc: 'スマートフォンを持たせる前の練習用端末として適しています。段階的にITリテラシーを育むことができます。' },
+              { icon: '', title: 'メッセージ機能', desc: 'LINEのような操作感で、テキスト・スタンプ・写真のやりとりが可能です。' },
+              { icon: '', title: 'カメラ', desc: '撮影した写真を保護者に送信し、お子さまの日常を共有できます。' },
+              { icon: '', title: 'GPS位置確認', desc: 'リアルタイムでお子さまの現在地を確認できます。' },
+              { icon: '', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。到着・出発をすぐに把握できます。' },
+              { icon: '', title: '利用制限管理', desc: '保護者がアプリの利用範囲や連絡先を管理できるため、安心して持たせることができます。' },
+              { icon: '', title: 'スマートフォンの練習', desc: 'スマートフォンを持たせる前の練習用端末として適しています。段階的にITリテラシーを育むことができます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -159,7 +158,7 @@ export default function HamicPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">Hamicが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">キッズスマートフォン型で、見守りとコミュニケーションの両方に対応しています。スマートフォンを持たせる前の選択肢としてご検討ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

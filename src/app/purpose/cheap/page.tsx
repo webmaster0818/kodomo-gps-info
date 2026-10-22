@@ -35,7 +35,7 @@ export default function CheapPage() {
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '安い・コスパ重視' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">コスパ重視</span>
@@ -68,8 +68,8 @@ export default function CheapPage() {
                   ['1', 'みてねみまもりGPS', '528円', '5,280円', '11,616円', '/review/mitene/'],
                   ['2', 'BoTトーク', '528円', '5,280円', '11,616円', '/review/bot-talk/'],
                   ['3', 'はろここ', '528円', '5,280円', '11,616円', '/review/halococo/'],
-                  ['4', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
-                  ['5', 'まもサーチ', '539円', '5,280円', '11,748円', '/review/mamosearch/'],
+                  ['4', 'まもサーチ', '528円', '5,280円', '11,616円', '/review/mamosearch/'],
+                  ['5', 'あんしんウォッチャー', '539円', '5,680円', '12,148円', '/review/anshin-watcher/'],
                   ['6', 'みもり', '748円', '8,580円', '17,556円', '/review/mimori/'],
                   ['7', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
                   ['8', 'Hamic', '1,100円', '12,100円', '25,300円', '/review/hamic/'],
@@ -120,7 +120,7 @@ export default function CheapPage() {
             {[
               { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、利用者数No.1です。バッテリーが2カ月持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
               { rank: 2, name: 'あんしんウォッチャー', reason: '2台目無料のため、兄弟での利用に適しています。KDDI品質の安定した通信で、au以外の回線の保護者でも利用できます。', href: '/review/anshin-watcher/' },
-              { rank: 3, name: 'まもサーチ', reason: '月額539円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
+              { rank: 3, name: 'まもサーチ', reason: '月額528円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
               { rank: 4, name: 'BoTトーク', reason: '月額528円の基本プランでも、高精度なAI学習を搭載しています。トーク付きのプランでも748円です。', href: '/review/bot-talk/' },
             ].map((item) => (
               <div key={item.rank} className="flex gap-4 items-start card-hover p-4">
@@ -147,7 +147,7 @@ export default function CheapPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">コストパフォーマンスに優れたGPSの選び方</h2>
             <p className="text-g600 mb-6 text-sm">月額480円から、手頃な価格でお子さまの見守りを始められます。</p>
             <div className="flex flex-wrap justify-center gap-4">

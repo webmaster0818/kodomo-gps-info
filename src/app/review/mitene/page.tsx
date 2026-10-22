@@ -36,7 +36,7 @@ export default function MitenePage() {
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みてねみまもりGPS' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">利用者数No.1</span>
@@ -147,15 +147,14 @@ export default function MitenePage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '📍', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を確認できます。GPS+Wi-Fiの複合測位により、高い精度を実現しています。' },
-              { icon: '📝', title: '移動履歴の自動記録', desc: '1日の移動経路を自動で記録します。通学路の確認や行動パターンの把握に役立ちます。' },
-              { icon: '🔔', title: 'エリア通知', desc: '学校や自宅など、設定したエリアへの出入りを自動で通知します。到着・出発をすぐに把握できます。' },
-              { icon: '💬', title: 'トークPlus機能', desc: '音声メッセージや定型文で、お子さまとやりとりできます。キーホルダーのボタンで簡単に送信できます。' },
-              { icon: '🔋', title: 'バッテリー長持ち', desc: 'バッテリーは最大2カ月持続し、充電の手間を大幅に削減できます。' },
-              { icon: '👨‍👩‍👧', title: '複数人見守り', desc: 'ご家族全員でお子さまの位置を確認できます。見守り人の追加は無料です。' },
+              { icon: '', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を確認できます。GPS+Wi-Fiの複合測位により、高い精度を実現しています。' },
+              { icon: '', title: '移動履歴の自動記録', desc: '1日の移動経路を自動で記録します。通学路の確認や行動パターンの把握に役立ちます。' },
+              { icon: '', title: 'エリア通知', desc: '学校や自宅など、設定したエリアへの出入りを自動で通知します。到着・出発をすぐに把握できます。' },
+              { icon: '', title: 'トークPlus機能', desc: '音声メッセージや定型文で、お子さまとやりとりできます。キーホルダーのボタンで簡単に送信できます。' },
+              { icon: '', title: 'バッテリー長持ち', desc: 'バッテリーは最大2カ月持続し、充電の手間を大幅に削減できます。' },
+              { icon: '', title: '複数人見守り', desc: 'ご家族全員でお子さまの位置を確認できます。見守り人の追加は無料です。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
-                <p className="text-2xl mb-2">{f.icon}</p>
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
@@ -243,7 +242,7 @@ export default function MitenePage() {
           <p className="text-sm text-g600 mt-3">みてねみまもりGPSを含む主要5機種の海外利用の可否（公式FAQ）と、海外旅行中の代わりの方法は<Link href="/knowledge/international/" className="text-blue underline">子供用GPSは海外で使える？</Link>でまとめています。</p>
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みてねみまもりGPSが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">月額528円〜、利用者数No.1とされるGPS端末です。他機種との比較もあわせてご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

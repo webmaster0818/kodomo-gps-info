@@ -35,7 +35,7 @@ export default function ElementaryPage() {
       <Breadcrumb items={[{ name: '目的別', href: '/purpose/' }, { name: '小学生・入学準備' }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">入学準備</span>
@@ -172,7 +172,7 @@ export default function ElementaryPage() {
           ))}
 
           {/* CTA */}
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">入学準備でGPS端末をご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの学年や利用場面に合ったGPS端末の比較に、以下のページをご活用ください。</p>
             <div className="flex flex-wrap justify-center gap-4">

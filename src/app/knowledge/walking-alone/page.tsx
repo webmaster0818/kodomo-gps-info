@@ -34,10 +34,10 @@ const faqJsonLd = {
 };
 
 const ageGuide = [
-  { age: '小学1年生（6〜7歳）', icon: '🎒', desc: '通学路など短い距離から始めます。保護者が見える範囲で練習し、GPS端末で位置を確認しながら徐々に慣れさせます。' },
-  { age: '小学2〜3年生（7〜9歳）', icon: '🚶', desc: '習い事や友達の家への移動が増える時期です。エリア通知（ジオフェンス）で到着通知を設定し、行動範囲を把握します。' },
-  { age: '小学4〜6年生（9〜12歳）', icon: '🏃', desc: '行動範囲が広がり、自転車での移動も増えます。移動履歴の確認や速度通知で、安全を見守ります。' },
-  { age: '中学生（12歳〜）', icon: '🎓', desc: '部活動や塾で帰宅が遅くなることもあります。夜間の見守りにGPSが役立ちます。プライバシーに配慮した使い方が重要です。' },
+  { age: '小学1年生（6〜7歳）', icon: '', desc: '通学路など短い距離から始めます。保護者が見える範囲で練習し、GPS端末で位置を確認しながら徐々に慣れさせます。' },
+  { age: '小学2〜3年生（7〜9歳）', icon: '', desc: '習い事や友達の家への移動が増える時期です。エリア通知（ジオフェンス）で到着通知を設定し、行動範囲を把握します。' },
+  { age: '小学4〜6年生（9〜12歳）', icon: '', desc: '行動範囲が広がり、自転車での移動も増えます。移動履歴の確認や速度通知で、安全を見守ります。' },
+  { age: '中学生（12歳〜）', icon: '', desc: '部活動や塾で帰宅が遅くなることもあります。夜間の見守りにGPSが役立ちます。プライバシーに配慮した使い方が重要です。' },
 ];
 
 const checklist = [
@@ -56,7 +56,7 @@ export default function WalkingAlonePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供の一人歩きはいつから？年齢別ガイドとGPS活用法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '子供の一人歩き' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">一人歩き</span>
@@ -83,7 +83,6 @@ export default function WalkingAlonePage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {ageGuide.map((item) => (
               <div key={item.age} className="card-hover p-5 flex gap-4 items-start">
-                <p className="text-2xl">{item.icon}</p>
                 <div>
                   <h3 className="font-bold text-g800">{item.age}</h3>
                   <p className="text-sm text-g600">{item.desc}</p>
@@ -150,7 +149,7 @@ export default function WalkingAlonePage() {
 
           <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPSを活用した一人歩きのサポート</h2>
             <p className="text-g600 mb-6 text-sm">お子さまの自立を支えながら、GPSによる見守りを取り入れることをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">

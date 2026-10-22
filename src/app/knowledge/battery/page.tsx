@@ -48,7 +48,7 @@ export default function BatteryPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供GPSのバッテリー比較", "datePublished": "2026-03-15", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: 'バッテリー' }]} />
 
-      <section className="bg-gradient-to-br from-blue-light to-white py-12">
+      <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">バッテリー比較</span>
@@ -80,7 +80,7 @@ export default function BatteryPage() {
                     <td className="py-3 px-3 font-semibold text-g700">{d.name}</td>
                     <td className="py-3 px-3 text-g600">{d.battery}</td>
                     <td className="py-3 px-3 text-g600">{d.charge}</td>
-                    <td className="py-3 px-3 text-g600">{'🔋'.repeat(d.level)}{'○'.repeat(5 - d.level)}</td>
+                    <td className="py-3 px-3 text-g600">{''.repeat(d.level)}{'○'.repeat(5 - d.level)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -137,7 +137,7 @@ export default function BatteryPage() {
             </details>
           ))}
 
-          <div className="mt-10 text-center bg-gradient-to-r from-blue-light to-orange-light rounded-2xl p-8">
+          <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">バッテリーが長持ちするGPS端末の選び方</h2>
             <p className="text-g600 mb-6 text-sm">充電の手間を減らしたい場合は、バッテリー持ちの良い機種をおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">
