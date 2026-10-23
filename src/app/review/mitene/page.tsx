@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'みてねみまもりGPS 機種比較レビュー【2026年】MG05・トーク・トークPlusの違い',
   description:
-    'みてねみまもりGPS（MIXI）の機能・料金・口コミをレビューします。月額528円〜で、トークPlusに対応し、バッテリーは最大2カ月です。利用者数No.1とされる理由と、選ばれる背景を解説します。',
+    'みてねみまもりGPS（MIXI）の機能・料金・口コミをレビューします。月額528円〜で、トークPlusに対応し、バッテリーは最大2カ月です。公式サイトの「利用者数No.1」表記の根拠と、選ばれる背景を解説します。',
 };
 
 const faqData = [
@@ -39,7 +39,7 @@ export default function MitenePage() {
       <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-orange text-white">利用者数No.1</span>
+            <span className="tag-pill bg-orange text-white">利用者数No.1（公式表記）</span>
             <span className="tag-pill bg-blue text-white">月額528円〜</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
@@ -67,7 +67,7 @@ export default function MitenePage() {
           <h2 className="section-title">みてねみまもりGPSとは</h2>
           <p className="text-g600 mb-6">
             みてねみまもりGPSは、MIXI（旧ミクシィ）が提供する子供用GPS端末です。
-            家族向けアプリ「みてね」の知見を活かした使いやすさが評価され、利用者数No.1とされています。
+            家族向けアプリ「みてね」の知見を活かした使いやすさが特徴です。公式サイトでは「利用者数No.1」と表記しています（公式サイトの表記。日系パブリッシャーのロケーションアプリとしてのNo.1：2025年1〜10月・iOS/Android合算・data.ai by Sensor Tower調べ）。
             月額528円からの手頃な料金設定と、最大2カ月持続するバッテリーが特徴です。
             2025年にはトークPlus機能が追加され、お子さまとのコミュニケーションも可能になりました。
           </p>
@@ -169,7 +169,7 @@ export default function MitenePage() {
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額528円〜の業界最安級の料金</li>
                 <li>・バッテリー最大2カ月で充電の手間が少ない点</li>
-                <li>・利用者数No.1とされる実績</li>
+                <li>・公式サイトで「利用者数No.1」と表記（data.ai by Sensor Tower調べ）</li>
                 <li>・「みてね」アプリの使いやすいUI</li>
                 <li>・トークPlus対応でコミュニケーションも可能</li>
                 <li>・GPS+Wi-Fi測位による高い位置精度</li>
@@ -244,7 +244,7 @@ export default function MitenePage() {
           {/* CTA */}
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みてねみまもりGPSが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">月額528円〜、利用者数No.1とされるGPS端末です。他機種との比較もあわせてご確認ください。</p>
+            <p className="text-g600 mb-6 text-sm">月額528円〜、公式サイトで「利用者数No.1」と表記しているGPS端末です。他機種との比較もあわせてご確認ください。</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/bot-talk/" className="btn-accent">次のレビュー: BoTトーク</Link>

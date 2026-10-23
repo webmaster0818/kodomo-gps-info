@@ -152,9 +152,6 @@ export default function WatchTypePage() {
           {/* myFirst Fone紹介 */}
           <h2 className="section-title">おすすめの腕時計型GPS：myFirst Fone</h2>
           <div className="card-hover p-6 mb-8">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="tag-pill bg-orange text-white">腕時計型No.1</span>
-            </div>
             <h3 className="font-bold text-g800 text-lg mb-2">
               <Link href="/review/myfirst-fone/" className="text-blue hover:underline">myFirst Fone 詳細レビュー</Link>
             </h3>

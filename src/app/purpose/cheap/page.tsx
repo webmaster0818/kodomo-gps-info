@@ -118,7 +118,7 @@ export default function CheapPage() {
           <h2 className="section-title">コスパランキングTOP4</h2>
           <div className="space-y-4 mb-8">
             {[
-              { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、利用者数No.1です。バッテリーが2カ月持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
+              { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、公式サイトで「利用者数No.1」と表記しています（公式サイトの表記。日系パブリッシャーのロケーションアプリとしてのNo.1：2025年1〜10月・iOS/Android合算・data.ai by Sensor Tower調べ）。バッテリーが2カ月持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
               { rank: 2, name: 'あんしんウォッチャー', reason: '2台目無料のため、兄弟での利用に適しています。KDDI品質の安定した通信で、au以外の回線の保護者でも利用できます。', href: '/review/anshin-watcher/' },
               { rank: 3, name: 'まもサーチ', reason: '月額528円で、最大25人で見守れます。大家族やシッターとの共有に適しています。', href: '/review/mamosearch/' },
               { rank: 4, name: 'BoTトーク', reason: '月額528円の基本プランでも、高精度なAI学習を搭載しています。トーク付きのプランでも748円です。', href: '/review/bot-talk/' },

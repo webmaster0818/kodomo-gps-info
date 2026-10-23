@@ -63,9 +63,9 @@ const attachMethods = [
 ];
 
 const schoolRules = [
-  { type: '許可型', desc: '事前の申請により持ち込みが認められます。申請書を提出し、先生と情報を共有する形式です。', percentage: '約30%' },
-  { type: '黙認型', desc: '明確なルールはありませんが、リュックに入れている限りは問題視されません。最も多い形式です。', percentage: '約50%' },
-  { type: '禁止型', desc: '電子機器の持ち込みを一律に禁止しています。事情を説明すれば、例外を認める園もあります。', percentage: '約20%' },
+  { type: '許可型', desc: '事前の申請により持ち込みが認められます。申請書を提出し、先生と情報を共有する形式です。' },
+  { type: '黙認型', desc: '明確なルールはありませんが、リュックに入れている限りは問題視されません。' },
+  { type: '禁止型', desc: '電子機器の持ち込みを一律に禁止しています。事情を説明すれば、例外を認める園もあります。' },
 ];
 
 export default function KindergartenPage() {
@@ -162,7 +162,6 @@ export default function KindergartenPage() {
                 <tr className="bg-blue-light">
                   <th className="py-3 px-3 text-left font-bold text-g800">ルール種別</th>
                   <th className="py-3 px-3 text-left font-bold text-g800">内容</th>
-                  <th className="py-3 px-3 text-right font-bold text-g800">割合（目安）</th>
                 </tr>
               </thead>
               <tbody>
@@ -170,7 +169,6 @@ export default function KindergartenPage() {
                   <tr key={r.type} className="border-b border-g100">
                     <td className="py-3 px-3 font-semibold text-g700">{r.type}</td>
                     <td className="py-3 px-3 text-g600">{r.desc}</td>
-                    <td className="py-3 px-3 text-right text-g600">{r.percentage}</td>
                   </tr>
                 ))}
               </tbody>

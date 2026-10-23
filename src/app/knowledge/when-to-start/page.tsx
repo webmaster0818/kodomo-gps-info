@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供GPSは何歳から？何歳まで？【データで解説】84.5%が5〜7歳・卒業の目安も',
   description:
-    '子供にGPSをいつから持たせるべきかを解説します。幼稚園年長・小1・小3・小5の年齢別ガイド、持たせ始めるきっかけTOP5、何歳まで持たせるかの目安、GPS単機能とキッズ携帯の選び方を掲載しています。',
+    '子供にGPSをいつから持たせるべきかを解説します。幼稚園年長・小1・小3・小5の年齢別ガイド、持たせ始める時期の目安、何歳まで持たせるかの目安、GPS単機能とキッズ携帯の選び方を掲載しています。',
 };
 
 const faqData = [
@@ -13,7 +13,7 @@ const faqData = [
   { q: '幼稚園児にGPSは早すぎますか？', a: '通園バスの乗り降りや園外保育など、年長になると保護者の目が届かない場面が増えます。早すぎるということはなく、不安がある場合は利用を始めることをおすすめします。' },
   { q: '小3で始めるのは遅いですか？', a: '遅くはありません。小3は行動範囲が広がり、友達だけで遊ぶ機会も増えるため、GPSを始めるのに適した時期です。' },
   { q: '中学生でもGPSを使いますか？', a: '中学生になると、スマートフォンに移行するご家庭が多くなります。スマートフォンの「ファミリーリンク」などの見守り機能を活用するケースが一般的です。' },
-  { q: 'GPSを始めるきっかけとして多いものは何ですか？', a: '最も多いのは「小学校入学」で、約60%です。次いで「一人で習い事に行くようになった」「不審者情報を聞いた」「友達が持っていた」の順となっています。' },
+  { q: 'GPSを始めるきっかけとして多いものは何ですか？', a: '当サイトでは、きっかけの割合を示す公的な調査は確認できていません。小学校入学による一人通学の開始や、一人で習い事に通い始める時期が、持たせ始める節目になります。' },
   { q: '子供がGPSを持つことを嫌がる場合はどうすればよいですか？', a: '「お守りとして持つもの」「家族が安心するためのもの」と説明することをおすすめします。監視ではなく見守りであることを伝え、お子さま自身にお気に入りのカバーを選んでもらうことも効果的です。' },
 ];
 
@@ -64,7 +64,7 @@ export default function WhenToStartPage() {
           <div className="space-y-4 mb-8">
             {[
               { age: '幼稚園年長（5〜6歳）', bg: 'bg-blue-light', color: 'text-blue', points: ['通園バスの乗降確認に活用', '園外保育・遠足時の安心材料', '早すぎることはなく、不安があれば開始を検討', 'GPS端末タイプがおすすめ（操作不要）'] },
-              { age: '小学1年生（6〜7歳）', bg: 'bg-orange-light', color: 'text-orange', points: ['最も多い開始時期（約60%）', '初めての一人通学が最大のきっかけ', '入学準備とあわせた購入が効率的', 'ランドセルに入れるだけで利用可能'] },
+              { age: '小学1年生（6〜7歳）', bg: 'bg-orange-light', color: 'text-orange', points: ['初めての一人通学が最大のきっかけ', '入学準備とあわせた購入が効率的', 'ランドセルに入れるだけで利用可能'] },
               { age: '小学3年生（8〜9歳）', bg: 'bg-green-light', color: 'text-green-dark', points: ['行動範囲が大きく広がる時期', '友達だけで公園や買い物に行く機会が増加', '習い事の送迎が難しくなる時期', 'トーク機能付きの機種が便利'] },
               { age: '小学5年生（10〜11歳）', bg: 'bg-blue-light', color: 'text-blue', points: ['塾通いが本格化する時期', '電車・バスでの一人での移動が増加', 'キッズケータイへの移行も検討', '自立心を育てながら見守る段階'] },
             ].map((item) => (
@@ -75,27 +75,6 @@ export default function WhenToStartPage() {
                     <li key={p}>・{p}</li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-
-          <h2 className="section-title">持たせ始めるきっかけTOP5</h2>
-          <div className="space-y-3 mb-8">
-            {[
-              { rank: 1, text: '小学校入学（一人通学の開始）', pct: '約60%' },
-              { rank: 2, text: '一人で習い事に通うようになった', pct: '約20%' },
-              { rank: 3, text: '地域で不審者情報を聞いた', pct: '約10%' },
-              { rank: 4, text: '友達がGPSを持っていた', pct: '約5%' },
-              { rank: 5, text: 'ニュース・SNSで事件を知った', pct: '約5%' },
-            ].map((item) => (
-              <div key={item.rank} className="flex items-center gap-4 card-hover p-4">
-                <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${item.rank <= 3 ? 'bg-orange text-white' : 'bg-g100 text-g600'}`}>
-                  {item.rank}
-                </span>
-                <div className="flex-1">
-                  <p className="font-bold text-g800 text-sm">{item.text}</p>
-                </div>
-                <p className="font-extrabold text-blue">{item.pct}</p>
               </div>
             ))}
           </div>

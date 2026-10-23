@@ -35,7 +35,7 @@ const compareItems = [
   { item: '見守り人数', mitene: '複数人（無料）', bot: '複数人（無料）' },
   { item: 'アプリ', mitene: 'みてねみまもりGPS', bot: 'BoTトークアプリ' },
   { item: 'サイズ', mitene: '48.5×48.5×15mm', bot: '50×50×21mm' },
-  { item: '特徴', mitene: '利用者数No.1・UI優秀', bot: 'AIが行動を学習・通知最適化' },
+  { item: '特徴', mitene: '利用者数No.1（公式表記）・UI優秀', bot: 'AIが行動を学習・通知最適化' },
   { item: 'おすすめ', mitene: 'コスパ・バッテリー重視', bot: 'トーク・AI機能重視' },
 ];
 
