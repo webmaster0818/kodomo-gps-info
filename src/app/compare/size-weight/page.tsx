@@ -43,7 +43,7 @@ const sizeData = [
   { name: 'あんしんウォッチャー', size: '約50×50×18.8', weight: '約53g', w: 53, type: 'ポケット型', battery: '最大2カ月', water: 'IP55', src: 'https://www.au.com/life/auhome/device/uha01a/', status: '' },
   { name: 'BoTトーク（第6世代）', size: '50×50×21', weight: '約58g', w: 58, type: 'ポケット型', battery: 'GPSプラン 最長1ヶ月以上（電池優先モード）', water: '生活防水・防塵（等級の記載なし）', src: 'https://www.bsize.com/bot/talk', status: '' },
   { name: 'みてねみまもりGPS（MG05）', size: '50×50×22', weight: '約61g', w: 61, type: 'ポケット型', battery: '最大2ヶ月（省エネモード）', water: 'IP55', src: 'https://mitene.us/gps/spec', status: '' },
-  { name: 'みもり3（MR-03B）', size: '52×52×22', weight: '約62g', w: 62, type: 'ポケット型', battery: '最大2ヶ月（エコモード）', water: 'IPX5', src: 'https://machicomi.jp/mimori/spec.html', status: '' },
+  { name: 'みもりGPSトーク（MR-03B）', size: '52×52×22', weight: '約62g', w: 62, type: 'ポケット型', battery: '最大2ヶ月（エコモード）', water: 'IPX5', src: 'https://machicomi.jp/mimori/spec.html', status: '' },
   { name: 'coneco', size: '43×106×16', weight: '約64g', w: 64, type: 'ポケット型（縦長）', battery: '約4日程度', water: 'IPX3相当', src: 'https://www.carmate.jp/coneco/', status: '新規販売終了' },
   { name: 'みてねみまもりGPS トークPlus（MB06）', size: '50×98.2×20', weight: '約89g', w: 89, type: '画面付き', battery: '最大約3週間（ボイスメッセージ付きプラン）', water: 'IP54', src: 'https://mitene.us/gps/spec', status: '' },
   { name: 'Hamic POCKET L', size: '約57.6×106.5×24.2（専用ケース込み）', weight: '約151.8g（ケース・電池込み）', w: 151.8, type: 'スマートフォン型', battery: '約1.5日が目安', water: 'IP64（ケース装着時）', src: 'https://hamic.ai/collections/hamic-pocket/products/hamic-pocket-l-%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88', status: '公式ストアは全色売り切れ（10/19時点）' },
@@ -54,7 +54,7 @@ const coin500 = 7.1; // 500円硬貨（2021年発行）の質量 7.1g・直径26
 const weightCategories = [
   { category: '40g以下', models: ['まもサーチ3（39g）', 'soranome（39g・新規受付終了）'], note: '販売中の機種ではまもサーチ3が最軽量です。500円玉約5.5枚分の重さです。' },
   { category: '40〜60g', models: ['myFirst Fone R2（48g）', 'あんしんウォッチャー（53g）', 'BoTトーク（58g）'], note: '腕時計型のmyFirst Fone R2もこの区分です。あんしんウォッチャーとBoTトークは、ほぼ同じ縦横約50mmの大きさです。' },
-  { category: '60〜70g', models: ['みてねみまもりGPS MG05（61g）', 'みもり3（62g）', 'coneco（64g・新規販売終了）'], note: 'みてねとみもりは最大2ヶ月の電池持ちを公表している機種です。厚みは22mmと、今回の比較では厚めです。' },
+  { category: '60〜70g', models: ['みてねみまもりGPS MG05（61g）', 'みもりGPSトーク（62g）', 'coneco（64g・新規販売終了）'], note: 'みてねとみもりは最大2ヶ月の電池持ちを公表している機種です。厚みは22mmと、今回の比較では厚めです。' },
   { category: '80g以上', models: ['みてねみまもりGPS トークPlus（89g）', 'Hamic POCKET L（151.8g・ケース込み）'], note: '画面や防犯ブザーを備えた機種です。ポケットよりもランドセルやカバンへの収納に向いています。' },
 ];
 
@@ -84,7 +84,7 @@ export default function SizeWeightPage() {
             <h2 className="font-extrabold text-g800 mb-2">位置情報専用のポケット型の多くは「縦横約50mm・厚み15〜22mm」、重さは39〜64gです</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>販売中で最も軽い</strong>のは<strong>まもサーチ3（約39g）</strong>です。次いでmyFirst Fone R2（約48g）、あんしんウォッチャー（約53g）です。</li>
-              <li>・<strong>最も薄い</strong>ポケット型は<strong>soranome（15mm・新規受付終了）</strong>と<strong>まもサーチ3（15.5mm）</strong>です。みてねみまもりGPS（MG05）とみもり3は22mmです。</li>
+              <li>・<strong>最も薄い</strong>ポケット型は<strong>soranome（15mm・新規受付終了）</strong>と<strong>まもサーチ3（15.5mm）</strong>です。みてねみまもりGPS（MG05）とみもりGPSトークは22mmです。</li>
               <li>・<strong>重さと電池持ちは比例しません</strong>。39gのまもサーチ3は最大2か月、64gのconecoは約4日程度と公表されています。</li>
               <li>・画面付きのトークPlus（約89g）やスマートフォン型のHamic POCKET L（約151.8g・ケース込み）は、ポケット型より大きく重い機種です。</li>
             </ul>

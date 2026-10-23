@@ -34,7 +34,7 @@ const contractData = [
   { name: 'soranome（販売終了）', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '2026年4月1日付の公式告知で現行端末の販売が終了しています（2026年10月17日 公式確認）。', href: '/review/soranome/' },
   { name: 'まもサーチ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '見守り最大25人。詳細は公式サイトにてご確認ください', href: '/review/mamosearch/' },
   { name: 'SayuU', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '月額1,210円。契約条件は公式サイトにてご確認ください', href: '/review/sayuu/' },
-  { name: 'みもり', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/mimori/' },
+  { name: 'みもりGPSトーク', term: 'なし（1か月単位の自動更新）', fee: 'なし', note: '契約満了日の5日前までにアプリから解約を申請。月の途中の解約に日割りの返金はありません（利用規約）', href: '/review/mimori/' },
   { name: 'coneco（新規販売終了）', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/coneco/' },
   { name: 'myFirst Fone', term: 'SIM契約による', fee: '公式サイトで要確認', note: 'SIMは別契約のため、条件は提供元にてご確認ください', href: '/review/myfirst-fone/' },
   { name: 'はろここ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/halococo/' },

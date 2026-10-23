@@ -30,10 +30,10 @@ const faqJsonLd = {
 const batteryData = [
   { name: 'みてねみまもりGPS', battery: '最大約2カ月(更新3分・容量2000mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'あんしんウォッチャー', battery: '最大約2カ月(2024年更新で延長・容量1500mAh)', charge: 'USB Type-C', level: 5 },
+  { name: 'みもりGPSトーク', battery: '最大2カ月(エコモード・容量2000mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'BoTトーク', battery: '更新3分で約2〜4週間(容量1400mAh)', charge: 'USB Type-C', level: 4 },
   { name: 'コネコ', battery: '最大約1カ月', charge: 'USB Type-C', level: 4 },
   { name: 'まもサーチ', battery: '最大約1カ月', charge: 'USB Type-C', level: 3 },
-  { name: 'みもり', battery: '約3〜4週間(容量2000mAh)', charge: 'USB Type-C', level: 3 },
   { name: 'さゆう', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
   { name: 'ハロここ', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
   { name: 'ソラノメ（販売終了）', battery: '約1週間(容量700mAh)', charge: 'USB Type-C', level: 2 },

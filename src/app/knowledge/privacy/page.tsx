@@ -32,7 +32,7 @@ const privacyComparison = [
   { name: 'BoTトーク', encryption: '暗号化通信', retention: '約30日', thirdParty: '匿名統計のみ', deletion: '退会後に削除' },
   { name: 'あんしんウォッチャー', encryption: '暗号化通信', retention: '約90日', thirdParty: 'なし', deletion: '退会後に削除' },
   { name: 'ソラノメ（販売終了）', encryption: '暗号化通信', retention: '約30日', thirdParty: '匿名統計のみ', deletion: '退会後に削除' },
-  { name: 'みもり', encryption: '暗号化通信', retention: '約90日', thirdParty: '不審者情報連動', deletion: '退会後に削除' },
+  { name: 'みもりGPSトーク', encryption: '公式に記載なし', retention: '公式に記載なし', thirdParty: '公式に記載なし', deletion: '有効な契約がなく1年間ログインがない場合は自動退会（利用規約）' },
 ];
 
 export default function PrivacyPage() {

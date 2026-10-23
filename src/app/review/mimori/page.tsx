@@ -3,18 +3,21 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'みもりGPSの評判・口コミは？【2026年】不審者情報連動の防犯GPSの実力・料金を解説',
+  title: 'みもりGPSトークの料金・機能は？【2026年モデル】トークと不審者情報連動を公式情報で解説',
   description:
-    'みもり（ドリームエリア）の機能・料金・口コミをレビューします。不審者情報連動、危険エリア通知、音声メッセージの各機能を搭載しています。防犯を重視して選ぶ方には、みもりをおすすめします。',
+    'ドリームエリアの子供用GPS「みもりGPSトーク」（2026年モデル・MR-03B）の料金・機能・仕様を公式情報で解説します。本体3,800円（キャンペーン価格）・月額748円、親子の双方向トーク、不審者情報との連動に対応しています。',
 };
 
+const CHECKED = '2026年10月23日';
+
 const faqData = [
-  { q: 'みもりの不審者情報連動機能とは？', a: '全国の不審者情報をリアルタイムで取得し、お子さまが不審者の出没エリアに近づくと、自動で保護者に通知する機能です。日本不審者情報センターのデータと連携しています。' },
-  { q: 'みもりの月額料金はいくら？', a: '月額748円（税込）です。不審者情報連動や音声メッセージなど防犯機能が充実しているため、安全性を重視する方にとって費用対効果の高い料金設定です。' },
-  { q: '音声メッセージ機能はどう使うの？', a: '保護者のスマートフォンのアプリから、GPS端末に音声メッセージを送信できます。端末のスピーカーから音声が流れるため、お子さまへの伝言に便利です。' },
-  { q: '危険エリア通知とは？', a: '交通事故の多発地点や犯罪の発生エリアなど、危険な場所にお子さまが近づくと、GPS端末から警告音が鳴り、同時に保護者にも通知される機能です。' },
-  { q: 'バッテリーはどのくらい持ちますか？', a: '通常の使用で約1〜2カ月持ちます。位置情報の更新頻度や、音声メッセージの使用頻度によって変動します。' },
-  { q: '学校に持って行けますか？', a: 'はい。音声メッセージの受信音はマナーモードに設定できます。小型・軽量のため、ランドセルに入れておくことができます。学校の規則は事前にご確認ください。' },
+  { q: 'みもりGPSトークの料金はいくらですか？', a: '本体価格は3,800円（税込）、月額料金は748円（税込）です（2026年10月23日確認）。本体価格は公式サイトのキャンペーン価格で、公式トップページでは「10月末まで・在庫限り」と表示されています。通常価格と送料の金額は、公式サイトに記載がありません。' },
+  { q: '契約期間の縛りや解約金はありますか？', a: 'ありません。契約は1か月単位の自動更新で、契約満了日の5日前までにアプリから解約を申請できます。利用規約では、月の途中で解約した場合の日割りでの返金はないとされています。解約した端末は内蔵SIMが無効になり、再利用できません。' },
+  { q: 'トーク機能では何ができますか？', a: '親子で1回最大30秒の音声メッセージを送り合えます。回数の制限や追加の料金はありません。お子さまの音声を文字に変換したり、保護者が入力した文字を音声に変換して送ったりすることもできます。' },
+  { q: '不審者情報との連動とはどのような機能ですか？', a: '公式サイトでは、日本不審者情報センターと連携し、お子さまの近くで不審者の目撃情報があると注意を知らせ、家族にも自動で通知すると説明しています。' },
+  { q: 'バッテリーはどのくらい持ちますか？', a: '公式の製品仕様では、エコモード（位置の更新間隔3〜5分）で最大2か月、優先モード（1.5〜2分）で最大1.5か月です。エコモードの値は、1日3時間の屋外歩行を想定したものです。充電はUSB Type-Cで約2時間です。' },
+  { q: '学校に持って行けますか？', a: '時間帯や場所を指定して、スピーカー・ボタン・着信ランプを無効にする「学校モード」があります。2026年4月3日以降のアップデートで、指定した時間・場所ではトーク機能そのものを停止できる「新・学校モード」にも順次対応しています。持ち込みの可否は、学校の規則をご確認ください。' },
+  { q: '旧モデルはまだ購入できますか？', a: '2026年10月23日時点で、公式の購入ページで販売しているのは「みもりGPSトーク」の1機種のみです。利用規約には、2018年7月から2021年2月に販売したMR-01A/B、2021年3月以降に販売したMR-02・MR-03A/Bが記載されています。' },
 ];
 
 const faqJsonLd = {
@@ -27,121 +30,127 @@ const faqJsonLd = {
   })),
 };
 
+const specRows: [string, string][] = [
+  ['提供元', 'ドリームエリア株式会社'],
+  ['機種', 'みもりGPSトーク（2026年モデル・型番 MR-03B）'],
+  ['本体価格', '3,800円（税込・キャンペーン価格）'],
+  ['月額料金', '748円（税込）'],
+  ['契約期間', '1か月単位の自動更新（縛り・解約金なし）'],
+  ['位置の更新間隔', 'エコモード 3〜5分／優先モード 1.5〜2分（7:00〜8:30は自動で1分間隔）'],
+  ['測位方式', 'GPS・みちびき・GLONASS・BeiDou・Galileo、A-GNSS、Wi-Fi、携帯基地局'],
+  ['バッテリー', '2,000mAh／エコモード 最大2か月・優先モード 最大1.5か月'],
+  ['充電', 'USB Type-C（ケーブル別売）・約2時間'],
+  ['通信回線', 'LTE-M（NTTドコモ回線）'],
+  ['防水', 'IPX5（生活防水）'],
+  ['サイズ・重量', '52×52×22mm・62g'],
+  ['見守る人数', '1台につき最大8名'],
+  ['対応OS（保護者アプリ）', 'iOS 16以降・Android 10以降'],
+  ['保証', '購入から1年'],
+];
+
+const features = [
+  { title: 'トーク（双方向）', desc: '親子で1回最大30秒の音声メッセージを送り合えます。回数制限・追加料金はありません。文字と音声の相互変換に対応しています。' },
+  { title: '不審者情報との連動', desc: '日本不審者情報センターと連携し、近くで目撃情報があるとお子さまに注意を促し、家族にも自動で通知します。' },
+  { title: '危険な場所の警告', desc: '保護者が指定した場所にお子さまが近づくと、端末の音声とランプで警告します。' },
+  { title: '活動範囲の設定', desc: '設定した範囲の外に出ると、端末の音とランプでお子さまに知らせ、保護者のスマートフォンにも通知します。' },
+  { title: 'エリア通知', desc: '自宅や学校などへの到着・出発を自動で通知します。エリアは円形のほか、手書きでも作成できます。' },
+  { title: '通知ボタン', desc: 'ボタンを押すと周囲の音を録音し、現在地とともに保護者へ通知します。録音時間は5〜20秒、または無効に設定できます。' },
+  { title: '学校モード', desc: '指定した時間帯・場所で、スピーカー・ボタン・着信ランプを無効にします。新・学校モードではトーク機能も停止できます。' },
+  { title: '音声時計', desc: 'ボタンを2回押すと、現在の時刻を音声で知らせます。' },
+];
+
 export default function MimoriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みもりのレビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
-      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みもり' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みもりGPSトークのレビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-23", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みもりGPSトーク' }]} />
 
       {/* Hero */}
       <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-orange text-white">不審者情報連動</span>
-            <span className="tag-pill bg-blue text-white">防犯重視</span>
+            <span className="tag-pill bg-orange text-white">双方向トーク</span>
+            <span className="tag-pill bg-blue text-white">不審者情報連動</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            みもりのレビュー
+            みもりGPSトークのレビュー
           </h1>
-          <p className="text-g600 text-lg">ドリームエリア提供 | 不審者情報連動 | 危険エリア通知 | 音声メッセージ</p>
+          <p className="text-g600 text-lg">ドリームエリア提供 | 2026年モデル（MR-03B） | 本体3,800円（キャンペーン価格） | 月額748円</p>
         </div>
       </section>
 
       {/* Overview */}
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">みもりとは</h2>
+          <h2 className="section-title">みもりGPSトークとは</h2>
+          <p className="text-g600 mb-4">
+            みもりGPSトークは、不審者情報配信サービス「マチコミ」を運営するドリームエリア株式会社の子供用GPS端末です。
+            2024年に親子で音声メッセージを送り合える「トーク機能」を搭載したモデルとして発売され、現在は2026年モデル（音声時計を搭載）が販売されています。
+          </p>
           <p className="text-g600 mb-6">
-            みもりは、ドリームエリアが提供する、防犯を重視した子供用GPS端末です。
-            最大の特徴は、不審者情報との連動機能です。全国の不審者の出没情報をリアルタイムで取得し、
-            お子さまが危険エリアに近づくと、自動で警告・通知を行います。
-            音声メッセージ機能や危険エリア通知など、他のGPS端末にはない防犯機能が充実しています。
+            位置の確認やエリア通知に加え、不審者情報との連動、指定した場所に近づいたときの警告など、防犯に関わる機能を備えている点が特徴です。
+            2026年10月23日時点で、公式の購入ページで販売している機種はみもりGPSトークのみです。
           </p>
 
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-3">基本スペック</h3>
-              <table className="w-full text-sm">
-                <tbody>
-                  {[
-                    ['提供元', 'ドリームエリア'],
-                    ['月額料金', '748円（税込）'],
-                    ['本体価格', '8,580円（税込）'],
-                    ['測位方式', 'GPS+GLONASS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '最大2ヶ月（エコモード）／最大1.5カ月（更新間隔優先モード）'],
-                    ['通信回線', 'SoftBank LTE'],
-                    ['防水', '生活防水（IPX5）'],
-                    ['サイズ', '52×52×22mm（みもり3 MR-03B）'],
-                    ['重量', '約62g'],
-                  ].map(([k, v]) => (
-                    <tr key={k} className="border-b border-g100">
-                      <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
-                      <td className="py-2 text-g600">{v}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-3">主な防犯機能</h3>
-              <div className="space-y-3">
-                <div className="bg-orange-light rounded-xl p-4">
-                  <p className="font-bold text-orange">不審者情報連動</p>
-                  <p className="text-sm text-g600 mt-1">全国の不審者の出没情報とリアルタイムで連動し、危険エリアへの接近を自動で通知します。</p>
-                </div>
-                <div className="bg-blue-light rounded-xl p-4">
-                  <p className="font-bold text-blue">危険エリア通知</p>
-                  <p className="text-sm text-g600 mt-1">交通事故の多発地点や犯罪の発生エリアで、端末から警告音が鳴ります。</p>
-                </div>
-                <div className="bg-green-light rounded-xl p-4">
-                  <p className="font-bold text-green-dark">音声メッセージ</p>
-                  <p className="text-sm text-g600 mt-1">保護者のスマートフォンから、GPS端末に音声メッセージを送信できます。</p>
-                </div>
-              </div>
-            </div>
+          <div className="bg-orange-light rounded-xl p-5 mb-8">
+            <p className="font-bold text-g800 mb-2">料金について（{CHECKED}確認）</p>
+            <ul className="text-sm text-g700 space-y-1">
+              <li>・本体3,800円（税込）は公式サイトのキャンペーン価格です。公式トップページでは「10月末まで・在庫限り」と表示されています。通常価格は公式サイトに記載がありません</li>
+              <li>・公式サイトでは、費用は「端末の購入費用（本体＋送料）と月額費用のみ」と案内しています。送料の金額は記載がありません</li>
+              <li>・月額料金は、アプリで開通手続きを完了した日から発生します。開通手続きは購入から3か月以内に行う必要があります</li>
+              <li>・専用ケースは別売です（PUレザーケース1,980円、シリコンケース1,848円、いずれも税込）</li>
+            </ul>
           </div>
+
+          <h2 className="section-title">基本スペック</h2>
+          <div className="overflow-x-auto mb-3">
+            <table className="w-full text-sm">
+              <tbody>
+                {specRows.map(([k, v]) => (
+                  <tr key={k} className="border-b border-g100">
+                    <th scope="row" className="py-2 pr-3 text-left font-semibold text-g700 w-1/3">{k}</th>
+                    <td className="py-2 text-g600">{v}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-g500 mb-8">
+            出典：みもり公式サイト（<a href="https://machicomi.jp/mimori/" target="_blank" rel="noopener noreferrer" className="text-blue underline">トップ</a>・<a href="https://machicomi.jp/mimori/spec.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">製品仕様</a>・<a href="https://machicomi.jp/mimori/terms_mmr.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">利用規約</a>）{CHECKED}確認。公式トップページでは対応OSを「iOS 15以降・Android 7以降」と記載していますが、本表は製品仕様ページの記載によります。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。
+          </p>
 
           {/* Features */}
           <h2 className="section-title">主な機能</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            {[
-              { icon: '', title: '不審者情報連動', desc: '全国の不審者情報をリアルタイムで取得し、お子さまが危険エリアに近づくと自動で通知します。' },
-              { icon: '', title: '危険エリア通知', desc: '事故の多発地点や犯罪の発生エリアで、GPS端末から警告音が鳴ります。' },
-              { icon: '', title: '音声メッセージ', desc: '保護者のスマートフォンから、GPS端末に音声メッセージを送信できます。' },
-              { icon: '', title: '位置確認・履歴', desc: 'リアルタイムでの位置確認と、移動履歴の自動記録に対応しています。' },
-              { icon: '', title: 'エリア通知', desc: '登録したエリアへの出入りを自動で通知します。学校・自宅・塾への到着確認に役立ちます。' },
-              { icon: '', title: '複数人での見守り', desc: 'ご家族全員でお子さまの位置を見守ることができます。' },
-            ].map((f) => (
+          <div className="grid sm:grid-cols-2 gap-4 mb-3">
+            {features.map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
                 <p className="text-sm text-g600">{f.desc}</p>
               </div>
             ))}
           </div>
+          <p className="text-xs text-g500 mb-8">出典：みもり公式サイト（{CHECKED}確認）、ドリームエリア株式会社 プレスリリース（2024年1月11日・2026年3月26日）。</p>
 
           {/* Pros & Cons */}
-          <h2 className="section-title">メリット・デメリット</h2>
+          <h2 className="section-title">選ぶ前に確認したい点</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="bg-green-light rounded-xl p-6">
-              <h3 className="font-bold text-green-dark mb-3">メリット</h3>
+              <h3 className="font-bold text-green-dark mb-3">向いているご家庭</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・不審者情報連動は業界唯一の防犯機能</li>
-                <li>・危険エリア通知により事故・犯罪のリスクを軽減</li>
-                <li>・音声メッセージでお子さまに伝言が可能</li>
-                <li>・バッテリーが最大2カ月持つ長寿命設計</li>
-                <li>・見守る人の追加は無料</li>
-                <li>・ドリームエリアは教育機関との連携実績が豊富</li>
+                <li>・位置の確認に加えて、親子で音声のやりとりをしたい</li>
+                <li>・不審者情報との連動など、防犯に関わる機能を重視したい</li>
+                <li>・充電の手間を減らしたい（エコモードで最大2か月）</li>
+                <li>・学校ではトークを止め、放課後に自動で戻したい</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
-              <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
+              <h3 className="font-bold text-orange-dark mb-3">確認しておきたい点</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・月額748円で最安ではない点</li>
-                <li>・本体価格8,580円はやや高め</li>
-                <li>・双方向のトーク機能には非対応</li>
-                <li>・端末がやや大きめ（約62g）</li>
-                <li>・音声メッセージは保護者からお子さまへの一方向のみ</li>
+                <li>・本体3,800円はキャンペーン価格で、通常価格は公式に記載がありません</li>
+                <li>・月額748円で、月額528円の機種（みてねみまもりGPS MG05・まもサーチ）より高くなります</li>
+                <li>・重さ62g・厚さ22mmで、ポケット型の中では大きめです</li>
+                <li>・解約した端末は再利用できません</li>
               </ul>
             </div>
           </div>
@@ -157,10 +166,10 @@ export default function MimoriPage() {
 
           {/* CTA */}
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">みもりをご検討中の方へ</h2>
-            <p className="text-g600 mb-6 text-sm">みもりは不審者情報連動を備え、防犯機能の充実度はトップクラスです。お子さまの安全を最優先に考える方に適しています。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">みもりGPSトークをご検討中の方へ</h2>
+            <p className="text-g600 mb-6 text-sm">料金・機能を他の機種と比べたうえでお選びください。月額料金と本体価格の比較は料金比較ページにまとめています。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/" className="btn-primary">他の機種と比較する</Link>
+              <Link href="/compare/price/" className="btn-primary">料金を比較する</Link>
               <Link href="/review/coneco/" className="btn-accent">次のレビュー: coneco（新規販売終了）</Link>
             </div>
           </div>

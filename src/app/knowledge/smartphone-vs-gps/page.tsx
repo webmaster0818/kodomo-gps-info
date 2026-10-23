@@ -94,7 +94,7 @@ export default function SmartphoneVsGpsPage() {
                 操作もシンプルです。月額料金も安く、学校への持ち込みも認められやすいため最適です。
               </p>
               <div className="bg-blue-light rounded-lg p-3">
-                <p className="text-sm text-g700 font-bold">おすすめ機種: みもり、あんしんウォッチャー、BoTトーク</p>
+                <p className="text-sm text-g700 font-bold">おすすめ機種: みもりGPSトーク、あんしんウォッチャー、BoTトーク</p>
               </div>
             </div>
 

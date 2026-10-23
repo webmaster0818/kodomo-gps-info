@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 const faqData = [
   { q: '子供が不審者に遭遇する件数はどのくらいですか？', a: '警察庁の統計によると、13歳未満の子供が被害者となる声かけ・つきまとい等の認知件数は年間約1万件以上です。特に下校時間帯（14時〜17時）に集中しており、通学路での対策が重要です。' },
   { q: 'GPS端末で不審者から子供を守れますか？', a: 'GPS端末は「犯罪を直接防ぐ」ものではなく、「異常を素早く察知し対応する」ためのツールです。エリア通知（ジオフェンス）による逸脱の通知やSOS機能により、危険な状況をいち早く把握できます。' },
-  { q: 'SOS機能はどの機種に搭載されていますか？', a: 'みもり、myFirst Fone、BoTトーク、ハミックポケットなどにSOS/緊急ボタンが搭載されています。ボタンを押すと、保護者のスマートフォンに即座に通知と位置情報が届きます。' },
-  { q: '不審者情報と連動するGPS端末はありますか？', a: 'みもり（MIXI）は地域の不審者情報と連動する唯一のGPS端末です。お子さまが不審者出没エリアに近づくと保護者に通知を送り、端末本体から警告音を鳴らすことも可能です。' },
+  { q: 'SOS機能はどの機種に搭載されていますか？', a: 'myFirst Fone、BoTトーク、ハミックポケットなどにSOS/緊急ボタンが搭載されています。みもりGPSトークには、周囲の音を録音して現在地とともに通知するボタンがあります。ボタンを押すと、保護者のスマートフォンに即座に通知と位置情報が届きます。' },
+  { q: '不審者情報と連動するGPS端末はありますか？', a: 'みもりGPSトーク（ドリームエリア）は、日本不審者情報センターと連携しています。公式サイトでは、近くで不審者の目撃情報があるとお子さまに注意を知らせ、家族にも自動で通知すると説明しています。' },
   { q: 'エリア通知は防犯にどのように役立ちますか？', a: '自宅・学校・通学路にエリア通知を設定すると、お子さまがエリアを逸脱した際に即座に通知が届きます。通常と異なる行動パターンをいち早く検知でき、不審者による連れ去り等の異常に気づけます。' },
   { q: 'GPS以外に、子供の不審者対策として有効なものはありますか？', a: '防犯ブザー、子供110番の家の確認、防犯教室への参加、「いかのおすし」の教育が効果的です。GPSと防犯ブザーを併用すると、周囲に助けを求める手段と保護者への通知手段の両方を確保できるため、併用をおすすめします。' },
 ];
@@ -94,7 +94,7 @@ export default function StrangerDangerPage() {
               <thead>
                 <tr className="bg-blue-light">
                   <th className="p-3 text-left font-bold text-g800">機能</th>
-                  <th className="p-3 text-center font-bold text-g800">みもり</th>
+                  <th className="p-3 text-center font-bold text-g800">みもりGPSトーク</th>
                   <th className="p-3 text-center font-bold text-g800">ソラノメ（販売終了）</th>
                   <th className="p-3 text-center font-bold text-g800">BoTトーク</th>
                   <th className="p-3 text-center font-bold text-g800">myFirst Fone</th>
@@ -105,9 +105,9 @@ export default function StrangerDangerPage() {
                   { feature: 'SOS通知', mimori: 'あり', soranome: 'あり', bot: 'なし', myfirst: 'あり' },
                   { feature: 'エリア通知', mimori: 'あり', soranome: 'あり', bot: 'あり', myfirst: 'あり' },
                   { feature: '不審者情報連動', mimori: 'あり', soranome: 'なし', bot: 'なし', myfirst: 'なし' },
-                  { feature: '速度異常検知', mimori: 'あり', soranome: 'なし', bot: 'あり（AI学習）', myfirst: 'なし' },
+                  { feature: '速度異常検知', mimori: '公式に記載なし', soranome: 'なし', bot: 'あり（AI学習）', myfirst: 'なし' },
                   { feature: '警告音', mimori: 'あり', soranome: 'なし', bot: 'なし', myfirst: 'あり' },
-                  { feature: '移動履歴', mimori: '1週間', soranome: '30日間', bot: '1週間', myfirst: '3日間' },
+                  { feature: '移動履歴', mimori: '保存期間は公式に記載なし', soranome: '30日間', bot: '1週間', myfirst: '3日間' },
                 ].map((row) => (
                   <tr key={row.feature} className="border-b border-gray-200">
                     <td className="p-3 font-bold text-g700">{row.feature}</td>
@@ -151,7 +151,7 @@ export default function StrangerDangerPage() {
                 { step: '1', title: '通学路を一緒に歩く', desc: '入学前や新学期に通学路を一緒に歩き、危険な場所（見通しの悪い場所、人通りの少ない場所）を確認することをおすすめします。' },
                 { step: '2', title: '逃げ込める場所を教える', desc: 'コンビニ、子供110番の家、交番など、危険を感じたときに駆け込める場所を具体的に教えてください。' },
                 { step: '3', title: '定期的なロールプレイ', desc: '「知らない人に声をかけられたらどうするか」を定期的に練習します。SOSボタンの押し方も繰り返し確認してください。' },
-                { step: '4', title: '地域の防犯情報を確認', desc: '自治体や警察の不審者情報メール配信に登録し、地域の治安状況を把握することをおすすめします。みもりの場合は、端末が自動で連動します。' },
+                { step: '4', title: '地域の防犯情報を確認', desc: '自治体や警察の不審者情報メール配信に登録し、地域の治安状況を把握することをおすすめします。みもりGPSトークは、日本不審者情報センターの情報と連動して通知します。' },
                 { step: '5', title: 'GPS端末のエリア通知を設定', desc: '自宅・学校・通学路・習い事先にエリア通知を設定し、エリア逸脱時の通知を有効にしておいてください。' },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-3 bg-blue-light rounded-lg p-3">
@@ -177,7 +177,7 @@ export default function StrangerDangerPage() {
             <h2 className="text-xl font-extrabold text-g800 mb-3">防犯機能に優れたGPS端末の比較</h2>
             <p className="text-g600 mb-6 text-sm">SOS機能や不審者連動など、お子さまの安全を守る機種を比較できます。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/review/mimori/" className="btn-primary">みもりのレビュー</Link>
+              <Link href="/review/mimori/" className="btn-primary">みもりGPSトークのレビュー</Link>
               <Link href="/knowledge/safety/" className="btn-accent">犯罪対策ページ</Link>
               <Link href="/" className="btn-accent">おすすめランキング</Link>
             </div>

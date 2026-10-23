@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { q: '子供用GPSで会話ができる機種はどれですか？', a: '音声メッセージに対応しているのは、BoTトーク（月額748円）、みてねみまもりGPS トークPlus（月額748円）、SayuU（月額1,210円）です。音声通話に対応しているのはmyFirst Fone（SIM別契約）です。みもりは、保護者から子供への一方向の音声メッセージのみに対応しています。' },
+  { q: '子供用GPSで会話ができる機種はどれですか？', a: '音声メッセージに対応しているのは、BoTトーク（月額748円）、みてねみまもりGPS トークPlus（月額748円）、SayuU（月額1,210円）、みもりGPSトーク（月額748円）です。音声通話に対応しているのはmyFirst Fone（SIM別契約）です。' },
   { q: '音声メッセージと通話の違いは何ですか？', a: '音声メッセージはボイスメールのように録音して送る方式で、リアルタイムの会話はできません。通話は、myFirst Foneのように電話と同じ感覚でリアルタイムに会話できます。' },
   { q: 'トーク機能の月額料金はいくらですか？', a: 'BoTトークのトーク付きプランは月額748円、みてねみまもりGPSのトークPlusプランも月額748円です。SayuUは月額1,210円にトーク機能が含まれています。' },
   { q: 'トーク機能なしの基本プランから変更できますか？', a: '多くの機種では、アプリ上でプランを変更できます。まずは基本プランで試し、必要に応じてトーク付きプランに切り替えることが可能です。' },
@@ -61,7 +61,7 @@ export default function TalkPage() {
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-2">音声メッセージ</h3>
               <p className="text-sm text-g600 mb-3">録音した音声を送り合うボイスメール方式です。リアルタイムではありませんが、手軽に使えます。</p>
-              <p className="text-xs text-g500">対応機種: BoTトーク、みてねGPS、みもり（一方向）</p>
+              <p className="text-xs text-g500">対応機種: BoTトーク、みてねGPS、みもりGPSトーク</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-orange mb-2">テキストメッセージ</h3>
@@ -94,7 +94,7 @@ export default function TalkPage() {
                   ['BoTトーク', '○', '○（定型文）', '×', '×', '748円', '/review/bot-talk/'],
                   ['みてねGPS（トークPlus）', '○', '○（定型文）', '×', '×', '748円', '/review/mitene/'],
                   ['SayuU', '○', '×', '×', '×', '1,210円', '/review/sayuu/'],
-                  ['みもり', '△（一方向）', '×', '×', '×', '748円', '/review/mimori/'],
+                  ['みもりGPSトーク', '○', '△（文字を音声に変換して送信）', '×', '×', '748円', '/review/mimori/'],
                   ['myFirst Fone', '○', '○', '○', '○', '約980円〜', '/review/myfirst-fone/'],
                   ['Hamic', '×', '○（チャット形式）', '×', '×', '1,100円', '/review/hamic/'],
                   ['キッズケータイ', '×', '○（SMS）', '○', '×', '539円〜', '/review/kids-phone/'],

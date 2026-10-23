@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '【2026年最新】子供用GPSおすすめランキング12選｜全機種比較',
+  title: '【2026年最新】子供用GPSおすすめランキング11選｜全機種比較',
   description:
-    '2026年最新の子供用GPSおすすめランキング12選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
+    '2026年最新の子供用GPSおすすめランキング11選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
   keywords: ['子供GPS', 'おすすめ', 'ランキング', '2026', '比較', '全機種', '最新'],
   openGraph: {
     images: ['/og.png'],
-    title: '【2026年最新】子供用GPSおすすめランキング12選｜全機種比較',
-    description: '2026年最新の子供用GPSおすすめランキング12選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。',
+    title: '【2026年最新】子供用GPSおすすめランキング11選｜全機種比較',
+    description: '2026年最新の子供用GPSおすすめランキング11選です。精度・バッテリー・機能・料金・使いやすさの5つの評価軸で全機種を評価しています。',
   },
 };
 
@@ -100,12 +100,12 @@ const rankingData = [
     review: '/review/hamic/',
   },
   {
-    rank: 8, name: 'ミモリ', score: 78, initial: 7480, monthly: 748,
-    battery: '最大2ヶ月（エコモード）', waterproof: 'IPX5', weight: '約62g', carrier: 'ソフトバンク LTE',
-    notifications: 'エリア通知/SOS/バッテリー低下/定時',
-    merit: '防犯ブザー一体型です。ブザーを鳴らすと位置情報と録音を自動で送信し、見守りと防犯を両立できます。',
-    demerit: '月額料金がやや高めです。アプリの機能はシンプルです。',
-    recommend: '防犯ブザーとGPSを一体化させたい方',
+    rank: 8, name: 'みもりGPSトーク', score: 78, initial: 3800, monthly: 748,
+    battery: '最大2ヶ月（エコモード）', waterproof: 'IPX5', weight: '約62g', carrier: 'ドコモ LTE-M',
+    notifications: 'エリア通知/活動範囲外/危険な場所/不審者情報/通知ボタン',
+    merit: '親子で音声メッセージを送り合えるトーク機能（回数制限なし）と、日本不審者情報センターと連携した不審者情報の通知を備えています。',
+    demerit: '月額748円で、月額528円の機種より高くなります。本体3,800円はキャンペーン価格（2026年10月23日確認）で、通常価格は公式に記載がありません。',
+    recommend: '親子の音声のやりとりと、不審者情報の通知を重視する方',
     review: '/review/mimori/',
   },
   {
@@ -134,15 +134,6 @@ const rankingData = [
     demerit: 'バッテリー持ちが短めで、通知機能も限定的です。',
     recommend: '初期費用を抑えたい方、試験的にGPS端末を導入したい方',
     review: '/review/mamosearch/',
-  },
-  {
-    rank: 12, name: 'みもりGPS ライト', score: 72, initial: 4980, monthly: 528,
-    battery: '約2週間', waterproof: 'IP55', weight: '約48g', carrier: 'ソフトバンク LTE',
-    notifications: 'エリア通知/SOS/バッテリー低下',
-    merit: '低価格ながら防犯ブザー機能を備えており、初期費用を抑えつつ防犯対策も行えます。',
-    demerit: 'バッテリー持ちがやや短く、上位モデルに比べて機能が限定されています。',
-    recommend: '費用を抑えて防犯ブザー付きのGPS端末を導入したい方',
-    review: '/review/mimori/',
   },
 ];
 
@@ -197,7 +188,7 @@ export default function Ranking2026Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング12選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング11選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -207,7 +198,7 @@ export default function Ranking2026Page() {
             <span className="tag-pill bg-blue text-white">ランキング</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            【2026年最新】子供用GPSおすすめランキング12選
+            【2026年最新】子供用GPSおすすめランキング11選
           </h1>
           <p className="text-g600 text-lg">全機種を5つの評価軸で比較し、お子さまに合った1台を選ぶための情報をまとめています。</p>
         </div>
@@ -237,7 +228,7 @@ export default function Ranking2026Page() {
             ))}
           </div>
 
-          <h2 className="section-title">総合ランキング 1〜12位</h2>
+          <h2 className="section-title">総合ランキング 1〜11位</h2>
           <div className="space-y-6 mb-10">
             {rankingData.map((d) => (
               <div key={d.rank} className={`card-hover p-6 ${d.rank <= 3 ? 'border-l-4 border-orange' : ''}`}>
