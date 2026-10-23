@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MimoriAffText } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
   title: '子供GPS 防犯・安全重視で選ぶ | SOS・不審者情報・危険エリア通知比較',
@@ -132,6 +133,7 @@ export default function SafetyPage() {
                     <span className="tag-pill bg-orange text-white text-xs">{item.tag}</span>
                   </div>
                   <p className="text-sm text-g600">{item.reason}</p>
+                  {item.name === 'みもりGPSトーク' && <div className="mt-3"><MimoriAffText /></div>}
                 </div>
               </div>
             ))}

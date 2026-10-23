@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MimoriAffText } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
   title: 'GPS 犯罪対策・不審者対策 | 見守りGPSの防犯活用法',
@@ -81,6 +82,7 @@ export default function SafetyPage() {
                 <li>・通知ボタンで周囲の音を録音し、現在地とともに保護者へ通知</li>
               </ul>
             </div>
+            <div className="text-center mt-5"><MimoriAffText /></div>
           </div>
 
           <h2 className="section-title">SOS機能の活用法</h2>

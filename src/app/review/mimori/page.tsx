@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MimoriAffText, MimoriAffBanner } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
   title: 'みもりGPSトークの料金・機能は？【2026年モデル】トークと不審者情報連動を公式情報で解説',
@@ -103,6 +104,10 @@ export default function MimoriPage() {
             </ul>
           </div>
 
+          <div className="text-center mb-10">
+            <MimoriAffText />
+          </div>
+
           <h2 className="section-title">基本スペック</h2>
           <div className="overflow-x-auto mb-3">
             <table className="w-full text-sm">
@@ -168,6 +173,8 @@ export default function MimoriPage() {
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みもりGPSトークをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">料金・機能を他の機種と比べたうえでお選びください。月額料金と本体価格の比較は料金比較ページにまとめています。</p>
+            <MimoriAffBanner className="mb-4" />
+            <div className="mb-6"><MimoriAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/compare/price/" className="btn-primary">料金を比較する</Link>
               <Link href="/review/coneco/" className="btn-accent">次のレビュー: coneco（新規販売終了）</Link>

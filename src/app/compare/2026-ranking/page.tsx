@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MimoriAffText } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
   title: '【2026年最新】子供用GPSおすすめランキング11選｜全機種比較',
@@ -266,6 +267,7 @@ export default function Ranking2026Page() {
                 <Link href={d.review} className="text-sm text-blue hover:underline font-semibold">
                   詳細レビューを見る →
                 </Link>
+                {d.name === 'みもりGPSトーク' && <div className="mt-3"><MimoriAffText /></div>}
               </div>
             ))}
           </div>
