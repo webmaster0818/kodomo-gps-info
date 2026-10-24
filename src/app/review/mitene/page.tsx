@@ -167,7 +167,7 @@ export default function MitenePage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">メリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・月額528円〜の業界最安級の料金</li>
+                <li>・月額528円〜の料金（税込）</li>
                 <li>・バッテリー最大2カ月で充電の手間が少ない点</li>
                 <li>・公式サイトで「利用者数No.1」と表記（data.ai by Sensor Tower調べ）</li>
                 <li>・「みてね」アプリの使いやすいUI</li>
