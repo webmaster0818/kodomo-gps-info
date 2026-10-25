@@ -3,13 +3,13 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供用GPSは海外で使える？BoT・みてね等5機種の公式回答と旅行中の代わりの方法【2026年10月】',
+  title: 'みてねみまもりGPS・BoTは海外で使える？子供用GPS5機種の公式回答と海外旅行中の見守り方法【2026年10月】',
   description:
     'BoT・みてねみまもりGPS・あんしんウォッチャー・soranome・まもサーチの5機種の海外利用の可否を公式FAQで確認しました（2026年10月18日）。端末を海外に持ち出すと位置情報は送れませんが、子どもが日本にいて保護者が海外にいる場合はアプリで見守れる機種があります。旅行中の代わりの方法もまとめています。',
-  keywords: ['子供GPS', '海外', '使える', '海外旅行', 'ローミング', '対応機種'],
+  keywords: ['みてねみまもりGPS 海外', 'BoT 海外', 'まもサーチ 海外', '子供GPS', '海外', '使える', '海外旅行', 'ローミング', '対応機種'],
   openGraph: {
     images: ['/og.png'],
-    title: '子供用GPSは海外で使える？BoT・みてね等5機種の公式回答【2026年10月】',
+    title: 'みてねみまもりGPS・BoTは海外で使える？子供用GPS5機種の公式回答【2026年10月】',
     description: 'BoT・みてねみまもりGPSなど5機種の海外利用の可否を公式FAQで確認し、旅行中の代わりの方法をまとめています。',
   },
 };
@@ -73,7 +73,7 @@ export default function InternationalPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供用GPSは海外で使える？
           </h1>
-          <p className="text-g600 text-lg">対応機種と注意点｜海外旅行時の代替手段</p>
+          <p className="text-g600 text-lg">みてねみまもりGPS・BoT・まもサーチなど5機種の公式回答｜海外旅行時の代替手段</p>
         </div>
       </section>
 
