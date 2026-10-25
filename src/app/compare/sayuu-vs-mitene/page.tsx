@@ -25,7 +25,7 @@ const comparison = [
   { item: '通話機能', sayuu: '◎ 対応', mitene: '音声メッセージのみ' },
   { item: '左右確認検知', sayuu: '◎ あり（独自機能）', mitene: '—' },
   { item: '走行検知', sayuu: '◎ あり（独自機能）', mitene: '—' },
-  { item: 'バッテリー持ち', sayuu: '毎日の充電を推奨', mitene: '最大2カ月' },
+  { item: 'バッテリー持ち', sayuu: '毎日の充電を推奨', mitene: '最大2カ月（MG05・省エネモード時）' },
   { item: '主な用途', sayuu: '交通安全教育のサポート', mitene: 'シンプルな見守り' },
 ];
 

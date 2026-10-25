@@ -85,7 +85,7 @@ export default function ElementaryPage() {
               </p>
               <div className="space-y-2">
                 {[
-                  { name: 'みてねみまもりGPS', reason: '公式表記で利用者数No.1、バッテリー2カ月、528円', href: '/review/mitene/' },
+                  { name: 'みてねみまもりGPS', reason: '公式表記で利用者数No.1、バッテリー最大2カ月（MG05）、528円', href: '/review/mitene/' },
                   { name: 'あんしんウォッチャー', reason: 'KDDIの通信品質、2台目無料、兄弟での利用向け', href: '/review/anshin-watcher/' },
                 ].map((item) => (
                   <div key={item.name} className="bg-white rounded-lg p-3">

@@ -62,7 +62,7 @@ export default function DisabilityPage() {
             <div className="card-hover p-5">
               <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">長寿命バッテリー</h3>
-              <p className="text-sm text-g600">充電忘れによる見守りの空白を防ぐため、みてね・あんしんウォッチャーなど、最大2カ月持続する機種をおすすめします。</p>
+              <p className="text-sm text-g600">充電忘れによる見守りの空白を防ぐため、みてね（MG05・省エネモード時）・あんしんウォッチャーなど、最大2カ月持続する機種をおすすめします。</p>
             </div>
             <div className="card-hover p-5">
               <p className="text-2xl mb-2"></p>
