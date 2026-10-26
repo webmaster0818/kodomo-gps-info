@@ -3,18 +3,18 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'はろここの評判・口コミは？【2026年】エディオンの見守りGPSの実力・料金を解説',
+  title: 'はろここトークの評判・料金は？【2026年】コクヨのトーク機能付き見守りGPSを公式情報で解説',
   description:
-    'はろここ（エディオン）の機能・料金・口コミをレビューします。月額528円で家電量販店で購入でき、操作もシンプルなため、初めてのGPS端末に適しています。店舗で実物を確認して購入できる点も特徴です。',
+    'はろここトーク（コクヨ）の機能・料金を公式情報（2026年10月26日確認）でレビューします。本体5,940円、月額748円（音声あり）／572円（音声なし）で、親子の音声メッセージと居場所通知ボタンを備えています。',
 };
 
 const faqData = [
-  { q: 'はろここはどこで購入できますか？', a: 'エディオンの店舗およびオンラインショップで購入できます。家電量販店で実物を見て購入できる点が、他のGPS端末にはない大きな特徴です。店員に相談しながら選ぶことができます。' },
-  { q: 'はろここの月額料金はいくらですか？', a: '月額528円（税込）です。契約期間の拘束や解約金もありません。' },
-  { q: '設定は難しくないですか？', a: '難しくありません。シンプルな操作を重視した設計です。アプリのガイドに従って簡単に設定でき、機械が苦手な方でも安心して使い始められます。' },
-  { q: 'バッテリーはどのくらい持ちますか？', a: '通常使用で約1〜2カ月程度持ちます。充電の頻度が少ないため、お子さまに持たせたままにしておけます。' },
-  { q: 'エリア通知機能はありますか？', a: '学校や自宅など、登録したエリアへの出入りを自動で通知するエリア通知（ジオフェンス）機能があります。お子さまの移動をリアルタイムで把握できます。' },
-  { q: 'エディオン以外でも使えますか？', a: '購入はエディオンに限られますが、GPS端末自体はどのキャリアのスマートフォンでも利用できます。全国どこでも、ソフトバンク回線で位置情報を取得します。' },
+  { q: 'はろここトークはどこが提供していますか？', a: 'コクヨの見守りGPSです（公式サイト hellofamily.kokuyo.co.jp）。現在の公式ページで案内されている機種は、後継機の「はろここトーク」です。' },
+  { q: '料金はいくらですか？', a: '通常プランは本体5,940円（税込）に、通信費が月額748円（音声あり）または572円（音声なし）かかります（税込・初月無料）。本体と11か月分の通信費（音声あり）がセットになった「通信費セットプラン」11,880円（税込）もあります（2026年10月26日 公式確認）。' },
+  { q: 'どこで購入できますか？', a: '公式サイトでは「各ECサイトからご購入いただけます」と案内されています。購入後6か月以内に、ハロファミアプリから通信費の契約を行う必要があります。' },
+  { q: 'バッテリーはどのくらい持ちますか？', a: '公式の仕様では、頻度優先モード（1〜2分間隔）で最大2.5週間、バッテリー持ち優先モード（3〜4分間隔）で最大3.5週間です。いずれも平日のみ1日2時間稼働での実測値で、使用環境によって大きく変動します。' },
+  { q: 'トーク機能では何ができますか？', a: '本体の「はなす」ボタンで録音した音声メッセージを送り、保護者からのメッセージを「きく」ボタンで再生できます。リアルタイムの音声通話はできません。「音声なし」で契約した場合は、音声の送受信は利用できません。' },
+  { q: 'エリア通知機能はありますか？', a: 'よく行く場所をアプリに登録すると、出発・到着のタイミングでスマートフォンに通知が届きます。また、行動範囲を設定する「みまもりフェンス」機能で、範囲外に出たときにも通知を受け取れます。' },
 ];
 
 const faqJsonLd = {
@@ -31,49 +31,58 @@ export default function HalococoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "はろここ レビュー", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
-      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'はろここ' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "はろここトーク レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-26", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'はろここトーク' }]} />
 
       {/* Hero */}
       <section className="bg-[#F4F7FA] py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-orange text-white">店舗で買える</span>
-            <span className="tag-pill bg-blue text-white">月額528円</span>
+            <span className="tag-pill bg-orange text-white">トーク機能付き</span>
+            <span className="tag-pill bg-blue text-white">月額748円〜</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            はろここのレビュー
+            はろここトークのレビュー
           </h1>
-          <p className="text-g600 text-lg">エディオンが提供し、家電量販店で購入できる月額528円のシンプルなGPS端末です。</p>
+          <p className="text-g600 text-lg">コクヨが提供する、音声メッセージと居場所通知ボタンを備えた見守りGPSです。</p>
         </div>
       </section>
 
       {/* Overview */}
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">はろここの概要</h2>
+          <div className="bg-blue-light rounded-xl p-5 mb-6 text-sm text-g700">
+            <p className="font-bold text-blue mb-1">結論（2026年10月26日 公式確認）</p>
+            <p>
+              はろここトークは、本体5,940円・月額748円（音声あり）で、親子の音声メッセージを使いたいご家庭に向いています。
+              音声が不要であれば月額572円の「音声なし」も選べます。電池は最大3.5週間（バッテリー持ち優先モード）のため、
+              最大2カ月をうたう位置情報専用機種よりも充電の回数は多くなります。
+            </p>
+          </div>
+
+          <h2 className="section-title">はろここトークの概要</h2>
           <p className="text-g600 mb-6">
-            はろここは、大手家電量販店エディオンが提供する子供用GPS端末です。
-            最大の特徴は、家電量販店の店舗で実物を見て購入できることです。
-            ネット通販に不安がある方も、店員に相談しながら安心して選べます。
-            月額528円のシンプルな料金体系と、誰でも簡単に使える操作性により、初めてのGPS端末に適しています。
+            はろここトークは、コクヨの見守りGPSです。従来の「はろここ」の後継機で、公式サイトでは現在この機種が案内されています。
+            「はなす」「きく」「しらせる」の3つのボタンが1つずつの機能に対応しており、子どもが操作を覚えやすい設計です。
+            通信はドコモとソフトバンクの2回線（LTE-M）を使い、電波状況のよいほうに自動で切り替わります。
+            なお、当サイトでは以前このページで提供元をエディオン・月額528円と記載していましたが、公式サイトの記載と異なるため2026年10月26日に訂正しました。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-3">基本スペック</h3>
+              <h3 className="font-bold text-blue mb-3">基本スペック（公式の仕様）</h3>
               <table className="w-full text-sm">
                 <tbody>
                   {[
-                    ['提供元', 'エディオン'],
-                    ['月額料金', '528円（税込）'],
-                    ['本体価格', '5,280円（税込）'],
-                    ['測位方式', 'GPS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '約1〜2カ月'],
-                    ['通信回線', 'SoftBank LTE'],
-                    ['防水', '生活防水（IPX5）'],
-                    ['サイズ', '約50×50×15mm'],
-                    ['重量', '約40g'],
+                    ['提供元', 'コクヨ'],
+                    ['本体価格', '5,940円（税込）'],
+                    ['月額料金', '音声あり748円／音声なし572円（税込・初月無料）'],
+                    ['測位方式', 'GPS・みちびき・BeiDou・Galileo・GLONASS＋A-GPS・Wi-Fi・基地局'],
+                    ['バッテリー', '最大3.5週間（バッテリー持ち優先モード）／最大2.5週間（頻度優先モード）'],
+                    ['通信回線', 'LTE-M（ドコモ・ソフトバンク）'],
+                    ['防水', '生活防水（IP53）'],
+                    ['サイズ', '縦63×横47×奥行23mm'],
+                    ['重量', '約72g'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -82,21 +91,22 @@ export default function HalococoPage() {
                   ))}
                 </tbody>
               </table>
+              <p className="text-xs text-g500 mt-2">出典：<a href="https://hellofamily.kokuyo.co.jp/view/page/hellococotalk" target="_blank" rel="noopener noreferrer" className="underline">はろここトーク 公式サイト</a>（2026年10月26日確認）。電池は平日のみ1日2時間稼働での実測値です。</p>
             </div>
             <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-3">購入のしやすさ</h3>
+              <h3 className="font-bold text-blue mb-3">料金プラン</h3>
               <div className="space-y-3">
                 <div className="bg-orange-light rounded-xl p-4">
-                  <p className="font-bold text-orange">店舗で購入可能</p>
-                  <p className="text-sm text-g600 mt-1">全国のエディオン店舗で、実物を見て購入できます。店員に相談できる点も安心です。</p>
+                  <p className="font-bold text-orange">通常プラン</p>
+                  <p className="text-sm text-g600 mt-1">本体5,940円＋通信費 月額748円（音声あり）または572円（音声なし）。「音声あり／なし」は月1回まで変更できます。</p>
                 </div>
                 <div className="bg-blue-light rounded-xl p-4">
-                  <p className="font-bold text-blue">シンプル操作</p>
-                  <p className="text-sm text-g600 mt-1">アプリのガイドに沿って簡単に設定できます。機械が苦手な方でも安心です。</p>
+                  <p className="font-bold text-blue">通信費セットプラン</p>
+                  <p className="text-sm text-g600 mt-1">11,880円で、本体と契約後11か月分の通信費（音声あり）がセットになります。12か月目以降は通常プラン（音声あり）で自動更新されます。</p>
                 </div>
                 <div className="bg-green-light rounded-xl p-4">
-                  <p className="font-bold text-green-dark">手頃な価格</p>
-                  <p className="text-sm text-g600 mt-1">本体5,280円と月額528円で、初期費用・維持費ともに手頃です。</p>
+                  <p className="font-bold text-green-dark">解約</p>
+                  <p className="text-sm text-g600 mt-1">通信費は最低1か月分かかり、申込みの翌月2日から解約できます。解約後の再契約と譲渡はできません。</p>
                 </div>
               </div>
             </div>
@@ -106,12 +116,12 @@ export default function HalococoPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '', title: 'リアルタイム位置確認', desc: 'アプリからいつでもお子さまの現在地を地図で確認できます。' },
-              { icon: '', title: '移動履歴', desc: '1日の移動経路を記録します。通学路の確認や行動パターンの把握に役立ちます。' },
-              { icon: '', title: 'エリア通知', desc: '登録エリアへの出入りを自動で通知します。学校への到着をすぐに把握できます。' },
-              { icon: '', title: '店舗サポート', desc: 'エディオン店舗で購入・相談ができます。アフターサポートも受けられます。' },
-              { icon: '', title: '長持ちバッテリー', desc: '最大2カ月持続します。充電の手間が少なく、持たせたままにしておけます。' },
-              { icon: '', title: '生活防水', desc: 'IPX5の防水対応で雨の日も安心して使えます。' },
+              { icon: '', title: '音声メッセージ', desc: '「はなす」ボタンで録音して送信し、保護者からのメッセージは「きく」ボタンで再生します。リアルタイムの通話はできません。' },
+              { icon: '', title: '居場所通知ボタン', desc: '「しらせる」ボタンを押すと、保護者のスマートフォンに居場所がプッシュ通知されます。' },
+              { icon: '', title: '出発・到着の通知', desc: '学校や習い事など登録した場所への出発・到着を、スマートフォンに通知します。' },
+              { icon: '', title: 'みまもりフェンス', desc: 'アプリの地図上で行動範囲を設定し、範囲外に出たときに通知します。' },
+              { icon: '', title: '位置情報リクエスト', desc: 'アプリの「NOWボタン」で、任意のタイミングで位置情報を更新できます（最大1分かかる場合があります）。' },
+              { icon: '', title: '移動履歴', desc: 'その日の移動履歴に加え、過去90日間の履歴を確認できます。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
@@ -126,22 +136,21 @@ export default function HalococoPage() {
             <div className="bg-green-light rounded-xl p-6">
               <h3 className="font-bold text-green-dark mb-3">利点</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・家電量販店で実物を見て購入できる点</li>
-                <li>・月額528円（税込）の料金</li>
-                <li>・本体5,280円の手頃な価格</li>
-                <li>・シンプルな操作で誰でも簡単に設定可能</li>
-                <li>・バッテリーは最大2カ月持続</li>
-                <li>・店舗でのアフターサポート</li>
+                <li>・親子で音声メッセージを送り合える点</li>
+                <li>・音声が不要なら月額572円に下げられる点</li>
+                <li>・ボタンと機能が1対1で、子どもが操作を覚えやすい点</li>
+                <li>・ドコモとソフトバンクの2回線を自動で切り替える点</li>
+                <li>・過去90日間の移動履歴を確認できる点</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">欠点</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・トーク・メッセージ機能は非対応</li>
-                <li>・SOSボタンは非搭載</li>
-                <li>・購入はエディオン系列に限定</li>
-                <li>・他機種と比べて特筆する独自機能が少ない点</li>
-                <li>・知名度が他の人気機種よりやや低い点</li>
+                <li>・電池は最大3.5週間で、最大2カ月の機種より充電の回数が多い点</li>
+                <li>・リアルタイムの音声通話はできない点</li>
+                <li>・防水は生活防水（IP53）にとどまる点</li>
+                <li>・本体は約72gで、位置情報専用の小型機種より重い点</li>
+                <li>・通信契約を解約すると、同じ端末で再契約できない点</li>
               </ul>
             </div>
           </div>
@@ -157,11 +166,11 @@ export default function HalococoPage() {
 
           {/* CTA */}
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-g800 mb-3">はろここが気になる方へ</h2>
-            <p className="text-g600 mb-6 text-sm">お近くのエディオンで実物を確認できます。月額528円で、手軽に見守りを始められます。</p>
+            <h2 className="text-xl font-extrabold text-g800 mb-3">はろここトークが気になる方へ</h2>
+            <p className="text-g600 mb-6 text-sm">トーク機能付きの他機種（BoTトーク・みもりGPSトークなど）と、料金と電池持ちを比べてから選ぶことをおすすめします。</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/" className="btn-primary">他の機種と比較する</Link>
-              <Link href="/review/kids-phone/" className="btn-accent">キッズケータイとの比較を見る</Link>
+              <Link href="/purpose/talk/" className="btn-primary">トーク機能付きの機種を比較する</Link>
+              <Link href="/compare/price/" className="btn-accent">料金比較を見る</Link>
             </div>
           </div>
         </div>

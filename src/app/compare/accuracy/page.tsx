@@ -45,7 +45,7 @@ const accuracyData = [
   { name: 'コネコ', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '3分〜', indoor: '良好' },
   { name: 'ハミック', systems: 'GPS+Wi-Fi', interval: '3分〜', indoor: '普通' },
   { name: 'myFirst Fone', systems: 'GPS+GLONASS+Wi-Fi', interval: '1分〜', indoor: '良好' },
-  { name: 'ハロここ', systems: 'GPS+Wi-Fi+基地局', interval: '3分〜', indoor: '普通' },
+  { name: 'はろここトーク', systems: 'GPS+みちびき+BeiDou+Galileo+GLONASS+Wi-Fi+基地局', interval: '1〜2分／3〜4分（モード別）', indoor: '普通' },
   { name: 'さゆう', systems: 'GPS+GLONASS+Wi-Fi', interval: '2分〜', indoor: '普通' },
 ];
 

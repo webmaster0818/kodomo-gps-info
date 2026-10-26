@@ -33,11 +33,11 @@ const batteryData = [
   { name: 'みもりGPSトーク', battery: '最大2カ月(エコモード・容量2000mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'BoTトーク', battery: '更新3分で約2〜4週間(容量1400mAh)', charge: 'USB Type-C', level: 4 },
   { name: 'コネコ', battery: '最大約1カ月', charge: 'USB Type-C', level: 4 },
-  { name: 'まもサーチ', battery: '最大約1カ月', charge: 'USB Type-C', level: 3 },
+  { name: 'まもサーチ', battery: '最大2か月（電池長持ちモード）', charge: 'USB Type-C', level: 3 },
   { name: 'さゆう', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
-  { name: 'ハロここ', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
+  { name: 'はろここトーク', battery: '最大3.5週間（バッテリー持ち優先モード）', charge: 'USB Type-C', level: 3 },
   { name: 'ソラノメ（販売終了）', battery: '約1週間(容量700mAh)', charge: 'USB Type-C', level: 2 },
-  { name: 'ハミック', battery: '約2〜3日', charge: 'USB Type-C', level: 1 },
+  { name: 'ハミック', battery: '約1.5日（Hamic POCKET L・公式の目安）', charge: 'USB Type-C', level: 1 },
   { name: 'myFirst Fone', battery: '約1〜2日', charge: 'マグネット充電', level: 1 },
 ];
 

@@ -49,7 +49,7 @@ const deviceWaterproof = [
   { name: 'soranome（販売終了）', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
   { name: 'myFirst Fone R2', rating: 'IPX8（水深3mで5分まで）', rain: '◎', sweat: '◎', wash: '○', pool: '△', weight: '約48g' },
   { name: 'coneco（新規販売終了）', rating: 'IPX3相当', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約64g' },
-  { name: 'Hamic POCKET', rating: 'IPX4', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約107g' },
+  { name: 'Hamic POCKET L', rating: 'IP64', rain: '○', sweat: '○', wash: '×', pool: '×', weight: '約151.8g' },
   { name: 'キッズフォン3', rating: 'IPX5/IPX8', rain: '○', sweat: '○', wash: '○', pool: '△', weight: '約115g' },
 ];
 
@@ -149,7 +149,7 @@ export default function WaterproofTestPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-8">※防水等級と重さは各社公式サイトの仕様（2026年10月19日確認。キッズフォン3・Hamic POCKETを除く）にもとづきます。雨・汗・水洗い・プールの可否は、防水等級から当サイトが判断した目安です。</p>
+          <p className="text-xs text-g500 mb-8">※防水等級と重さは各社公式サイトの仕様（2026年10月19日確認。Hamic POCKET L は2026年10月26日確認。キッズフォン3を除く）にもとづきます。雨・汗・水洗い・プールの可否は、防水等級から当サイトが判断した目安です。</p>
 
           <h2 className="section-title">シーン別の安全性ガイド</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-8">

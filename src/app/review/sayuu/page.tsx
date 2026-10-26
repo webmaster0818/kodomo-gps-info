@@ -5,15 +5,15 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'SayuU（サユー）の評判・口コミは？【2026年】トヨタの交通安全GPSの実力・料金を解説',
   description:
-    'トヨタが開発したSayuU（サユー）をレビューします。左右確認検知・走行検知・双方向通話に対応し、月額1,210円、本体16,500円です。交通安全に特化したGPS端末の機能と料金を解説します。',
+    'トヨタが開発したSayuU（サユー）をレビューします。左右確認検知・走行検知・通話・テキストチャットに対応し、現行のSayuU 2は月額1,210円、本体19,800円です（2026年10月26日 公式確認）。交通安全に特化したGPS端末の機能と料金を解説します。',
 };
 
 const faqData = [
   { q: 'SayuU（サユー）の左右確認検知とは？', a: '横断歩道などで、お子さまが左右を確認したかどうかをセンサーで検知する機能です。左右を確認せずに道路を渡ろうとした場合は、音声で注意を促します。トヨタの自動車安全技術を応用した独自の機能です。' },
   { q: '走行検知とはどのような機能ですか？', a: 'お子さまが車やバイクに乗って移動していることを検知する機能です。通常の徒歩の速度を超える移動を検知した場合、保護者に通知が送られます。交通事故や不審な車両への乗車を早期に発見できます。' },
   { q: '通話機能はどう使いますか？', a: '保護者のスマートフォンアプリから、GPS端末に電話をかけることができます。また、お子さまもGPS端末のボタンを押して保護者に発信できます。双方向の通話に対応しています。' },
-  { q: '月額料金と本体価格はいくらですか？', a: '月額料金は1,210円（税込）、本体価格は16,500円（税込）です。他機種と比べて高めですが、通話機能・交通安全機能を含んだ料金です。' },
-  { q: 'バッテリーはどれくらい持ちますか？', a: '最大約3日間です。通話機能や各種センサーを搭載しているため、バッテリーの消費が多くなっています。毎日の充電が必要です。' },
+  { q: '月額料金と本体価格はいくらですか？', a: '現行のSayuU 2は、月額料金1,210円（税込）、本体価格19,800円（税込）です（2026年10月26日 公式確認）。旧モデルのSayuU 1は、2026年10月20日付の公式のお知らせで販売終了となっています。' },
+  { q: 'バッテリーはどれくらい持ちますか？', a: '公式の仕様には、電池の持続時間の記載がありません（電池容量は1,440mAh）。公式サイトでは、SayuU 2は充電容量を改良したモデルと案内されています。位置情報は1分に1回自動で更新されるため、位置情報専用の機種より充電の頻度は多くなる可能性があります。' },
   { q: 'トヨタが開発しているのはなぜですか？', a: 'トヨタは「交通事故ゼロ」をビジョンに掲げており、自動車の安全技術にとどまらず、歩行者の安全も守ることを目的に開発されました。自動運転技術で培ったセンサー技術やAI技術を活用しています。' },
 ];
 
@@ -31,7 +31,7 @@ export default function SayuuPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）レビュー", "datePublished": "2026-03-15", "dateModified": "2026-07-17", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-26", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'SayuU（サユー）' }]} />
 
       <section className="bg-orange-light py-12">
@@ -55,11 +55,11 @@ export default function SayuuPage() {
             <h2 className="font-extrabold text-g800 mb-2">交通安全機能を最も重視する場合はSayuUが適しています。左右確認検知・走行検知と双方向通話を求めるご家庭向けです（料金は高めです）</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：他機種にない<strong>左右確認検知・走行検知</strong>の交通安全機能を備え、<strong>双方向通話</strong>にも対応しています。トヨタが提供する製品です。</li>
-              <li>・<strong>弱み</strong>：月額<strong>1,210円</strong>と他機種の約2倍で、本体も<strong>16,500円</strong>と高額です。バッテリーは<strong>最大約3日</strong>のため毎日の充電が必要で、テキストのトーク機能はありません。</li>
-              <li>・<strong>料金</strong>：月額1,210円（税込）と本体16,500円（税込）です。</li>
+              <li>・<strong>弱み</strong>：月額<strong>1,210円</strong>と他機種の約2倍で、本体も<strong>19,800円</strong>（SayuU 2）と高額です。電池の持続時間は公式の仕様に記載がありません。</li>
+              <li>・<strong>料金</strong>：月額1,210円（税込）と本体19,800円（税込・SayuU 2）です。旧モデルのSayuU 1は2026年10月20日に販売終了しています。</li>
               <li>・<strong>適したご家庭</strong>：交通安全の習慣づけを重視するご家庭、通話も使いたいご家庭です。<strong>適さないご家庭</strong>：料金と電池持ちを重視するご家庭、位置確認のみで足りるご家庭です。</li>
             </ul>
-            <p className="text-xs text-g500 mt-3">出典：トヨタ（SayuU）公式の製品ページ・仕様。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-orange underline">他機種との比較ランキングはこちら</Link></p>
+            <p className="text-xs text-g500 mt-3">出典：トヨタ（SayuU）公式の製品ページ・仕様・お知らせ（2026年10月26日確認）。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-orange underline">他機種との比較ランキングはこちら</Link></p>
           </div>
 
           <h2 className="section-title">SayuU（サユー）とは</h2>
@@ -78,13 +78,13 @@ export default function SayuuPage() {
                   {[
                     ['提供元', 'トヨタ自動車'],
                     ['月額料金', '1,210円（税込）'],
-                    ['本体価格', '16,500円（税込）'],
-                    ['測位方式', 'GPS+みちびき+GLONASS'],
-                    ['バッテリー', '最大約3日間'],
-                    ['通話', '双方向通話対応'],
+                    ['本体価格', '19,800円（税込・SayuU 2）'],
+                    ['測位方式', 'GNSS（みちびき含む）+A-GPS+Wi-Fi+携帯基地局'],
+                    ['バッテリー', '持続時間は公式に記載なし（容量1,440mAh）'],
+                    ['通話・メッセージ', '通話・テキストチャット・ボイスメッセージ'],
                     ['特殊機能', '左右確認検知・走行検知'],
-                    ['通信回線', 'LTE'],
-                    ['防水', '生活防水（IPX5）'],
+                    ['通信回線', 'LTE（ドコモLTEエリア）'],
+                    ['防水', 'IP68（生活防水）'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -165,10 +165,9 @@ export default function SayuuPage() {
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額1,210円と他機種の約2倍</li>
-                <li>・本体価格が16,500円と高額</li>
-                <li>・バッテリーは最大3日間で、毎日の充電が必要</li>
-                <li>・トーク（テキスト）機能は非搭載</li>
-                <li>・高い初期コスト</li>
+                <li>・本体価格が19,800円（SayuU 2）と高額</li>
+                <li>・電池の持続時間が公式に記載されていない</li>
+                                <li>・高い初期コスト</li>
               </ul>
             </div>
           </div>
@@ -188,8 +187,7 @@ export default function SayuuPage() {
               <h3 className="font-bold text-orange-dark mb-2">適さないご家庭</h3>
               <ul className="space-y-1.5 text-sm text-g700">
                 <li>・月額・本体のコストをできるだけ抑えたいご家庭（他機種の約2倍）</li>
-                <li>・充電の手間を減らしたいご家庭（電池持ちは最大約3日）</li>
-                <li>・テキストのトークでお子さまとやりとりしたいご家庭（トーク非対応）</li>
+                <li>・電池の持続時間を確かめてから選びたいご家庭（公式に記載なし）</li>
                 <li>・位置確認のみで足りるご家庭（安全機能が不要な場合）</li>
               </ul>
             </div>

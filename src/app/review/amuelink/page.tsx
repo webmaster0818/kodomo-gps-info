@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'amue link（アミューリンク）の口コミ・評判は？料金・電池持ち・特徴を解説【2026年】',
+  title: 'amue link（アミューリンク）の口コミ・評判は？本体販売終了後の料金・電池持ち・特徴を解説【2026年】',
   description:
-    'ソニーネットワークコミュニケーションズのamue link（アミューリンク）をレビューします。月額748円（税込）・本体5,980円（税込）で、双方向ボイスメッセージに対応した約23.7gの世界最小・最軽量クラスの端末です。電池持ち（最大約5日）や通話の可否まで、公式情報（2026年6月確認）にもとづいて解説します。',
+    'ソニーネットワークコミュニケーションズのamue link（アミューリンク）をレビューします。本体の販売は終了しています（2026年10月26日 公式確認）。月額748円（税込）で、双方向ボイスメッセージに対応した約23.7gの端末です。既にお使いの方向けに、料金・電池持ち・通話の可否を解説します。',
 };
 
 const faqData = [
@@ -40,14 +40,14 @@ export default function AmuelinkPage() {
       <section className="bg-orange-light py-12">
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="tag-pill bg-orange text-white">話せるGPS</span>
+            <span className="tag-pill bg-orange text-white">本体販売終了</span>
             <span className="tag-pill bg-blue text-white">約23.7gの軽さ</span>
             <span className="tag-pill bg-green text-white">2026年6月 確認</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             amue link（アミューリンク）のレビュー
           </h1>
-          <p className="text-g600 text-lg">ソニーネットワークコミュニケーションズ提供 | 月額748円 | 双方向ボイスメッセージ対応</p>
+          <p className="text-g600 text-lg">ソニーネットワークコミュニケーションズ提供 | 本体販売終了 | 月額748円 | 双方向ボイスメッセージ対応</p>
         </div>
       </section>
 
@@ -65,7 +65,7 @@ export default function AmuelinkPage() {
           </div>
 
           <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 mb-6 text-sm text-gray-700">
-            <strong>【重要・2026年8月5日確認】</strong>amue linkは<strong>本体の販売を終了</strong>しています(既存ユーザー向けのサービスは月額748円で継続しています)。以下のレビューは参考情報としてご覧いただき、新規購入の際は他機種をご検討ください。
+            <strong>【重要・2026年10月26日 公式確認】</strong>amue linkは<strong>本体の販売を終了</strong>しています（公式サイト上部に「本体販売終了」と表示。月額利用料748円の案内は継続しており、サービス終了の告知はありません）。以下のレビューは参考情報としてご覧いただき、新規購入の際は他機種をご検討ください。
           </div>
           <h2 className="section-title">amue link（アミューリンク）とは</h2>
           <p className="text-g600 mb-6">

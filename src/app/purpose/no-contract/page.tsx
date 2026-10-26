@@ -37,7 +37,7 @@ const contractData = [
   { name: 'みもりGPSトーク', term: 'なし（1か月単位の自動更新）', fee: 'なし', note: '契約満了日の5日前までにアプリから解約を申請。月の途中の解約に日割りの返金はありません（利用規約）', href: '/review/mimori/' },
   { name: 'coneco（新規販売終了）', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/coneco/' },
   { name: 'myFirst Fone', term: 'SIM契約による', fee: '公式サイトで要確認', note: 'SIMは別契約のため、条件は提供元にてご確認ください', href: '/review/myfirst-fone/' },
-  { name: 'はろここ', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/halococo/' },
+  { name: 'はろここトーク', term: '通信費は最低1か月分（申込みの翌月2日から解約可）', fee: '公式に記載なし', note: '解約後の再契約・譲渡は不可（2026年10月26日 公式確認）', href: '/review/halococo/' },
   { name: 'キッズフォン', term: 'キャリア契約による', fee: 'キャリア契約による', note: 'キャリア契約に準ずる', href: '/review/kids-phone/' },
   { name: 'Hamic', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/hamic/' },
 ];

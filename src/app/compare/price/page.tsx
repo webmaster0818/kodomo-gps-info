@@ -35,11 +35,11 @@ const priceData = [
   { name: 'みもりGPSトーク', monthly: 748, device: 3800, initial: 0, annual: 12776, twoYear: 21752 },
   { name: 'まもサーチ', monthly: 528, device: 5280, initial: 0, annual: 11616, twoYear: 17952 },
   { name: 'コネコ', monthly: 480, device: 19800, initial: 0, annual: 5760, twoYear: 31320 },
-  { name: 'ハミック', monthly: 1100, device: 18700, initial: 0, annual: 13200, twoYear: 45100 },
+  { name: 'ハミック（POCKET L・公式ストア売り切れ）', monthly: 1100, device: 18700, initial: 0, annual: 31900, twoYear: 45100 },
   { name: 'myFirst Fone', monthly: 998, device: 26980, initial: 0, annual: 11976, twoYear: 50932 },
   { name: 'キッズケータイ（docomo）', monthly: 550, device: 14256, initial: 3850, annual: 10450, twoYear: 31356 },
-  { name: 'ハロここ', monthly: 580, device: 4950, initial: 0, annual: 11910, twoYear: 18870 },
-  { name: 'さゆう', monthly: 550, device: 6600, initial: 0, annual: 13200, twoYear: 19800 },
+  { name: 'はろここトーク（音声あり）', monthly: 748, device: 5940, initial: 0, annual: 14916, twoYear: 23892 },
+  { name: 'SayuU 2', monthly: 1210, device: 19800, initial: 0, annual: 34320, twoYear: 48840 },
 ];
 
 export default function PricePage() {
@@ -91,6 +91,7 @@ export default function PricePage() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-g500 mb-8">※ 価格は税込です。はろここトーク・ハミック（Hamic POCKET L）・SayuU 2 は2026年10月26日に各社の公式サイトで確認しました。</p>
 
           <h2 className="section-title">2年間の総コスト（安い順）</h2>
           <div className="space-y-3 mb-8">
