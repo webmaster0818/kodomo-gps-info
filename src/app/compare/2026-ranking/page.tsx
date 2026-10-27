@@ -4,14 +4,14 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { MimoriAffText } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
-  title: '【2026年最新】子供用GPSおすすめランキング11選｜全機種比較',
+  title: '【2026年最新】子供用GPSおすすめランキング10選｜全機種比較',
   description:
-    '2026年最新の子供用GPSおすすめランキング11選です。料金・電池持ち・通知・トークや通話の有無など、各社の公式情報をもとに比較しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
+    '2026年最新の子供用GPSおすすめランキング10選です。料金・電池持ち・通知・トークや通話の有無など、各社の公式情報をもとに比較しています。初期費用・月額・防水・通知機能の比較表、目的別のおすすめ、選び方ガイドも掲載しています。',
   keywords: ['子供GPS', 'おすすめ', 'ランキング', '2026', '比較', '全機種', '最新'],
   openGraph: {
     images: ['/og.png'],
-    title: '【2026年最新】子供用GPSおすすめランキング11選｜全機種比較',
-    description: '2026年最新の子供用GPSおすすめランキング11選です。料金・電池持ち・通知・トークや通話の有無など、各社の公式情報をもとに比較しています。',
+    title: '【2026年最新】子供用GPSおすすめランキング10選｜全機種比較',
+    description: '2026年最新の子供用GPSおすすめランキング10選です。料金・電池持ち・通知・トークや通話の有無など、各社の公式情報をもとに比較しています。',
   },
 };
 
@@ -127,15 +127,6 @@ const rankingData = [
     recommend: 'あんしんウォッチャーを費用を抑えて試したい方',
     review: '/review/anshin-watcher/',
   },
-  {
-    rank: 11, name: 'まもサーチ ミニ', initial: 3980, monthly: 528,
-    battery: '約2週間', waterproof: 'IP55', weight: '約30g', carrier: 'ソフトバンク LTE',
-    notifications: 'エリア通知/SOS/バッテリー低下',
-    merit: '業界最安クラスの初期費用です。約30gと非常に軽量で、試験的な導入に適しています。',
-    demerit: 'バッテリー持ちが短めで、通知機能も限定的です。',
-    recommend: '初期費用を抑えたい方、試験的にGPS端末を導入したい方',
-    review: '/review/mamosearch/',
-  },
 ];
 
 const fullComparisonData = rankingData.map((d) => ({
@@ -154,7 +145,6 @@ const purposeRecommendations = [
     icon: '',
     picks: [
       { name: 'みてねみまもりGPS', reason: '月額528円で、バッテリー持ちが最長クラスです。総合的な費用対効果が最も優れています。' },
-      { name: 'まもサーチ ミニ', reason: '初期費用3,980円の最安エントリーモデルです。' },
       { name: 'まもサーチ', reason: '月額528円で軽量・コンパクトです。長時間停止通知にも対応しています。' },
     ],
   },
@@ -189,7 +179,7 @@ export default function Ranking2026Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング11選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-26", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング10選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -199,7 +189,7 @@ export default function Ranking2026Page() {
             <span className="tag-pill bg-blue text-white">ランキング</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            【2026年最新】子供用GPSおすすめランキング11選
+            【2026年最新】子供用GPSおすすめランキング10選
           </h1>
           <p className="text-g600 text-lg">各社の公式情報をもとに全機種を比較し、お子さまに合った1台を選ぶための情報をまとめています。</p>
         </div>
@@ -228,7 +218,7 @@ export default function Ranking2026Page() {
             ))}
           </div>
 
-          <h2 className="section-title">総合ランキング 1〜11位</h2>
+          <h2 className="section-title">総合ランキング 1〜10位</h2>
           <div className="space-y-6 mb-10">
             {rankingData.map((d) => (
               <div key={d.rank} className={`card-hover p-6 ${d.rank <= 3 ? 'border-l-4 border-orange' : ''}`}>
