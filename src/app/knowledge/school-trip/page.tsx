@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '修学旅行にGPSを持たせるべき？持ち込みルールと活用法',
   description:
-    '修学旅行にGPS端末を持たせるべきかを解説します。学校の持ち込みルールの確認方法、GPS端末と見守りアプリの比較、旅行中の通知設定、海外修学旅行での注意点を紹介します。',
+    '修学旅行にGPSを持たせる場合の結論と準備を解説します。画面のないGPS端末は許可される例がありますが、可否は学校の判断です。2泊3日で電池が持つ機種（公式の公表値）、持ち込みの確認手順、旅行中の設定、海外での注意点をまとめています。',
   keywords: ['修学旅行', 'GPS', '持たせる', '持ち込み', '見守り', '小学生', '中学生'],
   openGraph: {
     images: ['/og.png'],
@@ -20,7 +20,7 @@ const faqData = [
   { q: '修学旅行先でGPSの電波は入りますか？', a: '国内であれば、主要な観光地や宿泊施設では、ほぼ問題なく電波が入ります。ただし、山間部や離島には電波が弱い場所もあります。事前に旅行先の電波状況を確認しておくことをおすすめします。' },
   { q: '旅行中の通知設定はどうすべきですか？', a: '修学旅行中は通常の通学時と異なり行動範囲が広いため、エリア通知（ジオフェンス）の設定は困難です。更新間隔を30分〜1時間に設定し、必要なときにアプリで位置を確認する運用をおすすめします。' },
   { q: '海外修学旅行でもGPSは使えますか？', a: '機種によって異なります。みてねみまもりGPSなど国内専用の端末は、海外では使用できません。海外での利用が必要な場合は、対応機種を選ぶか、渡航先のSIMに対応した端末をご検討ください。' },
-  { q: '修学旅行中、バッテリーは持ちますか？', a: 'ほとんどのGPS端末は、更新間隔を長め（30分〜1時間）に設定すれば、2泊3日程度の修学旅行であればバッテリーが持ちます。念のため、出発前にフル充電し、モバイルバッテリーも持たせることをおすすめします。' },
+  { q: '修学旅行中、バッテリーは持ちますか？', a: '機種のタイプで異なります。位置情報専用の機種は公式の公表値が最大約2カ月（あんしんウォッチャー、みてねみまもりGPS MG05の省エネモード、まもサーチ3の電池長持ちモード）で、2泊3日の修学旅行であれば途中で充電しなくても持つ目安です。一方、通話・ビデオ通話ができるスマートフォン型・ウォッチ型（Hamic POCKET Lは公式で約1.5日、myFirst Foneは約1〜2日）は、2泊3日では途中で充電が必要になる可能性があります。いずれも出発前にフル充電してください。' },
 ];
 
 const faqJsonLd = {
@@ -54,7 +54,7 @@ export default function SchoolTripPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "修学旅行にGPSを持たせるべき？持ち込みルールと活用法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "修学旅行にGPSを持たせるべき？持ち込みルールと活用法", "datePublished": "2026-03-15", "dateModified": "2026-10-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '修学旅行とGPS' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -72,6 +72,48 @@ export default function SchoolTripPage() {
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
+          <div className="rounded-xl border-l-4 border-blue bg-blue-light p-6 mb-10">
+            <p className="font-bold text-g800 mb-2">【結論】修学旅行のGPSは「学校の許可」と「2泊3日で電池が持つか」で決まります</p>
+            <ul className="text-sm text-g700 leading-relaxed space-y-1">
+              <li>・<strong>持ち込みの可否は学校の判断です。</strong>スマートフォンが禁止でも、通話やゲームができない画面のないGPS端末は認められる例がありますが、必ず事前に担任の先生へご確認ください（手順は下記）。</li>
+              <li>・<strong>電池は位置情報専用の機種が安心です。</strong>公式の公表値は最大約2カ月（あんしんウォッチャー、みてねみまもりGPS MG05の省エネモード時など）で、2泊3日なら途中で充電しなくても持つ目安です。通話できるスマートフォン型・ウォッチ型は約1〜2日のため、途中での充電が必要になる可能性があります。</li>
+              <li>・<strong>海外への修学旅行</strong>では、国内専用の機種は使えません。海外で使える機種は<Link href="/knowledge/international/" className="text-blue-600 font-bold underline">海外で使える子供用GPS</Link>で解説しています。</li>
+              <li>・機種ごとの料金・静音性まで含めた比較は<Link href="/compare/school-trip/" className="text-blue-600 font-bold underline">遠足・修学旅行向けGPS比較</Link>にまとめています。このページでは、持ち込みの確認手順と出発前の準備を中心に解説します。</li>
+            </ul>
+          </div>
+
+          <h2 className="section-title">2泊3日の修学旅行で電池が持つか（公式の公表値）</h2>
+          <div className="overflow-x-auto mb-3">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-blue-light">
+                  <th className="p-3 text-left border-b-2 border-blue">機種</th>
+                  <th className="p-3 text-left border-b-2 border-blue">電池持ち（公式の公表値）</th>
+                  <th className="p-3 text-left border-b-2 border-blue">2泊3日の目安</th>
+                </tr>
+              </thead>
+              <tbody className="text-g700">
+                {[
+                  { name: 'あんしんウォッチャー', href: '/review/anshin-watcher/', battery: '最大約2カ月', ok: '途中の充電は不要な目安' },
+                  { name: 'みてねみまもりGPS（MG05）', href: '/review/mitene/', battery: '最大約2カ月（省エネモード時）', ok: '途中の充電は不要な目安' },
+                  { name: 'まもサーチ3', href: '/review/mamosearch/', battery: '最大2か月（電池長持ちモード）／最大6週間（頻度優先モード）', ok: '途中の充電は不要な目安' },
+                  { name: 'BoTトーク', href: '/review/bot-talk/', battery: 'GPSプラン最長1ヶ月以上／GPS＆トークプラン最長2週以上（いずれも電池優先モード）', ok: '途中の充電は不要な目安' },
+                  { name: 'Hamic POCKET L', href: '/review/hamic/', battery: '約1.5日', ok: '途中で充電が必要な可能性' },
+                  { name: 'myFirst Fone', href: '/review/myfirst-fone/', battery: '約1〜2日', ok: '途中で充電が必要な可能性' },
+                ].map((m) => (
+                  <tr key={m.name} className="border-b border-gray-100 align-top">
+                    <td className="p-3 font-bold whitespace-nowrap"><Link href={m.href} className="text-blue underline">{m.name}</Link></td>
+                    <td className="p-3">{m.battery}</td>
+                    <td className="p-3">{m.ok}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-g500 mb-8">
+            ※各社公式サイトの公表値です（当サイトが2026年10月に公式で確認した値。詳細は<Link href="/compare/battery-life/" className="underline">電池持ち比較</Link>）。公表値は更新間隔などの条件によるもので、寒さ・電波の弱い場所・位置確認の回数によって短くなることがあります。当サイトで実機の連続稼働を計測したものではありません。
+          </p>
+
           <h2 className="section-title">修学旅行にGPSを持たせるメリット</h2>
           <p className="text-g600 mb-6">
             修学旅行は子供にとって大きな成長の機会ですが、保護者にとっては数日間離れることへの不安もあります。
@@ -156,7 +198,7 @@ export default function SchoolTripPage() {
             </details>
           ))}
 
-          <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
+          <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年10月27日</p>
 
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">修学旅行に適したGPS端末</h2>
