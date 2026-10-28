@@ -53,7 +53,7 @@ const disabilityTypes = [
     icon: '',
     risks: ['車椅子からの転落時', '介助者との連携', '緊急時の自力避難が困難'],
     gpsPoints: ['SOSボタン付きを推奨', '車椅子への固定方法を確認', '通話機能付きも検討', '介助者とのアプリ共有'],
-    recommended: 'BoTトーク（SOSボタン+トーク機能付き）',
+    recommended: 'myFirst Fone（SOSボタン・通話機能付き）',
   },
 ];
 
