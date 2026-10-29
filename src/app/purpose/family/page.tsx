@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const faqData = [
   { q: '兄弟2人で子供GPSを使う場合、どれがお得ですか？', a: 'あんしんウォッチャーは2台目の月額料金が無料になるため、兄弟での利用において特に費用面のメリットがあります。端末代は2台分必要ですが、毎月の利用料金が1台分で済む点が大きな利点です。' },
-  { q: '家族みんなで位置情報を見るには？', a: 'ほとんどの子供GPSは、保護者のアプリに複数人を招待できます。BoTトークのように見守り人数に制限がない機種や、まもサーチのように最大25人まで追加できる機種は、祖父母や親戚まで共有したいご家庭に向いています。' },
+  { q: '家族みんなで位置情報を見るには？', a: 'ほとんどの子供GPSは、保護者のアプリに複数人を招待できます。BoTトークのように見守り人数に制限がない機種や、まもサーチのように保護者5人まで（メイン1人＋サブ4人）共有できる機種は、両親と祖父母で共有したいご家庭に向いています。' },
   { q: '1台のGPSを兄弟で使い回してもいい？', a: '技術的には、ランドセルに入れ替えることで使い回すことは可能です。ただし、どちらが持っているかを毎回変更するのは現実的ではありません。ごきょうだいそれぞれに別の端末を持たせたほうが、位置情報の取り違えを防げます。' },
   { q: '親子で別のスマートフォンから見られますか？', a: '共働きのご家庭では、父親と母親それぞれのスマートフォンに同じアプリをインストールし、同じアカウントで閲覧する方法、または見守りメンバーとして招待する方法で共有できます。詳しくは、機種ごとのアプリの仕様をご確認ください。' },
   { q: '双子でも同じ機種で大丈夫？', a: '同じ機種を2台購入すれば、アプリ内で別の端末として識別されます。ごきょうだいの端末を1つのアプリでまとめて確認できるため、通知の設定も個別に管理できます。' },
@@ -67,7 +67,7 @@ export default function FamilyPage() {
               <h3 className="font-bold text-blue mb-3">見守り人数が多い機種</h3>
               <ul className="space-y-2 text-sm text-g700">
                 <li>・<Link href="/review/bot-talk/" className="text-blue hover:underline">BoTトーク</Link>：見守り人数に制限なし</li>
-                <li>・<Link href="/review/mamosearch/" className="text-blue hover:underline">まもサーチ</Link>：最大25人まで追加可能</li>
+                <li>・<Link href="/review/mamosearch/" className="text-blue hover:underline">まもサーチ</Link>：保護者5人まで共有可能（メイン1人＋サブ4人）</li>
                 <li>・祖父母や親戚とも位置情報を共有しやすい点</li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ export default function FamilyPage() {
                   <tr className="border-b border-g100">
                     <td className="p-3 font-semibold"><Link href="/review/mamosearch/" className="text-blue hover:underline">まもサーチ</Link></td>
                     <td className="p-3 text-g600">2台目も通常料金</td>
-                    <td className="p-3 text-g600">最大25人まで見守りメンバーに追加可能</td>
+                    <td className="p-3 text-g600">保護者は最大5人（メイン1人＋サブ4人）</td>
                   </tr>
                 </tbody>
               </table>

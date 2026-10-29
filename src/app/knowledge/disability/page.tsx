@@ -77,7 +77,7 @@ export default function DisabilityPage() {
             <div className="card-hover p-5">
               <p className="text-2xl mb-2"></p>
               <h3 className="font-bold text-g800 mb-1">複数人見守り</h3>
-              <p className="text-sm text-g600">BoTトーク（無制限）・まもサーチ（25人）など、支援者と情報を共有しやすい機種が役立ちます。</p>
+              <p className="text-sm text-g600">BoTトーク（無制限）・まもサーチ（保護者5人まで）など、支援者と情報を共有しやすい機種が役立ちます。</p>
             </div>
           </div>
 

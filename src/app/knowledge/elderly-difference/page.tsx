@@ -59,7 +59,7 @@ export default function ElderlyDifferencePage() {
             </p>
             <ul className="space-y-2 text-g600">
               <li>✓ あんしんウォッチャー：2台目の月額料金が無料のため、家族の複数人で利用しやすい機種です</li>
-              <li>✓ まもサーチ：見守り人数は最大25人で、家族全員で情報を共有できます</li>
+              <li>✓ まもサーチ：1台につき保護者5人まで、位置情報を共有できます</li>
               <li>✓ BoTトーク：見守り人数に制限がなく、多世代で利用できます</li>
             </ul>
           </div>
