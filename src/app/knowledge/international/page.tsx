@@ -35,11 +35,11 @@ const faqJsonLd = {
 };
 
 const deviceData = [
-  { name: 'BoT（BoTトーク含む）', overseas: '不可', reason: '日本国内のLTE網を利用しているため、端末を海外で利用できない。子どもが国内・保護者が海外の場合はアプリで確認可', src: 'BoT公式ヘルプ（2026-02-17更新）', url: 'https://support.bot.app/hc/ja/articles/13238381889561' },
-  { name: 'みてねみまもりGPS', overseas: '不可', reason: '日本国内のLTE通信網（LTE Cat.M1）を使うため、海外に持ち出すと位置情報を送れない。見守る側のアプリは海外でも利用可', src: 'みてねみまもりGPS公式ヘルプ（2025-11-19更新）', url: 'https://help.gps.mitene.us/hc/ja/articles/900005418863' },
-  { name: 'あんしんウォッチャー（au）', overseas: '不可', reason: '「本製品は海外ではご利用いただけません」と明記', src: 'au公式 製品ページ', url: 'https://www.au.com/life/auhome/device/uha01a/' },
-  { name: 'soranome（販売終了）', overseas: '不可', reason: '「国内でのご利用を前提としています。国外にもちだしての利用はできません」と明記', src: 'soranome公式サイト', url: 'https://soranome.net/' },
-  { name: 'まもサーチ', overseas: '公式に明記なし', reason: '公式には「ソフトバンクLTEのエリア内でご利用いただけます」とあり、海外利用の可否を直接示すFAQは確認できず', src: 'まもサーチ公式サイト', url: 'https://mamosearch.jp/' },
+  { name: 'BoT（BoTトーク含む）', review: '/review/bot-talk/', overseas: '不可', reason: '日本国内のLTE網を利用しているため、端末を海外で利用できない。子どもが国内・保護者が海外の場合はアプリで確認可', src: 'BoT公式ヘルプ（2026-02-17更新）', url: 'https://support.bot.app/hc/ja/articles/13238381889561' },
+  { name: 'みてねみまもりGPS', review: '/review/mitene/', overseas: '不可', reason: '日本国内のLTE通信網（LTE Cat.M1）を使うため、海外に持ち出すと位置情報を送れない。見守る側のアプリは海外でも利用可', src: 'みてねみまもりGPS公式ヘルプ（2025-11-19更新）', url: 'https://help.gps.mitene.us/hc/ja/articles/900005418863' },
+  { name: 'あんしんウォッチャー（au）', review: '/review/anshin-watcher/', overseas: '不可', reason: '「本製品は海外ではご利用いただけません」と明記', src: 'au公式 製品ページ', url: 'https://www.au.com/life/auhome/device/uha01a/' },
+  { name: 'soranome（販売終了）', review: '/review/soranome/', overseas: '不可', reason: '「国内でのご利用を前提としています。国外にもちだしての利用はできません」と明記', src: 'soranome公式サイト', url: 'https://soranome.net/' },
+  { name: 'まもサーチ', review: '/review/mamosearch/', overseas: '公式に明記なし', reason: '公式には「ソフトバンクLTEのエリア内でご利用いただけます」とあり、海外利用の可否を直接示すFAQは確認できず', src: 'まもサーチ公式サイト', url: 'https://mamosearch.jp/' },
 ];
 
 const whyNotWork = [
@@ -61,7 +61,7 @@ export default function InternationalPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSは海外で使える？BoT・みてね等5機種の公式回答と旅行中の代わりの方法", "datePublished": "2026-03-15", "dateModified": "2026-10-18", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供用GPSは海外で使える？BoT・みてね等5機種の公式回答と旅行中の代わりの方法", "datePublished": "2026-03-15", "dateModified": "2026-10-30", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '海外での利用' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -97,7 +97,7 @@ export default function InternationalPage() {
               <tbody>
                 {deviceData.map((d) => (
                   <tr key={d.name} className="border-b border-g100">
-                    <td className="py-3 px-3 font-semibold text-g700">{d.name}</td>
+                    <td className="py-3 px-3 font-semibold text-g700"><Link href={d.review} className="text-blue underline">{d.name}</Link></td>
                     <td className={`py-3 px-3 text-center font-bold ${d.overseas === '不可' ? 'text-orange' : 'text-blue'}`}>{d.overseas}</td>
                     <td className="py-3 px-3 text-g600">{d.reason}</td>
                     <td className="py-3 px-3 text-g600"><a href={d.url} target="_blank" rel="noopener noreferrer" className="underline">{d.src}</a></td>
@@ -106,7 +106,8 @@ export default function InternationalPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g400 -mt-6 mb-8">追加料金で海外利用できるオプションは、5機種とも公式サイトで確認できませんでした。まもサーチは海外利用を直接示す記載が無いため「公式に明記なし」としています。</p>
+          <p className="text-xs text-g400 -mt-6 mb-4">追加料金で海外利用できるオプションは、5機種とも公式サイトで確認できませんでした。まもサーチは海外利用を直接示す記載が無いため「公式に明記なし」としています。</p>
+          <p className="text-sm text-g600 mb-8">本ページは5機種の海外利用の可否を横並びで比較しています。料金・電池・機能など機種ごとの詳細は、表の機種名から各レビューをご覧ください（BoTトークは<Link href="/review/bot-talk/" className="text-blue underline">BoTトークの評判・口コミ</Link>、みてねみまもりGPSは<Link href="/review/mitene/" className="text-blue underline">みてねみまもりGPSの機種比較レビュー</Link>）。</p>
 
           <div className="bg-orange-light rounded-xl p-5 mb-8">
             <h3 className="font-bold text-g800 mb-2">保護者が海外・子どもが日本にいる場合は見守れます</h3>
