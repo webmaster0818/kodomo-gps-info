@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: '子供GPS 月額料金比較一覧 | 全13機種の費用を比較',
+  title: '子供GPS 月額料金比較一覧 | 全11機種の費用を比較',
   description:
-    '子供用GPS端末13機種の月額料金・本体価格・初期費用・年間コストを一覧で比較します。2年間の総コストを安い順に掲載し、費用面で最も有利なGPS端末をお示しします。',
+    '子供用GPS端末11機種の月額料金・本体価格・初期費用・年間コストを一覧で比較します。2年間の総コストを安い順に掲載し、費用面で最も有利なGPS端末をお示しします。',
 };
 
 const faqData = [
@@ -34,7 +34,6 @@ const priceData = [
   { name: 'ソラノメ（販売終了）', monthly: 539, device: 14520, initial: 3300, annual: 10068, twoYear: 30756 },
   { name: 'みもりGPSトーク', monthly: 748, device: 3800, initial: 0, annual: 12776, twoYear: 21752 },
   { name: 'まもサーチ', monthly: 528, device: 5280, initial: 0, annual: 11616, twoYear: 17952 },
-  { name: 'コネコ', monthly: 480, device: 19800, initial: 0, annual: 5760, twoYear: 31320 },
   { name: 'ハミック（POCKET L・公式ストア売り切れ）', monthly: 1100, device: 18700, initial: 0, annual: 31900, twoYear: 45100 },
   { name: 'myFirst Fone', monthly: 998, device: 26980, initial: 0, annual: 11976, twoYear: 50932 },
   { name: 'キッズケータイ（docomo）', monthly: 550, device: 14256, initial: 3850, annual: 10450, twoYear: 31356 },
@@ -55,18 +54,18 @@ export default function PricePage() {
         <div className="mx-auto max-w-4xl px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-blue text-white">料金比較</span>
-            <span className="tag-pill bg-orange text-white">全13機種</span>
+            <span className="tag-pill bg-orange text-white">全11機種</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             子供GPSの月額料金比較一覧
           </h1>
-          <p className="text-g600 text-lg">全13機種の料金・本体価格・総コストを一覧で比較します。</p>
+          <p className="text-g600 text-lg">全11機種の料金・本体価格・総コストを一覧で比較します。</p>
         </div>
       </section>
 
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="section-title">全13機種の料金比較表</h2>
+          <h2 className="section-title">全11機種の料金比較表</h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>

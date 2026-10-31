@@ -42,7 +42,7 @@ const accuracyData = [
   { name: 'ソラノメ（販売終了）', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '1.5分〜', indoor: '良好' },
   { name: 'みもりGPSトーク', systems: 'GPS+みちびき+GLONASS+BeiDou+Galileo+Wi-Fi+基地局', interval: '1.5分〜（7:00〜8:30は1分）', indoor: '良好' },
   { name: 'まもサーチ', systems: 'GPS+Wi-Fi+基地局', interval: '2分〜', indoor: '普通' },
-  { name: 'コネコ', systems: 'GPS+GLONASS+みちびき+Wi-Fi', interval: '3分〜', indoor: '良好' },
+  { name: 'コネコ（新規販売終了）', systems: 'GPS+GLONASS+Galileo（取得できない場合は基地局で大まかな位置）', interval: '1分〜（1・3・5・10分から選択）', indoor: '基地局で大まかな位置' },
   { name: 'ハミック', systems: 'GPS+Wi-Fi', interval: '3分〜', indoor: '普通' },
   { name: 'myFirst Fone', systems: 'GPS+GLONASS+Wi-Fi', interval: '1分〜', indoor: '良好' },
   { name: 'はろここトーク', systems: 'GPS+みちびき+BeiDou+Galileo+GLONASS+Wi-Fi+基地局', interval: '1〜2分／3〜4分（モード別）', indoor: '普通' },

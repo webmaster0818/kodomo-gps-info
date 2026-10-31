@@ -5,17 +5,17 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'coneco（コネコ）の評判・口コミは？新規販売終了【2026年10月】仕様と代わりの機種',
   description:
-    'coneco（カーメイト）は本体の新規販売を終了しています（公式サイト・2026年10月19日確認）。ご利用中の方向けに公式仕様をまとめ、1分間隔のリアルタイム追跡と、車載機器メーカーの高精度な測位技術が特長です。位置情報の更新頻度を重視する方に適した機種です。',
+    'coneco（カーメイト）は本体の新規販売を終了しています（公式サイト・2026年10月31日確認）。ご利用中の方向けに公式仕様をまとめ、1分間隔のリアルタイム追跡と、車載機器メーカーの高精度な測位技術が特長です。位置情報の更新頻度を重視する方に適した機種です。',
 };
 
 const faqData = [
   { q: 'conecoは今も購入できますか？', a: 'いいえ。カーメイト公式サイトで「coneco本体の新規販売は終了いたしました」と案内されています（終了日の記載はありません。2026年10月19日確認）。ご利用中の方へのサービスは継続すると案内されています。これから購入する場合は、BoTトーク・みてねみまもりGPS・まもサーチ3など販売中の機種をご検討ください。' },
   { q: 'conecoの位置更新頻度はどのくらいですか？', a: '最短1分間隔でリアルタイム追跡が可能です。他の多くのGPS端末が3〜5分間隔である中、業界トップクラスの更新頻度です。' },
-  { q: 'conecoの月額料金はいくらですか？', a: '月額480円（税込）です。本体価格は別途必要ですが、月額料金は業界でも低価格帯に位置しています。' },
+  { q: 'conecoの月額料金はいくらですか？', a: '月額480円（税込・coneco端末1台あたり）です。利用開始月の利用料金は発生しません（coneco利用規約の料金表・2026年10月31日確認）。支払いはクレジットカードのみで、最低利用期間はありません。' },
   { q: 'カーメイトはどのような会社ですか？', a: 'カーメイトは車載用品メーカーとして50年以上の歴史を持つ東証上場企業です。GPS測位やセンサー技術のノウハウを活かした高精度な位置情報端末を開発しています。' },
   { q: 'バッテリーはどのくらい持ちますか？', a: '公式サイトでは、1日4時間の移動と4回のメッセージを想定して「約4日程度」と案内されています（620mAh、2026年10月19日確認）。更新頻度とバッテリー持ちのバランスを調整できます。' },
   { q: '防水性能はありますか？', a: '公式仕様は「IPX3相当（生活防水）」です。多少の雨であれば問題ありませんが、水没には対応していません。' },
-  { q: 'エリア通知機能はありますか？', a: 'はい。登録したエリアへの出入りを自動で通知します。学校や塾への到着・出発の確認に役立ちます。' },
+  { q: 'エリア通知機能はありますか？', a: 'はい。登録したエリアへの出入りを自動で通知します（エリアは5か所まで・アプリを起動していなくても通知を受信できます。公式サイト・2026年10月31日確認）。学校や塾への到着・出発の確認に役立ちます。' },
 ];
 
 const faqJsonLd = {
@@ -55,7 +55,7 @@ export default function ConecoPage() {
           <div className="rounded-2xl border-l-4 border-orange bg-orange-light/40 p-6 mb-8">
             <h2 className="font-extrabold text-g800 mb-2">conecoは本体の新規販売を終了しています</h2>
             <p className="text-sm text-g700">カーメイト公式サイトで「coneco本体の新規販売は終了いたしました」と案内されています（終了日の記載なし）。ご利用中の方へのサービスは継続されます。これから購入する場合は、<Link href="/review/bot-talk/" className="text-blue underline">BoTトーク</Link>・<Link href="/review/mitene/" className="text-blue underline">みてねみまもりGPS</Link>・<Link href="/review/mamosearch/" className="text-blue underline">まもサーチ3</Link>などの販売中の機種をご検討ください。</p>
-            <p className="text-xs text-g500 mt-2">出典：<a href="https://www.carmate.jp/coneco/" target="_blank" rel="noopener noreferrer" className="text-blue underline">coneco公式（カーメイト）</a>（2026年10月19日確認）</p>
+            <p className="text-xs text-g500 mt-2">出典：<a href="https://www.carmate.jp/coneco/" target="_blank" rel="noopener noreferrer" className="text-blue underline">coneco公式（カーメイト）</a>・<a href="https://consumer-guide.coneco.carmate.jp/terms.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">coneco利用規約（料金表）</a>（2026年10月31日確認）</p>
           </div>
 
           <h2 className="section-title">conecoとは</h2>
@@ -74,9 +74,9 @@ export default function ConecoPage() {
                   {[
                     ['提供元', 'カーメイト'],
                     ['月額料金', '480円（税込）'],
-                    ['本体価格', '新規販売終了（販売時は6,600円・税込）'],
-                    ['測位方式', 'GPS+GLONASS+みちびき+Wi-Fi'],
-                    ['更新間隔', '最短1分間隔'],
+                    ['本体価格', '新規販売終了（カーメイト公式オンラインストアも「ただいまご注文いただけません」・2026年10月31日確認）'],
+                    ['測位方式', 'GPS・GLONASS・Galileo（取得できない場合は基地局で大まかな位置を表示）'],
+                    ['更新間隔', '1分・3分・5分・10分から選択（履歴は1年前まで）'],
                     ['バッテリー', '約4日程度（620mAh・1日4時間移動／メッセージ4回の想定）'],
                     ['通信回線', 'LTE-M'],
                     ['防水', 'IPX3相当（生活防水）'],
@@ -131,7 +131,7 @@ export default function ConecoPage() {
               <ul className="space-y-2 text-sm text-g700">
                 <li>・1分間隔の業界最速のリアルタイム追跡</li>
                 <li>・車載機器メーカーの高い測位精度</li>
-                <li>・月額480円の低価格</li>
+                <li>・月額480円（税込・利用規約の料金表）</li>
                                 <li>・更新頻度を柔軟に変更できます</li>
                 <li>・東証上場企業が提供</li>
               </ul>
