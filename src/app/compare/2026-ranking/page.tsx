@@ -105,7 +105,7 @@ const rankingData = [
     battery: '最大2ヶ月（エコモード）', waterproof: 'IPX5', weight: '約62g', carrier: 'ドコモ LTE-M',
     notifications: 'エリア通知/活動範囲外/危険な場所/不審者情報/通知ボタン',
     merit: '親子で音声メッセージを送り合えるトーク機能（回数制限なし）と、日本不審者情報センターと連携した不審者情報の通知を備えています。',
-    demerit: '月額748円で、月額528円の機種より高くなります。本体3,800円はキャンペーン価格（2026年10月23日確認）で、通常価格は公式に記載がありません。',
+    demerit: '月額748円で、月額528円の機種より高くなります。本体3,800円はキャンペーン価格（2026年11月2日確認・公式の表示は「11月末まで・在庫限り」）で、通常価格は公式に記載がありません。',
     recommend: '親子の音声のやりとりと、不審者情報の通知を重視する方',
     review: '/review/mimori/',
   },
@@ -179,7 +179,7 @@ export default function Ranking2026Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング10選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-10-27", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "【2026年最新】子供用GPSおすすめランキング10選｜全機種比較", "datePublished": "2026-03-15", "dateModified": "2026-11-02", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '2026年おすすめランキング' }]} />
 
       <section className="bg-[#F4F7FA] py-12">

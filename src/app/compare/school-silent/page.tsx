@@ -34,7 +34,7 @@ export default function SchoolSilentComparePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '学校に持たせやすい完全静音GPS比較', datePublished: '2026-06-23', dateModified: '2026-10-27', author: { '@type': 'Person', name: '子供見守りGPS最新情報 編集部' }, publisher: { '@type': 'Organization', name: '子供見守りGPS最新情報' } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Article', headline: '学校に持たせやすい完全静音GPS比較', datePublished: '2026-06-23', dateModified: '2026-11-02', author: { '@type': 'Person', name: '子供見守りGPS最新情報 編集部' }, publisher: { '@type': 'Organization', name: '子供見守りGPS最新情報' } }) }} />
       <Breadcrumb items={[{ name: '比較', href: '/compare/' }, { name: '学校向け静音GPS比較' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -116,7 +116,7 @@ export default function SchoolSilentComparePage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-g500 mt-3">※2026年10月27日に公式サイトで確認しました。本体3,800円は公式サイトのキャンペーン価格（「10月末まで・在庫限り」と表示）で、通常価格は公式サイトに記載がありません。3年総額は本体＋月額×36カ月の目安で、キャンペーン終了後は変わる可能性があります。電池は公式表記で「1度の充電で最大2ヶ月」（測位モードや利用環境により異なる）です。</p>
+            <p className="text-xs text-g500 mt-3">※2026年10月27日に公式サイトで確認しました。本体3,800円は公式サイトのキャンペーン価格（2026年11月2日の確認では「11月末まで・在庫限り」と表示）で、通常価格は公式サイトに記載がありません。3年総額は本体＋月額×36カ月の目安で、キャンペーン終了後は変わる可能性があります。電池は公式表記で「1度の充電で最大2ヶ月」（測位モードや利用環境により異なる）です。</p>
             <p className="text-sm text-g600 mt-3">トーク機能がある分、月額は位置情報専用のみてねみまもりGPS（528円）より220円高くなります。学校が「トーク機能付きの端末は不可」としている場合は、学校モードがあっても持ち込めない可能性があるため、事前にご確認ください。詳しい口コミ・料金は<Link href="/review/mimori/" className="text-blue underline">みもりGPSトークの口コミ・評判</Link>で解説しています。</p>
             <div className="text-center mt-4"><MimoriAffText /></div>
           </div>
