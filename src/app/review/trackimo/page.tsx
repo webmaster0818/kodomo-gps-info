@@ -38,7 +38,7 @@ export default function TrackimoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "トラッキモGPS（Trackimo）のレビュー｜料金・電池持ち・防水・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-11-03", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "トラッキモGPS（Trackimo）のレビュー｜料金・電池持ち・防水・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-11-03", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "トラッキモGPS（Trackimo）", "brand": {"@type": "Brand", "name": "Trackimo"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'トラッキモGPS（Trackimo）' }]} />
 

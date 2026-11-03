@@ -83,7 +83,7 @@ export default function SummerVacationPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "夏休み・帰省の子供見守りGPS比較｜旅行・留守番・祖父母宅で使うなら", "datePublished": "2026-07-04", "dateModified": "2026-07-04", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "夏休み・帰省の子供見守りGPS比較｜旅行・留守番・祖父母宅で使うなら", "datePublished": "2026-07-04", "dateModified": "2026-07-04", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: '用途別比較', href: '/compare/' }, { name: '夏休み・帰省' }]} />
 
       <section className="bg-[#F4F7FA] py-12">

@@ -57,7 +57,7 @@ export default function SummerSafetyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "夏休みの子供見守りGPS活用ガイド｜夏祭り・帰省・水辺の迷子&事故対策", "datePublished": "2026-06-14", "dateModified": "2026-06-14", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "夏休みの子供見守りGPS活用ガイド｜夏祭り・帰省・水辺の迷子&事故対策", "datePublished": "2026-06-14", "dateModified": "2026-06-14", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '夏休みの見守り' }]} />
 
       <section className="bg-orange-light py-12">

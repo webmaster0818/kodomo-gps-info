@@ -42,7 +42,7 @@ export default function AnshinWatcherPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの寿命と買い替えの目安｜電池交換不可・保証1年・充電できない時の対処", "datePublished": "2026-03-15", "dateModified": "2026-10-30", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの寿命と買い替えの目安｜電池交換不可・保証1年・充電できない時の対処", "datePublished": "2026-03-15", "dateModified": "2026-10-30", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'あんしんウォッチャー' }]} />
 
       <section className="bg-orange-light py-12">

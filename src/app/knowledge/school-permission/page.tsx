@@ -61,7 +61,7 @@ export default function SchoolPermissionPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPSの学校持ち込み許可の取り方｜申請理由の例文と自治体の補助制度一覧", "datePublished": "2026-06-12", "dateModified": "2026-06-12", "author": {"@type": "Person", "name": "子供見守りGPS最新情報 編集部"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "GPSの学校持ち込み許可の取り方｜申請理由の例文と自治体の補助制度一覧", "datePublished": "2026-06-12", "dateModified": "2026-06-12", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '学校許可の取り方' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
