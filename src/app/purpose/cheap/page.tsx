@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MiteneAffText } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -132,6 +133,7 @@ export default function CheapPage() {
                     <Link href={item.href} className="text-blue hover:underline">{item.name}</Link>
                   </h3>
                   <p className="text-sm text-g600">{item.reason}</p>
+                  {item.name === 'みてねみまもりGPS' && <div className="mt-3 text-sm"><MiteneAffText /></div>}
                 </div>
               </div>
             ))}

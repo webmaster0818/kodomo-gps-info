@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MiteneAffText, MiteneAffBanner, MiteneAffBannerSlim } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function MitenePage() {
             </ul>
             <p className="text-xs text-g500 mt-3">出典：みてねみまもりGPS公式（製品・料金ページ）。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
           </div>
+          <MiteneAffBannerSlim className="mt-4 mb-2" />
 
           <h2 className="section-title">みてねみまもりGPSとは</h2>
           <p className="text-g600 mb-6">
@@ -141,6 +143,10 @@ export default function MitenePage() {
               <li>・<strong>防犯ブザーも1台にまとめたい</strong> → トークPlus（MB06）が適しています。ただし、89gとやや重く、電池は約3週間と短めです。また、学校では音や画面が友人の関心を引く可能性があります。</li>
             </ul>
             <p className="text-xs text-g400 mt-3">全機種ともL1/L5デュアルバンドGNSS+Wi-Fi+基地局測位に対応しています。見守る大人の人数に制限はありません。出典: みてねみまもりGPS公式(family-album.com)2026年6月14日確認</p>
+          </div>
+
+          <div className="text-center mb-10">
+            <MiteneAffText />
           </div>
 
           {/* Features */}
@@ -245,6 +251,8 @@ export default function MitenePage() {
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">みてねみまもりGPSが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">月額528円〜、公式サイトで「利用者数No.1」と表記しているGPS端末です。他機種との比較もあわせてご確認ください。</p>
+            <MiteneAffBanner className="mb-4" />
+            <div className="mb-6"><MiteneAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/bot-talk/" className="btn-accent">次のレビュー: BoTトーク</Link>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MiteneAffText } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -264,6 +265,7 @@ export default function HomePage() {
                   <div className="mt-4">
                     <Link href={d.slug} className="btn-primary !py-2.5 !px-6 !text-sm">詳細レビューを見る</Link>
                   </div>
+                  {d.name === 'みてねみまもりGPS' && <div className="mt-3 text-sm"><MiteneAffText /></div>}
                 </div>
               </article>
             ))}

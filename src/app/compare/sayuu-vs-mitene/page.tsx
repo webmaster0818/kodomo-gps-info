@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MiteneAffText, MiteneAffBannerWide } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -88,6 +89,8 @@ export default function SayuuVsMitenePage() {
 
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">他機種のランキング</h2>
+            <MiteneAffBannerWide className="mb-4" />
+            <div className="mb-6"><MiteneAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>
               <Link href="/review/sayuu/" className="btn-accent">SayuU詳細レビュー</Link>

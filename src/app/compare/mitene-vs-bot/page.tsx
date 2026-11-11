@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MiteneAffText, MiteneAffBannerWide } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
@@ -123,6 +124,8 @@ export default function MiteneVsBotPage() {
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">各機種の詳細レビュー</h2>
             <p className="text-g600 mb-6 text-sm">それぞれの機種の詳しい機能・口コミはレビューページでご確認ください。</p>
+            <MiteneAffBannerWide className="mb-4" />
+            <div className="mb-6"><MiteneAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/mitene/" className="btn-primary">みてねのレビュー</Link>
               <Link href="/review/bot-talk/" className="btn-accent">BoTトークのレビュー</Link>

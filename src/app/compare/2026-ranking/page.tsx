@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { MiteneAffText } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
 import { MimoriAffText } from '@/components/AffiliateMimori';
 
@@ -256,6 +257,7 @@ export default function Ranking2026Page() {
                   詳細レビューを見る →
                 </Link>
                 {d.name === 'みもりGPSトーク' && <div className="mt-3"><MimoriAffText /></div>}
+                {d.name.startsWith('みてねみまもりGPS') && <div className="mt-3"><MiteneAffText /></div>}
               </div>
             ))}
           </div>
