@@ -76,7 +76,7 @@ export default function SchoolTripPage() {
             <p className="font-bold text-g800 mb-2">【結論】修学旅行のGPSは「学校の許可」と「2泊3日で電池が持つか」で決まります</p>
             <ul className="text-sm text-g700 leading-relaxed space-y-1">
               <li>・<strong>持ち込みの可否は学校の判断です。</strong>スマートフォンが禁止でも、通話やゲームができない画面のないGPS端末は認められる例がありますが、必ず事前に担任の先生へご確認ください（手順は下記）。</li>
-              <li>・<strong>電池は位置情報専用の機種が安心です。</strong>公式の公表値は最大約2カ月（あんしんウォッチャー、みてねみまもりGPS MG05の省エネモード時など）で、2泊3日なら途中で充電しなくても持つ目安です。通話できるスマートフォン型・ウォッチ型は約1〜2日のため、途中での充電が必要になる可能性があります。</li>
+              <li>・<strong>電池は位置情報専用の機種が安心です。</strong>公式の公表値は最大約2カ月（あんしんウォッチャー、みてねみまもりGPS MG05の省エネモード時など）で、2泊3日なら途中で充電しなくても持つ目安です。通話できるスマートフォン型・ウォッチ型は公式値で約1〜1.5日（Hamic POCKET L 約1.5日・myFirst Fone M1 待機最大24時間）のため、途中での充電が必要になる可能性があります。</li>
               <li>・<strong>海外への修学旅行</strong>では、国内専用の機種は使えません。海外で使える機種は<Link href="/knowledge/international/" className="text-blue-600 font-bold underline">海外で使える子供用GPS</Link>で解説しています。</li>
               <li>・機種ごとの料金・静音性まで含めた比較は<Link href="/compare/school-trip/" className="text-blue-600 font-bold underline">遠足・修学旅行向けGPS比較</Link>にまとめています。このページでは、持ち込みの確認手順と出発前の準備を中心に解説します。</li>
             </ul>
