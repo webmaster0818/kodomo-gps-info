@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'myFirst Foneの評判・口コミは？【2026年】腕時計型GPSの通話機能・料金を解説',
   description:
-    'myFirst Fone（腕時計型キッズGPS）をレビューします。通話・ビデオ通話に対応し、カメラとSOS機能を搭載しています。腕時計型GPS端末の機能・料金・口コミについて解説します。',
+    'myFirst Fone（腕時計型キッズGPS）を公式ストアの情報でレビューします。S4は34,800円・M1は14,800円（税込）、専用SIM（myFirst Free SIM・月額980円）が必要で、電話番号での通話はできません。機能・料金・注意点を解説します。',
 };
 
 const faqData = [
-  { q: 'myFirst Foneで通話はできますか？', a: 'はい、音声通話とビデオ通話の両方に対応しています。保護者のスマートフォンのアプリから、お子さまの腕時計に直接電話をかけられます。なお、SIMカード（別途契約）が必要です。' },
-  { q: 'myFirst Foneの月額料金はいくら？', a: '端末本体の月額料金は不要ですが、通話・データ通信のためにSIMカード（月額約980円〜）の契約が別途必要です。格安SIMも利用できます。' },
-  { q: 'SOS機能はどう使うの？', a: '端末のSOSボタンを長押しすると、事前に登録した緊急連絡先に自動で通知が送られます。同時に端末の位置情報も送信されるため、迅速に対応できます。' },
-  { q: 'カメラ機能はありますか？', a: 'はい、インカメラを搭載しています。ビデオ通話に使えるほか、お子さまが写真を撮影してアプリに送信することもできます。' },
-  { q: '防水性能はありますか？', a: '公式サイトでは「生活防水 IPX8」（水深3mで5分まで）と案内されています（2026年10月19日確認）。手洗いの際や雨の日でも使用できますが、水泳など長時間の水中での使用は想定されていません。' },
-  { q: '対象年齢は何歳くらい？', a: '主な対象年齢は5歳〜12歳程度です。腕時計型のためランドセルに入れ忘れるリスクがなく、常に身に着けていられる点が、小さなお子さまにも適しています。' },
+  { q: 'myFirst Foneで通話はできますか？', a: '保護者のスマートフォンの「myFirst Circle」アプリを通じて、音声通話とビデオ通話ができます（データ通信またはWi-Fi経由）。データ専用SIMのため、電話番号を使ったダイヤル通話はできません（公式ストア・FAQ、2026年11月11日確認）。' },
+  { q: 'myFirst Foneの月額料金はいくら？', a: '通信には専用の「myFirst Free SIM」の契約が必要で、日本で開通した場合のデータ通信料は月額980円です（公式FAQ）。S4・R2・M1はいずれも他社のSIMでは使えません。M1は初回30日間無料と案内されています。支払いはクレジットカードのみです（2026年11月11日確認）。' },
+  { q: 'SOS機能はどう使うの？', a: 'S4には「ワンタッチSOSボタン」があり、緊急時に簡単な操作で保護者などに通知できると公式に記載されています。授業中に機能を止める「クラスモード」中も、SOS機能は使えます（2026年11月11日確認）。具体的な操作方法は取扱説明書でご確認ください。' },
+  { q: 'カメラ機能はありますか？', a: 'はい。S4は5MP、M1は前面2MPのカメラを搭載しています。ビデオ通話のほか、写真やボイスメモをアプリで共有できます（公式ストア、2026年11月11日確認）。' },
+  { q: '防水性能はありますか？', a: 'S4は「生活防水 IPX8」、M1は「生活防水 IP67」と公式ストアに記載されています（2026年11月11日確認）。S4は「完全防水ではありません。水中での長時間使用や入浴・シャワーでの使用はお控えください」と案内されています。' },
+  { q: '対象年齢は何歳くらい？', a: '公式ストアでは対象年齢4歳から、S4の推奨年齢は5〜12歳と案内されています（2026年11月11日確認）。腕時計型のため、ランドセルに入れ忘れることがありません。' },
 ];
 
 const faqJsonLd = {
@@ -31,7 +31,7 @@ export default function MyFirstFonePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "myFirst Fone レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "myFirst Fone レビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-11", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'myFirst Fone' }]} />
 
       {/* Hero */}
@@ -55,9 +55,10 @@ export default function MyFirstFonePage() {
           <h2 className="section-title">myFirst Foneとは</h2>
           <p className="text-g600 mb-6">
             myFirst Foneは、腕時計型の子供用GPSスマートウォッチです。
-            一般的なGPS端末との最大の違いは、音声通話・ビデオ通話機能を搭載している点です。
-            カメラを備えており、写真撮影やビデオ通話ができるほか、SOSボタンで緊急時に通知することもできます。
-            「GPSだけでは機能が足りないが、スマートフォンを持たせるにはまだ早い」とお考えのご家庭に選ばれている端末です。
+            公式ストアでは現在、S4・R2・M1の3機種を扱っています。一般的なGPS端末との違いは、保護者のアプリとの音声通話・ビデオ通話やカメラを備えている点です。
+            通信には専用の「myFirst Free SIM」（月額980円）が必要で、データ専用のため電話番号での通話はできません。
+            「GPSだけでは機能が足りないが、スマートフォンを持たせるにはまだ早い」とお考えのご家庭向けの端末です。
+            本ページの仕様・価格は、2026年11月11日に公式ストア（jp.myfirst.tech）の製品ページとFAQで確認した内容です。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -68,13 +69,15 @@ export default function MyFirstFonePage() {
                   {[
                     ['提供元', 'myFirst（マイファースト）'],
                     ['端末タイプ', '腕時計型スマートウォッチ'],
-                    ['本体価格', '約18,000円〜26,800円'],
-                    ['SIM', '別途契約（月額約980円〜）'],
-                    ['測位方式', 'GPS+GLONASS+Wi-Fi'],
-                    ['通話', '音声通話・ビデオ通話対応'],
-                    ['カメラ', 'インカメラ搭載'],
-                    ['防水', 'IPX8（生活防水・水深3mで5分まで）'],
-                    ['SOS', '緊急通知ボタン搭載'],
+                    ['本体価格（税込）', 'S4 34,800円／M1 14,800円（公式ストア）'],
+                    ['SIM', 'myFirst Free SIM必須（月額980円・他社SIM不可）'],
+                    ['測位方式', 'GPS・Wi-Fi・基地局（LBS）。S4はL1/L5のデュアルバンドGPS'],
+                    ['位置の更新', '最短5分間隔（公式FAQ）'],
+                    ['通話', 'アプリ経由の音声・ビデオ通話（電話番号での通話は不可）'],
+                    ['カメラ', 'S4 5MP／M1 前面2MP'],
+                    ['防水', 'S4 生活防水IPX8／M1 生活防水IP67'],
+                    ['重さ・電池', 'S4 48g・605mAh／M1 47g・730mAh（待機最大24時間）'],
+                    ['SOS', 'S4はワンタッチSOSボタン'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -89,7 +92,7 @@ export default function MyFirstFonePage() {
               <div className="space-y-3">
                 <div className="bg-orange-light rounded-xl p-4">
                   <p className="font-bold text-orange">音声通話</p>
-                  <p className="text-sm text-g600 mt-1">保護者のスマートフォンから直接通話でき、電話と同じ感覚で使えます。</p>
+                  <p className="text-sm text-g600 mt-1">保護者のスマートフォンの「myFirst Circle」アプリから通話できます。電話番号での通話はできません。</p>
                 </div>
                 <div className="bg-blue-light rounded-xl p-4">
                   <p className="font-bold text-blue">ビデオ通話</p>
@@ -97,7 +100,7 @@ export default function MyFirstFonePage() {
                 </div>
                 <div className="bg-green-light rounded-xl p-4">
                   <p className="font-bold text-green-dark">SOSボタン</p>
-                  <p className="text-sm text-g600 mt-1">長押しすると、緊急連絡先への自動通知と位置情報の送信を行います。</p>
+                  <p className="text-sm text-g600 mt-1">S4は、緊急時に簡単な操作で保護者などに通知できます（公式記載）。</p>
                 </div>
               </div>
             </div>
@@ -109,10 +112,10 @@ export default function MyFirstFonePage() {
             {[
               { icon: '', title: '音声・ビデオ通話', desc: '保護者と直接通話できます。ビデオ通話でお子さまの様子も確認できます。' },
               { icon: '', title: 'カメラ機能', desc: '撮影した写真をアプリに送信できます。お子さまの目線での記録が残せます。' },
-              { icon: '', title: 'SOS緊急通知', desc: 'ボタンを長押しすると、緊急連絡先に位置情報付きの通知を自動で送信します。' },
-              { icon: '', title: 'リアルタイム位置確認', desc: 'GPS+Wi-Fiの複合測位で、現在地を正確に把握します。' },
-              { icon: '⌚', title: '腕時計型デザイン', desc: '手首に着けるため、置き忘れの心配がありません。カラフルなデザインで、お子さまに人気があります。' },
-              { icon: '', title: '音楽再生', desc: '内蔵メモリに音楽を保存して再生できます。お出かけの際の楽しみにもなります。' },
+              { icon: '', title: 'SOS緊急通知', desc: 'S4はワンタッチSOSボタンで、緊急時に保護者などへ通知できます。' },
+              { icon: '', title: '位置確認・エリア通知', desc: 'GPS・Wi-Fi・基地局の3つの方法で測位し、学校や自宅などのエリアへの出入りを通知します（更新は最短5分間隔）。' },
+              { icon: '⌚', title: 'クラスモード（S4）', desc: '学校や勉強時間中は、SOS以外の機能を自動で止められます。ゲームやSNSなどの外部アプリはインストールできません。' },
+              { icon: '', title: '音楽再生（S4）', desc: 'MP3プレーヤーとスピーカーを搭載し、最大1,500曲を保存できます（公式記載）。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
@@ -131,18 +134,18 @@ export default function MyFirstFonePage() {
                 <li>・SOSボタンによる緊急時の備え</li>
                 <li>・腕時計型で置き忘れの心配なし</li>
                 <li>・カメラ付きでビデオ通話や写真撮影に対応</li>
-                <li>・生活防水 IPX8（水深3mで5分まで）</li>
-                <li>・音楽再生などのエンタメ機能も充実</li>
+                <li>・生活防水（S4 IPX8／M1 IP67）</li>
+                <li>・授業中はクラスモードでSOS以外の機能を止められる（S4）</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・本体価格が18,000円〜と高め</li>
-                <li>・SIMの別途契約で月額コストが高くなる点</li>
-                <li>・バッテリー持ちは約1〜2日と短め</li>
+                <li>・本体価格はS4が34,800円と高め（M1は14,800円）</li>
+                <li>・専用SIM（月額980円）が必要で、手持ちのSIMは使えない</li>
+                <li>・電話番号での通話はできない（アプリ経由のみ）</li>
                 <li>・学校での使用が制限される場合がある点</li>
-                <li>・多機能な分、操作がやや複雑</li>
+                <li>・M1の待機時間は最大24時間（公式）で、毎日の充電が前提</li>
               </ul>
             </div>
           </div>

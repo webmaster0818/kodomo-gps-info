@@ -17,7 +17,7 @@ const batteryData = [
   { name: 'ソラノメ（販売終了）', slug: '/review/soranome/', battery: '最大約1週間', type: '位置情報専用', note: '2026年4月1日付の公式告知で現行端末の販売が終了しています（2026年10月17日 公式確認）。' },
   { name: 'coneco（新規販売終了）', slug: '/review/coneco/', battery: '約4日程度', type: '位置情報（メッセージ機能あり）', note: '公式の公表値は、1日4時間の移動と4回のメッセージを想定して約4日程度です。公式サイトで新規販売の終了が案内されています（2026年10月19日 公式確認）。' },
   { name: 'Hamic POCKET L', slug: '/review/hamic/', battery: '約1.5日が目安', type: 'キッズスマートフォン型', note: '公式の目安は約1.5日（2,000mAh）で、ほぼ毎日の充電が必要です。公式ストアでは2026年10月19日時点で全色が売り切れです。' },
-  { name: 'myFirst Fone', slug: '/review/myfirst-fone/', battery: '約1〜2日', type: '通話/スマートウォッチ型', note: '通話・ビデオ通話に対応しているため、消費が大きい機種です。毎日の充電が必要です。' },
+  { name: 'myFirst Fone', slug: '/review/myfirst-fone/', battery: '待機最大24時間（M1）', type: '通話/スマートウォッチ型', note: '通話・ビデオ通話に対応しているため、消費が大きい機種です。毎日の充電が必要です。' },
 ];
 
 const faqData = [

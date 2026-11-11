@@ -38,7 +38,7 @@ const batteryData = [
   { name: 'はろここトーク', battery: '最大3.5週間（バッテリー持ち優先モード）', charge: 'USB Type-C', level: 3 },
   { name: 'ソラノメ（販売終了）', battery: '約1週間(容量700mAh)', charge: 'USB Type-C', level: 2 },
   { name: 'ハミック', battery: '約1.5日（Hamic POCKET L・公式の目安）', charge: 'USB Type-C', level: 1 },
-  { name: 'myFirst Fone', battery: '約1〜2日', charge: 'マグネット充電', level: 1 },
+  { name: 'myFirst Fone', battery: '待機最大24時間（M1）', charge: 'マグネット充電', level: 1 },
 ];
 
 export default function BatteryPage() {

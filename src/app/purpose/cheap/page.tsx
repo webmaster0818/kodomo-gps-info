@@ -72,7 +72,7 @@ export default function CheapPage() {
                   ['5', 'みもりGPSトーク', '748円', '3,800円', '12,776円', '/review/mimori/'],
                   ['6', 'はろここトーク（音声なし）', '572円', '5,940円', '12,804円', '/review/halococo/'],
                   ['7', 'BoTトーク（トーク付）', '748円', '5,280円', '14,256円', '/review/bot-talk/'],
-                  ['8', 'myFirst Fone', '約980円〜', '約18,000円〜', '約29,760円〜', '/review/myfirst-fone/'],
+                  ['8', 'myFirst Fone', '980円', '14,800円〜（M1）', '26,560円〜', '/review/myfirst-fone/'],
                   ['9', 'Hamic POCKET L', '1,100円', '18,700円', '31,900円', '/review/hamic/'],
                   ['10', 'SayuU 2', '1,210円', '19,800円', '34,320円', '/review/sayuu/'],
                 ].map(([rank, name, monthly, device, annual, href]) => (
@@ -87,7 +87,7 @@ export default function CheapPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-g500 mb-8">※年間総コスト＝本体価格＋月額料金×12カ月（税込・初年度）です。myFirst FoneはSIMが別契約のため、概算で記載しています。</p>
+          <p className="text-xs text-g500 mb-8">※年間総コスト＝本体価格＋月額料金×12カ月（税込・初年度）です。myFirst FoneはM1（14,800円）と専用SIMの月額980円で計算しています（2026年11月11日 公式確認。M1は初回30日間無料のため、実際はこれより安くなります）。</p>
 
           {/* 2台目割引 */}
           <h2 className="section-title">2台目割引・兄弟利用に適した機種</h2>
