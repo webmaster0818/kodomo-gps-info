@@ -133,6 +133,7 @@ export default function BotVsMitenePage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">全機種ランキング</Link>
               <Link href="/compare/mitene-vs-bot/" className="btn-accent">基本比較ページ</Link>
+              <Link href="/review/mitene/" className="btn-accent">みてねみまもりGPSの口コミ・評判</Link>
             </div>
           </div>
         </div>

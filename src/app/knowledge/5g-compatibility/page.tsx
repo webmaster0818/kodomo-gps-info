@@ -60,7 +60,7 @@ const futureOutlook = [
 ];
 
 const deviceStatus = [
-  { name: 'みてねみまもりGPS', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },
+  { name: 'みてねみまもりGPS', network: 'LTE Cat.M1（ドコモ・KDDI・SoftBank）', fiveG: '非対応', status: '問題なし' },
   { name: 'BoTトーク', network: 'LTE-M（ドコモLTEエリア）', fiveG: '非対応', status: '問題なし' },
   { name: 'あんしんウォッチャー', network: '4G (au LTE)', fiveG: '非対応', status: '問題なし' },
   { name: 'まもサーチ', network: '4G (ソフトバンク LTE)', fiveG: '非対応', status: '問題なし' },

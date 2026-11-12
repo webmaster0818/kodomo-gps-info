@@ -4,18 +4,19 @@ import { MiteneAffText, MiteneAffBanner, MiteneAffBannerSlim } from '@/component
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'みてねみまもりGPS 機種比較レビュー【2026年】MG05・トーク・トークPlusの違い',
+  title: 'みてねみまもりGPSの口コミ・評判｜オリコン満足度3位・App Store 4.2（9.3万件）と3機種の違い【2026年11月】',
   description:
-    'みてねみまもりGPS（MIXI）の機能・料金・口コミをレビューします。月額528円〜で、トークPlusに対応しています。バッテリーはお知らせボタンモデル（MG05）の省エネモードで最大2カ月です。公式サイトの「利用者数No.1」表記の根拠と、選ばれる背景を解説します。',
+    'みてねみまもりGPSの口コミ・評判を、2026年オリコン顧客満足度（総合75.0点・3位、回答4,952人）とApp Storeの評価4.2（9.3万件）で整理しました。良い声・気になる声の傾向、3機種の料金と公式仕様も掲載しています。',
 };
 
 const faqData = [
-  { q: 'みてねみまもりGPSの実際の口コミはどこで読めますか？', a: '楽天市場などの販売ページのレビュー欄で、購入者の口コミをご覧いただけます。機種（MG05／トーク／トークPlus）によって機能が異なるため、どの機種に対する口コミかを確認したうえで参考にされることをおすすめします。当ページでは公式の料金・仕様のみを掲載し、確認日を記載しています。口コミの転載・創作は行っていません。' },
+  { q: 'みてねみまもりGPSの評判はどうですか？', a: '2026年オリコン顧客満足度ランキング（子ども見守りGPS）では総合75.0点で3位（みもりGPSトークと同点）、評価項目では「初期設定のしやすさ」79.2点・「GPS端末の使いやすさ」78.9点が2位、「位置情報の精度」70.0点は5位でした。App Storeのアプリ評価は4.2（約9.3万件）です（いずれも2026年11月12日確認）。エリア通知やボタン操作の手軽さを評価する声が多い一方、位置の更新の遅れや誤差を指摘する声もあります。' },
+  { q: 'みてねみまもりGPSの口コミはどこで読めますか？', a: 'オリコン顧客満足度の企業ページ（life.oricon.co.jp）に利用者の口コミが、App Storeのアプリページにレビューが掲載されています。機種（MG05／トーク／トークPlus）によって機能が異なるため、どの機種に対する口コミかを確認したうえで参考にされることをおすすめします。当ページでは口コミの転載・創作は行わず、傾向の要約と出典・確認日のみを掲載しています。' },
   { q: 'みてねみまもりGPSの月額料金はいくら？', a: '基本プラン（位置確認のみ）は月額528円（税込）、トークPlus機能付きのプランは月額748円（税込）です。いずれも契約期間の縛りや解約金はありません。' },
-  { q: 'トークPlus機能とは何ですか？', a: 'トークPlusは、お子さまとテキスト・音声メッセージのやりとりができる機能です。GPS端末のボタンを押して定型メッセージや音声を送信できるほか、保護者のスマートフォンアプリからもメッセージを送信できます。' },
+  { q: 'トークとトークPlusの違いは何ですか？', a: 'どちらもボイスメッセージを送り合える機種です。トークPlus（MB06・2026年発売）は、これに防犯ブザーとディスプレイが加わったモデルで、防犯ブザーが作動すると保護者のスマートフォンに通知が届きます。本体はトーク（MT05）が5,680円、トークPlusが7,480円で、月額はどちらも748円です（2026年11月12日 公式サイト確認）。' },
   { q: 'バッテリーはどれくらい持ちますか？', a: '公式の製品仕様では、お知らせボタンモデル（MG05）は省エネモードで最大2ヶ月、高頻度モードで最大1ヶ月です。トーク対応機種（MT05・MB06）は、トークを1日2往復使う条件で省エネモード最大3週間、高頻度モード最大2週間です（2026年10月25日確認）。いずれも位置情報の更新頻度や使い方によって変動します。更新間隔を長めに設定すると、バッテリーの持ちが向上します。' },
   { q: '本体価格はいくらですか？', a: '本体価格は5,280円（税込）です。公式サイトやECサイトで購入できます。時期によっては、キャンペーンによる割引が実施される場合もあります。' },
-  { q: '何人で見守りできますか？', a: '複数人での見守りが可能です。祖父母を含むご家族全員で、お子さまの位置を確認できます。見守り人の追加は無料です。' },
+  { q: '何人で見守りできますか？', a: '複数人での見守りが可能です。祖父母を含むご家族全員で、お子さまの位置を確認できます。複数のGPS端末をひとつの画面でまとめて管理できるため、きょうだいでの利用にも対応しています。' },
   { q: '学校に持って行っても大丈夫？', a: 'はい、ほとんどの学校で持ち込み可能です。小型・軽量で、ランドセルに入れておけるサイズです。音が鳴らないため、授業の妨げになりません。念のため、学校の規則をご確認ください。' },
 ];
 
@@ -33,7 +34,7 @@ export default function MitenePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPS レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みてねみまもりGPSの口コミ・評判と3機種レビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-12", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みてねみまもりGPS' }]} />
 
       {/* Hero */}
@@ -44,9 +45,9 @@ export default function MitenePage() {
             <span className="tag-pill bg-blue text-white">月額528円〜</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
-            みてねみまもりGPS レビュー
+            みてねみまもりGPSの口コミ・評判と3機種レビュー
           </h1>
-          <p className="text-g600 text-lg">MIXI提供 | トークPlus対応 | バッテリー最大2カ月（MG05・省エネモード）</p>
+          <p className="text-g600 text-lg">MIXI提供 | オリコン顧客満足度 総合3位（2026年） | バッテリー最大2カ月（MG05・省エネモード）</p>
         </div>
       </section>
 
@@ -59,19 +60,74 @@ export default function MitenePage() {
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>強み</strong>：東証プライム上場の<strong>MIXI（旧ミクシィ）</strong>が運営しています。用途に応じて<strong>3機種（MG05・トーク・トークPlus）</strong>から選べます。</li>
               <li>・<strong>弱み</strong>：トーク・通話を使う場合は上位プランとなり、月額が上がります。位置精度に特化した設計ではありません。</li>
-              <li>・<strong>料金</strong>：月額<strong>528円〜748円</strong>です（プラン・機種により異なります）。</li>
+              <li>・<strong>評判</strong>：2026年オリコン顧客満足度で<strong>総合75.0点・3位</strong>（回答4,952人）、App Storeの評価は<strong>4.2（約9.3万件）</strong>です。初期設定・端末の使いやすさの評価が高く、位置情報の精度は6社中5位でした。</li>
+              <li>・<strong>料金</strong>：月額<strong>528円〜748円</strong>です（機種により異なります）。</li>
               <li>・<strong>適したご家庭</strong>：大手企業が運営する安心感を重視するご家庭、将来トーク機能も使いたいご家庭です。<strong>適さないご家庭</strong>：最安値や位置精度を最優先するご家庭です。</li>
             </ul>
             <p className="text-xs text-g500 mt-3">出典：みてねみまもりGPS公式（製品・料金ページ）。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
           </div>
           <MiteneAffBannerSlim className="mt-4 mb-2" />
 
+          <h2 className="section-title">口コミ・評判（第三者の調査とアプリ評価）</h2>
+          <p className="text-g600 mb-4 text-sm">当サイトでは、出典を確認できる第三者の調査とアプリストアの評価のみを掲載しています。個別の口コミの転載・創作は行っていません（2026年11月12日確認）。</p>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-g200 bg-blue-light text-left">
+                  <th className="py-2 px-2 text-g700">指標</th>
+                  <th className="py-2 px-2 text-g700">みてねみまもりGPS</th>
+                  <th className="py-2 px-2 text-g700">出典</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['総合得点・順位', '75.0点・3位（みもりGPSトークと同点）', '2026年 オリコン顧客満足度 子ども見守りGPS'],
+                  ['初期設定のしやすさ', '79.2点・2位', '同上'],
+                  ['GPS端末の使いやすさ', '78.9点・2位', '同上'],
+                  ['アプリの使いやすさ', '76.9点・3位', '同上'],
+                  ['費用', '73.1点・3位', '同上'],
+                  ['サポートサービス', '70.1点・4位', '同上'],
+                  ['位置情報の精度', '70.0点・5位', '同上'],
+                  ['推奨意向／継続意向', '89.6点／93.6点', '同上'],
+                  ['アプリの評価', '4.2（約9.3万件）', 'App Store「みてねみまもりGPS」（MIXI, Inc.）'],
+                ].map(([k, v, src]) => (
+                  <tr key={k} className="border-b border-g100">
+                    <td className="py-2 px-2 font-semibold text-g700">{k}</td>
+                    <td className="py-2 px-2">{v}</td>
+                    <td className="py-2 px-2 text-xs text-g500">{src}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-g400 mb-4">オリコンの調査は、子ども見守りGPSの利用者4,952人の回答に基づくランキングです（総合1位は75.9点、2位のまもサーチは75.1点）。ランキングページの更新日は2026年2月2日です。調査方法の詳細は、オリコン顧客満足度の公式サイトをご確認ください。</p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-3">
+            <div className="bg-green-light rounded-xl p-5">
+              <h3 className="font-bold text-green-dark mb-2">評価されている点（口コミの傾向）</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・設定した範囲を出入りしたときの通知が役立つ</li>
+                <li>・子どもからのメッセージ送信やボタン操作が簡単</li>
+                <li>・バッテリーが長持ちし、操作がシンプル</li>
+              </ul>
+            </div>
+            <div className="bg-orange-light rounded-xl p-5">
+              <h3 className="font-bold text-orange-dark mb-2">気になる点として挙がる声</h3>
+              <ul className="space-y-1.5 text-sm text-g700">
+                <li>・位置情報の更新が遅れたり、誤差が大きかったりすることがある</li>
+                <li>・電波状況によって現在地を確認できない場合がある</li>
+                <li>・電池切れに気づきにくい、本体の大きさが気になる</li>
+                <li>・問い合わせへの回答が遅かった</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-xs text-g400 mb-8">傾向は、オリコン顧客満足度の企業ページ（life.oricon.co.jp/rank-child-gps/company/mitene/）に掲載された利用者の口コミ18件を当サイトで要約したものです。位置情報の精度の評価が他の項目より低い点は、オリコンの項目別得点（6社中5位）とも一致しています。精度を重視する場合は、<Link href="/compare/accuracy/" className="text-blue underline">測位精度の比較</Link>もあわせてご確認ください。</p>
+
           <h2 className="section-title">みてねみまもりGPSとは</h2>
           <p className="text-g600 mb-6">
             みてねみまもりGPSは、MIXI（旧ミクシィ）が提供する子供用GPS端末です。
-            家族向けアプリ「みてね」の知見を活かした使いやすさが特徴です。公式サイトでは「利用者数No.1」と表記しています（公式サイトの表記。日系パブリッシャーのロケーションアプリとしてのNo.1：2025年1〜10月・iOS/Android合算・data.ai by Sensor Tower調べ）。
+            家族向けアプリ「みてね」の知見を活かした使いやすさが特徴です。公式サイトでは「利用者数No.1」と表記しています（公式サイトの注記：No.1ロケーションアプリ、26年度1月〜26年度9月までの合計・日系パブリッシャー・iOS&Android合算・Sensor Tower調べ。2026年11月12日確認）。
             月額528円からの手頃な料金設定と、お知らせボタンモデル（MG05）では省エネモードで最大2カ月持続するバッテリーが特徴です（トーク対応機種は最大3週間）。
-            2025年にはトークPlus機能が追加され、お子さまとのコミュニケーションも可能になりました。
+            ボイスメッセージを送り合えるトーク（MT05・2025年発売）に加え、2026年には防犯ブザーとディスプレイを搭載したトークPlus（MB06）が発売されました。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -81,14 +137,14 @@ export default function MitenePage() {
                 <tbody>
                   {[
                     ['提供元', 'MIXI（旧ミクシィ）'],
-                    ['月額料金', '528円（税込）/ 748円（トークPlus）'],
-                    ['本体価格', '5,280円（税込）'],
-                    ['測位方式', 'GPS+GLONASS+みちびき+Wi-Fi'],
+                    ['月額料金', '528円（MG05）/ 748円（トーク・トークPlus）（税込）'],
+                    ['本体価格', '5,280円〜7,480円（税込・機種により異なります）'],
+                    ['測位方式', 'GNSS L1/L5デュアルバンド（GPS・みちびき・BeiDou・Galileo・GLONASS）＋A-GPS＋Wi-Fi・携帯基地局＋SBAS'],
                     ['バッテリー', '最大2ヶ月（MG05・省エネモード）／トーク対応機種は最大3週間'],
-                    ['通信回線', 'SoftBank LTE'],
-                    ['防水', '生活防水（IPX5）'],
-                    ['サイズ', '約48.5×48.5×15mm'],
-                    ['重量', '約40g'],
+                    ['通信回線', 'LTE Cat.M1（ドコモ・KDDI・SoftBank。圏外時に自動で切り替え）'],
+                    ['防水', '生活防水・防塵（IP55。トークPlusはIP54）'],
+                    ['サイズ', '幅50×高さ50×厚み22mm（MG05・MT05）'],
+                    ['重量', '61g（MG05）／63g（MT05）／89g（MB06）'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
                       <td className="py-2 font-semibold text-g700 w-1/3">{k}</td>
@@ -142,7 +198,7 @@ export default function MitenePage() {
               <li>・<strong>お子さまと連絡を取りたい</strong> → トーク（MT05）が適しています。音声メッセージで「今どこ？」といったやりとりが可能です。</li>
               <li>・<strong>防犯ブザーも1台にまとめたい</strong> → トークPlus（MB06）が適しています。ただし、89gとやや重く、電池は約3週間と短めです。また、学校では音や画面が友人の関心を引く可能性があります。</li>
             </ul>
-            <p className="text-xs text-g400 mt-3">全機種ともL1/L5デュアルバンドGNSS+Wi-Fi+基地局測位に対応しています。見守る大人の人数に制限はありません。出典: みてねみまもりGPS公式(family-album.com)2026年6月14日確認</p>
+            <p className="text-xs text-g400 mt-3">全機種ともL1/L5デュアルバンドGNSS+Wi-Fi+基地局測位に対応しています。見守る大人の人数に制限はありません。出典: みてねみまもりGPS公式 製品仕様（mitene.us/gps/spec）2026年11月12日確認</p>
           </div>
 
           <div className="text-center mb-10">
@@ -179,14 +235,14 @@ export default function MitenePage() {
                 <li>・「みてね」アプリの使いやすいUI</li>
                 <li>・トークPlus対応でコミュニケーションも可能</li>
                 <li>・GPS+Wi-Fi測位による高い位置精度</li>
-                <li>・小型軽量（約40g）でランドセルに入れやすい点</li>
+                <li>・幅・高さ50mmの小型サイズ（MG05は61g）でランドセルに入れやすい点</li>
               </ul>
             </div>
             <div className="bg-orange-light rounded-xl p-6">
               <h3 className="font-bold text-orange-dark mb-3">デメリット</h3>
               <ul className="space-y-2 text-sm text-g700">
-                <li>・トーク機能は追加料金（月額748円）が必要</li>
-                <li>・SOSボタンは非搭載</li>
+                <li>・トーク機能を使う場合は月額748円の機種が必要</li>
+                <li>・防犯ブザーはトークPlus（MB06）のみ搭載（MG05・MT05は非搭載）</li>
                 <li>・本体カラーの選択肢が限られる点</li>
                 <li>・屋内での精度がやや落ちる場合がある点</li>
                 <li>・通話機能は非対応</li>
