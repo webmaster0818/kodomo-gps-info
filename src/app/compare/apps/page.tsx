@@ -23,7 +23,7 @@ const appComparison = [
   { name: 'みてねみまもりGPS', os: 'iOS/Android', share: '無制限', notify: 'エリア通知・バッテリー通知' },
   { name: 'BoTトーク', os: 'iOS/Android', share: '無制限', notify: 'AI学習通知・エリア通知・音声メッセージ' },
   { name: 'あんしんウォッチャー', os: 'iOS/Android', share: '最大9人', notify: 'エリア通知・バッテリー通知' },
-  { name: 'ソラノメ（販売終了）', os: 'iOS/Android', share: '最大4人', notify: 'SOS通知・エリア通知' },
+  { name: 'ソラノメ（販売終了）', os: 'iOS/Android', share: 'スマホ1台に端末最大4台（見守る人数は公式に記載なし）', notify: 'SOS通知・エリア通知' },
   { name: 'まもサーチ', os: 'iOS/Android', share: '保護者最大5人', notify: 'エリア通知・バッテリー通知' },
   { name: 'SayuU', os: 'iOS/Android', share: '公式サイトで要確認', notify: '左右確認・走行検知・通話' },
 ];
