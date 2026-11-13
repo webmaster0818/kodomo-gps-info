@@ -97,7 +97,7 @@ export default function TalkPage() {
                   ['はろここトーク', '○', '×', '×', '×', '748円', '/review/halococo/'],
                   ['みもりGPSトーク', '○', '△（文字を音声に変換して送信）', '×', '×', '748円', '/review/mimori/'],
                   ['myFirst Fone', '○', '○', '○', '○', '約980円〜', '/review/myfirst-fone/'],
-                  ['Hamic', '×', '○（チャット形式）', '×', '×', '1,100円', '/review/hamic/'],
+                  ['Hamic', '×', '○（チャット形式）', '○（Hamicアプリ）', '×', '1,100円', '/review/hamic/'],
                   ['キッズケータイ', '×', '○（SMS）', '○', '×', '539円〜', '/review/kids-phone/'],
                 ].map(([name, voice, text, call, video, price, href]) => (
                   <tr key={name} className="border-b border-g100">
