@@ -38,7 +38,7 @@ const appData = [
   { name: 'あんしんウォッチャー', maxDevices: '最大2台（1つのau IDにつき）', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '539円（2台目は追加0円）' },
   { name: 'BoTトーク', maxDevices: '最大5台', multiView: '対応', familyShare: '最大10人', notification: '端末別設定可', monthlyPerUnit: '748円/台' },
   { name: 'まもサーチ', maxDevices: '最大5台', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '528円/台' },
-  { name: 'myFirst Fone R2', maxDevices: '最大3台', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '998円/台' },
+  { name: 'myFirst Fone R2', maxDevices: '最大3台', multiView: '対応', familyShare: '最大5人', notification: '端末別設定可', monthlyPerUnit: '980円/台' },
 ];
 
 const costSimulation = [

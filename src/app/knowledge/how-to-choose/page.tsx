@@ -91,7 +91,7 @@ export default function HowToChoosePage() {
               <h3 className="font-bold text-orange mb-3">腕時計型タイプ</h3>
               <p className="text-sm text-g600 mb-3">通話・カメラを備えた多機能タイプ</p>
               <ul className="space-y-1 text-sm text-g700">
-                <li>・月額998円〜</li>
+                <li>・月額980円〜</li>
                 <li>・通話・ビデオ通話が可能</li>
                 <li>・カメラ搭載</li>
                 <li>・高いデザイン性</li>

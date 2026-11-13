@@ -38,7 +38,7 @@ const costData = [
   { name: 'あんしんウォッチャー', initial: 11000, monthly: 539, annual1: 17468, annual2: 23936, annual3: 30404 },
   { name: 'BoTトーク', initial: 5280, monthly: 748, annual1: 14256, annual2: 23232, annual3: 32208 },
   { name: 'まもサーチ', initial: 5280, monthly: 528, annual1: 11616, annual2: 17952, annual3: 24288 },
-  { name: 'myFirst Fone R2', initial: 26980, monthly: 998, annual1: 38956, annual2: 50932, annual3: 62908 },
+  { name: 'myFirst Fone R2', initial: 26980, monthly: 980, annual1: 38740, annual2: 50500, annual3: 62260 },
 ];
 
 const hiddenCosts = [
@@ -73,7 +73,7 @@ export default function CostAnnualPage() {
           <h2 className="section-title">GPS端末のコスト構造</h2>
           <p className="text-g600 mb-6">
             子供用GPS端末のコストは「初期費用（本体代）」と「月額料金（通信費・サービス利用料）」の2つで構成されます。
-            初期費用は5,000円〜27,000円、月額料金は528円〜998円と幅があります。
+            初期費用は5,000円〜27,000円、月額料金は528円〜980円と幅があります。
             1年間のみの比較では初期費用の影響が大きくなりますが、2〜3年の長期利用では、月額料金の差が総費用に大きく影響します。
           </p>
 
