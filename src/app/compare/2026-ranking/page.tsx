@@ -75,11 +75,11 @@ const rankingData = [
     review: '/review/mamosearch/',
   },
   {
-    rank: 5, name: 'myFirst Fone R2', initial: 26980, monthly: 998,
-    battery: '連続通話 約6時間', waterproof: 'IPX8', weight: '約48g', carrier: 'ドコモ/ソフトバンク LTE',
+    rank: 5, name: 'myFirst Fone R2', initial: '公式で確認できず', monthly: 980,
+    battery: '公式で確認できず', waterproof: '公式で確認できず', weight: '約48g', carrier: '公式で確認できず（eSIM・myFirst SIM専用）',
     notifications: 'エリア通知/SOS/バッテリー低下/定時',
-    merit: '腕時計型で、通話・ビデオ通話が可能です。防水性能はIPX8（生活防水・水深3mで5分まで）と公表されています。カメラと音楽再生機能を備えています。',
-    demerit: '初期費用・月額料金ともに最高クラスです。バッテリーは2日程度です。学校で使用できない場合があります。',
+    merit: '腕時計型で、専用アプリ（Circle）を通した音声通話・ビデオ通話に対応しています。電話番号でのダイヤル通話には対応していません（公式FAQ・2026年11月14日確認）。本体価格・防水等級は、2026年11月14日時点で日本の公式ストアから確認できなかったため掲載していません。',
+    demerit: '月額980円（myFirst SIM・他社SIM不可）は比較した機種の中で高めです。バッテリーは2日程度です。学校で使用できない場合があります。',
     recommend: '通話機能が必要な方、多機能な腕時計型を希望する方',
     review: '/review/myfirst-fone/',
   },
@@ -234,7 +234,7 @@ export default function Ranking2026Page() {
                   </div>
                 </div>
                 <div className="grid sm:grid-cols-3 gap-2 mb-3 text-sm">
-                  <p className="text-g600"><strong>初期費用:</strong> {d.initial.toLocaleString()}円</p>
+                  <p className="text-g600"><strong>初期費用:</strong> {typeof d.initial === 'number' ? `${d.initial.toLocaleString()}円` : d.initial}</p>
                   <p className="text-g600"><strong>月額:</strong> {d.monthly.toLocaleString()}円</p>
                   <p className="text-g600"><strong>バッテリー:</strong> {d.battery}</p>
                   <p className="text-g600"><strong>防水:</strong> {d.waterproof}</p>
@@ -281,7 +281,7 @@ export default function Ranking2026Page() {
                 {fullComparisonData.map((d) => (
                   <tr key={d.name} className="border-b border-g100">
                     <td className="py-2 px-2 font-semibold text-g700">{d.name}</td>
-                    <td className="py-2 px-2 text-right text-g600">{d.initial.toLocaleString()}円</td>
+                    <td className="py-2 px-2 text-right text-g600">{typeof d.initial === 'number' ? `${d.initial.toLocaleString()}円` : d.initial}</td>
                     <td className="py-2 px-2 text-right text-g600">{d.monthly.toLocaleString()}円</td>
                     <td className="py-2 px-2 text-g600">{d.battery}</td>
                     <td className="py-2 px-2 text-center text-g600">{d.waterproof}</td>
@@ -325,8 +325,7 @@ export default function Ranking2026Page() {
                 { q: '通話機能は必要ですか？', yes: 'myFirst Fone R2 / キッズフォン3 / Hamic POCKET をおすすめします', no: '次の質問へ' },
                 { q: '音声メッセージ（トーク）機能は必要ですか？', yes: 'BoTトーク をおすすめします', no: '次の質問へ' },
                 { q: '山間部や郊外で使いますか？', yes: 'あんしんウォッチャー（au回線）をおすすめします', no: '次の質問へ' },
-                { q: '防水性能を重視しますか？', yes: 'myFirst Fone R2（IPX8）をおすすめします', no: '次の質問へ' },
-                { q: '費用を最も重視しますか？', yes: 'みてねみまもりGPS をおすすめします（費用対効果が最も優れた機種）', no: 'まもサーチ（最軽量）をおすすめします' },
+                                { q: '費用を最も重視しますか？', yes: 'みてねみまもりGPS をおすすめします（費用対効果が最も優れた機種）', no: 'まもサーチ（最軽量）をおすすめします' },
               ].map((item, i) => (
                 <div key={i} className="bg-blue-light rounded-lg p-4">
                   <p className="font-bold text-g800 text-sm mb-2">Q{i + 1}. {item.q}</p>

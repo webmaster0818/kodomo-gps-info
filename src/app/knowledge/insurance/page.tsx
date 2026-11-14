@@ -38,7 +38,6 @@ const warrantyData = [
   { name: 'あんしんウォッチャー', warranty: '購入後1年', extOption: 'あんしん補償（月額165円）', lossCover: '3,300円で交換', breakCover: '3,300円で交換', cost: '月額165円' },
   { name: 'BoTトーク', warranty: '購入後1年', extOption: 'あんしん補償パック', lossCover: '半額で再購入', breakCover: '無償交換（年1回）', cost: '月額220円' },
   { name: 'まもサーチ', warranty: '購入後1年', extOption: 'なし', lossCover: '対象外', breakCover: '有償修理', cost: '無料（標準保証のみ）' },
-  { name: 'myFirst Fone R2', warranty: '購入後1年', extOption: 'myFirst Care', lossCover: '50%OFFで再購入', breakCover: '無償修理（年2回）', cost: '月額330円' },
 ];
 
 const lossSteps = [
@@ -164,7 +163,7 @@ export default function InsurancePage() {
           <div className="bg-blue-light rounded-xl p-5 mb-8">
             <h3 className="font-bold text-g800 mb-2">補償への加入の判断基準</h3>
             <p className="text-sm text-g600">
-              お子さまが低学年（小1〜小3）の場合は、紛失・故障のリスクが高いため、補償への加入をおすすめします。月額165〜330円の追加で、万が一の際の数千円の出費を避けることができます。高学年で端末の扱いに慣れている場合は、標準保証のみでも十分です。
+              お子さまが低学年（小1〜小3）の場合は、紛失・故障のリスクが高いため、補償への加入をおすすめします。月額165〜220円の追加で、万が一の際の数千円の出費を避けることができます。高学年で端末の扱いに慣れている場合は、標準保証のみでも十分です。
             </p>
           </div>
 

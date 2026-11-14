@@ -47,7 +47,6 @@ const deviceWaterproof = [
   { name: 'あんしんウォッチャー', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約53g' },
   { name: 'まもサーチ3', rating: 'IP65', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
   { name: 'soranome（販売終了）', rating: 'IP55', rain: '○', sweat: '○', wash: '△', pool: '×', weight: '約39g' },
-  { name: 'myFirst Fone R2', rating: 'IPX8（水深3mで5分まで）', rain: '◎', sweat: '◎', wash: '○', pool: '△', weight: '約48g' },
   { name: 'coneco（新規販売終了）', rating: 'IPX3相当', rain: '△', sweat: '○', wash: '×', pool: '×', weight: '約64g' },
   { name: 'Hamic POCKET L', rating: 'IP64', rain: '○', sweat: '○', wash: '×', pool: '×', weight: '約151.8g' },
   { name: 'キッズフォン3', rating: 'IPX5/IPX8', rain: '○', sweat: '○', wash: '○', pool: '△', weight: '約115g' },
@@ -156,7 +155,7 @@ export default function WaterproofTestPage() {
             {[
               { scene: '雨天の通学', icon: '', verdict: '基本OK', desc: 'IP55以上のほとんどの機種で問題ありません。ランドセルの内側やカバーの中に入れておくと、より安心です。豪雨の際は防水ポーチの併用をおすすめします。' },
               { scene: '汗をかく運動時', icon: '', verdict: '基本OK', desc: '日常的な発汗程度であれば、ほとんど影響はありません。ただし、腕時計型は汗の塩分で肌側の端子が腐食しやすいため、定期的に拭き取ってください。' },
-              { scene: 'プール・水遊び', icon: '', verdict: '非推奨', desc: 'IPX8のmyFirst Fone R2でも、公式の条件は「水深3mで5分まで」で、プールなど長時間の水中での使用は想定されていません。塩素がパッキンを劣化させる可能性があるためです。プールの際はロッカーに保管することをおすすめします。' },
+              { scene: 'プール・水遊び', icon: '', verdict: '非推奨', desc: 'IPX8の機種でも、プールなど長時間の水中での使用は想定されていないのが一般的です。塩素がパッキンを劣化させる可能性があるためです。プールの際はロッカーに保管することをおすすめします。' },
               { scene: '水洗い・流水すすぎ', icon: '', verdict: 'IPX7以上OK', desc: 'IPX7以上であれば、流水での軽い洗浄は可能です。ただし、充電端子に水が入らないよう注意し、洗浄後は十分に乾燥させてください。' },
               { scene: '雪遊び', icon: '', verdict: '条件付きOK', desc: '雪そのものはIP55以上であれば問題ありませんが、溶けた水が端末内に浸入するおそれがあります。手袋の中に入れるなどの工夫をおすすめします。また、低温はバッテリー性能を低下させます。' },
               { scene: '泥遊び・砂場', icon: '', verdict: 'IP6X推奨', desc: 'IP67/IP68であれば防塵性能も備えているため安心です。IPX5などの防塵性能のない機種は、充電端子に砂が詰まるおそれがあるため注意が必要です。' },

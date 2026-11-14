@@ -66,7 +66,7 @@ const deviceComparison = [
   { name: 'あんしんウォッチャー', carrier: 'au LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: 'au回線で山間部に強い' },
   { name: 'まもサーチ', carrier: 'ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: '内蔵eSIM', note: '軽量・コンパクト' },
   { name: 'soranome（販売終了）', carrier: 'ドコモ LTE', methods: 'GPS（単独測位）/ Wi-Fi（SOS発動時）', sim: '内蔵SIM', note: 'ドコモ回線で都市部に強い' },
-  { name: 'myFirst Fone R2', carrier: 'ドコモ/ソフトバンク LTE', methods: 'GPS / Wi-Fi / 基地局', sim: 'eSIM（myFirst Free SIM・他社SIM不可）', note: '腕時計型・通話対応' },
+  { name: 'myFirst Fone R2', carrier: '公式で確認できず', methods: 'GPS / Wi-Fi / 基地局', sim: 'eSIM（myFirst Free SIM・他社SIM不可）', note: '腕時計型・通話対応' },
   { name: 'coneco（新規販売終了）', carrier: 'ドコモ LTE', methods: 'GPS / GLONASS / Galileo / 基地局', sim: '内蔵SIM', note: 'メッセージ送受信対応' },
 ];
 

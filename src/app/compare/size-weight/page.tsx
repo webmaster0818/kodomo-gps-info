@@ -39,7 +39,7 @@ const faqJsonLd = {
 const sizeData = [
   { name: 'まもサーチ3', size: '49×49×15.5', weight: '約39g', w: 39, type: 'ポケット型', battery: '最大2か月（電池長持ちモード）', water: 'IP65', src: 'https://mamosearch.jp/function/', status: '' },
   { name: 'soranome', size: '51×51×15', weight: '約39g', w: 39, type: 'ポケット型', battery: '最大1週間', water: 'IP55', src: 'https://soranome.net/', status: '2026年3月31日で新規受付終了' },
-  { name: 'myFirst Fone R2', size: '厚さ13.6（縦横は公式記載なし）', weight: '約48g', w: 48, type: '腕時計型', battery: '連続通話 約6時間', water: 'IPX8', src: 'https://jp.myfirst.tech/products/myfirst-fone-r2', status: '' },
+  { name: 'myFirst Fone R2', size: '厚さ13.6（縦横は公式記載なし）', weight: '約48g', w: 48, type: '腕時計型', battery: '公式で確認できず', water: '公式で確認できず', src: 'https://jp.myfirst.tech/products/myfirst-fone-r2', status: '' },
   { name: 'あんしんウォッチャー', size: '約50×50×18.8', weight: '約53g', w: 53, type: 'ポケット型', battery: '最大2カ月', water: 'IP55', src: 'https://www.au.com/life/auhome/device/uha01a/', status: '' },
   { name: 'BoTトーク（第6世代）', size: '50×50×21', weight: '約58g', w: 58, type: 'ポケット型', battery: 'GPSプラン 最長1ヶ月以上（電池優先モード）', water: '生活防水・防塵（等級の記載なし）', src: 'https://www.bsize.com/bot/talk', status: '' },
   { name: 'みてねみまもりGPS（MG05）', size: '50×50×22', weight: '約61g', w: 61, type: 'ポケット型', battery: '最大2ヶ月（省エネモード）', water: 'IP55', src: 'https://mitene.us/gps/spec', status: '' },

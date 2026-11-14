@@ -99,7 +99,7 @@ const devices = [
     ssSlug: 'myfirst-fone',
     officialUrl: 'https://jp.myfirst.tech/products/myfirst-fone-r2',
     officialHost: 'jp.myfirst.tech',
-    spec: { monthly: '980円（年間一括8,580円）', price: '18,800円', talk: '音声・ビデオ通話（専用アプリ同士）', battery: '連続通話 約6時間' },
+    spec: { monthly: '980円（年間一括8,580円）', price: '公式で確認できず', talk: '音声・ビデオ通話（専用アプリ同士）', battery: '公式で確認できず' },
     features: ['音声・ビデオ通話対応', 'キッズスマートウォッチ型', 'カメラ搭載', 'SOS機能', '音楽プレーヤー内蔵'],
     pros: ['通話・ビデオ通話に対応', '紛失しにくい腕時計型', '機能が豊富'],
     cons: ['月額が高め', '短いバッテリー持ち', '高めの本体価格'],

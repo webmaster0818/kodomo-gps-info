@@ -5,12 +5,12 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: '子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ',
   description:
-    '子供用GPS端末の年間コストを比較します。主要6機種の初期費用・月額料金・年間の総費用を一覧表で紹介し、2年・3年の長期費用の比較、費用対効果の高い選び方、見落としやすい費用まで解説します。',
+    '子供用GPS端末の年間コストを比較します。主要4機種の初期費用・月額料金・年間の総費用を一覧表で紹介し、2年・3年の長期費用の比較、費用対効果の高い選び方、見落としやすい費用まで解説します。',
   keywords: ['子供GPS', '年間コスト', '比較', 'ランニングコスト', '月額料金', '初期費用'],
   openGraph: {
     images: ['/og.png'],
     title: '子供用GPSの年間コスト比較｜月額料金と初期費用の総まとめ',
-    description: '子供用GPS端末の年間コストを比較します。主要6機種の初期費用・月額料金・年間の総費用を一覧表で紹介します。',
+    description: '子供用GPS端末の年間コストを比較します。主要4機種の初期費用・月額料金・年間の総費用を一覧表で紹介します。',
   },
 };
 
@@ -38,7 +38,6 @@ const costData = [
   { name: 'あんしんウォッチャー', initial: 11000, monthly: 539, annual1: 17468, annual2: 23936, annual3: 30404 },
   { name: 'BoTトーク', initial: 5280, monthly: 748, annual1: 14256, annual2: 23232, annual3: 32208 },
   { name: 'まもサーチ', initial: 5280, monthly: 528, annual1: 11616, annual2: 17952, annual3: 24288 },
-  { name: 'myFirst Fone R2', initial: 26980, monthly: 980, annual1: 38740, annual2: 50500, annual3: 62260 },
 ];
 
 const hiddenCosts = [
