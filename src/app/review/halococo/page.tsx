@@ -5,12 +5,12 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'はろここトークの評判・料金は？【2026年】コクヨのトーク機能付き見守りGPSを公式情報で解説',
   description:
-    'はろここトーク（コクヨ）の機能・料金を公式情報（2026年10月26日確認）でレビューします。本体5,940円、月額748円（音声あり）／572円（音声なし）で、親子の音声メッセージと居場所通知ボタンを備えています。',
+    'はろここトーク（コクヨ）の機能・料金を公式情報（2026年11月15日確認）でレビューします。本体5,940円、月額748円（音声あり）／572円（音声なし）で、親子の音声メッセージと居場所通知ボタンを備えています。',
 };
 
 const faqData = [
   { q: 'はろここトークはどこが提供していますか？', a: 'コクヨの見守りGPSです（公式サイト hellofamily.kokuyo.co.jp）。現在の公式ページで案内されている機種は、後継機の「はろここトーク」です。' },
-  { q: '料金はいくらですか？', a: '通常プランは本体5,940円（税込）に、通信費が月額748円（音声あり）または572円（音声なし）かかります（税込・初月無料）。本体と11か月分の通信費（音声あり）がセットになった「通信費セットプラン」11,880円（税込）もあります（2026年10月26日 公式確認）。' },
+  { q: '料金はいくらですか？', a: '通常プランは本体5,940円（税込）に、通信費が月額748円（音声あり）または572円（音声なし）かかります（税込・初月無料）。本体と11か月分の通信費（音声あり）がセットになった「通信費セットプラン」11,880円（税込）もあります（2026年11月15日 公式確認）。' },
   { q: 'どこで購入できますか？', a: '公式サイトでは「各ECサイトからご購入いただけます」と案内されています。購入後6か月以内に、ハロファミアプリから通信費の契約を行う必要があります。' },
   { q: 'バッテリーはどのくらい持ちますか？', a: '公式の仕様では、頻度優先モード（1〜2分間隔）で最大2.5週間、バッテリー持ち優先モード（3〜4分間隔）で最大3.5週間です。いずれも平日のみ1日2時間稼働での実測値で、使用環境によって大きく変動します。' },
   { q: 'トーク機能では何ができますか？', a: '本体の「はなす」ボタンで録音した音声メッセージを送り、保護者からのメッセージを「きく」ボタンで再生できます。リアルタイムの音声通話はできません。「音声なし」で契約した場合は、音声の送受信は利用できません。' },
@@ -31,7 +31,7 @@ export default function HalococoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "はろここトーク レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-26", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "はろここトーク レビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-15", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'はろここトーク' }]} />
 
       {/* Hero */}
@@ -52,7 +52,7 @@ export default function HalococoPage() {
       <section className="py-10">
         <div className="mx-auto max-w-4xl px-4">
           <div className="bg-blue-light rounded-xl p-5 mb-6 text-sm text-g700">
-            <p className="font-bold text-blue mb-1">結論（2026年10月26日 公式確認）</p>
+            <p className="font-bold text-blue mb-1">結論（2026年11月15日 公式確認）</p>
             <p>
               はろここトークは、本体5,940円・月額748円（音声あり）で、親子の音声メッセージを使いたいご家庭に向いています。
               音声が不要であれば月額572円の「音声なし」も選べます。電池は最大3.5週間（バッテリー持ち優先モード）のため、
@@ -79,6 +79,7 @@ export default function HalococoPage() {
                     ['月額料金', '音声あり748円／音声なし572円（税込・初月無料）'],
                     ['測位方式', 'GPS・みちびき・BeiDou・Galileo・GLONASS＋A-GPS・Wi-Fi・基地局'],
                     ['バッテリー', '最大3.5週間（バッテリー持ち優先モード）／最大2.5週間（頻度優先モード）'],
+                    ['充電時間', '4時間'],
                     ['通信回線', 'LTE-M（ドコモ・ソフトバンク）'],
                     ['防水', '生活防水（IP53）'],
                     ['サイズ', '縦63×横47×奥行23mm'],
@@ -91,7 +92,7 @@ export default function HalococoPage() {
                   ))}
                 </tbody>
               </table>
-              <p className="text-xs text-g500 mt-2">出典：<a href="https://hellofamily.kokuyo.co.jp/view/page/hellococotalk" target="_blank" rel="noopener noreferrer" className="underline">はろここトーク 公式サイト</a>（2026年10月26日確認）。電池は平日のみ1日2時間稼働での実測値です。</p>
+              <p className="text-xs text-g500 mt-2">出典：<a href="https://hellofamily.kokuyo.co.jp/view/page/hellococotalk" target="_blank" rel="noopener noreferrer" className="underline">はろここトーク 公式サイト</a>（2026年11月15日確認）。電池は平日のみ1日2時間稼働での実測値です。</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-3">料金プラン</h3>
