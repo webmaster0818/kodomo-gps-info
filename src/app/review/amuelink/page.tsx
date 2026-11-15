@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { q: 'amue linkの月額料金はいくらですか？', a: '月額748円（税込・クレジットカード払い）です。月額料金のみで、位置確認・ボイスメッセージなどの機能を追加料金なし・回数無制限でご利用いただけます。1カ月単位の契約のため、いつでも解約できます（出典：amue link公式 2026年6月確認）。' },
+  { q: 'amue linkの月額料金はいくらですか？', a: '月額748円（税込・クレジットカード払い）です。月額料金のみで、位置確認・ボイスメッセージなどの機能を追加料金なし・回数無制限でご利用いただけます。1カ月単位の契約のため、いつでも解約できます（出典：amue link公式 2026年11月15日確認）。' },
   { q: '本体価格はいくらですか？', a: '本体価格は5,980円（税込・メーカー希望小売価格）です。端末の購入後、アプリから月額748円の支払いを設定すると、サービスをご利用いただけます。端末のみでは見守りサービスを利用できません。' },
-  { q: 'バッテリーはどれくらい持ちますか？', a: '通常使用で最大約5日間です（GPS圏内移動・通信/センサー取得間隔2分・1日2時間程度使用の場合）。連続使用では最大約14時間です。ボイスメッセージ対応端末のため、位置確認専用機（1〜2カ月持つタイプ）と比べると電池持ちは短く、こまめな充電が必要です（出典：amue link公式 2026年6月確認）。' },
+  { q: 'バッテリーはどれくらい持ちますか？', a: '通常使用で最大約5日間です（GPS圏内移動・通信/センサー取得間隔2分・1日2時間程度使用の場合）。連続使用では最大約14時間です。ボイスメッセージ対応端末のため、位置確認専用機（1〜2カ月持つタイプ）と比べると電池持ちは短く、こまめな充電が必要です（出典：amue link公式 2026年11月15日確認）。' },
   { q: '通話やメッセージはできますか？', a: '通話はできませんが、端末とアプリの間で双方向のボイスメッセージ（音声）を送り合えます。追加料金なしで利用でき、お迎えの連絡などに活用できます。テキスト通話のような同時通話機能はありません。' },
   { q: 'amue linkはセコムのサービスですか？', a: 'いいえ。amue linkを提供しているのはソニーネットワークコミュニケーションズ株式会社です。セコムは別の見守りサービス（ココセコム等）を提供しています。混同されやすいため、ご注意ください。' },
-  { q: '何人で見守りできますか？', a: '最大5人（端末は最大5台まで登録）で見守ることができます。両親や祖父母など、複数人で位置情報・ボイスメッセージを共有できます（出典：amue link公式 2026年6月確認）。' },
+  { q: '何人で見守りできますか？', a: '最大5人（端末は最大5台まで登録）で見守ることができます。両親や祖父母など、複数人で位置情報・ボイスメッセージを共有できます（出典：amue link公式 2026年11月15日確認）。' },
   { q: '防水ですか？学校に持って行けますか？', a: '防水IPX8・防塵IP6Xの防水防塵性能を備えており、雨の日にも使用できます。約23.7gと軽量で目立ちにくい形状のため持ち込みやすい端末ですが、規則は学校ごとに異なるため、事前にご確認ください。' },
 ];
 
@@ -32,7 +32,7 @@ export default function AmuelinkPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "amue link（アミューリンク）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-06-30", "dateModified": "2026-06-30", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "amue link（アミューリンク）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-06-30", "dateModified": "2026-11-15", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "amue link（アミューリンク）", "brand": {"@type": "Brand", "name": "ソニーネットワークコミュニケーションズ"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'amue link（アミューリンク）' }]} />
 
@@ -42,7 +42,7 @@ export default function AmuelinkPage() {
           <div className="flex items-center gap-3 mb-4">
             <span className="tag-pill bg-orange text-white">本体販売終了</span>
             <span className="tag-pill bg-blue text-white">約23.7gの軽さ</span>
-            <span className="tag-pill bg-green text-white">2026年6月 確認</span>
+            <span className="tag-pill bg-green text-white">2026年11月15日 確認</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             amue link（アミューリンク）のレビュー
@@ -61,7 +61,7 @@ export default function AmuelinkPage() {
               「お話しできるGPS」をコンセプトに、端末とアプリの双方向ボイスメッセージに対応しています。
               約23.7gという世界最小・最軽量クラスの軽さが最大の特徴です。セコムのサービスと混同されることがありますが、別のサービスです。
             </p>
-            <p className="text-xs text-g500 mt-2">出典：amue link公式サイト（2026年6月確認）</p>
+            <p className="text-xs text-g500 mt-2">出典：amue link公式サイト（2026年11月15日確認）</p>
           </div>
 
           <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 mb-6 text-sm text-gray-700">
@@ -71,13 +71,13 @@ export default function AmuelinkPage() {
           <p className="text-g600 mb-6">
             amue linkは、ソニーネットワークコミュニケーションズが提供する子供用GPS端末です。
             約23.7gと非常に軽く、端末とアプリで音声メッセージをやりとりできる「お話しできるGPS」です。
-            徒歩・車・バス・電車の移動手段をAIが色分けして表示するなど、多機能な点が特長です。
+            「歩く・止まる・自転車・車・バス・電車」をAIが判定して活動履歴に表示するなど、多機能な点が特長です。
             一方で、ボイスメッセージに対応しているためバッテリーは最大約5日と短く、こまめな充電が前提となります。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <h3 className="font-bold text-orange mb-3">基本スペック（公式・2026年6月確認）</h3>
+              <h3 className="font-bold text-orange mb-3">基本スペック（公式・2026年11月15日確認）</h3>
               <table className="w-full text-sm">
                 <tbody>
                   {[
@@ -91,6 +91,8 @@ export default function AmuelinkPage() {
                     ['防水防塵', '防水IPX8／防塵IP6X'],
                     ['サイズ／重量', '約60×26×12.3mm／約23.7g'],
                     ['見守り人数', '最大5人（端末最大5台登録）'],
+                    ['スポット通知', '10カ所まで'],
+                    ['通信間隔', '1分・2分・6分から選択'],
                     ['ボイスメッセージ', '双方向対応（追加料金なし）'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
@@ -100,7 +102,7 @@ export default function AmuelinkPage() {
                   ))}
                 </tbody>
               </table>
-              <p className="text-xs text-g400 mt-2">出典：amue link公式 特徴・仕様ページ（2026年6月確認）</p>
+              <p className="text-xs text-g400 mt-2">出典：amue link公式 特徴・仕様ページ（2026年11月15日確認）</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-orange mb-3">料金</h3>
@@ -127,7 +129,7 @@ export default function AmuelinkPage() {
               バッテリーが1〜2カ月持つ位置確認専用機（あんしんウォッチャーやみまもりGPSなど）と比べると短く、週1回以上の充電が前提です。
               「話せること」と「充電の手間の少なさ」のどちらを重視するかで、選び分けることをおすすめします。
             </p>
-            <p className="text-xs text-g500 mt-2">出典：amue link公式（2026年6月確認）</p>
+            <p className="text-xs text-g500 mt-2">出典：amue link公式（2026年11月15日確認）</p>
           </div>
 
           {/* Features */}
@@ -136,7 +138,7 @@ export default function AmuelinkPage() {
             {[
               { icon: '', title: '双方向ボイスメッセージ', desc: '端末とアプリの間で音声メッセージを送り合えます。追加料金はかかりません。' },
               { icon: '', title: 'リアルタイム位置確認', desc: 'GPS・みちびき・GLONASS・基地局のマルチ測位と、スマート位置補正を備えています。' },
-              { icon: '', title: '移動手段のAI判別', desc: '徒歩・車・バス・電車を色分けして表示するため、移動履歴を確認しやすくなっています。' },
+              { icon: '', title: '移動手段のAI判別', desc: 'センサー情報をもとにAIが「歩く・止まる・自転車・車・バス・電車」を判定し、活動履歴で確認できます。位置情報・行動履歴はサーバーに1年間分保存されます。' },
               { icon: '', title: '出発・到着通知', desc: '最大10カ所のスポットを設定でき、出入りを自動で通知します。' },
               { icon: '', title: '周辺温度センサー', desc: '周辺温度が35℃以上になると通知します。熱中症対策の目安として活用できます。' },
               { icon: '', title: '約23.7gの軽さ', desc: '世界最小・最軽量クラスです。防水IPX8・防塵IP6Xに対応しています。' },
@@ -147,7 +149,7 @@ export default function AmuelinkPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-g400 mb-8">出典：amue link公式 特徴・仕様ページ（2026年6月確認）</p>
+          <p className="text-xs text-g400 mb-8">出典：amue link公式 特徴・仕様ページ（2026年11月15日確認）</p>
 
           {/* Pros & Cons */}
           <h2 className="section-title">メリット・デメリット</h2>
@@ -158,7 +160,7 @@ export default function AmuelinkPage() {
                 <li>・双方向ボイスメッセージでお迎えの連絡などができます</li>
                 <li>・約23.7gの世界最小・最軽量クラスで、持ち歩く負担が少なくなっています</li>
                 <li>・防水IPX8・防塵IP6Xに対応しています</li>
-                <li>・移動手段をAIが色分けして表示するため、履歴を確認しやすくなっています</li>
+                <li>・移動手段（歩く・自転車・車・バス・電車など）をAIが判定し、活動履歴で確認できます</li>
                 <li>・周辺温度センサーで暑さの目安を把握できます</li>
                 <li>・1カ月単位の契約で、いつでも解約できます</li>
               </ul>
