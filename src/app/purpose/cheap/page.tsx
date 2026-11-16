@@ -119,7 +119,7 @@ export default function CheapPage() {
           <h2 className="section-title">コスパランキングTOP4</h2>
           <div className="space-y-4 mb-8">
             {[
-              { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、公式サイトで「利用者数No.1」と表記しています（公式サイトの表記。日系パブリッシャーのロケーションアプリとしてのNo.1：2025年1〜10月・iOS/Android合算・data.ai by Sensor Tower調べ）。バッテリーが最大2カ月（MG05・省エネモード時）持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
+              { rank: 1, name: 'みてねみまもりGPS', reason: '月額528円で機能が充実しており、公式サイトで「利用者数No.1」と表記しています（公式サイトの表記。日系パブリッシャーのロケーションアプリとしてのNo.1：26年度1月〜26年度9月の合計・iOS/Android合算・Sensor Tower調べ。2026年11月16日確認）。バッテリーが最大2カ月（MG05・省エネモード時）持つため、充電の手間も少なく済みます。', href: '/review/mitene/' },
               { rank: 2, name: 'あんしんウォッチャー', reason: '2台目無料のため、兄弟での利用に適しています。KDDI品質の安定した通信で、au以外の回線の保護者でも利用できます。', href: '/review/anshin-watcher/' },
               { rank: 3, name: 'まもサーチ', reason: '月額528円（年額5,500円）で、電池はバッテリー持ち優先モードで最大2か月です。保護者5人まで位置を共有できます。', href: '/review/mamosearch/' },
               { rank: 4, name: 'BoTトーク', reason: '月額528円の基本プランでも、高精度なAI学習を搭載しています。トーク付きのプランでも748円です。', href: '/review/bot-talk/' },
