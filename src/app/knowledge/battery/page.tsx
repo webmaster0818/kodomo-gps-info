@@ -31,7 +31,7 @@ const batteryData = [
   { name: 'みてねみまもりGPS', battery: '最大約2カ月(MG05・更新3分・容量2000mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'あんしんウォッチャー', battery: '最大約2カ月(2024年更新で延長・容量1500mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'みもりGPSトーク', battery: '最大2カ月(エコモード・容量2000mAh)', charge: 'USB Type-C', level: 5 },
-  { name: 'BoTトーク', battery: '更新3分で約2〜4週間(容量1400mAh)', charge: 'USB Type-C', level: 4 },
+  { name: 'BoTトーク', battery: 'GPSプラン最長1ヶ月以上／GPS＆トークプラン最長2週以上（バッテリー優先モード・最短3分間隔。容量は公式で確認できず。BoT公式・2026年11月17日確認）', charge: 'USB Type-C', level: 4 },
   { name: 'コネコ', battery: '最大約1カ月', charge: 'USB Type-C', level: 4 },
   { name: 'まもサーチ', battery: '最大2か月（電池長持ちモード）', charge: 'USB Type-C', level: 3 },
   { name: 'さゆう', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },

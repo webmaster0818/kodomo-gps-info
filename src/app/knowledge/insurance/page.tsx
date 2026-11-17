@@ -36,7 +36,7 @@ const faqJsonLd = {
 const warrantyData = [
   { name: 'みてねみまもりGPS', warranty: '購入後1年', extOption: 'なし', lossCover: '対象外', breakCover: '初期不良のみ無償交換', cost: '無料（標準保証のみ）' },
   { name: 'あんしんウォッチャー', warranty: '購入後1年', extOption: 'あんしん補償（月額165円）', lossCover: '3,300円で交換', breakCover: '3,300円で交換', cost: '月額165円' },
-  { name: 'BoTトーク', warranty: '購入後1年', extOption: 'あんしん補償パック', lossCover: '半額で再購入', breakCover: '無償交換（年1回）', cost: '月額220円' },
+  { name: 'BoTトーク', warranty: '購入後1年', extOption: '公式で確認できず', lossCover: '公式で確認できず', breakCover: '保証は購入日から1年（自然故障に限る。BoT公式・2026年11月17日確認）', cost: '公式で確認できず' },
   { name: 'まもサーチ', warranty: '購入後1年', extOption: 'なし', lossCover: '対象外', breakCover: '有償修理', cost: '無料（標準保証のみ）' },
 ];
 
