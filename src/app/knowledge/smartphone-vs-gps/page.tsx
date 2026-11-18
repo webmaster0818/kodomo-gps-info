@@ -161,7 +161,7 @@ export default function SmartphoneVsGpsPage() {
                 {[
                   { name: 'キッズケータイ KY-41C', carrier: 'ドコモ', price: '550円〜', gps: 'あり（イマドコサーチ）' },
                   { name: 'mamorino6', carrier: 'au', price: '550円〜', gps: 'あり（安心ナビ）' },
-                  { name: 'キッズフォン3', carrier: 'ソフトバンク', price: '539円〜', gps: 'あり（位置ナビ）' },
+                  { name: 'キッズフォン3', carrier: 'ソフトバンク', price: '748円', gps: 'あり（位置ナビ）' },
                   { name: 'Hamic POCKET L', carrier: 'SIMフリー', price: '1,100円〜', gps: 'あり（専用アプリ）' },
                 ].map((row) => (
                   <tr key={row.name} className="border-b border-gray-200">

@@ -97,7 +97,7 @@ export default function SafetyPage() {
                   ['BoTトーク', '×', '×', '×', '×', '×', '528円〜', '/review/bot-talk/'],
                   ['みてねGPS', '×', '×', '×', '×', '×', '528円〜', '/review/mitene/'],
                   ['あんしんウォッチャー', '×', '×', '×', '×', '×', '539円', '/review/anshin-watcher/'],
-                  ['キッズケータイ', '△', '×', '×', '×', '○', '539円〜', '/review/kids-phone/'],
+                  ['キッズケータイ', '△', '×', '×', '×', '○', '550円〜', '/review/kids-phone/'],
                 ].map(([name, sos, fushin, traffic, danger, buzzer, price, href]) => (
                   <tr key={name} className="border-b border-g100">
                     <td className="p-3"><Link href={href} className="text-blue hover:underline font-semibold">{name}</Link></td>

@@ -98,7 +98,7 @@ export default function TalkPage() {
                   ['みもりGPSトーク', '○', '△（文字を音声に変換して送信）', '×', '×', '748円', '/review/mimori/'],
                   ['myFirst Fone', '○', '○', '○', '○', '約980円〜', '/review/myfirst-fone/'],
                   ['Hamic', '×', '○（チャット形式）', '○（Hamicアプリ）', '×', '1,100円', '/review/hamic/'],
-                  ['キッズケータイ', '×', '○（SMS）', '○', '×', '539円〜', '/review/kids-phone/'],
+                  ['キッズケータイ', '×', '○（SMS）', '○', '×', '550円〜', '/review/kids-phone/'],
                 ].map(([name, voice, text, call, video, price, href]) => (
                   <tr key={name} className="border-b border-g100">
                     <td className="p-3"><Link href={href} className="text-blue hover:underline font-semibold">{name}</Link></td>
