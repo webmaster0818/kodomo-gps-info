@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { q: 'イマドコサーチの口コミで多い不満は何に注意すればいいですか？', a: '基本の「いますぐ検索」は、保護者が検索するたびに居場所を確認する仕組みです。指定した時間帯・間隔で自動で位置を記録する「ちょい前かくにん」もありますが、SH-03M・iPhoneなど非対応の端末があります（出典：イマドコサーチ公式 対応機種 2026年11月確認）。位置の記録方法と更新の間隔は、口コミを読む際に特に注目すべき点です。常時追跡型（みてね・あんしんウォッチャー等の専用端末）とは仕組みが異なるため、比較検討する場合は、当サイトの比較ページで方式の違いから確認することをおすすめします。' },
+  { q: 'イマドコサーチの口コミで多い不満は何に注意すればいいですか？', a: '基本の「いますぐ検索」は、保護者が検索するたびに居場所を確認する仕組みです。指定した時間帯・間隔で自動で位置を記録する「ちょい前かくにん」もありますが、SH-03M・iPhoneなど非対応の端末があります（出典：イマドコサーチ公式 対応機種 2026年11月確認）。位置の記録方法と更新の間隔は、利用前に確認しておきたい点です。常時追跡型（みてね・あんしんウォッチャー等の専用端末）とは仕組みが異なるため、比較検討する場合は、当サイトの比較ページで方式の違いから確認することをおすすめします。' },
   { q: 'イマドコサーチは専用のGPS端末ですか？', a: 'いいえ。イマドコサーチはドコモが提供する「位置検索サービス」で、専用のGPS端末ではありません。見守られるお子さまがドコモ回線のキッズケータイ・スマートフォン（Android・iPhone）などを持っていることが前提で、その端末の位置を保護者のスマートフォンから地図で確認できる仕組みです。みてねみまもりGPSやまもサーチのような単体GPS端末とは種類が異なります（出典：ドコモ公式 2026年11月確認）。' },
   { q: '月額料金はいくらですか？', a: 'イマドコサーチの料金は、公式で月額330円（税込）と案内されており、新規契約後31日間は無料で利用できます。月額使用料は見守る方にのみかかります。正確な金額は、お申し込み前にドコモ公式サイトにて必ずご確認ください（出典：ドコモ公式 2026年11月確認）。' },
   { q: '見守る保護者もドコモ回線が必要ですか？', a: '必要ありません。公式のよくある質問では、保護者がドコモ以外の回線でも利用でき、お子さまのドコモ回線に紐づいたdアカウントで申し込むと案内されています。見守られるお子さま側は、ドコモ回線の契約が必要です。見守る相手は5人まで登録できます（出典：ドコモ公式 2026年11月確認）。' },
@@ -32,7 +32,7 @@ export default function ImadocoSearchPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "イマドコサーチ（ドコモ）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-07-17", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "イマドコサーチ（ドコモ）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-07-02", "dateModified": "2026-11-19", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "イマドコサーチ", "brand": {"@type": "Brand", "name": "NTTドコモ"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'イマドコサーチ（ドコモ）' }]} />
 
@@ -195,23 +195,17 @@ export default function ImadocoSearchPage() {
             </div>
           </div>
 
-          {/* 口コミ傾向（創作なし） */}
-          <h2 className="section-title">口コミ・評判の傾向</h2>
+          {/* 口コミの掲載状況（出典のある評点のみ掲載） */}
+          <h2 className="section-title">口コミ・評判の掲載状況</h2>
           <p className="text-g600 mb-4 text-sm">
-            イマドコサーチは、大手キャリアの定番サービスとして各所で紹介されています。公開情報から読み取れる傾向は次のとおりです（個人を特定する実名や星評価を伴う口コミは掲載しておりません）。
+            当サイトでは、出典を示せる評点・件数だけを掲載しています。2026年11月19日に次の2つを確認しましたが、イマドコサーチの評点・件数は見つかりませんでした。
           </p>
-          <div className="grid sm:grid-cols-2 gap-4 mb-4">
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-green-dark text-sm mb-2">好意的に評価されやすい点</h3>
-              <p className="text-sm text-g600">キッズケータイと組み合わせて位置確認と通話を1台で完結できる点、大手キャリアによる安心感、保護者がドコモ以外の回線でも使える柔軟さが評価されやすい傾向にあります。</p>
-            </div>
-            <div className="card-hover p-5">
-              <h3 className="font-bold text-orange-dark text-sm mb-2">指摘されやすい点</h3>
-              <p className="text-sm text-g600">端末代・回線料・オプション料金を合わせた総費用が上がりやすい点や、単体GPSより充電の頻度が多い点は、費用や手軽さを重視するご家庭にとって気になりやすいと指摘されています。</p>
-            </div>
-          </div>
-          <p className="text-xs text-g400 mb-8">
-            ※上記は、ドコモ公式の案内および一般的な解説記事の論調をもとにした要約です。料金・対応端末・提供条件は変更される場合があります。お申し込み前に、ドコモ公式サイトにて最新情報を必ずご確認ください（2026年7月確認）。
+          <ul className="text-g600 mb-4 text-sm space-y-1">
+            <li>・App Store（日本）：Apple の検索 API で「イマドコサーチ」を検索しても、イマドコサーチ単体のアプリは出てきませんでした（上位はドコモの他のアプリ）。</li>
+            <li>・Google Play：以前のイマドコサーチのアプリのページ（com.nttdocomo.android.imadocosearch）は「見つかりませんでした」と表示されました。</li>
+          </ul>
+          <p className="text-g600 mb-4 text-sm">
+            このため、評点・件数・口コミの本文はいずれも掲載していません。以前このページに載せていた「評価されやすい点・指摘されやすい点」の要約は、出典を示せないため削除しました。出典のある評点が見つかった場合は、出典と確認日を付けて掲載します。料金や機能は、上の表（ドコモ公式 2026年11月19日確認：月額330円・初回31日間無料・見守る相手は5人まで）をご覧ください。
           </p>
 
           {/* FAQ */}
