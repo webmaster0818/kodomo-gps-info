@@ -98,13 +98,17 @@ const features = [
   { title: '通知ボタン', desc: 'ボタンを押すと周囲の音を録音し、現在地とともに保護者へ通知します。録音時間は5〜20秒、または無効に設定できます。' },
   { title: '学校モード', desc: '指定した時間帯・場所で、スピーカー・ボタン・着信ランプを無効にします。新・学校モードではトーク機能も停止できます。' },
   { title: '音声時計', desc: 'ボタンを2回押すと、現在の時刻を音声で知らせます。' },
+  { title: '乗り物移動通知', desc: '乗り物での移動を保護者に通知する機能です。公式サイトの他社比較表（2025年12月時点の同社調べ）に「乗り物移動通知」として記載されています。対象となる乗り物の種類は公式に記載がありません。' },
+  { title: '行動のスケジュール表示', desc: '毎日の行動をスケジュール形式で自動記録し、エリア外への外出や不審者情報もあわせて一日の流れとして確認できます。' },
+  { title: '自動の節電・自宅Wi-Fi補正', desc: '電池の残りがわずかになると、位置の更新間隔を自動で延ばして節電します。自宅のWi-Fiによる位置の補正にも対応しています。' },
+  { title: 'トークの既読通知', desc: '2026年モデルでは、お子さまが音声を再生すると自動的に既読になり、保護者に通知が届きます。音量は消音を含めて6段階で調整できます。' },
 ];
 
 export default function MimoriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みもりGPSトークの口コミ・評判と料金・機能", "datePublished": "2026-03-15", "dateModified": "2026-11-02", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みもりGPSトークの口コミ・評判と料金・機能", "datePublished": "2026-03-15", "dateModified": "2026-11-20", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みもりGPSトーク' }]} />
 
       {/* Hero */}
@@ -133,6 +137,9 @@ export default function MimoriPage() {
             位置の確認やエリア通知に加え、不審者情報との連動、指定した場所に近づいたときの警告など、防犯に関わる機能を備えている点が特徴です。
             2026年10月23日時点で、公式の購入ページで販売している機種はみもりGPSトークのみです。
           </p>
+          <p className="text-g600 mb-6 text-sm">
+            なお、名前の似た<Link href="/review/mitene/" className="text-blue underline">みてねみまもりGPSトーク</Link>（株式会社MIXI）は別の製品です。2026年11月20日にYahoo!で「みもりGPSトーク 口コミ」「みもりGPSトーク 評判」を検索したところ、上位にみてねみまもりGPSの公式ページや楽天市場のレビュー（みてねみまもりGPSトーク MT05の商品）が含まれていました。口コミを調べる際は、どちらの製品についての声かをご確認ください。
+          </p>
 
           <div className="bg-blue-light rounded-xl p-5 mb-8">
             <p className="font-bold text-g800 mb-2">口コミ・評判の結論（{CHECKED}確認）</p>
@@ -148,10 +155,11 @@ export default function MimoriPage() {
           <div className="bg-orange-light rounded-xl p-5 mb-8">
             <p className="font-bold text-g800 mb-2">料金について（{CHECKED}確認）</p>
             <ul className="text-sm text-g700 space-y-1">
-              <li>・本体3,800円（税込）は公式サイトのキャンペーン価格です。公式トップページでは、2026年11月2日の確認時点で「見守り応援キャンペーン（11月末まで・在庫限り）」と表示されています。在庫限りのため、ご購入前に公式サイトで最新の価格をご確認ください。通常価格は公式サイトに記載がありません</li>
+              <li>・本体3,800円（税込）は公式サイトのキャンペーン価格です。公式トップページでは、2026年11月20日の確認時点でも「見守り応援キャンペーン（11月末まで・在庫限り）」と表示されています。在庫限りのため、ご購入前に公式サイトで最新の価格をご確認ください。通常価格は公式サイトに記載がありません</li>
               <li>・公式サイトでは、費用は「端末の購入費用（本体＋送料）と月額費用のみ」と案内しています。送料の金額は記載がありません</li>
               <li>・月額料金は、アプリで開通手続きを完了した日から発生します。開通手続きは購入から3か月以内に行う必要があります</li>
               <li>・専用ケースは別売です（PUレザーケース1,980円、シリコンケース1,848円、いずれも税込）</li>
+              <li>・公式サイトでは「平日17時まで当日発送」と案内しています（2026年11月20日確認）。入学前の時期などは在庫や配送の状況が変わる可能性があるため、必要な日から逆算して早めにご注文ください</li>
             </ul>
           </div>
 
@@ -186,7 +194,7 @@ export default function MimoriPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-g500 mb-8">出典：みもり公式サイト（{CHECKED}確認）、ドリームエリア株式会社 プレスリリース（2024年1月11日・2026年3月26日）。</p>
+          <p className="text-xs text-g500 mb-8">出典：みもり公式サイト（{CHECKED}確認。乗り物移動通知・スケジュール表示・節電・自宅Wi-Fi補正・既読通知・音量は2026年11月20日確認）、ドリームエリア株式会社 プレスリリース（2024年1月11日・2026年3月26日）。</p>
 
           {/* Reviews */}
           <h2 id="reviews" className="section-title">口コミ・評判の集計</h2>
@@ -226,6 +234,13 @@ export default function MimoriPage() {
             </div>
           </div>
           <p className="text-xs text-g500 mb-6">オリコンの「利用者の声」18件を当サイトで分類しました。1件の声が複数の項目に当たる場合があるため、項目の合計は件数と一致しません。</p>
+
+          <h3 className="font-bold text-g800 mb-2">公式サイトに掲載されている保護者の声</h3>
+          <p className="text-g600 mb-4 text-sm">
+            公式サイトの「ママ・パパの声」には4件が掲載されています（2026年11月20日確認）。内容は、キッズ携帯と比べて月額が大きく変わらず常に位置を確認できる点、放課後等デイサービスなど決まった場所にいるかを確認できる点、入学から6年間使い続けた点などです。
+            提供元が選んで載せている声のため、満足度の判断には上のオリコンの調査や下のApp Storeのレビューもあわせてご覧ください。
+            出典：<a href="https://machicomi.jp/mimori/" target="_blank" rel="noopener noreferrer" className="text-blue underline">みもり公式サイト</a>
+          </p>
 
           <h3 className="font-bold text-g800 mb-2">App Store「みもり」アプリのレビュー</h3>
           <p className="text-g600 mb-3 text-sm">
