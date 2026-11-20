@@ -5,17 +5,17 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'みまもりGPS（旧どこかなGPS）の口コミ・評判は？料金・電池持ち・特徴を解説【2026年】',
   description:
-    'ソフトバンクのみまもりGPS（旧どこかなGPS2／NC002）をレビューします。月額528円（税込）、本体5,184円（税込・2026年11月1日 公式確認）、バッテリー最大約1.5カ月、2周波GPS対応の端末です。料金、電池持ち、見守り台数、通話の可否までを公式情報（2026年11月1日確認）にもとづいて解説します。',
+    'ソフトバンクのみまもりGPS（旧どこかなGPS2／NC002）をレビューします。月額528円（税込）、本体5,184円（税込）、バッテリー最大約1.5カ月、2周波GPS対応の端末です。料金、電池持ち、見守り台数、通話の可否までを公式情報（2026年11月20日確認）にもとづいて解説します。',
 };
 
 const faqData = [
   { q: '「どこかなGPS」と「みまもりGPS」は違うものですか？', a: '同じ製品です。ソフトバンクは2025年8月4日に「どこかなGPS2」を「みまもりGPS」へ名称変更しました。サービス内容・利用方法・サポート体制に変更はなく、既存のユーザーは手続き不要で利用を継続できます（出典：ソフトバンク公式お知らせ 2025年7月28日）。' },
-  { q: 'みまもりGPSの月額料金はいくらですか？', a: '月額528円（税込）です。名称変更後は、月額基本料の無料期間が6カ月から1カ月に短縮されました（料金528円自体は変更なし／出典：ソフトバンク公式 2026年11月1日確認）。最新の無料特典の有無は、公式サイトにてご確認ください。' },
-  { q: '本体価格はいくらですか？', a: '名称変更にあわせて、本体価格は7,480円（税込）から5,280円（税込）へ値下げされました（出典：ソフトバンク公式お知らせ 2025年7月28日）。2026年10月26日時点の公式製品ページでは、本体価格は5,184円（税込・48回払いの場合は月108円）と表示されています。販売チャネルによって表示価格が異なる場合があるため、ご購入前に公式サイトや各ショップにてご確認ください。' },
-  { q: 'バッテリーはどれくらい持ちますか？', a: '1回の充電で最大約1.5カ月持ちます。これは「平日1日2.5時間移動・土日未使用」を想定した公式の目安で、位置更新の頻度や使い方によって変動します（出典：ソフトバンク公式 みまもりGPS製品ページ 2026年11月1日確認）。残量が少なくなると、メールでお知らせが届きます。' },
+  { q: 'みまもりGPSの月額料金はいくらですか？', a: '月額528円（税込）です。名称変更後は、月額基本料の無料期間が6カ月から1カ月に短縮されました（料金528円自体は変更なし／出典：ソフトバンク公式 2026年11月20日確認）。最新の無料特典の有無は、公式サイトにてご確認ください。' },
+  { q: '本体価格はいくらですか？', a: '名称変更にあわせて、本体価格は7,480円（税込）から5,280円（税込）へ値下げされました（出典：ソフトバンク公式お知らせ 2025年7月28日）。2026年11月20日時点の公式製品ページでは、本体価格は5,184円（税込・48回払いの場合は月108円）と表示されています。販売チャネルによって表示価格が異なる場合があるため、ご購入前に公式サイトや各ショップにてご確認ください。' },
+  { q: 'バッテリーはどれくらい持ちますか？', a: '1回の充電で最大約1.5カ月持ちます。これは「平日1日2.5時間移動・土日未使用」を想定した公式の目安で、位置更新の頻度や使い方によって変動します（出典：ソフトバンク公式 みまもりGPS製品ページ 2026年11月20日確認）。残量が少なくなると、メールでお知らせが届きます。' },
   { q: '通話やメッセージはできますか？', a: 'みまもりGPSは位置確認に特化した端末で、通話・メッセージ（トーク）機能はありません。お子さまと連絡を取りたい場合は、音声メッセージに対応したamue linkやみてねみまもりGPSトークなどをご検討ください。' },
-  { q: '何台・何人で見守りできますか？', a: '1台のみまもりGPSを、最大11台のスマートフォンで見守ることができます。また、最大10個のみまもりGPSを1つのアプリで同時に見守れるため、ごきょうだいでの利用にも対応しています（出典：ソフトバンク公式 2026年11月1日確認）。' },
-  { q: '学校に持って行っても大丈夫ですか？', a: '音や画面のない位置確認専用の端末であるため授業の妨げになりにくく、多くの学校で持ち込みやすいタイプです。ただし、持ち込みの可否は学校ごとに異なるため、事前に学校の規則をご確認ください。' },
+  { q: '何台・何人で見守りできますか？', a: '1台のみまもりGPSを、最大11台のスマートフォンで見守ることができます。また、最大10個のみまもりGPSを1つのアプリで同時に見守れるため、ごきょうだいでの利用にも対応しています（出典：ソフトバンク公式 2026年11月20日確認）。' },
+  { q: '学校に持って行っても大丈夫ですか？', a: '通話・トーク機能のない位置確認専用の端末です。ただし、持ち込みの可否は学校ごとに異なるため、事前に学校の規則をご確認ください。' },
 ];
 
 const faqJsonLd = {
@@ -32,7 +32,7 @@ export default function DokokanaGpsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みまもりGPS（旧どこかなGPS）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-06-30", "dateModified": "2026-06-30", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "みまもりGPS（旧どこかなGPS）の口コミ・評判は？料金・電池持ち・特徴を解説", "datePublished": "2026-06-30", "dateModified": "2026-11-20", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "みまもりGPS（旧どこかなGPS2）", "brand": {"@type": "Brand", "name": "ソフトバンク"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'みまもりGPS（旧どこかなGPS）' }]} />
 
@@ -74,13 +74,13 @@ export default function DokokanaGpsPage() {
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
             <div className="card-hover p-5">
-              <h3 className="font-bold text-blue mb-3">基本スペック（公式・2026年11月1日確認）</h3>
+              <h3 className="font-bold text-blue mb-3">基本スペック（公式・2026年11月20日確認）</h3>
               <table className="w-full text-sm">
                 <tbody>
                   {[
                     ['提供元', 'ソフトバンク'],
                     ['月額料金', '528円（税込）'],
-                    ['本体価格', '5,184円（税込・2026年10月26日 公式確認）'],
+                    ['本体価格', '5,184円（税込・2026年11月20日 公式確認）'],
                     ['測位方式', 'L1/L5デュアルバンド測位（GPS・みちびき・BeiDou・Galileo）／L1測位（GLONASS）／Wi-Fi・携帯基地局'],
                     ['バッテリー', '1,810mAh・初期設定状態で最大1.5カ月（使い方で変動）'],
                     ['充電', 'USB Type-C・充電時間約300分（充電器は別途用意）'],
@@ -97,7 +97,7 @@ export default function DokokanaGpsPage() {
                   ))}
                 </tbody>
               </table>
-              <p className="text-xs text-g400 mt-2">出典：<a href="https://www.softbank.jp/mobile/products/mimamorimobile/mimamori-gps/" className="underline" target="_blank" rel="noopener noreferrer nofollow">ソフトバンク公式 みまもりGPS製品ページ</a>・<a href="https://www.mimamori-gps.jp/product/spec.html" className="underline" target="_blank" rel="noopener noreferrer nofollow">みまもりGPS公式 製品仕様</a>（2026年11月1日確認）。本体価格は総額5,184円（48回払いの場合は月108円）です。</p>
+              <p className="text-xs text-g400 mt-2">出典：<a href="https://www.softbank.jp/mobile/products/mimamorimobile/mimamori-gps/" className="underline" target="_blank" rel="noopener noreferrer nofollow">ソフトバンク公式 みまもりGPS製品ページ</a>・<a href="https://www.mimamori-gps.jp/product/spec.html" className="underline" target="_blank" rel="noopener noreferrer nofollow">みまもりGPS公式 製品仕様</a>（2026年11月20日確認）。本体価格は総額5,184円（48回払いの場合は月108円）です。</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-3">料金</h3>
@@ -110,7 +110,7 @@ export default function DokokanaGpsPage() {
                 <div className="bg-orange-light rounded-xl p-4">
                   <p className="font-bold text-orange">本体価格</p>
                   <p className="text-2xl font-extrabold text-g800">5,184円<span className="text-sm font-normal text-g500">（税込）</span></p>
-                  <p className="text-xs text-g500 mt-1">名称変更時（2025年7月）に7,480円から5,280円に値下げされ、2026年10月26日時点の公式表示は5,184円です。無料期間は1カ月に短縮されています。</p>
+                  <p className="text-xs text-g500 mt-1">名称変更時（2025年7月）に7,480円から5,280円に値下げされ、2026年11月20日時点の公式表示は5,184円です。無料期間は1カ月に短縮されています。</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function DokokanaGpsPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-g400 mb-8">出典：ソフトバンク公式 みまもりGPS製品ページ（2026年11月1日確認）</p>
+          <p className="text-xs text-g400 mb-8">出典：ソフトバンク公式 みまもりGPS製品ページ（2026年11月20日確認）</p>
 
           {/* Pros & Cons */}
           <h2 className="section-title">メリット・デメリット</h2>
@@ -162,30 +162,16 @@ export default function DokokanaGpsPage() {
           </div>
 
           {/* User Reviews */}
-          <h2 className="section-title">口コミの傾向</h2>
-          <p className="text-g600 mb-4 text-sm">
-            App Storeや各レビューサイトに見られる傾向を、出典のある範囲で要約しています（個別の創作口コミは掲載しておりません）。
-          </p>
-          <div className="grid sm:grid-cols-2 gap-4 mb-4">
-            <div className="card-hover p-5 bg-green-light/40">
-              <h3 className="font-bold text-green-dark text-sm mb-2">好意的な傾向</h3>
-              <ul className="space-y-2 text-sm text-g700">
-                <li>・バッテリーが長持ちし、静止中は消耗が抑えられるという声</li>
-                <li>・エリア通知（到着・はなれた）など通知機能が充実しているという評価</li>
-                <li>・位置確認に絞ったシンプルさと費用対効果を評価する声</li>
-              </ul>
-            </div>
-            <div className="card-hover p-5 bg-orange-light/40">
-              <h3 className="font-bold text-orange-dark text-sm mb-2">指摘されている傾向</h3>
-              <ul className="space-y-2 text-sm text-g700">
-                <li>・2024年7月に通知がメールからアプリのプッシュ通知に変わった前後で、通知が届かなくなった、メールのほうが履歴が残って便利だったという声</li>
-                <li>・初期設定の際に再設定が必要になったという声</li>
-                <li>・GPS精度に誤差を感じるという一部の指摘</li>
-              </ul>
-            </div>
+          <h2 className="section-title">口コミ・評判の掲載状況</h2>
+          <div className="card-hover p-5 mb-4">
+            <ul className="space-y-2 text-sm text-g700">
+              <li>・App Storeの「みまもりGPS」アプリの評価は<strong>5点満点中4.2（1,423件）</strong>です（2026年11月20日、Appleの公開データで確認）。アプリの評価には、端末だけでなくアプリの使いやすさも含まれます。</li>
+              <li>・2024年7月に、通知の方法がメールからアプリのプッシュ通知に変わりました（<a href="https://k-tai.watch.impress.co.jp/docs/news/1605650.html" className="underline" target="_blank" rel="noopener noreferrer">ケータイWatch 2024年7月4日</a>）。App Storeのレビューには、この変更の前後で通知が届かなくなった、メールのほうが履歴が残って便利だったという投稿があります（2026年10月21日確認）。</li>
+              <li>・当サイトは、レビュー全体の件数を数えて好意的・否定的の割合を出す集計は行っていません。個別の口コミは掲載していません。</li>
+            </ul>
           </div>
           <p className="text-xs text-g400 mb-8">
-            ※口コミは、公開レビューの傾向を要約したものです。出典: <a href="https://apps.apple.com/jp/app/id1486547299" className="underline" target="_blank" rel="noopener noreferrer">みまもりGPS（App Store）</a>、各レビューサイト（2026年6月確認。通知に関する記述は2026年10月21日にApp Storeのレビューで再確認）。通知方式の変更は<a href="https://k-tai.watch.impress.co.jp/docs/news/1605650.html" className="underline" target="_blank" rel="noopener noreferrer">ケータイWatch（2024年7月4日）</a>による
+            出典: <a href="https://apps.apple.com/jp/app/id1486547299" className="underline" target="_blank" rel="noopener noreferrer">みまもりGPS（App Store）</a>（評価・件数は2026年11月20日確認）
           </p>
 
           {/* 向く人・向かない人 */}
