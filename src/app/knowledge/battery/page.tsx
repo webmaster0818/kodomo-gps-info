@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { q: 'バッテリーが最も長持ちするGPSはどれですか？', a: 'みてねみまもりGPSが最大約2カ月（MG05・省エネモード時）で最長です。次いでコネコ（約1カ月）、あんしんウォッチャー（約1.5カ月）と続きます。' },
+  { q: 'バッテリーが最も長持ちするGPSはどれですか？', a: 'みてねみまもりGPSが最大約2カ月（MG05・省エネモード時）で最長です。次いであんしんウォッチャー（約1.5カ月）と続きます。新規販売を終了したconecoは、公式の目安で約4日程度です（カーメイト公式・2026年11月21日確認）。' },
   { q: '更新間隔とバッテリーには、どのような関係がありますか？', a: '更新間隔が短いほど、バッテリー消費が増えます。1.5分間隔で約1〜2週間、3分間隔で約1カ月、15分間隔で最大2カ月が目安です。' },
   { q: '充電には、どのくらいの時間がかかりますか？', a: 'ほとんどのGPS端末は1.5〜3時間でフル充電できます。USB Type-Cケーブルで充電するタイプが主流です。' },
   { q: '充電しながら使えますか？', a: '技術的には可能です。ただし、外出中に充電する機会はないため、実際には夜間に充電して翌日使う形になります。' },
@@ -32,10 +32,10 @@ const batteryData = [
   { name: 'あんしんウォッチャー', battery: '最大約2カ月(2024年更新で延長・容量1500mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'みもりGPSトーク', battery: '最大2カ月(エコモード・容量2000mAh)', charge: 'USB Type-C', level: 5 },
   { name: 'BoTトーク', battery: 'GPSプラン最長1ヶ月以上／GPS＆トークプラン最長2週以上（バッテリー優先モード・最短3分間隔。容量は公式で確認できず。BoT公式・2026年11月17日確認）', charge: 'USB Type-C', level: 4 },
-  { name: 'コネコ', battery: '最大約1カ月', charge: 'USB Type-C', level: 4 },
   { name: 'まもサーチ', battery: '最大2か月（電池長持ちモード）', charge: 'USB Type-C', level: 3 },
   { name: 'さゆう', battery: '最大約2週間', charge: 'USB Type-C', level: 3 },
   { name: 'はろここトーク', battery: '最大3.5週間（バッテリー持ち優先モード）', charge: 'USB Type-C', level: 3 },
+  { name: 'コネコ（新規販売終了）', battery: '約4日程度（容量620mAh・1日4時間移動／メッセージ4回の想定。カーメイト公式・2026年11月21日確認）', charge: 'USB Type-C', level: 1 },
   { name: 'ソラノメ（販売終了）', battery: '約1週間(容量700mAh)', charge: 'MicroUSB', level: 2 },
   { name: 'ハミック', battery: '約1.5日（Hamic POCKET L・公式の目安）', charge: 'USB Type-C', level: 1 },
   { name: 'myFirst Fone', battery: '待機最大24時間（M1）', charge: 'マグネット充電', level: 1 },

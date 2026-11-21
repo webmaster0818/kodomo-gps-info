@@ -51,7 +51,7 @@ const deviceNotificationMatrix = [
   { name: 'まもサーチ', n1: '○', n2: '○', n3: '○', n4: '○', n5: '×', n6: '○', n7: '○', n8: '○' },
   { name: 'soranome（販売終了）', n1: '○', n2: '○', n3: '○', n4: '○', n5: '×', n6: '○', n7: '×', n8: '○' },
   { name: 'myFirst Fone R2', n1: '○', n2: '○', n3: '○', n4: '○', n5: '×', n6: '○', n7: '×', n8: '○' },
-  { name: 'coneco（新規販売終了）', n1: '○', n2: '○', n3: '○', n4: '○', n5: '×', n6: '○', n7: '×', n8: '○' },
+  { name: 'coneco（新規販売終了）', n1: '○', n2: '○', n3: '○', n4: '○', n5: '○', n6: '－', n7: '－', n8: '－' },
   { name: 'Hamic POCKET', n1: '○', n2: '○', n3: '○', n4: '○', n5: '×', n6: '×', n7: '×', n8: '○' },
   { name: 'キッズフォン3', n1: '○', n2: '○', n3: '○', n4: '○', n5: '×', n6: '○', n7: '×', n8: '○' },
 ];
@@ -146,7 +146,7 @@ export default function NotificationTypesPage() {
           </div>
 
           <h2 className="section-title">機種別の通知対応表（10機種 x 8通知）</h2>
-          <p className="text-sm text-g500 mb-3">○ = 対応 / × = 非対応（2026年5月時点）</p>
+          <p className="text-sm text-g500 mb-3">○ = 対応 / × = 非対応 / － = 公式で確認できず（2026年5月時点。conecoの行は2026年11月21日にカーメイト公式・Webマニュアルで確認し、SOS通知は決定ボタン長押しの「呼び出し通知」、速度異常通知は「のりもの通知」として○としています）</p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-xs border-collapse">
               <thead>

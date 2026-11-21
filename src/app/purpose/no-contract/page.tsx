@@ -35,7 +35,7 @@ const contractData = [
   { name: 'まもサーチ', term: '最低契約期間の記載なし', fee: '解約金なし（公式FAQ）', note: '月額528円／年額5,500円。保護者は最大5人', href: '/review/mamosearch/' },
   { name: 'SayuU', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '月額1,210円。契約条件は公式サイトにてご確認ください', href: '/review/sayuu/' },
   { name: 'みもりGPSトーク', term: 'なし（1か月単位の自動更新）', fee: 'なし', note: '契約満了日の5日前までにアプリから解約を申請。月の途中の解約に日割りの返金はありません（利用規約）', href: '/review/mimori/' },
-  { name: 'coneco（新規販売終了）', term: '公式サイトで要確認', fee: '公式サイトで要確認', note: '詳細は公式サイトにてご確認ください', href: '/review/coneco/' },
+  { name: 'coneco（新規販売終了）', term: 'なし（公式Q&A）', fee: '公式に記載なし', note: '月額480円。利用終了月は日割りなしで1か月分。26日以降の手続きは翌月末に回線停止。停止した端末は再契約不可（利用規約・Webマニュアル・2026年11月21日確認）', href: '/review/coneco/' },
   { name: 'myFirst Fone', term: 'SIM契約による', fee: '公式サイトで要確認', note: 'SIMは別契約のため、条件は提供元にてご確認ください', href: '/review/myfirst-fone/' },
   { name: 'はろここトーク', term: '通信費は最低1か月分（申込みの翌月2日から解約可）', fee: '公式に記載なし', note: '解約後の再契約・譲渡は不可（2026年10月26日 公式確認）', href: '/review/halococo/' },
   { name: 'キッズフォン', term: 'キャリア契約による', fee: 'キャリア契約による', note: 'キャリア契約に準ずる', href: '/review/kids-phone/' },
