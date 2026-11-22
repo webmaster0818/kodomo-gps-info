@@ -42,7 +42,7 @@ export default function AnshinWatcherPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの寿命と買い替えの目安｜電池交換不可・保証1年・充電できない時の対処", "datePublished": "2026-03-15", "dateModified": "2026-10-30", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "あんしんウォッチャーの寿命と買い替えの目安｜電池交換不可・保証1年・充電できない時の対処", "datePublished": "2026-03-15", "dateModified": "2026-11-22", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'あんしんウォッチャー' }]} />
 
       <section className="bg-orange-light py-12">
@@ -124,7 +124,7 @@ export default function AnshinWatcherPage() {
                     ['月額料金', '539円（税込）※無料期間特典あり'],
                     ['2台目', '月額0円（au IDごとに最大2台）'],
                     ['本体価格', '通常版11,000円 / LE 5,680円（税込）'],
-                    ['測位方式', 'GNSS（GPS・みちびき等）+Wi-Fi+基地局'],
+                    ['測位方式', 'GNSS（GPS／GLONASS／Galileo／BeiDou／みちびき）+Wi-Fi+基地局'],
                     ['バッテリー', '1,500mAh・最大約2カ月（USB Type-C充電）'],
                     ['通信回線', 'KDDI LTE-M（海外利用不可）'],
                     ['見守り人数', '招待9人+契約者=最大10人'],
@@ -139,7 +139,7 @@ export default function AnshinWatcherPage() {
                   ))}
                 </tbody>
               </table>
-              <p className="text-xs text-g400 mt-2">出典：au公式デバイスページ・<a href="https://www.au.com/life/auhome/charge/" target="_blank" rel="noopener noreferrer" className="text-blue underline">au HOME料金ページ</a>（2026年10月30日確認）／取扱説明書・公式FAQ「本体の値段」（2026年10月20日確認）</p>
+              <p className="text-xs text-g400 mt-2">出典：au公式デバイスページ（仕様・2026年11月22日確認）・<a href="https://www.au.com/life/auhome/charge/" target="_blank" rel="noopener noreferrer" className="text-blue underline">au HOME料金ページ</a>（2026年11月22日確認）／取扱説明書・公式FAQ「本体の値段」（2026年10月20日確認）</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-3">コスト比較</h3>
@@ -172,7 +172,7 @@ export default function AnshinWatcherPage() {
             <p className="text-sm text-g600">
               兄弟2人の場合は、LEを2台使うことで本体コストも抑えられます。au HOME料金ページでは2台セットも案内されており、LE2台セットは10,300円（単品2台より1,060円安い）、通常版とLEのセットは15,600円（単品2台より1,080円安い）です（いずれも税込）。1つのau HOME契約で登録できるのは2台までですが、公式FAQによると、最大5つのau HOME契約をまとめることで、最大10台を1つのau HOMEアプリで確認できます。
             </p>
-            <p className="text-xs text-g400 mt-2">出典：<a href="https://www.au.com/life/auhome/charge/" target="_blank" rel="noopener noreferrer" className="text-blue underline">au HOME料金ページ</a>（2026年10月30日確認）・KDDI公式コラム（2026年6月12日確認）／<a href="https://homeiot.kddi.com/anshinwatcher/kids/faq/004.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">公式FAQ「複数のあんしんウォッチャーを一つのスマホに登録できますか？」</a>（2026年10月20日確認）</p>
+            <p className="text-xs text-g400 mt-2">出典：<a href="https://www.au.com/life/auhome/charge/" target="_blank" rel="noopener noreferrer" className="text-blue underline">au HOME料金ページ</a>（2026年11月22日確認）・KDDI公式コラム（2026年6月12日確認）／<a href="https://homeiot.kddi.com/anshinwatcher/kids/faq/004.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">公式FAQ「複数のあんしんウォッチャーを一つのスマホに登録できますか？」</a>（2026年10月20日確認）</p>
           </div>
 
           <h2 className="section-title">家族招待のやり方（何人まで見守れる？）</h2>
@@ -226,7 +226,7 @@ export default function AnshinWatcherPage() {
             <p className="text-sm text-g600 mt-3">
               長く使う場合は12カ月無料の通常版、初期費用を抑えたい場合や2台目にはLEを選ぶのが基本的な考え方です。
             </p>
-            <p className="text-xs text-g400 mt-2">出典：<a href="https://www.au.com/life/auhome/charge/" target="_blank" rel="noopener noreferrer" className="text-blue underline">au HOME料金ページ</a>（本体価格・無料期間・2026年10月30日確認）・各申込ページ（2026年6月12日確認）</p>
+            <p className="text-xs text-g400 mt-2">出典：<a href="https://www.au.com/life/auhome/charge/" target="_blank" rel="noopener noreferrer" className="text-blue underline">au HOME料金ページ</a>（本体価格・無料期間・2026年11月22日確認）・各申込ページ（2026年6月12日確認）</p>
           </div>
 
           <h2 className="section-title">主な機能</h2>
