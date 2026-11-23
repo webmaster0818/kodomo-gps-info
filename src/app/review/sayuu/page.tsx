@@ -5,16 +5,16 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'SayuU（サユー）の評判・口コミは？【2026年】トヨタの交通安全GPSの実力・料金を解説',
   description:
-    'トヨタが開発したSayuU（サユー）をレビューします。左右確認検知・走行検知・通話・テキストチャットに対応し、現行のSayuU 2は月額1,210円、本体19,800円です（2026年10月26日 公式確認）。交通安全に特化したGPS端末の機能と料金を解説します。',
+    'トヨタが開発したSayuU（サユー）をレビューします。左右確認検知・かけ出し検知・通話・テキストチャットに対応し、現行のSayuU 2は月額1,210円、本体19,800円です（2026年11月23日 公式確認）。交通安全に特化したGPS端末の機能と料金を解説します。',
 };
 
 const faqData = [
-  { q: 'SayuU（サユー）の左右確認検知とは？', a: '横断歩道などで、お子さまが左右を確認したかどうかをセンサーで検知する機能です。左右を確認せずに道路を渡ろうとした場合は、音声で注意を促します。トヨタの自動車安全技術を応用した独自の機能です。' },
-  { q: '走行検知とはどのような機能ですか？', a: 'お子さまが車やバイクに乗って移動していることを検知する機能です。通常の徒歩の速度を超える移動を検知した場合、保護者に通知が送られます。交通事故や不審な車両への乗車を早期に発見できます。' },
+  { q: 'SayuU（サユー）の左右確認検知とは？', a: '横断歩道などで、お子さまが左右を確認したかどうかをセンサーで検知する機能です。公式FAQでは、内蔵のモーションセンサで角速度をもとにOK/NGを判定し、保護者は後で行動の履歴を振り返れると説明されています。安全確認地点には、トヨタ車の統計データに基づいて一時停止を無視する車両が多い地点が全国にあらかじめ設定されています（手動登録は20地点まで）。' },
+  { q: 'かけ出し検知（走行検知）とはどのような機能ですか？', a: 'お子さまが走り出したことを検知・記録し、保護者に通知する機能です。公式FAQでは、モーションセンサで検知した加速度とGPSで測った移動速度から判定すると説明されています。公式は「親子間で安全な歩行について話すきっかけ」としての活用を案内しています。車やバイクでの移動を検知する機能ではありません。' },
   { q: '通話機能はどう使いますか？', a: '保護者のスマートフォンアプリから、GPS端末に電話をかけることができます。また、お子さまもGPS端末のボタンを押して保護者に発信できます。双方向の通話に対応しています。' },
-  { q: '月額料金と本体価格はいくらですか？', a: '現行のSayuU 2は、月額料金1,210円（税込）、本体価格19,800円（税込）です（2026年10月26日 公式確認）。旧モデルのSayuU 1は、2026年10月20日付の公式のお知らせで販売終了となっています。' },
-  { q: 'バッテリーはどれくらい持ちますか？', a: '公式の仕様には、電池の持続時間の記載がありません（電池容量は1,440mAh）。公式サイトでは、SayuU 2は充電容量を改良したモデルと案内されています。位置情報は1分に1回自動で更新されるため、位置情報専用の機種より充電の頻度は多くなる可能性があります。' },
-  { q: 'トヨタが開発しているのはなぜですか？', a: 'トヨタは「交通事故ゼロ」をビジョンに掲げており、自動車の安全技術にとどまらず、歩行者の安全も守ることを目的に開発されました。自動運転技術で培ったセンサー技術やAI技術を活用しています。' },
+  { q: '月額料金と本体価格はいくらですか？', a: '現行のSayuU 2は、月額料金1,210円（税込）、本体価格19,800円（税込）です（2026年11月23日 公式確認）。旧モデルのSayuU 1は、2026年10月20日掲載の公式のお知らせで「2026年11月30日をもって販売を終了」とされています（11月23日時点の公式販売サイトでは9,800円で販売中）。初期費用として送料780円と事務手数料1,210円もかかります。' },
+  { q: 'バッテリーはどれくらい持ちますか？', a: '公式サポートのFAQでは、SayuU 2は「2日に1回の充電が必要」とされています（1日あたり移動モード4時間・みまもりOFF帯3時間30分・待機モード16時間30分で使った場合の目安。電池容量は1,440mAh）。旧モデルのSayuU 1は1日1回の充電が目安です。' },
+  { q: 'トヨタが開発しているのはなぜですか？', a: 'トヨタは「交通事故ゼロ」をビジョンに掲げており、自動車の安全技術にとどまらず、歩行者の安全も守ることを目的に開発されました。左右確認検知の安全確認地点には、トヨタ車の統計データに基づく地点が使われています。' },
 ];
 
 const faqJsonLd = {
@@ -31,7 +31,7 @@ export default function SayuuPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-26", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "SayuU（サユー）レビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-23", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'SayuU（サユー）' }]} />
 
       <section className="bg-orange-light py-12">
@@ -44,7 +44,7 @@ export default function SayuuPage() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-g800 mb-4">
             SayuU（サユー）レビュー
           </h1>
-          <p className="text-g600 text-lg">トヨタ提供 | 月額1,210円 | 左右確認検知・走行検知搭載</p>
+          <p className="text-g600 text-lg">トヨタ提供 | 月額1,210円 | 左右確認検知・かけ出し検知搭載</p>
         </div>
       </section>
 
@@ -52,22 +52,22 @@ export default function SayuuPage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-orange bg-orange-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">交通安全機能を最も重視する場合はSayuUが適しています。左右確認検知・走行検知と双方向通話を求めるご家庭向けです（料金は高めです）</h2>
+            <h2 className="font-extrabold text-g800 mb-2">交通安全機能を最も重視する場合はSayuUが適しています。左右確認検知・かけ出し検知と双方向通話を求めるご家庭向けです（料金は高めです）</h2>
             <ul className="space-y-1.5 text-sm text-g700">
-              <li>・<strong>強み</strong>：他機種にない<strong>左右確認検知・走行検知</strong>の交通安全機能を備え、<strong>双方向通話</strong>にも対応しています。トヨタが提供する製品です。</li>
-              <li>・<strong>弱み</strong>：月額<strong>1,210円</strong>と他機種の約2倍で、本体も<strong>19,800円</strong>（SayuU 2）と高額です。電池の持続時間は公式の仕様に記載がありません。</li>
-              <li>・<strong>料金</strong>：月額1,210円（税込）と本体19,800円（税込・SayuU 2）です。旧モデルのSayuU 1は2026年10月20日に販売終了しています。</li>
+              <li>・<strong>強み</strong>：他機種にない<strong>左右確認検知・かけ出し検知</strong>の交通安全機能を備え、<strong>双方向通話</strong>にも対応しています。トヨタが提供する製品です。</li>
+              <li>・<strong>弱み</strong>：月額<strong>1,210円</strong>と他機種の約2倍で、本体も<strong>19,800円</strong>（SayuU 2）と高額です。充電は公式FAQで「2日に1回」が目安です。</li>
+              <li>・<strong>料金</strong>：月額1,210円（税込）と本体19,800円（税込・SayuU 2）です。旧モデルのSayuU 1は2026年11月30日で販売終了の予定です（公式のお知らせ）。</li>
               <li>・<strong>適したご家庭</strong>：交通安全の習慣づけを重視するご家庭、通話も使いたいご家庭です。<strong>適さないご家庭</strong>：料金と電池持ちを重視するご家庭、位置確認のみで足りるご家庭です。</li>
             </ul>
-            <p className="text-xs text-g500 mt-3">出典：トヨタ（SayuU）公式の製品ページ・仕様・お知らせ（2026年10月26日確認）。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-orange underline">他機種との比較ランキングはこちら</Link></p>
+            <p className="text-xs text-g500 mt-3">出典：トヨタ（SayuU）公式の製品ページ・仕様・お知らせ、公式販売サイト（shop.sayuu.site）、公式サポートFAQ（2026年11月23日確認）。料金・仕様は変更される場合があります。お申し込み前に、公式サイトにて最新情報をご確認ください。<Link href="/#ranking" className="text-orange underline">他機種との比較ランキングはこちら</Link></p>
           </div>
 
           <h2 className="section-title">SayuU（サユー）とは</h2>
           <p className="text-g600 mb-6">
             SayuU（サユー）は、トヨタが開発した子供用GPS端末です。
             自動車メーカーならではの「交通安全」に特化した独自機能が最大の特徴です。
-            横断歩道での左右確認検知、異常な速度での移動を検知する走行検知に加え、双方向通話にも対応しています。
-            月額1,210円と他機種より高めですが、交通安全を重視するご家庭に選ばれています。
+            横断歩道などでの左右確認検知、走り出しを記録するかけ出し検知に加え、双方向通話にも対応しています。
+            月額1,210円と他機種より高めです。
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -80,9 +80,9 @@ export default function SayuuPage() {
                     ['月額料金', '1,210円（税込）'],
                     ['本体価格', '19,800円（税込・SayuU 2）'],
                     ['測位方式', 'GNSS（みちびき含む）+A-GPS+Wi-Fi+携帯基地局'],
-                    ['バッテリー', '持続時間は公式に記載なし（容量1,440mAh）'],
+                    ['バッテリー', '容量1,440mAh・2日に1回の充電が目安（公式FAQ・利用条件つき）'],
                     ['通話・メッセージ', '通話・テキストチャット・ボイスメッセージ'],
-                    ['特殊機能', '左右確認検知・走行検知'],
+                    ['特殊機能', '左右確認検知・かけ出し検知'],
                     ['通信回線', 'LTE（ドコモLTEエリア）'],
                     ['防水', 'IP68（生活防水）'],
                   ].map(([k, v]) => (
@@ -117,16 +117,16 @@ export default function SayuuPage() {
             <div className="card-hover p-6 border-l-4 border-orange">
               <h3 className="font-bold text-g800 mb-2">左右確認検知</h3>
               <p className="text-sm text-g600">
-                横断歩道や交差点で、お子さまが左右を確認したかどうかをセンサーで検知します。
-                確認せずに渡ろうとすると、音声で注意を促します。
-                トヨタの自動車安全技術のセンサーを歩行者向けに応用した独自技術です。
+                安全確認地点で、お子さまが左右を確認したかどうかを内蔵のモーションセンサで検知し、
+                保護者が後から行動の履歴を振り返れます。地点はトヨタ車の統計データで一時停止無視の車両が多い場所が
+                全国にあらかじめ設定されています（手動登録は20地点まで）。
               </p>
             </div>
             <div className="card-hover p-6 border-l-4 border-blue">
-              <h3 className="font-bold text-g800 mb-2">走行検知</h3>
+              <h3 className="font-bold text-g800 mb-2">かけ出し検知</h3>
               <p className="text-sm text-g600">
-                お子さまが通常の歩行速度を大幅に超えて移動している場合（車やバイクでの移動）を検知し、
-                保護者に通知します。交通事故や不審な車両への乗車の早期発見に役立ちます。
+                お子さまが走り出したことを、加速度とGPSの移動速度から検知・記録し、保護者に通知します。
+                公式は、親子で安全な歩行について話すきっかけとしての活用を案内しています。
               </p>
             </div>
           </div>
@@ -134,12 +134,12 @@ export default function SayuuPage() {
           <h2 className="section-title">主な機能</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
-              { icon: '', title: '交通安全サポート', desc: '左右確認検知と走行検知で、お子さまの交通安全を見守ります。' },
+              { icon: '', title: '交通安全サポート', desc: '左右確認検知とかけ出し検知で、お子さまの交通安全を見守ります。' },
               { icon: '', title: '双方向通話', desc: '保護者・お子さまの双方から通話が可能です。緊急時の連絡手段として活用できます。' },
-              { icon: '', title: '位置確認', desc: 'GPS+みちびき+GLONASSで、リアルタイムに位置を把握できます。' },
+              { icon: '', title: '位置確認', desc: 'GNSS（みちびき含む）・A-GPS・Wi-Fi・携帯基地局で位置を測り、1分に1回自動で更新します。' },
               { icon: '', title: 'エリア通知', desc: '設定したエリアへの出入りを自動で通知します。' },
               { icon: '', title: '移動履歴', desc: '過去の移動経路を記録し、確認できます。' },
-              { icon: '', title: 'トヨタ品質', desc: '自動車メーカーの品質基準で製造されており、耐久性に優れています。' },
+              { icon: '', title: 'SOS機能', desc: '作動するとブザーが鳴り、周囲の音を録音して保護者のスマホに自動送信します（公式FAQ。防犯ブザーとしては音は小さめと案内）。' },
             ].map((f) => (
               <div key={f.title} className="card-hover p-4">
                 <h3 className="font-bold text-g800 text-sm mb-1">{f.title}</h3>
@@ -156,7 +156,7 @@ export default function SayuuPage() {
                 <li>・交通安全に特化した独自の機能</li>
                 <li>・左右確認検知は他機種にない独自技術</li>
                 <li>・双方向通話で緊急時にも連絡が可能</li>
-                <li>・走行検知で不審な移動を早期発見</li>
+                <li>・かけ出し検知で走り出しを記録・通知</li>
                 <li>・トヨタブランドの高い信頼性</li>
                 <li>・お子さまの交通安全の習慣づくりに役立つ点</li>
               </ul>
@@ -166,7 +166,7 @@ export default function SayuuPage() {
               <ul className="space-y-2 text-sm text-g700">
                 <li>・月額1,210円と他機種の約2倍</li>
                 <li>・本体価格が19,800円（SayuU 2）と高額</li>
-                <li>・電池の持続時間が公式に記載されていない</li>
+                <li>・充電は2日に1回が目安（公式FAQ）</li>
                                 <li>・高い初期コスト</li>
               </ul>
             </div>
@@ -187,7 +187,7 @@ export default function SayuuPage() {
               <h3 className="font-bold text-orange-dark mb-2">適さないご家庭</h3>
               <ul className="space-y-1.5 text-sm text-g700">
                 <li>・月額・本体のコストをできるだけ抑えたいご家庭（他機種の約2倍）</li>
-                <li>・電池の持続時間を確かめてから選びたいご家庭（公式に記載なし）</li>
+                <li>・充電の手間を減らしたいご家庭（2日に1回が目安）</li>
                 <li>・位置確認のみで足りるご家庭（安全機能が不要な場合）</li>
               </ul>
             </div>
