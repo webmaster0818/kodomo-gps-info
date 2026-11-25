@@ -5,19 +5,19 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: 'soranome（ソラノメ）のレビュー【2026年11月】料金・仕様・販売終了の状況を公式で確認',
   description:
-    'soranome（ソラノメ）を公式サイトの仕様で確認しました。測位はGPS（単独測位）とWi-Fi（SOS発動時）、通信はドコモ4G/LTE、月額539円・最大4台登録・電池最大1週間です。現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年11月12日 公式確認）。',
+    'soranome（ソラノメ）を公式サイトの仕様で確認しました。測位はGPS（単独測位）とWi-Fi（SOS発動時）、通信はドコモ4G/LTE、月額539円・最大4台登録・電池最大1週間です。現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年11月25日 公式確認）。',
 };
 
 const faqData = [
-  { q: 'ソラノメの測位方式は？', a: '公式の端末仕様では、測位方式は「GPS（単独測位モード）、WiFi（SOS発動時）」です。対応GNSSはGPS・GLONASS・BeiDou・Galileo・みちびき・A-GPSです。携帯基地局による測位は公式仕様に記載がありません。公式は「環境によっては大きなずれが発生する場合がある」と注記しています（2026年11月12日 公式確認）。' },
+  { q: 'ソラノメの測位方式は？', a: '公式の端末仕様では、測位方式は「GPS（単独測位モード）、WiFi（SOS発動時）」です。対応GNSSはGPS・GLONASS・BeiDou・Galileo・みちびき・A-GPSです。携帯基地局による測位は公式仕様に記載がありません。公式は「環境によっては大きなずれが発生する場合がある」と注記しています（2026年11月25日 公式確認）。' },
   { q: 'SOSボタンはどう使いますか？', a: '公式サイトでは、GPS端末の本体ボタンを3回押すか長押しすると、保護者のアプリにSOS通知が届くと案内されています。SOS発動時はWi-Fiでも測位します。' },
   { q: '月額料金はいくらですか？', a: '月額基本料金539円（税込）です。別途、本体代金（通常 一括14,520円）と初期事務手数料3,300円（税込）がかかります。解約月の月額料金は日割りされず満額請求です（公式の料金欄・特定商取引法に基づく表記）。' },
   { q: 'バッテリーはどれくらい持ちますか？', a: '公式の端末仕様では「電池持ち 最大1週間」、バッテリー容量は700mAh、充電端子はMicroUSBです。電池残量が20%以下・10%以下になるとアプリに通知が届きます。' },
   { q: '何人で見守りできますか？', a: '公式サイトでは「スマホ一台でGPS端末を最大4台まで登録できる」と案内されています（見守る側の人数ではなく、1台のスマートフォンに登録できる端末の数です）。' },
   { q: 'トーク・通話機能はありますか？', a: 'トーク・通話機能は搭載されていません。位置確認・SOS・エリア通知に特化したGPS端末です。' },
-  { q: 'ソラノメと他の機種の違いは？', a: '39g・51×51×15mmの小型端末で、ボタンによるSOS通知とエリア通知（10か所）に対応しています。通話・トーク機能はないため、お子さまとメッセージのやり取りをしたい場合は、BoTトークやみてねみまもりGPSなど通話・トーク対応機種が候補となります。なお、現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年11月12日 公式確認）。' },
-  { q: 'ソラノメの解約で注意することは？', a: '特定商取引法に基づく表記では、解約はマイページから申し入れ、解約月の月額料金は日割りされず満額請求、本体を割賦購入して残債がある場合は一括で支払うと定められています。解約後はその端末を再利用できません。現行端末は2026年4月1日付の公式告知で販売を終了しているため、新規の契約・購入はできません（2026年11月12日 公式確認）。' },
-  { q: 'ソラノメは今も購入できますか？', a: '購入できません。公式サイトの2026年4月1日付の告知で現行端末の販売を終了しており、次期端末は開発中と発表されています。2026年11月12日の公式確認時点で、次期端末の発売時期は告知されていません。通話・トークのない位置情報専用の機種を探している場合は、みてねみまもりGPS（位置情報プラン）やあんしんウォッチャーが販売中です。' },
+  { q: 'ソラノメと他の機種の違いは？', a: '39g・51×51×15mmの小型端末で、ボタンによるSOS通知とエリア通知（10か所）に対応しています。通話・トーク機能はないため、お子さまとメッセージのやり取りをしたい場合は、BoTトークやみてねみまもりGPSなど通話・トーク対応機種が候補となります。なお、現行端末は2026年4月1日付の公式告知で販売を終了しています（2026年11月25日 公式確認）。' },
+  { q: 'ソラノメの解約で注意することは？', a: '特定商取引法に基づく表記では、解約はマイページから申し入れ、解約月の月額料金は日割りされず満額請求、本体を割賦購入して残債がある場合は一括で支払うと定められています。解約後はその端末を再利用できません。現行端末は2026年4月1日付の公式告知で販売を終了しているため、新規の契約・購入はできません（2026年11月25日 公式確認）。' },
+  { q: 'ソラノメは今も購入できますか？', a: '購入できません。公式サイトの2026年4月1日付の告知で現行端末の販売を終了しており、次期端末は開発中と発表されています。2026年11月25日の公式確認時点で、次期端末の発売時期は告知されていません。なお、2026年11月18日からサイバー攻撃への対策として専用アプリのサービスが停止しています（11月25日時点で復旧のお知らせなし）。通話・トークのない位置情報専用の機種を探している場合は、みてねみまもりGPS（位置情報プラン）やあんしんウォッチャーが販売中です。' },
 ];
 
 const faqJsonLd = {
@@ -34,7 +34,7 @@ export default function SoranomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）のレビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-12", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "soranome（ソラノメ）のレビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-25", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'soranome（ソラノメ）' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -55,18 +55,19 @@ export default function SoranomePage() {
         <div className="mx-auto max-w-4xl px-4">
           {/* 結論box */}
           <div className="rounded-2xl border-l-4 border-blue bg-blue-light/40 p-6 mb-8">
-            <h2 className="font-extrabold text-g800 mb-2">ソラノメの現行端末は販売終了しています（2026年11月12日 公式確認）</h2>
+            <h2 className="font-extrabold text-g800 mb-2">ソラノメの現行端末は販売終了しています（2026年11月25日 公式確認）</h2>
             <ul className="space-y-1.5 text-sm text-g700">
               <li>・<strong>仕様</strong>：測位は<strong>GPS（単独測位）とWi-Fi（SOS発動時）</strong>、通信はドコモ4G/LTEです。39g・IP55・耐落下1.5m、SOSボタンとエリア通知（10か所）に対応しています。</li>
               <li>・<strong>注意点</strong>：電池持ちは<strong>最大1週間</strong>、本体は通常<strong>14,520円</strong>＋初期事務手数料3,300円です。<strong>通話・トーク機能はありません</strong>。</li>
               <li>・<strong>料金</strong>：月額<strong>539円</strong>です。解約月は日割りされず満額請求です。</li>
-              <li>・<strong>販売状況</strong>：公式サイトの2026年4月1日付の告知で現行端末の販売を終了し、次期端末は開発中と発表されています。2026年11月12日時点で、次期端末の発売時期は告知されていません。</li>
+              <li>・<strong>販売状況</strong>：公式サイトの2026年4月1日付の告知で現行端末の販売を終了し、次期端末は開発中と発表されています。2026年11月25日時点で、次期端末の発売時期は告知されていません。</li>
+              <li>・<strong>サービスの停止</strong>：公式の2026年11月18日付のお知らせによると、運営サーバーがサイバー攻撃を受けたため、同日16時頃から専用アプリ「Pocket GPS」のログイン・利用を停止しています（個人情報等の漏洩は確認されていないとのことです）。2026年11月25日時点で、公式サイトに復旧のお知らせは掲載されていません。</li>
             </ul>
             <p className="text-xs text-g500 mt-3">出典：soranome公式サイト（端末仕様・料金・利用規約・特定商取引法に基づく表記／運営 株式会社グローバルコネクション）。最新の状況は公式サイトでご確認ください。<Link href="/#ranking" className="text-blue underline">他機種との比較ランキングはこちら</Link></p>
           </div>
 
           <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 mb-6 text-sm text-gray-700">
-            <strong>【重要・2026年11月12日 公式確認】</strong>公式サイトの2026年4月1日付告知により、soranomeの<strong>現行端末は販売終了</strong>となっています(次期端末を開発中と発表)。以下のレビューは現行端末の情報で、新規の購入はできません。最新の状況は、<a href="https://soranome.net/" target="_blank" rel="noopener noreferrer nofollow" className="underline text-blue-600">公式サイト</a>でご確認ください。
+            <strong>【重要・2026年11月25日 公式確認】</strong>公式サイトの2026年4月1日付告知により、soranomeの<strong>現行端末は販売終了</strong>となっています(次期端末を開発中と発表)。以下のレビューは現行端末の情報で、新規の購入はできません。また、<a href="https://soranome.net/page/news20261118" target="_blank" rel="noopener noreferrer nofollow" className="underline text-blue-600">2026年11月18日付の公式のお知らせ</a>のとおり、サイバー攻撃への対策として同日16時頃から専用アプリのサービスが停止しており、11月25日時点で復旧のお知らせは出ていません。最新の状況は、<a href="https://soranome.net/" target="_blank" rel="noopener noreferrer nofollow" className="underline text-blue-600">公式サイト</a>でご確認ください。
           </div>
           <h2 className="section-title">soranome（ソラノメ）とは</h2>
           <p className="text-g600 mb-6">
