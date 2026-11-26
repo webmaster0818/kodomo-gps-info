@@ -75,8 +75,8 @@ export default function MyFirstFonePage() {
                     ['位置の更新', '最短5分間隔（公式FAQ）'],
                     ['通話', 'アプリ経由の音声・ビデオ通話（電話番号での通話は不可）'],
                     ['カメラ', 'S4 5MP／M1 前面2MP'],
-                    ['防水', 'S4 生活防水IPX8／M1 生活防水IP67'],
-                    ['重さ・電池', 'S4 48g・605mAh／M1 47g・730mAh（待機最大24時間）'],
+                    ['防水', 'S4 生活防水IPX8／R2 生活防水IPX8（水深3m・最大5分）／M1 生活防水IP67'],
+                    ['重さ・電池', 'S4 48g・605mAh／R2 約48g・605mAh（連続通話 約6時間・2026年11月26日確認）／M1 47g・730mAh（待機最大24時間）'],
                     ['SOS', 'S4はワンタッチSOSボタン'],
                   ].map(([k, v]) => (
                     <tr key={k} className="border-b border-g100">
@@ -134,7 +134,7 @@ export default function MyFirstFonePage() {
                 <li>・SOSボタンによる緊急時の備え</li>
                 <li>・腕時計型で置き忘れの心配なし</li>
                 <li>・カメラ付きでビデオ通話や写真撮影に対応</li>
-                <li>・生活防水（S4 IPX8／M1 IP67）</li>
+                <li>・生活防水（S4 IPX8／R2 IPX8／M1 IP67）</li>
                 <li>・授業中はクラスモードでSOS以外の機能を止められる（S4）</li>
               </ul>
             </div>
