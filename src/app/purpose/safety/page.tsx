@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 import { MimoriAffText } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
@@ -134,6 +135,7 @@ export default function SafetyPage() {
                   </div>
                   <p className="text-sm text-g600">{item.reason}</p>
                   {item.name === 'みもりGPSトーク' && <div className="mt-3"><MimoriAffText /></div>}
+                  {item.name === 'myFirst Fone' && <div className="mt-3"><MyfirstAffText /></div>}
                 </div>
               </div>
             ))}

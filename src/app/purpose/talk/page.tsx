@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
+import { HamicAffText } from '@/components/AffiliateHamic';
 
 export const metadata: Metadata = {
   title: '子供GPS トーク機能付き比較 | 話せるGPS端末おすすめランキング',
@@ -132,6 +134,8 @@ export default function TalkPage() {
                     <Link href={item.href} className="text-blue hover:underline">{item.name}</Link>
                   </h3>
                   <p className="text-sm text-g600">{item.reason}</p>
+                  {item.name === 'myFirst Fone' && <div className="mt-3"><MyfirstAffText /></div>}
+                  {item.name === 'Hamic' && <div className="mt-3"><HamicAffText /></div>}
                 </div>
               </div>
             ))}

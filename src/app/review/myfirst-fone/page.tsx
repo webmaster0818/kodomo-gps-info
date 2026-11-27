@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 
 export const metadata: Metadata = {
   title: 'myFirst Foneの評判・口コミは？【2026年】腕時計型GPSの通話機能・料金を解説',
@@ -163,6 +164,7 @@ export default function MyFirstFonePage() {
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">myFirst Foneをご検討中の方へ</h2>
             <p className="text-g600 mb-6 text-sm">腕時計型GPSと通話機能を備え、スマートフォンを持たせる前の選択肢となる端末です。</p>
+            <div className="mb-6"><MyfirstAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/purpose/watch-type/" className="btn-accent">腕時計型GPS特集を見る</Link>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 
 export const metadata: Metadata = {
   title: 'myFirst Fone（マイファーストフォン）のSIM｜myFirst FreeSIMと他社SIMの対応表・機種別の開通と解約【2026年11月】',
@@ -239,6 +240,7 @@ export default function MyfirstFoneSimPage() {
 
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">関連情報</h2>
+            <div className="mb-6"><MyfirstAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/myfirst-fone/" className="btn-primary">myFirst Fone のレビュー</Link>
               <Link href="/knowledge/myfirst-circle/" className="btn-accent">myFirst Circleアプリ</Link>

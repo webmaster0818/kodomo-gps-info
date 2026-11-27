@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 
 export const metadata: Metadata = {
   title: 'myFirst Circleアプリとは｜旧アプリからの移行・家族の追加・位置情報の共有設定・更新間隔【2026年11月】',
@@ -205,6 +206,7 @@ export default function MyfirstCirclePage() {
 
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">関連情報</h2>
+            <div className="mb-6"><MyfirstAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/review/myfirst-fone/" className="btn-primary">myFirst Fone のレビュー</Link>
               <Link href="/knowledge/myfirst-fone-sim/" className="btn-accent">myFirst Fone で使えるSIM</Link>

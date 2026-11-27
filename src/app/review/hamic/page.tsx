@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { HamicAffText } from '@/components/AffiliateHamic';
 
 export const metadata: Metadata = {
   title: 'Hamic（ハミック）の評判・口コミは？【2026年】キッズスマホ型見守りの実力・料金を解説',
@@ -163,6 +164,7 @@ export default function HamicPage() {
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">Hamicが気になる方へ</h2>
             <p className="text-g600 mb-6 text-sm">キッズスマートフォン型で、見守りとコミュニケーションの両方に対応しています。スマートフォンを持たせる前の選択肢としてご検討ください。</p>
+            <div className="mb-6"><HamicAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/" className="btn-primary">他の機種と比較する</Link>
               <Link href="/review/kids-phone/" className="btn-accent">キッズケータイとの比較を見る</Link>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 
 export const metadata: Metadata = {
   title: 'myFirst Fone R2（マイファーストフォンR2）の初期設定｜Wi-Fi接続・本体更新・ペアリング・eSIM開通の手順【2026年11月】',
@@ -196,6 +197,7 @@ export default function MyFirstFoneR2SetupPage() {
 
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">関連情報</h2>
+            <div className="mb-6"><MyfirstAffText /></div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/knowledge/myfirst-fone-sim/" className="btn-primary">myFirst Fone のSIM</Link>
               <Link href="/knowledge/myfirst-circle/" className="btn-accent">myFirst Circle アプリとは</Link>

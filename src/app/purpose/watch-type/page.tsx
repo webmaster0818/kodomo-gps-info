@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 
 export const metadata: Metadata = {
   title: '腕時計型GPS 子供用 比較 | スマートウォッチ型見守り端末',
@@ -173,6 +174,7 @@ export default function WatchTypePage() {
                 <p className="font-bold text-g800">通話・SOS・カメラ</p>
               </div>
             </div>
+            <div className="mt-4 text-center"><MyfirstAffText /></div>
           </div>
 
           {/* FAQ */}

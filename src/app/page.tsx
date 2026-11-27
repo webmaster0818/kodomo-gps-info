@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { MiteneAffText } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
 
 export const metadata: Metadata = {
   title: '子供見守りGPS最新情報 | 2026年おすすめGPS端末比較ランキング',
@@ -266,6 +267,7 @@ export default function HomePage() {
                     <Link href={d.slug} className="btn-primary !py-2.5 !px-6 !text-sm">詳細レビューを見る</Link>
                   </div>
                   {d.name === 'みてねみまもりGPS' && <div className="mt-3 text-sm"><MiteneAffText /></div>}
+                  {d.name === 'myFirst Fone R2' && <div className="mt-3 text-sm"><MyfirstAffText /></div>}
                 </div>
               </article>
             ))}

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { MiteneAffText } from '@/components/AffiliateMitene';
 import Breadcrumb from '@/components/Breadcrumb';
+import { MyfirstAffText } from '@/components/AffiliateMyfirst';
+import { HamicAffText } from '@/components/AffiliateHamic';
 import { MimoriAffText } from '@/components/AffiliateMimori';
 
 export const metadata: Metadata = {
@@ -258,6 +260,8 @@ export default function Ranking2026Page() {
                 </Link>
                 {d.name === 'みもりGPSトーク' && <div className="mt-3"><MimoriAffText /></div>}
                 {d.name.startsWith('みてねみまもりGPS') && <div className="mt-3"><MiteneAffText /></div>}
+                {d.name === 'myFirst Fone R2' && <div className="mt-3"><MyfirstAffText /></div>}
+                {d.name.startsWith('Hamic POCKET') && <div className="mt-3"><HamicAffText /></div>}
               </div>
             ))}
           </div>
