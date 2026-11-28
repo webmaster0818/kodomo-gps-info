@@ -4,18 +4,19 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { HamicAffText } from '@/components/AffiliateHamic';
 
 export const metadata: Metadata = {
-  title: 'Hamic（ハミック）の評判・口コミは？【2026年】キッズスマホ型見守りの実力・料金を解説',
+  title: 'Hamic（ハミック）の口コミ・評判｜App Store 3.3・Google Play 2.8と2028年春のサービス終了予定【2026年11月】',
   description:
-    'Hamee提供のキッズスマートフォン型見守りデバイス「Hamic」をレビューします。LINEのようなメッセージ機能、カメラ、GPS見守り機能を搭載しており、スマートフォンを持たせる前の練習用端末としても適しています。',
+    'Hamee提供のキッズスマホ「Hamic」の口コミ・評判を、App Store 3.3（243件）・Google Play 2.8（99件）の評価と公式情報で確認しました。2028年春のサービス終了予定、MIELS nicoの購入とシェアプランの料金、解約条件を整理しています。',
 };
 
 const faqData = [
-  { q: 'HamicはスマートフォンとGPS端末のどちらに近いですか？', a: 'Hamicはキッズスマートフォン型のデバイスです。GPSによる位置確認に加え、LINEのようなメッセージ機能やカメラを搭載しており、スマートフォンに近い使い勝手です。ただし、一般的なアプリのインストールは制限されています。' },
+  { q: 'HamicはスマートフォンとGPS端末のどちらに近いですか？', a: 'Hamicはキッズスマートフォン型のデバイスです。GPSによる位置確認に加え、専用アプリでのメッセージ・通話やカメラを搭載しており、スマートフォンに近い使い勝手です。アプリの利用やフィルタリングは、保護者がGoogleファミリーリンクで設定します（Hamic公式 料金ページ・2026年11月28日確認）。' },
   { q: 'Hamicの月額料金はいくらですか？', a: 'Hamic POCKETは月額1,100円（税込）で、データ通信1GB/月と通話・メッセージ・みまもり機能が含まれます。本体は18,700円（税込）です。端末・通信・アプリが一体となったサービスのため、別途SIMを契約する必要はありません（Hamic公式「Hamic POCKETの価格・料金」・2026年11月13日確認）。' },
   { q: 'メッセージ機能はどのように使いますか？', a: '専用アプリ「Hamicアプリ」で、テキスト・スタンプ・写真のやりとりが可能です。LINEに似た操作感のため、お子さまも直感的に使えます。送受信の相手は保護者が管理できます。' },
   { q: 'カメラ機能はありますか？', a: 'はい。カメラを搭載しています。撮影した写真をメッセージで送信したり、保護者のアプリで確認したりできます。' },
   { q: 'GPS見守り機能はありますか？', a: 'はい。リアルタイムの位置確認、移動履歴、エリア通知などのGPS見守り機能を標準で搭載しています。' },
-  { q: '対象年齢は何歳くらいですか？', a: '主な対象は小学校中学年〜高学年（8歳〜12歳）です。スマートフォンを持たせる前の練習用端末として活用するご家庭が多くあります。' },
+  { q: 'Hamicのサービスはいつまで使えますか？', a: 'Hamic公式FAQでは、2028年春にサービスを終了する予定とされています。正確な終了日は2026年11月時点で未定で、2027年中に案内され、確定した終了日は90日以上前までに知らされます。終了までは従来どおり使え、いつでも違約金なしで解約できます（Hamic公式FAQ・2026年11月28日確認）。' },
+  { q: 'Hamicの口コミ・評判はどうですか？', a: '保護者が使うHamicアプリの評価は、App Storeで3.3（243件）、Google Playで2.8（99件）です（2026年11月28日確認）。アプリの評価のため、端末そのものの評価とは異なる点にご注意ください。' },
 ];
 
 const faqJsonLd = {
@@ -32,7 +33,7 @@ export default function HamicPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "Hamic レビュー", "datePublished": "2026-03-15", "dateModified": "2026-10-19", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "Hamic レビュー", "datePublished": "2026-03-15", "dateModified": "2026-11-28", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'GPS端末レビュー', href: '/review/' }, { name: 'Hamic' }]} />
 
       {/* Hero */}
@@ -69,9 +70,9 @@ export default function HamicPage() {
                   {[
                     ['提供元', 'Hamee（ハミィ）'],
                     ['端末タイプ', 'キッズスマートフォン型'],
-                    ['月額料金', '1,100円（税込・データ通信1GB/月込み。追加データは200MB 220円・500MB 550円・1GB 880円）'],
+                    ['月額料金', '1,100円（税込・データ通信1GB/月込み。追加データは200MB 220円・500MB 440円・1GB 880円。1GBを超えると最大256kbpsに制限）'],
                     ['通話・メッセージ', '専用のHamicアプリで通話・メッセージが可能（追加料金なし）'],
-                    ['後継機種', 'Hamic MIELS nico（本体29,700円・月額1,100円）。公式サイトの製品メニューは MIELS nico が中心です'],
+                    ['後継機種', 'Hamic MIELS／MIELS nico（購入：本体29,700円＋月額1,100円／シェアプラン：初期費用3,300円＋月額2,200円・最低契約期間6ヶ月）'],
                     ['本体価格', '18,700円（税込・Hamic POCKET L。2026年10月26日時点で公式ストアは全色売り切れ）'],
                     ['測位方式', 'GPS+Wi-Fi'],
                     ['メッセージ', 'テキスト・スタンプ・写真'],
@@ -86,7 +87,7 @@ export default function HamicPage() {
                   ))}
                 </tbody>
               </table>
-              <p className="text-xs text-g500 mt-2">出典：Hamic公式「Hamic POCKETの価格・料金」・Hamic POCKET 製品ページ・公式トップ（料金・通話・データ容量・後継機種は2026年11月13日確認）。防水・バッテリー・在庫は2026年10月26日の公式ストアの製品ページによります（11/13は製品ページが混雑で表示できず未再確認）。</p>
+              <p className="text-xs text-g500 mt-2">出典：Hamic公式「Hamic POCKETの価格・料金」「MIELS / MIELS nico の料金」（料金・追加データ・速度制限・後継機種は2026年11月28日確認）・Hamic POCKET 製品ページ・公式トップ。防水・バッテリー・在庫は2026年10月26日の公式ストアの製品ページによります（11/13は製品ページが混雑で表示できず未再確認）。</p>
             </div>
             <div className="card-hover p-5">
               <h3 className="font-bold text-blue mb-3">コミュニケーション機能</h3>
@@ -106,6 +107,30 @@ export default function HamicPage() {
               </div>
             </div>
           </div>
+
+          {/* サービス終了予定（2026-11-28 追加・公式FAQで確認） */}
+          <div className="mb-8 rounded-xl border-2 border-orange p-5 bg-orange-light">
+            <h2 className="section-title">Hamicは2028年春にサービス終了予定です</h2>
+            <ul className="space-y-2 text-sm text-g700">
+              <li>・Hamic公式FAQでは「2028年春に終了する予定」とされています。正確な終了日は2026年11月時点で未定で、2027年中に案内され、確定した終了日は<strong>終了日の90日以上前まで</strong>に知らされます</li>
+              <li>・終了後は、Hamicアプリ（通話・メッセージ・スタンプ・ブザー通知）やottaのサービスなどが使えなくなります</li>
+              <li>・Hamic MIELSは終了後も「Android端末」として使えます。公式は、IIJmioのドコモ網のデータ通信専用eSIMで動作することを確認したとしています（Hamicの回線は他社への引き継ぎ〔MNP〕に対応していません）</li>
+              <li>・終了までは従来どおり使え、<strong>いつでも違約金なしで解約</strong>できます。解約は申し込んだ月の末日まで使え、月額料金は日割りになりません。購入した端末は返送不要です</li>
+            </ul>
+            <p className="text-xs text-g500 mt-3">出典：Hamic公式「FAQ」（2026年11月28日確認）。これから契約する場合は、終了予定までの利用期間を前提に、購入（本体29,700円）とシェアプラン（最低6ヶ月）のどちらが合うかをご検討ください。</p>
+          </div>
+
+          <h2 className="section-title">Hamicの口コミ・評判（アプリストアの評価）</h2>
+          <div className="overflow-x-auto mb-3">
+            <table className="w-full text-sm">
+              <thead><tr className="border-b border-g200"><th className="py-2 text-left">ストア</th><th className="py-2 text-left">評価</th><th className="py-2 text-left">件数</th><th className="py-2 text-left">備考</th></tr></thead>
+              <tbody>
+                <tr className="border-b border-g100"><td className="py-2">App Store（Hamic）</td><td className="py-2">3.3</td><td className="py-2">243件</td><td className="py-2">最終更新 2026年4月21日（バージョン5.3.4）</td></tr>
+                <tr className="border-b border-g100"><td className="py-2">Google Play（Hamic）</td><td className="py-2">2.8</td><td className="py-2">99件</td><td className="py-2">5万回以上ダウンロード</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-g500 mb-8">出典：App Store（iTunes Search API）・Google Play の Hamic アプリのページ（2026年11月28日に当サイトで取得）。保護者が使うアプリの評価で、端末そのものの評価ではありません。Amazon・楽天の端末の評価は、当サイトでは取得できませんでした。</p>
 
           {/* Features */}
           <h2 className="section-title">主な機能</h2>
@@ -145,7 +170,9 @@ export default function HamicPage() {
                 <li>・月額1,100円とGPS端末より高い料金</li>
                 <li>・本体価格18,700円（Hamic POCKET L）の初期費用が必要。公式ストアでは2026年10月26日時点で全色売り切れ</li>
                 <li>・バッテリーの持ちは約1.5日が目安と短め（公式の目安）</li>
-                <li>・学校への持ち込みが制限される可能性がある点</li>
+                <li>・学校への持ち込みの可否は学校ごとの規則によるため、事前の確認が必要な点</li>
+                <li>・2028年春（予定）にサービスが終了する点（公式FAQ）</li>
+                <li>・契約にはクレジットカードが必要で、月の途中から始めても日割りにならない点（公式 料金ページ）</li>
                 <li>・画面があるため、遊びに使用される懸念がある点</li>
               </ul>
             </div>
