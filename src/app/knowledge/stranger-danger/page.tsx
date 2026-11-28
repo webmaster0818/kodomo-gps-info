@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { q: '子供が不審者に遭遇する件数はどのくらいですか？', a: '警察庁の統計によると、13歳未満の子供が被害者となる声かけ・つきまとい等の認知件数は年間約1万件以上です。特に下校時間帯（14時〜17時）に集中しており、通学路での対策が重要です。' },
+  { q: '子供が不審者に遭遇する件数はどのくらいですか？', a: '声掛け・つきまとい等の全国の年間件数は、当サイトでは公表値を確認できていません。警察庁「令和7年版警察白書」では、13歳未満の子供が被害者となった略取誘拐は令和6年に217件（認知件数588件の36.9％）と公表されています。地域の発生状況は都道府県警察の不審者情報でご確認ください。' },
   { q: 'GPS端末で不審者から子供を守れますか？', a: 'GPS端末は「犯罪を直接防ぐ」ものではなく、「異常を素早く察知し対応する」ためのツールです。エリア通知（ジオフェンス）による逸脱の通知やSOS機能により、危険な状況をいち早く把握できます。' },
   { q: 'SOS機能はどの機種に搭載されていますか？', a: 'myFirst Fone などにSOS/緊急ボタンが搭載されています。ハミックポケットは、同梱の「SOSストラップ」を引くとアラート音が鳴り、アプリと登録メールアドレスに通知が届く仕組みです（BoTトークは公式サイトにSOSボタンの記載がありません。2026年10月28日確認）。みもりGPSトークには、周囲の音を録音して現在地とともに通知するボタンがあります。ボタンを押すと、保護者のスマートフォンに即座に通知と位置情報が届きます。' },
   { q: '不審者情報と連動するGPS端末はありますか？', a: 'みもりGPSトーク（ドリームエリア）は、日本不審者情報センターと連携しています。公式サイトでは、近くで不審者の目撃情報があるとお子さまに注意を知らせ、家族にも自動で通知すると説明しています。' },
@@ -31,7 +31,7 @@ export default function StrangerDangerPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供の不審者対策にGPSは有効？【見守り機能の活用法】", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "子供の不審者対策にGPSは有効？【見守り機能の活用法】", "datePublished": "2026-03-15", "dateModified": "2026-11-28", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '不審者対策とGPS' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -52,22 +52,18 @@ export default function StrangerDangerPage() {
           <h2 className="section-title">不審者遭遇の現状と統計</h2>
           <div className="card-hover p-6 mb-8">
             <p className="text-g600 mb-4">
-              警察庁の犯罪情勢統計によると、13歳未満の子供が被害者となる声かけ・つきまとい等の件数は年間1万件を超えています。
-              特に小学校低学年（6〜8歳）が最も被害に遭いやすく、下校時間帯の14時〜17時に集中しています。
-              通学路や公園、自宅周辺が発生場所の上位を占めているため、日常的な見守り対策が欠かせません。
+              警察庁「令和7年版警察白書」によると、13歳未満の子供が被害者となった刑法犯のうち、認知件数に占める子供の被害の割合が最も高い罪種は略取誘拐で、令和6年は認知件数588件のうち217件（36.9％）でした。
+              また、都道府県警察の子供女性安全対策班（JWAT）が、子供や女性を対象とする性犯罪等の前兆とみられる声掛け・つきまとい等の事案について情報を集め、行為者の検挙や指導・警告を行っています（<a href="https://www.npa.go.jp/hakusyo/r07/honbun/html/bb2213000.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">警察白書 第2章第3項</a>・2026年11月28日確認）。
+              声掛け・つきまとい等の年間件数や、被害が多い年齢・時間帯について、全国の公表値は当サイトでは確認できていません。お住まいの地域の発生状況は、都道府県警察の不審者情報や自治体のメール配信でご確認ください。
             </p>
-            <div className="grid sm:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               <div className="bg-blue-light rounded-xl p-4 text-center">
-                <p className="text-2xl font-extrabold text-blue">年間1万件超</p>
-                <p className="text-sm text-g600">13歳未満の声かけ被害</p>
+                <p className="text-2xl font-extrabold text-blue">217件</p>
+                <p className="text-sm text-g600">13歳未満が被害者の略取誘拐（令和6年）</p>
               </div>
               <div className="bg-orange-light rounded-xl p-4 text-center">
-                <p className="text-2xl font-extrabold text-orange">14時〜17時</p>
-                <p className="text-sm text-g600">被害が集中する時間帯</p>
-              </div>
-              <div className="bg-green-light rounded-xl p-4 text-center">
-                <p className="text-2xl font-extrabold text-green-dark">6〜8歳</p>
-                <p className="text-sm text-g600">最も被害が多い年齢</p>
+                <p className="text-2xl font-extrabold text-orange">36.9％</p>
+                <p className="text-sm text-g600">略取誘拐の認知件数588件に占める割合</p>
               </div>
             </div>
           </div>
