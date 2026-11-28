@@ -34,7 +34,7 @@ const faqJsonLd = {
 };
 
 const dangerPoints = [
-  { icon: '', title: '交通量の多い交差点', desc: '信号のない交差点や右左折車が多い場所は、最も事故が発生しやすい箇所です。エリア通知で通過のタイミングを確認できます。' },
+  { icon: '', title: '交通量の多い交差点', desc: '信号のない交差点や右左折車が多い場所は、注意が必要な箇所です。エリア通知で通過のタイミングを確認できます。' },
   { icon: '', title: '見通しの悪いカーブ・路地', desc: 'ブロック塀や植栽で見通しが悪い場所は、車からも子供が見えにくい危険な場所です。GPSの移動履歴をもとに、迂回ルートをご検討ください。' },
   { icon: '', title: '人通りの少ない道', desc: '空き家が多い地域や裏道では、不審者のリスクが高まります。通過時間帯をGPSで記録し、想定外の滞留を検知できます。' },
   { icon: '', title: '駐車場の出入口', desc: 'コンビニエンスストアやスーパーの駐車場の出入口では、車が急に出てくることがあります。子供の注意力だけでは不十分な場所です。' },
@@ -53,7 +53,7 @@ export default function CommuteSafetyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "通学路の安全対策｜GPS見守りで子供を守る方法", "datePublished": "2026-03-15", "dateModified": "2026-05-27", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "通学路の安全対策｜GPS見守りで子供を守る方法", "datePublished": "2026-03-15", "dateModified": "2026-11-28", "author": {"@type": "Organization", "name": "子供見守りGPS最新情報 編集部", "url": "https://gps-kodomo.com/"}, "publisher": {"@type": "Organization", "name": "子供見守りGPS最新情報"}}) }} />
       <Breadcrumb items={[{ name: 'お役立ち', href: '/knowledge/' }, { name: '通学路の安全対策' }]} />
 
       <section className="bg-[#F4F7FA] py-12">
@@ -73,7 +73,9 @@ export default function CommuteSafetyPage() {
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="section-title">通学路の危険箇所</h2>
           <p className="text-g600 mb-6">
-            警察庁の統計によると、子供の交通事故は下校時間帯（14時〜17時）に集中しています。
+            内閣府「令和7年版交通安全白書」（警察庁資料による）では、歩行中の小学生の交通事故死者・重傷者（令和2年〜6年の合計1,875人）は14時〜15時台が639人で最も多く、次いで16時〜17時台が617人です。当サイトで計算すると、この2つの時間帯で全体の約67％を占めます（
+            <a href="https://www8.cao.go.jp/koutu/taisaku/r07kou_haku/zenbun/genkyo/feature/feature_1_1.html" target="_blank" rel="noopener noreferrer" className="text-blue underline">特集-第5図</a>
+            ・2026年11月28日確認）。時間帯別・学年別の数値は<Link href="/knowledge/shogakusei-kotsujiko-tokei/" className="text-blue underline">小学生の交通事故の統計</Link>にまとめています。
             通学路の危険箇所を事前に把握し、GPSによる見守りと組み合わせることで、事故や犯罪のリスクを軽減できます。
           </p>
 
@@ -144,7 +146,7 @@ export default function CommuteSafetyPage() {
             </details>
           ))}
 
-          <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年5月</p>
+          <p className="text-xs text-g400 mt-4 text-right">最終更新: 2026年11月</p>
 
           <div className="mt-10 text-center bg-blue-light rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-g800 mb-3">GPSによる通学路の安全対策</h2>
